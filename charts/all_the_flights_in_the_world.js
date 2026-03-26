@@ -33,7 +33,7 @@ async function _3(html,d3,FileAttachment,topojson)
 
   container.appendChild(svg.node());
 
-  const rows = await FileAttachment("flights3.csv").csv();
+  const rows = await FileAttachment("flights4.csv").csv();
 
   const flights = rows.map(row => {
     const feature = JSON.parse(row._geojson);
@@ -257,7 +257,7 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   function toString() { return this.url; }
   const fileAttachments = new Map([
-    ["flights3.csv", {url: new URL("./files/400fecb5a57d58f2b15aa2317af59af9dda127554cc33342423e2520152d6dc80d6c609a66db76e87c0d4563ba365b63c0299fa28ef3939a758ea83fb4538faf.csv", import.meta.url), mimeType: "text/csv", toString}]
+    ["flights4.csv", {url: new URL("./files/5e513b2036bf7088e7380f9bee8d502fa739d80843bd227fe401e2e83222757a55d177900bf67b3057b2f644792eedb43d3d63eeb599a7f2bb1d82fca2818779.csv", import.meta.url), mimeType: "text/csv", toString}]
   ]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], _1);
