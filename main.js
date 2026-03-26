@@ -8,8 +8,7 @@ import {
   Inspector
 } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
 
-// This import is no longer used in the current version.
-// It was previously useful for reading a CSV manifest of chart files.
+// Used to parse charts.csv.
 import { csvParseRows } from "https://cdn.jsdelivr.net/npm/d3-dsv@3/+esm";
 
 // Main container where the selected chart will be rendered.
@@ -80,79 +79,63 @@ function clearCurrentChart() {
 
 // Loads one chart JS file dynamically and mounts all of its Observable cells.
 // `chartFile` is expected to look like:
-// { title: "someChart", path: "./charts/someChart.js" }
+// { title: "Play Space", path: "./charts/playspace.js" }
 async function mountChartFile(chartFile) {
-  // First clear whatever chart is currently on screen.
   clearCurrentChart();
 
-  // Create the DOM area that will hold this chart's cells.
   const cellsHost = createModuleShell();
 
   try {
-    // Dynamically import the selected JS file.
     const mod = await import(chartFile.path);
     const define = mod.default;
 
-    // Observable exported notebook files should expose a default `define` function.
     if (typeof define !== "function") {
-      throw new Error(`File "${chartFile.path}" does not export a default define(runtime, observer) function.`);
+      throw new Error(
+        `File "${chartFile.path}" does not export a default define(runtime, observer) function.`
+      );
     }
 
-    // Create a fresh Observable runtime for this chart.
     const runtime = new Runtime(new Library());
     currentRuntime = runtime;
 
-    // Mount every cell from the Observable module into the page.
-    // For each cell, create a container and hand it to Inspector.
     runtime.module(define, (name) => {
       const { wrapper, output } = createCellContainer(name);
       cellsHost.appendChild(wrapper);
       return new Inspector(output);
     });
   } catch (error) {
-    // If loading fails, clear partial content and show an error box instead.
     app.innerHTML = "";
     showError(chartFile.title, error);
   }
 }
 
-// Reads the list of chart files by requesting the ./charts/ folder.
-// This only works if the server allows directory listing.
+// Reads the list of chart files from ./charts.csv.
+// Expected format per line:
+// Display Name,filename.js
 async function loadChartList() {
-  const response = await fetch("./charts/");
+  const response = await fetch("./charts.csv");
 
   if (!response.ok) {
-    throw new Error(`Unable to read ./charts/ (${response.status})`);
+    throw new Error(`Unable to read ./charts.csv (${response.status})`);
   }
 
-  // The directory listing is treated as HTML so we can extract links from it.
   const text = await response.text();
 
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(text, "text/html");
+  const rows = csvParseRows(text)
+    .map(([title, file]) => ({
+      title: (title || "").trim(),
+      file: (file || "").trim()
+    }))
+    .filter(row => row.title && row.file);
 
-  // Find all anchor tags in the directory listing,
-  // keep only .js files,
-  // ignore main.js,
-  // and convert them into { title, path } objects.
-  const links = [...doc.querySelectorAll("a")]
-    .map(a => a.getAttribute("href"))
-    .filter(href => href && href.endsWith(".js") && href !== "main.js")
-    .map(path => {
-      const fileName = path.split("/").pop();
-      const title = fileName.replace(/\.js$/i, "");
-      return {
-        title,
-        path: path.startsWith(".") || path.startsWith("/") ? path : `./charts/${path}`
-      };
-    });
-
-  // If no chart JS files were found, throw an error.
-  if (links.length === 0) {
-    throw new Error('No .js chart files found in "./charts/".');
+  if (rows.length === 0) {
+    throw new Error('No valid chart entries found in "./charts.csv".');
   }
 
-  return links;
+  return rows.map(({ title, file }) => ({
+    title,
+    path: `./charts/${file}`
+  }));
 }
 
 // Fills the dropdown with available chart names.
@@ -167,14 +150,14 @@ function populateDropdown(charts) {
     chartSelect.appendChild(option);
   });
 
-  chartSelect.addEventListener("change", () => {
+  chartSelect.onchange = () => {
     const selectedChart = charts[Number(chartSelect.value)];
     mountChartFile(selectedChart);
-  });
+  };
 }
 
 // Main startup flow:
-// 1. Discover chart files
+// 1. Read chart files from charts.csv
 // 2. Fill the dropdown
 // 3. Automatically load the first chart
 async function main() {
@@ -185,7 +168,6 @@ async function main() {
     chartSelect.value = "0";
     await mountChartFile(chartFiles[0]);
   } catch (error) {
-    // If anything goes wrong during startup, clear the app and show an error.
     clearCurrentChart();
     showError("Chart loader error", error);
   }
