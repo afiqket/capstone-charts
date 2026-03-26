@@ -132,10 +132,12 @@ async function loadChartList() {
     throw new Error('No valid chart entries found in "./charts.csv".');
   }
 
-  return rows.map(({ title, file }) => ({
-    title,
-    path: `./charts/${file}`
-  }));
+  return rows
+    .map(({ title, file }) => ({
+      title,
+      path: `./charts/${file}`
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title));
 }
 
 // Fills the dropdown with available chart names.
