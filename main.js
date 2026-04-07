@@ -77,6 +77,51 @@ function clearCurrentChart() {
   app.innerHTML = "";
 }
 
+// Gets the chart slug from a chart object.
+// Example:
+// "./charts/playspace.js" becomes "playspace"
+function getChartSlug(chart) {
+  return chart.path
+    .split("/")
+    .pop()
+    .replace(".js", "")
+    .toLowerCase();
+}
+
+// Reads the selected chart from the URL query.
+// Example:
+// index.html?chart=playspace
+// returns "playspace"
+function getChartQueryFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  const chartName = params.get("chart");
+
+  return chartName ? chartName.toLowerCase() : null;
+}
+
+// Finds which chart should be loaded first based on the URL.
+// If the URL has no valid chart, fall back to the first chart.
+function getInitialChartIndex(charts) {
+  const chartQuery = getChartQueryFromUrl();
+
+  if (!chartQuery) {
+    return 0;
+  }
+
+  const index = charts.findIndex(chart => getChartSlug(chart) === chartQuery);
+  return index >= 0 ? index : 0;
+}
+
+// Updates the browser URL to match the currently selected chart.
+// This keeps the page shareable and reload-safe.
+function updateUrlForChart(chart) {
+  const params = new URLSearchParams(window.location.search);
+  params.set("chart", getChartSlug(chart));
+
+  const newUrl = `${window.location.pathname}?${params.toString()}`;
+  history.replaceState(null, "", newUrl);
+}
+
 // Loads one chart JS file dynamically and mounts all of its Observable cells.
 // `chartFile` is expected to look like:
 // { title: "Play Space", path: "./charts/playspace.js" }
@@ -141,7 +186,8 @@ async function loadChartList() {
 }
 
 // Fills the dropdown with available chart names.
-// When the user changes the selection, the chosen chart is loaded.
+// When the user changes the selection, the chosen chart is loaded
+// and the URL is updated.
 function populateDropdown(charts) {
   chartSelect.innerHTML = "";
 
@@ -152,23 +198,29 @@ function populateDropdown(charts) {
     chartSelect.appendChild(option);
   });
 
-  chartSelect.onchange = () => {
+  chartSelect.onchange = async () => {
     const selectedChart = charts[Number(chartSelect.value)];
-    mountChartFile(selectedChart);
+    updateUrlForChart(selectedChart);
+    await mountChartFile(selectedChart);
   };
 }
 
 // Main startup flow:
 // 1. Read chart files from charts.csv
 // 2. Fill the dropdown
-// 3. Automatically load the first chart
+// 3. Check if ?chart=... exists in the URL
+// 4. Load that chart if found, otherwise load the first chart
 async function main() {
   try {
     chartFiles = await loadChartList();
     populateDropdown(chartFiles);
 
-    chartSelect.value = "0";
-    await mountChartFile(chartFiles[0]);
+    const initialIndex = getInitialChartIndex(chartFiles);
+    chartSelect.value = String(initialIndex);
+
+    // Also update the URL on first load so it stays consistent.
+    updateUrlForChart(chartFiles[initialIndex]);
+    await mountChartFile(chartFiles[initialIndex]);
   } catch (error) {
     clearCurrentChart();
     showError("Chart loader error", error);
