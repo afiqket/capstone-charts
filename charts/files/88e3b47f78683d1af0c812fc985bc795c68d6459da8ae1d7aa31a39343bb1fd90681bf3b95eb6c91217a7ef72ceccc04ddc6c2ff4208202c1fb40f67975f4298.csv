@@ -1,0 +1,3138 @@
+fips,name,category,metro
+01001,"Autauga County, Alabama",none,Metro
+01003,"Baldwin County, Alabama",none,Metro
+01005,"Barbour County, Alabama",both,Nonmetro
+01007,"Bibb County, Alabama",none,Metro
+01009,"Blount County, Alabama",none,Metro
+01011,"Bullock County, Alabama",both,Nonmetro
+01013,"Butler County, Alabama",both,Nonmetro
+01015,"Calhoun County, Alabama",none,Metro
+01017,"Chambers County, Alabama",none,Nonmetro
+01019,"Cherokee County, Alabama",none,Nonmetro
+01021,"Chilton County, Alabama",none,Metro
+01023,"Choctaw County, Alabama",both,Nonmetro
+01025,"Clarke County, Alabama",both,Nonmetro
+01027,"Clay County, Alabama",none,Nonmetro
+01029,"Cleburne County, Alabama",none,Nonmetro
+01031,"Coffee County, Alabama",none,Nonmetro
+01033,"Colbert County, Alabama",none,Metro
+01035,"Conecuh County, Alabama",persistent,Nonmetro
+01037,"Coosa County, Alabama",none,Nonmetro
+01039,"Covington County, Alabama",none,Nonmetro
+01041,"Crenshaw County, Alabama",none,Nonmetro
+01043,"Cullman County, Alabama",none,Nonmetro
+01045,"Dale County, Alabama",none,Nonmetro
+01047,"Dallas County, Alabama",both,Nonmetro
+01049,"DeKalb County, Alabama",high,Nonmetro
+01051,"Elmore County, Alabama",none,Metro
+01053,"Escambia County, Alabama",both,Nonmetro
+01055,"Etowah County, Alabama",none,Metro
+01057,"Fayette County, Alabama",none,Nonmetro
+01059,"Franklin County, Alabama",none,Nonmetro
+01061,"Geneva County, Alabama",high,Metro
+01063,"Greene County, Alabama",both,Nonmetro
+01065,"Hale County, Alabama",both,Metro
+01067,"Henry County, Alabama",none,Metro
+01069,"Houston County, Alabama",none,Metro
+01071,"Jackson County, Alabama",none,Nonmetro
+01073,"Jefferson County, Alabama",none,Metro
+01075,"Lamar County, Alabama",high,Nonmetro
+01077,"Lauderdale County, Alabama",none,Metro
+01079,"Lawrence County, Alabama",none,Metro
+01081,"Lee County, Alabama",none,Metro
+01083,"Limestone County, Alabama",none,Metro
+01085,"Lowndes County, Alabama",both,Metro
+01087,"Macon County, Alabama",both,Nonmetro
+01089,"Madison County, Alabama",none,Metro
+01091,"Marengo County, Alabama",both,Nonmetro
+01093,"Marion County, Alabama",none,Nonmetro
+01095,"Marshall County, Alabama",high,Nonmetro
+01097,"Mobile County, Alabama",none,Metro
+01099,"Monroe County, Alabama",both,Nonmetro
+01101,"Montgomery County, Alabama",none,Metro
+01103,"Morgan County, Alabama",none,Metro
+01105,"Perry County, Alabama",both,Nonmetro
+01107,"Pickens County, Alabama",both,Metro
+01109,"Pike County, Alabama",both,Nonmetro
+01111,"Randolph County, Alabama",none,Nonmetro
+01113,"Russell County, Alabama",high,Metro
+01115,"St. Clair County, Alabama",none,Metro
+01117,"Shelby County, Alabama",none,Metro
+01119,"Sumter County, Alabama",both,Nonmetro
+01121,"Talladega County, Alabama",none,Nonmetro
+01123,"Tallapoosa County, Alabama",none,Nonmetro
+01125,"Tuscaloosa County, Alabama",none,Metro
+01127,"Walker County, Alabama",none,Metro
+01129,"Washington County, Alabama",high,Nonmetro
+01131,"Wilcox County, Alabama",both,Nonmetro
+01133,"Winston County, Alabama",none,Nonmetro
+04001,"Apache County, Arizona",both,Nonmetro
+04003,"Cochise County, Arizona",none,Metro
+04005,"Coconino County, Arizona",none,Metro
+04007,"Gila County, Arizona",high,Nonmetro
+04009,"Graham County, Arizona",high,Nonmetro
+04011,"Greenlee County, Arizona",none,Nonmetro
+04012,"La Paz County, Arizona",high,Nonmetro
+04013,"Maricopa County, Arizona",none,Metro
+04015,"Mohave County, Arizona",none,Metro
+04017,"Navajo County, Arizona",both,Nonmetro
+04019,"Pima County, Arizona",none,Metro
+04021,"Pinal County, Arizona",none,Metro
+04023,"Santa Cruz County, Arizona",high,Nonmetro
+04025,"Yavapai County, Arizona",none,Metro
+04027,"Yuma County, Arizona",none,Metro
+05001,"Arkansas County, Arkansas",none,Nonmetro
+05003,"Ashley County, Arkansas",none,Nonmetro
+05005,"Baxter County, Arkansas",none,Nonmetro
+05007,"Benton County, Arkansas",none,Metro
+05009,"Boone County, Arkansas",none,Nonmetro
+05011,"Bradley County, Arkansas",both,Nonmetro
+05013,"Calhoun County, Arkansas",none,Nonmetro
+05015,"Carroll County, Arkansas",none,Nonmetro
+05017,"Chicot County, Arkansas",both,Nonmetro
+05019,"Clark County, Arkansas",high,Nonmetro
+05021,"Clay County, Arkansas",high,Nonmetro
+05023,"Cleburne County, Arkansas",none,Nonmetro
+05025,"Cleveland County, Arkansas",none,Metro
+05027,"Columbia County, Arkansas",both,Nonmetro
+05029,"Conway County, Arkansas",none,Nonmetro
+05031,"Craighead County, Arkansas",none,Metro
+05033,"Crawford County, Arkansas",none,Metro
+05035,"Crittenden County, Arkansas",both,Metro
+05037,"Cross County, Arkansas",none,Nonmetro
+05039,"Dallas County, Arkansas",none,Nonmetro
+05041,"Desha County, Arkansas",both,Nonmetro
+05043,"Drew County, Arkansas",none,Nonmetro
+05045,"Faulkner County, Arkansas",none,Metro
+05047,"Franklin County, Arkansas",high,Nonmetro
+05049,"Fulton County, Arkansas",high,Nonmetro
+05051,"Garland County, Arkansas",none,Metro
+05053,"Grant County, Arkansas",none,Metro
+05055,"Greene County, Arkansas",none,Nonmetro
+05057,"Hempstead County, Arkansas",high,Nonmetro
+05059,"Hot Spring County, Arkansas",none,Nonmetro
+05061,"Howard County, Arkansas",none,Nonmetro
+05063,"Independence County, Arkansas",none,Nonmetro
+05065,"Izard County, Arkansas",none,Nonmetro
+05067,"Jackson County, Arkansas",high,Nonmetro
+05069,"Jefferson County, Arkansas",both,Metro
+05071,"Johnson County, Arkansas",high,Nonmetro
+05073,"Lafayette County, Arkansas",both,Nonmetro
+05075,"Lawrence County, Arkansas",none,Nonmetro
+05077,"Lee County, Arkansas",both,Nonmetro
+05079,"Lincoln County, Arkansas",high,Metro
+05081,"Little River County, Arkansas",none,Metro
+05083,"Logan County, Arkansas",none,Nonmetro
+05085,"Lonoke County, Arkansas",none,Metro
+05087,"Madison County, Arkansas",none,Metro
+05089,"Marion County, Arkansas",none,Nonmetro
+05091,"Miller County, Arkansas",high,Metro
+05093,"Mississippi County, Arkansas",both,Nonmetro
+05095,"Monroe County, Arkansas",both,Nonmetro
+05097,"Montgomery County, Arkansas",high,Nonmetro
+05099,"Nevada County, Arkansas",both,Nonmetro
+05101,"Newton County, Arkansas",persistent,Nonmetro
+05103,"Ouachita County, Arkansas",high,Nonmetro
+05105,"Perry County, Arkansas",none,Metro
+05107,"Phillips County, Arkansas",both,Nonmetro
+05109,"Pike County, Arkansas",none,Nonmetro
+05111,"Poinsett County, Arkansas",both,Metro
+05113,"Polk County, Arkansas",high,Nonmetro
+05115,"Pope County, Arkansas",none,Nonmetro
+05117,"Prairie County, Arkansas",none,Nonmetro
+05119,"Pulaski County, Arkansas",none,Metro
+05121,"Randolph County, Arkansas",none,Nonmetro
+05123,"St. Francis County, Arkansas",both,Nonmetro
+05125,"Saline County, Arkansas",none,Metro
+05127,"Scott County, Arkansas",none,Nonmetro
+05129,"Searcy County, Arkansas",both,Nonmetro
+05131,"Sebastian County, Arkansas",none,Metro
+05133,"Sevier County, Arkansas",high,Nonmetro
+05135,"Sharp County, Arkansas",high,Nonmetro
+05137,"Stone County, Arkansas",none,Nonmetro
+05139,"Union County, Arkansas",none,Nonmetro
+05141,"Van Buren County, Arkansas",none,Nonmetro
+05143,"Washington County, Arkansas",none,Metro
+05145,"White County, Arkansas",none,Nonmetro
+05147,"Woodruff County, Arkansas",both,Nonmetro
+05149,"Yell County, Arkansas",none,Nonmetro
+06001,"Alameda County, California",none,Metro
+06003,"Alpine County, California",none,Nonmetro
+06005,"Amador County, California",none,Nonmetro
+06007,"Butte County, California",none,Metro
+06009,"Calaveras County, California",none,Nonmetro
+06011,"Colusa County, California",none,Nonmetro
+06013,"Contra Costa County, California",none,Metro
+06015,"Del Norte County, California",none,Nonmetro
+06017,"El Dorado County, California",none,Metro
+06019,"Fresno County, California",high,Metro
+06021,"Glenn County, California",none,Nonmetro
+06023,"Humboldt County, California",high,Nonmetro
+06025,"Imperial County, California",high,Metro
+06027,"Inyo County, California",none,Nonmetro
+06029,"Kern County, California",high,Metro
+06031,"Kings County, California",none,Metro
+06033,"Lake County, California",none,Nonmetro
+06035,"Lassen County, California",none,Nonmetro
+06037,"Los Angeles County, California",none,Metro
+06039,"Madera County, California",none,Metro
+06041,"Marin County, California",none,Metro
+06043,"Mariposa County, California",none,Nonmetro
+06045,"Mendocino County, California",none,Nonmetro
+06047,"Merced County, California",high,Metro
+06049,"Modoc County, California",none,Nonmetro
+06051,"Mono County, California",none,Nonmetro
+06053,"Monterey County, California",none,Metro
+06055,"Napa County, California",none,Metro
+06057,"Nevada County, California",none,Nonmetro
+06059,"Orange County, California",none,Metro
+06061,"Placer County, California",none,Metro
+06063,"Plumas County, California",none,Nonmetro
+06065,"Riverside County, California",none,Metro
+06067,"Sacramento County, California",none,Metro
+06069,"San Benito County, California",none,Metro
+06071,"San Bernardino County, California",none,Metro
+06073,"San Diego County, California",none,Metro
+06075,"San Francisco County, California",none,Metro
+06077,"San Joaquin County, California",none,Metro
+06079,"San Luis Obispo County, California",none,Metro
+06081,"San Mateo County, California",none,Metro
+06083,"Santa Barbara County, California",none,Metro
+06085,"Santa Clara County, California",none,Metro
+06087,"Santa Cruz County, California",none,Metro
+06089,"Shasta County, California",none,Metro
+06091,"Sierra County, California",none,Nonmetro
+06093,"Siskiyou County, California",none,Nonmetro
+06095,"Solano County, California",none,Metro
+06097,"Sonoma County, California",none,Metro
+06099,"Stanislaus County, California",none,Metro
+06101,"Sutter County, California",none,Metro
+06103,"Tehama County, California",high,Nonmetro
+06105,"Trinity County, California",none,Nonmetro
+06107,"Tulare County, California",high,Metro
+06109,"Tuolumne County, California",none,Nonmetro
+06111,"Ventura County, California",none,Metro
+06113,"Yolo County, California",none,Metro
+06115,"Yuba County, California",none,Metro
+08001,"Adams County, Colorado",none,Metro
+08003,"Alamosa County, Colorado",both,Nonmetro
+08005,"Arapahoe County, Colorado",none,Metro
+08007,"Archuleta County, Colorado",none,Nonmetro
+08009,"Baca County, Colorado",none,Nonmetro
+08011,"Bent County, Colorado",high,Nonmetro
+08013,"Boulder County, Colorado",none,Metro
+08014,"Broomfield County, Colorado",none,Metro
+08015,"Chaffee County, Colorado",none,Nonmetro
+08017,"Cheyenne County, Colorado",none,Nonmetro
+08019,"Clear Creek County, Colorado",none,Metro
+08021,"Conejos County, Colorado",high,Nonmetro
+08023,"Costilla County, Colorado",both,Nonmetro
+08025,"Crowley County, Colorado",high,Nonmetro
+08027,"Custer County, Colorado",none,Nonmetro
+08029,"Delta County, Colorado",none,Nonmetro
+08031,"Denver County, Colorado",none,Metro
+08033,"Dolores County, Colorado",none,Nonmetro
+08035,"Douglas County, Colorado",none,Metro
+08037,"Eagle County, Colorado",none,Nonmetro
+08039,"Elbert County, Colorado",none,Metro
+08041,"El Paso County, Colorado",none,Metro
+08043,"Fremont County, Colorado",none,Nonmetro
+08045,"Garfield County, Colorado",none,Nonmetro
+08047,"Gilpin County, Colorado",none,Metro
+08049,"Grand County, Colorado",none,Nonmetro
+08051,"Gunnison County, Colorado",none,Nonmetro
+08053,"Hinsdale County, Colorado",none,Nonmetro
+08055,"Huerfano County, Colorado",none,Nonmetro
+08057,"Jackson County, Colorado",none,Nonmetro
+08059,"Jefferson County, Colorado",none,Metro
+08061,"Kiowa County, Colorado",none,Nonmetro
+08063,"Kit Carson County, Colorado",none,Nonmetro
+08065,"Lake County, Colorado",none,Nonmetro
+08067,"La Plata County, Colorado",none,Nonmetro
+08069,"Larimer County, Colorado",none,Metro
+08071,"Las Animas County, Colorado",none,Nonmetro
+08073,"Lincoln County, Colorado",none,Nonmetro
+08075,"Logan County, Colorado",none,Nonmetro
+08077,"Mesa County, Colorado",none,Metro
+08079,"Mineral County, Colorado",none,Nonmetro
+08081,"Moffat County, Colorado",none,Nonmetro
+08083,"Montezuma County, Colorado",none,Nonmetro
+08085,"Montrose County, Colorado",none,Nonmetro
+08087,"Morgan County, Colorado",none,Nonmetro
+08089,"Otero County, Colorado",high,Nonmetro
+08091,"Ouray County, Colorado",none,Nonmetro
+08093,"Park County, Colorado",none,Metro
+08095,"Phillips County, Colorado",none,Nonmetro
+08097,"Pitkin County, Colorado",none,Nonmetro
+08099,"Prowers County, Colorado",none,Nonmetro
+08101,"Pueblo County, Colorado",none,Metro
+08103,"Rio Blanco County, Colorado",none,Nonmetro
+08105,"Rio Grande County, Colorado",none,Nonmetro
+08107,"Routt County, Colorado",none,Nonmetro
+08109,"Saguache County, Colorado",persistent,Nonmetro
+08111,"San Juan County, Colorado",none,Nonmetro
+08113,"San Miguel County, Colorado",none,Nonmetro
+08115,"Sedgwick County, Colorado",none,Nonmetro
+08117,"Summit County, Colorado",none,Nonmetro
+08119,"Teller County, Colorado",none,Metro
+08121,"Washington County, Colorado",none,Nonmetro
+08123,"Weld County, Colorado",none,Metro
+08125,"Yuma County, Colorado",none,Nonmetro
+09001,"Fairfield County, Connecticut",none,Metro
+09003,"Hartford County, Connecticut",none,Metro
+09005,"Litchfield County, Connecticut",none,Nonmetro
+09007,"Middlesex County, Connecticut",none,Metro
+09009,"New Haven County, Connecticut",none,Metro
+09011,"New London County, Connecticut",none,Metro
+09013,"Tolland County, Connecticut",none,Metro
+09015,"Windham County, Connecticut",none,Metro
+10001,"Kent County, Delaware",none,Metro
+10003,"New Castle County, Delaware",none,Metro
+10005,"Sussex County, Delaware",none,Metro
+11001,"District of Columbia, District of Columbia",none,Metro
+12001,"Alachua County, Florida",both,Metro
+12003,"Baker County, Florida",none,Metro
+12005,"Bay County, Florida",none,Metro
+12007,"Bradford County, Florida",high,Nonmetro
+12009,"Brevard County, Florida",none,Metro
+12011,"Broward County, Florida",none,Metro
+12013,"Calhoun County, Florida",none,Nonmetro
+12015,"Charlotte County, Florida",none,Metro
+12017,"Citrus County, Florida",none,Metro
+12019,"Clay County, Florida",none,Metro
+12021,"Collier County, Florida",none,Metro
+12023,"Columbia County, Florida",none,Nonmetro
+12027,"DeSoto County, Florida",high,Nonmetro
+12029,"Dixie County, Florida",high,Nonmetro
+12031,"Duval County, Florida",none,Metro
+12033,"Escambia County, Florida",none,Metro
+12035,"Flagler County, Florida",none,Metro
+12037,"Franklin County, Florida",none,Nonmetro
+12039,"Gadsden County, Florida",high,Metro
+12041,"Gilchrist County, Florida",none,Metro
+12043,"Glades County, Florida",none,Nonmetro
+12045,"Gulf County, Florida",none,Metro
+12047,"Hamilton County, Florida",both,Nonmetro
+12049,"Hardee County, Florida",both,Nonmetro
+12051,"Hendry County, Florida",high,Nonmetro
+12053,"Hernando County, Florida",none,Metro
+12055,"Highlands County, Florida",none,Metro
+12057,"Hillsborough County, Florida",none,Metro
+12059,"Holmes County, Florida",high,Nonmetro
+12061,"Indian River County, Florida",none,Metro
+12063,"Jackson County, Florida",none,Nonmetro
+12065,"Jefferson County, Florida",none,Metro
+12067,"Lafayette County, Florida",none,Nonmetro
+12069,"Lake County, Florida",none,Metro
+12071,"Lee County, Florida",none,Metro
+12073,"Leon County, Florida",high,Metro
+12075,"Levy County, Florida",high,Nonmetro
+12077,"Liberty County, Florida",none,Nonmetro
+12079,"Madison County, Florida",both,Nonmetro
+12081,"Manatee County, Florida",none,Metro
+12083,"Marion County, Florida",none,Metro
+12085,"Martin County, Florida",none,Metro
+12086,"Miami-Dade County, Florida",none,Metro
+12087,"Monroe County, Florida",none,Nonmetro
+12089,"Nassau County, Florida",none,Metro
+12091,"Okaloosa County, Florida",none,Metro
+12093,"Okeechobee County, Florida",high,Nonmetro
+12095,"Orange County, Florida",none,Metro
+12097,"Osceola County, Florida",none,Metro
+12099,"Palm Beach County, Florida",none,Metro
+12101,"Pasco County, Florida",none,Metro
+12103,"Pinellas County, Florida",none,Metro
+12105,"Polk County, Florida",none,Metro
+12107,"Putnam County, Florida",high,Nonmetro
+12109,"St. Johns County, Florida",none,Metro
+12111,"St. Lucie County, Florida",none,Metro
+12113,"Santa Rosa County, Florida",none,Metro
+12115,"Sarasota County, Florida",none,Metro
+12117,"Seminole County, Florida",none,Metro
+12119,"Sumter County, Florida",none,Metro
+12121,"Suwannee County, Florida",none,Nonmetro
+12123,"Taylor County, Florida",high,Nonmetro
+12125,"Union County, Florida",high,Nonmetro
+12127,"Volusia County, Florida",none,Metro
+12129,"Wakulla County, Florida",none,Metro
+12131,"Walton County, Florida",none,Metro
+12133,"Washington County, Florida",high,Nonmetro
+13001,"Appling County, Georgia",high,Nonmetro
+13003,"Atkinson County, Georgia",both,Nonmetro
+13005,"Bacon County, Georgia",both,Nonmetro
+13007,"Baker County, Georgia",both,Metro
+13009,"Baldwin County, Georgia",high,Nonmetro
+13011,"Banks County, Georgia",none,Nonmetro
+13013,"Barrow County, Georgia",none,Metro
+13015,"Bartow County, Georgia",none,Metro
+13017,"Ben Hill County, Georgia",both,Nonmetro
+13019,"Berrien County, Georgia",high,Nonmetro
+13021,"Bibb County, Georgia",high,Metro
+13023,"Bleckley County, Georgia",none,Nonmetro
+13025,"Brantley County, Georgia",none,Metro
+13027,"Brooks County, Georgia",both,Metro
+13029,"Bryan County, Georgia",none,Metro
+13031,"Bulloch County, Georgia",both,Nonmetro
+13033,"Burke County, Georgia",both,Metro
+13035,"Butts County, Georgia",high,Metro
+13037,"Calhoun County, Georgia",both,Nonmetro
+13039,"Camden County, Georgia",none,Nonmetro
+13043,"Candler County, Georgia",high,Nonmetro
+13045,"Carroll County, Georgia",none,Metro
+13047,"Catoosa County, Georgia",none,Metro
+13049,"Charlton County, Georgia",high,Nonmetro
+13051,"Chatham County, Georgia",none,Metro
+13053,"Chattahoochee County, Georgia",none,Metro
+13055,"Chattooga County, Georgia",none,Nonmetro
+13057,"Cherokee County, Georgia",none,Metro
+13059,"Clarke County, Georgia",both,Metro
+13061,"Clay County, Georgia",both,Nonmetro
+13063,"Clayton County, Georgia",none,Metro
+13065,"Clinch County, Georgia",both,Nonmetro
+13067,"Cobb County, Georgia",none,Metro
+13069,"Coffee County, Georgia",none,Nonmetro
+13071,"Colquitt County, Georgia",high,Nonmetro
+13073,"Columbia County, Georgia",none,Metro
+13075,"Cook County, Georgia",high,Nonmetro
+13077,"Coweta County, Georgia",none,Metro
+13079,"Crawford County, Georgia",none,Metro
+13081,"Crisp County, Georgia",both,Nonmetro
+13083,"Dade County, Georgia",none,Metro
+13085,"Dawson County, Georgia",none,Metro
+13087,"Decatur County, Georgia",both,Nonmetro
+13089,"DeKalb County, Georgia",none,Metro
+13091,"Dodge County, Georgia",high,Nonmetro
+13093,"Dooly County, Georgia",both,Nonmetro
+13095,"Dougherty County, Georgia",both,Metro
+13097,"Douglas County, Georgia",none,Metro
+13099,"Early County, Georgia",both,Nonmetro
+13101,"Echols County, Georgia",high,Metro
+13103,"Effingham County, Georgia",none,Metro
+13105,"Elbert County, Georgia",high,Nonmetro
+13107,"Emanuel County, Georgia",both,Nonmetro
+13109,"Evans County, Georgia",both,Nonmetro
+13111,"Fannin County, Georgia",none,Nonmetro
+13113,"Fayette County, Georgia",none,Metro
+13115,"Floyd County, Georgia",none,Metro
+13117,"Forsyth County, Georgia",none,Metro
+13119,"Franklin County, Georgia",high,Nonmetro
+13121,"Fulton County, Georgia",none,Metro
+13123,"Gilmer County, Georgia",none,Nonmetro
+13125,"Glascock County, Georgia",none,Nonmetro
+13127,"Glynn County, Georgia",none,Metro
+13129,"Gordon County, Georgia",none,Nonmetro
+13131,"Grady County, Georgia",both,Nonmetro
+13133,"Greene County, Georgia",persistent,Nonmetro
+13135,"Gwinnett County, Georgia",none,Metro
+13137,"Habersham County, Georgia",none,Nonmetro
+13139,"Hall County, Georgia",none,Metro
+13141,"Hancock County, Georgia",both,Nonmetro
+13143,"Haralson County, Georgia",none,Metro
+13145,"Harris County, Georgia",none,Metro
+13147,"Hart County, Georgia",none,Nonmetro
+13149,"Heard County, Georgia",none,Metro
+13151,"Henry County, Georgia",none,Metro
+13153,"Houston County, Georgia",none,Metro
+13155,"Irwin County, Georgia",high,Nonmetro
+13157,"Jackson County, Georgia",none,Nonmetro
+13159,"Jasper County, Georgia",none,Metro
+13161,"Jeff Davis County, Georgia",high,Nonmetro
+13163,"Jefferson County, Georgia",both,Nonmetro
+13165,"Jenkins County, Georgia",both,Nonmetro
+13167,"Johnson County, Georgia",both,Nonmetro
+13169,"Jones County, Georgia",none,Metro
+13171,"Lamar County, Georgia",none,Metro
+13173,"Lanier County, Georgia",high,Metro
+13175,"Laurens County, Georgia",high,Nonmetro
+13177,"Lee County, Georgia",none,Metro
+13179,"Liberty County, Georgia",none,Metro
+13181,"Lincoln County, Georgia",high,Metro
+13183,"Long County, Georgia",none,Metro
+13185,"Lowndes County, Georgia",high,Metro
+13187,"Lumpkin County, Georgia",none,Nonmetro
+13189,"McDuffie County, Georgia",high,Metro
+13191,"McIntosh County, Georgia",none,Metro
+13193,"Macon County, Georgia",both,Nonmetro
+13195,"Madison County, Georgia",none,Metro
+13197,"Marion County, Georgia",persistent,Metro
+13199,"Meriwether County, Georgia",high,Metro
+13201,"Miller County, Georgia",high,Nonmetro
+13205,"Mitchell County, Georgia",both,Nonmetro
+13207,"Monroe County, Georgia",none,Metro
+13209,"Montgomery County, Georgia",none,Nonmetro
+13211,"Morgan County, Georgia",none,Metro
+13213,"Murray County, Georgia",none,Metro
+13215,"Muscogee County, Georgia",high,Metro
+13217,"Newton County, Georgia",none,Metro
+13219,"Oconee County, Georgia",none,Metro
+13221,"Oglethorpe County, Georgia",none,Metro
+13223,"Paulding County, Georgia",none,Metro
+13225,"Peach County, Georgia",both,Metro
+13227,"Pickens County, Georgia",none,Metro
+13229,"Pierce County, Georgia",high,Nonmetro
+13231,"Pike County, Georgia",none,Metro
+13233,"Polk County, Georgia",none,Nonmetro
+13235,"Pulaski County, Georgia",high,Metro
+13237,"Putnam County, Georgia",none,Nonmetro
+13239,"Quitman County, Georgia",both,Nonmetro
+13241,"Rabun County, Georgia",none,Nonmetro
+13243,"Randolph County, Georgia",both,Nonmetro
+13245,"Richmond County, Georgia",high,Metro
+13247,"Rockdale County, Georgia",none,Metro
+13249,"Schley County, Georgia",none,Nonmetro
+13251,"Screven County, Georgia",both,Nonmetro
+13253,"Seminole County, Georgia",both,Nonmetro
+13255,"Spalding County, Georgia",none,Metro
+13257,"Stephens County, Georgia",none,Nonmetro
+13259,"Stewart County, Georgia",both,Nonmetro
+13261,"Sumter County, Georgia",both,Nonmetro
+13263,"Talbot County, Georgia",persistent,Nonmetro
+13265,"Taliaferro County, Georgia",both,Nonmetro
+13267,"Tattnall County, Georgia",both,Nonmetro
+13269,"Taylor County, Georgia",both,Nonmetro
+13271,"Telfair County, Georgia",both,Nonmetro
+13273,"Terrell County, Georgia",both,Metro
+13275,"Thomas County, Georgia",none,Nonmetro
+13277,"Tift County, Georgia",high,Nonmetro
+13279,"Toombs County, Georgia",both,Nonmetro
+13281,"Towns County, Georgia",none,Nonmetro
+13283,"Treutlen County, Georgia",both,Nonmetro
+13285,"Troup County, Georgia",high,Nonmetro
+13287,"Turner County, Georgia",both,Nonmetro
+13289,"Twiggs County, Georgia",none,Metro
+13291,"Union County, Georgia",none,Nonmetro
+13293,"Upson County, Georgia",high,Nonmetro
+13295,"Walker County, Georgia",none,Metro
+13297,"Walton County, Georgia",none,Metro
+13299,"Ware County, Georgia",both,Nonmetro
+13301,"Warren County, Georgia",both,Nonmetro
+13303,"Washington County, Georgia",both,Nonmetro
+13305,"Wayne County, Georgia",none,Nonmetro
+13307,"Webster County, Georgia",high,Nonmetro
+13309,"Wheeler County, Georgia",both,Nonmetro
+13311,"White County, Georgia",none,Nonmetro
+13313,"Whitfield County, Georgia",none,Metro
+13315,"Wilcox County, Georgia",both,Nonmetro
+13317,"Wilkes County, Georgia",high,Nonmetro
+13319,"Wilkinson County, Georgia",high,Nonmetro
+13321,"Worth County, Georgia",none,Metro
+16001,"Ada County, Idaho",none,Metro
+16003,"Adams County, Idaho",none,Nonmetro
+16005,"Bannock County, Idaho",none,Metro
+16007,"Bear Lake County, Idaho",none,Nonmetro
+16009,"Benewah County, Idaho",none,Nonmetro
+16011,"Bingham County, Idaho",none,Nonmetro
+16013,"Blaine County, Idaho",none,Nonmetro
+16015,"Boise County, Idaho",none,Metro
+16017,"Bonner County, Idaho",none,Nonmetro
+16019,"Bonneville County, Idaho",none,Metro
+16021,"Boundary County, Idaho",none,Nonmetro
+16023,"Butte County, Idaho",none,Metro
+16025,"Camas County, Idaho",none,Nonmetro
+16027,"Canyon County, Idaho",none,Metro
+16029,"Caribou County, Idaho",none,Nonmetro
+16031,"Cassia County, Idaho",none,Nonmetro
+16033,"Clark County, Idaho",none,Nonmetro
+16035,"Clearwater County, Idaho",none,Nonmetro
+16037,"Custer County, Idaho",none,Nonmetro
+16039,"Elmore County, Idaho",none,Nonmetro
+16041,"Franklin County, Idaho",none,Metro
+16043,"Fremont County, Idaho",none,Nonmetro
+16045,"Gem County, Idaho",none,Metro
+16047,"Gooding County, Idaho",none,Nonmetro
+16049,"Idaho County, Idaho",none,Nonmetro
+16051,"Jefferson County, Idaho",none,Metro
+16053,"Jerome County, Idaho",none,Nonmetro
+16055,"Kootenai County, Idaho",none,Metro
+16057,"Latah County, Idaho",none,Nonmetro
+16059,"Lemhi County, Idaho",none,Nonmetro
+16061,"Lewis County, Idaho",none,Nonmetro
+16063,"Lincoln County, Idaho",none,Nonmetro
+16065,"Madison County, Idaho",both,Nonmetro
+16067,"Minidoka County, Idaho",none,Nonmetro
+16069,"Nez Perce County, Idaho",none,Metro
+16071,"Oneida County, Idaho",none,Nonmetro
+16073,"Owyhee County, Idaho",none,Metro
+16075,"Payette County, Idaho",none,Nonmetro
+16077,"Power County, Idaho",none,Nonmetro
+16079,"Shoshone County, Idaho",none,Nonmetro
+16081,"Teton County, Idaho",none,Nonmetro
+16083,"Twin Falls County, Idaho",none,Nonmetro
+16085,"Valley County, Idaho",none,Nonmetro
+16087,"Washington County, Idaho",none,Nonmetro
+17001,"Adams County, Illinois",none,Nonmetro
+17003,"Alexander County, Illinois",both,Metro
+17005,"Bond County, Illinois",none,Metro
+17007,"Boone County, Illinois",none,Metro
+17009,"Brown County, Illinois",none,Nonmetro
+17011,"Bureau County, Illinois",none,Nonmetro
+17013,"Calhoun County, Illinois",none,Metro
+17015,"Carroll County, Illinois",none,Nonmetro
+17017,"Cass County, Illinois",none,Nonmetro
+17019,"Champaign County, Illinois",high,Metro
+17021,"Christian County, Illinois",none,Nonmetro
+17023,"Clark County, Illinois",none,Nonmetro
+17025,"Clay County, Illinois",none,Nonmetro
+17027,"Clinton County, Illinois",none,Metro
+17029,"Coles County, Illinois",high,Nonmetro
+17031,"Cook County, Illinois",none,Metro
+17033,"Crawford County, Illinois",none,Nonmetro
+17035,"Cumberland County, Illinois",none,Nonmetro
+17037,"DeKalb County, Illinois",none,Metro
+17039,"De Witt County, Illinois",none,Metro
+17041,"Douglas County, Illinois",none,Nonmetro
+17043,"DuPage County, Illinois",none,Metro
+17045,"Edgar County, Illinois",none,Nonmetro
+17047,"Edwards County, Illinois",none,Nonmetro
+17049,"Effingham County, Illinois",none,Nonmetro
+17051,"Fayette County, Illinois",none,Nonmetro
+17053,"Ford County, Illinois",none,Metro
+17055,"Franklin County, Illinois",none,Nonmetro
+17057,"Fulton County, Illinois",none,Nonmetro
+17059,"Gallatin County, Illinois",high,Nonmetro
+17061,"Greene County, Illinois",none,Nonmetro
+17063,"Grundy County, Illinois",none,Metro
+17065,"Hamilton County, Illinois",none,Nonmetro
+17067,"Hancock County, Illinois",none,Nonmetro
+17069,"Hardin County, Illinois",none,Nonmetro
+17071,"Henderson County, Illinois",none,Nonmetro
+17073,"Henry County, Illinois",none,Metro
+17075,"Iroquois County, Illinois",none,Nonmetro
+17077,"Jackson County, Illinois",both,Metro
+17079,"Jasper County, Illinois",none,Nonmetro
+17081,"Jefferson County, Illinois",none,Nonmetro
+17083,"Jersey County, Illinois",none,Metro
+17085,"Jo Daviess County, Illinois",none,Nonmetro
+17087,"Johnson County, Illinois",none,Nonmetro
+17089,"Kane County, Illinois",none,Metro
+17091,"Kankakee County, Illinois",none,Metro
+17093,"Kendall County, Illinois",none,Metro
+17095,"Knox County, Illinois",none,Nonmetro
+17097,"Lake County, Illinois",none,Metro
+17099,"LaSalle County, Illinois",none,Nonmetro
+17101,"Lawrence County, Illinois",none,Nonmetro
+17103,"Lee County, Illinois",none,Nonmetro
+17105,"Livingston County, Illinois",none,Nonmetro
+17107,"Logan County, Illinois",none,Nonmetro
+17109,"McDonough County, Illinois",high,Nonmetro
+17111,"McHenry County, Illinois",none,Metro
+17113,"McLean County, Illinois",none,Metro
+17115,"Macon County, Illinois",none,Metro
+17117,"Macoupin County, Illinois",none,Metro
+17119,"Madison County, Illinois",none,Metro
+17121,"Marion County, Illinois",none,Nonmetro
+17123,"Marshall County, Illinois",none,Metro
+17125,"Mason County, Illinois",none,Nonmetro
+17127,"Massac County, Illinois",none,Nonmetro
+17129,"Menard County, Illinois",none,Metro
+17131,"Mercer County, Illinois",none,Metro
+17133,"Monroe County, Illinois",none,Metro
+17135,"Montgomery County, Illinois",none,Nonmetro
+17137,"Morgan County, Illinois",none,Nonmetro
+17139,"Moultrie County, Illinois",none,Nonmetro
+17141,"Ogle County, Illinois",none,Nonmetro
+17143,"Peoria County, Illinois",none,Metro
+17145,"Perry County, Illinois",none,Nonmetro
+17147,"Piatt County, Illinois",none,Metro
+17149,"Pike County, Illinois",none,Nonmetro
+17151,"Pope County, Illinois",none,Nonmetro
+17153,"Pulaski County, Illinois",both,Nonmetro
+17155,"Putnam County, Illinois",none,Nonmetro
+17157,"Randolph County, Illinois",none,Nonmetro
+17159,"Richland County, Illinois",none,Nonmetro
+17161,"Rock Island County, Illinois",none,Metro
+17163,"St. Clair County, Illinois",none,Metro
+17165,"Saline County, Illinois",high,Nonmetro
+17167,"Sangamon County, Illinois",none,Metro
+17169,"Schuyler County, Illinois",none,Nonmetro
+17171,"Scott County, Illinois",none,Nonmetro
+17173,"Shelby County, Illinois",none,Nonmetro
+17175,"Stark County, Illinois",none,Metro
+17177,"Stephenson County, Illinois",none,Nonmetro
+17179,"Tazewell County, Illinois",none,Metro
+17181,"Union County, Illinois",none,Nonmetro
+17183,"Vermilion County, Illinois",none,Metro
+17185,"Wabash County, Illinois",none,Nonmetro
+17187,"Warren County, Illinois",none,Nonmetro
+17189,"Washington County, Illinois",none,Nonmetro
+17191,"Wayne County, Illinois",none,Nonmetro
+17193,"White County, Illinois",none,Nonmetro
+17195,"Whiteside County, Illinois",none,Nonmetro
+17197,"Will County, Illinois",none,Metro
+17199,"Williamson County, Illinois",none,Metro
+17201,"Winnebago County, Illinois",none,Metro
+17203,"Woodford County, Illinois",none,Metro
+18001,"Adams County, Indiana",none,Nonmetro
+18003,"Allen County, Indiana",none,Metro
+18005,"Bartholomew County, Indiana",none,Metro
+18007,"Benton County, Indiana",none,Metro
+18009,"Blackford County, Indiana",none,Nonmetro
+18011,"Boone County, Indiana",none,Metro
+18013,"Brown County, Indiana",none,Metro
+18015,"Carroll County, Indiana",none,Metro
+18017,"Cass County, Indiana",none,Nonmetro
+18019,"Clark County, Indiana",none,Metro
+18021,"Clay County, Indiana",none,Metro
+18023,"Clinton County, Indiana",none,Nonmetro
+18025,"Crawford County, Indiana",none,Nonmetro
+18027,"Daviess County, Indiana",none,Nonmetro
+18029,"Dearborn County, Indiana",none,Metro
+18031,"Decatur County, Indiana",none,Nonmetro
+18033,"DeKalb County, Indiana",none,Nonmetro
+18035,"Delaware County, Indiana",high,Metro
+18037,"Dubois County, Indiana",none,Nonmetro
+18039,"Elkhart County, Indiana",none,Metro
+18041,"Fayette County, Indiana",none,Nonmetro
+18043,"Floyd County, Indiana",none,Metro
+18045,"Fountain County, Indiana",none,Nonmetro
+18047,"Franklin County, Indiana",none,Nonmetro
+18049,"Fulton County, Indiana",none,Nonmetro
+18051,"Gibson County, Indiana",none,Nonmetro
+18053,"Grant County, Indiana",none,Nonmetro
+18055,"Greene County, Indiana",none,Nonmetro
+18057,"Hamilton County, Indiana",none,Metro
+18059,"Hancock County, Indiana",none,Metro
+18061,"Harrison County, Indiana",none,Metro
+18063,"Hendricks County, Indiana",none,Metro
+18065,"Henry County, Indiana",none,Nonmetro
+18067,"Howard County, Indiana",none,Metro
+18069,"Huntington County, Indiana",none,Nonmetro
+18071,"Jackson County, Indiana",none,Nonmetro
+18073,"Jasper County, Indiana",none,Metro
+18075,"Jay County, Indiana",none,Nonmetro
+18077,"Jefferson County, Indiana",none,Nonmetro
+18079,"Jennings County, Indiana",none,Nonmetro
+18081,"Johnson County, Indiana",none,Metro
+18083,"Knox County, Indiana",none,Nonmetro
+18085,"Kosciusko County, Indiana",none,Nonmetro
+18087,"LaGrange County, Indiana",none,Nonmetro
+18089,"Lake County, Indiana",none,Metro
+18091,"LaPorte County, Indiana",none,Metro
+18093,"Lawrence County, Indiana",none,Nonmetro
+18095,"Madison County, Indiana",none,Metro
+18097,"Marion County, Indiana",none,Metro
+18099,"Marshall County, Indiana",none,Nonmetro
+18101,"Martin County, Indiana",none,Nonmetro
+18103,"Miami County, Indiana",none,Nonmetro
+18105,"Monroe County, Indiana",high,Metro
+18107,"Montgomery County, Indiana",none,Nonmetro
+18109,"Morgan County, Indiana",none,Metro
+18111,"Newton County, Indiana",none,Metro
+18113,"Noble County, Indiana",none,Nonmetro
+18115,"Ohio County, Indiana",none,Metro
+18117,"Orange County, Indiana",none,Nonmetro
+18119,"Owen County, Indiana",none,Metro
+18121,"Parke County, Indiana",none,Nonmetro
+18123,"Perry County, Indiana",none,Nonmetro
+18125,"Pike County, Indiana",none,Nonmetro
+18127,"Porter County, Indiana",none,Metro
+18129,"Posey County, Indiana",none,Metro
+18131,"Pulaski County, Indiana",none,Nonmetro
+18133,"Putnam County, Indiana",none,Metro
+18135,"Randolph County, Indiana",none,Nonmetro
+18137,"Ripley County, Indiana",none,Nonmetro
+18139,"Rush County, Indiana",none,Nonmetro
+18141,"St. Joseph County, Indiana",none,Metro
+18143,"Scott County, Indiana",none,Metro
+18145,"Shelby County, Indiana",none,Metro
+18147,"Spencer County, Indiana",none,Nonmetro
+18149,"Starke County, Indiana",none,Nonmetro
+18151,"Steuben County, Indiana",none,Nonmetro
+18153,"Sullivan County, Indiana",none,Metro
+18155,"Switzerland County, Indiana",none,Nonmetro
+18157,"Tippecanoe County, Indiana",none,Metro
+18159,"Tipton County, Indiana",none,Nonmetro
+18161,"Union County, Indiana",none,Metro
+18163,"Vanderburgh County, Indiana",none,Metro
+18165,"Vermillion County, Indiana",none,Metro
+18167,"Vigo County, Indiana",none,Metro
+18169,"Wabash County, Indiana",none,Nonmetro
+18171,"Warren County, Indiana",none,Nonmetro
+18173,"Warrick County, Indiana",none,Metro
+18175,"Washington County, Indiana",none,Metro
+18177,"Wayne County, Indiana",none,Nonmetro
+18179,"Wells County, Indiana",none,Metro
+18181,"White County, Indiana",none,Nonmetro
+18183,"Whitley County, Indiana",none,Metro
+19001,"Adair County, Iowa",none,Nonmetro
+19003,"Adams County, Iowa",none,Nonmetro
+19005,"Allamakee County, Iowa",none,Nonmetro
+19007,"Appanoose County, Iowa",none,Nonmetro
+19009,"Audubon County, Iowa",none,Nonmetro
+19011,"Benton County, Iowa",none,Metro
+19013,"Black Hawk County, Iowa",none,Metro
+19015,"Boone County, Iowa",none,Nonmetro
+19017,"Bremer County, Iowa",none,Metro
+19019,"Buchanan County, Iowa",none,Nonmetro
+19021,"Buena Vista County, Iowa",none,Nonmetro
+19023,"Butler County, Iowa",none,Nonmetro
+19025,"Calhoun County, Iowa",none,Nonmetro
+19027,"Carroll County, Iowa",none,Nonmetro
+19029,"Cass County, Iowa",none,Nonmetro
+19031,"Cedar County, Iowa",none,Nonmetro
+19033,"Cerro Gordo County, Iowa",none,Nonmetro
+19035,"Cherokee County, Iowa",none,Nonmetro
+19037,"Chickasaw County, Iowa",none,Nonmetro
+19039,"Clarke County, Iowa",none,Nonmetro
+19041,"Clay County, Iowa",none,Nonmetro
+19043,"Clayton County, Iowa",none,Nonmetro
+19045,"Clinton County, Iowa",none,Nonmetro
+19047,"Crawford County, Iowa",none,Nonmetro
+19049,"Dallas County, Iowa",none,Metro
+19051,"Davis County, Iowa",none,Nonmetro
+19053,"Decatur County, Iowa",none,Nonmetro
+19055,"Delaware County, Iowa",none,Nonmetro
+19057,"Des Moines County, Iowa",none,Nonmetro
+19059,"Dickinson County, Iowa",none,Nonmetro
+19061,"Dubuque County, Iowa",none,Metro
+19063,"Emmet County, Iowa",none,Nonmetro
+19065,"Fayette County, Iowa",none,Nonmetro
+19067,"Floyd County, Iowa",none,Nonmetro
+19069,"Franklin County, Iowa",none,Nonmetro
+19071,"Fremont County, Iowa",none,Nonmetro
+19073,"Greene County, Iowa",none,Nonmetro
+19075,"Grundy County, Iowa",none,Metro
+19077,"Guthrie County, Iowa",none,Metro
+19079,"Hamilton County, Iowa",none,Nonmetro
+19081,"Hancock County, Iowa",none,Nonmetro
+19083,"Hardin County, Iowa",none,Nonmetro
+19085,"Harrison County, Iowa",none,Metro
+19087,"Henry County, Iowa",none,Nonmetro
+19089,"Howard County, Iowa",none,Nonmetro
+19091,"Humboldt County, Iowa",none,Nonmetro
+19093,"Ida County, Iowa",none,Nonmetro
+19095,"Iowa County, Iowa",none,Nonmetro
+19097,"Jackson County, Iowa",none,Nonmetro
+19099,"Jasper County, Iowa",none,Nonmetro
+19101,"Jefferson County, Iowa",none,Nonmetro
+19103,"Johnson County, Iowa",none,Metro
+19105,"Jones County, Iowa",none,Metro
+19107,"Keokuk County, Iowa",none,Nonmetro
+19109,"Kossuth County, Iowa",none,Nonmetro
+19111,"Lee County, Iowa",none,Nonmetro
+19113,"Linn County, Iowa",none,Metro
+19115,"Louisa County, Iowa",none,Nonmetro
+19117,"Lucas County, Iowa",none,Nonmetro
+19119,"Lyon County, Iowa",none,Nonmetro
+19121,"Madison County, Iowa",none,Metro
+19123,"Mahaska County, Iowa",none,Nonmetro
+19125,"Marion County, Iowa",none,Nonmetro
+19127,"Marshall County, Iowa",none,Nonmetro
+19129,"Mills County, Iowa",none,Metro
+19131,"Mitchell County, Iowa",none,Nonmetro
+19133,"Monona County, Iowa",none,Nonmetro
+19135,"Monroe County, Iowa",none,Nonmetro
+19137,"Montgomery County, Iowa",none,Nonmetro
+19139,"Muscatine County, Iowa",none,Nonmetro
+19141,"O'Brien County, Iowa",none,Nonmetro
+19143,"Osceola County, Iowa",none,Nonmetro
+19145,"Page County, Iowa",none,Nonmetro
+19147,"Palo Alto County, Iowa",none,Nonmetro
+19149,"Plymouth County, Iowa",none,Metro
+19151,"Pocahontas County, Iowa",none,Nonmetro
+19153,"Polk County, Iowa",none,Metro
+19155,"Pottawattamie County, Iowa",none,Metro
+19157,"Poweshiek County, Iowa",none,Nonmetro
+19159,"Ringgold County, Iowa",none,Nonmetro
+19161,"Sac County, Iowa",none,Nonmetro
+19163,"Scott County, Iowa",none,Metro
+19165,"Shelby County, Iowa",none,Nonmetro
+19167,"Sioux County, Iowa",none,Nonmetro
+19169,"Story County, Iowa",high,Metro
+19171,"Tama County, Iowa",none,Nonmetro
+19173,"Taylor County, Iowa",none,Nonmetro
+19175,"Union County, Iowa",none,Nonmetro
+19177,"Van Buren County, Iowa",none,Nonmetro
+19179,"Wapello County, Iowa",none,Nonmetro
+19181,"Warren County, Iowa",none,Metro
+19183,"Washington County, Iowa",none,Metro
+19185,"Wayne County, Iowa",none,Nonmetro
+19187,"Webster County, Iowa",none,Nonmetro
+19189,"Winnebago County, Iowa",none,Nonmetro
+19191,"Winneshiek County, Iowa",none,Nonmetro
+19193,"Woodbury County, Iowa",none,Metro
+19195,"Worth County, Iowa",none,Nonmetro
+19197,"Wright County, Iowa",none,Nonmetro
+20001,"Allen County, Kansas",none,Nonmetro
+20003,"Anderson County, Kansas",none,Nonmetro
+20005,"Atchison County, Kansas",none,Nonmetro
+20007,"Barber County, Kansas",none,Nonmetro
+20009,"Barton County, Kansas",none,Nonmetro
+20011,"Bourbon County, Kansas",none,Nonmetro
+20013,"Brown County, Kansas",none,Nonmetro
+20015,"Butler County, Kansas",none,Metro
+20017,"Chase County, Kansas",none,Nonmetro
+20019,"Chautauqua County, Kansas",none,Nonmetro
+20021,"Cherokee County, Kansas",none,Nonmetro
+20023,"Cheyenne County, Kansas",none,Nonmetro
+20025,"Clark County, Kansas",none,Nonmetro
+20027,"Clay County, Kansas",none,Nonmetro
+20029,"Cloud County, Kansas",none,Nonmetro
+20031,"Coffey County, Kansas",none,Nonmetro
+20033,"Comanche County, Kansas",none,Nonmetro
+20035,"Cowley County, Kansas",none,Nonmetro
+20037,"Crawford County, Kansas",high,Nonmetro
+20039,"Decatur County, Kansas",none,Nonmetro
+20041,"Dickinson County, Kansas",none,Nonmetro
+20043,"Doniphan County, Kansas",none,Metro
+20045,"Douglas County, Kansas",none,Metro
+20047,"Edwards County, Kansas",none,Nonmetro
+20049,"Elk County, Kansas",none,Nonmetro
+20051,"Ellis County, Kansas",none,Nonmetro
+20053,"Ellsworth County, Kansas",none,Nonmetro
+20055,"Finney County, Kansas",none,Nonmetro
+20057,"Ford County, Kansas",none,Nonmetro
+20059,"Franklin County, Kansas",none,Nonmetro
+20061,"Geary County, Kansas",none,Nonmetro
+20063,"Gove County, Kansas",none,Nonmetro
+20065,"Graham County, Kansas",none,Nonmetro
+20067,"Grant County, Kansas",none,Nonmetro
+20069,"Gray County, Kansas",none,Nonmetro
+20071,"Greeley County, Kansas",none,Nonmetro
+20073,"Greenwood County, Kansas",none,Nonmetro
+20075,"Hamilton County, Kansas",none,Nonmetro
+20077,"Harper County, Kansas",none,Nonmetro
+20079,"Harvey County, Kansas",none,Metro
+20081,"Haskell County, Kansas",none,Nonmetro
+20083,"Hodgeman County, Kansas",none,Nonmetro
+20085,"Jackson County, Kansas",none,Metro
+20087,"Jefferson County, Kansas",none,Metro
+20089,"Jewell County, Kansas",none,Nonmetro
+20091,"Johnson County, Kansas",none,Metro
+20093,"Kearny County, Kansas",none,Nonmetro
+20095,"Kingman County, Kansas",none,Metro
+20097,"Kiowa County, Kansas",none,Nonmetro
+20099,"Labette County, Kansas",none,Nonmetro
+20101,"Lane County, Kansas",none,Nonmetro
+20103,"Leavenworth County, Kansas",none,Metro
+20105,"Lincoln County, Kansas",none,Nonmetro
+20107,"Linn County, Kansas",none,Metro
+20109,"Logan County, Kansas",none,Nonmetro
+20111,"Lyon County, Kansas",none,Nonmetro
+20113,"McPherson County, Kansas",none,Nonmetro
+20115,"Marion County, Kansas",none,Nonmetro
+20117,"Marshall County, Kansas",none,Nonmetro
+20119,"Meade County, Kansas",none,Nonmetro
+20121,"Miami County, Kansas",none,Metro
+20123,"Mitchell County, Kansas",none,Nonmetro
+20125,"Montgomery County, Kansas",none,Nonmetro
+20127,"Morris County, Kansas",none,Nonmetro
+20129,"Morton County, Kansas",none,Nonmetro
+20131,"Nemaha County, Kansas",none,Nonmetro
+20133,"Neosho County, Kansas",none,Nonmetro
+20135,"Ness County, Kansas",none,Nonmetro
+20137,"Norton County, Kansas",none,Nonmetro
+20139,"Osage County, Kansas",none,Metro
+20141,"Osborne County, Kansas",none,Nonmetro
+20143,"Ottawa County, Kansas",none,Nonmetro
+20145,"Pawnee County, Kansas",none,Nonmetro
+20147,"Phillips County, Kansas",none,Nonmetro
+20149,"Pottawatomie County, Kansas",none,Metro
+20151,"Pratt County, Kansas",none,Nonmetro
+20153,"Rawlins County, Kansas",none,Nonmetro
+20155,"Reno County, Kansas",none,Nonmetro
+20157,"Republic County, Kansas",none,Nonmetro
+20159,"Rice County, Kansas",none,Nonmetro
+20161,"Riley County, Kansas",high,Metro
+20163,"Rooks County, Kansas",none,Nonmetro
+20165,"Rush County, Kansas",none,Nonmetro
+20167,"Russell County, Kansas",none,Nonmetro
+20169,"Saline County, Kansas",none,Nonmetro
+20171,"Scott County, Kansas",none,Nonmetro
+20173,"Sedgwick County, Kansas",none,Metro
+20175,"Seward County, Kansas",none,Nonmetro
+20177,"Shawnee County, Kansas",none,Metro
+20179,"Sheridan County, Kansas",none,Nonmetro
+20181,"Sherman County, Kansas",none,Nonmetro
+20183,"Smith County, Kansas",none,Nonmetro
+20185,"Stafford County, Kansas",none,Nonmetro
+20187,"Stanton County, Kansas",none,Nonmetro
+20189,"Stevens County, Kansas",high,Nonmetro
+20191,"Sumner County, Kansas",none,Metro
+20193,"Thomas County, Kansas",none,Nonmetro
+20195,"Trego County, Kansas",none,Nonmetro
+20197,"Wabaunsee County, Kansas",none,Metro
+20199,"Wallace County, Kansas",none,Nonmetro
+20201,"Washington County, Kansas",none,Nonmetro
+20203,"Wichita County, Kansas",none,Nonmetro
+20205,"Wilson County, Kansas",none,Nonmetro
+20207,"Woodson County, Kansas",none,Nonmetro
+20209,"Wyandotte County, Kansas",none,Metro
+21001,"Adair County, Kentucky",high,Nonmetro
+21003,"Allen County, Kentucky",none,Metro
+21005,"Anderson County, Kentucky",none,Nonmetro
+21007,"Ballard County, Kentucky",none,Nonmetro
+21009,"Barren County, Kentucky",high,Nonmetro
+21011,"Bath County, Kentucky",both,Nonmetro
+21013,"Bell County, Kentucky",both,Nonmetro
+21015,"Boone County, Kentucky",none,Metro
+21017,"Bourbon County, Kentucky",none,Metro
+21019,"Boyd County, Kentucky",none,Metro
+21021,"Boyle County, Kentucky",none,Nonmetro
+21023,"Bracken County, Kentucky",none,Metro
+21025,"Breathitt County, Kentucky",both,Nonmetro
+21027,"Breckinridge County, Kentucky",none,Nonmetro
+21029,"Bullitt County, Kentucky",none,Metro
+21031,"Butler County, Kentucky",none,Metro
+21033,"Caldwell County, Kentucky",none,Nonmetro
+21035,"Calloway County, Kentucky",high,Nonmetro
+21037,"Campbell County, Kentucky",none,Metro
+21039,"Carlisle County, Kentucky",none,Nonmetro
+21041,"Carroll County, Kentucky",high,Nonmetro
+21043,"Carter County, Kentucky",high,Nonmetro
+21045,"Casey County, Kentucky",both,Nonmetro
+21047,"Christian County, Kentucky",none,Metro
+21049,"Clark County, Kentucky",none,Metro
+21051,"Clay County, Kentucky",both,Nonmetro
+21053,"Clinton County, Kentucky",both,Nonmetro
+21055,"Crittenden County, Kentucky",none,Nonmetro
+21057,"Cumberland County, Kentucky",both,Nonmetro
+21059,"Daviess County, Kentucky",none,Metro
+21061,"Edmonson County, Kentucky",none,Metro
+21063,"Elliott County, Kentucky",both,Nonmetro
+21065,"Estill County, Kentucky",both,Nonmetro
+21067,"Fayette County, Kentucky",none,Metro
+21069,"Fleming County, Kentucky",none,Nonmetro
+21071,"Floyd County, Kentucky",both,Nonmetro
+21073,"Franklin County, Kentucky",none,Nonmetro
+21075,"Fulton County, Kentucky",both,Nonmetro
+21077,"Gallatin County, Kentucky",none,Metro
+21079,"Garrard County, Kentucky",none,Nonmetro
+21081,"Grant County, Kentucky",none,Metro
+21083,"Graves County, Kentucky",none,Nonmetro
+21085,"Grayson County, Kentucky",high,Nonmetro
+21087,"Green County, Kentucky",none,Nonmetro
+21089,"Greenup County, Kentucky",none,Metro
+21091,"Hancock County, Kentucky",none,Metro
+21093,"Hardin County, Kentucky",none,Metro
+21095,"Harlan County, Kentucky",both,Nonmetro
+21097,"Harrison County, Kentucky",none,Nonmetro
+21099,"Hart County, Kentucky",both,Nonmetro
+21101,"Henderson County, Kentucky",none,Metro
+21103,"Henry County, Kentucky",none,Metro
+21105,"Hickman County, Kentucky",none,Nonmetro
+21107,"Hopkins County, Kentucky",none,Nonmetro
+21109,"Jackson County, Kentucky",both,Nonmetro
+21111,"Jefferson County, Kentucky",none,Metro
+21113,"Jessamine County, Kentucky",none,Metro
+21115,"Johnson County, Kentucky",both,Nonmetro
+21117,"Kenton County, Kentucky",none,Metro
+21119,"Knott County, Kentucky",both,Nonmetro
+21121,"Knox County, Kentucky",both,Nonmetro
+21123,"Larue County, Kentucky",none,Metro
+21125,"Laurel County, Kentucky",both,Nonmetro
+21127,"Lawrence County, Kentucky",both,Nonmetro
+21129,"Lee County, Kentucky",both,Nonmetro
+21131,"Leslie County, Kentucky",both,Nonmetro
+21133,"Letcher County, Kentucky",both,Nonmetro
+21135,"Lewis County, Kentucky",both,Nonmetro
+21137,"Lincoln County, Kentucky",both,Nonmetro
+21139,"Livingston County, Kentucky",none,Nonmetro
+21141,"Logan County, Kentucky",none,Nonmetro
+21143,"Lyon County, Kentucky",none,Nonmetro
+21145,"McCracken County, Kentucky",none,Nonmetro
+21147,"McCreary County, Kentucky",both,Nonmetro
+21149,"McLean County, Kentucky",none,Metro
+21151,"Madison County, Kentucky",none,Nonmetro
+21153,"Magoffin County, Kentucky",both,Nonmetro
+21155,"Marion County, Kentucky",high,Nonmetro
+21157,"Marshall County, Kentucky",none,Nonmetro
+21159,"Martin County, Kentucky",persistent,Nonmetro
+21161,"Mason County, Kentucky",none,Nonmetro
+21163,"Meade County, Kentucky",none,Metro
+21165,"Menifee County, Kentucky",both,Nonmetro
+21167,"Mercer County, Kentucky",none,Nonmetro
+21169,"Metcalfe County, Kentucky",high,Nonmetro
+21171,"Monroe County, Kentucky",both,Nonmetro
+21173,"Montgomery County, Kentucky",none,Nonmetro
+21175,"Morgan County, Kentucky",both,Nonmetro
+21177,"Muhlenberg County, Kentucky",none,Nonmetro
+21179,"Nelson County, Kentucky",none,Nonmetro
+21181,"Nicholas County, Kentucky",high,Nonmetro
+21183,"Ohio County, Kentucky",none,Nonmetro
+21185,"Oldham County, Kentucky",none,Metro
+21187,"Owen County, Kentucky",none,Nonmetro
+21189,"Owsley County, Kentucky",both,Nonmetro
+21191,"Pendleton County, Kentucky",none,Metro
+21193,"Perry County, Kentucky",both,Nonmetro
+21195,"Pike County, Kentucky",high,Nonmetro
+21197,"Powell County, Kentucky",both,Nonmetro
+21199,"Pulaski County, Kentucky",high,Nonmetro
+21201,"Robertson County, Kentucky",both,Nonmetro
+21203,"Rockcastle County, Kentucky",persistent,Nonmetro
+21205,"Rowan County, Kentucky",both,Nonmetro
+21207,"Russell County, Kentucky",both,Nonmetro
+21209,"Scott County, Kentucky",none,Metro
+21211,"Shelby County, Kentucky",none,Metro
+21213,"Simpson County, Kentucky",none,Nonmetro
+21215,"Spencer County, Kentucky",none,Metro
+21217,"Taylor County, Kentucky",none,Nonmetro
+21219,"Todd County, Kentucky",none,Nonmetro
+21221,"Trigg County, Kentucky",none,Metro
+21223,"Trimble County, Kentucky",none,Metro
+21225,"Union County, Kentucky",high,Nonmetro
+21227,"Warren County, Kentucky",none,Metro
+21229,"Washington County, Kentucky",none,Nonmetro
+21231,"Wayne County, Kentucky",both,Nonmetro
+21233,"Webster County, Kentucky",high,Nonmetro
+21235,"Whitley County, Kentucky",both,Nonmetro
+21237,"Wolfe County, Kentucky",both,Nonmetro
+21239,"Woodford County, Kentucky",none,Metro
+22001,"Acadia Parish, Louisiana",both,Metro
+22003,"Allen Parish, Louisiana",none,Nonmetro
+22005,"Ascension Parish, Louisiana",none,Metro
+22007,"Assumption Parish, Louisiana",none,Nonmetro
+22009,"Avoyelles Parish, Louisiana",both,Nonmetro
+22011,"Beauregard Parish, Louisiana",none,Nonmetro
+22013,"Bienville Parish, Louisiana",both,Nonmetro
+22015,"Bossier Parish, Louisiana",none,Metro
+22017,"Caddo Parish, Louisiana",high,Metro
+22019,"Calcasieu Parish, Louisiana",none,Metro
+22021,"Caldwell Parish, Louisiana",high,Nonmetro
+22023,"Cameron Parish, Louisiana",none,Metro
+22025,"Catahoula Parish, Louisiana",both,Nonmetro
+22027,"Claiborne Parish, Louisiana",both,Nonmetro
+22029,"Concordia Parish, Louisiana",both,Nonmetro
+22031,"De Soto Parish, Louisiana",high,Metro
+22033,"East Baton Rouge Parish, Louisiana",none,Metro
+22035,"East Carroll Parish, Louisiana",both,Nonmetro
+22037,"East Feliciana Parish, Louisiana",persistent,Metro
+22039,"Evangeline Parish, Louisiana",both,Nonmetro
+22041,"Franklin Parish, Louisiana",both,Nonmetro
+22043,"Grant Parish, Louisiana",none,Metro
+22045,"Iberia Parish, Louisiana",high,Metro
+22047,"Iberville Parish, Louisiana",none,Metro
+22049,"Jackson Parish, Louisiana",high,Nonmetro
+22051,"Jefferson Parish, Louisiana",none,Metro
+22053,"Jefferson Davis Parish, Louisiana",none,Nonmetro
+22055,"Lafayette Parish, Louisiana",none,Metro
+22057,"Lafourche Parish, Louisiana",none,Metro
+22059,"LaSalle Parish, Louisiana",high,Nonmetro
+22061,"Lincoln Parish, Louisiana",both,Nonmetro
+22063,"Livingston Parish, Louisiana",none,Metro
+22065,"Madison Parish, Louisiana",both,Nonmetro
+22067,"Morehouse Parish, Louisiana",both,Nonmetro
+22069,"Natchitoches Parish, Louisiana",both,Nonmetro
+22071,"Orleans Parish, Louisiana",both,Metro
+22073,"Ouachita Parish, Louisiana",both,Metro
+22075,"Plaquemines Parish, Louisiana",none,Metro
+22077,"Pointe Coupee Parish, Louisiana",high,Metro
+22079,"Rapides Parish, Louisiana",none,Metro
+22081,"Red River Parish, Louisiana",both,Nonmetro
+22083,"Richland Parish, Louisiana",both,Nonmetro
+22085,"Sabine Parish, Louisiana",persistent,Nonmetro
+22087,"St. Bernard Parish, Louisiana",high,Metro
+22089,"St. Charles Parish, Louisiana",none,Metro
+22091,"St. Helena Parish, Louisiana",persistent,Metro
+22093,"St. James Parish, Louisiana",none,Metro
+22095,"St. John the Baptist Parish, Louisiana",none,Metro
+22097,"St. Landry Parish, Louisiana",both,Nonmetro
+22099,"St. Martin Parish, Louisiana",none,Metro
+22101,"St. Mary Parish, Louisiana",none,Nonmetro
+22103,"St. Tammany Parish, Louisiana",none,Metro
+22105,"Tangipahoa Parish, Louisiana",both,Metro
+22107,"Tensas Parish, Louisiana",both,Nonmetro
+22109,"Terrebonne Parish, Louisiana",high,Metro
+22111,"Union Parish, Louisiana",none,Metro
+22113,"Vermilion Parish, Louisiana",none,Metro
+22115,"Vernon Parish, Louisiana",none,Nonmetro
+22117,"Washington Parish, Louisiana",both,Nonmetro
+22119,"Webster Parish, Louisiana",high,Metro
+22121,"West Baton Rouge Parish, Louisiana",none,Metro
+22123,"West Carroll Parish, Louisiana",both,Nonmetro
+22125,"West Feliciana Parish, Louisiana",none,Metro
+22127,"Winn Parish, Louisiana",persistent,Nonmetro
+23001,"Androscoggin County, Maine",none,Metro
+23003,"Aroostook County, Maine",none,Nonmetro
+23005,"Cumberland County, Maine",none,Metro
+23007,"Franklin County, Maine",none,Nonmetro
+23009,"Hancock County, Maine",none,Nonmetro
+23011,"Kennebec County, Maine",none,Nonmetro
+23013,"Knox County, Maine",none,Nonmetro
+23015,"Lincoln County, Maine",none,Nonmetro
+23017,"Oxford County, Maine",none,Nonmetro
+23019,"Penobscot County, Maine",none,Metro
+23021,"Piscataquis County, Maine",none,Nonmetro
+23023,"Sagadahoc County, Maine",none,Metro
+23025,"Somerset County, Maine",high,Nonmetro
+23027,"Waldo County, Maine",none,Nonmetro
+23029,"Washington County, Maine",none,Nonmetro
+23031,"York County, Maine",none,Metro
+24001,"Allegany County, Maryland",none,Metro
+24003,"Anne Arundel County, Maryland",none,Metro
+24005,"Baltimore County, Maryland",none,Metro
+24009,"Calvert County, Maryland",none,Metro
+24011,"Caroline County, Maryland",none,Nonmetro
+24013,"Carroll County, Maryland",none,Metro
+24015,"Cecil County, Maryland",none,Metro
+24017,"Charles County, Maryland",none,Metro
+24019,"Dorchester County, Maryland",none,Nonmetro
+24021,"Frederick County, Maryland",none,Metro
+24023,"Garrett County, Maryland",none,Nonmetro
+24025,"Harford County, Maryland",none,Metro
+24027,"Howard County, Maryland",none,Metro
+24029,"Kent County, Maryland",none,Nonmetro
+24031,"Montgomery County, Maryland",none,Metro
+24033,"Prince George's County, Maryland",none,Metro
+24035,"Queen Anne's County, Maryland",none,Metro
+24037,"St. Mary's County, Maryland",none,Metro
+24039,"Somerset County, Maryland",high,Metro
+24041,"Talbot County, Maryland",none,Nonmetro
+24043,"Washington County, Maryland",none,Metro
+24045,"Wicomico County, Maryland",none,Metro
+24047,"Worcester County, Maryland",none,Metro
+24510,"Baltimore city, Maryland",both,Metro
+25001,"Barnstable County, Massachusetts",none,Metro
+25003,"Berkshire County, Massachusetts",none,Metro
+25005,"Bristol County, Massachusetts",none,Metro
+25007,"Dukes County, Massachusetts",none,Nonmetro
+25009,"Essex County, Massachusetts",none,Metro
+25011,"Franklin County, Massachusetts",none,Nonmetro
+25013,"Hampden County, Massachusetts",none,Metro
+25015,"Hampshire County, Massachusetts",none,Metro
+25017,"Middlesex County, Massachusetts",none,Metro
+25019,"Nantucket County, Massachusetts",none,Nonmetro
+25021,"Norfolk County, Massachusetts",none,Metro
+25023,"Plymouth County, Massachusetts",none,Metro
+25025,"Suffolk County, Massachusetts",none,Metro
+25027,"Worcester County, Massachusetts",none,Metro
+26001,"Alcona County, Michigan",none,Nonmetro
+26003,"Alger County, Michigan",none,Nonmetro
+26005,"Allegan County, Michigan",none,Nonmetro
+26007,"Alpena County, Michigan",none,Nonmetro
+26009,"Antrim County, Michigan",none,Nonmetro
+26011,"Arenac County, Michigan",none,Nonmetro
+26013,"Baraga County, Michigan",none,Nonmetro
+26015,"Barry County, Michigan",none,Metro
+26017,"Bay County, Michigan",none,Metro
+26019,"Benzie County, Michigan",none,Nonmetro
+26021,"Berrien County, Michigan",none,Metro
+26023,"Branch County, Michigan",none,Nonmetro
+26025,"Calhoun County, Michigan",none,Metro
+26027,"Cass County, Michigan",none,Metro
+26029,"Charlevoix County, Michigan",none,Nonmetro
+26031,"Cheboygan County, Michigan",none,Nonmetro
+26033,"Chippewa County, Michigan",none,Nonmetro
+26035,"Clare County, Michigan",high,Nonmetro
+26037,"Clinton County, Michigan",none,Metro
+26039,"Crawford County, Michigan",none,Nonmetro
+26041,"Delta County, Michigan",none,Nonmetro
+26043,"Dickinson County, Michigan",none,Nonmetro
+26045,"Eaton County, Michigan",none,Metro
+26047,"Emmet County, Michigan",none,Nonmetro
+26049,"Genesee County, Michigan",none,Metro
+26051,"Gladwin County, Michigan",none,Nonmetro
+26053,"Gogebic County, Michigan",none,Nonmetro
+26055,"Grand Traverse County, Michigan",none,Nonmetro
+26057,"Gratiot County, Michigan",none,Nonmetro
+26059,"Hillsdale County, Michigan",none,Nonmetro
+26061,"Houghton County, Michigan",high,Nonmetro
+26063,"Huron County, Michigan",none,Nonmetro
+26065,"Ingham County, Michigan",none,Metro
+26067,"Ionia County, Michigan",none,Nonmetro
+26069,"Iosco County, Michigan",none,Nonmetro
+26071,"Iron County, Michigan",none,Nonmetro
+26073,"Isabella County, Michigan",high,Nonmetro
+26075,"Jackson County, Michigan",none,Metro
+26077,"Kalamazoo County, Michigan",none,Metro
+26079,"Kalkaska County, Michigan",none,Nonmetro
+26081,"Kent County, Michigan",none,Metro
+26083,"Keweenaw County, Michigan",none,Nonmetro
+26085,"Lake County, Michigan",high,Nonmetro
+26087,"Lapeer County, Michigan",none,Metro
+26089,"Leelanau County, Michigan",none,Nonmetro
+26091,"Lenawee County, Michigan",none,Nonmetro
+26093,"Livingston County, Michigan",none,Metro
+26095,"Luce County, Michigan",none,Nonmetro
+26097,"Mackinac County, Michigan",none,Nonmetro
+26099,"Macomb County, Michigan",none,Metro
+26101,"Manistee County, Michigan",none,Nonmetro
+26103,"Marquette County, Michigan",none,Nonmetro
+26105,"Mason County, Michigan",none,Nonmetro
+26107,"Mecosta County, Michigan",high,Nonmetro
+26109,"Menominee County, Michigan",none,Nonmetro
+26111,"Midland County, Michigan",none,Metro
+26113,"Missaukee County, Michigan",none,Nonmetro
+26115,"Monroe County, Michigan",none,Metro
+26117,"Montcalm County, Michigan",none,Metro
+26119,"Montmorency County, Michigan",none,Nonmetro
+26121,"Muskegon County, Michigan",none,Metro
+26123,"Newaygo County, Michigan",none,Nonmetro
+26125,"Oakland County, Michigan",none,Metro
+26127,"Oceana County, Michigan",none,Nonmetro
+26129,"Ogemaw County, Michigan",none,Nonmetro
+26131,"Ontonagon County, Michigan",none,Nonmetro
+26133,"Osceola County, Michigan",none,Nonmetro
+26135,"Oscoda County, Michigan",none,Nonmetro
+26137,"Otsego County, Michigan",none,Nonmetro
+26139,"Ottawa County, Michigan",none,Metro
+26141,"Presque Isle County, Michigan",none,Nonmetro
+26143,"Roscommon County, Michigan",none,Nonmetro
+26145,"Saginaw County, Michigan",none,Metro
+26147,"St. Clair County, Michigan",none,Metro
+26149,"St. Joseph County, Michigan",none,Nonmetro
+26151,"Sanilac County, Michigan",none,Nonmetro
+26153,"Schoolcraft County, Michigan",none,Nonmetro
+26155,"Shiawassee County, Michigan",none,Nonmetro
+26157,"Tuscola County, Michigan",none,Nonmetro
+26159,"Van Buren County, Michigan",none,Metro
+26161,"Washtenaw County, Michigan",none,Metro
+26163,"Wayne County, Michigan",high,Metro
+26165,"Wexford County, Michigan",none,Nonmetro
+27001,"Aitkin County, Minnesota",none,Nonmetro
+27003,"Anoka County, Minnesota",none,Metro
+27005,"Becker County, Minnesota",none,Nonmetro
+27007,"Beltrami County, Minnesota",none,Nonmetro
+27009,"Benton County, Minnesota",none,Metro
+27011,"Big Stone County, Minnesota",none,Nonmetro
+27013,"Blue Earth County, Minnesota",none,Metro
+27015,"Brown County, Minnesota",none,Nonmetro
+27017,"Carlton County, Minnesota",none,Metro
+27019,"Carver County, Minnesota",none,Metro
+27021,"Cass County, Minnesota",none,Nonmetro
+27023,"Chippewa County, Minnesota",none,Nonmetro
+27025,"Chisago County, Minnesota",none,Metro
+27027,"Clay County, Minnesota",none,Metro
+27029,"Clearwater County, Minnesota",none,Nonmetro
+27031,"Cook County, Minnesota",none,Nonmetro
+27033,"Cottonwood County, Minnesota",none,Nonmetro
+27035,"Crow Wing County, Minnesota",none,Nonmetro
+27037,"Dakota County, Minnesota",none,Metro
+27039,"Dodge County, Minnesota",none,Metro
+27041,"Douglas County, Minnesota",none,Nonmetro
+27043,"Faribault County, Minnesota",none,Nonmetro
+27045,"Fillmore County, Minnesota",none,Metro
+27047,"Freeborn County, Minnesota",none,Nonmetro
+27049,"Goodhue County, Minnesota",none,Nonmetro
+27051,"Grant County, Minnesota",none,Nonmetro
+27053,"Hennepin County, Minnesota",none,Metro
+27055,"Houston County, Minnesota",none,Metro
+27057,"Hubbard County, Minnesota",none,Nonmetro
+27059,"Isanti County, Minnesota",none,Metro
+27061,"Itasca County, Minnesota",none,Nonmetro
+27063,"Jackson County, Minnesota",none,Nonmetro
+27065,"Kanabec County, Minnesota",none,Nonmetro
+27067,"Kandiyohi County, Minnesota",none,Nonmetro
+27069,"Kittson County, Minnesota",none,Nonmetro
+27071,"Koochiching County, Minnesota",none,Nonmetro
+27073,"Lac qui Parle County, Minnesota",none,Nonmetro
+27075,"Lake County, Minnesota",none,Nonmetro
+27077,"Lake of the Woods County, Minnesota",none,Nonmetro
+27079,"Le Sueur County, Minnesota",none,Metro
+27081,"Lincoln County, Minnesota",none,Nonmetro
+27083,"Lyon County, Minnesota",none,Nonmetro
+27085,"McLeod County, Minnesota",none,Nonmetro
+27087,"Mahnomen County, Minnesota",high,Nonmetro
+27089,"Marshall County, Minnesota",none,Nonmetro
+27091,"Martin County, Minnesota",none,Nonmetro
+27093,"Meeker County, Minnesota",none,Nonmetro
+27095,"Mille Lacs County, Minnesota",none,Metro
+27097,"Morrison County, Minnesota",none,Nonmetro
+27099,"Mower County, Minnesota",none,Nonmetro
+27101,"Murray County, Minnesota",none,Nonmetro
+27103,"Nicollet County, Minnesota",none,Metro
+27105,"Nobles County, Minnesota",none,Nonmetro
+27107,"Norman County, Minnesota",none,Nonmetro
+27109,"Olmsted County, Minnesota",none,Metro
+27111,"Otter Tail County, Minnesota",none,Nonmetro
+27113,"Pennington County, Minnesota",none,Nonmetro
+27115,"Pine County, Minnesota",none,Nonmetro
+27117,"Pipestone County, Minnesota",none,Nonmetro
+27119,"Polk County, Minnesota",none,Metro
+27121,"Pope County, Minnesota",none,Nonmetro
+27123,"Ramsey County, Minnesota",none,Metro
+27125,"Red Lake County, Minnesota",none,Nonmetro
+27127,"Redwood County, Minnesota",none,Nonmetro
+27129,"Renville County, Minnesota",none,Nonmetro
+27131,"Rice County, Minnesota",none,Nonmetro
+27133,"Rock County, Minnesota",none,Nonmetro
+27135,"Roseau County, Minnesota",none,Nonmetro
+27137,"St. Louis County, Minnesota",none,Metro
+27139,"Scott County, Minnesota",none,Metro
+27141,"Sherburne County, Minnesota",none,Metro
+27143,"Sibley County, Minnesota",none,Metro
+27145,"Stearns County, Minnesota",none,Metro
+27147,"Steele County, Minnesota",none,Nonmetro
+27149,"Stevens County, Minnesota",none,Nonmetro
+27151,"Swift County, Minnesota",none,Nonmetro
+27153,"Todd County, Minnesota",none,Nonmetro
+27155,"Traverse County, Minnesota",none,Nonmetro
+27157,"Wabasha County, Minnesota",none,Metro
+27159,"Wadena County, Minnesota",none,Nonmetro
+27161,"Waseca County, Minnesota",none,Nonmetro
+27163,"Washington County, Minnesota",none,Metro
+27165,"Watonwan County, Minnesota",none,Nonmetro
+27167,"Wilkin County, Minnesota",none,Nonmetro
+27169,"Winona County, Minnesota",none,Nonmetro
+27171,"Wright County, Minnesota",none,Metro
+27173,"Yellow Medicine County, Minnesota",none,Nonmetro
+28001,"Adams County, Mississippi",both,Nonmetro
+28003,"Alcorn County, Mississippi",none,Nonmetro
+28005,"Amite County, Mississippi",both,Nonmetro
+28007,"Attala County, Mississippi",both,Nonmetro
+28009,"Benton County, Mississippi",both,Metro
+28011,"Bolivar County, Mississippi",both,Nonmetro
+28013,"Calhoun County, Mississippi",high,Nonmetro
+28015,"Carroll County, Mississippi",none,Nonmetro
+28017,"Chickasaw County, Mississippi",both,Nonmetro
+28019,"Choctaw County, Mississippi",persistent,Nonmetro
+28021,"Claiborne County, Mississippi",both,Nonmetro
+28023,"Clarke County, Mississippi",persistent,Nonmetro
+28025,"Clay County, Mississippi",both,Nonmetro
+28027,"Coahoma County, Mississippi",both,Nonmetro
+28029,"Copiah County, Mississippi",both,Metro
+28031,"Covington County, Mississippi",both,Nonmetro
+28033,"DeSoto County, Mississippi",none,Metro
+28035,"Forrest County, Mississippi",both,Metro
+28037,"Franklin County, Mississippi",persistent,Nonmetro
+28039,"George County, Mississippi",none,Nonmetro
+28041,"Greene County, Mississippi",none,Nonmetro
+28043,"Grenada County, Mississippi",both,Nonmetro
+28045,"Hancock County, Mississippi",none,Metro
+28047,"Harrison County, Mississippi",high,Metro
+28049,"Hinds County, Mississippi",high,Metro
+28051,"Holmes County, Mississippi",both,Nonmetro
+28053,"Humphreys County, Mississippi",both,Nonmetro
+28055,"Issaquena County, Mississippi",both,Nonmetro
+28057,"Itawamba County, Mississippi",none,Nonmetro
+28059,"Jackson County, Mississippi",none,Metro
+28061,"Jasper County, Mississippi",both,Nonmetro
+28063,"Jefferson County, Mississippi",both,Nonmetro
+28065,"Jefferson Davis County, Mississippi",both,Nonmetro
+28067,"Jones County, Mississippi",high,Nonmetro
+28069,"Kemper County, Mississippi",both,Nonmetro
+28071,"Lafayette County, Mississippi",both,Nonmetro
+28073,"Lamar County, Mississippi",none,Metro
+28075,"Lauderdale County, Mississippi",both,Nonmetro
+28077,"Lawrence County, Mississippi",none,Nonmetro
+28079,"Leake County, Mississippi",both,Nonmetro
+28081,"Lee County, Mississippi",none,Nonmetro
+28083,"Leflore County, Mississippi",both,Nonmetro
+28085,"Lincoln County, Mississippi",high,Nonmetro
+28087,"Lowndes County, Mississippi",both,Nonmetro
+28089,"Madison County, Mississippi",none,Metro
+28091,"Marion County, Mississippi",both,Nonmetro
+28093,"Marshall County, Mississippi",persistent,Metro
+28095,"Monroe County, Mississippi",none,Nonmetro
+28097,"Montgomery County, Mississippi",both,Nonmetro
+28099,"Neshoba County, Mississippi",both,Nonmetro
+28101,"Newton County, Mississippi",high,Nonmetro
+28103,"Noxubee County, Mississippi",both,Nonmetro
+28105,"Oktibbeha County, Mississippi",both,Nonmetro
+28107,"Panola County, Mississippi",both,Nonmetro
+28109,"Pearl River County, Mississippi",none,Nonmetro
+28111,"Perry County, Mississippi",none,Metro
+28113,"Pike County, Mississippi",both,Nonmetro
+28115,"Pontotoc County, Mississippi",none,Nonmetro
+28117,"Prentiss County, Mississippi",high,Nonmetro
+28119,"Quitman County, Mississippi",both,Nonmetro
+28121,"Rankin County, Mississippi",none,Metro
+28123,"Scott County, Mississippi",both,Nonmetro
+28125,"Sharkey County, Mississippi",both,Nonmetro
+28127,"Simpson County, Mississippi",persistent,Metro
+28129,"Smith County, Mississippi",none,Nonmetro
+28131,"Stone County, Mississippi",none,Nonmetro
+28133,"Sunflower County, Mississippi",both,Nonmetro
+28135,"Tallahatchie County, Mississippi",both,Nonmetro
+28137,"Tate County, Mississippi",none,Metro
+28139,"Tippah County, Mississippi",none,Nonmetro
+28141,"Tishomingo County, Mississippi",none,Nonmetro
+28143,"Tunica County, Mississippi",both,Metro
+28145,"Union County, Mississippi",none,Nonmetro
+28147,"Walthall County, Mississippi",both,Nonmetro
+28149,"Warren County, Mississippi",high,Nonmetro
+28151,"Washington County, Mississippi",both,Nonmetro
+28153,"Wayne County, Mississippi",both,Nonmetro
+28155,"Webster County, Mississippi",high,Nonmetro
+28157,"Wilkinson County, Mississippi",both,Nonmetro
+28159,"Winston County, Mississippi",both,Nonmetro
+28161,"Yalobusha County, Mississippi",persistent,Nonmetro
+28163,"Yazoo County, Mississippi",both,Metro
+29001,"Adair County, Missouri",high,Nonmetro
+29003,"Andrew County, Missouri",none,Metro
+29005,"Atchison County, Missouri",none,Nonmetro
+29007,"Audrain County, Missouri",none,Nonmetro
+29009,"Barry County, Missouri",high,Nonmetro
+29011,"Barton County, Missouri",high,Nonmetro
+29013,"Bates County, Missouri",none,Metro
+29015,"Benton County, Missouri",none,Nonmetro
+29017,"Bollinger County, Missouri",none,Metro
+29019,"Boone County, Missouri",none,Metro
+29021,"Buchanan County, Missouri",none,Metro
+29023,"Butler County, Missouri",high,Nonmetro
+29025,"Caldwell County, Missouri",none,Metro
+29027,"Callaway County, Missouri",none,Metro
+29029,"Camden County, Missouri",none,Nonmetro
+29031,"Cape Girardeau County, Missouri",none,Metro
+29033,"Carroll County, Missouri",none,Nonmetro
+29035,"Carter County, Missouri",persistent,Nonmetro
+29037,"Cass County, Missouri",none,Metro
+29039,"Cedar County, Missouri",none,Nonmetro
+29041,"Chariton County, Missouri",none,Nonmetro
+29043,"Christian County, Missouri",none,Metro
+29045,"Clark County, Missouri",none,Nonmetro
+29047,"Clay County, Missouri",none,Metro
+29049,"Clinton County, Missouri",none,Metro
+29051,"Cole County, Missouri",none,Metro
+29053,"Cooper County, Missouri",none,Nonmetro
+29055,"Crawford County, Missouri",none,Nonmetro
+29057,"Dade County, Missouri",high,Nonmetro
+29059,"Dallas County, Missouri",none,Metro
+29061,"Daviess County, Missouri",none,Nonmetro
+29063,"DeKalb County, Missouri",none,Metro
+29065,"Dent County, Missouri",high,Nonmetro
+29067,"Douglas County, Missouri",high,Nonmetro
+29069,"Dunklin County, Missouri",both,Nonmetro
+29071,"Franklin County, Missouri",none,Metro
+29073,"Gasconade County, Missouri",none,Nonmetro
+29075,"Gentry County, Missouri",none,Nonmetro
+29077,"Greene County, Missouri",none,Metro
+29079,"Grundy County, Missouri",none,Nonmetro
+29081,"Harrison County, Missouri",none,Nonmetro
+29083,"Henry County, Missouri",high,Nonmetro
+29085,"Hickory County, Missouri",none,Nonmetro
+29087,"Holt County, Missouri",none,Nonmetro
+29089,"Howard County, Missouri",none,Nonmetro
+29091,"Howell County, Missouri",high,Nonmetro
+29093,"Iron County, Missouri",high,Nonmetro
+29095,"Jackson County, Missouri",none,Metro
+29097,"Jasper County, Missouri",none,Metro
+29099,"Jefferson County, Missouri",none,Metro
+29101,"Johnson County, Missouri",none,Nonmetro
+29103,"Knox County, Missouri",none,Nonmetro
+29105,"Laclede County, Missouri",none,Nonmetro
+29107,"Lafayette County, Missouri",none,Metro
+29109,"Lawrence County, Missouri",none,Nonmetro
+29111,"Lewis County, Missouri",none,Nonmetro
+29113,"Lincoln County, Missouri",none,Metro
+29115,"Linn County, Missouri",none,Nonmetro
+29117,"Livingston County, Missouri",none,Nonmetro
+29119,"McDonald County, Missouri",none,Metro
+29121,"Macon County, Missouri",none,Nonmetro
+29123,"Madison County, Missouri",none,Nonmetro
+29125,"Maries County, Missouri",none,Nonmetro
+29127,"Marion County, Missouri",none,Nonmetro
+29129,"Mercer County, Missouri",none,Nonmetro
+29131,"Miller County, Missouri",none,Nonmetro
+29133,"Mississippi County, Missouri",both,Nonmetro
+29135,"Moniteau County, Missouri",none,Metro
+29137,"Monroe County, Missouri",none,Nonmetro
+29139,"Montgomery County, Missouri",none,Nonmetro
+29141,"Morgan County, Missouri",high,Nonmetro
+29143,"New Madrid County, Missouri",both,Nonmetro
+29145,"Newton County, Missouri",none,Metro
+29147,"Nodaway County, Missouri",high,Nonmetro
+29149,"Oregon County, Missouri",both,Nonmetro
+29151,"Osage County, Missouri",none,Metro
+29153,"Ozark County, Missouri",high,Nonmetro
+29155,"Pemiscot County, Missouri",both,Nonmetro
+29157,"Perry County, Missouri",none,Nonmetro
+29159,"Pettis County, Missouri",none,Nonmetro
+29161,"Phelps County, Missouri",high,Nonmetro
+29163,"Pike County, Missouri",none,Nonmetro
+29165,"Platte County, Missouri",none,Metro
+29167,"Polk County, Missouri",none,Metro
+29169,"Pulaski County, Missouri",none,Nonmetro
+29171,"Putnam County, Missouri",none,Nonmetro
+29173,"Ralls County, Missouri",none,Nonmetro
+29175,"Randolph County, Missouri",none,Nonmetro
+29177,"Ray County, Missouri",none,Metro
+29179,"Reynolds County, Missouri",persistent,Nonmetro
+29181,"Ripley County, Missouri",both,Nonmetro
+29183,"St. Charles County, Missouri",none,Metro
+29185,"St. Clair County, Missouri",none,Nonmetro
+29186,"Ste. Genevieve County, Missouri",none,Nonmetro
+29187,"St. Francois County, Missouri",none,Nonmetro
+29189,"St. Louis County, Missouri",none,Metro
+29195,"Saline County, Missouri",none,Nonmetro
+29197,"Schuyler County, Missouri",none,Nonmetro
+29199,"Scotland County, Missouri",none,Nonmetro
+29201,"Scott County, Missouri",none,Nonmetro
+29203,"Shannon County, Missouri",both,Nonmetro
+29205,"Shelby County, Missouri",none,Nonmetro
+29207,"Stoddard County, Missouri",none,Nonmetro
+29209,"Stone County, Missouri",none,Nonmetro
+29211,"Sullivan County, Missouri",none,Nonmetro
+29213,"Taney County, Missouri",none,Nonmetro
+29215,"Texas County, Missouri",both,Nonmetro
+29217,"Vernon County, Missouri",none,Nonmetro
+29219,"Warren County, Missouri",none,Metro
+29221,"Washington County, Missouri",both,Nonmetro
+29223,"Wayne County, Missouri",both,Nonmetro
+29225,"Webster County, Missouri",none,Metro
+29227,"Worth County, Missouri",none,Nonmetro
+29229,"Wright County, Missouri",both,Nonmetro
+29510,"St. Louis city, Missouri",both,Metro
+30001,"Beaverhead County, Montana",none,Nonmetro
+30003,"Big Horn County, Montana",both,Nonmetro
+30005,"Blaine County, Montana",both,Nonmetro
+30007,"Broadwater County, Montana",none,Nonmetro
+30009,"Carbon County, Montana",none,Metro
+30011,"Carter County, Montana",none,Nonmetro
+30013,"Cascade County, Montana",none,Metro
+30015,"Chouteau County, Montana",none,Nonmetro
+30017,"Custer County, Montana",none,Nonmetro
+30019,"Daniels County, Montana",none,Nonmetro
+30021,"Dawson County, Montana",none,Nonmetro
+30023,"Deer Lodge County, Montana",high,Nonmetro
+30025,"Fallon County, Montana",none,Nonmetro
+30027,"Fergus County, Montana",none,Nonmetro
+30029,"Flathead County, Montana",none,Nonmetro
+30031,"Gallatin County, Montana",none,Nonmetro
+30033,"Garfield County, Montana",none,Nonmetro
+30035,"Glacier County, Montana",both,Nonmetro
+30037,"Golden Valley County, Montana",persistent,Metro
+30039,"Granite County, Montana",none,Nonmetro
+30041,"Hill County, Montana",none,Nonmetro
+30043,"Jefferson County, Montana",none,Nonmetro
+30045,"Judith Basin County, Montana",none,Nonmetro
+30047,"Lake County, Montana",none,Nonmetro
+30049,"Lewis and Clark County, Montana",none,Nonmetro
+30051,"Liberty County, Montana",none,Nonmetro
+30053,"Lincoln County, Montana",none,Nonmetro
+30055,"McCone County, Montana",none,Nonmetro
+30057,"Madison County, Montana",none,Nonmetro
+30059,"Meagher County, Montana",none,Nonmetro
+30061,"Mineral County, Montana",none,Nonmetro
+30063,"Missoula County, Montana",none,Metro
+30065,"Musselshell County, Montana",none,Nonmetro
+30067,"Park County, Montana",none,Nonmetro
+30069,"Petroleum County, Montana",none,Nonmetro
+30071,"Phillips County, Montana",none,Nonmetro
+30073,"Pondera County, Montana",none,Nonmetro
+30075,"Powder River County, Montana",none,Nonmetro
+30077,"Powell County, Montana",none,Nonmetro
+30079,"Prairie County, Montana",none,Nonmetro
+30081,"Ravalli County, Montana",none,Nonmetro
+30083,"Richland County, Montana",none,Nonmetro
+30085,"Roosevelt County, Montana",high,Nonmetro
+30087,"Rosebud County, Montana",none,Nonmetro
+30089,"Sanders County, Montana",none,Nonmetro
+30091,"Sheridan County, Montana",none,Nonmetro
+30093,"Silver Bow County, Montana",none,Nonmetro
+30095,"Stillwater County, Montana",none,Nonmetro
+30097,"Sweet Grass County, Montana",none,Nonmetro
+30099,"Teton County, Montana",none,Nonmetro
+30101,"Toole County, Montana",none,Nonmetro
+30103,"Treasure County, Montana",none,Nonmetro
+30105,"Valley County, Montana",none,Nonmetro
+30107,"Wheatland County, Montana",none,Nonmetro
+30109,"Wibaux County, Montana",none,Nonmetro
+30111,"Yellowstone County, Montana",none,Metro
+31001,"Adams County, Nebraska",none,Nonmetro
+31003,"Antelope County, Nebraska",none,Nonmetro
+31005,"Arthur County, Nebraska",none,Nonmetro
+31007,"Banner County, Nebraska",none,Nonmetro
+31009,"Blaine County, Nebraska",none,Nonmetro
+31011,"Boone County, Nebraska",none,Nonmetro
+31013,"Box Butte County, Nebraska",none,Nonmetro
+31015,"Boyd County, Nebraska",none,Nonmetro
+31017,"Brown County, Nebraska",none,Nonmetro
+31019,"Buffalo County, Nebraska",none,Nonmetro
+31021,"Burt County, Nebraska",none,Nonmetro
+31023,"Butler County, Nebraska",none,Nonmetro
+31025,"Cass County, Nebraska",none,Metro
+31027,"Cedar County, Nebraska",none,Nonmetro
+31029,"Chase County, Nebraska",none,Nonmetro
+31031,"Cherry County, Nebraska",none,Nonmetro
+31033,"Cheyenne County, Nebraska",none,Nonmetro
+31035,"Clay County, Nebraska",none,Nonmetro
+31037,"Colfax County, Nebraska",none,Nonmetro
+31039,"Cuming County, Nebraska",none,Nonmetro
+31041,"Custer County, Nebraska",none,Nonmetro
+31043,"Dakota County, Nebraska",none,Metro
+31045,"Dawes County, Nebraska",none,Nonmetro
+31047,"Dawson County, Nebraska",none,Nonmetro
+31049,"Deuel County, Nebraska",none,Nonmetro
+31051,"Dixon County, Nebraska",none,Metro
+31053,"Dodge County, Nebraska",none,Nonmetro
+31055,"Douglas County, Nebraska",none,Metro
+31057,"Dundy County, Nebraska",none,Nonmetro
+31059,"Fillmore County, Nebraska",none,Nonmetro
+31061,"Franklin County, Nebraska",none,Nonmetro
+31063,"Frontier County, Nebraska",none,Nonmetro
+31065,"Furnas County, Nebraska",none,Nonmetro
+31067,"Gage County, Nebraska",none,Nonmetro
+31069,"Garden County, Nebraska",none,Nonmetro
+31071,"Garfield County, Nebraska",none,Nonmetro
+31073,"Gosper County, Nebraska",none,Nonmetro
+31075,"Grant County, Nebraska",none,Nonmetro
+31077,"Greeley County, Nebraska",none,Nonmetro
+31079,"Hall County, Nebraska",none,Metro
+31081,"Hamilton County, Nebraska",none,Metro
+31083,"Harlan County, Nebraska",none,Nonmetro
+31085,"Hayes County, Nebraska",none,Nonmetro
+31087,"Hitchcock County, Nebraska",none,Nonmetro
+31089,"Holt County, Nebraska",none,Nonmetro
+31091,"Hooker County, Nebraska",none,Nonmetro
+31093,"Howard County, Nebraska",none,Metro
+31095,"Jefferson County, Nebraska",none,Nonmetro
+31097,"Johnson County, Nebraska",none,Nonmetro
+31099,"Kearney County, Nebraska",none,Nonmetro
+31101,"Keith County, Nebraska",none,Nonmetro
+31103,"Keya Paha County, Nebraska",none,Nonmetro
+31105,"Kimball County, Nebraska",none,Nonmetro
+31107,"Knox County, Nebraska",none,Nonmetro
+31109,"Lancaster County, Nebraska",none,Metro
+31111,"Lincoln County, Nebraska",none,Nonmetro
+31113,"Logan County, Nebraska",none,Nonmetro
+31115,"Loup County, Nebraska",none,Nonmetro
+31117,"McPherson County, Nebraska",none,Nonmetro
+31119,"Madison County, Nebraska",none,Nonmetro
+31121,"Merrick County, Nebraska",none,Metro
+31123,"Morrill County, Nebraska",none,Nonmetro
+31125,"Nance County, Nebraska",none,Nonmetro
+31127,"Nemaha County, Nebraska",none,Nonmetro
+31129,"Nuckolls County, Nebraska",none,Nonmetro
+31131,"Otoe County, Nebraska",none,Nonmetro
+31133,"Pawnee County, Nebraska",none,Nonmetro
+31135,"Perkins County, Nebraska",none,Nonmetro
+31137,"Phelps County, Nebraska",none,Nonmetro
+31139,"Pierce County, Nebraska",none,Nonmetro
+31141,"Platte County, Nebraska",none,Nonmetro
+31143,"Polk County, Nebraska",none,Nonmetro
+31145,"Red Willow County, Nebraska",none,Nonmetro
+31147,"Richardson County, Nebraska",none,Nonmetro
+31149,"Rock County, Nebraska",none,Nonmetro
+31151,"Saline County, Nebraska",none,Nonmetro
+31153,"Sarpy County, Nebraska",none,Metro
+31155,"Saunders County, Nebraska",none,Metro
+31157,"Scotts Bluff County, Nebraska",none,Nonmetro
+31159,"Seward County, Nebraska",none,Metro
+31161,"Sheridan County, Nebraska",none,Nonmetro
+31163,"Sherman County, Nebraska",none,Nonmetro
+31165,"Sioux County, Nebraska",none,Nonmetro
+31167,"Stanton County, Nebraska",none,Nonmetro
+31169,"Thayer County, Nebraska",none,Nonmetro
+31171,"Thomas County, Nebraska",none,Nonmetro
+31173,"Thurston County, Nebraska",both,Nonmetro
+31175,"Valley County, Nebraska",none,Nonmetro
+31177,"Washington County, Nebraska",none,Metro
+31179,"Wayne County, Nebraska",none,Nonmetro
+31181,"Webster County, Nebraska",none,Nonmetro
+31183,"Wheeler County, Nebraska",none,Nonmetro
+31185,"York County, Nebraska",none,Nonmetro
+32001,"Churchill County, Nevada",none,Nonmetro
+32003,"Clark County, Nevada",none,Metro
+32005,"Douglas County, Nevada",none,Nonmetro
+32007,"Elko County, Nevada",none,Nonmetro
+32009,"Esmeralda County, Nevada",none,Nonmetro
+32011,"Eureka County, Nevada",none,Nonmetro
+32013,"Humboldt County, Nevada",none,Nonmetro
+32015,"Lander County, Nevada",none,Nonmetro
+32017,"Lincoln County, Nevada",none,Nonmetro
+32019,"Lyon County, Nevada",none,Nonmetro
+32021,"Mineral County, Nevada",none,Nonmetro
+32023,"Nye County, Nevada",none,Nonmetro
+32027,"Pershing County, Nevada",none,Nonmetro
+32029,"Storey County, Nevada",none,Metro
+32031,"Washoe County, Nevada",none,Metro
+32033,"White Pine County, Nevada",none,Nonmetro
+32510,"Carson City, Nevada",none,Metro
+33001,"Belknap County, New Hampshire",none,Nonmetro
+33003,"Carroll County, New Hampshire",none,Nonmetro
+33005,"Cheshire County, New Hampshire",none,Nonmetro
+33007,"Coos County, New Hampshire",none,Nonmetro
+33009,"Grafton County, New Hampshire",none,Nonmetro
+33011,"Hillsborough County, New Hampshire",none,Metro
+33013,"Merrimack County, New Hampshire",none,Nonmetro
+33015,"Rockingham County, New Hampshire",none,Metro
+33017,"Strafford County, New Hampshire",none,Metro
+33019,"Sullivan County, New Hampshire",none,Nonmetro
+34001,"Atlantic County, New Jersey",none,Metro
+34003,"Bergen County, New Jersey",none,Metro
+34005,"Burlington County, New Jersey",none,Metro
+34007,"Camden County, New Jersey",none,Metro
+34009,"Cape May County, New Jersey",none,Metro
+34011,"Cumberland County, New Jersey",none,Metro
+34013,"Essex County, New Jersey",none,Metro
+34015,"Gloucester County, New Jersey",none,Metro
+34017,"Hudson County, New Jersey",none,Metro
+34019,"Hunterdon County, New Jersey",none,Metro
+34021,"Mercer County, New Jersey",none,Metro
+34023,"Middlesex County, New Jersey",none,Metro
+34025,"Monmouth County, New Jersey",none,Metro
+34027,"Morris County, New Jersey",none,Metro
+34029,"Ocean County, New Jersey",none,Metro
+34031,"Passaic County, New Jersey",none,Metro
+34033,"Salem County, New Jersey",none,Metro
+34035,"Somerset County, New Jersey",none,Metro
+34037,"Sussex County, New Jersey",none,Metro
+34039,"Union County, New Jersey",none,Metro
+34041,"Warren County, New Jersey",none,Metro
+35001,"Bernalillo County, New Mexico",none,Metro
+35003,"Catron County, New Mexico",none,Nonmetro
+35005,"Chaves County, New Mexico",none,Nonmetro
+35006,"Cibola County, New Mexico",both,Nonmetro
+35007,"Colfax County, New Mexico",high,Nonmetro
+35009,"Curry County, New Mexico",high,Nonmetro
+35011,"De Baca County, New Mexico",none,Nonmetro
+35013,"Doña Ana County, New Mexico",both,Metro
+35015,"Eddy County, New Mexico",none,Nonmetro
+35017,"Grant County, New Mexico",high,Nonmetro
+35019,"Guadalupe County, New Mexico",persistent,Nonmetro
+35021,"Harding County, New Mexico",none,Nonmetro
+35023,"Hidalgo County, New Mexico",high,Nonmetro
+35025,"Lea County, New Mexico",none,Nonmetro
+35027,"Lincoln County, New Mexico",none,Nonmetro
+35028,"Los Alamos County, New Mexico",none,Nonmetro
+35029,"Luna County, New Mexico",both,Nonmetro
+35031,"McKinley County, New Mexico",both,Nonmetro
+35033,"Mora County, New Mexico",none,Nonmetro
+35035,"Otero County, New Mexico",high,Nonmetro
+35037,"Quay County, New Mexico",high,Nonmetro
+35039,"Rio Arriba County, New Mexico",high,Nonmetro
+35041,"Roosevelt County, New Mexico",both,Nonmetro
+35043,"Sandoval County, New Mexico",none,Metro
+35045,"San Juan County, New Mexico",high,Metro
+35047,"San Miguel County, New Mexico",both,Nonmetro
+35049,"Santa Fe County, New Mexico",none,Metro
+35051,"Sierra County, New Mexico",high,Nonmetro
+35053,"Socorro County, New Mexico",both,Nonmetro
+35055,"Taos County, New Mexico",persistent,Nonmetro
+35057,"Torrance County, New Mexico",high,Metro
+35059,"Union County, New Mexico",none,Nonmetro
+35061,"Valencia County, New Mexico",none,Metro
+36001,"Albany County, New York",none,Metro
+36003,"Allegany County, New York",none,Nonmetro
+36005,"Bronx County, New York",both,Metro
+36007,"Broome County, New York",none,Metro
+36009,"Cattaraugus County, New York",none,Nonmetro
+36011,"Cayuga County, New York",none,Nonmetro
+36013,"Chautauqua County, New York",none,Nonmetro
+36015,"Chemung County, New York",none,Metro
+36017,"Chenango County, New York",none,Nonmetro
+36019,"Clinton County, New York",none,Nonmetro
+36021,"Columbia County, New York",none,Nonmetro
+36023,"Cortland County, New York",none,Nonmetro
+36025,"Delaware County, New York",none,Nonmetro
+36027,"Dutchess County, New York",none,Metro
+36029,"Erie County, New York",none,Metro
+36031,"Essex County, New York",none,Nonmetro
+36033,"Franklin County, New York",none,Nonmetro
+36035,"Fulton County, New York",none,Nonmetro
+36037,"Genesee County, New York",none,Nonmetro
+36039,"Greene County, New York",none,Nonmetro
+36041,"Hamilton County, New York",none,Nonmetro
+36043,"Herkimer County, New York",none,Metro
+36045,"Jefferson County, New York",none,Metro
+36047,"Kings County, New York",persistent,Metro
+36049,"Lewis County, New York",none,Nonmetro
+36051,"Livingston County, New York",none,Metro
+36053,"Madison County, New York",none,Metro
+36055,"Monroe County, New York",none,Metro
+36057,"Montgomery County, New York",none,Nonmetro
+36059,"Nassau County, New York",none,Metro
+36061,"New York County, New York",none,Metro
+36063,"Niagara County, New York",none,Metro
+36065,"Oneida County, New York",none,Metro
+36067,"Onondaga County, New York",none,Metro
+36069,"Ontario County, New York",none,Metro
+36071,"Orange County, New York",none,Metro
+36073,"Orleans County, New York",none,Metro
+36075,"Oswego County, New York",none,Metro
+36077,"Otsego County, New York",none,Nonmetro
+36079,"Putnam County, New York",none,Metro
+36081,"Queens County, New York",none,Metro
+36083,"Rensselaer County, New York",none,Metro
+36085,"Richmond County, New York",none,Metro
+36087,"Rockland County, New York",none,Metro
+36089,"St. Lawrence County, New York",none,Nonmetro
+36091,"Saratoga County, New York",none,Metro
+36093,"Schenectady County, New York",none,Metro
+36095,"Schoharie County, New York",none,Metro
+36097,"Schuyler County, New York",none,Nonmetro
+36099,"Seneca County, New York",none,Nonmetro
+36101,"Steuben County, New York",none,Nonmetro
+36103,"Suffolk County, New York",none,Metro
+36105,"Sullivan County, New York",none,Nonmetro
+36107,"Tioga County, New York",none,Metro
+36109,"Tompkins County, New York",none,Metro
+36111,"Ulster County, New York",none,Metro
+36113,"Warren County, New York",none,Metro
+36115,"Washington County, New York",none,Metro
+36117,"Wayne County, New York",none,Metro
+36119,"Westchester County, New York",none,Metro
+36121,"Wyoming County, New York",none,Nonmetro
+36123,"Yates County, New York",none,Metro
+37001,"Alamance County, North Carolina",none,Metro
+37003,"Alexander County, North Carolina",none,Metro
+37005,"Alleghany County, North Carolina",high,Nonmetro
+37007,"Anson County, North Carolina",none,Nonmetro
+37009,"Ashe County, North Carolina",none,Nonmetro
+37011,"Avery County, North Carolina",none,Nonmetro
+37013,"Beaufort County, North Carolina",none,Nonmetro
+37015,"Bertie County, North Carolina",both,Nonmetro
+37017,"Bladen County, North Carolina",both,Nonmetro
+37019,"Brunswick County, North Carolina",none,Metro
+37021,"Buncombe County, North Carolina",none,Metro
+37023,"Burke County, North Carolina",none,Metro
+37025,"Cabarrus County, North Carolina",none,Metro
+37027,"Caldwell County, North Carolina",none,Metro
+37029,"Camden County, North Carolina",none,Nonmetro
+37031,"Carteret County, North Carolina",none,Nonmetro
+37033,"Caswell County, North Carolina",none,Nonmetro
+37035,"Catawba County, North Carolina",none,Metro
+37037,"Chatham County, North Carolina",none,Metro
+37039,"Cherokee County, North Carolina",none,Nonmetro
+37041,"Chowan County, North Carolina",none,Nonmetro
+37043,"Clay County, North Carolina",none,Nonmetro
+37045,"Cleveland County, North Carolina",high,Nonmetro
+37047,"Columbus County, North Carolina",both,Nonmetro
+37049,"Craven County, North Carolina",none,Metro
+37051,"Cumberland County, North Carolina",none,Metro
+37053,"Currituck County, North Carolina",none,Metro
+37055,"Dare County, North Carolina",none,Nonmetro
+37057,"Davidson County, North Carolina",none,Metro
+37059,"Davie County, North Carolina",none,Metro
+37061,"Duplin County, North Carolina",high,Nonmetro
+37063,"Durham County, North Carolina",none,Metro
+37065,"Edgecombe County, North Carolina",high,Metro
+37067,"Forsyth County, North Carolina",none,Metro
+37069,"Franklin County, North Carolina",none,Metro
+37071,"Gaston County, North Carolina",none,Metro
+37073,"Gates County, North Carolina",none,Metro
+37075,"Graham County, North Carolina",none,Nonmetro
+37077,"Granville County, North Carolina",none,Nonmetro
+37079,"Greene County, North Carolina",high,Nonmetro
+37081,"Guilford County, North Carolina",none,Metro
+37083,"Halifax County, North Carolina",both,Nonmetro
+37085,"Harnett County, North Carolina",none,Nonmetro
+37087,"Haywood County, North Carolina",none,Metro
+37089,"Henderson County, North Carolina",none,Metro
+37091,"Hertford County, North Carolina",high,Nonmetro
+37093,"Hoke County, North Carolina",high,Metro
+37095,"Hyde County, North Carolina",high,Nonmetro
+37097,"Iredell County, North Carolina",none,Metro
+37099,"Jackson County, North Carolina",none,Nonmetro
+37101,"Johnston County, North Carolina",none,Metro
+37103,"Jones County, North Carolina",high,Metro
+37105,"Lee County, North Carolina",none,Nonmetro
+37107,"Lenoir County, North Carolina",high,Nonmetro
+37109,"Lincoln County, North Carolina",none,Metro
+37111,"McDowell County, North Carolina",none,Nonmetro
+37113,"Macon County, North Carolina",none,Nonmetro
+37115,"Madison County, North Carolina",none,Metro
+37117,"Martin County, North Carolina",persistent,Nonmetro
+37119,"Mecklenburg County, North Carolina",none,Metro
+37121,"Mitchell County, North Carolina",none,Nonmetro
+37123,"Montgomery County, North Carolina",none,Nonmetro
+37125,"Moore County, North Carolina",none,Nonmetro
+37127,"Nash County, North Carolina",none,Metro
+37129,"New Hanover County, North Carolina",none,Metro
+37131,"Northampton County, North Carolina",both,Nonmetro
+37133,"Onslow County, North Carolina",none,Metro
+37135,"Orange County, North Carolina",none,Metro
+37137,"Pamlico County, North Carolina",none,Metro
+37139,"Pasquotank County, North Carolina",none,Nonmetro
+37141,"Pender County, North Carolina",none,Metro
+37143,"Perquimans County, North Carolina",none,Nonmetro
+37145,"Person County, North Carolina",none,Metro
+37147,"Pitt County, North Carolina",both,Metro
+37149,"Polk County, North Carolina",none,Nonmetro
+37151,"Randolph County, North Carolina",none,Metro
+37153,"Richmond County, North Carolina",high,Nonmetro
+37155,"Robeson County, North Carolina",both,Nonmetro
+37157,"Rockingham County, North Carolina",none,Metro
+37159,"Rowan County, North Carolina",none,Metro
+37161,"Rutherford County, North Carolina",none,Nonmetro
+37163,"Sampson County, North Carolina",high,Nonmetro
+37165,"Scotland County, North Carolina",high,Nonmetro
+37167,"Stanly County, North Carolina",none,Nonmetro
+37169,"Stokes County, North Carolina",none,Metro
+37171,"Surry County, North Carolina",none,Nonmetro
+37173,"Swain County, North Carolina",none,Nonmetro
+37175,"Transylvania County, North Carolina",none,Nonmetro
+37177,"Tyrrell County, North Carolina",both,Nonmetro
+37179,"Union County, North Carolina",none,Metro
+37181,"Vance County, North Carolina",high,Nonmetro
+37183,"Wake County, North Carolina",none,Metro
+37185,"Warren County, North Carolina",none,Nonmetro
+37187,"Washington County, North Carolina",both,Nonmetro
+37189,"Watauga County, North Carolina",high,Nonmetro
+37191,"Wayne County, North Carolina",high,Metro
+37193,"Wilkes County, North Carolina",none,Nonmetro
+37195,"Wilson County, North Carolina",high,Nonmetro
+37197,"Yadkin County, North Carolina",none,Metro
+37199,"Yancey County, North Carolina",none,Nonmetro
+38001,"Adams County, North Dakota",none,Nonmetro
+38003,"Barnes County, North Dakota",none,Nonmetro
+38005,"Benson County, North Dakota",both,Nonmetro
+38007,"Billings County, North Dakota",none,Nonmetro
+38009,"Bottineau County, North Dakota",none,Nonmetro
+38011,"Bowman County, North Dakota",none,Nonmetro
+38013,"Burke County, North Dakota",none,Nonmetro
+38015,"Burleigh County, North Dakota",none,Metro
+38017,"Cass County, North Dakota",none,Metro
+38019,"Cavalier County, North Dakota",none,Nonmetro
+38021,"Dickey County, North Dakota",none,Nonmetro
+38023,"Divide County, North Dakota",none,Nonmetro
+38025,"Dunn County, North Dakota",none,Nonmetro
+38027,"Eddy County, North Dakota",none,Nonmetro
+38029,"Emmons County, North Dakota",none,Nonmetro
+38031,"Foster County, North Dakota",none,Nonmetro
+38033,"Golden Valley County, North Dakota",none,Nonmetro
+38035,"Grand Forks County, North Dakota",none,Metro
+38037,"Grant County, North Dakota",none,Nonmetro
+38039,"Griggs County, North Dakota",none,Nonmetro
+38041,"Hettinger County, North Dakota",none,Nonmetro
+38043,"Kidder County, North Dakota",none,Nonmetro
+38045,"LaMoure County, North Dakota",none,Nonmetro
+38047,"Logan County, North Dakota",none,Nonmetro
+38049,"McHenry County, North Dakota",none,Nonmetro
+38051,"McIntosh County, North Dakota",none,Nonmetro
+38053,"McKenzie County, North Dakota",none,Nonmetro
+38055,"McLean County, North Dakota",none,Nonmetro
+38057,"Mercer County, North Dakota",none,Nonmetro
+38059,"Morton County, North Dakota",none,Metro
+38061,"Mountrail County, North Dakota",none,Nonmetro
+38063,"Nelson County, North Dakota",none,Nonmetro
+38065,"Oliver County, North Dakota",none,Metro
+38067,"Pembina County, North Dakota",none,Nonmetro
+38069,"Pierce County, North Dakota",none,Nonmetro
+38071,"Ramsey County, North Dakota",none,Nonmetro
+38073,"Ransom County, North Dakota",none,Nonmetro
+38075,"Renville County, North Dakota",none,Nonmetro
+38077,"Richland County, North Dakota",none,Nonmetro
+38079,"Rolette County, North Dakota",both,Nonmetro
+38081,"Sargent County, North Dakota",none,Nonmetro
+38083,"Sheridan County, North Dakota",none,Nonmetro
+38085,"Sioux County, North Dakota",both,Metro
+38087,"Slope County, North Dakota",none,Nonmetro
+38089,"Stark County, North Dakota",none,Nonmetro
+38091,"Steele County, North Dakota",none,Nonmetro
+38093,"Stutsman County, North Dakota",none,Nonmetro
+38095,"Towner County, North Dakota",none,Nonmetro
+38097,"Traill County, North Dakota",none,Nonmetro
+38099,"Walsh County, North Dakota",none,Nonmetro
+38101,"Ward County, North Dakota",none,Nonmetro
+38103,"Wells County, North Dakota",none,Nonmetro
+38105,"Williams County, North Dakota",none,Nonmetro
+39001,"Adams County, Ohio",high,Nonmetro
+39003,"Allen County, Ohio",none,Metro
+39005,"Ashland County, Ohio",none,Nonmetro
+39007,"Ashtabula County, Ohio",none,Nonmetro
+39009,"Athens County, Ohio",both,Nonmetro
+39011,"Auglaize County, Ohio",none,Nonmetro
+39013,"Belmont County, Ohio",none,Metro
+39015,"Brown County, Ohio",none,Metro
+39017,"Butler County, Ohio",none,Metro
+39019,"Carroll County, Ohio",none,Metro
+39021,"Champaign County, Ohio",none,Nonmetro
+39023,"Clark County, Ohio",none,Metro
+39025,"Clermont County, Ohio",none,Metro
+39027,"Clinton County, Ohio",none,Nonmetro
+39029,"Columbiana County, Ohio",none,Nonmetro
+39031,"Coshocton County, Ohio",none,Nonmetro
+39033,"Crawford County, Ohio",none,Nonmetro
+39035,"Cuyahoga County, Ohio",none,Metro
+39037,"Darke County, Ohio",none,Nonmetro
+39039,"Defiance County, Ohio",none,Nonmetro
+39041,"Delaware County, Ohio",none,Metro
+39043,"Erie County, Ohio",none,Nonmetro
+39045,"Fairfield County, Ohio",none,Metro
+39047,"Fayette County, Ohio",none,Nonmetro
+39049,"Franklin County, Ohio",none,Metro
+39051,"Fulton County, Ohio",none,Metro
+39053,"Gallia County, Ohio",high,Nonmetro
+39055,"Geauga County, Ohio",none,Metro
+39057,"Greene County, Ohio",none,Metro
+39059,"Guernsey County, Ohio",none,Nonmetro
+39061,"Hamilton County, Ohio",none,Metro
+39063,"Hancock County, Ohio",none,Nonmetro
+39065,"Hardin County, Ohio",none,Nonmetro
+39067,"Harrison County, Ohio",none,Nonmetro
+39069,"Henry County, Ohio",none,Nonmetro
+39071,"Highland County, Ohio",none,Nonmetro
+39073,"Hocking County, Ohio",none,Metro
+39075,"Holmes County, Ohio",none,Nonmetro
+39077,"Huron County, Ohio",none,Nonmetro
+39079,"Jackson County, Ohio",none,Nonmetro
+39081,"Jefferson County, Ohio",none,Metro
+39083,"Knox County, Ohio",none,Nonmetro
+39085,"Lake County, Ohio",none,Metro
+39087,"Lawrence County, Ohio",none,Metro
+39089,"Licking County, Ohio",none,Metro
+39091,"Logan County, Ohio",none,Nonmetro
+39093,"Lorain County, Ohio",none,Metro
+39095,"Lucas County, Ohio",none,Metro
+39097,"Madison County, Ohio",none,Metro
+39099,"Mahoning County, Ohio",none,Metro
+39101,"Marion County, Ohio",none,Nonmetro
+39103,"Medina County, Ohio",none,Metro
+39105,"Meigs County, Ohio",none,Nonmetro
+39107,"Mercer County, Ohio",none,Nonmetro
+39109,"Miami County, Ohio",none,Metro
+39111,"Monroe County, Ohio",none,Nonmetro
+39113,"Montgomery County, Ohio",none,Metro
+39115,"Morgan County, Ohio",none,Nonmetro
+39117,"Morrow County, Ohio",none,Metro
+39119,"Muskingum County, Ohio",none,Nonmetro
+39121,"Noble County, Ohio",none,Nonmetro
+39123,"Ottawa County, Ohio",none,Nonmetro
+39125,"Paulding County, Ohio",none,Nonmetro
+39127,"Perry County, Ohio",none,Metro
+39129,"Pickaway County, Ohio",none,Metro
+39131,"Pike County, Ohio",none,Nonmetro
+39133,"Portage County, Ohio",none,Metro
+39135,"Preble County, Ohio",none,Nonmetro
+39137,"Putnam County, Ohio",none,Nonmetro
+39139,"Richland County, Ohio",none,Metro
+39141,"Ross County, Ohio",none,Nonmetro
+39143,"Sandusky County, Ohio",none,Nonmetro
+39145,"Scioto County, Ohio",high,Nonmetro
+39147,"Seneca County, Ohio",none,Nonmetro
+39149,"Shelby County, Ohio",none,Nonmetro
+39151,"Stark County, Ohio",none,Metro
+39153,"Summit County, Ohio",none,Metro
+39155,"Trumbull County, Ohio",none,Metro
+39157,"Tuscarawas County, Ohio",none,Nonmetro
+39159,"Union County, Ohio",none,Metro
+39161,"Van Wert County, Ohio",none,Nonmetro
+39163,"Vinton County, Ohio",none,Nonmetro
+39165,"Warren County, Ohio",none,Metro
+39167,"Washington County, Ohio",none,Nonmetro
+39169,"Wayne County, Ohio",none,Nonmetro
+39171,"Williams County, Ohio",none,Nonmetro
+39173,"Wood County, Ohio",none,Metro
+39175,"Wyandot County, Ohio",none,Nonmetro
+40001,"Adair County, Oklahoma",both,Nonmetro
+40003,"Alfalfa County, Oklahoma",none,Nonmetro
+40005,"Atoka County, Oklahoma",high,Nonmetro
+40007,"Beaver County, Oklahoma",none,Nonmetro
+40009,"Beckham County, Oklahoma",none,Nonmetro
+40011,"Blaine County, Oklahoma",none,Nonmetro
+40013,"Bryan County, Oklahoma",none,Nonmetro
+40015,"Caddo County, Oklahoma",persistent,Nonmetro
+40017,"Canadian County, Oklahoma",none,Metro
+40019,"Carter County, Oklahoma",none,Nonmetro
+40021,"Cherokee County, Oklahoma",both,Nonmetro
+40023,"Choctaw County, Oklahoma",both,Nonmetro
+40025,"Cimarron County, Oklahoma",none,Nonmetro
+40027,"Cleveland County, Oklahoma",none,Metro
+40029,"Coal County, Oklahoma",both,Nonmetro
+40031,"Comanche County, Oklahoma",none,Metro
+40033,"Cotton County, Oklahoma",none,Metro
+40035,"Craig County, Oklahoma",none,Nonmetro
+40037,"Creek County, Oklahoma",none,Metro
+40039,"Custer County, Oklahoma",none,Nonmetro
+40041,"Delaware County, Oklahoma",none,Nonmetro
+40043,"Dewey County, Oklahoma",none,Nonmetro
+40045,"Ellis County, Oklahoma",none,Nonmetro
+40047,"Garfield County, Oklahoma",none,Nonmetro
+40049,"Garvin County, Oklahoma",none,Nonmetro
+40051,"Grady County, Oklahoma",none,Metro
+40053,"Grant County, Oklahoma",none,Nonmetro
+40055,"Greer County, Oklahoma",high,Nonmetro
+40057,"Harmon County, Oklahoma",persistent,Nonmetro
+40059,"Harper County, Oklahoma",none,Nonmetro
+40061,"Haskell County, Oklahoma",none,Nonmetro
+40063,"Hughes County, Oklahoma",both,Nonmetro
+40065,"Jackson County, Oklahoma",none,Nonmetro
+40067,"Jefferson County, Oklahoma",high,Nonmetro
+40069,"Johnston County, Oklahoma",both,Nonmetro
+40071,"Kay County, Oklahoma",none,Nonmetro
+40073,"Kingfisher County, Oklahoma",none,Nonmetro
+40075,"Kiowa County, Oklahoma",high,Nonmetro
+40077,"Latimer County, Oklahoma",none,Nonmetro
+40079,"Le Flore County, Oklahoma",high,Metro
+40081,"Lincoln County, Oklahoma",none,Metro
+40083,"Logan County, Oklahoma",none,Metro
+40085,"Love County, Oklahoma",none,Nonmetro
+40087,"McClain County, Oklahoma",none,Metro
+40089,"McCurtain County, Oklahoma",both,Nonmetro
+40091,"McIntosh County, Oklahoma",high,Nonmetro
+40093,"Major County, Oklahoma",none,Nonmetro
+40095,"Marshall County, Oklahoma",none,Nonmetro
+40097,"Mayes County, Oklahoma",none,Nonmetro
+40099,"Murray County, Oklahoma",none,Nonmetro
+40101,"Muskogee County, Oklahoma",high,Nonmetro
+40103,"Noble County, Oklahoma",none,Nonmetro
+40105,"Nowata County, Oklahoma",none,Nonmetro
+40107,"Okfuskee County, Oklahoma",both,Nonmetro
+40109,"Oklahoma County, Oklahoma",none,Metro
+40111,"Okmulgee County, Oklahoma",none,Metro
+40113,"Osage County, Oklahoma",none,Metro
+40115,"Ottawa County, Oklahoma",high,Nonmetro
+40117,"Pawnee County, Oklahoma",none,Metro
+40119,"Payne County, Oklahoma",high,Nonmetro
+40121,"Pittsburg County, Oklahoma",none,Nonmetro
+40123,"Pontotoc County, Oklahoma",none,Nonmetro
+40125,"Pottawatomie County, Oklahoma",none,Nonmetro
+40127,"Pushmataha County, Oklahoma",both,Nonmetro
+40129,"Roger Mills County, Oklahoma",none,Nonmetro
+40131,"Rogers County, Oklahoma",none,Metro
+40133,"Seminole County, Oklahoma",high,Nonmetro
+40135,"Sequoyah County, Oklahoma",high,Metro
+40137,"Stephens County, Oklahoma",none,Nonmetro
+40139,"Texas County, Oklahoma",none,Nonmetro
+40141,"Tillman County, Oklahoma",persistent,Nonmetro
+40143,"Tulsa County, Oklahoma",none,Metro
+40145,"Wagoner County, Oklahoma",none,Metro
+40147,"Washington County, Oklahoma",none,Nonmetro
+40149,"Washita County, Oklahoma",none,Nonmetro
+40151,"Woods County, Oklahoma",none,Nonmetro
+40153,"Woodward County, Oklahoma",none,Nonmetro
+41001,"Baker County, Oregon",none,Nonmetro
+41003,"Benton County, Oregon",none,Metro
+41005,"Clackamas County, Oregon",none,Metro
+41007,"Clatsop County, Oregon",none,Nonmetro
+41009,"Columbia County, Oregon",none,Metro
+41011,"Coos County, Oregon",none,Nonmetro
+41013,"Crook County, Oregon",none,Nonmetro
+41015,"Curry County, Oregon",none,Nonmetro
+41017,"Deschutes County, Oregon",none,Metro
+41019,"Douglas County, Oregon",none,Nonmetro
+41021,"Gilliam County, Oregon",none,Nonmetro
+41023,"Grant County, Oregon",none,Nonmetro
+41025,"Harney County, Oregon",none,Nonmetro
+41027,"Hood River County, Oregon",none,Nonmetro
+41029,"Jackson County, Oregon",none,Metro
+41031,"Jefferson County, Oregon",none,Nonmetro
+41033,"Josephine County, Oregon",none,Metro
+41035,"Klamath County, Oregon",none,Nonmetro
+41037,"Lake County, Oregon",none,Nonmetro
+41039,"Lane County, Oregon",none,Metro
+41041,"Lincoln County, Oregon",none,Nonmetro
+41043,"Linn County, Oregon",none,Metro
+41045,"Malheur County, Oregon",high,Nonmetro
+41047,"Marion County, Oregon",none,Metro
+41049,"Morrow County, Oregon",none,Nonmetro
+41051,"Multnomah County, Oregon",none,Metro
+41053,"Polk County, Oregon",none,Metro
+41055,"Sherman County, Oregon",none,Nonmetro
+41057,"Tillamook County, Oregon",none,Nonmetro
+41059,"Umatilla County, Oregon",none,Nonmetro
+41061,"Union County, Oregon",none,Nonmetro
+41063,"Wallowa County, Oregon",none,Nonmetro
+41065,"Wasco County, Oregon",none,Nonmetro
+41067,"Washington County, Oregon",none,Metro
+41069,"Wheeler County, Oregon",none,Nonmetro
+41071,"Yamhill County, Oregon",none,Metro
+42001,"Adams County, Pennsylvania",none,Metro
+42003,"Allegheny County, Pennsylvania",none,Metro
+42005,"Armstrong County, Pennsylvania",none,Metro
+42007,"Beaver County, Pennsylvania",none,Metro
+42009,"Bedford County, Pennsylvania",none,Nonmetro
+42011,"Berks County, Pennsylvania",none,Metro
+42013,"Blair County, Pennsylvania",none,Metro
+42015,"Bradford County, Pennsylvania",none,Nonmetro
+42017,"Bucks County, Pennsylvania",none,Metro
+42019,"Butler County, Pennsylvania",none,Metro
+42021,"Cambria County, Pennsylvania",none,Metro
+42023,"Cameron County, Pennsylvania",none,Nonmetro
+42025,"Carbon County, Pennsylvania",none,Metro
+42027,"Centre County, Pennsylvania",none,Metro
+42029,"Chester County, Pennsylvania",none,Metro
+42031,"Clarion County, Pennsylvania",none,Nonmetro
+42033,"Clearfield County, Pennsylvania",none,Nonmetro
+42035,"Clinton County, Pennsylvania",none,Nonmetro
+42037,"Columbia County, Pennsylvania",none,Metro
+42039,"Crawford County, Pennsylvania",none,Nonmetro
+42041,"Cumberland County, Pennsylvania",none,Metro
+42043,"Dauphin County, Pennsylvania",none,Metro
+42045,"Delaware County, Pennsylvania",none,Metro
+42047,"Elk County, Pennsylvania",none,Nonmetro
+42049,"Erie County, Pennsylvania",none,Metro
+42051,"Fayette County, Pennsylvania",none,Metro
+42053,"Forest County, Pennsylvania",none,Nonmetro
+42055,"Franklin County, Pennsylvania",none,Metro
+42057,"Fulton County, Pennsylvania",none,Nonmetro
+42059,"Greene County, Pennsylvania",none,Nonmetro
+42061,"Huntingdon County, Pennsylvania",none,Nonmetro
+42063,"Indiana County, Pennsylvania",none,Nonmetro
+42065,"Jefferson County, Pennsylvania",none,Nonmetro
+42067,"Juniata County, Pennsylvania",none,Nonmetro
+42069,"Lackawanna County, Pennsylvania",none,Metro
+42071,"Lancaster County, Pennsylvania",none,Metro
+42073,"Lawrence County, Pennsylvania",none,Nonmetro
+42075,"Lebanon County, Pennsylvania",none,Metro
+42077,"Lehigh County, Pennsylvania",none,Metro
+42079,"Luzerne County, Pennsylvania",none,Metro
+42081,"Lycoming County, Pennsylvania",none,Metro
+42083,"McKean County, Pennsylvania",none,Nonmetro
+42085,"Mercer County, Pennsylvania",none,Metro
+42087,"Mifflin County, Pennsylvania",none,Nonmetro
+42089,"Monroe County, Pennsylvania",none,Metro
+42091,"Montgomery County, Pennsylvania",none,Metro
+42093,"Montour County, Pennsylvania",none,Metro
+42095,"Northampton County, Pennsylvania",none,Metro
+42097,"Northumberland County, Pennsylvania",none,Nonmetro
+42099,"Perry County, Pennsylvania",none,Metro
+42101,"Philadelphia County, Pennsylvania",both,Metro
+42103,"Pike County, Pennsylvania",none,Metro
+42105,"Potter County, Pennsylvania",none,Nonmetro
+42107,"Schuylkill County, Pennsylvania",none,Nonmetro
+42109,"Snyder County, Pennsylvania",none,Nonmetro
+42111,"Somerset County, Pennsylvania",none,Nonmetro
+42113,"Sullivan County, Pennsylvania",none,Nonmetro
+42115,"Susquehanna County, Pennsylvania",none,Nonmetro
+42117,"Tioga County, Pennsylvania",none,Nonmetro
+42119,"Union County, Pennsylvania",none,Nonmetro
+42121,"Venango County, Pennsylvania",none,Nonmetro
+42123,"Warren County, Pennsylvania",none,Nonmetro
+42125,"Washington County, Pennsylvania",none,Metro
+42127,"Wayne County, Pennsylvania",none,Nonmetro
+42129,"Westmoreland County, Pennsylvania",none,Metro
+42131,"Wyoming County, Pennsylvania",none,Metro
+42133,"York County, Pennsylvania",none,Metro
+44001,"Bristol County, Rhode Island",none,Metro
+44003,"Kent County, Rhode Island",none,Metro
+44005,"Newport County, Rhode Island",none,Metro
+44007,"Providence County, Rhode Island",none,Metro
+44009,"Washington County, Rhode Island",none,Metro
+45001,"Abbeville County, South Carolina",none,Nonmetro
+45003,"Aiken County, South Carolina",none,Metro
+45005,"Allendale County, South Carolina",both,Nonmetro
+45007,"Anderson County, South Carolina",none,Metro
+45009,"Bamberg County, South Carolina",both,Nonmetro
+45011,"Barnwell County, South Carolina",high,Nonmetro
+45013,"Beaufort County, South Carolina",none,Metro
+45015,"Berkeley County, South Carolina",none,Metro
+45017,"Calhoun County, South Carolina",high,Metro
+45019,"Charleston County, South Carolina",none,Metro
+45021,"Cherokee County, South Carolina",none,Nonmetro
+45023,"Chester County, South Carolina",none,Metro
+45025,"Chesterfield County, South Carolina",high,Nonmetro
+45027,"Clarendon County, South Carolina",both,Nonmetro
+45029,"Colleton County, South Carolina",both,Nonmetro
+45031,"Darlington County, South Carolina",high,Metro
+45033,"Dillon County, South Carolina",both,Nonmetro
+45035,"Dorchester County, South Carolina",none,Metro
+45037,"Edgefield County, South Carolina",none,Metro
+45039,"Fairfield County, South Carolina",high,Metro
+45041,"Florence County, South Carolina",none,Metro
+45043,"Georgetown County, South Carolina",none,Nonmetro
+45045,"Greenville County, South Carolina",none,Metro
+45047,"Greenwood County, South Carolina",high,Nonmetro
+45049,"Hampton County, South Carolina",both,Nonmetro
+45051,"Horry County, South Carolina",none,Metro
+45053,"Jasper County, South Carolina",persistent,Metro
+45055,"Kershaw County, South Carolina",none,Metro
+45057,"Lancaster County, South Carolina",none,Metro
+45059,"Laurens County, South Carolina",high,Metro
+45061,"Lee County, South Carolina",both,Nonmetro
+45063,"Lexington County, South Carolina",none,Metro
+45065,"McCormick County, South Carolina",none,Nonmetro
+45067,"Marion County, South Carolina",both,Nonmetro
+45069,"Marlboro County, South Carolina",both,Nonmetro
+45071,"Newberry County, South Carolina",none,Nonmetro
+45073,"Oconee County, South Carolina",none,Nonmetro
+45075,"Orangeburg County, South Carolina",both,Nonmetro
+45077,"Pickens County, South Carolina",none,Metro
+45079,"Richland County, South Carolina",none,Metro
+45081,"Saluda County, South Carolina",none,Metro
+45083,"Spartanburg County, South Carolina",none,Metro
+45085,"Sumter County, South Carolina",none,Metro
+45087,"Union County, South Carolina",high,Metro
+45089,"Williamsburg County, South Carolina",both,Nonmetro
+45091,"York County, South Carolina",none,Metro
+46003,"Aurora County, South Dakota",none,Nonmetro
+46005,"Beadle County, South Dakota",none,Nonmetro
+46007,"Bennett County, South Dakota",both,Nonmetro
+46009,"Bon Homme County, South Dakota",none,Nonmetro
+46011,"Brookings County, South Dakota",none,Nonmetro
+46013,"Brown County, South Dakota",none,Nonmetro
+46015,"Brule County, South Dakota",none,Nonmetro
+46017,"Buffalo County, South Dakota",both,Nonmetro
+46019,"Butte County, South Dakota",none,Nonmetro
+46021,"Campbell County, South Dakota",none,Nonmetro
+46023,"Charles Mix County, South Dakota",persistent,Nonmetro
+46025,"Clark County, South Dakota",none,Nonmetro
+46027,"Clay County, South Dakota",high,Nonmetro
+46029,"Codington County, South Dakota",none,Nonmetro
+46031,"Corson County, South Dakota",both,Nonmetro
+46033,"Custer County, South Dakota",none,Metro
+46035,"Davison County, South Dakota",none,Nonmetro
+46037,"Day County, South Dakota",none,Nonmetro
+46039,"Deuel County, South Dakota",none,Nonmetro
+46041,"Dewey County, South Dakota",both,Nonmetro
+46043,"Douglas County, South Dakota",none,Nonmetro
+46045,"Edmunds County, South Dakota",none,Nonmetro
+46047,"Fall River County, South Dakota",none,Nonmetro
+46049,"Faulk County, South Dakota",none,Nonmetro
+46051,"Grant County, South Dakota",none,Nonmetro
+46053,"Gregory County, South Dakota",none,Nonmetro
+46055,"Haakon County, South Dakota",none,Nonmetro
+46057,"Hamlin County, South Dakota",none,Nonmetro
+46059,"Hand County, South Dakota",none,Nonmetro
+46061,"Hanson County, South Dakota",none,Nonmetro
+46063,"Harding County, South Dakota",none,Nonmetro
+46065,"Hughes County, South Dakota",none,Nonmetro
+46067,"Hutchinson County, South Dakota",none,Nonmetro
+46069,"Hyde County, South Dakota",none,Nonmetro
+46071,"Jackson County, South Dakota",both,Nonmetro
+46073,"Jerauld County, South Dakota",none,Nonmetro
+46075,"Jones County, South Dakota",none,Nonmetro
+46077,"Kingsbury County, South Dakota",none,Nonmetro
+46079,"Lake County, South Dakota",none,Nonmetro
+46081,"Lawrence County, South Dakota",none,Nonmetro
+46083,"Lincoln County, South Dakota",none,Metro
+46085,"Lyman County, South Dakota",high,Nonmetro
+46087,"McCook County, South Dakota",none,Metro
+46089,"McPherson County, South Dakota",none,Nonmetro
+46091,"Marshall County, South Dakota",none,Nonmetro
+46093,"Meade County, South Dakota",none,Metro
+46095,"Mellette County, South Dakota",both,Nonmetro
+46097,"Miner County, South Dakota",none,Nonmetro
+46099,"Minnehaha County, South Dakota",none,Metro
+46101,"Moody County, South Dakota",none,Nonmetro
+46102,"Oglala Lakota County, South Dakota",both,Nonmetro
+46103,"Pennington County, South Dakota",none,Metro
+46105,"Perkins County, South Dakota",none,Nonmetro
+46107,"Potter County, South Dakota",none,Nonmetro
+46109,"Roberts County, South Dakota",both,Nonmetro
+46111,"Sanborn County, South Dakota",none,Nonmetro
+46115,"Spink County, South Dakota",none,Nonmetro
+46117,"Stanley County, South Dakota",none,Nonmetro
+46119,"Sully County, South Dakota",none,Nonmetro
+46121,"Todd County, South Dakota",both,Nonmetro
+46123,"Tripp County, South Dakota",none,Nonmetro
+46125,"Turner County, South Dakota",none,Metro
+46127,"Union County, South Dakota",none,Metro
+46129,"Walworth County, South Dakota",none,Nonmetro
+46135,"Yankton County, South Dakota",none,Nonmetro
+46137,"Ziebach County, South Dakota",both,Nonmetro
+47001,"Anderson County, Tennessee",none,Metro
+47003,"Bedford County, Tennessee",none,Nonmetro
+47005,"Benton County, Tennessee",none,Nonmetro
+47007,"Bledsoe County, Tennessee",high,Nonmetro
+47009,"Blount County, Tennessee",none,Metro
+47011,"Bradley County, Tennessee",none,Metro
+47013,"Campbell County, Tennessee",both,Metro
+47015,"Cannon County, Tennessee",none,Metro
+47017,"Carroll County, Tennessee",none,Nonmetro
+47019,"Carter County, Tennessee",high,Metro
+47021,"Cheatham County, Tennessee",none,Metro
+47023,"Chester County, Tennessee",none,Metro
+47025,"Claiborne County, Tennessee",both,Nonmetro
+47027,"Clay County, Tennessee",high,Nonmetro
+47029,"Cocke County, Tennessee",both,Nonmetro
+47031,"Coffee County, Tennessee",none,Nonmetro
+47033,"Crockett County, Tennessee",none,Metro
+47035,"Cumberland County, Tennessee",none,Nonmetro
+47037,"Davidson County, Tennessee",none,Metro
+47039,"Decatur County, Tennessee",none,Nonmetro
+47041,"DeKalb County, Tennessee",none,Nonmetro
+47043,"Dickson County, Tennessee",none,Metro
+47045,"Dyer County, Tennessee",none,Nonmetro
+47047,"Fayette County, Tennessee",none,Metro
+47049,"Fentress County, Tennessee",both,Nonmetro
+47051,"Franklin County, Tennessee",none,Nonmetro
+47053,"Gibson County, Tennessee",none,Nonmetro
+47055,"Giles County, Tennessee",none,Nonmetro
+47057,"Grainger County, Tennessee",none,Metro
+47059,"Greene County, Tennessee",none,Nonmetro
+47061,"Grundy County, Tennessee",both,Nonmetro
+47063,"Hamblen County, Tennessee",none,Metro
+47065,"Hamilton County, Tennessee",none,Metro
+47067,"Hancock County, Tennessee",both,Nonmetro
+47069,"Hardeman County, Tennessee",none,Nonmetro
+47071,"Hardin County, Tennessee",high,Nonmetro
+47073,"Hawkins County, Tennessee",none,Metro
+47075,"Haywood County, Tennessee",none,Nonmetro
+47077,"Henderson County, Tennessee",none,Nonmetro
+47079,"Henry County, Tennessee",high,Nonmetro
+47081,"Hickman County, Tennessee",none,Metro
+47083,"Houston County, Tennessee",none,Nonmetro
+47085,"Humphreys County, Tennessee",none,Nonmetro
+47087,"Jackson County, Tennessee",none,Nonmetro
+47089,"Jefferson County, Tennessee",none,Metro
+47091,"Johnson County, Tennessee",both,Nonmetro
+47093,"Knox County, Tennessee",none,Metro
+47095,"Lake County, Tennessee",both,Nonmetro
+47097,"Lauderdale County, Tennessee",high,Nonmetro
+47099,"Lawrence County, Tennessee",none,Nonmetro
+47101,"Lewis County, Tennessee",none,Nonmetro
+47103,"Lincoln County, Tennessee",none,Nonmetro
+47105,"Loudon County, Tennessee",none,Metro
+47107,"McMinn County, Tennessee",none,Nonmetro
+47109,"McNairy County, Tennessee",none,Nonmetro
+47111,"Macon County, Tennessee",none,Metro
+47113,"Madison County, Tennessee",none,Metro
+47115,"Marion County, Tennessee",none,Metro
+47117,"Marshall County, Tennessee",none,Nonmetro
+47119,"Maury County, Tennessee",none,Metro
+47121,"Meigs County, Tennessee",none,Nonmetro
+47123,"Monroe County, Tennessee",none,Nonmetro
+47125,"Montgomery County, Tennessee",none,Metro
+47127,"Moore County, Tennessee",none,Nonmetro
+47129,"Morgan County, Tennessee",high,Metro
+47131,"Obion County, Tennessee",high,Nonmetro
+47133,"Overton County, Tennessee",none,Nonmetro
+47135,"Perry County, Tennessee",high,Nonmetro
+47137,"Pickett County, Tennessee",high,Nonmetro
+47139,"Polk County, Tennessee",none,Metro
+47141,"Putnam County, Tennessee",none,Nonmetro
+47143,"Rhea County, Tennessee",none,Nonmetro
+47145,"Roane County, Tennessee",none,Metro
+47147,"Robertson County, Tennessee",none,Metro
+47149,"Rutherford County, Tennessee",none,Metro
+47151,"Scott County, Tennessee",both,Nonmetro
+47153,"Sequatchie County, Tennessee",none,Metro
+47155,"Sevier County, Tennessee",none,Nonmetro
+47157,"Shelby County, Tennessee",none,Metro
+47159,"Smith County, Tennessee",none,Metro
+47161,"Stewart County, Tennessee",none,Nonmetro
+47163,"Sullivan County, Tennessee",none,Metro
+47165,"Sumner County, Tennessee",none,Metro
+47167,"Tipton County, Tennessee",none,Metro
+47169,"Trousdale County, Tennessee",none,Metro
+47171,"Unicoi County, Tennessee",none,Metro
+47173,"Union County, Tennessee",high,Metro
+47175,"Van Buren County, Tennessee",none,Nonmetro
+47177,"Warren County, Tennessee",high,Nonmetro
+47179,"Washington County, Tennessee",none,Metro
+47181,"Wayne County, Tennessee",none,Nonmetro
+47183,"Weakley County, Tennessee",high,Nonmetro
+47185,"White County, Tennessee",none,Nonmetro
+47187,"Williamson County, Tennessee",none,Metro
+47189,"Wilson County, Tennessee",none,Metro
+48001,"Anderson County, Texas",none,Nonmetro
+48003,"Andrews County, Texas",none,Nonmetro
+48005,"Angelina County, Texas",none,Nonmetro
+48007,"Aransas County, Texas",high,Metro
+48009,"Archer County, Texas",none,Metro
+48011,"Armstrong County, Texas",none,Metro
+48013,"Atascosa County, Texas",none,Metro
+48015,"Austin County, Texas",none,Metro
+48017,"Bailey County, Texas",none,Nonmetro
+48019,"Bandera County, Texas",none,Metro
+48021,"Bastrop County, Texas",none,Metro
+48023,"Baylor County, Texas",none,Nonmetro
+48025,"Bee County, Texas",both,Nonmetro
+48027,"Bell County, Texas",none,Metro
+48029,"Bexar County, Texas",none,Metro
+48031,"Blanco County, Texas",none,Nonmetro
+48033,"Borden County, Texas",none,Nonmetro
+48035,"Bosque County, Texas",none,Nonmetro
+48037,"Bowie County, Texas",none,Metro
+48039,"Brazoria County, Texas",none,Metro
+48041,"Brazos County, Texas",both,Metro
+48043,"Brewster County, Texas",none,Nonmetro
+48045,"Briscoe County, Texas",none,Nonmetro
+48047,"Brooks County, Texas",both,Nonmetro
+48049,"Brown County, Texas",none,Nonmetro
+48051,"Burleson County, Texas",none,Metro
+48053,"Burnet County, Texas",none,Nonmetro
+48055,"Caldwell County, Texas",none,Metro
+48057,"Calhoun County, Texas",none,Nonmetro
+48059,"Callahan County, Texas",none,Metro
+48061,"Cameron County, Texas",both,Metro
+48063,"Camp County, Texas",none,Nonmetro
+48065,"Carson County, Texas",none,Metro
+48067,"Cass County, Texas",none,Nonmetro
+48069,"Castro County, Texas",none,Nonmetro
+48071,"Chambers County, Texas",none,Metro
+48073,"Cherokee County, Texas",none,Nonmetro
+48075,"Childress County, Texas",none,Nonmetro
+48077,"Clay County, Texas",none,Metro
+48079,"Cochran County, Texas",high,Nonmetro
+48081,"Coke County, Texas",none,Nonmetro
+48083,"Coleman County, Texas",none,Nonmetro
+48085,"Collin County, Texas",none,Metro
+48087,"Collingsworth County, Texas",none,Nonmetro
+48089,"Colorado County, Texas",none,Nonmetro
+48091,"Comal County, Texas",none,Metro
+48093,"Comanche County, Texas",none,Nonmetro
+48095,"Concho County, Texas",none,Nonmetro
+48097,"Cooke County, Texas",none,Nonmetro
+48099,"Coryell County, Texas",none,Metro
+48101,"Cottle County, Texas",high,Nonmetro
+48103,"Crane County, Texas",none,Nonmetro
+48105,"Crockett County, Texas",none,Nonmetro
+48107,"Crosby County, Texas",both,Metro
+48109,"Culberson County, Texas",high,Nonmetro
+48111,"Dallam County, Texas",none,Nonmetro
+48113,"Dallas County, Texas",none,Metro
+48115,"Dawson County, Texas",high,Nonmetro
+48117,"Deaf Smith County, Texas",none,Nonmetro
+48119,"Delta County, Texas",high,Nonmetro
+48121,"Denton County, Texas",none,Metro
+48123,"DeWitt County, Texas",none,Nonmetro
+48125,"Dickens County, Texas",none,Nonmetro
+48127,"Dimmit County, Texas",both,Nonmetro
+48129,"Donley County, Texas",none,Nonmetro
+48131,"Duval County, Texas",both,Nonmetro
+48133,"Eastland County, Texas",none,Nonmetro
+48135,"Ector County, Texas",none,Metro
+48137,"Edwards County, Texas",persistent,Nonmetro
+48139,"Ellis County, Texas",none,Metro
+48141,"El Paso County, Texas",both,Metro
+48143,"Erath County, Texas",none,Nonmetro
+48145,"Falls County, Texas",both,Metro
+48147,"Fannin County, Texas",none,Nonmetro
+48149,"Fayette County, Texas",none,Nonmetro
+48151,"Fisher County, Texas",none,Nonmetro
+48153,"Floyd County, Texas",persistent,Nonmetro
+48155,"Foard County, Texas",none,Nonmetro
+48157,"Fort Bend County, Texas",none,Metro
+48159,"Franklin County, Texas",none,Nonmetro
+48161,"Freestone County, Texas",none,Nonmetro
+48163,"Frio County, Texas",both,Nonmetro
+48165,"Gaines County, Texas",none,Nonmetro
+48167,"Galveston County, Texas",none,Metro
+48169,"Garza County, Texas",none,Nonmetro
+48171,"Gillespie County, Texas",none,Nonmetro
+48173,"Glasscock County, Texas",none,Nonmetro
+48175,"Goliad County, Texas",none,Metro
+48177,"Gonzales County, Texas",none,Nonmetro
+48179,"Gray County, Texas",none,Nonmetro
+48181,"Grayson County, Texas",none,Metro
+48183,"Gregg County, Texas",none,Metro
+48185,"Grimes County, Texas",none,Nonmetro
+48187,"Guadalupe County, Texas",none,Metro
+48189,"Hale County, Texas",none,Nonmetro
+48191,"Hall County, Texas",both,Nonmetro
+48193,"Hamilton County, Texas",none,Nonmetro
+48195,"Hansford County, Texas",none,Nonmetro
+48197,"Hardeman County, Texas",none,Nonmetro
+48199,"Hardin County, Texas",none,Metro
+48201,"Harris County, Texas",none,Metro
+48203,"Harrison County, Texas",none,Nonmetro
+48205,"Hartley County, Texas",none,Nonmetro
+48207,"Haskell County, Texas",high,Nonmetro
+48209,"Hays County, Texas",none,Metro
+48211,"Hemphill County, Texas",none,Nonmetro
+48213,"Henderson County, Texas",none,Nonmetro
+48215,"Hidalgo County, Texas",both,Metro
+48217,"Hill County, Texas",none,Nonmetro
+48219,"Hockley County, Texas",none,Nonmetro
+48221,"Hood County, Texas",none,Metro
+48223,"Hopkins County, Texas",none,Nonmetro
+48225,"Houston County, Texas",both,Nonmetro
+48227,"Howard County, Texas",none,Nonmetro
+48229,"Hudspeth County, Texas",both,Metro
+48231,"Hunt County, Texas",none,Metro
+48233,"Hutchinson County, Texas",none,Nonmetro
+48235,"Irion County, Texas",none,Metro
+48237,"Jack County, Texas",none,Nonmetro
+48239,"Jackson County, Texas",none,Nonmetro
+48241,"Jasper County, Texas",none,Nonmetro
+48243,"Jeff Davis County, Texas",none,Nonmetro
+48245,"Jefferson County, Texas",none,Metro
+48247,"Jim Hogg County, Texas",high,Nonmetro
+48249,"Jim Wells County, Texas",both,Nonmetro
+48251,"Johnson County, Texas",none,Metro
+48253,"Jones County, Texas",none,Metro
+48255,"Karnes County, Texas",persistent,Nonmetro
+48257,"Kaufman County, Texas",none,Metro
+48259,"Kendall County, Texas",none,Metro
+48261,"Kenedy County, Texas",none,Nonmetro
+48263,"Kent County, Texas",none,Nonmetro
+48265,"Kerr County, Texas",none,Nonmetro
+48267,"Kimble County, Texas",high,Nonmetro
+48269,"King County, Texas",none,Nonmetro
+48271,"Kinney County, Texas",persistent,Nonmetro
+48273,"Kleberg County, Texas",both,Nonmetro
+48275,"Knox County, Texas",none,Nonmetro
+48277,"Lamar County, Texas",none,Nonmetro
+48279,"Lamb County, Texas",persistent,Nonmetro
+48281,"Lampasas County, Texas",none,Metro
+48283,"La Salle County, Texas",persistent,Nonmetro
+48285,"Lavaca County, Texas",none,Nonmetro
+48287,"Lee County, Texas",none,Nonmetro
+48289,"Leon County, Texas",none,Nonmetro
+48291,"Liberty County, Texas",none,Metro
+48293,"Limestone County, Texas",none,Nonmetro
+48295,"Lipscomb County, Texas",none,Nonmetro
+48297,"Live Oak County, Texas",none,Nonmetro
+48299,"Llano County, Texas",none,Nonmetro
+48301,"Loving County, Texas",none,Nonmetro
+48303,"Lubbock County, Texas",none,Metro
+48305,"Lynn County, Texas",none,Metro
+48307,"McCulloch County, Texas",persistent,Nonmetro
+48309,"McLennan County, Texas",none,Metro
+48311,"McMullen County, Texas",none,Nonmetro
+48313,"Madison County, Texas",none,Nonmetro
+48315,"Marion County, Texas",persistent,Nonmetro
+48317,"Martin County, Texas",none,Metro
+48319,"Mason County, Texas",none,Nonmetro
+48321,"Matagorda County, Texas",none,Nonmetro
+48323,"Maverick County, Texas",both,Nonmetro
+48325,"Medina County, Texas",none,Metro
+48327,"Menard County, Texas",none,Nonmetro
+48329,"Midland County, Texas",none,Metro
+48331,"Milam County, Texas",none,Nonmetro
+48333,"Mills County, Texas",none,Nonmetro
+48335,"Mitchell County, Texas",none,Nonmetro
+48337,"Montague County, Texas",none,Nonmetro
+48339,"Montgomery County, Texas",none,Metro
+48341,"Moore County, Texas",none,Nonmetro
+48343,"Morris County, Texas",none,Nonmetro
+48345,"Motley County, Texas",none,Nonmetro
+48347,"Nacogdoches County, Texas",high,Nonmetro
+48349,"Navarro County, Texas",none,Nonmetro
+48351,"Newton County, Texas",high,Metro
+48353,"Nolan County, Texas",none,Nonmetro
+48355,"Nueces County, Texas",none,Metro
+48357,"Ochiltree County, Texas",none,Nonmetro
+48359,"Oldham County, Texas",none,Metro
+48361,"Orange County, Texas",none,Metro
+48363,"Palo Pinto County, Texas",none,Nonmetro
+48365,"Panola County, Texas",none,Nonmetro
+48367,"Parker County, Texas",none,Metro
+48369,"Parmer County, Texas",none,Nonmetro
+48371,"Pecos County, Texas",none,Nonmetro
+48373,"Polk County, Texas",none,Nonmetro
+48375,"Potter County, Texas",high,Metro
+48377,"Presidio County, Texas",both,Nonmetro
+48379,"Rains County, Texas",none,Nonmetro
+48381,"Randall County, Texas",none,Metro
+48383,"Reagan County, Texas",none,Nonmetro
+48385,"Real County, Texas",both,Nonmetro
+48387,"Red River County, Texas",none,Nonmetro
+48389,"Reeves County, Texas",persistent,Nonmetro
+48391,"Refugio County, Texas",none,Nonmetro
+48393,"Roberts County, Texas",none,Nonmetro
+48395,"Robertson County, Texas",persistent,Metro
+48397,"Rockwall County, Texas",none,Metro
+48399,"Runnels County, Texas",none,Nonmetro
+48401,"Rusk County, Texas",none,Metro
+48403,"Sabine County, Texas",high,Nonmetro
+48405,"San Augustine County, Texas",both,Nonmetro
+48407,"San Jacinto County, Texas",none,Nonmetro
+48409,"San Patricio County, Texas",none,Metro
+48411,"San Saba County, Texas",none,Nonmetro
+48413,"Schleicher County, Texas",none,Nonmetro
+48415,"Scurry County, Texas",none,Nonmetro
+48417,"Shackelford County, Texas",none,Nonmetro
+48419,"Shelby County, Texas",high,Nonmetro
+48421,"Sherman County, Texas",none,Nonmetro
+48423,"Smith County, Texas",none,Metro
+48425,"Somervell County, Texas",high,Metro
+48427,"Starr County, Texas",both,Nonmetro
+48429,"Stephens County, Texas",high,Nonmetro
+48431,"Sterling County, Texas",none,Nonmetro
+48433,"Stonewall County, Texas",none,Nonmetro
+48435,"Sutton County, Texas",none,Nonmetro
+48437,"Swisher County, Texas",high,Nonmetro
+48439,"Tarrant County, Texas",none,Metro
+48441,"Taylor County, Texas",none,Metro
+48443,"Terrell County, Texas",none,Nonmetro
+48445,"Terry County, Texas",none,Nonmetro
+48447,"Throckmorton County, Texas",none,Nonmetro
+48449,"Titus County, Texas",none,Nonmetro
+48451,"Tom Green County, Texas",none,Metro
+48453,"Travis County, Texas",none,Metro
+48455,"Trinity County, Texas",none,Nonmetro
+48457,"Tyler County, Texas",none,Nonmetro
+48459,"Upshur County, Texas",none,Metro
+48461,"Upton County, Texas",none,Nonmetro
+48463,"Uvalde County, Texas",persistent,Nonmetro
+48465,"Val Verde County, Texas",both,Nonmetro
+48467,"Van Zandt County, Texas",none,Nonmetro
+48469,"Victoria County, Texas",none,Metro
+48471,"Walker County, Texas",high,Nonmetro
+48473,"Waller County, Texas",none,Metro
+48475,"Ward County, Texas",none,Nonmetro
+48477,"Washington County, Texas",none,Nonmetro
+48479,"Webb County, Texas",both,Metro
+48481,"Wharton County, Texas",none,Nonmetro
+48483,"Wheeler County, Texas",none,Nonmetro
+48485,"Wichita County, Texas",none,Metro
+48487,"Wilbarger County, Texas",none,Nonmetro
+48489,"Willacy County, Texas",both,Nonmetro
+48491,"Williamson County, Texas",none,Metro
+48493,"Wilson County, Texas",none,Metro
+48495,"Winkler County, Texas",none,Nonmetro
+48497,"Wise County, Texas",none,Metro
+48499,"Wood County, Texas",none,Nonmetro
+48501,"Yoakum County, Texas",none,Nonmetro
+48503,"Young County, Texas",none,Nonmetro
+48505,"Zapata County, Texas",both,Nonmetro
+48507,"Zavala County, Texas",both,Nonmetro
+49001,"Beaver County, Utah",none,Nonmetro
+49003,"Box Elder County, Utah",none,Metro
+49005,"Cache County, Utah",none,Metro
+49007,"Carbon County, Utah",none,Nonmetro
+49009,"Daggett County, Utah",none,Nonmetro
+49011,"Davis County, Utah",none,Metro
+49013,"Duchesne County, Utah",none,Nonmetro
+49015,"Emery County, Utah",none,Nonmetro
+49017,"Garfield County, Utah",none,Nonmetro
+49019,"Grand County, Utah",none,Nonmetro
+49021,"Iron County, Utah",none,Nonmetro
+49023,"Juab County, Utah",none,Metro
+49025,"Kane County, Utah",none,Nonmetro
+49027,"Millard County, Utah",none,Nonmetro
+49029,"Morgan County, Utah",none,Metro
+49031,"Piute County, Utah",none,Nonmetro
+49033,"Rich County, Utah",none,Nonmetro
+49035,"Salt Lake County, Utah",none,Metro
+49037,"San Juan County, Utah",both,Nonmetro
+49039,"Sanpete County, Utah",none,Nonmetro
+49041,"Sevier County, Utah",none,Nonmetro
+49043,"Summit County, Utah",none,Nonmetro
+49045,"Tooele County, Utah",none,Metro
+49047,"Uintah County, Utah",none,Nonmetro
+49049,"Utah County, Utah",none,Metro
+49051,"Wasatch County, Utah",none,Nonmetro
+49053,"Washington County, Utah",none,Metro
+49055,"Wayne County, Utah",none,Nonmetro
+49057,"Weber County, Utah",none,Metro
+50001,"Addison County, Vermont",none,Nonmetro
+50003,"Bennington County, Vermont",none,Nonmetro
+50005,"Caledonia County, Vermont",none,Nonmetro
+50007,"Chittenden County, Vermont",none,Metro
+50009,"Essex County, Vermont",none,Nonmetro
+50011,"Franklin County, Vermont",none,Metro
+50013,"Grand Isle County, Vermont",none,Metro
+50015,"Lamoille County, Vermont",none,Nonmetro
+50017,"Orange County, Vermont",none,Nonmetro
+50019,"Orleans County, Vermont",none,Nonmetro
+50021,"Rutland County, Vermont",none,Nonmetro
+50023,"Washington County, Vermont",none,Nonmetro
+50025,"Windham County, Vermont",none,Nonmetro
+50027,"Windsor County, Vermont",none,Nonmetro
+51001,"Accomack County, Virginia",none,Nonmetro
+51003,"Albemarle County, Virginia",none,Metro
+51005,"Alleghany County, Virginia",none,Nonmetro
+51007,"Amelia County, Virginia",none,Metro
+51009,"Amherst County, Virginia",none,Metro
+51011,"Appomattox County, Virginia",none,Metro
+51013,"Arlington County, Virginia",none,Metro
+51015,"Augusta County, Virginia",none,Metro
+51017,"Bath County, Virginia",none,Nonmetro
+51019,"Bedford County, Virginia",none,Metro
+51021,"Bland County, Virginia",none,Nonmetro
+51023,"Botetourt County, Virginia",none,Metro
+51025,"Brunswick County, Virginia",high,Nonmetro
+51027,"Buchanan County, Virginia",high,Nonmetro
+51029,"Buckingham County, Virginia",none,Metro
+51031,"Campbell County, Virginia",none,Metro
+51033,"Caroline County, Virginia",none,Metro
+51035,"Carroll County, Virginia",none,Nonmetro
+51036,"Charles City County, Virginia",none,Metro
+51037,"Charlotte County, Virginia",high,Nonmetro
+51041,"Chesterfield County, Virginia",none,Metro
+51043,"Clarke County, Virginia",none,Metro
+51045,"Craig County, Virginia",none,Metro
+51047,"Culpeper County, Virginia",none,Metro
+51049,"Cumberland County, Virginia",none,Nonmetro
+51051,"Dickenson County, Virginia",high,Nonmetro
+51053,"Dinwiddie County, Virginia",none,Metro
+51057,"Essex County, Virginia",none,Nonmetro
+51059,"Fairfax County, Virginia",none,Metro
+51061,"Fauquier County, Virginia",none,Metro
+51063,"Floyd County, Virginia",none,Metro
+51065,"Fluvanna County, Virginia",none,Metro
+51067,"Franklin County, Virginia",none,Metro
+51069,"Frederick County, Virginia",none,Metro
+51071,"Giles County, Virginia",none,Metro
+51073,"Gloucester County, Virginia",none,Metro
+51075,"Goochland County, Virginia",none,Metro
+51077,"Grayson County, Virginia",high,Nonmetro
+51079,"Greene County, Virginia",none,Metro
+51081,"Greensville County, Virginia",none,Nonmetro
+51083,"Halifax County, Virginia",none,Nonmetro
+51085,"Hanover County, Virginia",none,Metro
+51087,"Henrico County, Virginia",none,Metro
+51089,"Henry County, Virginia",none,Nonmetro
+51091,"Highland County, Virginia",none,Nonmetro
+51093,"Isle of Wight County, Virginia",none,Metro
+51095,"James City County, Virginia",none,Metro
+51097,"King and Queen County, Virginia",none,Nonmetro
+51099,"King George County, Virginia",none,Nonmetro
+51101,"King William County, Virginia",none,Metro
+51103,"Lancaster County, Virginia",none,Nonmetro
+51105,"Lee County, Virginia",both,Nonmetro
+51107,"Loudoun County, Virginia",none,Metro
+51109,"Louisa County, Virginia",none,Nonmetro
+51111,"Lunenburg County, Virginia",none,Nonmetro
+51113,"Madison County, Virginia",none,Nonmetro
+51115,"Mathews County, Virginia",none,Metro
+51117,"Mecklenburg County, Virginia",none,Nonmetro
+51119,"Middlesex County, Virginia",none,Nonmetro
+51121,"Montgomery County, Virginia",high,Metro
+51125,"Nelson County, Virginia",none,Metro
+51127,"New Kent County, Virginia",none,Metro
+51131,"Northampton County, Virginia",persistent,Nonmetro
+51133,"Northumberland County, Virginia",none,Nonmetro
+51135,"Nottoway County, Virginia",none,Nonmetro
+51137,"Orange County, Virginia",none,Nonmetro
+51139,"Page County, Virginia",none,Nonmetro
+51141,"Patrick County, Virginia",none,Nonmetro
+51143,"Pittsylvania County, Virginia",none,Nonmetro
+51145,"Powhatan County, Virginia",none,Metro
+51147,"Prince Edward County, Virginia",none,Nonmetro
+51149,"Prince George County, Virginia",none,Metro
+51153,"Prince William County, Virginia",none,Metro
+51155,"Pulaski County, Virginia",none,Metro
+51157,"Rappahannock County, Virginia",none,Metro
+51159,"Richmond County, Virginia",none,Nonmetro
+51161,"Roanoke County, Virginia",none,Metro
+51163,"Rockbridge County, Virginia",none,Nonmetro
+51165,"Rockingham County, Virginia",none,Metro
+51167,"Russell County, Virginia",high,Nonmetro
+51169,"Scott County, Virginia",none,Metro
+51171,"Shenandoah County, Virginia",none,Nonmetro
+51173,"Smyth County, Virginia",none,Nonmetro
+51175,"Southampton County, Virginia",none,Nonmetro
+51177,"Spotsylvania County, Virginia",none,Metro
+51179,"Stafford County, Virginia",none,Metro
+51181,"Surry County, Virginia",none,Nonmetro
+51183,"Sussex County, Virginia",none,Metro
+51185,"Tazewell County, Virginia",none,Nonmetro
+51187,"Warren County, Virginia",none,Metro
+51191,"Washington County, Virginia",none,Metro
+51193,"Westmoreland County, Virginia",none,Nonmetro
+51195,"Wise County, Virginia",high,Nonmetro
+51197,"Wythe County, Virginia",none,Nonmetro
+51199,"York County, Virginia",none,Metro
+51510,"Alexandria city, Virginia",none,Metro
+51520,"Bristol city, Virginia",high,Metro
+51530,"Buena Vista city, Virginia",high,Nonmetro
+51540,"Charlottesville city, Virginia",high,Metro
+51550,"Chesapeake city, Virginia",none,Metro
+51570,"Colonial Heights city, Virginia",none,Metro
+51580,"Covington city, Virginia",none,Nonmetro
+51590,"Danville city, Virginia",high,Nonmetro
+51595,"Emporia city, Virginia",high,Nonmetro
+51600,"Fairfax city, Virginia",none,Metro
+51610,"Falls Church city, Virginia",none,Metro
+51620,"Franklin city, Virginia",none,Nonmetro
+51630,"Fredericksburg city, Virginia",none,Metro
+51640,"Galax city, Virginia",high,Nonmetro
+51650,"Hampton city, Virginia",none,Metro
+51660,"Harrisonburg city, Virginia",high,Metro
+51670,"Hopewell city, Virginia",high,Metro
+51678,"Lexington city, Virginia",high,Nonmetro
+51680,"Lynchburg city, Virginia",none,Metro
+51683,"Manassas city, Virginia",none,Metro
+51685,"Manassas Park city, Virginia",none,Metro
+51690,"Martinsville city, Virginia",high,Nonmetro
+51700,"Newport News city, Virginia",none,Metro
+51710,"Norfolk city, Virginia",none,Metro
+51720,"Norton city, Virginia",high,Nonmetro
+51730,"Petersburg city, Virginia",high,Metro
+51735,"Poquoson city, Virginia",none,Metro
+51740,"Portsmouth city, Virginia",none,Metro
+51750,"Radford city, Virginia",high,Metro
+51760,"Richmond city, Virginia",high,Metro
+51770,"Roanoke city, Virginia",high,Metro
+51775,"Salem city, Virginia",none,Metro
+51790,"Staunton city, Virginia",none,Metro
+51800,"Suffolk city, Virginia",none,Metro
+51810,"Virginia Beach city, Virginia",none,Metro
+51820,"Waynesboro city, Virginia",none,Metro
+51830,"Williamsburg city, Virginia",high,Metro
+51840,"Winchester city, Virginia",none,Metro
+53001,"Adams County, Washington",high,Nonmetro
+53003,"Asotin County, Washington",none,Metro
+53005,"Benton County, Washington",none,Metro
+53007,"Chelan County, Washington",none,Metro
+53009,"Clallam County, Washington",none,Nonmetro
+53011,"Clark County, Washington",none,Metro
+53013,"Columbia County, Washington",none,Metro
+53015,"Cowlitz County, Washington",none,Metro
+53017,"Douglas County, Washington",none,Metro
+53019,"Ferry County, Washington",none,Nonmetro
+53021,"Franklin County, Washington",none,Metro
+53023,"Garfield County, Washington",none,Nonmetro
+53025,"Grant County, Washington",none,Nonmetro
+53027,"Grays Harbor County, Washington",none,Nonmetro
+53029,"Island County, Washington",none,Nonmetro
+53031,"Jefferson County, Washington",none,Nonmetro
+53033,"King County, Washington",none,Metro
+53035,"Kitsap County, Washington",none,Metro
+53037,"Kittitas County, Washington",none,Nonmetro
+53039,"Klickitat County, Washington",none,Nonmetro
+53041,"Lewis County, Washington",none,Nonmetro
+53043,"Lincoln County, Washington",none,Nonmetro
+53045,"Mason County, Washington",none,Nonmetro
+53047,"Okanogan County, Washington",none,Nonmetro
+53049,"Pacific County, Washington",none,Nonmetro
+53051,"Pend Oreille County, Washington",none,Metro
+53053,"Pierce County, Washington",none,Metro
+53055,"San Juan County, Washington",none,Nonmetro
+53057,"Skagit County, Washington",none,Metro
+53059,"Skamania County, Washington",none,Metro
+53061,"Snohomish County, Washington",none,Metro
+53063,"Spokane County, Washington",none,Metro
+53065,"Stevens County, Washington",none,Metro
+53067,"Thurston County, Washington",none,Metro
+53069,"Wahkiakum County, Washington",none,Nonmetro
+53071,"Walla Walla County, Washington",none,Metro
+53073,"Whatcom County, Washington",none,Metro
+53075,"Whitman County, Washington",high,Nonmetro
+53077,"Yakima County, Washington",none,Metro
+54001,"Barbour County, West Virginia",high,Nonmetro
+54003,"Berkeley County, West Virginia",none,Metro
+54005,"Boone County, West Virginia",high,Metro
+54007,"Braxton County, West Virginia",both,Nonmetro
+54009,"Brooke County, West Virginia",none,Metro
+54011,"Cabell County, West Virginia",high,Metro
+54013,"Calhoun County, West Virginia",both,Nonmetro
+54015,"Clay County, West Virginia",both,Metro
+54017,"Doddridge County, West Virginia",none,Nonmetro
+54019,"Fayette County, West Virginia",high,Metro
+54021,"Gilmer County, West Virginia",persistent,Nonmetro
+54023,"Grant County, West Virginia",none,Nonmetro
+54025,"Greenbrier County, West Virginia",none,Nonmetro
+54027,"Hampshire County, West Virginia",none,Metro
+54029,"Hancock County, West Virginia",none,Metro
+54031,"Hardy County, West Virginia",none,Nonmetro
+54033,"Harrison County, West Virginia",none,Nonmetro
+54035,"Jackson County, West Virginia",none,Nonmetro
+54037,"Jefferson County, West Virginia",none,Metro
+54039,"Kanawha County, West Virginia",none,Metro
+54041,"Lewis County, West Virginia",high,Nonmetro
+54043,"Lincoln County, West Virginia",both,Metro
+54045,"Logan County, West Virginia",high,Nonmetro
+54047,"McDowell County, West Virginia",both,Nonmetro
+54049,"Marion County, West Virginia",none,Nonmetro
+54051,"Marshall County, West Virginia",none,Metro
+54053,"Mason County, West Virginia",none,Nonmetro
+54055,"Mercer County, West Virginia",none,Nonmetro
+54057,"Mineral County, West Virginia",none,Metro
+54059,"Mingo County, West Virginia",both,Nonmetro
+54061,"Monongalia County, West Virginia",high,Metro
+54063,"Monroe County, West Virginia",none,Nonmetro
+54065,"Morgan County, West Virginia",none,Nonmetro
+54067,"Nicholas County, West Virginia",none,Nonmetro
+54069,"Ohio County, West Virginia",none,Metro
+54071,"Pendleton County, West Virginia",none,Nonmetro
+54073,"Pleasants County, West Virginia",none,Nonmetro
+54075,"Pocahontas County, West Virginia",none,Nonmetro
+54077,"Preston County, West Virginia",none,Metro
+54079,"Putnam County, West Virginia",none,Metro
+54081,"Raleigh County, West Virginia",none,Metro
+54083,"Randolph County, West Virginia",none,Nonmetro
+54085,"Ritchie County, West Virginia",none,Nonmetro
+54087,"Roane County, West Virginia",none,Nonmetro
+54089,"Summers County, West Virginia",high,Nonmetro
+54091,"Taylor County, West Virginia",none,Nonmetro
+54093,"Tucker County, West Virginia",none,Nonmetro
+54095,"Tyler County, West Virginia",none,Nonmetro
+54097,"Upshur County, West Virginia",high,Nonmetro
+54099,"Wayne County, West Virginia",high,Metro
+54101,"Webster County, West Virginia",both,Nonmetro
+54103,"Wetzel County, West Virginia",high,Nonmetro
+54105,"Wirt County, West Virginia",none,Metro
+54107,"Wood County, West Virginia",none,Metro
+54109,"Wyoming County, West Virginia",high,Nonmetro
+55001,"Adams County, Wisconsin",none,Nonmetro
+55003,"Ashland County, Wisconsin",none,Nonmetro
+55005,"Barron County, Wisconsin",none,Nonmetro
+55007,"Bayfield County, Wisconsin",none,Nonmetro
+55009,"Brown County, Wisconsin",none,Metro
+55011,"Buffalo County, Wisconsin",none,Nonmetro
+55013,"Burnett County, Wisconsin",none,Nonmetro
+55015,"Calumet County, Wisconsin",none,Metro
+55017,"Chippewa County, Wisconsin",none,Metro
+55019,"Clark County, Wisconsin",none,Nonmetro
+55021,"Columbia County, Wisconsin",none,Metro
+55023,"Crawford County, Wisconsin",none,Nonmetro
+55025,"Dane County, Wisconsin",none,Metro
+55027,"Dodge County, Wisconsin",none,Nonmetro
+55029,"Door County, Wisconsin",none,Nonmetro
+55031,"Douglas County, Wisconsin",none,Metro
+55033,"Dunn County, Wisconsin",none,Nonmetro
+55035,"Eau Claire County, Wisconsin",none,Metro
+55037,"Florence County, Wisconsin",none,Nonmetro
+55039,"Fond du Lac County, Wisconsin",none,Metro
+55041,"Forest County, Wisconsin",none,Nonmetro
+55043,"Grant County, Wisconsin",none,Nonmetro
+55045,"Green County, Wisconsin",none,Metro
+55047,"Green Lake County, Wisconsin",none,Nonmetro
+55049,"Iowa County, Wisconsin",none,Metro
+55051,"Iron County, Wisconsin",none,Nonmetro
+55053,"Jackson County, Wisconsin",none,Nonmetro
+55055,"Jefferson County, Wisconsin",none,Nonmetro
+55057,"Juneau County, Wisconsin",none,Nonmetro
+55059,"Kenosha County, Wisconsin",none,Metro
+55061,"Kewaunee County, Wisconsin",none,Metro
+55063,"La Crosse County, Wisconsin",none,Metro
+55065,"Lafayette County, Wisconsin",none,Nonmetro
+55067,"Langlade County, Wisconsin",none,Nonmetro
+55069,"Lincoln County, Wisconsin",none,Nonmetro
+55071,"Manitowoc County, Wisconsin",none,Nonmetro
+55073,"Marathon County, Wisconsin",none,Metro
+55075,"Marinette County, Wisconsin",none,Nonmetro
+55077,"Marquette County, Wisconsin",none,Nonmetro
+55078,"Menominee County, Wisconsin",high,Nonmetro
+55079,"Milwaukee County, Wisconsin",none,Metro
+55081,"Monroe County, Wisconsin",none,Nonmetro
+55083,"Oconto County, Wisconsin",none,Metro
+55085,"Oneida County, Wisconsin",none,Nonmetro
+55087,"Outagamie County, Wisconsin",none,Metro
+55089,"Ozaukee County, Wisconsin",none,Metro
+55091,"Pepin County, Wisconsin",none,Nonmetro
+55093,"Pierce County, Wisconsin",none,Metro
+55095,"Polk County, Wisconsin",none,Nonmetro
+55097,"Portage County, Wisconsin",none,Nonmetro
+55099,"Price County, Wisconsin",none,Nonmetro
+55101,"Racine County, Wisconsin",none,Metro
+55103,"Richland County, Wisconsin",none,Nonmetro
+55105,"Rock County, Wisconsin",none,Metro
+55107,"Rusk County, Wisconsin",none,Nonmetro
+55109,"St. Croix County, Wisconsin",none,Metro
+55111,"Sauk County, Wisconsin",none,Nonmetro
+55113,"Sawyer County, Wisconsin",none,Nonmetro
+55115,"Shawano County, Wisconsin",none,Nonmetro
+55117,"Sheboygan County, Wisconsin",none,Metro
+55119,"Taylor County, Wisconsin",none,Nonmetro
+55121,"Trempealeau County, Wisconsin",none,Nonmetro
+55123,"Vernon County, Wisconsin",none,Nonmetro
+55125,"Vilas County, Wisconsin",none,Nonmetro
+55127,"Walworth County, Wisconsin",none,Nonmetro
+55129,"Washburn County, Wisconsin",none,Nonmetro
+55131,"Washington County, Wisconsin",none,Metro
+55133,"Waukesha County, Wisconsin",none,Metro
+55135,"Waupaca County, Wisconsin",none,Nonmetro
+55137,"Waushara County, Wisconsin",none,Nonmetro
+55139,"Winnebago County, Wisconsin",none,Metro
+55141,"Wood County, Wisconsin",none,Nonmetro
+56001,"Albany County, Wyoming",high,Nonmetro
+56003,"Big Horn County, Wyoming",none,Nonmetro
+56005,"Campbell County, Wyoming",none,Nonmetro
+56007,"Carbon County, Wyoming",none,Nonmetro
+56009,"Converse County, Wyoming",none,Nonmetro
+56011,"Crook County, Wyoming",none,Nonmetro
+56013,"Fremont County, Wyoming",none,Nonmetro
+56015,"Goshen County, Wyoming",none,Nonmetro
+56017,"Hot Springs County, Wyoming",none,Nonmetro
+56019,"Johnson County, Wyoming",none,Nonmetro
+56021,"Laramie County, Wyoming",none,Metro
+56023,"Lincoln County, Wyoming",none,Nonmetro
+56025,"Natrona County, Wyoming",none,Metro
+56027,"Niobrara County, Wyoming",high,Nonmetro
+56029,"Park County, Wyoming",none,Nonmetro
+56031,"Platte County, Wyoming",none,Nonmetro
+56033,"Sheridan County, Wyoming",none,Nonmetro
+56035,"Sublette County, Wyoming",none,Nonmetro
+56037,"Sweetwater County, Wyoming",none,Nonmetro
+56039,"Teton County, Wyoming",none,Nonmetro
+56041,"Uinta County, Wyoming",none,Nonmetro
+56043,"Washakie County, Wyoming",none,Nonmetro
+56045,"Weston County, Wyoming",none,Nonmetro
+02013,"Aleutians East Borough, Alaska",none,Nonmetro
+02016,"Aleutians West Census Area, Alaska",none,Nonmetro
+02020,"Anchorage Municipality, Alaska",none,Metro
+02050,"Bethel Census Area, Alaska",high,Nonmetro
+02060,"Bristol Bay Borough, Alaska",none,Nonmetro
+02068,"Denali Borough, Alaska",none,Nonmetro
+02070,"Dillingham Census Area, Alaska",none,Nonmetro
+02090,"Fairbanks North Star Borough, Alaska",none,Metro
+02100,"Haines Borough, Alaska",none,Nonmetro
+02105,"Hoonah-Angoon Census Area, Alaska",none,Nonmetro
+02110,"Juneau City and Borough, Alaska",none,Nonmetro
+02122,"Kenai Peninsula Borough, Alaska",none,Nonmetro
+02130,"Ketchikan Gateway Borough, Alaska",none,Nonmetro
+02150,"Kodiak Island Borough, Alaska",none,Nonmetro
+02158,"Kusilvak Census Area, Alaska",both,Nonmetro
+02164,"Lake and Peninsula Borough, Alaska",none,Nonmetro
+02170,"Matanuska-Susitna Borough, Alaska",none,Metro
+02180,"Nome Census Area, Alaska",high,Nonmetro
+02185,"North Slope Borough, Alaska",none,Nonmetro
+02188,"Northwest Arctic Borough, Alaska",high,Nonmetro
+02195,"Petersburg Borough, Alaska",none,Nonmetro
+02198,"Prince of Wales-Hyder Census Area, Alaska",none,Nonmetro
+02220,"Sitka City and Borough, Alaska",none,Nonmetro
+02230,"Skagway Municipality, Alaska",none,Nonmetro
+02240,"Southeast Fairbanks Census Area, Alaska",none,Nonmetro
+02261,"Valdez-Cordova Census Area, Alaska",none,Nonmetro
+02275,"Wrangell City and Borough, Alaska",none,Nonmetro
+02282,"Yakutat City and Borough, Alaska",none,Nonmetro
+02290,"Yukon-Koyukuk Census Area, Alaska",both,Nonmetro

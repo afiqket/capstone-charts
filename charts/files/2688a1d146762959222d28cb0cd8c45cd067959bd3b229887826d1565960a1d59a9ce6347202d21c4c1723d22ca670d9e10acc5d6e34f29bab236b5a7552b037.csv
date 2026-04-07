@@ -1,0 +1,208 @@
+year,energy,value
+1800,Coal,97
+1800,Crude oil,0
+1800,Hydropower,0
+1800,Natural gas,0
+1800,Nuclear,0
+1800,Other renewables,0
+1800,Solar,0
+1800,Traditional biofuels,71130
+1800,Wind,0
+1810,Coal,200
+1810,Crude oil,0
+1810,Hydropower,0
+1810,Natural gas,0
+1810,Nuclear,0
+1810,Other renewables,0
+1810,Solar,0
+1810,Traditional biofuels,70000
+1810,Wind,0
+1820,Coal,380
+1820,Crude oil,0
+1820,Hydropower,0
+1820,Natural gas,0
+1820,Nuclear,0
+1820,Other renewables,0
+1820,Solar,0
+1820,Traditional biofuels,68000
+1820,Wind,0
+1830,Coal,680
+1830,Crude oil,0
+1830,Hydropower,50
+1830,Natural gas,0
+1830,Nuclear,0
+1830,Other renewables,0
+1830,Solar,0
+1830,Traditional biofuels,66000
+1830,Wind,0
+1840,Coal,1200
+1840,Crude oil,50
+1840,Hydropower,100
+1840,Natural gas,0
+1840,Nuclear,0
+1840,Other renewables,0
+1840,Solar,0
+1840,Traditional biofuels,64000
+1840,Wind,0
+1850,Coal,2000
+1850,Crude oil,500
+1850,Hydropower,200
+1850,Natural gas,100
+1850,Nuclear,0
+1850,Other renewables,0
+1850,Solar,0
+1850,Traditional biofuels,62000
+1850,Wind,0
+1860,Coal,3300
+1860,Crude oil,1200
+1860,Hydropower,400
+1860,Natural gas,300
+1860,Nuclear,0
+1860,Other renewables,0
+1860,Solar,0
+1860,Traditional biofuels,60000
+1860,Wind,0
+1870,Coal,4600
+1870,Crude oil,2500
+1870,Hydropower,700
+1870,Natural gas,800
+1870,Nuclear,0
+1870,Other renewables,0
+1870,Solar,0
+1870,Traditional biofuels,58000
+1870,Wind,0
+1880,Coal,5800
+1880,Crude oil,4000
+1880,Hydropower,1000
+1880,Natural gas,1500
+1880,Nuclear,0
+1880,Other renewables,0
+1880,Solar,0
+1880,Traditional biofuels,56000
+1880,Wind,0
+1890,Coal,7100
+1890,Crude oil,6000
+1890,Hydropower,1400
+1890,Natural gas,2500
+1890,Nuclear,0
+1890,Other renewables,0
+1890,Solar,0
+1890,Traditional biofuels,54000
+1890,Wind,0
+1900,Coal,9000
+1900,Crude oil,8000
+1900,Hydropower,1800
+1900,Natural gas,4000
+1900,Nuclear,0
+1900,Other renewables,0
+1900,Solar,0
+1900,Traditional biofuels,52000
+1900,Wind,0
+1910,Coal,11000
+1910,Crude oil,10000
+1910,Hydropower,2200
+1910,Natural gas,6000
+1910,Nuclear,0
+1910,Other renewables,0
+1910,Solar,0
+1910,Traditional biofuels,50000
+1910,Wind,0
+1920,Coal,13000
+1920,Crude oil,15000
+1920,Hydropower,2700
+1920,Natural gas,9000
+1920,Nuclear,100
+1920,Other renewables,0
+1920,Solar,0
+1920,Traditional biofuels,48000
+1920,Wind,0
+1930,Coal,14000
+1930,Crude oil,20000
+1930,Hydropower,3200
+1930,Natural gas,12000
+1930,Nuclear,1000
+1930,Other renewables,0
+1930,Solar,0
+1930,Traditional biofuels,46000
+1930,Wind,0
+1940,Coal,15000
+1940,Crude oil,25000
+1940,Hydropower,3800
+1940,Natural gas,15000
+1940,Nuclear,3000
+1940,Other renewables,50
+1940,Solar,0
+1940,Traditional biofuels,44000
+1940,Wind,0
+1950,Coal,16000
+1950,Crude oil,32000
+1950,Hydropower,4400
+1950,Natural gas,18000
+1950,Nuclear,5000
+1950,Other renewables,200
+1950,Solar,0
+1950,Traditional biofuels,42000
+1950,Wind,0
+1960,Coal,17000
+1960,Crude oil,38000
+1960,Hydropower,5200
+1960,Natural gas,21000
+1960,Nuclear,6500
+1960,Other renewables,400
+1960,Solar,0
+1960,Traditional biofuels,40000
+1960,Wind,10
+1970,Coal,18000
+1970,Crude oil,42000
+1970,Hydropower,6000
+1970,Natural gas,24000
+1970,Nuclear,7000
+1970,Other renewables,600
+1970,Solar,5
+1970,Traditional biofuels,38000
+1970,Wind,50
+1980,Coal,19000
+1980,Crude oil,45000
+1980,Hydropower,7000
+1980,Natural gas,27000
+1980,Nuclear,7500
+1980,Other renewables,900
+1980,Solar,15
+1980,Traditional biofuels,36000
+1980,Wind,150
+1990,Coal,21000
+1990,Crude oil,48000
+1990,Hydropower,8000
+1990,Natural gas,30000
+1990,Nuclear,7800
+1990,Other renewables,1200
+1990,Solar,50
+1990,Traditional biofuels,34000
+1990,Wind,400
+2000,Coal,24000
+2000,Crude oil,50000
+2000,Hydropower,9500
+2000,Natural gas,32000
+2000,Nuclear,8000
+2000,Other renewables,2000
+2000,Solar,300
+2000,Traditional biofuels,32000
+2000,Wind,1200
+2010,Coal,25000
+2010,Crude oil,52000
+2010,Hydropower,11000
+2010,Natural gas,35000
+2010,Nuclear,8200
+2010,Other renewables,4000
+2010,Solar,1200
+2010,Traditional biofuels,30000
+2010,Wind,3800
+2020,Coal,27000
+2020,Crude oil,53000
+2020,Hydropower,13000
+2020,Natural gas,38000
+2020,Nuclear,8139
+2020,Other renewables,7560
+2020,Solar,3177
+2020,Traditional biofuels,28000
+2020,Wind,6000

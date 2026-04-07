@@ -1,0 +1,381 @@
+country,year,value,variable
+Brazil,2000,4312.75,Production
+Brazil,2001,3519.59,Production
+Brazil,2002,3890.68,Production
+Brazil,2003,6016.02,Production
+Brazil,2004,5961.03,Production
+Brazil,2005,4760.82,Production
+Brazil,2006,7001.2,Production
+Brazil,2007,7361.25,Production
+Brazil,2008,5580.95,Production
+Brazil,2009,5480.94,Production
+Brazil,2010,9001.55,Production
+Brazil,2011,8621.46,Production
+Brazil,2012,6021.03,Production
+Brazil,2013,7961.38,Production
+Brazil,2014,7181.23,Production
+Brazil,2015,5921.02,Production
+Brazil,2016,7021.23,Production
+Brazil,2017,9201.56,Production
+Brazil,2018,9501.62,Production
+China,2000,20303.5,Production
+China,2001,24404.21,Production
+China,2002,25204.3,Production
+China,2003,23804.08,Production
+China,2004,30305.2,Production
+China,2005,28404.86,Production
+China,2006,35506.1,Production
+China,2007,37006.33,Production
+China,2008,36706.31,Production
+China,2009,32005.48,Production
+China,2010,30505.21,Production
+China,2011,34005.83,Production
+China,2012,35005.98,Production
+China,2013,32755.6,Production
+China,2014,30005.13,Production
+China,2015,22003.79,Production
+China,2016,22753.9,Production
+China,2017,27504.71,Production
+China,2018,26504.56,Production
+India,2000,10932.9,Production
+India,2001,12302.11,Production
+India,2002,10601.82,Production
+India,2003,14002.39,Production
+India,2004,19003.24,Production
+India,2005,19053.27,Production
+India,2006,22503.86,Production
+India,2007,24704.22,Production
+India,2008,23304.0,Production
+India,2009,24504.21,Production
+India,2010,27204.65,Production
+India,2011,29004.98,Production
+India,2012,28504.91,Production
+India,2013,31005.33,Production
+India,2014,29505.06,Production
+India,2015,25904.43,Production
+India,2016,27004.64,Production
+India,2017,29004.98,Production
+India,2018,28704.92,Production
+Pakistan,2000,8380.42,Production
+Pakistan,2001,8287.4,Production
+Pakistan,2002,7973.37,Production
+Pakistan,2003,7846.35,Production
+Pakistan,2004,11139.89,Production
+Pakistan,2005,9851.71,Production
+Pakistan,2006,9581.64,Production
+Pakistan,2007,8551.45,Production
+Pakistan,2008,8541.48,Production
+Pakistan,2009,9241.57,Production
+Pakistan,2010,8641.49,Production
+Pakistan,2011,10601.82,Production
+Pakistan,2012,9301.61,Production
+Pakistan,2013,9501.62,Production
+Pakistan,2014,10601.82,Production
+Pakistan,2015,7001.2,Production
+Pakistan,2016,7701.33,Production
+Pakistan,2017,8201.41,Production
+Pakistan,2018,8501.47,Production
+United States,2000,17190.96,Production
+United States,2001,20306.49,Production
+United States,2002,17211.95,Production
+United States,2003,18258.14,Production
+United States,2004,23254.99,Production
+United States,2005,23894.12,Production
+United States,2006,21591.68,Production
+United States,2007,19210.28,Production
+United States,2008,12827.22,Production
+United States,2009,12185.11,Production
+United States,2010,18105.12,Production
+United States,2011,15575.66,Production
+United States,2012,17316.97,Production
+United States,2013,12911.19,Production
+United States,2014,16321.78,Production
+United States,2015,12890.2,Production
+United States,2016,17172.95,Production
+United States,2017,20926.6,Production
+United States,2018,19238.3,Production
+Bangladesh,2000,1001.16,Domestic Consumption
+Bangladesh,2001,1201.22,Domestic Consumption
+Bangladesh,2002,1552.27,Domestic Consumption
+Bangladesh,2003,1802.31,Domestic Consumption
+Bangladesh,2004,2205.37,Domestic Consumption
+Bangladesh,2005,2505.43,Domestic Consumption
+Bangladesh,2006,3210.57,Domestic Consumption
+Bangladesh,2007,3510.59,Domestic Consumption
+Bangladesh,2008,3710.65,Domestic Consumption
+Bangladesh,2009,4010.67,Domestic Consumption
+Bangladesh,2010,4210.72,Domestic Consumption
+Bangladesh,2011,3710.65,Domestic Consumption
+Bangladesh,2012,4710.8,Domestic Consumption
+Bangladesh,2013,5310.93,Domestic Consumption
+Bangladesh,2014,5811.0,Domestic Consumption
+Bangladesh,2015,6311.08,Domestic Consumption
+Bangladesh,2016,6811.15,Domestic Consumption
+Bangladesh,2017,7511.29,Domestic Consumption
+Bangladesh,2018,8011.36,Domestic Consumption
+China,2000,22728.91,Domestic Consumption
+China,2001,25404.36,Domestic Consumption
+China,2002,28954.96,Domestic Consumption
+China,2003,30955.31,Domestic Consumption
+China,2004,37256.37,Domestic Consumption
+China,2005,43507.45,Domestic Consumption
+China,2006,48008.22,Domestic Consumption
+China,2007,48508.3,Domestic Consumption
+China,2008,42757.34,Domestic Consumption
+China,2009,50008.57,Domestic Consumption
+China,2010,46007.88,Domestic Consumption
+China,2011,38006.53,Domestic Consumption
+China,2012,36006.18,Domestic Consumption
+China,2013,34505.91,Domestic Consumption
+China,2014,34505.91,Domestic Consumption
+China,2015,36006.18,Domestic Consumption
+China,2016,38506.6,Domestic Consumption
+China,2017,41007.03,Domestic Consumption
+China,2018,42507.3,Domestic Consumption
+India,2000,13546.33,Domestic Consumption
+India,2001,13277.27,Domestic Consumption
+India,2002,13302.26,Domestic Consumption
+India,2003,13502.32,Domestic Consumption
+India,2004,14802.53,Domestic Consumption
+India,2005,16702.88,Domestic Consumption
+India,2006,18103.1,Domestic Consumption
+India,2007,18603.17,Domestic Consumption
+India,2008,17753.05,Domestic Consumption
+India,2009,19753.4,Domestic Consumption
+India,2010,20553.54,Domestic Consumption
+India,2011,19453.34,Domestic Consumption
+India,2012,20753.55,Domestic Consumption
+India,2013,22753.9,Domestic Consumption
+India,2014,24504.21,Domestic Consumption
+India,2015,24754.25,Domestic Consumption
+India,2016,24004.14,Domestic Consumption
+India,2017,24204.15,Domestic Consumption
+India,2018,25204.3,Domestic Consumption
+Pakistan,2000,8126.39,Domestic Consumption
+Pakistan,2001,8526.46,Domestic Consumption
+Pakistan,2002,9426.6,Domestic Consumption
+Pakistan,2003,9626.66,Domestic Consumption
+Pakistan,2004,10526.81,Domestic Consumption
+Pakistan,2005,11526.96,Domestic Consumption
+Pakistan,2006,12027.08,Domestic Consumption
+Pakistan,2007,12027.08,Domestic Consumption
+Pakistan,2008,11126.89,Domestic Consumption
+Pakistan,2009,10426.8,Domestic Consumption
+Pakistan,2010,9926.68,Domestic Consumption
+Pakistan,2011,10026.73,Domestic Consumption
+Pakistan,2012,10776.85,Domestic Consumption
+Pakistan,2013,10426.8,Domestic Consumption
+Pakistan,2014,10626.81,Domestic Consumption
+Pakistan,2015,10326.75,Domestic Consumption
+Pakistan,2016,10326.75,Domestic Consumption
+Pakistan,2017,10826.87,Domestic Consumption
+Pakistan,2018,11026.88,Domestic Consumption
+Turkey,2000,5167.88,Domestic Consumption
+Turkey,2001,6151.08,Domestic Consumption
+Turkey,2002,6301.06,Domestic Consumption
+Turkey,2003,6001.05,Domestic Consumption
+Turkey,2004,7101.2,Domestic Consumption
+Turkey,2005,7001.2,Domestic Consumption
+Turkey,2006,7301.26,Domestic Consumption
+Turkey,2007,6101.05,Domestic Consumption
+Turkey,2008,4950.87,Domestic Consumption
+Turkey,2009,5900.99,Domestic Consumption
+Turkey,2010,5600.98,Domestic Consumption
+Turkey,2011,5600.98,Domestic Consumption
+Turkey,2012,6051.03,Domestic Consumption
+Turkey,2013,6301.06,Domestic Consumption
+Turkey,2014,6401.12,Domestic Consumption
+Turkey,2015,6701.13,Domestic Consumption
+Turkey,2016,6501.12,Domestic Consumption
+Turkey,2017,7301.26,Domestic Consumption
+Turkey,2018,7501.27,Domestic Consumption
+Vietnam,2000,430.07,Domestic Consumption
+Vietnam,2001,460.06,Domestic Consumption
+Vietnam,2002,450.1,Domestic Consumption
+Vietnam,2003,575.09,Domestic Consumption
+Vietnam,2004,700.13,Domestic Consumption
+Vietnam,2005,750.11,Domestic Consumption
+Vietnam,2006,975.16,Domestic Consumption
+Vietnam,2007,1200.21,Domestic Consumption
+Vietnam,2008,1250.24,Domestic Consumption
+Vietnam,2009,1600.28,Domestic Consumption
+Vietnam,2010,1625.27,Domestic Consumption
+Vietnam,2011,1675.29,Domestic Consumption
+Vietnam,2012,2250.39,Domestic Consumption
+Vietnam,2013,3200.56,Domestic Consumption
+Vietnam,2014,4100.7,Domestic Consumption
+Vietnam,2015,4500.77,Domestic Consumption
+Vietnam,2016,5400.92,Domestic Consumption
+Vietnam,2017,6601.13,Domestic Consumption
+Vietnam,2018,7501.27,Domestic Consumption
+Australia,2000,3903.68,Exports
+Australia,2001,3130.55,Exports
+Australia,2002,2655.46,Exports
+Australia,2003,2157.36,Exports
+Australia,2004,1998.33,Exports
+Australia,2005,2884.51,Exports
+Australia,2006,2129.39,Exports
+Australia,2007,1219.23,Exports
+Australia,2008,1201.22,Exports
+Australia,2009,2112.34,Exports
+Australia,2010,2500.42,Exports
+Australia,2011,4640.79,Exports
+Australia,2012,6169.04,Exports
+Australia,2013,4852.84,Exports
+Australia,2014,2404.41,Exports
+Australia,2015,2828.46,Exports
+Australia,2016,3727.64,Exports
+Australia,2017,4000.7,Exports
+Australia,2018,4300.71,Exports
+Brazil,2000,315.04,Exports
+Brazil,2001,674.13,Exports
+Brazil,2002,489.1,Exports
+Brazil,2003,964.18,Exports
+Brazil,2004,1557.28,Exports
+Brazil,2005,1972.33,Exports
+Brazil,2006,1300.22,Exports
+Brazil,2007,2231.37,Exports
+Brazil,2008,2739.48,Exports
+Brazil,2009,1990.33,Exports
+Brazil,2010,2000.35,Exports
+Brazil,2011,4792.84,Exports
+Brazil,2012,4307.74,Exports
+Brazil,2013,2230.4,Exports
+Brazil,2014,3910.66,Exports
+Brazil,2015,4314.73,Exports
+Brazil,2016,2789.46,Exports
+Brazil,2017,4175.72,Exports
+Brazil,2018,5300.91,Exports
+India,2000,94.03,Exports
+India,2001,59.99,Exports
+India,2002,56.0,Exports
+India,2003,700.13,Exports
+India,2004,660.12,Exports
+India,2005,3675.64,Exports
+India,2006,4875.85,Exports
+India,2007,7501.27,Exports
+India,2008,2360.41,Exports
+India,2009,6551.1,Exports
+India,2010,5000.85,Exports
+India,2011,11081.92,Exports
+India,2012,7762.34,Exports
+India,2013,9262.61,Exports
+India,2014,4199.7,Exports
+India,2015,5764.97,Exports
+India,2016,4550.8,Exports
+India,2017,5200.91,Exports
+India,2018,4500.77,Exports
+United States,2000,6741.14,Exports
+United States,2001,11001.89,Exports
+United States,2002,11902.04,Exports
+United States,2003,13760.35,Exports
+United States,2004,14438.48,Exports
+United States,2005,17676.02,Exports
+United States,2006,12961.22,Exports
+United States,2007,13636.32,Exports
+United States,2008,13263.26,Exports
+United States,2009,12039.07,Exports
+United States,2010,14378.48,Exports
+United States,2011,11715.99,Exports
+United States,2012,13028.24,Exports
+United States,2013,10531.82,Exports
+United States,2014,11247.93,Exports
+United States,2015,9154.56,Exports
+United States,2016,14919.54,Exports
+United States,2017,15849.72,Exports
+United States,2018,15502.67,Exports
+Bangladesh,2000,1000.15,Imports
+Bangladesh,2001,1200.21,Imports
+Bangladesh,2002,1600.28,Imports
+Bangladesh,2003,1800.29,Imports
+Bangladesh,2004,2250.39,Imports
+Bangladesh,2005,2450.4,Imports
+Bangladesh,2006,3250.54,Imports
+Bangladesh,2007,3600.63,Imports
+Bangladesh,2008,3800.64,Imports
+Bangladesh,2009,4000.7,Imports
+Bangladesh,2010,4250.73,Imports
+Bangladesh,2011,3400.57,Imports
+Bangladesh,2012,5000.85,Imports
+Bangladesh,2013,5300.91,Imports
+Bangladesh,2014,5751.01,Imports
+Bangladesh,2015,6376.08,Imports
+Bangladesh,2016,6801.18,Imports
+Bangladesh,2017,7601.32,Imports
+Bangladesh,2018,8101.4,Imports
+China,2000,230.06,Imports
+China,2001,449.09,Imports
+China,2002,3127.52,Imports
+China,2003,8833.51,Imports
+China,2004,6386.09,Imports
+China,2005,19287.32,Imports
+China,2006,10589.83,Imports
+China,2007,11531.97,Imports
+China,2008,6997.2,Imports
+China,2009,10904.87,Imports
+China,2010,11981.05,Imports
+China,2011,24537.19,Imports
+China,2012,20330.47,Imports
+China,2013,14124.4,Imports
+China,2014,8285.43,Imports
+China,2015,4406.74,Imports
+China,2016,5032.87,Imports
+China,2017,5500.92,Imports
+China,2018,7001.2,Imports
+Indonesia,2000,2650.46,Imports
+Indonesia,2001,2356.41,Imports
+Indonesia,2002,2228.38,Imports
+Indonesia,2003,2150.38,Imports
+Indonesia,2004,2200.36,Imports
+Indonesia,2005,2200.36,Imports
+Indonesia,2006,2400.42,Imports
+Indonesia,2007,2700.48,Imports
+Indonesia,2008,2400.42,Imports
+Indonesia,2009,2700.48,Imports
+Indonesia,2010,2500.42,Imports
+Indonesia,2011,2500.42,Imports
+Indonesia,2012,3137.53,Imports
+Indonesia,2013,2989.52,Imports
+Indonesia,2014,3345.58,Imports
+Indonesia,2015,2941.52,Imports
+Indonesia,2016,3391.57,Imports
+Indonesia,2017,3550.6,Imports
+Indonesia,2018,3750.66,Imports
+Turkey,2000,1758.3,Imports
+Turkey,2001,2977.53,Imports
+Turkey,2002,2265.41,Imports
+Turkey,2003,2370.42,Imports
+Turkey,2004,3414.58,Imports
+Turkey,2005,3501.59,Imports
+Turkey,2006,4029.68,Imports
+Turkey,2007,3267.58,Imports
+Turkey,2008,2919.51,Imports
+Turkey,2009,4394.75,Imports
+Turkey,2010,3350.59,Imports
+Turkey,2011,2382.41,Imports
+Turkey,2012,3692.64,Imports
+Turkey,2013,4246.74,Imports
+Turkey,2014,3675.64,Imports
+Turkey,2015,4218.72,Imports
+Turkey,2016,3679.64,Imports
+Turkey,2017,4000.7,Imports
+Turkey,2018,3500.62,Imports
+Vietnam,2000,400.07,Imports
+Vietnam,2001,435.07,Imports
+Vietnam,2002,400.07,Imports
+Vietnam,2003,540.09,Imports
+Vietnam,2004,690.12,Imports
+Vietnam,2005,694.12,Imports
+Vietnam,2006,978.15,Imports
+Vietnam,2007,1208.2,Imports
+Vietnam,2008,1251.2,Imports
+Vietnam,2009,1695.28,Imports
+Vietnam,2010,1569.27,Imports
+Vietnam,2011,1625.27,Imports
+Vietnam,2012,2410.43,Imports
+Vietnam,2013,3200.56,Imports
+Vietnam,2014,4275.72,Imports
+Vietnam,2015,4600.78,Imports
+Vietnam,2016,5500.92,Imports
+Vietnam,2017,6901.19,Imports
+Vietnam,2018,7701.33,Imports
