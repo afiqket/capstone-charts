@@ -1,6 +1,6 @@
 # Interactive Charts for our Capstone Project
 
-Webpage available at [capstone-charts.afiqket.workers.dev](https://capstone-charts.afiqket.workers.dev/)
+Webpage available at [afiqket.github.io/capstone-charts](https://afiqket.github.io/capstone-charts)
 
 ## How to add new charts
 
