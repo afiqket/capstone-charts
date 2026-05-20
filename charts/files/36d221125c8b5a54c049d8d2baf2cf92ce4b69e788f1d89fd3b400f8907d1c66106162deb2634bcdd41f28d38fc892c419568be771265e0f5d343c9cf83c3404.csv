@@ -1,0 +1,369 @@
+Agency,Year,Population,Crime_Type,Number_reported
+Harris County,1990,2818199,Aggravated Assault,2004
+Harris County,1991,,Aggravated Assault,2182
+Harris County,1992,,Aggravated Assault,2911
+Harris County,1993,,Aggravated Assault,2362
+Harris County,1994,,Aggravated Assault,2598
+Harris County,1995,,Aggravated Assault,3479
+Harris County,1996,,Aggravated Assault,4325
+Harris County,1997,,Aggravated Assault,4039
+Harris County,1998,,Aggravated Assault,3443
+Harris County,1999,,Aggravated Assault,3119
+Harris County,2000,3400578,Aggravated Assault,3158
+Harris County,2001,,Aggravated Assault,3532
+Harris County,2002,,Aggravated Assault,4058
+Harris County,2003,,Aggravated Assault,4371
+Harris County,2004,,Aggravated Assault,4670
+Harris County,2005,,Aggravated Assault,4647
+Harris County,2006,,Aggravated Assault,4920
+Harris County,2007,,Aggravated Assault,4325
+Harris County,2008,,Aggravated Assault,5058
+Harris County,2009,,Aggravated Assault,5087
+Harris County,2010,4092459,Aggravated Assault,4741
+Harris County,2011,,Aggravated Assault,
+Harris County,2012,,Aggravated Assault,4300
+Montgomery County,1990,182201,Aggravated Assault,382
+Montgomery County,1991,,Aggravated Assault,418
+Montgomery County,1992,,Aggravated Assault,304
+Montgomery County,1993,,Aggravated Assault,278
+Montgomery County,1994,,Aggravated Assault,292
+Montgomery County,1995,,Aggravated Assault,485
+Montgomery County,1996,,Aggravated Assault,517
+Montgomery County,1997,,Aggravated Assault,1173
+Montgomery County,1998,,Aggravated Assault,719
+Montgomery County,1999,,Aggravated Assault,570
+Montgomery County,2000,293768,Aggravated Assault,629
+Montgomery County,2001,,Aggravated Assault,571
+Montgomery County,2002,,Aggravated Assault,630
+Montgomery County,2003,,Aggravated Assault,649
+Montgomery County,2004,,Aggravated Assault,733
+Montgomery County,2005,,Aggravated Assault,765
+Montgomery County,2006,,Aggravated Assault,620
+Montgomery County,2007,,Aggravated Assault,634
+Montgomery County,2008,,Aggravated Assault,525
+Montgomery County,2009,,Aggravated Assault,811
+Montgomery County,2010,455746,Aggravated Assault,659
+Montgomery County,2011,,Aggravated Assault,473
+Montgomery County,2012,,Aggravated Assault,375
+Fort Bend County,1990,225421,Aggravated Assault,101
+Fort Bend County,1991,,Aggravated Assault,117
+Fort Bend County,1992,,Aggravated Assault,110
+Fort Bend County,1993,,Aggravated Assault,118
+Fort Bend County,1994,,Aggravated Assault,161
+Fort Bend County,1995,,Aggravated Assault,208
+Fort Bend County,1996,,Aggravated Assault,204
+Fort Bend County,1997,,Aggravated Assault,249
+Fort Bend County,1998,,Aggravated Assault,294
+Fort Bend County,1999,,Aggravated Assault,365
+Fort Bend County,2000,354452,Aggravated Assault,433
+Fort Bend County,2001,,Aggravated Assault,381
+Fort Bend County,2002,,Aggravated Assault,393
+Fort Bend County,2003,,Aggravated Assault,467
+Fort Bend County,2004,,Aggravated Assault,456
+Fort Bend County,2005,,Aggravated Assault,502
+Fort Bend County,2006,,Aggravated Assault,520
+Fort Bend County,2007,,Aggravated Assault,600
+Fort Bend County,2008,,Aggravated Assault,843
+Fort Bend County,2009,,Aggravated Assault,816
+Fort Bend County,2010,585375,Aggravated Assault,706
+Fort Bend County,2011,,Aggravated Assault,721
+Fort Bend County,2012,,Aggravated Assault,649
+Brazoria County,1990,191707,Aggravated Assault,288
+Brazoria County,1991,,Aggravated Assault,137
+Brazoria County,1992,,Aggravated Assault,80
+Brazoria County,1993,,Aggravated Assault,138
+Brazoria County,1994,,Aggravated Assault,159
+Brazoria County,1995,,Aggravated Assault,238
+Brazoria County,1996,,Aggravated Assault,169
+Brazoria County,1997,,Aggravated Assault,252
+Brazoria County,1998,,Aggravated Assault,163
+Brazoria County,1999,,Aggravated Assault,95
+Brazoria County,2000,241767,Aggravated Assault,164
+Brazoria County,2001,,Aggravated Assault,134
+Brazoria County,2002,,Aggravated Assault,94
+Brazoria County,2003,,Aggravated Assault,59
+Brazoria County,2004,,Aggravated Assault,54
+Brazoria County,2005,,Aggravated Assault,38
+Brazoria County,2006,,Aggravated Assault,73
+Brazoria County,2007,,Aggravated Assault,52
+Brazoria County,2008,,Aggravated Assault,48
+Brazoria County,2009,,Aggravated Assault,117
+Brazoria County,2010,313166,Aggravated Assault,76
+Brazoria County,2011,,Aggravated Assault,61
+Brazoria County,2012,,Aggravated Assault,58
+Harris County,1990,2818199,Forcible Rape,210
+Harris County,1991,,Forcible Rape,341
+Harris County,1992,,Forcible Rape,473
+Harris County,1993,,Forcible Rape,930
+Harris County,1994,,Forcible Rape,589
+Harris County,1995,,Forcible Rape,375
+Harris County,1996,,Forcible Rape,378
+Harris County,1997,,Forcible Rape,274
+Harris County,1998,,Forcible Rape,315
+Harris County,1999,,Forcible Rape,283
+Harris County,2000,3400578,Forcible Rape,303
+Harris County,2001,,Forcible Rape,301
+Harris County,2002,,Forcible Rape,297
+Harris County,2003,,Forcible Rape,344
+Harris County,2004,,Forcible Rape,370
+Harris County,2005,,Forcible Rape,327
+Harris County,2006,,Forcible Rape,338
+Harris County,2007,,Forcible Rape,354
+Harris County,2008,,Forcible Rape,351
+Harris County,2009,,Forcible Rape,281
+Harris County,2010,4092459,Forcible Rape,212
+Harris County,2011,,Forcible Rape,
+Harris County,2012,,Forcible Rape,295
+Montgomery County,1990,182201,Forcible Rape,35
+Montgomery County,1991,,Forcible Rape,45
+Montgomery County,1992,,Forcible Rape,54
+Montgomery County,1993,,Forcible Rape,62
+Montgomery County,1994,,Forcible Rape,76
+Montgomery County,1995,,Forcible Rape,69
+Montgomery County,1996,,Forcible Rape,55
+Montgomery County,1997,,Forcible Rape,47
+Montgomery County,1998,,Forcible Rape,38
+Montgomery County,1999,,Forcible Rape,48
+Montgomery County,2000,293768,Forcible Rape,53
+Montgomery County,2001,,Forcible Rape,54
+Montgomery County,2002,,Forcible Rape,44
+Montgomery County,2003,,Forcible Rape,59
+Montgomery County,2004,,Forcible Rape,60
+Montgomery County,2005,,Forcible Rape,48
+Montgomery County,2006,,Forcible Rape,49
+Montgomery County,2007,,Forcible Rape,67
+Montgomery County,2008,,Forcible Rape,41
+Montgomery County,2009,,Forcible Rape,53
+Montgomery County,2010,455746,Forcible Rape,50
+Montgomery County,2011,,Forcible Rape,49
+Montgomery County,2012,,Forcible Rape,30
+Brazoria County,1990,191707,Forcible Rape,10
+Brazoria County,1991,,Forcible Rape,26
+Brazoria County,1992,,Forcible Rape,15
+Brazoria County,1993,,Forcible Rape,37
+Brazoria County,1994,,Forcible Rape,40
+Brazoria County,1995,,Forcible Rape,60
+Brazoria County,1996,,Forcible Rape,21
+Brazoria County,1997,,Forcible Rape,26
+Brazoria County,1998,,Forcible Rape,9
+Brazoria County,1999,,Forcible Rape,16
+Brazoria County,2000,241767,Forcible Rape,36
+Brazoria County,2001,,Forcible Rape,25
+Brazoria County,2002,,Forcible Rape,39
+Brazoria County,2003,,Forcible Rape,20
+Brazoria County,2004,,Forcible Rape,4
+Brazoria County,2005,,Forcible Rape,5
+Brazoria County,2006,,Forcible Rape,5
+Brazoria County,2007,,Forcible Rape,0
+Brazoria County,2008,,Forcible Rape,3
+Brazoria County,2009,,Forcible Rape,14
+Brazoria County,2010,313166,Forcible Rape,26
+Brazoria County,2011,,Forcible Rape,13
+Brazoria County,2012,,Forcible Rape,5
+Fort Bend County,1990,225421,Forcible Rape,14
+Fort Bend County,1991,,Forcible Rape,18
+Fort Bend County,1992,,Forcible Rape,14
+Fort Bend County,1993,,Forcible Rape,18
+Fort Bend County,1994,,Forcible Rape,27
+Fort Bend County,1995,,Forcible Rape,31
+Fort Bend County,1996,,Forcible Rape,20
+Fort Bend County,1997,,Forcible Rape,29
+Fort Bend County,1998,,Forcible Rape,27
+Fort Bend County,1999,,Forcible Rape,36
+Fort Bend County,2000,354452,Forcible Rape,35
+Fort Bend County,2001,,Forcible Rape,35
+Fort Bend County,2002,,Forcible Rape,31
+Fort Bend County,2003,,Forcible Rape,38
+Fort Bend County,2004,,Forcible Rape,46
+Fort Bend County,2005,,Forcible Rape,42
+Fort Bend County,2006,,Forcible Rape,42
+Fort Bend County,2007,,Forcible Rape,38
+Fort Bend County,2008,,Forcible Rape,51
+Fort Bend County,2009,,Forcible Rape,61
+Fort Bend County,2010,585375,Forcible Rape,50
+Fort Bend County,2011,,Forcible Rape,56
+Fort Bend County,2012,,Forcible Rape,38
+Harris County,1990,2818199,Murder and Non-negligent Manslaughter,74
+Harris County,1991,,Murder and Non-negligent Manslaughter,102
+Harris County,1992,,Murder and Non-negligent Manslaughter,76
+Harris County,1993,,Murder and Non-negligent Manslaughter,71
+Harris County,1994,,Murder and Non-negligent Manslaughter,66
+Harris County,1995,,Murder and Non-negligent Manslaughter,69
+Harris County,1996,,Murder and Non-negligent Manslaughter,56
+Harris County,1997,,Murder and Non-negligent Manslaughter,60
+Harris County,1998,,Murder and Non-negligent Manslaughter,48
+Harris County,1999,,Murder and Non-negligent Manslaughter,41
+Harris County,2000,3400578,Murder and Non-negligent Manslaughter,50
+Harris County,2001,,Murder and Non-negligent Manslaughter,42
+Harris County,2002,,Murder and Non-negligent Manslaughter,68
+Harris County,2003,,Murder and Non-negligent Manslaughter,47
+Harris County,2004,,Murder and Non-negligent Manslaughter,56
+Harris County,2005,,Murder and Non-negligent Manslaughter,66
+Harris County,2006,,Murder and Non-negligent Manslaughter,67
+Harris County,2007,,Murder and Non-negligent Manslaughter,65
+Harris County,2008,,Murder and Non-negligent Manslaughter,74
+Harris County,2009,,Murder and Non-negligent Manslaughter,96
+Harris County,2010,4092459,Murder and Non-negligent Manslaughter,77
+Harris County,2011,,Murder and Non-negligent Manslaughter,
+Harris County,2012,,Murder and Non-negligent Manslaughter,77
+Brazoria County,1990,191707,Murder and Non-negligent Manslaughter,5
+Brazoria County,1991,,Murder and Non-negligent Manslaughter,5
+Brazoria County,1992,,Murder and Non-negligent Manslaughter,4
+Brazoria County,1993,,Murder and Non-negligent Manslaughter,1
+Brazoria County,1994,,Murder and Non-negligent Manslaughter,5
+Brazoria County,1995,,Murder and Non-negligent Manslaughter,3
+Brazoria County,1996,,Murder and Non-negligent Manslaughter,7
+Brazoria County,1997,,Murder and Non-negligent Manslaughter,0
+Brazoria County,1998,,Murder and Non-negligent Manslaughter,0
+Brazoria County,1999,,Murder and Non-negligent Manslaughter,3
+Brazoria County,2000,241767,Murder and Non-negligent Manslaughter,3
+Brazoria County,2001,,Murder and Non-negligent Manslaughter,2
+Brazoria County,2002,,Murder and Non-negligent Manslaughter,4
+Brazoria County,2003,,Murder and Non-negligent Manslaughter,4
+Brazoria County,2004,,Murder and Non-negligent Manslaughter,2
+Brazoria County,2005,,Murder and Non-negligent Manslaughter,5
+Brazoria County,2006,,Murder and Non-negligent Manslaughter,0
+Brazoria County,2007,,Murder and Non-negligent Manslaughter,3
+Brazoria County,2008,,Murder and Non-negligent Manslaughter,0
+Brazoria County,2009,,Murder and Non-negligent Manslaughter,3
+Brazoria County,2010,313166,Murder and Non-negligent Manslaughter,0
+Brazoria County,2011,,Murder and Non-negligent Manslaughter,1
+Brazoria County,2012,,Murder and Non-negligent Manslaughter,3
+Montgomery County,1990,182201,Murder and Non-negligent Manslaughter,15
+Montgomery County,1991,,Murder and Non-negligent Manslaughter,12
+Montgomery County,1992,,Murder and Non-negligent Manslaughter,12
+Montgomery County,1993,,Murder and Non-negligent Manslaughter,5
+Montgomery County,1994,,Murder and Non-negligent Manslaughter,15
+Montgomery County,1995,,Murder and Non-negligent Manslaughter,15
+Montgomery County,1996,,Murder and Non-negligent Manslaughter,6
+Montgomery County,1997,,Murder and Non-negligent Manslaughter,2
+Montgomery County,1998,,Murder and Non-negligent Manslaughter,7
+Montgomery County,1999,,Murder and Non-negligent Manslaughter,11
+Montgomery County,2000,293768,Murder and Non-negligent Manslaughter,8
+Montgomery County,2001,,Murder and Non-negligent Manslaughter,13
+Montgomery County,2002,,Murder and Non-negligent Manslaughter,11
+Montgomery County,2003,,Murder and Non-negligent Manslaughter,5
+Montgomery County,2004,,Murder and Non-negligent Manslaughter,6
+Montgomery County,2005,,Murder and Non-negligent Manslaughter,7
+Montgomery County,2006,,Murder and Non-negligent Manslaughter,10
+Montgomery County,2007,,Murder and Non-negligent Manslaughter,9
+Montgomery County,2008,,Murder and Non-negligent Manslaughter,8
+Montgomery County,2009,,Murder and Non-negligent Manslaughter,6
+Montgomery County,2010,455746,Murder and Non-negligent Manslaughter,7
+Montgomery County,2011,,Murder and Non-negligent Manslaughter,7
+Montgomery County,2012,,Murder and Non-negligent Manslaughter,10
+Fort Bend County,1990,225421,Murder and Non-negligent Manslaughter,4
+Fort Bend County,1991,,Murder and Non-negligent Manslaughter,7
+Fort Bend County,1992,,Murder and Non-negligent Manslaughter,3
+Fort Bend County,1993,,Murder and Non-negligent Manslaughter,2
+Fort Bend County,1994,,Murder and Non-negligent Manslaughter,8
+Fort Bend County,1995,,Murder and Non-negligent Manslaughter,2
+Fort Bend County,1996,,Murder and Non-negligent Manslaughter,9
+Fort Bend County,1997,,Murder and Non-negligent Manslaughter,1
+Fort Bend County,1998,,Murder and Non-negligent Manslaughter,1
+Fort Bend County,1999,,Murder and Non-negligent Manslaughter,5
+Fort Bend County,2000,354452,Murder and Non-negligent Manslaughter,9
+Fort Bend County,2001,,Murder and Non-negligent Manslaughter,7
+Fort Bend County,2002,,Murder and Non-negligent Manslaughter,1
+Fort Bend County,2003,,Murder and Non-negligent Manslaughter,12
+Fort Bend County,2004,,Murder and Non-negligent Manslaughter,9
+Fort Bend County,2005,,Murder and Non-negligent Manslaughter,8
+Fort Bend County,2006,,Murder and Non-negligent Manslaughter,14
+Fort Bend County,2007,,Murder and Non-negligent Manslaughter,10
+Fort Bend County,2008,,Murder and Non-negligent Manslaughter,6
+Fort Bend County,2009,,Murder and Non-negligent Manslaughter,8
+Fort Bend County,2010,585375,Murder and Non-negligent Manslaughter,8
+Fort Bend County,2011,,Murder and Non-negligent Manslaughter,8
+Fort Bend County,2012,,Murder and Non-negligent Manslaughter,1
+Harris County,1990,2818199,Robbery,1469
+Harris County,1991,,Robbery,1833
+Harris County,1992,,Robbery,1572
+Harris County,1993,,Robbery,1860
+Harris County,1994,,Robbery,1204
+Harris County,1995,,Robbery,1305
+Harris County,1996,,Robbery,1297
+Harris County,1997,,Robbery,1220
+Harris County,1998,,Robbery,1031
+Harris County,1999,,Robbery,1141
+Harris County,2000,3400578,Robbery,1081
+Harris County,2001,,Robbery,1326
+Harris County,2002,,Robbery,1717
+Harris County,2003,,Robbery,1807
+Harris County,2004,,Robbery,1899
+Harris County,2005,,Robbery,1912
+Harris County,2006,,Robbery,2214
+Harris County,2007,,Robbery,1987
+Harris County,2008,,Robbery,2441
+Harris County,2009,,Robbery,2975
+Harris County,2010,4092459,Robbery,3059
+Harris County,2011,,Robbery,
+Harris County,2012,,Robbery,2744
+Montgomery County,1990,182201,Robbery,50
+Montgomery County,1991,,Robbery,57
+Montgomery County,1992,,Robbery,88
+Montgomery County,1993,,Robbery,40
+Montgomery County,1994,,Robbery,71
+Montgomery County,1995,,Robbery,77
+Montgomery County,1996,,Robbery,62
+Montgomery County,1997,,Robbery,93
+Montgomery County,1998,,Robbery,87
+Montgomery County,1999,,Robbery,77
+Montgomery County,2000,293768,Robbery,64
+Montgomery County,2001,,Robbery,82
+Montgomery County,2002,,Robbery,115
+Montgomery County,2003,,Robbery,137
+Montgomery County,2004,,Robbery,120
+Montgomery County,2005,,Robbery,121
+Montgomery County,2006,,Robbery,112
+Montgomery County,2007,,Robbery,131
+Montgomery County,2008,,Robbery,132
+Montgomery County,2009,,Robbery,175
+Montgomery County,2010,455746,Robbery,146
+Montgomery County,2011,,Robbery,119
+Montgomery County,2012,,Robbery,106
+Fort Bend County,1990,225421,Robbery,50
+Fort Bend County,1991,,Robbery,38
+Fort Bend County,1992,,Robbery,42
+Fort Bend County,1993,,Robbery,51
+Fort Bend County,1994,,Robbery,50
+Fort Bend County,1995,,Robbery,53
+Fort Bend County,1996,,Robbery,49
+Fort Bend County,1997,,Robbery,62
+Fort Bend County,1998,,Robbery,57
+Fort Bend County,1999,,Robbery,57
+Fort Bend County,2000,354452,Robbery,51
+Fort Bend County,2001,,Robbery,65
+Fort Bend County,2002,,Robbery,64
+Fort Bend County,2003,,Robbery,70
+Fort Bend County,2004,,Robbery,131
+Fort Bend County,2005,,Robbery,110
+Fort Bend County,2006,,Robbery,127
+Fort Bend County,2007,,Robbery,136
+Fort Bend County,2008,,Robbery,141
+Fort Bend County,2009,,Robbery,152
+Fort Bend County,2010,585375,Robbery,132
+Fort Bend County,2011,,Robbery,117
+Fort Bend County,2012,,Robbery,116
+Brazoria County,1990,191707,Robbery,19
+Brazoria County,1991,,Robbery,26
+Brazoria County,1992,,Robbery,13
+Brazoria County,1993,,Robbery,11
+Brazoria County,1994,,Robbery,16
+Brazoria County,1995,,Robbery,9
+Brazoria County,1996,,Robbery,18
+Brazoria County,1997,,Robbery,9
+Brazoria County,1998,,Robbery,14
+Brazoria County,1999,,Robbery,19
+Brazoria County,2000,241767,Robbery,14
+Brazoria County,2001,,Robbery,21
+Brazoria County,2002,,Robbery,42
+Brazoria County,2003,,Robbery,21
+Brazoria County,2004,,Robbery,24
+Brazoria County,2005,,Robbery,20
+Brazoria County,2006,,Robbery,29
+Brazoria County,2007,,Robbery,30
+Brazoria County,2008,,Robbery,21
+Brazoria County,2009,,Robbery,32
+Brazoria County,2010,313166,Robbery,31
+Brazoria County,2011,,Robbery,23
+Brazoria County,2012,,Robbery,26

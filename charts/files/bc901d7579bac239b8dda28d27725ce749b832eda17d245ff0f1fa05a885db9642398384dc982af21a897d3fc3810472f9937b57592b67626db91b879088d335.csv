@@ -1,0 +1,31 @@
+﻿Skill Name,Seniority,Distinct count of Job Id
+Tableau,Senior,63
+Statistics,Senior,56
+SQL,Senior,157
+Python,Senior,131
+Power BI,Senior,104
+Machine Learning,Senior,59
+Excel,Senior,93
+Databricks,Senior,35
+Azure,Senior,81
+A/B Testing,Senior,44
+Tableau,Mid,101
+Statistics,Mid,87
+SQL,Mid,246
+Python,Mid,205
+Power BI,Mid,198
+Machine Learning,Mid,87
+Excel,Mid,153
+Databricks,Mid,57
+Azure,Mid,152
+A/B Testing,Mid,74
+Tableau,Junior,45
+Statistics,Junior,28
+SQL,Junior,89
+Python,Junior,81
+Power BI,Junior,65
+Machine Learning,Junior,24
+Excel,Junior,67
+Databricks,Junior,19
+Azure,Junior,55
+A/B Testing,Junior,23

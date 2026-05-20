@@ -1,0 +1,541 @@
+Nation,Leading_cause,Year,Deaths,Rank
+UK,Cerebrovascular diseases,2001,66726,2
+UK,Cerebrovascular diseases,2002,67384,2
+UK,Cerebrovascular diseases,2003,65764,2
+UK,Cerebrovascular diseases,2004,60454,2
+UK,Cerebrovascular diseases,2005,57643,2
+UK,Cerebrovascular diseases,2006,55093,2
+UK,Cerebrovascular diseases,2007,47839,2
+UK,Cerebrovascular diseases,2008,53066,2
+UK,Cerebrovascular diseases,2009,49601,2
+UK,Cerebrovascular diseases,2010,49288,2
+UK,Cerebrovascular diseases,2011,41592,3
+UK,Cerebrovascular diseases,2012,41316,3
+UK,Cerebrovascular diseases,2013,40208,3
+UK,Cerebrovascular diseases,2014,39228,3
+UK,Cerebrovascular diseases,2015,40098,3
+UK,Cerebrovascular diseases,2016,37692,3
+UK,Cerebrovascular diseases,2017,36546,3
+UK,Cerebrovascular diseases,2018,35960,4
+UK,Chronic lower respiratory diseases,2001,29294,6
+UK,Chronic lower respiratory diseases,2002,29834,6
+UK,Chronic lower respiratory diseases,2003,31643,6
+UK,Chronic lower respiratory diseases,2004,28927,6
+UK,Chronic lower respiratory diseases,2005,29856,6
+UK,Chronic lower respiratory diseases,2006,28930,6
+UK,Chronic lower respiratory diseases,2007,29261,6
+UK,Chronic lower respiratory diseases,2008,30668,6
+UK,Chronic lower respiratory diseases,2009,29170,6
+UK,Chronic lower respiratory diseases,2010,29507,6
+UK,Chronic lower respiratory diseases,2011,30565,6
+UK,Chronic lower respiratory diseases,2012,32566,5
+UK,Chronic lower respiratory diseases,2013,34025,5
+UK,Chronic lower respiratory diseases,2014,32970,5
+UK,Chronic lower respiratory diseases,2015,36580,4
+UK,Chronic lower respiratory diseases,2016,35683,4
+UK,Chronic lower respiratory diseases,2017,36197,4
+UK,Chronic lower respiratory diseases,2018,36771,3
+UK,Dementia and Alzheimer disease,2001,30576,5
+UK,Dementia and Alzheimer disease,2002,31362,5
+UK,Dementia and Alzheimer disease,2003,32943,5
+UK,Dementia and Alzheimer disease,2004,31635,5
+UK,Dementia and Alzheimer disease,2005,31891,5
+UK,Dementia and Alzheimer disease,2006,32985,5
+UK,Dementia and Alzheimer disease,2007,36722,4
+UK,Dementia and Alzheimer disease,2008,41516,3
+UK,Dementia and Alzheimer disease,2009,41024,3
+UK,Dementia and Alzheimer disease,2010,45276,3
+UK,Dementia and Alzheimer disease,2011,45537,2
+UK,Dementia and Alzheimer disease,2012,53017,2
+UK,Dementia and Alzheimer disease,2013,56678,2
+UK,Dementia and Alzheimer disease,2014,57890,2
+UK,Dementia and Alzheimer disease,2015,69169,2
+UK,Dementia and Alzheimer disease,2016,70354,1
+UK,Dementia and Alzheimer disease,2017,76075,1
+UK,Dementia and Alzheimer disease,2018,77986,1
+UK,Influenza and pneumonia,2001,41453,3
+UK,Influenza and pneumonia,2002,42758,3
+UK,Influenza and pneumonia,2003,45205,3
+UK,Influenza and pneumonia,2004,40203,3
+UK,Influenza and pneumonia,2005,41093,3
+UK,Influenza and pneumonia,2006,37876,3
+UK,Influenza and pneumonia,2007,37171,3
+UK,Influenza and pneumonia,2008,38160,4
+UK,Influenza and pneumonia,2009,35645,4
+UK,Influenza and pneumonia,2010,33749,5
+UK,Influenza and pneumonia,2011,30853,5
+UK,Influenza and pneumonia,2012,31060,6
+UK,Influenza and pneumonia,2013,31610,6
+UK,Influenza and pneumonia,2014,27904,6
+UK,Influenza and pneumonia,2015,32678,6
+UK,Influenza and pneumonia,2016,30094,6
+UK,Influenza and pneumonia,2017,30208,6
+UK,Influenza and pneumonia,2018,32322,6
+UK,Ischaemic heart diseases,2001,120890,1
+UK,Ischaemic heart diseases,2002,117476,1
+UK,Ischaemic heart diseases,2003,113895,1
+UK,Ischaemic heart diseases,2004,105854,1
+UK,Ischaemic heart diseases,2005,100956,1
+UK,Ischaemic heart diseases,2006,94412,1
+UK,Ischaemic heart diseases,2007,91474,1
+UK,Ischaemic heart diseases,2008,87971,1
+UK,Ischaemic heart diseases,2009,82528,1
+UK,Ischaemic heart diseases,2010,80339,1
+UK,Ischaemic heart diseases,2011,73804,1
+UK,Ischaemic heart diseases,2012,73473,1
+UK,Ischaemic heart diseases,2013,72799,1
+UK,Ischaemic heart diseases,2014,68941,1
+UK,Ischaemic heart diseases,2015,69545,1
+UK,Ischaemic heart diseases,2016,65824,2
+UK,Ischaemic heart diseases,2017,66091,2
+UK,Ischaemic heart diseases,2018,63876,2
+UK,"Malignant neoplasm of trachea, bronchus and lung",2001,33509,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2002,33683,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2003,33420,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2004,33037,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2005,33486,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2006,34201,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2007,33528,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2008,35283,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2009,35026,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2010,34893,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2011,35196,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2012,35371,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2013,35478,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2014,35913,4
+UK,"Malignant neoplasm of trachea, bronchus and lung",2015,35503,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2016,35641,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2017,35170,5
+UK,"Malignant neoplasm of trachea, bronchus and lung",2018,34599,5
+England,Cerebrovascular diseases,2001,54844,2
+England,Cerebrovascular diseases,2002,55343,2
+England,Cerebrovascular diseases,2003,54015,2
+England,Cerebrovascular diseases,2004,49557,2
+England,Cerebrovascular diseases,2005,47389,2
+England,Cerebrovascular diseases,2006,45241,2
+England,Cerebrovascular diseases,2007,43526,2
+England,Cerebrovascular diseases,2008,43380,2
+England,Cerebrovascular diseases,2009,40658,2
+England,Cerebrovascular diseases,2010,40489,2
+England,Cerebrovascular diseases,2011,33664,3
+England,Cerebrovascular diseases,2012,33454,3
+England,Cerebrovascular diseases,2013,32403,3
+England,Cerebrovascular diseases,2014,31787,3
+England,Cerebrovascular diseases,2015,32627,3
+England,Cerebrovascular diseases,2016,30439,3
+England,Cerebrovascular diseases,2017,29705,4
+England,Cerebrovascular diseases,2018,29132,4
+England,Chronic lower respiratory diseases,2001,23985,6
+England,Chronic lower respiratory diseases,2002,24489,6
+England,Chronic lower respiratory diseases,2003,25853,6
+England,Chronic lower respiratory diseases,2004,23596,6
+England,Chronic lower respiratory diseases,2005,24448,6
+England,Chronic lower respiratory diseases,2006,23671,6
+England,Chronic lower respiratory diseases,2007,23993,6
+England,Chronic lower respiratory diseases,2008,25141,6
+England,Chronic lower respiratory diseases,2009,23759,6
+England,Chronic lower respiratory diseases,2010,24329,6
+England,Chronic lower respiratory diseases,2011,24938,6
+England,Chronic lower respiratory diseases,2012,26787,5
+England,Chronic lower respiratory diseases,2013,28019,5
+England,Chronic lower respiratory diseases,2014,27245,5
+England,Chronic lower respiratory diseases,2015,30041,4
+England,Chronic lower respiratory diseases,2016,29331,4
+England,Chronic lower respiratory diseases,2017,29756,3
+England,Chronic lower respiratory diseases,2018,30161,3
+England,Dementia and Alzheimer disease,2001,24810,5
+England,Dementia and Alzheimer disease,2002,25378,5
+England,Dementia and Alzheimer disease,2003,26615,5
+England,Dementia and Alzheimer disease,2004,25347,5
+England,Dementia and Alzheimer disease,2005,25730,5
+England,Dementia and Alzheimer disease,2006,26315,5
+England,Dementia and Alzheimer disease,2007,29839,4
+England,Dementia and Alzheimer disease,2008,33161,3
+England,Dementia and Alzheimer disease,2009,32728,3
+England,Dementia and Alzheimer disease,2010,36376,3
+England,Dementia and Alzheimer disease,2011,37745,2
+England,Dementia and Alzheimer disease,2012,43782,2
+England,Dementia and Alzheimer disease,2013,47108,2
+England,Dementia and Alzheimer disease,2014,48461,2
+England,Dementia and Alzheimer disease,2015,58299,1
+England,Dementia and Alzheimer disease,2016,59393,1
+England,Dementia and Alzheimer disease,2017,63784,1
+England,Dementia and Alzheimer disease,2018,65387,1
+England,Influenza and pneumonia,2001,35314,3
+England,Influenza and pneumonia,2002,36502,3
+England,Influenza and pneumonia,2003,38193,3
+England,Influenza and pneumonia,2004,34135,3
+England,Influenza and pneumonia,2005,34816,3
+England,Influenza and pneumonia,2006,31820,3
+England,Influenza and pneumonia,2007,31099,3
+England,Influenza and pneumonia,2008,32041,4
+England,Influenza and pneumonia,2009,29858,4
+England,Influenza and pneumonia,2010,28131,4
+England,Influenza and pneumonia,2011,26056,5
+England,Influenza and pneumonia,2012,25936,6
+England,Influenza and pneumonia,2013,26502,6
+England,Influenza and pneumonia,2014,23546,6
+England,Influenza and pneumonia,2015,27544,6
+England,Influenza and pneumonia,2016,25310,6
+England,Influenza and pneumonia,2017,25448,6
+England,Influenza and pneumonia,2018,27142,6
+England,Ischaemic heart diseases,2001,98710,1
+England,Ischaemic heart diseases,2002,95898,1
+England,Ischaemic heart diseases,2003,92876,1
+England,Ischaemic heart diseases,2004,86181,1
+England,Ischaemic heart diseases,2005,81821,1
+England,Ischaemic heart diseases,2006,76811,1
+England,Ischaemic heart diseases,2007,74199,1
+England,Ischaemic heart diseases,2008,71533,1
+England,Ischaemic heart diseases,2009,67095,1
+England,Ischaemic heart diseases,2010,65244,1
+England,Ischaemic heart diseases,2011,59828,1
+England,Ischaemic heart diseases,2012,59625,1
+England,Ischaemic heart diseases,2013,59280,1
+England,Ischaemic heart diseases,2014,56364,1
+England,Ischaemic heart diseases,2015,56493,2
+England,Ischaemic heart diseases,2016,53668,2
+England,Ischaemic heart diseases,2017,53852,2
+England,Ischaemic heart diseases,2018,51989,2
+England,"Malignant neoplasm of trachea, bronchus and lung",2001,27021,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2002,27104,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2003,27002,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2004,26446,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2005,26830,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2006,27404,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2007,27719,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2008,28243,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2009,28078,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2010,28080,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2011,28178,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2012,28331,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2013,28548,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2014,28849,4
+England,"Malignant neoplasm of trachea, bronchus and lung",2015,28586,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2016,28566,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2017,28188,5
+England,"Malignant neoplasm of trachea, bronchus and lung",2018,27682,5
+Scotland,Cerebrovascular diseases,2001,6621,2
+Scotland,Cerebrovascular diseases,2002,6722,2
+Scotland,Cerebrovascular diseases,2003,6497,2
+Scotland,Cerebrovascular diseases,2004,6155,2
+Scotland,Cerebrovascular diseases,2005,5789,2
+Scotland,Cerebrovascular diseases,2006,5466,2
+Scotland,Cerebrovascular diseases,2007,5333,2
+Scotland,Cerebrovascular diseases,2008,5367,2
+Scotland,Cerebrovascular diseases,2009,4906,3
+Scotland,Cerebrovascular diseases,2010,4764,3
+Scotland,Cerebrovascular diseases,2011,4594,2
+Scotland,Cerebrovascular diseases,2012,4475,3
+Scotland,Cerebrovascular diseases,2013,4446,3
+Scotland,Cerebrovascular diseases,2014,4123,3
+Scotland,Cerebrovascular diseases,2015,4302,3
+Scotland,Cerebrovascular diseases,2016,4142,3
+Scotland,Cerebrovascular diseases,2017,3927,4
+Scotland,Cerebrovascular diseases,2018,3831,4
+Scotland,Chronic lower respiratory diseases,2001,2988,5
+Scotland,Chronic lower respiratory diseases,2002,3024,5
+Scotland,Chronic lower respiratory diseases,2003,3170,6
+Scotland,Chronic lower respiratory diseases,2004,2907,5
+Scotland,Chronic lower respiratory diseases,2005,3027,5
+Scotland,Chronic lower respiratory diseases,2006,3001,5
+Scotland,Chronic lower respiratory diseases,2007,3104,5
+Scotland,Chronic lower respiratory diseases,2008,3037,5
+Scotland,Chronic lower respiratory diseases,2009,2986,5
+Scotland,Chronic lower respiratory diseases,2010,2807,5
+Scotland,Chronic lower respiratory diseases,2011,3062,5
+Scotland,Chronic lower respiratory diseases,2012,3251,5
+Scotland,Chronic lower respiratory diseases,2013,3184,5
+Scotland,Chronic lower respiratory diseases,2014,3116,5
+Scotland,Chronic lower respiratory diseases,2015,3512,5
+Scotland,Chronic lower respiratory diseases,2016,3438,5
+Scotland,Chronic lower respiratory diseases,2017,3449,5
+Scotland,Chronic lower respiratory diseases,2018,3469,5
+Scotland,Dementia and Alzheimer disease,2001,3297,4
+Scotland,Dementia and Alzheimer disease,2002,3324,4
+Scotland,Dementia and Alzheimer disease,2003,3634,4
+Scotland,Dementia and Alzheimer disease,2004,3638,4
+Scotland,Dementia and Alzheimer disease,2005,3478,4
+Scotland,Dementia and Alzheimer disease,2006,3946,4
+Scotland,Dementia and Alzheimer disease,2007,4629,3
+Scotland,Dementia and Alzheimer disease,2008,4967,3
+Scotland,Dementia and Alzheimer disease,2009,4976,2
+Scotland,Dementia and Alzheimer disease,2010,5271,2
+Scotland,Dementia and Alzheimer disease,2011,4158,4
+Scotland,Dementia and Alzheimer disease,2012,4899,2
+Scotland,Dementia and Alzheimer disease,2013,5122,2
+Scotland,Dementia and Alzheimer disease,2014,4915,2
+Scotland,Dementia and Alzheimer disease,2015,5736,2
+Scotland,Dementia and Alzheimer disease,2016,5571,2
+Scotland,Dementia and Alzheimer disease,2017,6549,2
+Scotland,Dementia and Alzheimer disease,2018,6484,2
+Scotland,Influenza and pneumonia,2001,2806,6
+Scotland,Influenza and pneumonia,2002,2920,6
+Scotland,Influenza and pneumonia,2003,3395,5
+Scotland,Influenza and pneumonia,2004,2837,6
+Scotland,Influenza and pneumonia,2005,2946,6
+Scotland,Influenza and pneumonia,2006,2971,6
+Scotland,Influenza and pneumonia,2007,2893,6
+Scotland,Influenza and pneumonia,2008,2910,6
+Scotland,Influenza and pneumonia,2009,2847,6
+Scotland,Influenza and pneumonia,2010,2760,6
+Scotland,Influenza and pneumonia,2011,2142,6
+Scotland,Influenza and pneumonia,2012,2256,6
+Scotland,Influenza and pneumonia,2013,2199,6
+Scotland,Influenza and pneumonia,2014,1742,6
+Scotland,Influenza and pneumonia,2015,2027,6
+Scotland,Influenza and pneumonia,2016,1879,6
+Scotland,Influenza and pneumonia,2017,1871,6
+Scotland,Influenza and pneumonia,2018,2031,6
+Scotland,Ischaemic heart diseases,2001,11914,1
+Scotland,Ischaemic heart diseases,2002,11692,1
+Scotland,Ischaemic heart diseases,2003,11441,1
+Scotland,Ischaemic heart diseases,2004,10778,1
+Scotland,Ischaemic heart diseases,2005,10331,1
+Scotland,Ischaemic heart diseases,2006,9532,1
+Scotland,Ischaemic heart diseases,2007,9343,1
+Scotland,Ischaemic heart diseases,2008,8841,1
+Scotland,Ischaemic heart diseases,2009,8274,1
+Scotland,Ischaemic heart diseases,2010,8138,1
+Scotland,Ischaemic heart diseases,2011,7636,1
+Scotland,Ischaemic heart diseases,2012,7541,1
+Scotland,Ischaemic heart diseases,2013,7239,1
+Scotland,Ischaemic heart diseases,2014,6872,1
+Scotland,Ischaemic heart diseases,2015,7142,1
+Scotland,Ischaemic heart diseases,2016,6697,1
+Scotland,Ischaemic heart diseases,2017,6727,1
+Scotland,Ischaemic heart diseases,2018,6615,1
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2001,3915,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2002,4039,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2003,3893,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2004,3923,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2005,4009,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2006,4062,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2007,4115,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2008,4080,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2009,4147,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2010,4055,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2011,4178,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2012,4189,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2013,4120,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2014,4117,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2015,4047,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2016,4035,4
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2017,4069,3
+Scotland,"Malignant neoplasm of trachea, bronchus and lung",2018,3980,3
+Wales,Cerebrovascular diseases,2001,3730,2
+Wales,Cerebrovascular diseases,2002,3746,2
+Wales,Cerebrovascular diseases,2003,3721,2
+Wales,Cerebrovascular diseases,2004,3307,2
+Wales,Cerebrovascular diseases,2005,3158,2
+Wales,Cerebrovascular diseases,2006,3060,2
+Wales,Cerebrovascular diseases,2007,2988,2
+Wales,Cerebrovascular diseases,2008,2990,2
+Wales,Cerebrovascular diseases,2009,2862,2
+Wales,Cerebrovascular diseases,2010,2796,2
+Wales,Cerebrovascular diseases,2011,2240,3
+Wales,Cerebrovascular diseases,2012,2310,3
+Wales,Cerebrovascular diseases,2013,2287,3
+Wales,Cerebrovascular diseases,2014,2316,3
+Wales,Cerebrovascular diseases,2015,2181,4
+Wales,Cerebrovascular diseases,2016,2109,4
+Wales,Cerebrovascular diseases,2017,1926,5
+Wales,Cerebrovascular diseases,2018,2070,5
+Wales,Chronic lower respiratory diseases,2001,1685,5
+Wales,Chronic lower respiratory diseases,2002,1714,6
+Wales,Chronic lower respiratory diseases,2003,1911,4
+Wales,Chronic lower respiratory diseases,2004,1744,6
+Wales,Chronic lower respiratory diseases,2005,1732,6
+Wales,Chronic lower respiratory diseases,2006,1589,6
+Wales,Chronic lower respiratory diseases,2007,1651,6
+Wales,Chronic lower respiratory diseases,2008,1731,6
+Wales,Chronic lower respiratory diseases,2009,1641,6
+Wales,Chronic lower respiratory diseases,2010,1635,6
+Wales,Chronic lower respiratory diseases,2011,1791,6
+Wales,Chronic lower respiratory diseases,2012,1723,6
+Wales,Chronic lower respiratory diseases,2013,1902,5
+Wales,Chronic lower respiratory diseases,2014,1763,6
+Wales,Chronic lower respiratory diseases,2015,2094,5
+Wales,Chronic lower respiratory diseases,2016,2018,5
+Wales,Chronic lower respiratory diseases,2017,1988,4
+Wales,Chronic lower respiratory diseases,2018,2154,4
+Wales,Dementia and Alzheimer disease,2001,1683,6
+Wales,Dementia and Alzheimer disease,2002,1771,4
+Wales,Dementia and Alzheimer disease,2003,1909,5
+Wales,Dementia and Alzheimer disease,2004,1802,5
+Wales,Dementia and Alzheimer disease,2005,1874,4
+Wales,Dementia and Alzheimer disease,2006,1796,5
+Wales,Dementia and Alzheimer disease,2007,2056,4
+Wales,Dementia and Alzheimer disease,2008,2131,4
+Wales,Dementia and Alzheimer disease,2009,2220,3
+Wales,Dementia and Alzheimer disease,2010,2419,3
+Wales,Dementia and Alzheimer disease,2011,2385,2
+Wales,Dementia and Alzheimer disease,2012,2827,2
+Wales,Dementia and Alzheimer disease,2013,2956,2
+Wales,Dementia and Alzheimer disease,2014,3016,2
+Wales,Dementia and Alzheimer disease,2015,3374,2
+Wales,Dementia and Alzheimer disease,2016,3543,2
+Wales,Dementia and Alzheimer disease,2017,3842,1
+Wales,Dementia and Alzheimer disease,2018,4067,1
+Wales,Influenza and pneumonia,2001,2120,3
+Wales,Influenza and pneumonia,2002,2211,3
+Wales,Influenza and pneumonia,2003,2402,3
+Wales,Influenza and pneumonia,2004,2156,3
+Wales,Influenza and pneumonia,2005,2274,3
+Wales,Influenza and pneumonia,2006,2026,3
+Wales,Influenza and pneumonia,2007,2164,3
+Wales,Influenza and pneumonia,2008,2144,3
+Wales,Influenza and pneumonia,2009,1958,4
+Wales,Influenza and pneumonia,2010,1977,4
+Wales,Influenza and pneumonia,2011,1845,5
+Wales,Influenza and pneumonia,2012,2002,4
+Wales,Influenza and pneumonia,2013,2130,4
+Wales,Influenza and pneumonia,2014,1873,5
+Wales,Influenza and pneumonia,2015,2303,3
+Wales,Influenza and pneumonia,2016,2154,3
+Wales,Influenza and pneumonia,2017,2147,3
+Wales,Influenza and pneumonia,2018,2309,3
+Wales,Ischaemic heart diseases,2001,7118,1
+Wales,Ischaemic heart diseases,2002,6938,1
+Wales,Ischaemic heart diseases,2003,6735,1
+Wales,Ischaemic heart diseases,2004,6120,1
+Wales,Ischaemic heart diseases,2005,6096,1
+Wales,Ischaemic heart diseases,2006,5513,1
+Wales,Ischaemic heart diseases,2007,5438,1
+Wales,Ischaemic heart diseases,2008,5187,1
+Wales,Ischaemic heart diseases,2009,4854,1
+Wales,Ischaemic heart diseases,2010,4723,1
+Wales,Ischaemic heart diseases,2011,4374,1
+Wales,Ischaemic heart diseases,2012,4332,1
+Wales,Ischaemic heart diseases,2013,4364,1
+Wales,Ischaemic heart diseases,2014,3923,1
+Wales,Ischaemic heart diseases,2015,4085,1
+Wales,Ischaemic heart diseases,2016,3857,1
+Wales,Ischaemic heart diseases,2017,3821,2
+Wales,Ischaemic heart diseases,2018,3750,2
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2001,1791,4
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2002,1738,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2003,1715,6
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2004,1831,4
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2005,1823,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2006,1885,4
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2007,1893,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2008,2033,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2009,1895,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2010,1849,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2011,1928,4
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2012,1894,5
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2013,1841,6
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2014,1969,4
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2015,1880,6
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2016,1957,6
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2017,1891,6
+Wales,"Malignant neoplasm of trachea, bronchus and lung",2018,1900,6
+Northern Ireland,Cerebrovascular diseases,2001,1531,2
+Northern Ireland,Cerebrovascular diseases,2002,1573,2
+Northern Ireland,Cerebrovascular diseases,2003,1531,2
+Northern Ireland,Cerebrovascular diseases,2004,1435,2
+Northern Ireland,Cerebrovascular diseases,2005,1307,2
+Northern Ireland,Cerebrovascular diseases,2006,1326,2
+Northern Ireland,Cerebrovascular diseases,2007,1325,2
+Northern Ireland,Cerebrovascular diseases,2008,1329,2
+Northern Ireland,Cerebrovascular diseases,2009,1175,2
+Northern Ireland,Cerebrovascular diseases,2010,1239,2
+Northern Ireland,Cerebrovascular diseases,2011,1094,3
+Northern Ireland,Cerebrovascular diseases,2012,1077,3
+Northern Ireland,Cerebrovascular diseases,2013,1072,3
+Northern Ireland,Cerebrovascular diseases,2014,1002,3
+Northern Ireland,Cerebrovascular diseases,2015,988,4
+Northern Ireland,Cerebrovascular diseases,2016,1002,4
+Northern Ireland,Cerebrovascular diseases,2017,988,5
+Northern Ireland,Cerebrovascular diseases,2018,927,5
+Northern Ireland,Chronic lower respiratory diseases,2001,636,6
+Northern Ireland,Chronic lower respiratory diseases,2002,607,6
+Northern Ireland,Chronic lower respiratory diseases,2003,711,6
+Northern Ireland,Chronic lower respiratory diseases,2004,681,6
+Northern Ireland,Chronic lower respiratory diseases,2005,651,6
+Northern Ireland,Chronic lower respiratory diseases,2006,671,6
+Northern Ireland,Chronic lower respiratory diseases,2007,693,6
+Northern Ireland,Chronic lower respiratory diseases,2008,760,6
+Northern Ireland,Chronic lower respiratory diseases,2009,786,6
+Northern Ireland,Chronic lower respiratory diseases,2010,737,6
+Northern Ireland,Chronic lower respiratory diseases,2011,774,6
+Northern Ireland,Chronic lower respiratory diseases,2012,805,6
+Northern Ireland,Chronic lower respiratory diseases,2013,920,5
+Northern Ireland,Chronic lower respiratory diseases,2014,846,5
+Northern Ireland,Chronic lower respiratory diseases,2015,934,5
+Northern Ireland,Chronic lower respiratory diseases,2016,896,5
+Northern Ireland,Chronic lower respiratory diseases,2017,1005,4
+Northern Ireland,Chronic lower respiratory diseases,2018,988,4
+Northern Ireland,Dementia and Alzheimer disease,2001,787,4
+Northern Ireland,Dementia and Alzheimer disease,2002,889,4
+Northern Ireland,Dementia and Alzheimer disease,2003,785,5
+Northern Ireland,Dementia and Alzheimer disease,2004,848,4
+Northern Ireland,Dementia and Alzheimer disease,2005,809,5
+Northern Ireland,Dementia and Alzheimer disease,2006,927,4
+Northern Ireland,Dementia and Alzheimer disease,2007,1076,3
+Northern Ireland,Dementia and Alzheimer disease,2008,1256,3
+Northern Ireland,Dementia and Alzheimer disease,2009,1102,3
+Northern Ireland,Dementia and Alzheimer disease,2010,1210,3
+Northern Ireland,Dementia and Alzheimer disease,2011,1250,2
+Northern Ireland,Dementia and Alzheimer disease,2012,1509,2
+Northern Ireland,Dementia and Alzheimer disease,2013,1491,2
+Northern Ireland,Dementia and Alzheimer disease,2014,1498,2
+Northern Ireland,Dementia and Alzheimer disease,2015,1760,2
+Northern Ireland,Dementia and Alzheimer disease,2016,1847,1
+Northern Ireland,Dementia and Alzheimer disease,2017,1900,1
+Northern Ireland,Dementia and Alzheimer disease,2018,2048,1
+Northern Ireland,Influenza and pneumonia,2001,1214,3
+Northern Ireland,Influenza and pneumonia,2002,1125,3
+Northern Ireland,Influenza and pneumonia,2003,1215,3
+Northern Ireland,Influenza and pneumonia,2004,1075,3
+Northern Ireland,Influenza and pneumonia,2005,1057,3
+Northern Ireland,Influenza and pneumonia,2006,1058,3
+Northern Ireland,Influenza and pneumonia,2007,1016,4
+Northern Ireland,Influenza and pneumonia,2008,1065,4
+Northern Ireland,Influenza and pneumonia,2009,982,4
+Northern Ireland,Influenza and pneumonia,2010,882,5
+Northern Ireland,Influenza and pneumonia,2011,809,5
+Northern Ireland,Influenza and pneumonia,2012,866,5
+Northern Ireland,Influenza and pneumonia,2013,779,6
+Northern Ireland,Influenza and pneumonia,2014,743,6
+Northern Ireland,Influenza and pneumonia,2015,804,6
+Northern Ireland,Influenza and pneumonia,2016,751,6
+Northern Ireland,Influenza and pneumonia,2017,742,6
+Northern Ireland,Influenza and pneumonia,2018,840,6
+Northern Ireland,Ischaemic heart diseases,2001,3148,1
+Northern Ireland,Ischaemic heart diseases,2002,2948,1
+Northern Ireland,Ischaemic heart diseases,2003,2843,1
+Northern Ireland,Ischaemic heart diseases,2004,2775,1
+Northern Ireland,Ischaemic heart diseases,2005,2708,1
+Northern Ireland,Ischaemic heart diseases,2006,2556,1
+Northern Ireland,Ischaemic heart diseases,2007,2494,1
+Northern Ireland,Ischaemic heart diseases,2008,2410,1
+Northern Ireland,Ischaemic heart diseases,2009,2305,1
+Northern Ireland,Ischaemic heart diseases,2010,2234,1
+Northern Ireland,Ischaemic heart diseases,2011,1966,1
+Northern Ireland,Ischaemic heart diseases,2012,1975,1
+Northern Ireland,Ischaemic heart diseases,2013,1916,1
+Northern Ireland,Ischaemic heart diseases,2014,1782,1
+Northern Ireland,Ischaemic heart diseases,2015,1825,1
+Northern Ireland,Ischaemic heart diseases,2016,1602,2
+Northern Ireland,Ischaemic heart diseases,2017,1691,2
+Northern Ireland,Ischaemic heart diseases,2018,1522,2
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2001,782,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2002,802,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2003,810,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2004,837,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2005,824,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2006,850,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2007,863,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2008,927,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2009,906,5
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2010,909,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2011,912,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2012,957,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2013,969,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2014,978,4
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2015,990,3
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2016,1083,3
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2017,1022,3
+Northern Ireland,"Malignant neoplasm of trachea, bronchus and lung",2018,1037,3

@@ -1,0 +1,31 @@
+Nation,Rank,Leading_cause,Deaths
+UK,1,Dementia and Alzheimer disease,77986
+UK,2,Ischaemic heart diseases,63876
+UK,3,Chronic lower respiratory diseases,36771
+UK,4,Cerebrovascular diseases,35960
+UK,5,"Malignant neoplasm of trachea, bronchus and lung",34599
+UK,6,Influenza and pneumonia,32322
+England,1,Dementia and Alzheimer disease,65387
+England,2,Ischaemic heart diseases,51989
+England,3,Chronic lower respiratory diseases,30161
+England,4,Cerebrovascular diseases,29132
+England,5,"Malignant neoplasm of trachea, bronchus and lung",27682
+England,6,Influenza and pneumonia,27142
+Scotland,1,Ischaemic heart diseases,6615
+Scotland,2,Dementia and Alzheimer disease,6484
+Scotland,3,"Malignant neoplasm of trachea, bronchus and lung",3980
+Scotland,4,Cerebrovascular diseases,3831
+Scotland,5,Chronic lower respiratory diseases,3469
+Scotland,6,Influenza and pneumonia,2031
+Wales,1,Dementia and Alzheimer disease,4067
+Wales,2,Ischaemic heart diseases,3750
+Wales,3,Influenza and pneumonia,2309
+Wales,4,Chronic lower respiratory diseases,2154
+Wales,5,Cerebrovascular diseases,2070
+Wales,6,"Malignant neoplasm of trachea, bronchus and lung",1900
+Northern Ireland,1,Dementia and Alzheimer disease,2048
+Northern Ireland,2,Ischaemic heart diseases,1522
+Northern Ireland,3,"Malignant neoplasm of trachea, bronchus and lung",1037
+Northern Ireland,4,Chronic lower respiratory diseases,988
+Northern Ireland,5,Cerebrovascular diseases,927
+Northern Ireland,6,Influenza and pneumonia,840
