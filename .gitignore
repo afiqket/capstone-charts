@@ -5,3 +5,6 @@
 .env*
 !.env.example
 *.tgz
+
+new_charts*
+new_extract_charts*
