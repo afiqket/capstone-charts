@@ -1,0 +1,482 @@
+﻿﻿link,id,question,enabled
+https://afiqket.github.io/capstone-charts/?chart=ia_commentary_july_2023,1,What percentage of applicants received a decision in under 6 months? ,0
+https://afiqket.github.io/capstone-charts/?chart=ia_commentary_july_2023,2,Which has a higher share: 1–1.5 years or 1.5–2 years?,0
+https://afiqket.github.io/capstone-charts/?chart=percent_of_dc_workers_who_are_immigrants_by_occupation,3,Do low-wage jobs tend to have higher immigrant percentages than high-wage jobs?,0
+https://afiqket.github.io/capstone-charts/?chart=percent_of_dc_workers_who_are_immigrants_by_occupation,4,Which occupation has an unexpectedly high immigrant percentage compared to its wage category?,0
+https://afiqket.github.io/capstone-charts/?chart=how_many_members_of_the_us_military_have_died_in_each_war,5,How many deaths occurred in the World War II?,0
+https://afiqket.github.io/capstone-charts/?chart=how_many_members_of_the_us_military_have_died_in_each_war,6,Which war had more deaths: Korean War or Vietnam War?,0
+https://afiqket.github.io/capstone-charts/?chart=how_many_members_of_the_us_military_have_died_in_each_war,7,How has the number of deaths changed from early wars to modern wars?,0
+https://afiqket.github.io/capstone-charts/?chart=malaysia_total_trade_with_world,8,What is Malaysia’s total trade (% of GDP) in 1990?,0
+https://afiqket.github.io/capstone-charts/?chart=malaysia_total_trade_with_world,9,Was trade higher in 2000 or 2010?,0
+https://afiqket.github.io/capstone-charts/?chart=traffic_citations,10,How does the percentage of speeding citations change over time in Q2?,0
+https://afiqket.github.io/capstone-charts/?chart=traffic_citations,11,Which year in Q1 shows an unusually low number of total citations?,0
+https://afiqket.github.io/capstone-charts/?chart=dublin_stats,12,What was the number of transfers out for Austria in 2017?,0
+https://afiqket.github.io/capstone-charts/?chart=dublin_stats,13,How did Switzerland’s requests out change from 2012 to 2016?,0
+https://afiqket.github.io/capstone-charts/?chart=dublin_stats,14,Is there a year where Switzerland’s transfers in suddenly increased significantly?,0
+https://afiqket.github.io/capstone-charts/?chart=international_merchandise_trade_malaysia_and_asean,15,What is the total trade value (RM) between Malaysia and Indonesia?,0
+https://afiqket.github.io/capstone-charts/?chart=international_merchandise_trade_malaysia_and_asean,16,Which country has higher trade value with Malaysia: Vietnam or Cambodia?,0
+https://afiqket.github.io/capstone-charts/?chart=geography_of_educational_attainment_in_california,17,How does the pattern of percent change differ between inland states and coastal states?,0
+https://afiqket.github.io/capstone-charts/?chart=geography_of_educational_attainment_in_california,18,Which state appears to be the strongest positive outlier on the map?,0
+https://afiqket.github.io/capstone-charts/?chart=geography_of_educational_attainment_in_california,19,Which county has a higher percentage of bachelor’s degrees: San Francisco or San Diego (All adults)?,0
+https://afiqket.github.io/capstone-charts/?chart=geography_of_educational_attainment_in_california,20,Which county has an unusually high percentage compared to others?,0
+https://afiqket.github.io/capstone-charts/?chart=finland_tech_job_market_top_skill_demand_tracker_2024_2026,21,How many Mid-level jobs require Power BI?,0
+https://afiqket.github.io/capstone-charts/?chart=finland_tech_job_market_top_skill_demand_tracker_2024_2027,22,Is Senior Tableau demand higher than Senior Power BI demand?,0
+https://afiqket.github.io/capstone-charts/?chart=finland_tech_job_market_top_skill_demand_tracker_2024_2028,23,Which seniority level contributes the largest total demand across all skills?,0
+https://afiqket.github.io/capstone-charts/?chart=finland_tech_job_market_top_skill_demand_tracker_2024_2029,24,How can I retrieve the exact distinct job count for Mid-level Azure positions?,0
+https://afiqket.github.io/capstone-charts/?chart=finland_tech_job_market_top_skill_demand_tracker_2024_2030,25,"If I click or hover on the Junior Tableau segment, what data becomes visible?",0
+https://afiqket.github.io/capstone-charts/?chart=ai_adoption_and_digital_skillsevidence_of_a_potential_mismatch_in_2021_2025,26,What is the AI adoption percentage for Spain?,0
+https://afiqket.github.io/capstone-charts/?chart=ai_adoption_and_digital_skillsevidence_of_a_potential_mismatch_in_2021_2026,27,"Between Netherlands and Finland, which country has a higher digital skills percentage?",0
+https://afiqket.github.io/capstone-charts/?chart=ai_adoption_and_digital_skillsevidence_of_a_potential_mismatch_in_2021_2027,28,Which countries appear to have strong digital skills but lower AI adoption?,0
+https://afiqket.github.io/capstone-charts/?chart=ai_adoption_and_digital_skillsevidence_of_a_potential_mismatch_in_2021_2028,29,How can I get the digital skills trend of a specific country from 2021 to 2025?,0
+https://afiqket.github.io/capstone-charts/?chart=ai_adoption_and_digital_skillsevidence_of_a_potential_mismatch_in_2021_2029,30,What happens if I click “Digital Skills Trend by Population”?,0
+https://afiqket.github.io/capstone-charts/?chart=uber_usage_trends_in_pakistan_bookings_and_revenue_20242025,31,What is the total booking value for Mini in May 2024?,0
+https://afiqket.github.io/capstone-charts/?chart=uber_usage_trends_in_pakistan_bookings_and_revenue_20242026,32,"In June 2024, which vehicle type has higher total bookings, Mini or Premium?",0
+https://afiqket.github.io/capstone-charts/?chart=uber_usage_trends_in_pakistan_bookings_and_revenue_20242027,33,How does the Premium revenue trend change over time?,0
+https://afiqket.github.io/capstone-charts/?chart=uber_usage_trends_in_pakistan_bookings_and_revenue_20242028,34,How can I find the exact revenue value for Mini in July 2025?,0
+https://afiqket.github.io/capstone-charts/?chart=uber_usage_trends_in_pakistan_bookings_and_revenue_20242029,35,What information is displayed when I hover over a point in the Premium revenue chart?,0
+https://afiqket.github.io/capstone-charts/?chart=historical_price_of_computer_memory_and_storage,36,What was the approximate price per byte of Disk in 1980?,0
+https://afiqket.github.io/capstone-charts/?chart=historical_price_of_computer_memory_and_storage,37,"In 2005, which was cheaper: Memory or Disk?",0
+https://afiqket.github.io/capstone-charts/?chart=historical_price_of_computer_memory_and_storage,38,What overall trend can be observed in the prices of computer memory and storage from 1957 to 2020?,0
+https://afiqket.github.io/capstone-charts/?chart=historical_price_of_computer_memory_and_storage,39,How can I get the exact price data of Memory in 2010 from this chart?,0
+https://afiqket.github.io/capstone-charts/?chart=historical_price_of_computer_memory_and_storage,40,"If I click on the Bar button at the top, how will the chart change?",0
+https://afiqket.github.io/capstone-charts/?chart=mobile_money_accounts,41,What was the number of active mobile money accounts in Sub-Saharan Africa in 2024?,0
+https://afiqket.github.io/capstone-charts/?chart=mobile_money_accounts,42,Which region had more active mobile money accounts in 2022: East Asia and Pacific or South Asia?,0
+https://afiqket.github.io/capstone-charts/?chart=mobile_money_accounts,43,What overall trend can be observed in active mobile money accounts from 2010 to 2024?,0
+https://afiqket.github.io/capstone-charts/?chart=mobile_money_accounts,44,How can I find the exact value of active mobile money accounts for Sub-Saharan Africa in 2024 from this chart?,0
+https://afiqket.github.io/capstone-charts/?chart=mobile_money_accounts,45,What happens if I click or drag the timeline slider at the bottom of the chart?,0
+https://afiqket.github.io/capstone-charts/?chart=internet,46,What percentage of people in Australia own a mobile phone?,0
+https://afiqket.github.io/capstone-charts/?chart=internet,47,How can I get the data of Mexico’s mobile phone ownership from this map?,0
+https://afiqket.github.io/capstone-charts/?chart=internet,48,What happens if I hover over a country with a darker blue color?,0
+https://afiqket.github.io/capstone-charts/?chart=medicine,49,Which region generally shows higher values: North America or Southeast Asia?,0
+https://afiqket.github.io/capstone-charts/?chart=medicine,50,How can I get the exact data value for Canada from this chart?,0
+https://afiqket.github.io/capstone-charts/?chart=medicine,51,What happens if I hover over Canada on the map?,0
+https://afiqket.github.io/capstone-charts/?chart=ucr_violent_crime,52,Around which year did Harris County reach its highest reported violent crime count?,0
+https://afiqket.github.io/capstone-charts/?chart=ucr_violent_crime,53,How can I find the reported violent crime count for each sheriff department in 2008?,0
+https://afiqket.github.io/capstone-charts/?chart=ucr_violent_crime,54,What happens if I change the Sheriff department filter from “All” to “Harris County”?,0
+https://afiqket.github.io/capstone-charts/?chart=stroke_statistics_leading_cause_of_death,55,What is the rank of cerebrovascular diseases in the chart of UK on 2018?,0
+https://afiqket.github.io/capstone-charts/?chart=stroke_statistics_leading_cause_of_death,56,How can I get the rank and death count of influenza and pneumonia for Scotland?,0
+https://afiqket.github.io/capstone-charts/?chart=stroke_statistics_leading_cause_of_death,57,What happen if I click the left or right arrow button in the charts?,0
+https://afiqket.github.io/capstone-charts/?chart=landline_internet_subscription,58,"Based on the color intensity, which countries appear to have the highest landline Internet subscriptions in 1998?",0
+https://afiqket.github.io/capstone-charts/?chart=landline_internet_subscription,59,How can I compare the data for multiple countries using this chart?,0
+https://afiqket.github.io/capstone-charts/?chart=landline_internet_subscription,60,What happens if I drag the year slider from 1998 to 2025?,0
+https://afiqket.github.io/capstone-charts/?chart=4g_network,61,What overall trend can be observed in 4G mobile network coverage across the selected countries over time?,0
+https://afiqket.github.io/capstone-charts/?chart=4g_network,62,How can I get the exact data value of 4G coverage for a specific country and year?,0
+https://afiqket.github.io/capstone-charts/?chart=4g_network,63,What happen if I click the play button at the year slide of the chart?,0
+https://afiqket.github.io/capstone-charts/?chart=who_owns_a_phone,64,What was the percentage of people covered by a 4G mobile network in Malaysia in 2023?,0
+https://afiqket.github.io/capstone-charts/?chart=who_owns_a_phone,65,How can I get the exact 4G mobile network coverage percentage for Thailand in 2018 from this chart?,0
+https://afiqket.github.io/capstone-charts/?chart=who_owns_a_phone,66,What information could I get if I hover over to Russia in map chart?,0
+https://afiqket.github.io/capstone-charts/?chart=death_rate,67,Compare the death rate of Ethiopia and Afghanistan. Which one is higher?,0
+https://afiqket.github.io/capstone-charts/?chart=death_rate,68,How can I get the data of Ukraine with the highest death rate in year 2000?,0
+https://afiqket.github.io/capstone-charts/?chart=death_rate,69,What happen if I drag the slider function at the bottom of the chart?,0
+https://afiqket.github.io/capstone-charts/?chart=countries_where_armed_conflict_happened_in_2024,70,"Based on the map view, which regions seem to have more orange countries in recent years?",0
+https://afiqket.github.io/capstone-charts/?chart=countries_where_armed_conflict_happened_in_2024,71,How can I get information of whether Australia has conflict or the opposite on year 1989,0
+https://afiqket.github.io/capstone-charts/?chart=countries_where_armed_conflict_happened_in_2024,72,What happens if I click the Line button?,0
+https://afiqket.github.io/capstone-charts/?chart=interstate_and_intrastate_war_2010,73,What does the blue color represent on the map?,0
+https://afiqket.github.io/capstone-charts/?chart=interstate_and_intrastate_war_2010,74,How can I get the information of countries marked as “Yes” in 2010?,0
+https://afiqket.github.io/capstone-charts/?chart=interstate_and_intrastate_war_2010,75,What happens if I hover over a country marked in orange?,0
+https://observablehq.com/d/65c10cfa93cada0a,76,Which death rate is higher for Iraq between 2014 and 2024?,0
+https://observablehq.com/d/65c10cfa93cada0a,77,How can I find the range of the death rate numbers based on the map?,0
+https://observablehq.com/d/65c10cfa93cada0a,78,What happens if I hover over the white colored country on the map and what death rate value will appear?,0
+https://observablehq.com/d/a2975a8c512f9051,79,What is the average death number occurs in Ukraine in year 2024?,0
+https://observablehq.com/d/a2975a8c512f9051,80,What happen if I move the slider at the bottom of the line chart?,0
+https://observablehq.com/d/a2975a8c512f9051,81,How can I get the data of Ethiopia in year 2000 the line chart?,0
+https://observablehq.com/d/53d7741e44dea574,82,How many deaths occur in Colombia in 2011?,0
+https://observablehq.com/d/53d7741e44dea574,83,How can I check the number of deaths occur in Iraq between year 2014 and 2017 in line chart?,0
+https://observablehq.com/d/53d7741e44dea574,84,What happens if I click the play button besides the slider of the map chart?,0
+https://observablehq.com/@n93986/forms-of-homelessness-included-in-available-statis,85,"Which homelessness status can see more on the map the ""None of temporary"" or ""None or inadequate""?",0
+https://observablehq.com/@n93986/forms-of-homelessness-included-in-available-statis,86,How can I get the information of the status of homelessness people in Madagascar?,0
+https://observablehq.com/@n93986/forms-of-homelessness-included-in-available-statis,87,What happen if I hover at the country labeled with orange color?,0
+https://observablehq.com/@n93986/profit-margin,88,What is the average profit margin of the developed countries?,0
+https://observablehq.com/@n93986/profit-margin,89,How can I identify which country is developed or emerging,0
+https://observablehq.com/@n93986/profit-margin,90,What happen if I hover the United State bar?,0
+https://observablehq.com/d/3219ba596e39def0,91,Which country has the highest number of hHouseholds that practice fallowing in their fields?,0
+https://observablehq.com/d/3219ba596e39def0,92,What is the 5th most highest grown crop in Malawi?,0
+https://observablehq.com/d/3219ba596e39def0,93,What should I click to see the most grown crops in Tanzania?,0
+https://observablehq.com/d/3219ba596e39def0,94,I want to compare soil conservation practices between Ethiopia and Ghana only. What action should I do?,0
+https://observablehq.com/d/3219ba596e39def0,95,"Does the ""Soil Conservation Practices"" view affect the ""Crops Most Commonly Grown"" view?",0
+https://observablehq.com/d/0a4f80329c243889,96,What was India’s cotton production value in 2017?,0
+https://observablehq.com/d/0a4f80329c243889,97,Which country had the highest percentage of exports throughout all the years from 2000 to 2018?,0
+https://observablehq.com/d/0a4f80329c243889,98,Where do you click to change the chart from Production to Imports?,0
+https://observablehq.com/d/0a4f80329c243889,99,"If the chart is showing Imports, which countries appear in the legend and the 2017 bar chart?",0
+https://observablehq.com/d/0a4f80329c243889,100,What happens if you hover over one of the lines or bars? Does the chart show a tooltip or extra value label?,0
+https://observablehq.com/d/3098f13198ef0232,101,What is the Open Space that is colored green?,0
+https://observablehq.com/d/3098f13198ef0232,102,What are the 3 Boroughs that has the largest Play Space?,0
+https://observablehq.com/d/3098f13198ef0232,103,"After clicking an Open Space to see the boroughs, how do you get back to the view of Open Spaces?",0
+https://observablehq.com/d/3098f13198ef0232,104,Which borough has the smallest Bowling spaces?,0
+https://observablehq.com/d/3098f13198ef0232,105,What is size (value) of Newham's Cemetery space? No units needed,0
+https://observablehq.com/d/38bdda2b7caf6e02,106,Can you click or hover on the graphs?,0
+https://observablehq.com/d/38bdda2b7caf6e02,107,What is the most common age for men and women to be married?,0
+https://observablehq.com/d/38bdda2b7caf6e02,108,"How many men get married at the age of 54? Round to the nearest multiple of 10,000.",0
+https://observablehq.com/d/38bdda2b7caf6e02,109,How would I change the chart to view the ages of newlyweds with a Bachelor's Degree only?,0
+https://observablehq.com/d/38bdda2b7caf6e02,110,Compare the number of male and female newlyweds. Which is larger?,0
+https://observablehq.com/d/e70b572f85764265,111,"In South Africa, what is the maximum number of flights at a given time?",0
+https://observablehq.com/d/e70b572f85764265,112,"What is the flight number of the flight in Costa Rica, at 1am on the 4th of September?",0
+https://observablehq.com/d/e70b572f85764265,113,"Around 1:40 am on 4 September, there are a few airplanes flying across the Atlantic Ocean near Europe. What is the flight number of the airplane flying from France?",0
+https://observablehq.com/d/e70b572f85764265,114,What does the slider do?,0
+https://observablehq.com/d/e70b572f85764265,115,"In certain areas, for example in the United States, there are many flights near other, to the point where we can't see each flight individually. What action would a user do to see each flight and their locations clearly?",0
+https://observablehq.com/@yonsei-university/earthquake-spikes,116,"What is the magnitude of the earthquake that happened in Sobral, Brazil?",0
+https://observablehq.com/@yonsei-university/earthquake-spikes,117,How many earthquakes happened in the Tonga Islands?,0
+https://observablehq.com/@yonsei-university/earthquake-spikes,118,What happens if you use the scroll wheel in this chart?,0
+https://observablehq.com/@yonsei-university/earthquake-spikes,119,"If I use the search bar, how does the chart highlight the searched regions?",0
+https://observablehq.com/@yonsei-university/earthquake-spikes,120,What is the average magnitude of the earthquakes of the South Sandwich Islands?,0
+https://observablehq.com/@yonsei-university/fifa-ranking,121,"On the first day of 2018, how many points did Argentina have?",0
+https://observablehq.com/@yonsei-university/fifa-ranking,122,"In 2022, on what date did Brazil overtake Belgium to claim first place?",0
+https://observablehq.com/@yonsei-university/fifa-ranking,123,"Starting from the earliest date possible in this chart, how many days did Argentina take to get to first place for the first time?",0
+https://observablehq.com/@yonsei-university/fifa-ranking,124,What does the button to the left of the bar do?,0
+https://observablehq.com/@yonsei-university/fifa-ranking,125,"How many days or months do the small intervals of the bar represent, approximately?",0
+https://observablehq.com/d/6e96a3d9f17cec90,126,What is the average United States median home value across the full ZHVI period shown?,0
+https://observablehq.com/d/6e96a3d9f17cec90,127,What can be inferred when Inventory decreases while ZHVI increases after 2013?,0
+https://observablehq.com/d/6e96a3d9f17cec90,128,What is the average ZRI across the whole period shown?,0
+https://observablehq.com/d/6e96a3d9f17cec90,129,Why might ZRI rise steadily after 2012?,0
+https://observablehq.com/d/6e96a3d9f17cec90,130,What is the average number of homes for sale across the Inventory period?,0
+https://observablehq.com/@n93986/cannabis-exposure,131,"In April 2022, how many CBD cases were recorded?",0
+https://observablehq.com/@n93986/cannabis-exposure,132,"Across the whole chart period, which category had more total cases?",0
+https://observablehq.com/@n93986/cannabis-exposure,133,"In March 2019, which was higher: CBD cases or Synthetic Cannabinoid cases?",0
+https://observablehq.com/@n93986/us-gdp,134,"How do we only see data for ""Consumption"" as the only contributions to the US GDP?",0
+https://observablehq.com/@n93986/us-gdp,135,What was the average Real GDP growth across all quarters shown from 2021 to 2025?,0
+https://observablehq.com/@n93986/us-gdp,136,What happens when user only see Investment contribution in the chart?,0
+https://observablehq.com/@n93986/us-gdp,137,"Across all quarters shown, which component had the highest average contribution among Investment, Net exports, and Government spending?",0
+https://observablehq.com/@n93986/us-gdp,138,Compare Jul-22 and Jan-25. How did Investment and Net exports affect GDP differently in these two quarters?,0
+https://observablehq.com/@n93986/chelsea-transfer-fee,139,How much did Tottenham spent on transfers in summer 2023?,0
+https://observablehq.com/@n93986/chelsea-transfer-fee,140,Which team spent more on sumemr 2023 transfers? Manchester City or Manchester United?,0
+https://observablehq.com/@n93986/chelsea-transfer-fee,141,Is Chelsea’s spending higher than Arsenal and Manchester City combined?,0
+https://observablehq.com/@n93986/chelsea-transfer-fee,142,"How can a user find the fee for an individual Chelsea player, and what happens when they do this?",0
+https://observablehq.com/@n93986/chelsea-transfer-fee,143,How can we get the transfer fee for Cunha?,0
+https://observablehq.com/@n93986/premier-league-managers,144,How can we see all Everton managers and current managers?,0
+https://observablehq.com/@n93986/premier-league-managers,145,Which club has more current managers? Aston Villa or Sunderland?,0
+https://observablehq.com/@n93986/premier-league-managers,146,What can a large club bubble suggest about a club’s managerial history?,0
+https://observablehq.com/@n93986/premier-league-managers,147,"How can a user show historical manager nodes, and what happens when they do this?",0
+https://observablehq.com/@n93986/premier-league-managers,148,How can a user find the current manager connected to a specific club?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,149,What is the lowest share price?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,150,What was the average share price across the whole period shown?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,151,What overall trend does the share price show from January to October 2025?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,152,What might it suggest when the share price reaches a new high on the same day as record trading volume?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,153,How can a user retrieve the exact trading volume for a specific date or bar?,0
+https://observablehq.com/@n93986/health-data-bar-1,154,"In 2015, how many Hacking/IT Incident cases were recorded?",0
+https://observablehq.com/@n93986/health-data-bar-1,155,"Across all years shown, which breach type had the highest total number of incidents?",0
+https://observablehq.com/@n93986/health-data-bar-1,156,What was the total number of breach incidents across all breach types in 2019?,0
+https://observablehq.com/@n93986/health-data-bar-1,157,What percentage of all 2019 incidents were Hacking/IT Incident?,0
+https://observablehq.com/@n93986/health-data-bar-1,158,How can a user retrieve all breach-type values for one specific year?,0
+https://observablehq.com/@n93986/data-health-bar-2,159,What is the total number of data breaches across all causes shown in the chart?,0
+https://observablehq.com/@n93986/data-health-bar-2,160,"What is the combined total and percentage share of the top three causes: Hacking/IT Incident, Theft, and Unauthorized Access?",0
+https://observablehq.com/@n93986/data-health-bar-2,161,What is the percentage for the cause: Improper Disposal that causes data breaching?,0
+https://observablehq.com/@yonsei-university/popup-customise,162,"What were the election results of Solihull in 2019? Give the results of the Conservative party, Labour party, and Liberal Democrat party.",0
+https://observablehq.com/@yonsei-university/popup-customise,163,Were the candidates in North Tyneside different between 2017 and 2019? Who were they?,0
+https://observablehq.com/@yonsei-university/popup-customise,164,"I don't know where my constituency is on the map, but I know the name. To know where my constituency is and the election results of my constituency, what button should I click?",0
+https://observablehq.com/@yonsei-university/popup-customise,165,Where do I click to switch the results between 2 years?,0
+https://observablehq.com/@yonsei-university/popup-customise,166,"When I hover on a constituency, I can't see all the candidates. What should I do to see all the names and portraits of the candidates?",0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,167,What is the share price in January 2025?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,168,How can I get the exact trading volume for April 2025?,0
+https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu,169,What information would I get if I hover over both the price line and volume bar for the same month?,0
+https://observablehq.com/@n93986/marketing-spend-by-channel,170,"Between Television and Email, which had higher spending in 2024?",0
+https://observablehq.com/@n93986/marketing-spend-by-channel,171,How can I get the data for Print media in 2014 from the chart?,0
+https://observablehq.com/@n93986/marketing-spend-by-channel,172,What happens if I hover across the Social media area from 2014 to 2024?,0
+https://observablehq.com/@n93986/social-media-influence-on-mental-health,173,Which response category appears most stable over time for All adults?,0
+https://observablehq.com/@n93986/social-media-influence-on-mental-health,174,How can I check whether Positive or Negative is higher for 30–44 in Jan 2023?,0
+https://observablehq.com/@n93986/social-media-influence-on-mental-health,175,What happens if I click the 18–29 age-group tab?,0
+https://observablehq.com/@n93986/the-pursuit-of-happiness,176,What is the happiness score of Malaysia in 2024?,0
+https://observablehq.com/@n93986/the-pursuit-of-happiness,177,How can I find Japan’s happiness score in 2014?,0
+https://observablehq.com/@n93986/the-pursuit-of-happiness,178,What happens if I click several countries with different trends at the same time?,0
+https://observablehq.com/@yonsei-university/which-regions-walk-the-least,179,Which region appears to walk more: Putney or Blackburn?,0
+https://observablehq.com/@yonsei-university/which-regions-walk-the-least,180,How can I get the 2022 walking percentage for Slough from the chart?,0
+https://observablehq.com/@yonsei-university/which-regions-walk-the-least,181,What happens if I hover over different color regions one by one?,0
+https://observablehq.com/d/6cdd365acbb8c4c3,182,Does Syria show an increasing or decreasing trend across the years?,0
+https://observablehq.com/d/6cdd365acbb8c4c3,183,How can I use the line chart to get Iraq’s value for a certain year?,0
+https://observablehq.com/d/6cdd365acbb8c4c3,184,What happens if I click the play button on the timeline?,0
+https://observablehq.com/d/a7f11c936e3895fb,185,Which country has the highest number of internally displaced people due to conflict in 2024?,0
+https://observablehq.com/d/a7f11c936e3895fb,186,How can I get the data value for Sudan in 2024 from this chart?,0
+https://observablehq.com/d/a7f11c936e3895fb,187,What happens if I hover over a bar in the bar chart?,0
+https://observablehq.com/d/08a3126ef4627c80,188,Which country has a higher relative increase in male height: South Korea or Japan?,0
+https://observablehq.com/d/08a3126ef4627c80,189,How can I find the percentage value for Japan using the map?,0
+https://observablehq.com/d/08a3126ef4627c80,190,What happens if I hover over South Korea on the map?,0
+https://observablehq.com/d/6187ecada738db22,191,"Did Irion, TX have a net gain or net loss relationship with Coke, TX?",0
+https://observablehq.com/d/6187ecada738db22,192,"How can I find all the paths of people moving in and out of Lincoln, ID?",0
+https://observablehq.com/d/6187ecada738db22,193,What happens if I scroll upwards or downwards on this map,0
+https://observablehq.com/d/90b85d6c1bb838c5,194,What patterns can be observed globally in the share of people reporting lifetime anxiety or depression?,0
+https://observablehq.com/d/90b85d6c1bb838c5,195,How can I get the percentage of people reporting lifetime anxiety or depression for Malaysia?,0
+https://observablehq.com/d/90b85d6c1bb838c5,196,What information is displayed in the tooltip when I hover over a country or bar?,0
+https://drive.google.com/file/d/1ph_LRrz8A8gMdSFAnef5Vf6GdXxXqsTA/view?usp=share_link,197,,0
+https://drive.google.com/file/d/1ph_LRrz8A8gMdSFAnef5Vf6GdXxXqsTA/view?usp=share_link,198,how can i get the chart visual of this?,0
+https://drive.google.com/file/d/1ph_LRrz8A8gMdSFAnef5Vf6GdXxXqsTA/view?usp=share_link,199,,0
+https://observablehq.com/@d3/zoomable-sunburst,200,Which category takes up the largest area in the chart?,0
+https://observablehq.com/@d3/zoomable-sunburst,201,How can I get the value of the analytic category?,0
+https://observablehq.com/@d3/zoomable-sunburst,202,What happens if I click the center circle after zooming into a category?,0
+https://observablehq.com/@fyp4/world-cup-2022-circle,203,Which club has the most World Cup 2022 players?,0
+https://observablehq.com/@fyp4/world-cup-2022-circle,204,How can I get the player count for Manchester City?,0
+https://observablehq.com/@fyp4/world-cup-2022-circle,205,What happens if I click on a country circle like Spain?,0
+https://observablehq.com/d/5de35404b35deed8,206,What is the main root node shown in the chart?,0
+https://observablehq.com/d/5de35404b35deed8,207,How can I get to the MaxFlowMinCut in the chart?,0
+https://observablehq.com/d/5de35404b35deed8,208,What happens if i click the anime node?,0
+https://observablehq.com/d/32528cae2454960c,209,What subcategories are inside analytics?,0
+https://observablehq.com/d/32528cae2454960c,210,How can I retrieve deeper data in the tree?,0
+https://observablehq.com/d/32528cae2454960c,211,What happens if I click a leaf node like Easing or TextSprite?,0
+https://observablehq.com/d/c9165614abc3c34d,212,What is the value of ColorPalette under util ? palette?,0
+https://observablehq.com/d/c9165614abc3c34d,213,How can I get the data inside the interpolate branch?,0
+https://observablehq.com/d/c9165614abc3c34d,214,What happens if I click an already expanded category circle?,0
+https://observablehq.com/@yonsei-university/trade-chokepoints,215,Which chokepoint has the highest total vessel count?,0
+https://observablehq.com/@yonsei-university/trade-chokepoints,216,How can I get the total vessel count for Malacca Strait?,0
+https://observablehq.com/@yonsei-university/trade-chokepoints,217,How can I get the total vessel count for Malacca Strait?,0
+https://observablehq.com/@yonsei-university/swimming-race,218,,0
+https://observablehq.com/@yonsei-university/swimming-race,219,can't open this chart,0
+https://observablehq.com/@yonsei-university/swimming-race,220,,0
+https://observablehq.com/@yonsei-university/year-to-date,221,,0
+https://observablehq.com/@yonsei-university/year-to-date,222,can't open this chart,0
+https://observablehq.com/@yonsei-university/year-to-date,223,,0
+https://observablehq.com/@yonsei-university/bears-will-be-boys,224,Which animal appears the most in the chart?,0
+https://observablehq.com/@yonsei-university/bears-will-be-boys,225,How can I get the pronoun breakdown for rabbits?,0
+https://observablehq.com/@yonsei-university/bears-will-be-boys,226,What happens if I change the pronoun dropdown?,0
+https://observablehq.com/d/28125329d1b3962c,227,How does Malaysia compare with the United Kingdom?,0
+https://observablehq.com/d/28125329d1b3962c,228,How can I get the data for the highest country?,0
+https://observablehq.com/d/28125329d1b3962c,229,What happens if I move my mouse away from a country?,0
+https://observablehq.com/d/0d51678ebd9e4868,230,What does the gap between age dependency and higher participation suggest for the UK in 2060?,0
+https://observablehq.com/d/0d51678ebd9e4868,231,How can I get the UK dependency ratio trend over time?,0
+https://observablehq.com/d/0d51678ebd9e4868,232,What happens if I hover over a colored country on the map?,0
+https://observablehq.com/d/b483888d6fc93721,233,Which country has the highest percentage in the dataset?,0
+https://observablehq.com/d/b483888d6fc93721,234,How can I get the exact percentage for South Korea?,0
+https://observablehq.com/d/b483888d6fc93721,235,What happens if I click the Bar button?,0
+https://observablehq.com/d/5fe3a3feff69b81e,236,How does Iceland compare with Hungary?,0
+https://observablehq.com/d/5fe3a3feff69b81e,237,How can I read the meaning of the map colors?,0
+https://observablehq.com/d/5fe3a3feff69b81e,238,What happens if I hover over a country on the map?,0
+https://observablehq.com/d/36b39a284fa96a78,239,Why might countries with higher values be important to study further?,0
+https://observablehq.com/d/36b39a284fa96a78,240,How can I get the discomfort percentage for a specific country like Japan?,0
+https://observablehq.com/d/36b39a284fa96a78,241,What happens if I hover over a bar in the bar chart?,0
+https://observablehq.com/d/11df2922faad3446,242,What does the darker pink/purple color on the map mean?,0
+https://observablehq.com/d/11df2922faad3446,243,How can I get the data for Malta?,0
+https://observablehq.com/d/11df2922faad3446,244,What happens if I click the “Map” button?,0
+https://observablehq.com/d/c1b1219353b490bc,245,How does Andorra compare with Afghanistan in psychiatrist availability?,0
+https://observablehq.com/d/c1b1219353b490bc,246,How can I get the psychiatrist value for Afghanistan?,0
+https://observablehq.com/d/c1b1219353b490bc,247,What happens if I hover over a dark blue country?,0
+https://observablehq.com/d/f0d053d6c2a9cafd,248,What overall pattern can be seen among South American countries?,0
+https://observablehq.com/d/f0d053d6c2a9cafd,249,How can I get the percentage for Malaysia?,0
+https://observablehq.com/d/f0d053d6c2a9cafd,250,What happens if I hover over Peru on the map?,0
+https://observablehq.com/d/fa5ba9840d12cf5a,251,What percentage of people in South Korea said it is extremely important?,0
+https://observablehq.com/d/fa5ba9840d12cf5a,252,How can I get the exact percentage for Malaysia in the chart?,0
+https://observablehq.com/d/fa5ba9840d12cf5a,253,What happens if I hover over the South Korea bar in Bar view?,0
+https://observablehq.com/d/589e6865378cd7d6,254,How does the United States’ status compare between 2014 and 2016?,0
+https://observablehq.com/d/589e6865378cd7d6,255,How can I get Malaysia’s mental health policy status in 2016?,0
+https://observablehq.com/d/589e6865378cd7d6,256,What happens if I hover over Algeria in 2016?,0
+https://observablehq.com/d/1b755d9cc2e459c3,257,What does an upward line for the United States suggest?,0
+https://observablehq.com/d/1b755d9cc2e459c3,258,How can I get the 2024 immigrant share for Malaysia?,0
+https://observablehq.com/d/1b755d9cc2e459c3,259,What happens if I drag the year slider from 1990 to 2024?,0
+https://observablehq.com/d/8f55c8c4ed709bb0,260,What was the birth rate in the United States in 2023?,0
+https://observablehq.com/d/8f55c8c4ed709bb0,261,How can I get the death rate for the United States in 2020?,0
+https://observablehq.com/d/8f55c8c4ed709bb0,262,What happens if I hover over the line chart near 2023?,0
+https://observablehq.com/d/8b10efa48c889ce6,263,"In 1749, was Sweden’s crude birth rate higher than its crude death rate?",0
+https://observablehq.com/d/8b10efa48c889ce6,264,How can I get Sweden’s crude death rate for 1749?,0
+https://observablehq.com/d/8b10efa48c889ce6,265,What happens if I drag the slider to 1900 in Bar mode?,0
+https://observablehq.com/d/f4b19098b5c5b8cf,266,What trend does the 2024 projection show from 2025 to 2050?,0
+https://observablehq.com/d/f4b19098b5c5b8cf,267,How can I get the 2024 projection value for world population in 2050?,0
+https://observablehq.com/d/f4b19098b5c5b8cf,268,What happens if I click the Bar button?,0
+https://observablehq.com/d/92d24a089ca800a9,269,What was the world population estimate by McEvedy and Jones (1978) in 1950?,0
+https://observablehq.com/d/92d24a089ca800a9,270,How can I get the McEvedy and Jones (1978) value for 1950 from the chart?,0
+https://observablehq.com/d/92d24a089ca800a10,271,What happens if I hover near 1900 on the line chart?,0
+https://observablehq.com/d/d8cdfd7c918088da,272,"In 2017, which was higher: First child or Third child?",0
+https://observablehq.com/d/d8cdfd7c918088da,273,How can I find which birth order is highest in 1990?,0
+https://observablehq.com/d/d8cdfd7c918088da,274,What happens if I click the play button under the chart?,0
+https://observablehq.com/d/322d3e232b20a5a7,275,How does China’s trend change from 1970 to 2050?,0
+https://observablehq.com/d/322d3e232b20a5a7,276,How can I get only the data range from 2000 to 2050?,0
+https://observablehq.com/d/322d3e232b20a5a7,277,What happens if I drag the right slider handle from 2050 to 2020?,0
+https://observablehq.com/d/42003b6f245b303f,278,What was the number of Excess female deaths in the World in 2015?,0
+https://observablehq.com/d/42003b6f245b303f,279,How can I get the Missing female births value for the World in 2010?,0
+https://observablehq.com/d/42003b6f245b303f,280,What happens if I hover over the 2010 point on the line chart?,0
+https://observablehq.com/d/cc6add73dd00fe92,281,"In 1900, which was higher: France’s period life expectancy or cohort life expectancy?",0
+https://observablehq.com/d/cc6add73dd00fe92,282,How can I retrieve France’s cohort life expectancy in 1932 using the line chart?,0
+https://observablehq.com/d/cc6add73dd00fe92,283,"What happens if I hover over the line chart near France, 1900?",0
+https://observablehq.com/d/c34bc49d1c1849a1,284,"From 1933 to 2023, how did the death rate for 85–89 years old change?",0
+https://observablehq.com/d/c34bc49d1c1849a1,285,How can I get the death rate for 20–24 years old in 2023 using the chart?,0
+https://observablehq.com/d/c34bc49d1c1849a1,286,What happens if I hover over the 85–89 years old bar in 2023?,0
+https://observablehq.com/d/b48e3d6d668e5a4c,287,What was the highest female life expectancy in 2023?,0
+https://observablehq.com/d/b48e3d6d668e5a4c,288,How can I retrieve all years where Japan was the country with the highest female life expectancy?,0
+https://observablehq.com/d/b48e3d6d668e5a4c,289,"What happens if I click a country dot, such as Norway 1960?",0
+https://observablehq.com/d/d7552c4cdf662cc1,290,"In 2018, which contributed more to the sex gap: Ages 60–79 or Ages 80+?",0
+https://observablehq.com/d/d7552c4cdf662cc1,291,How can I get the value for Ages 60–79 in France in 2018?,0
+https://observablehq.com/d/d7552c4cdf662cc1,292,What happens if I hover over the Ages 60–79 area near 2000?,0
+https://observablehq.com/d/c926160052addfb9,293,"From 1970 to 2021, what trend is shown for Japan females?",0
+https://observablehq.com/d/c926160052addfb9,294,How can I get the latest available value for France females?,0
+https://observablehq.com/d/c926160052addfb9,295,What happens if I hover over France around 1970 in Line mode?,0
+https://observablehq.com/d/d853ee793fb4ca5c,296,What was the Top 1% survival age in France in 2023?,0
+https://observablehq.com/d/d853ee793fb4ca5c,297,How can I retrieve the 50% survival age for France in 2000?,0
+https://observablehq.com/d/d853ee793fb4ca5c,298,What happens if I hover over the line chart around 1950?,0
+https://observablehq.com/d/4140584c22b75a8b,299,"In 2023, which had a higher average age: 1st birth or 2nd birth?",0
+https://observablehq.com/d/4140584c22b75a8b,300,How can I get the bar value for 5th birth or higher in 2023?,0
+https://observablehq.com/d/4140584c22b75a8b,301,What happens if I hover over the 2023 point in the line chart?,0
+https://observablehq.com/d/f23cbe05933d7078,302,What was the overall average age for All births across 1918–1973?,0
+https://observablehq.com/d/f23cbe05933d7078,303,How can I compare 1st birth and 2nd birth in 1950?,0
+https://observablehq.com/d/f23cbe05933d7078,304,What happens if I hover over 1973 in the line chart?,0
+https://observablehq.com/d/1b52d2aa3cf01db1,305,What percentage of women born in 1973 had 2 births?,0
+https://observablehq.com/d/1b52d2aa3cf01db1,306,How can I get the exact percentage for 1 birth among women born in 1973?,0
+https://observablehq.com/d/1b52d2aa3cf01db1,307,What happens if I hover over the 2 births area around 1973?,0
+https://observablehq.com/d/b50ab7e321c6ccdb,308,"At age 30, which cohort had a higher fertility rate in the United States: women born in 1990 or 1970?",0
+https://observablehq.com/d/b50ab7e321c6ccdb,309,How can I get the fertility rate for women in Japan born in 1990 at age 30?,0
+https://observablehq.com/d/b50ab7e321c6ccdb,310,What happens if I hover over age 30 in the United Kingdom panel?,0
+https://observablehq.com/d/98862fae91a2837b,311,What trend is visible in the age at which women reach one child on average across birth cohorts?,0
+https://observablehq.com/d/98862fae91a2837b,312,How can I get the average number of children for women born in 1970 by age 40?,0
+https://observablehq.com/d/98862fae91a2837b,313,What happens if I hover near the 1995 cohort line around age 35?,0
+https://observablehq.com/d/5166a95ac88c159f,314,What is the Total fertility rate in Sweden in 1990?,0
+https://observablehq.com/d/5166a95ac88c159f,315,How can I get the Completed cohort fertility rate shifted +30 years in 2010?,0
+https://observablehq.com/d/5166a95ac88c159f,316,What happens if I click the Bar button and move the slider to 2000?,0
+https://observablehq.com/d/503afb7f94a9169f,317,"In 2000, which country had a higher birth rate: France or Spain?",0
+https://observablehq.com/d/503afb7f94a9169f,318,How can I get the birth rate for Spain in 1995 using the bar chart?,0
+https://observablehq.com/d/503afb7f94a9169f,319,What happens if I hover over France's data point in 2000?,0
+https://observablehq.com/d/528b5dcbfb99d8c6,320,What seasonal trend can be observed in birth rates throughout the year?,0
+https://observablehq.com/d/528b5dcbfb99d8c6,321,How can I find the birth rate for September 2010?,0
+https://observablehq.com/d/528b5dcbfb99d8c6,322,What happens if I drag the slider from 2000 to 2010?,0
+https://observablehq.com/d/90c11d52c2bfe951,323,What was the daily birth rate in the peak month for Spain in 1990?,0
+https://observablehq.com/d/90c11d52c2bfe951,324,How can I find the peak month and daily birth rate for France in 2005?,0
+https://observablehq.com/d/90c11d52c2bfe951,325,What happens if I click the Bar button and move the slider to 2010?,0
+https://observablehq.com/d/7f15489d43316c45,326,"In 2020, which had a larger population in Asia: cities or rural areas?",0
+https://observablehq.com/d/7f15489d43316c45,327,How can I find the population living in cities in North America in 2010?,0
+https://observablehq.com/d/7f15489d43316c45,328,What happens if I hover over Asia at 2020?,0
+https://observablehq.com/d/2bc85c650c3a8152,329,How has the population of Tokyo changed over time?,0
+https://observablehq.com/d/2bc85c650c3a8152,330,How can I get the projected population of New Delhi in 2035?,0
+https://observablehq.com/d/2bc85c650c3a8152,331,What happens if I hover over 2020 on the line chart?,0
+https://observablehq.com/d/b9ead2eadc99be08,332,What was the population density of Mumbai in 2020?,0
+https://observablehq.com/d/b9ead2eadc99be08,333,How can I get the projected population density of Hong Kong in 2100?,0
+https://observablehq.com/d/b9ead2eadc99be08,334,What happens if I hover over 2020 on the line chart?,0
+https://observablehq.com/d/2414ee1335c8187d,335,"In 2015, which city had a larger population: Delhi or Tokyo?",0
+https://observablehq.com/d/2414ee1335c8187d,336,How can I find the population of Istanbul in 2010?,0
+https://observablehq.com/d/2414ee1335c8187d,337,What happens if I hover over 2020 on the line chart?,0
+https://observablehq.com/@fyp4/malaysia-direct-investment-abroad-dia-by-sector,338,What was the Value bill in US dollars for the manufacturing in 2023?,0
+https://observablehq.com/@fyp4/malaysia-direct-investment-abroad-dia-by-sector,339,How do I get the information about the manufacturing in 2016?,0
+https://observablehq.com/@fyp4/malaysia-direct-investment-abroad-dia-by-sector,340,What is the total manufacturing in US dollars fo the years 2015 to 2020?,0
+https://observablehq.com/d/326e00c42fc73c5d ,341,How do I get the percent change of california?,0
+https://observablehq.com/d/326e00c42fc73c5d ,342,What is the percent change of Alaska?,0
+https://observablehq.com/d/326e00c42fc73c5d ,343,Which has the highest percent change out of all the states?,0
+https://observablehq.com/d/b787bc7974e1f0b2,344,How do I get the percent change of Texas?,0
+https://observablehq.com/d/b787bc7974e1f0b2,345,What is the percent change of New York?,0
+https://observablehq.com/d/b787bc7974e1f0b2,346,Which state has the lowest percent change?,0
+https://observablehq.com/d/2abe767da206ed2b,347,How do I get to see only the metro counties?,0
+https://observablehq.com/d/2abe767da206ed2b,348,What does the black color on the counties mean?,0
+https://observablehq.com/d/2abe767da206ed2b,349,What kind of poverty has Merced county in California?,0
+https://observablehq.com/d/6d1c43df3a1de518,350,How do I get to see only solar energy?,0
+https://observablehq.com/d/6d1c43df3a1de518,351,How do I see only between 1800 and 1880?,0
+https://observablehq.com/d/6d1c43df3a1de518,352,What is the natural gas value in 2020?,0
+https://observablehq.com/d/ad1587cfc205c2f2 ,353,What is the difference between the National Home Sales Annualized Rate value in January 2021 and January 2024?,0
+https://observablehq.com/d/ad1587cfc205c2f2 ,354,How do I see Year over Year change?,0
+https://observablehq.com/d/ad1587cfc205c2f2 ,355,What is the National Home Sales Annualized Rate of August 2013?,0
+https://observablehq.com/d/11cf572dd1b14ff7,356,What is the difference between Afghanistan and South America in 2017?,0
+https://observablehq.com/d/11cf572dd1b14ff7,357,What is the value of South America in 1995?,0
+https://observablehq.com/d/11cf572dd1b14ff7,358,How do I get the value of Afghanistan in 2012?,0
+https://observablehq.com/@fyp4/olympic-games-medals-over-time,359,How do I see the medals of Germany in Winter?,0
+https://observablehq.com/@fyp4/olympic-games-medals-over-time,360,How many medals does Other Europe have in 2008?,0
+https://observablehq.com/@fyp4/olympic-games-medals-over-time,361,What color do I need to look at to see the medals of Germany?,0
+https://observablehq.com/@yonsei-university/life-expectancy,362,How can I see the life expectancy in the year 2000?,0
+https://observablehq.com/@yonsei-university/life-expectancy,363,What is the male life expectancy in Nigeria in 2021?,0
+https://observablehq.com/@yonsei-university/life-expectancy,364,What do I have to do to see the female life expectancy in India in 2021?,0
+https://observablehq.com/@yonsei-university/us-masters,365,How do I make it stop in the 18th hole?,0
+https://observablehq.com/@yonsei-university/us-masters,366,How many shots under par that Rose has in the 18th hole?,0
+https://observablehq.com/@yonsei-university/us-masters,367,Who does the orange line represent?,0
+https://observablehq.com/d/780072d35cb6100d,368,,0
+https://observablehq.com/d/780072d35cb6100d,369,,0
+https://observablehq.com/d/780072d35cb6100d,370,,0
+https://observablehq.com/d/da18df4887a7180e,371,What is the percentage of the urban population percentage in 2008?,0
+https://observablehq.com/d/da18df4887a7180e,372,How do I see the percentage for both urban and rural population percentage in bar chart?,0
+https://observablehq.com/d/da18df4887a7180e,373,What are the average percentage of urban population throughout the whole year?,0
+https://observablehq.com/d/53d1b4690a751951,374,What is Iran's antibiotic use in 2020?,0
+https://observablehq.com/d/53d1b4690a751951,375,What happens if I hover over the bars?,0
+https://observablehq.com/d/53d1b4690a751951,376,What are the average of the antibiotic usage for Asian countries?,0
+https://observablehq.com/d/12bfeaa94b53f7f1,377,What is the percentage difference between rural and urban in 2011?,0
+https://observablehq.com/d/12bfeaa94b53f7f1,378,How do I get the information for 2016 in the bar chart?,0
+https://observablehq.com/d/12bfeaa94b53f7f1,379,What is the percentage of urban population using safely managed water in 2016?,0
+https://observablehq.com/d/ef9c461497a97a5d,380,How can user see the trend for all continent's antibiotic use in livestock per kilogram through out the year?,0
+https://observablehq.com/d/ef9c461497a97a5d,381,What is the antibitic use in livestock per kilogram for Africa in 2018?,0
+https://observablehq.com/d/ef9c461497a97a5d,382,What is the percentage of Europe's antibiotic usage?,0
+https://observablehq.com/d/6b6283867644b9dd,383,What does the color green of the line graph represent?,0
+https://observablehq.com/d/6b6283867644b9dd,384,In 2021 what is the usage of penicillin with extended spectrum?,0
+https://observablehq.com/d/6b6283867644b9dd,385,In the bar chart how can I see the information for Nitroimidazole for 2018?,0
+https://observablehq.com/d/1b8142eafd60feaf,386,In the European union what percentage of infections were Gastrointestinal infection sin 2019?,0
+https://observablehq.com/d/1b8142eafd60feaf,387,What is the difference between European Region and South-East Asia Region in the percentage of bloodstream infections in 2018?,0
+https://observablehq.com/d/1b8142eafd60feaf,388,What does the Red color represent on the graphs?,0
+https://observablehq.com/d/403f829227ef598a ,389,What can the user see when they hover over the line charts?,0
+https://observablehq.com/d/403f829227ef598a ,390,"If the user clicks the play button at the bottom, what will happen?",0
+https://observablehq.com/d/403f829227ef598a ,391,what is the average for bloodstream infection for all the continents in 2019?,0
+https://observablehq.com/d/2edf413947172c98,392,What does the red color represent in the graph?,0
+https://observablehq.com/d/2edf413947172c98,393,What is the total million tones of emissions in 1986?,0
+https://observablehq.com/d/2edf413947172c98,394,How many tonnes has the Nitrogen oxides in 1998?,0
+https://observablehq.com/d/87d1c51fd93a6608,395,What is the difference between London and Delhi in 2008?,0
+https://observablehq.com/d/87d1c51fd93a6608,396,In which year does Delhi appear for the first time in the bar chart?,0
+https://observablehq.com/d/87d1c51fd93a6608,397,What is the air pollution in London in 1997?,0
+https://observablehq.com/d/1f49f2844767ff2e,398,What is the emissions of Nitrogen oxides in the 2000?,0
+https://observablehq.com/d/1f49f2844767ff2e,399,What does the purple color represent?,0
+https://observablehq.com/d/1f49f2844767ff2e,400,How do I see in the bar chart the information for 2007?,0
+https://observablehq.com/d/487752634c6a504f ,401,What does the blue line means in the line chart?,0
+https://observablehq.com/d/487752634c6a504f ,402,Is the emission of particulate matter of PM10 higher in 2012 or 2014?,0
+https://observablehq.com/d/487752634c6a504f ,403,What is the average for emission of PM2.5 throughout 1990s?,0
+https://observablehq.com/d/85ede1c922cd5ec4,404,,0
+https://observablehq.com/d/85ede1c922cd5ec4,405,,0
+https://observablehq.com/d/85ede1c922cd5ec4,406,,0
+https://observablehq.com/d/e3431bf57a73942f,407,How can I get the data for the percentage of obesity in men of 1994 in Switzerland?,0
+https://observablehq.com/d/e3431bf57a73942f,408,How does the overall trend for women obesity percentage throughout the time?,0
+https://observablehq.com/d/e3431bf57a73942f,409,Which continent has the highest difference between men and women obesity?,0
+https://observablehq.com/d/52834f9dce743483,410,"Clicking the year slider play button, what insights can we get?",0
+https://observablehq.com/d/52834f9dce743483,411,Which decade had the highest average difference between men and women across all countries shown?,0
+https://observablehq.com/d/52834f9dce743483,412,"Across all countries and years shown, what percentage of the combined men-and-women total comes from men?",0
+https://observablehq.com/d/2fd761813b14ae95,413,What does the red line in the line chart for?,0
+https://observablehq.com/d/2fd761813b14ae95,414,What is the overall trend seen for both men and women for this chart?,0
+https://observablehq.com/d/2fd761813b14ae95,415,"Across all years shown, what is the average difference between male and female values?",0
+https://observablehq.com/d/6d2233dd5bb9418b,416,What happens when user hover over the line chart?,0
+https://observablehq.com/d/6d2233dd5bb9418b,417,"Which country has the highest number of smokers in 1990, Italy or the UK?",0
+https://observablehq.com/d/6d2233dd5bb9418b,418,How can this chart be bias towards certain country?,0
+https://observablehq.com/d/8f928d4d65b3c4ec,419,Which region had the largest average decrease in adult smoking share from 2000 to 2022?,0
+https://observablehq.com/d/8f928d4d65b3c4ec,420,Which region had the highest percentage of countries where adult smoking decreased by at least 10 percentage points from 2000 to 2022?,0
+https://observablehq.com/d/8f928d4d65b3c4ec,421,"Across all countries shown, which region contributed the largest share of the total country-level smoking decline?",0
+https://observablehq.com/d/6b8adf3059526f47,422,What happens when user hover over the data points?,0
+https://observablehq.com/d/6b8adf3059526f47,423,How can user see the trend for the expedniture through out the year?,0
+https://observablehq.com/d/6b8adf3059526f47,424,What continents has the most significant increase the the total expenditure throughout the years?,0
+https://observablehq.com/d/090f45c4120e4458,425,"In 2020, which commodity had the highest price index?",0
+https://observablehq.com/d/090f45c4120e4458,426,"Across all common years shown, which commodity had the highest average price index?",0
+https://observablehq.com/d/090f45c4120e4458,427,"Which decade had the highest average combined price index across Petroleum, Wheat, and Corn?",0
+https://observablehq.com/d/2d7d721c88a93c6e,428,"Upon hovering the line chart, what can user observe in the chart?",0
+https://observablehq.com/d/2d7d721c88a93c6e,429,"In 1889, does cocoa or rice has the higher price?",0
+https://observablehq.com/d/2d7d721c88a93c6e,430,What food has changes the most since 1958 in terms of price?,0
+https://observablehq.com/d/7446c4046e7c49dd,431,"Across all years shown, which region had the highest average share of expenditure spent on food?",0
+https://observablehq.com/d/7446c4046e7c49dd,432,"From 2017 to 2023, which region had the largest increase in average food expenditure per person?",0
+https://observablehq.com/d/7446c4046e7c49dd,433,What happens when I click on the year slider instead of clicking the play button?,0
+https://observablehq.com/d/05652e3f6ebdf993,434,How can user get the annual working hours for Canada in 2000?,0
+https://observablehq.com/d/05652e3f6ebdf993,435,"Which country had the largest decrease in annual working hours from its first year to its latest year shown, and what does this suggest?",0
+https://observablehq.com/d/05652e3f6ebdf993,436,"Across all years shown, which country had the highest average annual working hours per person employed?",0
+https://observablehq.com/d/e98a9821a97f7615 ,437,What are the countries shown in this chart?,0
+https://observablehq.com/d/e98a9821a97f7615 ,438,What happens when user click the play button?,0
+https://observablehq.com/d/e98a9821a97f7615 ,439,What is the average years for Japan in the 2000s?,0
+https://observablehq.com/d/7ab5978ab8e6bd65,440,What is the overall trend that can be seen in the chart?,0
+https://observablehq.com/d/7ab5978ab8e6bd65,441,Which country had the largest increase in vacation days per year from 1870 to 2000?,0
+https://observablehq.com/d/7ab5978ab8e6bd65,442,How much did the average vacation days per year across all countries increase from 1870 to 2000?,0
+https://observablehq.com/d/6ffc65cc247c63fe,443,Which country has the least weekly working hours throughout the years?,0
+https://observablehq.com/d/6ffc65cc247c63fe,444,"If user already selected a specific year through the year slider, then, if the play button is then clicked, will it shows the chart from the starting year, or the current year?",0
+https://observablehq.com/d/6ffc65cc247c63fe,445,What is the difference in average working hours for France and Italy,0
+https://observablehq.com/d/a62a7e813d26874d ,446,Which country's GDP are consistent through out the years?,0
+https://observablehq.com/d/a62a7e813d26874d ,447,How do user get the GDP per capita data for Brazil in 2019?,0
+https://observablehq.com/d/a62a7e813d26874d ,448,What is the difference in average of life satisfaction score for South America adn North America?,0
+https://observablehq.com/d/9afd123a63309685,449,Which country had the highest life satisfaction in 2024? Did they have a relatively high life expectancy as well?,0
+https://observablehq.com/d/9afd123a63309685,450,What happens if I click on the play button?,0
+https://observablehq.com/d/9afd123a63309685,451,"How do I see the exact life satisfaction, life expectancy and population of a country?",0
+https://observablehq.com/d/b1832e1ba2c6dedf,452,"Which country had 95% of people who are very happy, and have a life satisfaction of 7.54?",1
+https://observablehq.com/d/b1832e1ba2c6dedf,453,"Based on the graph, are happiness and life satisfaction correlated, throughout the years?",1
+https://observablehq.com/d/b1832e1ba2c6dedf,454,How would I see the graph in the yar 2015,1
+https://observablehq.com/d/84f457e9538f0d1d,455,Which country had the highest average working hours per worker in 1981,1
+https://observablehq.com/d/84f457e9538f0d1d,456,What is the general trend of United States' annual working hours and GDP per capita from 1956 to 2023?,1
+https://observablehq.com/d/84f457e9538f0d1d,457,What does the slider do?,1
+https://observablehq.com/d/6fd5aaffc7020a16,458,Which region had the most terrorist attacks in 2014?,1
+https://observablehq.com/d/6fd5aaffc7020a16,459,Can the slider be dragged?,1
+https://observablehq.com/d/6fd5aaffc7020a16,460,Choose a year from the slider. What does it change on the graph?,1
+https://observablehq.com/d/e1f44426962586ac,461,"In 2010, how many countries had pay equity mandated?",1
+https://observablehq.com/d/e1f44426962586ac,462,Can I look at the bar chart version of the given chart? How?,1
+https://observablehq.com/d/e1f44426962586ac,463,Where is the play button located at? In which view?,1
+https://observablehq.com/d/81dec93ff226064a,464,"In 1992, what is the female labor force participation rate of Canada? Is it the same in US?",1
+https://observablehq.com/d/81dec93ff226064a,465,Can I click on the bars in the bar chart view?,1
+https://observablehq.com/d/81dec93ff226064a,466,What does the play button do in the Line chart view versus the Bar chart view,1
+https://observablehq.com/d/b80de1741ccf893a,467,At what year did we have the first democratically-elected woman chief executive?,1
+https://observablehq.com/d/b80de1741ccf893a,468,"What does the red/orange bar represent, and what does the blue bar represent?",1
+https://observablehq.com/d/b80de1741ccf893a,469,"In the Bar chart view, what happens if you click on the slider?",1
+https://observablehq.com/d/02c8b19cb7a2e3a8,470,Which day did people with 0 or 1 doses have the highest deaths?,1
+https://observablehq.com/d/02c8b19cb7a2e3a8,471,"Generally, did people with higher doeses of vaccines have less deaths?",1
+https://observablehq.com/d/02c8b19cb7a2e3a8,472,What are the two views of the graph that can be chosen in this chart? How does a user choose between them?,1
+https://observablehq.com/d/9f48a44f3fb51be7,473,What is the difference between the projected 2020 and the real 2020 number of deaths in December 6th 2020?,1
+https://observablehq.com/d/9f48a44f3fb51be7,474,"In the bar chart, what two categories are shown?",1
+https://observablehq.com/d/9f48a44f3fb51be7,475,What does the red color represent?,1
+https://observablehq.com/d/f724a270146bebdc,476,What was the percentage of people with a COVID-19 booster in November 4th 2022 between the ages of 50-59 years?,1
+https://observablehq.com/d/f724a270146bebdc,477,What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?,1
+https://observablehq.com/d/f724a270146bebdc,478,What age group does the yellow color represent?,1
+https://observablehq.com/d/762d06467075ce6e,479,What was the percentage of people with a COVID-19 booster in April 14th 2023 between the ages of 18-24 years?,1
+https://observablehq.com/d/762d06467075ce6e,480,What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?,1
+https://observablehq.com/d/762d06467075ce6e,481,What age group does the yellow color represent?,1

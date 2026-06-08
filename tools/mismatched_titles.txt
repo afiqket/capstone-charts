@@ -1,0 +1,32 @@
+Titles in titles.txt but NOT in new_charts.csv:
+------------------------------------------------------------
+Antibiotic use in livestock, 2021
+Antibiotic use in livestock, 2022
+Anxiety or depression with religion
+Covid 19 Booster Sweden
+Dealt with anxiety or depression by taking prescribed medication, 2021
+Dealt with anxiety or depression by taking prescribed medication, 2022
+Emissions of Air pollutants France
+Emissions of Air pollutants US
+Excess Mortality
+Historical price of computer memory and storage
+Initial Covid 19 vaccination
+Mental Health Units In General Hospitals
+Population of the world's largest cities, 1950 to 2036
+Population of the world's largest cities, 1950 to 2037
+Safely managed drinking water
+Total Air Pollution
+
+Titles in new_charts.csv but NOT in titles.txt:
+------------------------------------------------------------
+Air pollution
+Dealt with anxiety with religion
+Emissions of air pollutants France
+Emissions of air pollutants, US
+Excess mortality: Raw number of deaths from all causes compared to projection based on previous years
+Late-night Snacking
+Mental health units in general hospitals
+Share of people who completed the initial COVID-19 vaccination protocol by age
+Share of people with a COVID-19 booster dose by age`
+Share of the urban and rural population using safely managed drinking water
+Untitled

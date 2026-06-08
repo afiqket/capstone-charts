@@ -1,0 +1,232 @@
+Entity,Code,Year,Female labor force participation rate
+Canada,CAN,1911,15.8
+Canada,CAN,1921,18.3
+Canada,CAN,1931,19.1
+Canada,CAN,1941,20.7
+Canada,CAN,1951,24.1
+Canada,CAN,1961,29.71
+Canada,CAN,1971,39.91
+Canada,CAN,1976,45.697
+Canada,CAN,1977,46.533
+Canada,CAN,1978,47.94
+Canada,CAN,1979,49.379
+Canada,CAN,1980,50.602
+Canada,CAN,1981,52.019
+Canada,CAN,1982,52.13
+Canada,CAN,1983,52.969
+Canada,CAN,1984,53.773
+Canada,CAN,1985,54.929
+Canada,CAN,1986,55.72
+Canada,CAN,1987,56.459
+Canada,CAN,1988,57.42
+Canada,CAN,1989,58.109
+Canada,CAN,1990,58.499
+Canada,CAN,1991,58.431
+Canada,CAN,1992,57.837
+Canada,CAN,1993,57.662
+Canada,CAN,1994,57.519
+Canada,CAN,1995,57.48
+Canada,CAN,1996,57.465
+Canada,CAN,1997,57.79
+Canada,CAN,1998,58.379
+Canada,CAN,1999,58.913
+Canada,CAN,2000,59.399
+Canada,CAN,2001,59.754
+Canada,CAN,2002,60.906
+Canada,CAN,2003,61.89
+Canada,CAN,2004,61.985
+Canada,CAN,2005,61.658
+Canada,CAN,2006,61.883
+Canada,CAN,2007,62.362
+Canada,CAN,2008,62.458
+Canada,CAN,2009,62.431
+Canada,CAN,2010,62.391
+Canada,CAN,2011,62.155
+Canada,CAN,2012,62.221
+Canada,CAN,2013,62.306
+Canada,CAN,2014,61.7
+Canada,CAN,2015,61.468
+Canada,CAN,2016,61.369
+Canada,CAN,2017,61.54
+Canada,CAN,2018,61.424
+Canada,CAN,2019,61.702
+Canada,CAN,2020,59.805
+Canada,CAN,2021,61.051
+Canada,CAN,2022,61.475
+Canada,CAN,2023,61.629
+Canada,CAN,2024,61.143
+Germany,DEU,1895,36.2
+Germany,DEU,1907,44.1
+Germany,DEU,1925,45.7
+Germany,DEU,1939,46.1
+Germany,DEU,1946,38
+Germany,DEU,1950,39.3
+Germany,DEU,1960,41.5
+Germany,DEU,1970,38.2
+Germany,DEU,1981,39.8
+Germany,DEU,1983,40.111
+Germany,DEU,1984,40.706
+Germany,DEU,1985,41.115
+Germany,DEU,1986,41.565
+Germany,DEU,1987,41.446
+Germany,DEU,1988,42.112
+Germany,DEU,1989,42.526
+Germany,DEU,1990,45.355
+Germany,DEU,1991,48.137
+Germany,DEU,1992,47.866
+Germany,DEU,1993,47.603
+Germany,DEU,1994,47.781
+Germany,DEU,1995,47.677
+Germany,DEU,1996,47.84
+Germany,DEU,1997,48.18
+Germany,DEU,1998,48.408
+Germany,DEU,1999,48.963
+Germany,DEU,2000,48.858
+Germany,DEU,2001,49.293
+Germany,DEU,2002,49.36
+Germany,DEU,2003,49.737
+Germany,DEU,2004,49.432
+Germany,DEU,2005,51.066
+Germany,DEU,2006,52.196
+Germany,DEU,2007,52.671
+Germany,DEU,2008,52.567
+Germany,DEU,2009,53.351
+Germany,DEU,2010,52.727
+Germany,DEU,2011,54.311
+Germany,DEU,2012,54.058
+Germany,DEU,2013,54.603
+Germany,DEU,2014,54.829
+Germany,DEU,2015,54.715
+Germany,DEU,2016,55.616
+Germany,DEU,2017,55.932
+Germany,DEU,2018,55.853
+Germany,DEU,2019,56.67
+Germany,DEU,2020,55.424
+Germany,DEU,2021,55.383
+Germany,DEU,2022,55.941
+Germany,DEU,2023,56.558
+Germany,DEU,2024,56.732
+United Kingdom,GBR,1921,32.3
+United Kingdom,GBR,1931,34.2
+United Kingdom,GBR,1951,34.7
+United Kingdom,GBR,1961,37.57
+United Kingdom,GBR,1966,41.94
+United Kingdom,GBR,1971,42.57
+United Kingdom,GBR,1978,35.38
+United Kingdom,GBR,1979,35.92
+United Kingdom,GBR,1980,35.92
+United Kingdom,GBR,1981,44.54
+United Kingdom,GBR,1983,45.645
+United Kingdom,GBR,1984,47.153
+United Kingdom,GBR,1985,48.698
+United Kingdom,GBR,1986,49.163
+United Kingdom,GBR,1987,49.971
+United Kingdom,GBR,1988,50.626
+United Kingdom,GBR,1989,52.093
+United Kingdom,GBR,1990,52.444
+United Kingdom,GBR,1991,52.27
+United Kingdom,GBR,1992,52.385
+United Kingdom,GBR,1993,52.468
+United Kingdom,GBR,1994,52.5
+United Kingdom,GBR,1995,52.463
+United Kingdom,GBR,1996,52.889
+United Kingdom,GBR,1997,53.302
+United Kingdom,GBR,1998,53.325
+United Kingdom,GBR,1999,53.784
+United Kingdom,GBR,2000,54.191
+United Kingdom,GBR,2001,54.08
+United Kingdom,GBR,2002,54.638
+United Kingdom,GBR,2003,54.552
+United Kingdom,GBR,2004,54.932
+United Kingdom,GBR,2005,55.28
+United Kingdom,GBR,2006,55.79
+United Kingdom,GBR,2007,55.553
+United Kingdom,GBR,2008,55.843
+United Kingdom,GBR,2009,55.99
+United Kingdom,GBR,2010,55.905
+United Kingdom,GBR,2011,56.052
+United Kingdom,GBR,2012,56.289
+United Kingdom,GBR,2013,56.637
+United Kingdom,GBR,2014,56.902
+United Kingdom,GBR,2015,57.065
+United Kingdom,GBR,2016,57.424
+United Kingdom,GBR,2017,57.61
+United Kingdom,GBR,2018,57.864
+United Kingdom,GBR,2019,58.43
+United Kingdom,GBR,2020,58.633
+United Kingdom,GBR,2021,58.363
+United Kingdom,GBR,2022,58.155
+United Kingdom,GBR,2023,58.108
+United Kingdom,GBR,2024,58.449
+United States,USA,1890,18.6
+United States,USA,1900,20.4
+United States,USA,1910,22.8
+United States,USA,1920,23.3
+United States,USA,1930,24.3
+United States,USA,1940,25.4
+United States,USA,1950,28.6
+United States,USA,1960,37.7
+United States,USA,1961,38.1
+United States,USA,1962,37.9
+United States,USA,1963,38.3
+United States,USA,1964,38.7
+United States,USA,1965,39.3
+United States,USA,1966,40.3
+United States,USA,1967,41.1
+United States,USA,1968,41.6
+United States,USA,1969,42.7
+United States,USA,1970,43.3
+United States,USA,1971,43.4
+United States,USA,1972,43.9
+United States,USA,1973,44.7
+United States,USA,1974,45.7
+United States,USA,1975,46.3
+United States,USA,1976,47.3
+United States,USA,1977,48.4
+United States,USA,1978,50
+United States,USA,1979,50.9
+United States,USA,1980,51.5
+United States,USA,1981,52.1
+United States,USA,1982,52.6
+United States,USA,1983,52.9
+United States,USA,1984,53.6
+United States,USA,1985,54.5
+United States,USA,1986,55.3
+United States,USA,1987,56
+United States,USA,1988,56.6
+United States,USA,1989,57.4
+United States,USA,1990,57.5
+United States,USA,1991,57.4
+United States,USA,1992,57.8
+United States,USA,1993,57.9
+United States,USA,1994,58.862
+United States,USA,1995,59.048
+United States,USA,1996,59.343
+United States,USA,1997,59.898
+United States,USA,1998,59.847
+United States,USA,1999,60.034
+United States,USA,2000,59.942
+United States,USA,2001,59.787
+United States,USA,2002,59.622
+United States,USA,2003,59.505
+United States,USA,2004,59.164
+United States,USA,2005,59.255
+United States,USA,2006,59.363
+United States,USA,2007,59.308
+United States,USA,2008,59.471
+United States,USA,2009,59.194
+United States,USA,2010,58.623
+United States,USA,2011,58.104
+United States,USA,2012,57.684
+United States,USA,2013,57.206
+United States,USA,2014,56.974
+United States,USA,2015,56.677
+United States,USA,2016,56.801
+United States,USA,2017,57.035
+United States,USA,2018,57.078
+United States,USA,2019,57.428
+United States,USA,2020,56.201
+United States,USA,2021,56.091
+United States,USA,2022,56.788
+United States,USA,2023,57.332
+United States,USA,2024,57.495

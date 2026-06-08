@@ -1,40 +1,20 @@
-// Import Observable runtime tools.
-// Runtime runs the notebook/module,
-// Library provides standard Observable built-ins,
-// Inspector mounts each cell's output into normal DOM elements.
 import {
   Runtime,
   Library,
   Inspector
 } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
 
-// Used to parse charts.csv.
-import { csvParseRows } from "https://cdn.jsdelivr.net/npm/d3-dsv@3/+esm";
+import { csvParse } from "https://cdn.jsdelivr.net/npm/d3-dsv@3/+esm";
 
-// Native <select> menus are not reliable for screenshot-based agents.
-// Their open popup may close on focus changes or not appear correctly in screenshots.
-// If isCustomSelect is true, this script will replace them with custom DOM dropdowns 
-// so the that options stay visible and clickable as normal page content.
 const isCustomSelect = true;
 
-// Main container where the selected chart will be rendered.
 const app = document.getElementById("app");
-
-// Dropdown element used to choose which chart file to load.
 const chartSelect = document.getElementById("chartSelect");
 
-// Keep track of the currently running Observable runtime
-// so we can properly dispose of it before loading another chart.
 let currentRuntime = null;
-
-// Stores the list of discovered chart files.
 let chartFiles = [];
-
-// Used to watch for newly inserted native selects inside rendered charts.
 let selectEnhancerObserver = null;
 
-// Creates the outer DOM structure for one loaded chart module.
-// Returns the inner container where individual Observable cells will be placed.
 function createModuleShell() {
   const section = document.createElement("section");
   section.className = "chart-module";
@@ -48,8 +28,6 @@ function createModuleShell() {
   return cells;
 }
 
-// Creates a wrapper for a single Observable cell.
-// Each cell gets its own container, and the Inspector renders into `output`.
 function createCellContainer(name) {
   const wrapper = document.createElement("div");
   wrapper.className = `cell${name ? " cell--named" : ""}`;
@@ -60,8 +38,6 @@ function createCellContainer(name) {
   return { wrapper, output };
 }
 
-// Displays a user-friendly error box inside the app area.
-// If a title is provided, it is shown above the actual error message.
 function showError(title, error) {
   const section = document.createElement("section");
   section.className = "chart-module";
@@ -76,8 +52,6 @@ function showError(title, error) {
   app.appendChild(section);
 }
 
-// Removes the currently rendered chart and disposes the old runtime.
-// This is important so old Observable modules do not keep running in memory.
 function clearCurrentChart() {
   if (currentRuntime) {
     currentRuntime.dispose();
@@ -92,10 +66,11 @@ function clearCurrentChart() {
   app.innerHTML = "";
 }
 
-// Gets the chart slug from a chart object.
-// Example:
-// "./charts/playspace.js" becomes "playspace"
 function getChartSlug(chart) {
+  if (chart.slug) {
+    return chart.slug.toLowerCase();
+  }
+
   return chart.path
     .split("/")
     .pop()
@@ -103,10 +78,6 @@ function getChartSlug(chart) {
     .toLowerCase();
 }
 
-// Reads the selected chart from the URL query.
-// Example:
-// index.html?chart=playspace
-// returns "playspace"
 function getChartQueryFromUrl() {
   const params = new URLSearchParams(window.location.search);
   const chartName = params.get("chart");
@@ -114,8 +85,6 @@ function getChartQueryFromUrl() {
   return chartName ? chartName.toLowerCase() : null;
 }
 
-// Finds which chart should be loaded first based on the URL.
-// If the URL has no valid chart, fall back to the first chart.
 function getInitialChartIndex(charts) {
   const chartQuery = getChartQueryFromUrl();
 
@@ -127,8 +96,6 @@ function getInitialChartIndex(charts) {
   return index >= 0 ? index : 0;
 }
 
-// Updates the browser URL to match the currently selected chart.
-// This keeps the page shareable and reload-safe.
 function updateUrlForChart(chart) {
   const params = new URLSearchParams(window.location.search);
   params.set("chart", getChartSlug(chart));
@@ -512,9 +479,6 @@ window.addEventListener("resize", () => {
   });
 });
 
-// Loads one chart JS file dynamically and mounts all of its Observable cells.
-// `chartFile` is expected to look like:
-// { title: "Play Space", path: "./charts/playspace.js" }
 async function mountChartFile(chartFile) {
   clearCurrentChart();
 
@@ -549,9 +513,17 @@ async function mountChartFile(chartFile) {
   }
 }
 
-// Reads the list of chart files from ./charts.csv.
-// Expected format per line:
-// Display Name,filename.js
+function cleanCsvValue(value) {
+  return String(value || "").trim();
+}
+
+function normalizePathPart(value) {
+  return cleanCsvValue(value)
+    .replace(/\\/g, "/")
+    .replace(/^\/+/, "")
+    .replace(/\/+$/, "");
+}
+
 async function loadChartList() {
   const response = await fetch("./charts.csv");
 
@@ -560,29 +532,38 @@ async function loadChartList() {
   }
 
   const text = await response.text();
+  const rows = csvParse(text);
 
-  const rows = csvParseRows(text)
-    .map(([title, file]) => ({
-      title: (title || "").trim(),
-      file: (file || "").trim()
-    }))
-    .filter(row => row.title && row.file);
+  const charts = rows
+    .map((row, index) => {
+      const title = cleanCsvValue(row.title);
+      const safeTitle = normalizePathPart(row["safe title"]);
+      const jsFile = normalizePathPart(row["javascript file"]);
 
-  if (rows.length === 0) {
-    throw new Error('No valid chart entries found in "./charts.csv".');
+      if (!title || !safeTitle || !jsFile) {
+        return null;
+      }
+
+      return {
+        title,
+        slug: safeTitle.toLowerCase(),
+        safeTitle,
+        jsFile,
+        path: `./charts/${safeTitle}/${jsFile}`,
+        rowNumber: index + 2
+      };
+    })
+    .filter(Boolean);
+
+  if (charts.length === 0) {
+    throw new Error(
+      'No valid chart entries found in "./charts.csv". Expected columns: title, safe title, javascript file.'
+    );
   }
 
-  return rows
-    .map(({ title, file }) => ({
-      title,
-      path: `./charts/${file}`
-    }))
-    .sort((a, b) => a.title.localeCompare(b.title));
+  return charts;
 }
 
-// Fills the dropdown with available chart names.
-// When the user changes the selection, the chosen chart is loaded
-// and the URL is updated.
 function populateDropdown(charts) {
   chartSelect.innerHTML = "";
 
@@ -600,11 +581,6 @@ function populateDropdown(charts) {
   };
 }
 
-// Main startup flow:
-// 1. Read chart files from charts.csv
-// 2. Fill the dropdown
-// 3. Check if ?chart=... exists in the URL
-// 4. Load that chart if found, otherwise load the first chart
 async function main() {
   try {
     chartFiles = await loadChartList();
@@ -613,7 +589,6 @@ async function main() {
     const initialIndex = getInitialChartIndex(chartFiles);
     chartSelect.value = String(initialIndex);
 
-    // Also update the URL on first load so it stays consistent.
     updateUrlForChart(chartFiles[initialIndex]);
     await mountChartFile(chartFiles[initialIndex]);
   } catch (error) {
@@ -622,14 +597,13 @@ async function main() {
   }
 }
 
-// Start the app.
 main();
 
-// Clean up the Observable runtime when the page is being closed or refreshed.
 window.addEventListener("beforeunload", () => {
   if (currentRuntime) {
     currentRuntime.dispose();
   }
+
   if (selectEnhancerObserver) {
     selectEnhancerObserver.disconnect();
   }

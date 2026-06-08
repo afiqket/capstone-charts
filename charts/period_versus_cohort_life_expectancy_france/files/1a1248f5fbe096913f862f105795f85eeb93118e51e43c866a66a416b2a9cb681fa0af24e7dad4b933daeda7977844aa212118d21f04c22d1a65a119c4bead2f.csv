@@ -1,0 +1,4399 @@
+Entity,Code,Year,Period life expectancy,Cohort life expectancy
+Australia,AUS,1921,60.97,
+Australia,AUS,1922,62.83,
+Australia,AUS,1923,61.68,
+Australia,AUS,1924,62.48,
+Australia,AUS,1925,63.17,
+Australia,AUS,1926,62.88,
+Australia,AUS,1927,62.84,
+Australia,AUS,1928,62.91,
+Australia,AUS,1929,63.08,
+Australia,AUS,1930,64.9,
+Australia,AUS,1931,65.32,
+Australia,AUS,1932,65.6,
+Australia,AUS,1933,65.43,
+Australia,AUS,1934,64.79,
+Australia,AUS,1935,65.05,
+Australia,AUS,1936,65.19,
+Australia,AUS,1937,65.74,
+Australia,AUS,1938,65.76,
+Australia,AUS,1939,65.73,
+Australia,AUS,1940,66.16,
+Australia,AUS,1941,66.04,
+Australia,AUS,1942,65.79,
+Australia,AUS,1943,66.33,
+Australia,AUS,1944,67.96,
+Australia,AUS,1945,68.38,
+Australia,AUS,1946,67.92,
+Australia,AUS,1947,68.52,
+Australia,AUS,1948,68.47,
+Australia,AUS,1949,69.09,
+Australia,AUS,1950,69,
+Australia,AUS,1951,68.7,
+Australia,AUS,1952,69.11,
+Australia,AUS,1953,69.69,
+Australia,AUS,1954,69.86,
+Australia,AUS,1955,70.15,
+Australia,AUS,1956,70.04,
+Australia,AUS,1957,70.32,
+Australia,AUS,1958,70.86,
+Australia,AUS,1959,70.45,
+Australia,AUS,1960,70.87,
+Australia,AUS,1961,71.13,
+Australia,AUS,1962,70.91,
+Australia,AUS,1963,70.96,
+Australia,AUS,1964,70.57,
+Australia,AUS,1965,70.8,
+Australia,AUS,1966,70.68,
+Australia,AUS,1967,71.05,
+Australia,AUS,1968,70.68,
+Australia,AUS,1969,71.07,
+Australia,AUS,1970,70.65,
+Australia,AUS,1971,71.45,
+Australia,AUS,1972,71.77,
+Australia,AUS,1973,72.06,
+Australia,AUS,1974,71.85,
+Australia,AUS,1975,72.78,
+Australia,AUS,1976,72.79,
+Australia,AUS,1977,73.47,
+Australia,AUS,1978,73.74,
+Australia,AUS,1979,74.33,
+Australia,AUS,1980,74.57,
+Australia,AUS,1981,74.78,
+Australia,AUS,1982,74.72,
+Australia,AUS,1983,75.44,
+Australia,AUS,1984,75.51,
+Australia,AUS,1985,75.43,
+Australia,AUS,1986,76.07,
+Australia,AUS,1987,76.09,
+Australia,AUS,1988,76.35,
+Australia,AUS,1989,76.2,
+Australia,AUS,1990,77.04,
+Australia,AUS,1991,77.48,
+Australia,AUS,1992,77.47,
+Australia,AUS,1993,78.01,
+Australia,AUS,1994,77.86,
+Australia,AUS,1995,78.26,
+Australia,AUS,1996,78.35,
+Australia,AUS,1997,78.63,
+Australia,AUS,1998,79.03,
+Australia,AUS,1999,79.28,
+Australia,AUS,2000,79.62,
+Australia,AUS,2001,80.01,
+Australia,AUS,2002,80.06,
+Australia,AUS,2003,80.45,
+Australia,AUS,2004,80.74,
+Australia,AUS,2005,81.1,
+Australia,AUS,2006,81.27,
+Australia,AUS,2007,81.24,
+Australia,AUS,2008,81.43,
+Australia,AUS,2009,81.73,
+Australia,AUS,2010,82.02,
+Australia,AUS,2011,82.09,
+Australia,AUS,2012,82.29,
+Australia,AUS,2013,82.54,
+Australia,AUS,2014,82.51,
+Australia,AUS,2015,82.6,
+Australia,AUS,2016,82.8,
+Australia,AUS,2017,82.71,
+Australia,AUS,2018,83.25,
+Australia,AUS,2019,83.24,
+Australia,AUS,2020,83.66,
+Australia,AUS,2021,83.47,
+Austria,AUT,1947,61.54,
+Austria,AUT,1948,63.21,
+Austria,AUT,1949,63.47,
+Austria,AUT,1950,64.81,
+Austria,AUT,1951,65.22,
+Austria,AUT,1952,66.74,
+Austria,AUT,1953,67.25,
+Austria,AUT,1954,67.28,
+Austria,AUT,1955,67.55,
+Austria,AUT,1956,67.68,
+Austria,AUT,1957,67.44,
+Austria,AUT,1958,68.45,
+Austria,AUT,1959,68.39,
+Austria,AUT,1960,68.74,
+Austria,AUT,1961,69.71,
+Austria,AUT,1962,69.5,
+Austria,AUT,1963,69.65,
+Austria,AUT,1964,70.12,
+Austria,AUT,1965,69.93,
+Austria,AUT,1966,70.22,
+Austria,AUT,1967,70.12,
+Austria,AUT,1968,70.27,
+Austria,AUT,1969,70.04,
+Austria,AUT,1970,70.09,
+Austria,AUT,1971,70.29,
+Austria,AUT,1972,70.62,
+Austria,AUT,1973,71.2,
+Austria,AUT,1974,71.18,
+Austria,AUT,1975,71.33,
+Austria,AUT,1976,71.79,
+Austria,AUT,1977,72.14,
+Austria,AUT,1978,72.2,
+Austria,AUT,1979,72.55,
+Austria,AUT,1980,72.67,
+Austria,AUT,1981,72.99,
+Austria,AUT,1982,73.15,
+Austria,AUT,1983,73.22,
+Austria,AUT,1984,73.77,
+Austria,AUT,1985,73.99,
+Austria,AUT,1986,74.46,
+Austria,AUT,1987,74.9,
+Austria,AUT,1988,75.37,
+Austria,AUT,1989,75.46,
+Austria,AUT,1990,75.74,
+Austria,AUT,1991,75.79,
+Austria,AUT,1992,75.99,
+Austria,AUT,1993,76.22,
+Austria,AUT,1994,76.54,
+Austria,AUT,1995,76.78,
+Austria,AUT,1996,77.03,
+Austria,AUT,1997,77.43,
+Austria,AUT,1998,77.78,
+Austria,AUT,1999,77.96,
+Austria,AUT,2000,78.24,
+Austria,AUT,2001,78.72,
+Austria,AUT,2002,78.85,
+Austria,AUT,2003,78.85,
+Austria,AUT,2004,79.36,
+Austria,AUT,2005,79.52,
+Austria,AUT,2006,79.96,
+Austria,AUT,2007,80.16,
+Austria,AUT,2008,80.37,
+Austria,AUT,2009,80.21,
+Austria,AUT,2010,80.47,
+Austria,AUT,2011,80.83,
+Austria,AUT,2012,80.84,
+Austria,AUT,2013,81.08,
+Austria,AUT,2014,81.39,
+Austria,AUT,2015,81.16,
+Austria,AUT,2016,81.59,
+Austria,AUT,2017,81.63,
+Austria,AUT,2018,81.69,
+Austria,AUT,2019,81.91,
+Austria,AUT,2020,81.35,
+Austria,AUT,2021,81.28,
+Austria,AUT,2022,81.43,
+Austria,AUT,2023,81.86,
+Belarus,BLR,1959,69.06,
+Belarus,BLR,1960,71.85,
+Belarus,BLR,1961,72.58,
+Belarus,BLR,1962,71.32,
+Belarus,BLR,1963,71.99,
+Belarus,BLR,1964,73.53,
+Belarus,BLR,1965,73.04,
+Belarus,BLR,1966,73.38,
+Belarus,BLR,1967,73.16,
+Belarus,BLR,1968,73.26,
+Belarus,BLR,1969,72.9,
+Belarus,BLR,1970,72.36,
+Belarus,BLR,1971,73.02,
+Belarus,BLR,1972,72.73,
+Belarus,BLR,1973,72.75,
+Belarus,BLR,1974,73.07,
+Belarus,BLR,1975,72.11,
+Belarus,BLR,1976,71.97,
+Belarus,BLR,1977,71.91,
+Belarus,BLR,1978,71.75,
+Belarus,BLR,1979,71.35,
+Belarus,BLR,1980,71.1,
+Belarus,BLR,1981,71.38,
+Belarus,BLR,1982,71.51,
+Belarus,BLR,1983,71.33,
+Belarus,BLR,1984,70.72,
+Belarus,BLR,1985,70.97,
+Belarus,BLR,1986,72.31,
+Belarus,BLR,1987,72.19,
+Belarus,BLR,1988,71.97,
+Belarus,BLR,1989,71.76,
+Belarus,BLR,1990,71.21,
+Belarus,BLR,1991,70.62,
+Belarus,BLR,1992,70.21,
+Belarus,BLR,1993,69.11,
+Belarus,BLR,1994,68.87,
+Belarus,BLR,1995,68.43,
+Belarus,BLR,1996,68.6,
+Belarus,BLR,1997,68.41,
+Belarus,BLR,1998,68.3,
+Belarus,BLR,1999,67.91,
+Belarus,BLR,2000,68.89,
+Belarus,BLR,2001,68.46,
+Belarus,BLR,2002,67.95,
+Belarus,BLR,2003,68.47,
+Belarus,BLR,2004,68.89,
+Belarus,BLR,2005,68.7,
+Belarus,BLR,2006,69.32,
+Belarus,BLR,2007,70.22,
+Belarus,BLR,2008,70.4,
+Belarus,BLR,2009,70.45,
+Belarus,BLR,2010,70.45,
+Belarus,BLR,2011,70.65,
+Belarus,BLR,2012,72.19,
+Belarus,BLR,2013,72.65,
+Belarus,BLR,2014,73.24,
+Belarus,BLR,2015,73.88,
+Belarus,BLR,2016,74.15,
+Belarus,BLR,2017,74.42,
+Belarus,BLR,2018,74.48,
+Belgium,BEL,1841,40.34,
+Belgium,BEL,1842,38.67,
+Belgium,BEL,1843,40.38,
+Belgium,BEL,1844,41.91,
+Belgium,BEL,1845,41.05,
+Belgium,BEL,1846,37.86,
+Belgium,BEL,1847,35.13,
+Belgium,BEL,1848,38.05,
+Belgium,BEL,1849,34.51,
+Belgium,BEL,1850,42.3,
+Belgium,BEL,1851,41.91,
+Belgium,BEL,1852,41.81,
+Belgium,BEL,1853,41.35,
+Belgium,BEL,1854,39.78,
+Belgium,BEL,1855,37.46,
+Belgium,BEL,1856,40.92,
+Belgium,BEL,1857,40.48,
+Belgium,BEL,1858,40.17,
+Belgium,BEL,1859,38.97,
+Belgium,BEL,1860,45.1,
+Belgium,BEL,1861,41.25,
+Belgium,BEL,1862,43.1,
+Belgium,BEL,1863,41.29,
+Belgium,BEL,1864,39.8,
+Belgium,BEL,1865,37.73,
+Belgium,BEL,1866,32.47,
+Belgium,BEL,1867,43.05,
+Belgium,BEL,1868,42.55,
+Belgium,BEL,1869,42.59,
+Belgium,BEL,1870,40.92,
+Belgium,BEL,1871,34.36,
+Belgium,BEL,1872,40.04,
+Belgium,BEL,1873,43.49,
+Belgium,BEL,1874,44.68,
+Belgium,BEL,1875,42.17,
+Belgium,BEL,1876,43.67,
+Belgium,BEL,1877,44.48,
+Belgium,BEL,1878,44.23,
+Belgium,BEL,1879,43.83,
+Belgium,BEL,1880,42.49,
+Belgium,BEL,1881,44.42,
+Belgium,BEL,1882,45.55,
+Belgium,BEL,1883,44.9,
+Belgium,BEL,1884,44.23,
+Belgium,BEL,1885,45.47,
+Belgium,BEL,1886,43.35,
+Belgium,BEL,1887,46.05,
+Belgium,BEL,1888,44.92,
+Belgium,BEL,1889,45.07,
+Belgium,BEL,1890,44.14,
+Belgium,BEL,1891,44.04,
+Belgium,BEL,1892,43.16,
+Belgium,BEL,1893,44.44,
+Belgium,BEL,1894,46.63,
+Belgium,BEL,1895,45.48,
+Belgium,BEL,1896,48.07,
+Belgium,BEL,1897,48.84,
+Belgium,BEL,1898,48.12,
+Belgium,BEL,1899,46.5,
+Belgium,BEL,1900,46.69,
+Belgium,BEL,1901,49.44,
+Belgium,BEL,1902,49.14,
+Belgium,BEL,1903,49.23,
+Belgium,BEL,1904,49.27,
+Belgium,BEL,1905,50.03,
+Belgium,BEL,1906,49.67,
+Belgium,BEL,1907,51.07,
+Belgium,BEL,1908,49.72,
+Belgium,BEL,1909,50.66,
+Belgium,BEL,1910,51.31,
+Belgium,BEL,1911,49.28,
+Belgium,BEL,1912,52.25,
+Belgium,BEL,1913,52.45,
+Belgium,BEL,1919,49.24,
+Belgium,BEL,1920,53.99,
+Belgium,BEL,1921,54.64,
+Belgium,BEL,1922,55.18,
+Belgium,BEL,1923,56.69,
+Belgium,BEL,1924,57.4,
+Belgium,BEL,1925,57.12,
+Belgium,BEL,1926,56.88,
+Belgium,BEL,1927,57.1,
+Belgium,BEL,1928,57.46,
+Belgium,BEL,1929,55.02,
+Belgium,BEL,1930,57.1,
+Belgium,BEL,1931,58.42,
+Belgium,BEL,1932,58.54,
+Belgium,BEL,1933,58.68,
+Belgium,BEL,1934,60.31,
+Belgium,BEL,1935,59.94,
+Belgium,BEL,1936,59.91,
+Belgium,BEL,1937,59.95,
+Belgium,BEL,1938,60.11,
+Belgium,BEL,1939,60.06,
+Belgium,BEL,1940,55.96,
+Belgium,BEL,1941,58.74,
+Belgium,BEL,1942,59.09,
+Belgium,BEL,1943,60.29,
+Belgium,BEL,1944,56.94,
+Belgium,BEL,1945,58.32,
+Belgium,BEL,1946,61.89,
+Belgium,BEL,1947,63.42,
+Belgium,BEL,1948,64.92,
+Belgium,BEL,1949,65.43,
+Belgium,BEL,1950,66.3,
+Belgium,BEL,1951,66.75,
+Belgium,BEL,1952,67.96,
+Belgium,BEL,1953,68.35,
+Belgium,BEL,1954,68.59,
+Belgium,BEL,1955,68.54,
+Belgium,BEL,1956,68.84,
+Belgium,BEL,1957,69.2,
+Belgium,BEL,1958,69.91,
+Belgium,BEL,1959,70.31,
+Belgium,BEL,1960,69.62,
+Belgium,BEL,1961,70.5,
+Belgium,BEL,1962,70.23,
+Belgium,BEL,1963,70.04,
+Belgium,BEL,1964,70.7,
+Belgium,BEL,1965,70.55,
+Belgium,BEL,1966,70.63,
+Belgium,BEL,1967,70.91,
+Belgium,BEL,1968,70.61,
+Belgium,BEL,1969,70.67,
+Belgium,BEL,1970,70.94,
+Belgium,BEL,1971,71.09,
+Belgium,BEL,1972,71.41,
+Belgium,BEL,1973,71.63,
+Belgium,BEL,1974,71.97,
+Belgium,BEL,1975,71.96,
+Belgium,BEL,1976,72.1,
+Belgium,BEL,1977,72.76,
+Belgium,BEL,1978,72.7,
+Belgium,BEL,1979,73.2,
+Belgium,BEL,1980,73.24,
+Belgium,BEL,1981,73.65,
+Belgium,BEL,1982,73.88,
+Belgium,BEL,1983,73.88,
+Belgium,BEL,1984,74.37,
+Belgium,BEL,1985,74.47,
+Belgium,BEL,1986,74.67,
+Belgium,BEL,1987,75.29,
+Belgium,BEL,1988,75.59,
+Belgium,BEL,1989,75.65,
+Belgium,BEL,1990,76.06,
+Belgium,BEL,1991,76.2,
+Belgium,BEL,1992,76.36,
+Belgium,BEL,1993,76.36,
+Belgium,BEL,1994,76.71,
+Belgium,BEL,1995,76.84,
+Belgium,BEL,1996,77.19,
+Belgium,BEL,1997,77.4,
+Belgium,BEL,1998,77.47,
+Belgium,BEL,1999,77.65,
+Belgium,BEL,2000,77.77,
+Belgium,BEL,2001,78.08,
+Belgium,BEL,2002,78.17,
+Belgium,BEL,2003,78.32,
+Belgium,BEL,2004,78.96,
+Belgium,BEL,2005,79.05,
+Belgium,BEL,2006,79.38,
+Belgium,BEL,2007,79.52,
+Belgium,BEL,2008,79.57,
+Belgium,BEL,2009,79.84,
+Belgium,BEL,2010,80.03,
+Belgium,BEL,2011,80.35,
+Belgium,BEL,2012,80.24,
+Belgium,BEL,2013,80.45,
+Belgium,BEL,2014,81.06,
+Belgium,BEL,2015,80.87,
+Belgium,BEL,2016,81.25,
+Belgium,BEL,2017,81.34,
+Belgium,BEL,2018,81.46,
+Belgium,BEL,2019,81.82,
+Belgium,BEL,2020,80.79,
+Belgium,BEL,2021,81.65,
+Belgium,BEL,2022,81.71,
+Belgium,BEL,2023,82.08,
+Bulgaria,BGR,1947,54.14,
+Bulgaria,BGR,1948,55.83,
+Bulgaria,BGR,1949,57.99,
+Bulgaria,BGR,1950,61.47,
+Bulgaria,BGR,1951,60.68,
+Bulgaria,BGR,1952,59.57,
+Bulgaria,BGR,1953,64.18,
+Bulgaria,BGR,1954,64.39,
+Bulgaria,BGR,1955,64.82,
+Bulgaria,BGR,1956,65.21,
+Bulgaria,BGR,1957,66.59,
+Bulgaria,BGR,1958,68.71,
+Bulgaria,BGR,1959,66.63,
+Bulgaria,BGR,1960,69.17,
+Bulgaria,BGR,1961,70.22,
+Bulgaria,BGR,1962,69.53,
+Bulgaria,BGR,1963,70.33,
+Bulgaria,BGR,1964,71.13,
+Bulgaria,BGR,1965,71.3,
+Bulgaria,BGR,1966,71.22,
+Bulgaria,BGR,1967,70.41,
+Bulgaria,BGR,1968,71.2,
+Bulgaria,BGR,1969,70.47,
+Bulgaria,BGR,1970,71.25,
+Bulgaria,BGR,1971,70.85,
+Bulgaria,BGR,1972,70.86,
+Bulgaria,BGR,1973,71.3,
+Bulgaria,BGR,1974,71.21,
+Bulgaria,BGR,1975,71,
+Bulgaria,BGR,1976,71.36,
+Bulgaria,BGR,1977,70.77,
+Bulgaria,BGR,1978,71.13,
+Bulgaria,BGR,1979,71.22,
+Bulgaria,BGR,1980,71.08,
+Bulgaria,BGR,1981,71.48,
+Bulgaria,BGR,1982,71.08,
+Bulgaria,BGR,1983,71.24,
+Bulgaria,BGR,1984,71.35,
+Bulgaria,BGR,1985,71.05,
+Bulgaria,BGR,1986,71.55,
+Bulgaria,BGR,1987,71.35,
+Bulgaria,BGR,1988,71.41,
+Bulgaria,BGR,1989,71.48,
+Bulgaria,BGR,1990,71.32,
+Bulgaria,BGR,1991,71.19,
+Bulgaria,BGR,1992,71.18,
+Bulgaria,BGR,1993,71.18,
+Bulgaria,BGR,1994,70.86,
+Bulgaria,BGR,1995,70.96,
+Bulgaria,BGR,1996,70.84,
+Bulgaria,BGR,1997,70.31,
+Bulgaria,BGR,1998,70.87,
+Bulgaria,BGR,1999,71.56,
+Bulgaria,BGR,2000,71.58,
+Bulgaria,BGR,2001,71.88,
+Bulgaria,BGR,2002,72.13,
+Bulgaria,BGR,2003,72.37,
+Bulgaria,BGR,2004,72.58,
+Bulgaria,BGR,2005,72.56,
+Bulgaria,BGR,2006,72.69,
+Bulgaria,BGR,2007,73.01,
+Bulgaria,BGR,2008,73.34,
+Bulgaria,BGR,2009,73.68,
+Bulgaria,BGR,2010,73.81,
+Bulgaria,BGR,2011,74.16,
+Bulgaria,BGR,2012,74.33,
+Bulgaria,BGR,2013,74.82,
+Bulgaria,BGR,2014,74.47,
+Bulgaria,BGR,2015,74.62,
+Bulgaria,BGR,2016,74.83,
+Bulgaria,BGR,2017,74.8,
+Bulgaria,BGR,2018,74.93,
+Bulgaria,BGR,2019,75.09,
+Bulgaria,BGR,2020,73.6,
+Bulgaria,BGR,2021,71.41,
+Canada,CAN,1921,57.1,
+Canada,CAN,1922,57.08,
+Canada,CAN,1923,56.96,
+Canada,CAN,1924,58.75,
+Canada,CAN,1925,59.26,
+Canada,CAN,1926,57.95,
+Canada,CAN,1927,58.61,
+Canada,CAN,1928,58.55,
+Canada,CAN,1929,57.94,
+Canada,CAN,1930,58.96,
+Canada,CAN,1931,60.27,
+Canada,CAN,1932,61.34,
+Canada,CAN,1933,62.28,
+Canada,CAN,1934,62.62,
+Canada,CAN,1935,62.4,
+Canada,CAN,1936,62.65,
+Canada,CAN,1937,61.27,
+Canada,CAN,1938,63.24,
+Canada,CAN,1939,63.7,
+Canada,CAN,1940,63.91,
+Canada,CAN,1941,63.74,
+Canada,CAN,1942,64.61,
+Canada,CAN,1943,64.57,
+Canada,CAN,1944,65.28,
+Canada,CAN,1945,66.26,
+Canada,CAN,1946,66.41,
+Canada,CAN,1947,66.79,
+Canada,CAN,1948,67.25,
+Canada,CAN,1949,67.59,
+Canada,CAN,1950,68.21,
+Canada,CAN,1951,68.51,
+Canada,CAN,1952,68.68,
+Canada,CAN,1953,69.07,
+Canada,CAN,1954,69.94,
+Canada,CAN,1955,70,
+Canada,CAN,1956,69.97,
+Canada,CAN,1957,69.92,
+Canada,CAN,1958,70.57,
+Canada,CAN,1959,70.61,
+Canada,CAN,1960,70.98,
+Canada,CAN,1961,71.22,
+Canada,CAN,1962,71.24,
+Canada,CAN,1963,71.27,
+Canada,CAN,1964,71.64,
+Canada,CAN,1965,71.75,
+Canada,CAN,1966,71.87,
+Canada,CAN,1967,72.09,
+Canada,CAN,1968,72.24,
+Canada,CAN,1969,72.4,
+Canada,CAN,1970,72.61,
+Canada,CAN,1971,72.95,
+Canada,CAN,1972,72.83,
+Canada,CAN,1973,73.07,
+Canada,CAN,1974,73.15,
+Canada,CAN,1975,73.45,
+Canada,CAN,1976,73.87,
+Canada,CAN,1977,74.16,
+Canada,CAN,1978,74.48,
+Canada,CAN,1979,74.84,
+Canada,CAN,1980,75.07,
+Canada,CAN,1981,75.48,
+Canada,CAN,1982,75.69,
+Canada,CAN,1983,76.07,
+Canada,CAN,1984,76.36,
+Canada,CAN,1985,76.35,
+Canada,CAN,1986,76.49,
+Canada,CAN,1987,76.8,
+Canada,CAN,1988,76.86,
+Canada,CAN,1989,77.12,
+Canada,CAN,1990,77.43,
+Canada,CAN,1991,77.59,
+Canada,CAN,1992,77.85,
+Canada,CAN,1993,77.72,
+Canada,CAN,1994,77.9,
+Canada,CAN,1995,78.02,
+Canada,CAN,1996,78.27,
+Canada,CAN,1997,78.47,
+Canada,CAN,1998,78.68,
+Canada,CAN,1999,78.88,
+Canada,CAN,2000,79.23,
+Canada,CAN,2001,79.45,
+Canada,CAN,2002,79.57,
+Canada,CAN,2003,79.74,
+Canada,CAN,2004,80.03,
+Canada,CAN,2005,80.13,
+Canada,CAN,2006,80.54,
+Canada,CAN,2007,80.54,
+Canada,CAN,2008,80.73,
+Canada,CAN,2009,81.06,
+Canada,CAN,2010,81.33,
+Canada,CAN,2011,81.5,
+Canada,CAN,2012,81.69,
+Canada,CAN,2013,81.77,
+Canada,CAN,2014,81.82,
+Canada,CAN,2015,81.89,
+Canada,CAN,2016,82.01,
+Canada,CAN,2017,81.88,
+Canada,CAN,2018,81.89,
+Canada,CAN,2019,82.25,
+Canada,CAN,2020,81.61,
+Canada,CAN,2021,81.53,
+Canada,CAN,2022,81.19,
+Canada,CAN,2023,81.75,
+Chile,CHL,1992,74.5,
+Chile,CHL,1993,74.56,
+Chile,CHL,1994,75.03,
+Chile,CHL,1995,74.95,
+Chile,CHL,1996,75.24,
+Chile,CHL,1997,75.82,
+Chile,CHL,1998,75.93,
+Chile,CHL,1999,76.13,
+Chile,CHL,2000,76.85,
+Chile,CHL,2001,76.73,
+Chile,CHL,2002,77.27,
+Chile,CHL,2003,77.33,
+Chile,CHL,2004,77.38,
+Chile,CHL,2005,77.78,
+Chile,CHL,2006,78.18,
+Chile,CHL,2007,77.64,
+Chile,CHL,2008,78.24,
+Chile,CHL,2009,78.4,
+Chile,CHL,2010,78.15,
+Chile,CHL,2011,78.78,
+Chile,CHL,2012,78.79,
+Chile,CHL,2013,78.99,
+Chile,CHL,2014,79.09,
+Chile,CHL,2015,79.3,
+Chile,CHL,2016,79.57,
+Chile,CHL,2017,79.74,
+Chile,CHL,2018,79.99,
+Chile,CHL,2019,80.03,
+Chile,CHL,2020,78.96,
+Croatia,HRV,2001,74.56,
+Croatia,HRV,2002,74.72,
+Croatia,HRV,2003,74.65,
+Croatia,HRV,2004,75.42,
+Croatia,HRV,2005,75.32,
+Croatia,HRV,2006,75.86,
+Croatia,HRV,2007,75.7,
+Croatia,HRV,2008,75.91,
+Croatia,HRV,2009,76.19,
+Croatia,HRV,2010,76.63,
+Croatia,HRV,2011,77.03,
+Croatia,HRV,2012,77.2,
+Croatia,HRV,2013,77.64,
+Croatia,HRV,2014,77.81,
+Croatia,HRV,2015,77.42,
+Croatia,HRV,2016,78.09,
+Croatia,HRV,2017,77.91,
+Croatia,HRV,2018,78.11,
+Croatia,HRV,2019,78.43,
+Croatia,HRV,2020,77.75,
+Czechia,CZE,1950,64.4,
+Czechia,CZE,1951,65.26,
+Czechia,CZE,1952,66.86,
+Czechia,CZE,1953,67.55,
+Czechia,CZE,1954,68.05,
+Czechia,CZE,1955,68.98,
+Czechia,CZE,1956,69.37,
+Czechia,CZE,1957,69.03,
+Czechia,CZE,1958,69.98,
+Czechia,CZE,1959,69.9,
+Czechia,CZE,1960,70.45,
+Czechia,CZE,1961,70.62,
+Czechia,CZE,1962,69.89,
+Czechia,CZE,1963,70.39,
+Czechia,CZE,1964,70.59,
+Czechia,CZE,1965,70.26,
+Czechia,CZE,1966,70.46,
+Czechia,CZE,1967,70.35,
+Czechia,CZE,1968,69.91,
+Czechia,CZE,1969,69.42,
+Czechia,CZE,1970,69.49,
+Czechia,CZE,1971,69.74,
+Czechia,CZE,1972,70.23,
+Czechia,CZE,1973,70.09,
+Czechia,CZE,1974,70.18,
+Czechia,CZE,1975,70.49,
+Czechia,CZE,1976,70.6,
+Czechia,CZE,1977,70.64,
+Czechia,CZE,1978,70.71,
+Czechia,CZE,1979,70.82,
+Czechia,CZE,1980,70.34,
+Czechia,CZE,1981,70.77,
+Czechia,CZE,1982,70.88,
+Czechia,CZE,1983,70.64,
+Czechia,CZE,1984,70.9,
+Czechia,CZE,1985,71.1,
+Czechia,CZE,1986,71.05,
+Czechia,CZE,1987,71.51,
+Czechia,CZE,1988,71.71,
+Czechia,CZE,1989,71.76,
+Czechia,CZE,1990,71.41,
+Czechia,CZE,1991,71.97,
+Czechia,CZE,1992,72.33,
+Czechia,CZE,1993,72.85,
+Czechia,CZE,1994,73.08,
+Czechia,CZE,1995,73.18,
+Czechia,CZE,1996,73.84,
+Czechia,CZE,1997,73.95,
+Czechia,CZE,1998,74.55,
+Czechia,CZE,1999,74.74,
+Czechia,CZE,2000,74.98,
+Czechia,CZE,2001,75.31,
+Czechia,CZE,2002,75.44,
+Czechia,CZE,2003,75.4,
+Czechia,CZE,2004,75.94,
+Czechia,CZE,2005,76.16,
+Czechia,CZE,2006,76.71,
+Czechia,CZE,2007,76.92,
+Czechia,CZE,2008,77.17,
+Czechia,CZE,2009,77.26,
+Czechia,CZE,2010,77.56,
+Czechia,CZE,2011,77.81,
+Czechia,CZE,2012,78,
+Czechia,CZE,2013,78.17,
+Czechia,CZE,2014,78.74,
+Czechia,CZE,2015,78.56,
+Czechia,CZE,2016,78.97,
+Czechia,CZE,2017,78.93,
+Czechia,CZE,2018,78.96,
+Czechia,CZE,2019,79.19,
+Czechia,CZE,2020,78.24,
+Czechia,CZE,2021,77.24,
+Denmark,DNK,1835,38.42,43.89
+Denmark,DNK,1836,40.03,44.25
+Denmark,DNK,1837,41.53,44.52
+Denmark,DNK,1838,43.14,43.81
+Denmark,DNK,1839,41.91,44.55
+Denmark,DNK,1840,41.1,44.53
+Denmark,DNK,1841,42.67,44.77
+Denmark,DNK,1842,42.54,44.91
+Denmark,DNK,1843,43.91,44.92
+Denmark,DNK,1844,44.08,44.65
+Denmark,DNK,1845,43.4,42.74
+Denmark,DNK,1846,40.44,42.18
+Denmark,DNK,1847,40.47,43.21
+Denmark,DNK,1848,40.82,44.2
+Denmark,DNK,1849,39.57,44.83
+Denmark,DNK,1850,43.52,44.81
+Denmark,DNK,1851,44.53,43.93
+Denmark,DNK,1852,43.05,43.16
+Denmark,DNK,1853,38.57,44.27
+Denmark,DNK,1854,44.71,45.91
+Denmark,DNK,1855,46.15,46.52
+Denmark,DNK,1856,46.76,46.15
+Denmark,DNK,1857,42.48,46.46
+Denmark,DNK,1858,40.02,47.29
+Denmark,DNK,1859,44.4,47.92
+Denmark,DNK,1860,45.08,47.75
+Denmark,DNK,1861,47.62,47.24
+Denmark,DNK,1862,47.59,46.87
+Denmark,DNK,1863,47.55,46.71
+Denmark,DNK,1864,40.2,46.56
+Denmark,DNK,1865,39.8,48.35
+Denmark,DNK,1866,42.9,49.35
+Denmark,DNK,1867,44.92,49.31
+Denmark,DNK,1868,45.64,49.64
+Denmark,DNK,1869,46.1,50.21
+Denmark,DNK,1870,46,50.61
+Denmark,DNK,1871,46.08,50.66
+Denmark,DNK,1872,47.44,51.01
+Denmark,DNK,1873,47.5,50.17
+Denmark,DNK,1874,46.04,49.49
+Denmark,DNK,1875,44.48,50.06
+Denmark,DNK,1876,45.85,51.11
+Denmark,DNK,1877,47.36,51.36
+Denmark,DNK,1878,47.57,51.43
+Denmark,DNK,1879,46.25,50.89
+Denmark,DNK,1880,44.79,52.11
+Denmark,DNK,1881,48.28,52.34
+Denmark,DNK,1882,46.7,52.16
+Denmark,DNK,1883,48.51,52.66
+Denmark,DNK,1884,48.52,53.45
+Denmark,DNK,1885,49.62,53.56
+Denmark,DNK,1886,48.97,52.93
+Denmark,DNK,1887,48.67,53.38
+Denmark,DNK,1888,46.69,53.54
+Denmark,DNK,1889,47.81,53.27
+Denmark,DNK,1890,47.27,54.58
+Denmark,DNK,1891,46.78,54.8
+Denmark,DNK,1892,47.4,55.19
+Denmark,DNK,1893,47.08,55.82
+Denmark,DNK,1894,49.38,56.97
+Denmark,DNK,1895,50.86,57.63
+Denmark,DNK,1896,52.92,58.28
+Denmark,DNK,1897,51.8,58.32
+Denmark,DNK,1898,53.11,58.15
+Denmark,DNK,1899,50.67,58.12
+Denmark,DNK,1900,51.9,59.3
+Denmark,DNK,1901,52.66,59.72
+Denmark,DNK,1902,54.68,61.18
+Denmark,DNK,1903,54.83,61.3
+Denmark,DNK,1904,55.7,61.35
+Denmark,DNK,1905,54.37,61.61
+Denmark,DNK,1906,56.47,62.11
+Denmark,DNK,1907,56.1,61.88
+Denmark,DNK,1908,54.96,62.44
+Denmark,DNK,1909,57.36,63.78
+Denmark,DNK,1910,58.04,63.93
+Denmark,DNK,1911,56.96,64.06
+Denmark,DNK,1912,58.01,64.99
+Denmark,DNK,1913,58.88,64.91
+Denmark,DNK,1914,58.46,64.71
+Denmark,DNK,1915,58.4,64.64
+Denmark,DNK,1916,56.91,64.82
+Denmark,DNK,1917,57.25,66.05
+Denmark,DNK,1918,56.22,65.85
+Denmark,DNK,1919,56.88,66.24
+Denmark,DNK,1920,57.71,66.68
+Denmark,DNK,1921,61.66,67.29
+Denmark,DNK,1922,60.64,66.68
+Denmark,DNK,1923,61.15,67.18
+Denmark,DNK,1924,61.09,67.52
+Denmark,DNK,1925,61.91,67.67
+Denmark,DNK,1926,61.67,67.78
+Denmark,DNK,1927,61.19,68.18
+Denmark,DNK,1928,61.84,68.34
+Denmark,DNK,1929,61.96,68.49
+Denmark,DNK,1930,62.22,68.51
+Denmark,DNK,1931,61.87,69.55
+Denmark,DNK,1932,62.69,69.66
+Denmark,DNK,1933,63.58,70.75
+Denmark,DNK,1934,64.09,
+Denmark,DNK,1935,62.88,
+Denmark,DNK,1936,63.44,
+Denmark,DNK,1937,63.94,
+Denmark,DNK,1938,64.99,
+Denmark,DNK,1939,65.8,
+Denmark,DNK,1940,66.27,
+Denmark,DNK,1941,65.95,
+Denmark,DNK,1942,67.12,
+Denmark,DNK,1943,67.43,
+Denmark,DNK,1944,66.39,
+Denmark,DNK,1945,66.08,
+Denmark,DNK,1946,67.24,
+Denmark,DNK,1947,68.54,
+Denmark,DNK,1948,70.09,
+Denmark,DNK,1949,70.12,
+Denmark,DNK,1950,70.31,
+Denmark,DNK,1951,70.92,
+Denmark,DNK,1952,70.76,
+Denmark,DNK,1953,71.17,
+Denmark,DNK,1954,71.34,
+Denmark,DNK,1955,71.92,
+Denmark,DNK,1956,72.04,
+Denmark,DNK,1957,71.81,
+Denmark,DNK,1958,72.24,
+Denmark,DNK,1959,72.22,
+Denmark,DNK,1960,72.2,
+Denmark,DNK,1961,72.45,
+Denmark,DNK,1962,72.35,
+Denmark,DNK,1963,72.42,
+Denmark,DNK,1964,72.51,
+Denmark,DNK,1965,72.39,
+Denmark,DNK,1966,72.47,
+Denmark,DNK,1967,72.95,
+Denmark,DNK,1968,73.15,
+Denmark,DNK,1969,73.25,
+Denmark,DNK,1970,73.36,
+Denmark,DNK,1971,73.43,
+Denmark,DNK,1972,73.47,
+Denmark,DNK,1973,73.7,
+Denmark,DNK,1974,73.82,
+Denmark,DNK,1975,74.1,
+Denmark,DNK,1976,73.77,
+Denmark,DNK,1977,74.66,
+Denmark,DNK,1978,74.43,
+Denmark,DNK,1979,74.24,
+Denmark,DNK,1980,74.13,
+Denmark,DNK,1981,74.25,
+Denmark,DNK,1982,74.6,
+Denmark,DNK,1983,74.46,
+Denmark,DNK,1984,74.62,
+Denmark,DNK,1985,74.48,
+Denmark,DNK,1986,74.64,
+Denmark,DNK,1987,74.75,
+Denmark,DNK,1988,74.84,
+Denmark,DNK,1989,74.86,
+Denmark,DNK,1990,74.87,
+Denmark,DNK,1991,75.23,
+Denmark,DNK,1992,75.27,
+Denmark,DNK,1993,75.19,
+Denmark,DNK,1994,75.44,
+Denmark,DNK,1995,75.29,
+Denmark,DNK,1996,75.67,
+Denmark,DNK,1997,76.04,
+Denmark,DNK,1998,76.44,
+Denmark,DNK,1999,76.58,
+Denmark,DNK,2000,76.82,
+Denmark,DNK,2001,76.98,
+Denmark,DNK,2002,77.1,
+Denmark,DNK,2003,77.4,
+Denmark,DNK,2004,77.79,
+Denmark,DNK,2005,78.23,
+Denmark,DNK,2006,78.22,
+Denmark,DNK,2007,78.35,
+Denmark,DNK,2008,78.72,
+Denmark,DNK,2009,78.96,
+Denmark,DNK,2010,79.24,
+Denmark,DNK,2011,79.79,
+Denmark,DNK,2012,80.09,
+Denmark,DNK,2013,80.31,
+Denmark,DNK,2014,80.64,
+Denmark,DNK,2015,80.75,
+Denmark,DNK,2016,80.88,
+Denmark,DNK,2017,81.11,
+Denmark,DNK,2018,80.99,
+Denmark,DNK,2019,81.43,
+Denmark,DNK,2020,81.55,
+Denmark,DNK,2021,81.44,
+Denmark,DNK,2022,81.3,
+Denmark,DNK,2023,81.66,
+Denmark,DNK,2024,82.04,
+East Germany,OWID_GDR,1956,68.77,
+East Germany,OWID_GDR,1957,68.32,
+East Germany,OWID_GDR,1958,68.87,
+East Germany,OWID_GDR,1959,68.76,
+East Germany,OWID_GDR,1960,69.06,
+East Germany,OWID_GDR,1961,69.89,
+East Germany,OWID_GDR,1962,69.82,
+East Germany,OWID_GDR,1963,70.37,
+East Germany,OWID_GDR,1964,70.54,
+East Germany,OWID_GDR,1965,70.65,
+East Germany,OWID_GDR,1966,71.03,
+East Germany,OWID_GDR,1967,71.18,
+East Germany,OWID_GDR,1968,70.8,
+East Germany,OWID_GDR,1969,70.73,
+East Germany,OWID_GDR,1970,70.97,
+East Germany,OWID_GDR,1971,71.36,
+East Germany,OWID_GDR,1972,71.57,
+East Germany,OWID_GDR,1973,71.79,
+East Germany,OWID_GDR,1974,71.95,
+East Germany,OWID_GDR,1975,71.56,
+East Germany,OWID_GDR,1976,71.89,
+East Germany,OWID_GDR,1977,72.2,
+East Germany,OWID_GDR,1978,72.05,
+East Germany,OWID_GDR,1979,72.04,
+East Germany,OWID_GDR,1980,71.93,
+East Germany,OWID_GDR,1981,72.2,
+East Germany,OWID_GDR,1982,72.38,
+East Germany,OWID_GDR,1983,72.74,
+East Germany,OWID_GDR,1984,72.85,
+East Germany,OWID_GDR,1985,72.76,
+East Germany,OWID_GDR,1986,72.8,
+East Germany,OWID_GDR,1987,73.15,
+East Germany,OWID_GDR,1988,73.15,
+East Germany,OWID_GDR,1989,73.51,
+East Germany,OWID_GDR,1990,72.92,
+East Germany,OWID_GDR,1991,73.2,
+East Germany,OWID_GDR,1992,73.79,
+East Germany,OWID_GDR,1993,74.24,
+East Germany,OWID_GDR,1994,74.56,
+East Germany,OWID_GDR,1995,75,
+East Germany,OWID_GDR,1996,75.42,
+East Germany,OWID_GDR,1997,76.08,
+East Germany,OWID_GDR,1998,76.64,
+East Germany,OWID_GDR,1999,77.06,
+East Germany,OWID_GDR,2000,77.34,
+East Germany,OWID_GDR,2001,77.8,
+East Germany,OWID_GDR,2002,77.83,
+East Germany,OWID_GDR,2003,78.01,
+East Germany,OWID_GDR,2004,78.55,
+East Germany,OWID_GDR,2005,78.74,
+East Germany,OWID_GDR,2006,79,
+East Germany,OWID_GDR,2007,79.22,
+East Germany,OWID_GDR,2008,79.32,
+East Germany,OWID_GDR,2009,79.42,
+East Germany,OWID_GDR,2010,79.53,
+East Germany,OWID_GDR,2011,79.82,
+East Germany,OWID_GDR,2012,80.02,
+East Germany,OWID_GDR,2013,79.91,
+East Germany,OWID_GDR,2014,80.41,
+East Germany,OWID_GDR,2015,80.02,
+East Germany,OWID_GDR,2016,80.37,
+East Germany,OWID_GDR,2017,80.47,
+East Germany,OWID_GDR,2018,80.32,
+East Germany,OWID_GDR,2019,80.74,
+East Germany,OWID_GDR,2020,80.37,
+England and Wales,,1841,41.62,41.59
+England and Wales,,1842,41.3,41.42
+England and Wales,,1843,41.81,41.3
+England and Wales,,1844,41.49,41.08
+England and Wales,,1845,42.49,40.97
+England and Wales,,1846,39.91,40.56
+England and Wales,,1847,38.29,41.8
+England and Wales,,1848,39.46,41.82
+England and Wales,,1849,37.34,42.04
+England and Wales,,1850,42.75,43.21
+England and Wales,,1851,41.36,42.22
+England and Wales,,1852,40.87,42.3
+England and Wales,,1853,40.51,42.54
+England and Wales,,1854,39.3,42.94
+England and Wales,,1855,40.99,43.53
+England and Wales,,1856,43.21,43.44
+England and Wales,,1857,41.84,43.23
+England and Wales,,1858,39.99,43.64
+England and Wales,,1859,40.77,43.32
+England and Wales,,1860,42.94,44.83
+England and Wales,,1861,42.31,44.7
+England and Wales,,1862,42.47,45.26
+England and Wales,,1863,40.36,45.1
+England and Wales,,1864,39.93,44.87
+England and Wales,,1865,40.62,45.1
+England and Wales,,1866,40.38,45.53
+England and Wales,,1867,42.58,45.78
+England and Wales,,1868,41.97,46.05
+England and Wales,,1869,41.62,46.45
+England and Wales,,1870,40.91,47.58
+England and Wales,,1871,41.28,47.73
+England and Wales,,1872,42.87,48.14
+England and Wales,,1873,43.74,48.09
+England and Wales,,1874,42.07,47.89
+England and Wales,,1875,41.81,48.31
+England and Wales,,1876,43.65,48.72
+England and Wales,,1877,44.67,48.85
+England and Wales,,1878,42.98,48.97
+England and Wales,,1879,44.22,49.5
+England and Wales,,1880,43.73,50.75
+England and Wales,,1881,46.08,50.84
+England and Wales,,1882,44.83,50.73
+England and Wales,,1883,45.05,50.41
+England and Wales,,1884,44.74,50.21
+England and Wales,,1885,45.72,50.43
+England and Wales,,1886,45.29,50.17
+England and Wales,,1887,45.62,50.46
+England and Wales,,1888,46.78,50.26
+England and Wales,,1889,46.31,49.68
+England and Wales,,1890,44.72,50.33
+England and Wales,,1891,44.24,49.78
+England and Wales,,1892,45.46,50.14
+England and Wales,,1893,44.83,50.05
+England and Wales,,1894,48.3,50.24
+England and Wales,,1895,45.69,49.74
+England and Wales,,1896,47.37,50.33
+England and Wales,,1897,47.19,50.25
+England and Wales,,1898,46.96,50.83
+England and Wales,,1899,46.12,51.82
+England and Wales,,1900,46.3,53.74
+England and Wales,,1901,47.89,54.63
+England and Wales,,1902,49.05,55.81
+England and Wales,,1903,50.39,55.75
+England and Wales,,1904,49.09,56.11
+England and Wales,,1905,50.83,56.97
+England and Wales,,1906,50.56,57.47
+England and Wales,,1907,51.41,58.38
+England and Wales,,1908,51.81,58.53
+England and Wales,,1909,52.48,58.99
+England and Wales,,1910,53.95,58.44
+England and Wales,,1911,51.51,59.15
+England and Wales,,1912,54.51,60.36
+England and Wales,,1913,53.79,59.79
+England and Wales,,1914,52,59.95
+England and Wales,,1915,48.3,60.96
+England and Wales,,1916,48,61.1
+England and Wales,,1917,46,62.29
+England and Wales,,1918,40.9,61.52
+England and Wales,,1919,54.08,64.45
+England and Wales,,1920,56.52,62.83
+England and Wales,,1921,58.24,64.47
+England and Wales,,1922,57.59,65.15
+England and Wales,,1923,59.69,65.31
+England and Wales,,1924,58.7,65.52
+England and Wales,,1925,58.85,66.12
+England and Wales,,1926,60.03,66.82
+England and Wales,,1927,59.32,67.79
+England and Wales,,1928,60.44,68.31
+England and Wales,,1929,57.94,69.2
+England and Wales,,1930,61.29,69.87
+England and Wales,,1931,60.34,70.26
+England and Wales,,1932,61.02,
+England and Wales,,1933,60.97,
+England and Wales,,1934,61.74,
+England and Wales,,1935,62.51,
+England and Wales,,1936,62.28,
+England and Wales,,1937,62.33,
+England and Wales,,1938,63.72,
+England and Wales,,1939,64.06,
+England and Wales,,1940,60.59,
+England and Wales,,1941,61.66,
+England and Wales,,1942,63.21,
+England and Wales,,1943,62.53,
+England and Wales,,1944,62.74,
+England and Wales,,1945,61.86,
+England and Wales,,1946,66.93,
+England and Wales,,1947,66.97,
+England and Wales,,1948,68.83,
+England and Wales,,1949,68.47,
+England and Wales,,1950,68.96,
+England and Wales,,1951,68.51,
+England and Wales,,1952,69.83,
+England and Wales,,1953,70.04,
+England and Wales,,1954,70.46,
+England and Wales,,1955,70.39,
+England and Wales,,1956,70.63,
+England and Wales,,1957,70.77,
+England and Wales,,1958,70.94,
+England and Wales,,1959,71.09,
+England and Wales,,1960,71.27,
+England and Wales,,1961,71.01,
+England and Wales,,1962,71.06,
+England and Wales,,1963,70.99,
+England and Wales,,1964,71.76,
+England and Wales,,1965,71.74,
+England and Wales,,1966,71.66,
+England and Wales,,1967,72.25,
+England and Wales,,1968,71.88,
+England and Wales,,1969,71.86,
+England and Wales,,1970,72.09,
+England and Wales,,1971,72.42,
+England and Wales,,1972,72.19,
+England and Wales,,1973,72.42,
+England and Wales,,1974,72.62,
+England and Wales,,1975,72.86,
+England and Wales,,1976,72.85,
+England and Wales,,1977,73.33,
+England and Wales,,1978,73.26,
+England and Wales,,1979,73.38,
+England and Wales,,1980,73.8,
+England and Wales,,1981,74.13,
+England and Wales,,1982,74.26,
+England and Wales,,1983,74.49,
+England and Wales,,1984,74.89,
+England and Wales,,1985,74.72,
+England and Wales,,1986,74.99,
+England and Wales,,1987,75.33,
+England and Wales,,1988,75.46,
+England and Wales,,1989,75.62,
+England and Wales,,1990,75.93,
+England and Wales,,1991,76.09,
+England and Wales,,1992,76.5,
+England and Wales,,1993,76.38,
+England and Wales,,1994,76.92,
+England and Wales,,1995,76.81,
+England and Wales,,1996,77.08,
+England and Wales,,1997,77.33,
+England and Wales,,1998,77.47,
+England and Wales,,1999,77.59,
+England and Wales,,2000,78.06,
+England and Wales,,2001,78.33,
+England and Wales,,2002,78.46,
+England and Wales,,2003,78.54,
+England and Wales,,2004,79.12,
+England and Wales,,2005,79.32,
+England and Wales,,2006,79.57,
+England and Wales,,2007,79.77,
+England and Wales,,2008,79.88,
+England and Wales,,2009,80.37,
+England and Wales,,2010,80.6,
+England and Wales,,2011,81.01,
+England and Wales,,2012,81.06,
+England and Wales,,2013,81.1,
+England and Wales,,2014,81.32,
+England and Wales,,2015,81.09,
+England and Wales,,2016,81.23,
+England and Wales,,2017,81.32,
+England and Wales,,2018,81.27,
+England and Wales,,2019,81.59,
+England and Wales,,2020,80.52,
+England and Wales,,2021,80.72,
+England and Wales,,2022,81.16,
+Estonia,EST,1959,68.67,
+Estonia,EST,1960,69.33,
+Estonia,EST,1961,69.64,
+Estonia,EST,1962,69.84,
+Estonia,EST,1963,69.88,
+Estonia,EST,1964,70.64,
+Estonia,EST,1965,70.71,
+Estonia,EST,1966,70.66,
+Estonia,EST,1967,70.98,
+Estonia,EST,1968,70.61,
+Estonia,EST,1969,70.27,
+Estonia,EST,1970,70.4,
+Estonia,EST,1971,70.6,
+Estonia,EST,1972,70.38,
+Estonia,EST,1973,70.69,
+Estonia,EST,1974,70.81,
+Estonia,EST,1975,70.12,
+Estonia,EST,1976,69.74,
+Estonia,EST,1977,69.83,
+Estonia,EST,1978,69.66,
+Estonia,EST,1979,69.41,
+Estonia,EST,1980,69.47,
+Estonia,EST,1981,69.34,
+Estonia,EST,1982,69.86,
+Estonia,EST,1983,69.79,
+Estonia,EST,1984,69.64,
+Estonia,EST,1985,69.78,
+Estonia,EST,1986,70.91,
+Estonia,EST,1987,70.92,
+Estonia,EST,1988,70.97,
+Estonia,EST,1989,70.5,
+Estonia,EST,1990,69.92,
+Estonia,EST,1991,69.79,
+Estonia,EST,1992,69.16,
+Estonia,EST,1993,68.22,
+Estonia,EST,1994,66.74,
+Estonia,EST,1995,67.82,
+Estonia,EST,1996,70.03,
+Estonia,EST,1997,70.25,
+Estonia,EST,1998,69.84,
+Estonia,EST,1999,70.68,
+Estonia,EST,2000,71.02,
+Estonia,EST,2001,70.84,
+Estonia,EST,2002,71.37,
+Estonia,EST,2003,71.93,
+Estonia,EST,2004,72.38,
+Estonia,EST,2005,73.03,
+Estonia,EST,2006,73.2,
+Estonia,EST,2007,73.16,
+Estonia,EST,2008,74.29,
+Estonia,EST,2009,75.18,
+Estonia,EST,2010,75.89,
+Estonia,EST,2011,76.36,
+Estonia,EST,2012,76.44,
+Estonia,EST,2013,77.27,
+Estonia,EST,2014,77.12,
+Estonia,EST,2015,77.68,
+Estonia,EST,2016,77.77,
+Estonia,EST,2017,78.2,
+Estonia,EST,2018,78.36,
+Estonia,EST,2019,78.8,
+Finland,FIN,1878,39.34,42.49
+Finland,FIN,1879,44.91,42.11
+Finland,FIN,1880,39.7,41.3
+Finland,FIN,1881,37.7,42.11
+Finland,FIN,1882,40.31,42.92
+Finland,FIN,1883,42.75,43.42
+Finland,FIN,1884,42.88,42.97
+Finland,FIN,1885,41.28,43.79
+Finland,FIN,1886,40.87,44.52
+Finland,FIN,1887,45.54,43.99
+Finland,FIN,1888,45.19,43.83
+Finland,FIN,1889,44.92,44.01
+Finland,FIN,1890,44.61,44.3
+Finland,FIN,1891,42.61,44.48
+Finland,FIN,1892,39.77,45.48
+Finland,FIN,1893,43.35,46.9
+Finland,FIN,1894,45.18,47.1
+Finland,FIN,1895,47.61,46.42
+Finland,FIN,1896,46.52,45.89
+Finland,FIN,1897,48.11,46.09
+Finland,FIN,1898,48.07,45.91
+Finland,FIN,1899,44.35,46.01
+Finland,FIN,1900,41.81,46.76
+Finland,FIN,1901,42.84,47.86
+Finland,FIN,1902,46.21,48.98
+Finland,FIN,1903,46.56,49.48
+Finland,FIN,1904,47.19,49.35
+Finland,FIN,1905,46.05,49.98
+Finland,FIN,1906,47.03,50.99
+Finland,FIN,1907,46.96,51.45
+Finland,FIN,1908,46.09,51.63
+Finland,FIN,1909,48.69,51.96
+Finland,FIN,1910,48.49,52.24
+Finland,FIN,1911,48.72,52.82
+Finland,FIN,1912,49.12,52.85
+Finland,FIN,1913,49.04,52.77
+Finland,FIN,1914,49.73,53.03
+Finland,FIN,1915,49.56,52.83
+Finland,FIN,1916,47.98,52.6
+Finland,FIN,1917,46.54,53.2
+Finland,FIN,1918,32.85,53.38
+Finland,FIN,1919,42.81,56.85
+Finland,FIN,1920,47.68,57.16
+Finland,FIN,1921,52.4,58.01
+Finland,FIN,1922,51.93,58.12
+Finland,FIN,1923,52.48,59.23
+Finland,FIN,1924,50.26,61.16
+Finland,FIN,1925,53.36,62.57
+Finland,FIN,1926,53.79,62.81
+Finland,FIN,1927,51.83,63.62
+Finland,FIN,1928,53.69,64.12
+Finland,FIN,1929,51.32,65.67
+Finland,FIN,1930,54.45,66.72
+Finland,FIN,1931,54.86,67.59
+Finland,FIN,1932,55.75,68.02
+Finland,FIN,1933,55.39,68.57
+Finland,FIN,1934,56,
+Finland,FIN,1935,57.36,
+Finland,FIN,1936,56.17,
+Finland,FIN,1937,57.04,
+Finland,FIN,1938,57.2,
+Finland,FIN,1939,54.62,
+Finland,FIN,1940,46.8,
+Finland,FIN,1941,46.42,
+Finland,FIN,1942,53.93,
+Finland,FIN,1943,56.28,
+Finland,FIN,1944,48.06,
+Finland,FIN,1945,56.81,
+Finland,FIN,1946,60.45,
+Finland,FIN,1947,60.51,
+Finland,FIN,1948,61.96,
+Finland,FIN,1949,61.89,
+Finland,FIN,1950,64.2,
+Finland,FIN,1951,65.63,
+Finland,FIN,1952,66.52,
+Finland,FIN,1953,66.6,
+Finland,FIN,1954,67.55,
+Finland,FIN,1955,67.34,
+Finland,FIN,1956,67.98,
+Finland,FIN,1957,67.45,
+Finland,FIN,1958,68.61,
+Finland,FIN,1959,68.79,
+Finland,FIN,1960,68.99,
+Finland,FIN,1961,69.01,
+Finland,FIN,1962,68.74,
+Finland,FIN,1963,69.18,
+Finland,FIN,1964,69.38,
+Finland,FIN,1965,69.13,
+Finland,FIN,1966,69.64,
+Finland,FIN,1967,69.82,
+Finland,FIN,1968,69.78,
+Finland,FIN,1969,69.65,
+Finland,FIN,1970,70.32,
+Finland,FIN,1971,70.15,
+Finland,FIN,1972,70.87,
+Finland,FIN,1973,71.36,
+Finland,FIN,1974,71.29,
+Finland,FIN,1975,71.84,
+Finland,FIN,1976,71.99,
+Finland,FIN,1977,72.51,
+Finland,FIN,1978,73.08,
+Finland,FIN,1979,73.36,
+Finland,FIN,1980,73.65,
+Finland,FIN,1981,73.96,
+Finland,FIN,1982,74.53,
+Finland,FIN,1983,74.44,
+Finland,FIN,1984,74.74,
+Finland,FIN,1985,74.42,
+Finland,FIN,1986,74.77,
+Finland,FIN,1987,74.8,
+Finland,FIN,1988,74.77,
+Finland,FIN,1989,74.97,
+Finland,FIN,1990,74.99,
+Finland,FIN,1991,75.4,
+Finland,FIN,1992,75.65,
+Finland,FIN,1993,75.88,
+Finland,FIN,1994,76.57,
+Finland,FIN,1995,76.6,
+Finland,FIN,1996,76.87,
+Finland,FIN,1997,77.06,
+Finland,FIN,1998,77.26,
+Finland,FIN,1999,77.45,
+Finland,FIN,2000,77.67,
+Finland,FIN,2001,78.14,
+Finland,FIN,2002,78.27,
+Finland,FIN,2003,78.53,
+Finland,FIN,2004,78.85,
+Finland,FIN,2005,78.97,
+Finland,FIN,2006,79.37,
+Finland,FIN,2007,79.39,
+Finland,FIN,2008,79.7,
+Finland,FIN,2009,79.83,
+Finland,FIN,2010,80.01,
+Finland,FIN,2011,80.4,
+Finland,FIN,2012,80.5,
+Finland,FIN,2013,80.87,
+Finland,FIN,2014,81.06,
+Finland,FIN,2015,81.37,
+Finland,FIN,2016,81.3,
+Finland,FIN,2017,81.5,
+Finland,FIN,2018,81.63,
+Finland,FIN,2019,81.87,
+Finland,FIN,2020,81.82,
+Finland,FIN,2021,81.82,
+Finland,FIN,2022,81.21,
+Finland,FIN,2023,81.57,
+Finland,FIN,2024,82.26,
+France,FRA,1816,40.1,38.69
+France,FRA,1817,39.23,38.53
+France,FRA,1818,38.6,38.74
+France,FRA,1819,37.32,38.3
+France,FRA,1820,39.28,39.74
+France,FRA,1821,39.88,38.16
+France,FRA,1822,38.37,38.02
+France,FRA,1823,40.04,38.16
+France,FRA,1824,39.21,37.82
+France,FRA,1825,38.58,39.21
+France,FRA,1826,37.8,38.2
+France,FRA,1827,39.41,38.47
+France,FRA,1828,37.6,38.67
+France,FRA,1829,39.44,39.08
+France,FRA,1830,39.63,40.12
+France,FRA,1831,39.73,38.76
+France,FRA,1832,35.87,39.23
+France,FRA,1833,38.88,38.62
+France,FRA,1834,35.09,38.85
+France,FRA,1835,39.52,40.81
+France,FRA,1836,42,40.19
+France,FRA,1837,39.42,40.41
+France,FRA,1838,39.37,40.61
+France,FRA,1839,40.95,40.87
+France,FRA,1840,40.41,42
+France,FRA,1841,40.71,40.94
+France,FRA,1842,40.03,41.07
+France,FRA,1843,40.79,41.27
+France,FRA,1844,42.33,41.67
+France,FRA,1845,43.61,41.82
+France,FRA,1846,40.7,40.48
+France,FRA,1847,40.45,40.58
+France,FRA,1848,40.33,40.47
+France,FRA,1849,35.95,40.39
+France,FRA,1850,43.31,42.09
+France,FRA,1851,41.8,41.08
+France,FRA,1852,41.35,41.5
+France,FRA,1853,42.55,41.15
+France,FRA,1854,36.16,40.77
+France,FRA,1855,37.56,42.32
+France,FRA,1856,40.19,40.95
+France,FRA,1857,39.6,40.77
+France,FRA,1858,39.71,40.46
+France,FRA,1859,35.33,41.23
+France,FRA,1860,43.34,44.06
+France,FRA,1861,40.58,42.08
+France,FRA,1862,42.7,42.53
+France,FRA,1863,41.82,42.01
+France,FRA,1864,42.06,41.87
+France,FRA,1865,40.2,43.44
+France,FRA,1866,41.82,43.22
+France,FRA,1867,42.41,42.25
+France,FRA,1868,40.29,42.13
+France,FRA,1869,41.12,41.68
+France,FRA,1870,36.52,42.47
+France,FRA,1871,29.74,42.64
+France,FRA,1872,42.5,43.99
+France,FRA,1873,41.87,44.37
+France,FRA,1874,44.29,44.91
+France,FRA,1875,43.19,46.21
+France,FRA,1876,43.59,45.33
+France,FRA,1877,44.29,45.17
+France,FRA,1878,43.37,45.01
+France,FRA,1879,43.98,44.49
+France,FRA,1880,42.79,45.49
+France,FRA,1881,43.48,44.28
+France,FRA,1882,43.14,44.53
+France,FRA,1883,43.27,44.31
+France,FRA,1884,42.46,44.39
+France,FRA,1885,43.94,45.97
+France,FRA,1886,43.17,44.96
+France,FRA,1887,43.72,44.89
+France,FRA,1888,44.15,45.09
+France,FRA,1889,45.54,44.76
+France,FRA,1890,43.43,45.99
+France,FRA,1891,44.11,44.6
+France,FRA,1892,43.56,44.12
+France,FRA,1893,43.55,45.44
+France,FRA,1894,45.49,45.02
+France,FRA,1895,45.26,46.31
+France,FRA,1896,47.49,46.83
+France,FRA,1897,47.88,49.06
+France,FRA,1898,46.01,48.96
+France,FRA,1899,45.17,50.58
+France,FRA,1900,45.1,51.87
+France,FRA,1901,47,52.92
+France,FRA,1902,47.98,53.59
+France,FRA,1903,48.4,53.7
+France,FRA,1904,48.07,53.87
+France,FRA,1905,48.38,54.68
+France,FRA,1906,47.73,55.55
+France,FRA,1907,48.3,55.91
+France,FRA,1908,49.29,56.16
+France,FRA,1909,50.01,57.24
+France,FRA,1910,51.35,57.16
+France,FRA,1911,48.21,56.02
+France,FRA,1912,51.55,58.76
+France,FRA,1913,51.36,58.55
+France,FRA,1914,38.23,58.69
+France,FRA,1915,36.55,57.74
+France,FRA,1916,39.75,56.76
+France,FRA,1917,42.97,56.6
+France,FRA,1918,34.84,56.95
+France,FRA,1919,47.14,57.99
+France,FRA,1920,51.82,62.08
+France,FRA,1921,52.69,62.29
+France,FRA,1922,54.89,63.95
+France,FRA,1923,54.59,63.98
+France,FRA,1924,55.19,65
+France,FRA,1925,54.35,65.82
+France,FRA,1926,53.96,65.9
+France,FRA,1927,55.74,67.01
+France,FRA,1928,55.41,66.81
+France,FRA,1929,54.24,67.74
+France,FRA,1930,56.8,68.75
+France,FRA,1931,56.9,69.5
+France,FRA,1932,57.22,69.84
+France,FRA,1933,57.65,
+France,FRA,1934,58.3,
+France,FRA,1935,58.28,
+France,FRA,1936,58.76,
+France,FRA,1937,59.11,
+France,FRA,1938,58.93,
+France,FRA,1939,59.55,
+France,FRA,1940,49.6,
+France,FRA,1941,57.42,
+France,FRA,1942,57.44,
+France,FRA,1943,53.3,
+France,FRA,1944,47.17,
+France,FRA,1945,54.93,
+France,FRA,1946,62.36,
+France,FRA,1947,63.95,
+France,FRA,1948,65.78,
+France,FRA,1949,64.9,
+France,FRA,1950,66.38,
+France,FRA,1951,66.09,
+France,FRA,1952,67.39,
+France,FRA,1953,67.32,
+France,FRA,1954,68.19,
+France,FRA,1955,68.44,
+France,FRA,1956,68.46,
+France,FRA,1957,68.89,
+France,FRA,1958,70.11,
+France,FRA,1959,70.17,
+France,FRA,1960,70.36,
+France,FRA,1961,70.96,
+France,FRA,1962,70.47,
+France,FRA,1963,70.32,
+France,FRA,1964,71.28,
+France,FRA,1965,71.11,
+France,FRA,1966,71.51,
+France,FRA,1967,71.5,
+France,FRA,1968,71.48,
+France,FRA,1969,71.2,
+France,FRA,1970,72.09,
+France,FRA,1971,72.07,
+France,FRA,1972,72.31,
+France,FRA,1973,72.47,
+France,FRA,1974,72.8,
+France,FRA,1975,72.9,
+France,FRA,1976,73.12,
+France,FRA,1977,73.73,
+France,FRA,1978,73.85,
+France,FRA,1979,74.12,
+France,FRA,1980,74.23,
+France,FRA,1981,74.4,
+France,FRA,1982,74.77,
+France,FRA,1983,74.74,
+France,FRA,1984,75.22,
+France,FRA,1985,75.31,
+France,FRA,1986,75.58,
+France,FRA,1987,76.15,
+France,FRA,1988,76.4,
+France,FRA,1989,76.54,
+France,FRA,1990,76.84,
+France,FRA,1991,77.01,
+France,FRA,1992,77.29,
+France,FRA,1993,77.35,
+France,FRA,1994,77.77,
+France,FRA,1995,77.87,
+France,FRA,1996,78.06,
+France,FRA,1997,78.42,
+France,FRA,1998,78.59,
+France,FRA,1999,78.75,
+France,FRA,2000,79.05,
+France,FRA,2001,79.23,
+France,FRA,2002,79.42,
+France,FRA,2003,79.42,
+France,FRA,2004,80.34,
+France,FRA,2005,80.34,
+France,FRA,2006,80.75,
+France,FRA,2007,80.96,
+France,FRA,2008,81.04,
+France,FRA,2009,81.16,
+France,FRA,2010,81.41,
+France,FRA,2011,81.79,
+France,FRA,2012,81.73,
+France,FRA,2013,81.97,
+France,FRA,2014,82.42,
+France,FRA,2015,82.14,
+France,FRA,2016,82.39,
+France,FRA,2017,82.43,
+France,FRA,2018,82.55,
+France,FRA,2019,82.72,
+France,FRA,2020,82.19,
+France,FRA,2021,82.32,
+France,FRA,2022,82.29,
+France,FRA,2023,82.88,
+Germany,DEU,1990,75.35,
+Germany,DEU,1991,75.56,
+Germany,DEU,1992,76.01,
+Germany,DEU,1993,76.09,
+Germany,DEU,1994,76.39,
+Germany,DEU,1995,76.56,
+Germany,DEU,1996,76.79,
+Germany,DEU,1997,77.23,
+Germany,DEU,1998,77.58,
+Germany,DEU,1999,77.81,
+Germany,DEU,2000,78.06,
+Germany,DEU,2001,78.41,
+Germany,DEU,2002,78.48,
+Germany,DEU,2003,78.54,
+Germany,DEU,2004,79.13,
+Germany,DEU,2005,79.26,
+Germany,DEU,2006,79.59,
+Germany,DEU,2007,79.74,
+Germany,DEU,2008,79.82,
+Germany,DEU,2009,79.92,
+Germany,DEU,2010,80.08,
+Germany,DEU,2011,80.35,
+Germany,DEU,2012,80.5,
+Germany,DEU,2013,80.46,
+Germany,DEU,2014,80.92,
+Germany,DEU,2015,80.57,
+Germany,DEU,2016,80.84,
+Germany,DEU,2017,80.94,
+Germany,DEU,2018,80.88,
+Germany,DEU,2019,81.2,
+Germany,DEU,2020,81.01,
+Greece,GRC,1981,75.73,
+Greece,GRC,1982,75.85,
+Greece,GRC,1983,75.67,
+Greece,GRC,1984,76.13,
+Greece,GRC,1985,75.9,
+Greece,GRC,1986,76.39,
+Greece,GRC,1987,76.2,
+Greece,GRC,1988,76.78,
+Greece,GRC,1989,77,
+Greece,GRC,1990,77.14,
+Greece,GRC,1991,77.25,
+Greece,GRC,1992,77.18,
+Greece,GRC,1993,77.45,
+Greece,GRC,1994,77.66,
+Greece,GRC,1995,77.63,
+Greece,GRC,1996,77.76,
+Greece,GRC,1997,78.1,
+Greece,GRC,1998,78.08,
+Greece,GRC,1999,78.18,
+Greece,GRC,2000,78.32,
+Greece,GRC,2001,78.75,
+Greece,GRC,2002,78.93,
+Greece,GRC,2003,79.09,
+Greece,GRC,2004,79.24,
+Greece,GRC,2005,79.46,
+Greece,GRC,2006,79.75,
+Greece,GRC,2007,79.59,
+Greece,GRC,2008,80.14,
+Greece,GRC,2009,80.3,
+Greece,GRC,2010,80.57,
+Greece,GRC,2011,80.68,
+Greece,GRC,2012,80.57,
+Greece,GRC,2013,81.14,
+Greece,GRC,2014,81.23,
+Greece,GRC,2015,80.98,
+Greece,GRC,2016,81.22,
+Greece,GRC,2017,81.19,
+Greece,GRC,2018,81.61,
+Greece,GRC,2019,81.49,
+Hong Kong,HKG,1986,76.96,
+Hong Kong,HKG,1987,77.01,
+Hong Kong,HKG,1988,77.03,
+Hong Kong,HKG,1989,77.05,
+Hong Kong,HKG,1990,77.31,
+Hong Kong,HKG,1991,77.99,
+Hong Kong,HKG,1992,77.75,
+Hong Kong,HKG,1993,78.23,
+Hong Kong,HKG,1994,78.98,
+Hong Kong,HKG,1995,79.14,
+Hong Kong,HKG,1996,79.43,
+Hong Kong,HKG,1997,79.98,
+Hong Kong,HKG,1998,80.11,
+Hong Kong,HKG,1999,80.42,
+Hong Kong,HKG,2000,80.66,
+Hong Kong,HKG,2001,81.23,
+Hong Kong,HKG,2002,81.35,
+Hong Kong,HKG,2003,81.02,
+Hong Kong,HKG,2004,81.43,
+Hong Kong,HKG,2005,81.4,
+Hong Kong,HKG,2006,82.18,
+Hong Kong,HKG,2007,82.14,
+Hong Kong,HKG,2008,81.95,
+Hong Kong,HKG,2009,82.48,
+Hong Kong,HKG,2010,82.66,
+Hong Kong,HKG,2011,83.08,
+Hong Kong,HKG,2012,83.11,
+Hong Kong,HKG,2013,83.66,
+Hong Kong,HKG,2014,83.75,
+Hong Kong,HKG,2015,83.95,
+Hong Kong,HKG,2016,84.1,
+Hong Kong,HKG,2017,84.5,
+Hong Kong,HKG,2018,84.83,
+Hong Kong,HKG,2019,84.91,
+Hong Kong,HKG,2020,84.94,
+Hong Kong,HKG,2021,85.22,
+Hong Kong,HKG,2022,83.63,
+Hong Kong,HKG,2023,85.25,
+Hungary,HUN,1950,62.14,
+Hungary,HUN,1951,62.47,
+Hungary,HUN,1952,63.92,
+Hungary,HUN,1953,63.84,
+Hungary,HUN,1954,65.42,
+Hungary,HUN,1955,66.89,
+Hungary,HUN,1956,66,
+Hungary,HUN,1957,66.34,
+Hungary,HUN,1958,67.43,
+Hungary,HUN,1959,67.32,
+Hungary,HUN,1960,68.08,
+Hungary,HUN,1961,69.01,
+Hungary,HUN,1962,67.94,
+Hungary,HUN,1963,68.94,
+Hungary,HUN,1964,69.46,
+Hungary,HUN,1965,69.15,
+Hungary,HUN,1966,69.89,
+Hungary,HUN,1967,69.46,
+Hungary,HUN,1968,69.34,
+Hungary,HUN,1969,69.38,
+Hungary,HUN,1970,69.22,
+Hungary,HUN,1971,69.08,
+Hungary,HUN,1972,69.72,
+Hungary,HUN,1973,69.6,
+Hungary,HUN,1974,69.27,
+Hungary,HUN,1975,69.42,
+Hungary,HUN,1976,69.66,
+Hungary,HUN,1977,69.94,
+Hungary,HUN,1978,69.47,
+Hungary,HUN,1979,69.67,
+Hungary,HUN,1980,69.09,
+Hungary,HUN,1981,69.15,
+Hungary,HUN,1982,69.35,
+Hungary,HUN,1983,68.93,
+Hungary,HUN,1984,68.96,
+Hungary,HUN,1985,68.9,
+Hungary,HUN,1986,69.11,
+Hungary,HUN,1987,69.56,
+Hungary,HUN,1988,69.94,
+Hungary,HUN,1989,69.39,
+Hungary,HUN,1990,69.37,
+Hungary,HUN,1991,69.44,
+Hungary,HUN,1992,69.17,
+Hungary,HUN,1993,69.18,
+Hungary,HUN,1994,69.6,
+Hungary,HUN,1995,69.97,
+Hungary,HUN,1996,70.6,
+Hungary,HUN,1997,71,
+Hungary,HUN,1998,70.92,
+Hungary,HUN,1999,71.04,
+Hungary,HUN,2000,71.76,
+Hungary,HUN,2001,72.4,
+Hungary,HUN,2002,72.51,
+Hungary,HUN,2003,72.52,
+Hungary,HUN,2004,72.91,
+Hungary,HUN,2005,72.86,
+Hungary,HUN,2006,73.34,
+Hungary,HUN,2007,73.43,
+Hungary,HUN,2008,73.96,
+Hungary,HUN,2009,74.18,
+Hungary,HUN,2010,74.52,
+Hungary,HUN,2011,74.91,
+Hungary,HUN,2012,75.18,
+Hungary,HUN,2013,75.68,
+Hungary,HUN,2014,75.85,
+Hungary,HUN,2015,75.65,
+Hungary,HUN,2016,76.16,
+Hungary,HUN,2017,76,
+Hungary,HUN,2018,76.2,
+Hungary,HUN,2019,76.45,
+Hungary,HUN,2020,75.72,
+Iceland,ISL,1838,32.54,31.15
+Iceland,ISL,1839,28.07,32.96
+Iceland,ISL,1840,32.08,37.72
+Iceland,ISL,1841,40.35,40.3
+Iceland,ISL,1842,40.23,37.49
+Iceland,ISL,1843,25.5,34.67
+Iceland,ISL,1844,42.97,38.49
+Iceland,ISL,1845,41.47,26.9
+Iceland,ISL,1846,18.68,21.1
+Iceland,ISL,1847,33.41,31.11
+Iceland,ISL,1848,41.78,36.82
+Iceland,ISL,1849,37.34,37.3
+Iceland,ISL,1850,36.74,36.74
+Iceland,ISL,1851,30.14,40.43
+Iceland,ISL,1852,42.15,40.68
+Iceland,ISL,1853,48.69,39.2
+Iceland,ISL,1854,43.16,36.72
+Iceland,ISL,1855,38.24,35.35
+Iceland,ISL,1856,42.41,35.47
+Iceland,ISL,1857,39.52,36.27
+Iceland,ISL,1858,34.88,34.16
+Iceland,ISL,1859,29.82,32.29
+Iceland,ISL,1860,19.84,34.55
+Iceland,ISL,1861,27.18,34.79
+Iceland,ISL,1862,27.1,38.49
+Iceland,ISL,1863,35.22,41.54
+Iceland,ISL,1864,34.97,41.32
+Iceland,ISL,1865,34.24,40.07
+Iceland,ISL,1866,27.28,38.98
+Iceland,ISL,1867,37.67,39.32
+Iceland,ISL,1868,34.79,36.66
+Iceland,ISL,1869,28.17,37.06
+Iceland,ISL,1870,38.44,39.09
+Iceland,ISL,1871,35.13,34.64
+Iceland,ISL,1872,25.31,37.5
+Iceland,ISL,1873,36.69,44.45
+Iceland,ISL,1874,39.63,45.16
+Iceland,ISL,1875,36.61,44.79
+Iceland,ISL,1876,40.34,44.66
+Iceland,ISL,1877,44.69,45.88
+Iceland,ISL,1878,41.37,44.64
+Iceland,ISL,1879,39.49,44.26
+Iceland,ISL,1880,42.41,39.86
+Iceland,ISL,1881,35.96,33.38
+Iceland,ISL,1882,17.94,34.05
+Iceland,ISL,1883,29.78,46.22
+Iceland,ISL,1884,42.11,51.05
+Iceland,ISL,1885,45.64,50.94
+Iceland,ISL,1886,45.05,50.53
+Iceland,ISL,1887,40.69,50.55
+Iceland,ISL,1888,46.76,52.77
+Iceland,ISL,1889,52.51,49.49
+Iceland,ISL,1890,36.76,48.19
+Iceland,ISL,1891,47.33,56.35
+Iceland,ISL,1892,52.79,58.07
+Iceland,ISL,1893,52.57,56.64
+Iceland,ISL,1894,44.8,55.49
+Iceland,ISL,1895,52.37,54.9
+Iceland,ISL,1896,53.17,55.65
+Iceland,ISL,1897,48.58,53.83
+Iceland,ISL,1898,44.35,55.59
+Iceland,ISL,1899,49.75,57.39
+Iceland,ISL,1900,46.59,57.29
+Iceland,ISL,1901,52.93,56.29
+Iceland,ISL,1902,50.93,55.8
+Iceland,ISL,1903,48.7,58.58
+Iceland,ISL,1904,52.67,60.02
+Iceland,ISL,1905,49.45,58.49
+Iceland,ISL,1906,53.51,58.92
+Iceland,ISL,1907,49.76,55.73
+Iceland,ISL,1908,45.71,56.47
+Iceland,ISL,1909,52.46,59.28
+Iceland,ISL,1910,52.64,61.07
+Iceland,ISL,1911,55.39,62.86
+Iceland,ISL,1912,55.99,63.35
+Iceland,ISL,1913,58.94,63.33
+Iceland,ISL,1914,51.91,62.9
+Iceland,ISL,1915,53.52,63.86
+Iceland,ISL,1916,54.41,64.72
+Iceland,ISL,1917,59,66.05
+Iceland,ISL,1918,51.07,65.84
+Iceland,ISL,1919,58.46,64.29
+Iceland,ISL,1920,54.63,65.9
+Iceland,ISL,1921,54.13,68.47
+Iceland,ISL,1922,56.89,68.87
+Iceland,ISL,1923,57.68,69.4
+Iceland,ISL,1924,54.08,70.07
+Iceland,ISL,1925,58.22,70.61
+Iceland,ISL,1926,60.72,70.23
+Iceland,ISL,1927,58.09,70.17
+Iceland,ISL,1928,61.71,72.46
+Iceland,ISL,1929,60.54,72.86
+Iceland,ISL,1930,60.18,73.5
+Iceland,ISL,1931,60.84,73.01
+Iceland,ISL,1932,62.08,73.41
+Iceland,ISL,1933,62.91,
+Iceland,ISL,1934,63.35,
+Iceland,ISL,1935,59.49,
+Iceland,ISL,1936,62.69,
+Iceland,ISL,1937,63.47,
+Iceland,ISL,1938,65.02,
+Iceland,ISL,1939,65.98,
+Iceland,ISL,1940,65.77,
+Iceland,ISL,1941,63.12,
+Iceland,ISL,1942,64.12,
+Iceland,ISL,1943,65.22,
+Iceland,ISL,1944,66.72,
+Iceland,ISL,1945,67.55,
+Iceland,ISL,1946,68.49,
+Iceland,ISL,1947,69.32,
+Iceland,ISL,1948,70.2,
+Iceland,ISL,1949,71.39,
+Iceland,ISL,1950,71.03,
+Iceland,ISL,1951,71.02,
+Iceland,ISL,1952,72.44,
+Iceland,ISL,1953,72.29,
+Iceland,ISL,1954,73.34,
+Iceland,ISL,1955,73.29,
+Iceland,ISL,1956,72.92,
+Iceland,ISL,1957,73.4,
+Iceland,ISL,1958,73.35,
+Iceland,ISL,1959,72.64,
+Iceland,ISL,1960,74.06,
+Iceland,ISL,1961,73.39,
+Iceland,ISL,1962,73.63,
+Iceland,ISL,1963,72.96,
+Iceland,ISL,1964,73.53,
+Iceland,ISL,1965,73.81,
+Iceland,ISL,1966,73.15,
+Iceland,ISL,1967,73.7,
+Iceland,ISL,1968,73.89,
+Iceland,ISL,1969,73.67,
+Iceland,ISL,1970,73.79,
+Iceland,ISL,1971,73.51,
+Iceland,ISL,1972,74.42,
+Iceland,ISL,1973,74.29,
+Iceland,ISL,1974,74.3,
+Iceland,ISL,1975,75.3,
+Iceland,ISL,1976,76.68,
+Iceland,ISL,1977,76.08,
+Iceland,ISL,1978,76.38,
+Iceland,ISL,1979,76.58,
+Iceland,ISL,1980,76.6,
+Iceland,ISL,1981,76.3,
+Iceland,ISL,1982,76.93,
+Iceland,ISL,1983,76.56,
+Iceland,ISL,1984,77.39,
+Iceland,ISL,1985,77.51,
+Iceland,ISL,1986,78.02,
+Iceland,ISL,1987,77.19,
+Iceland,ISL,1988,77.04,
+Iceland,ISL,1989,78.11,
+Iceland,ISL,1990,77.91,
+Iceland,ISL,1991,77.89,
+Iceland,ISL,1992,78.73,
+Iceland,ISL,1993,78.94,
+Iceland,ISL,1994,79.19,
+Iceland,ISL,1995,77.99,
+Iceland,ISL,1996,78.81,
+Iceland,ISL,1997,78.86,
+Iceland,ISL,1998,79.62,
+Iceland,ISL,1999,79.41,
+Iceland,ISL,2000,79.7,
+Iceland,ISL,2001,80.57,
+Iceland,ISL,2002,80.43,
+Iceland,ISL,2003,81,
+Iceland,ISL,2004,80.9,
+Iceland,ISL,2005,81.37,
+Iceland,ISL,2006,81.08,
+Iceland,ISL,2007,81.24,
+Iceland,ISL,2008,81.42,
+Iceland,ISL,2009,81.62,
+Iceland,ISL,2010,81.72,
+Iceland,ISL,2011,82.11,
+Iceland,ISL,2012,82.55,
+Iceland,ISL,2013,81.86,
+Iceland,ISL,2014,82.57,
+Iceland,ISL,2015,82.3,
+Iceland,ISL,2016,81.99,
+Iceland,ISL,2017,82.32,
+Iceland,ISL,2018,82.56,
+Iceland,ISL,2019,82.9,
+Iceland,ISL,2020,82.76,
+Iceland,ISL,2021,82.88,
+Iceland,ISL,2022,82.05,
+Iceland,ISL,2023,82.29,
+Ireland,IRL,1950,65.57,
+Ireland,IRL,1951,64.75,
+Ireland,IRL,1952,67.16,
+Ireland,IRL,1953,67.91,
+Ireland,IRL,1954,68,
+Ireland,IRL,1955,68,
+Ireland,IRL,1956,68.96,
+Ireland,IRL,1957,69,
+Ireland,IRL,1958,69.27,
+Ireland,IRL,1959,69.42,
+Ireland,IRL,1960,70.17,
+Ireland,IRL,1961,69.64,
+Ireland,IRL,1962,69.95,
+Ireland,IRL,1963,70.19,
+Ireland,IRL,1964,70.45,
+Ireland,IRL,1965,70.64,
+Ireland,IRL,1966,70.15,
+Ireland,IRL,1967,71.2,
+Ireland,IRL,1968,70.88,
+Ireland,IRL,1969,70.8,
+Ireland,IRL,1970,70.83,
+Ireland,IRL,1971,71.62,
+Ireland,IRL,1972,70.96,
+Ireland,IRL,1973,71.17,
+Ireland,IRL,1974,71.11,
+Ireland,IRL,1975,71.69,
+Ireland,IRL,1976,71.8,
+Ireland,IRL,1977,71.94,
+Ireland,IRL,1978,71.93,
+Ireland,IRL,1979,72.18,
+Ireland,IRL,1980,72.54,
+Ireland,IRL,1981,72.89,
+Ireland,IRL,1982,73.16,
+Ireland,IRL,1983,73.18,
+Ireland,IRL,1984,73.62,
+Ireland,IRL,1985,73.56,
+Ireland,IRL,1986,73.61,
+Ireland,IRL,1987,74.41,
+Ireland,IRL,1988,74.43,
+Ireland,IRL,1989,74.45,
+Ireland,IRL,1990,74.84,
+Ireland,IRL,1991,75.03,
+Ireland,IRL,1992,75.43,
+Ireland,IRL,1993,75.29,
+Ireland,IRL,1994,75.8,
+Ireland,IRL,1995,75.48,
+Ireland,IRL,1996,75.83,
+Ireland,IRL,1997,75.98,
+Ireland,IRL,1998,76.19,
+Ireland,IRL,1999,76.1,
+Ireland,IRL,2000,76.54,
+Ireland,IRL,2001,77.11,
+Ireland,IRL,2002,77.61,
+Ireland,IRL,2003,78.12,
+Ireland,IRL,2004,78.52,
+Ireland,IRL,2005,78.92,
+Ireland,IRL,2006,79.16,
+Ireland,IRL,2007,79.28,
+Ireland,IRL,2008,79.53,
+Ireland,IRL,2009,79.8,
+Ireland,IRL,2010,80.34,
+Ireland,IRL,2011,80.5,
+Ireland,IRL,2012,80.57,
+Ireland,IRL,2013,80.78,
+Ireland,IRL,2014,80.99,
+Ireland,IRL,2015,81.07,
+Ireland,IRL,2016,81.22,
+Ireland,IRL,2017,81.61,
+Ireland,IRL,2018,81.64,
+Ireland,IRL,2019,81.91,
+Ireland,IRL,2020,81.9,
+Ireland,IRL,2021,81.7,
+Ireland,IRL,2022,81.99,
+Israel,ISR,1983,74.82,
+Israel,ISR,1984,75.12,
+Israel,ISR,1985,75.45,
+Israel,ISR,1986,75.27,
+Israel,ISR,1987,75.66,
+Israel,ISR,1988,76.02,
+Israel,ISR,1989,76.61,
+Israel,ISR,1990,77.08,
+Israel,ISR,1991,76.94,
+Israel,ISR,1992,76.8,
+Israel,ISR,1993,77.39,
+Israel,ISR,1994,77.64,
+Israel,ISR,1995,77.62,
+Israel,ISR,1996,78.23,
+Israel,ISR,1997,78.16,
+Israel,ISR,1998,78.36,
+Israel,ISR,1999,78.65,
+Israel,ISR,2000,78.85,
+Israel,ISR,2001,79.27,
+Israel,ISR,2002,79.28,
+Israel,ISR,2003,79.64,
+Israel,ISR,2004,80.11,
+Israel,ISR,2005,80.2,
+Israel,ISR,2006,80.57,
+Israel,ISR,2007,80.67,
+Israel,ISR,2008,81.02,
+Israel,ISR,2009,81.53,
+Israel,ISR,2010,81.67,
+Israel,ISR,2011,81.72,
+Israel,ISR,2012,81.77,
+Israel,ISR,2013,82.12,
+Israel,ISR,2014,82.26,
+Israel,ISR,2015,82.16,
+Israel,ISR,2016,82.5,
+Italy,ITA,1872,29.76,36.13
+Italy,ITA,1873,31.66,36.53
+Italy,ITA,1874,31.81,36.43
+Italy,ITA,1875,31.39,37.58
+Italy,ITA,1876,33.67,38.29
+Italy,ITA,1877,34.96,38.37
+Italy,ITA,1878,34.39,38.7
+Italy,ITA,1879,34.01,38.16
+Italy,ITA,1880,32.82,37.2
+Italy,ITA,1881,34.27,35.67
+Italy,ITA,1882,34.35,38.67
+Italy,ITA,1883,35.23,39.51
+Italy,ITA,1884,36.67,40.32
+Italy,ITA,1885,36.92,40.27
+Italy,ITA,1886,35.18,40.32
+Italy,ITA,1887,36.05,40.72
+Italy,ITA,1888,37.02,41.36
+Italy,ITA,1889,39.13,41.24
+Italy,ITA,1890,38.58,41.42
+Italy,ITA,1891,38.55,41.47
+Italy,ITA,1892,38.93,41.75
+Italy,ITA,1893,39.88,42.01
+Italy,ITA,1894,40,42.09
+Italy,ITA,1895,39.69,42.5
+Italy,ITA,1896,40.76,43.62
+Italy,ITA,1897,43.35,44.56
+Italy,ITA,1898,42.38,45.63
+Italy,ITA,1899,43.71,46.35
+Italy,ITA,1900,41.85,47.32
+Italy,ITA,1901,43.64,47.89
+Italy,ITA,1902,43.01,48.23
+Italy,ITA,1903,43.2,49.47
+Italy,ITA,1904,44.4,49.53
+Italy,ITA,1905,43.99,49.6
+Italy,ITA,1906,45.11,50.24
+Italy,ITA,1907,45.48,50.54
+Italy,ITA,1908,43.11,50.42
+Italy,ITA,1909,44.8,51.98
+Italy,ITA,1910,46.72,51.94
+Italy,ITA,1911,44.83,52.93
+Italy,ITA,1912,48.85,53.92
+Italy,ITA,1913,48.49,53.77
+Italy,ITA,1914,49.86,52.88
+Italy,ITA,1915,42.63,52.2
+Italy,ITA,1916,39.71,52.42
+Italy,ITA,1917,38.08,52.1
+Italy,ITA,1918,25.82,51.41
+Italy,ITA,1919,41.7,55.66
+Italy,ITA,1920,45.82,55.78
+Italy,ITA,1921,49.17,56.97
+Italy,ITA,1922,50.12,58.52
+Italy,ITA,1923,51.48,59
+Italy,ITA,1924,51.53,59.38
+Italy,ITA,1925,51.28,60.32
+Italy,ITA,1926,50.96,61.24
+Italy,ITA,1927,52.57,62.13
+Italy,ITA,1928,52.66,62.35
+Italy,ITA,1929,52.27,63.69
+Italy,ITA,1930,55.17,64.37
+Italy,ITA,1931,54.8,64.96
+Italy,ITA,1932,54.74,
+Italy,ITA,1933,56.25,
+Italy,ITA,1934,56.88,
+Italy,ITA,1935,56.2,
+Italy,ITA,1936,56.74,
+Italy,ITA,1937,55.4,
+Italy,ITA,1938,56.15,
+Italy,ITA,1939,57.6,
+Italy,ITA,1940,56.95,
+Italy,ITA,1941,54.77,
+Italy,ITA,1942,52.45,
+Italy,ITA,1943,49.44,
+Italy,ITA,1944,52.49,
+Italy,ITA,1945,54.86,
+Italy,ITA,1946,58.94,
+Italy,ITA,1947,61.2,
+Italy,ITA,1948,63.42,
+Italy,ITA,1949,64.15,
+Italy,ITA,1950,65.72,
+Italy,ITA,1951,65.31,
+Italy,ITA,1952,65.91,
+Italy,ITA,1953,66.57,
+Italy,ITA,1954,67.86,
+Italy,ITA,1955,68.25,
+Italy,ITA,1956,67.64,
+Italy,ITA,1957,67.78,
+Italy,ITA,1958,68.85,
+Italy,ITA,1959,69.3,
+Italy,ITA,1960,69.21,
+Italy,ITA,1961,69.82,
+Italy,ITA,1962,69.22,
+Italy,ITA,1963,69.31,
+Italy,ITA,1964,70.38,
+Italy,ITA,1965,70.26,
+Italy,ITA,1966,71,
+Italy,ITA,1967,71.03,
+Italy,ITA,1968,70.87,
+Italy,ITA,1969,70.86,
+Italy,ITA,1970,71.63,
+Italy,ITA,1971,71.88,
+Italy,ITA,1972,72.14,
+Italy,ITA,1973,72.11,
+Italy,ITA,1974,72.8,
+Italy,ITA,1975,72.73,
+Italy,ITA,1976,73.07,
+Italy,ITA,1977,73.44,
+Italy,ITA,1978,73.78,
+Italy,ITA,1979,74.11,
+Italy,ITA,1980,74.05,
+Italy,ITA,1981,74.44,
+Italy,ITA,1982,74.91,
+Italy,ITA,1983,74.73,
+Italy,ITA,1984,75.49,
+Italy,ITA,1985,75.6,
+Italy,ITA,1986,75.91,
+Italy,ITA,1987,76.34,
+Italy,ITA,1988,76.52,
+Italy,ITA,1989,76.92,
+Italy,ITA,1990,76.99,
+Italy,ITA,1991,76.99,
+Italy,ITA,1992,77.36,
+Italy,ITA,1993,77.65,
+Italy,ITA,1994,77.87,
+Italy,ITA,1995,78.12,
+Italy,ITA,1996,78.43,
+Italy,ITA,1997,78.73,
+Italy,ITA,1998,78.81,
+Italy,ITA,1999,79.21,
+Italy,ITA,2000,79.61,
+Italy,ITA,2001,79.89,
+Italy,ITA,2002,80.11,
+Italy,ITA,2003,80.19,
+Italy,ITA,2004,81.02,
+Italy,ITA,2005,81.02,
+Italy,ITA,2006,81.41,
+Italy,ITA,2007,81.5,
+Italy,ITA,2008,81.65,
+Italy,ITA,2009,81.76,
+Italy,ITA,2010,82.14,
+Italy,ITA,2011,82.23,
+Italy,ITA,2012,82.25,
+Italy,ITA,2013,82.65,
+Italy,ITA,2014,82.9,
+Italy,ITA,2015,82.52,
+Italy,ITA,2016,83.05,
+Italy,ITA,2017,82.73,
+Italy,ITA,2018,83.19,
+Italy,ITA,2019,83.35,
+Italy,ITA,2020,82.19,
+Italy,ITA,2021,82.54,
+Italy,ITA,2022,82.68,
+Japan,JPN,1947,51.71,
+Japan,JPN,1948,56.84,
+Japan,JPN,1949,57.72,
+Japan,JPN,1950,59.23,
+Japan,JPN,1951,60.96,
+Japan,JPN,1952,62.97,
+Japan,JPN,1953,63.3,
+Japan,JPN,1954,64.51,
+Japan,JPN,1955,65.68,
+Japan,JPN,1956,65.53,
+Japan,JPN,1957,65.41,
+Japan,JPN,1958,67.01,
+Japan,JPN,1959,67.43,
+Japan,JPN,1960,67.69,
+Japan,JPN,1961,68.34,
+Japan,JPN,1962,68.64,
+Japan,JPN,1963,69.72,
+Japan,JPN,1964,70.17,
+Japan,JPN,1965,70.23,
+Japan,JPN,1966,71.03,
+Japan,JPN,1967,71.38,
+Japan,JPN,1968,71.65,
+Japan,JPN,1969,71.9,
+Japan,JPN,1970,71.99,
+Japan,JPN,1971,72.81,
+Japan,JPN,1972,73.24,
+Japan,JPN,1973,73.41,
+Japan,JPN,1974,73.84,
+Japan,JPN,1975,74.35,
+Japan,JPN,1976,74.75,
+Japan,JPN,1977,75.31,
+Japan,JPN,1978,75.65,
+Japan,JPN,1979,76.16,
+Japan,JPN,1980,76.13,
+Japan,JPN,1981,76.55,
+Japan,JPN,1982,77.07,
+Japan,JPN,1983,77.1,
+Japan,JPN,1984,77.5,
+Japan,JPN,1985,77.8,
+Japan,JPN,1986,78.21,
+Japan,JPN,1987,78.63,
+Japan,JPN,1988,78.54,
+Japan,JPN,1989,78.98,
+Japan,JPN,1990,78.99,
+Japan,JPN,1991,79.26,
+Japan,JPN,1992,79.3,
+Japan,JPN,1993,79.44,
+Japan,JPN,1994,79.83,
+Japan,JPN,1995,79.68,
+Japan,JPN,1996,80.36,
+Japan,JPN,1997,80.58,
+Japan,JPN,1998,80.65,
+Japan,JPN,1999,80.62,
+Japan,JPN,2000,81.19,
+Japan,JPN,2001,81.52,
+Japan,JPN,2002,81.81,
+Japan,JPN,2003,81.87,
+Japan,JPN,2004,82.15,
+Japan,JPN,2005,82.03,
+Japan,JPN,2006,82.4,
+Japan,JPN,2007,82.58,
+Japan,JPN,2008,82.66,
+Japan,JPN,2009,83.01,
+Japan,JPN,2010,82.95,
+Japan,JPN,2011,82.7,
+Japan,JPN,2012,83.21,
+Japan,JPN,2013,83.44,
+Japan,JPN,2014,83.68,
+Japan,JPN,2015,83.92,
+Japan,JPN,2016,84.1,
+Japan,JPN,2017,84.22,
+Japan,JPN,2018,84.33,
+Japan,JPN,2019,84.46,
+Japan,JPN,2020,84.71,
+Japan,JPN,2021,84.58,
+Japan,JPN,2022,84.1,
+Japan,JPN,2023,84.16,
+Latvia,LVA,1959,69.51,
+Latvia,LVA,1960,70.33,
+Latvia,LVA,1961,70.54,
+Latvia,LVA,1962,69.9,
+Latvia,LVA,1963,70.33,
+Latvia,LVA,1964,71.53,
+Latvia,LVA,1965,71.22,
+Latvia,LVA,1966,71.18,
+Latvia,LVA,1967,70.86,
+Latvia,LVA,1968,70.47,
+Latvia,LVA,1969,70.21,
+Latvia,LVA,1970,70.24,
+Latvia,LVA,1971,70.57,
+Latvia,LVA,1972,70.27,
+Latvia,LVA,1973,70.19,
+Latvia,LVA,1974,70.12,
+Latvia,LVA,1975,69.26,
+Latvia,LVA,1976,69.39,
+Latvia,LVA,1977,69.45,
+Latvia,LVA,1978,69.33,
+Latvia,LVA,1979,68.83,
+Latvia,LVA,1980,69.12,
+Latvia,LVA,1981,69.08,
+Latvia,LVA,1982,69.63,
+Latvia,LVA,1983,69.4,
+Latvia,LVA,1984,69.44,
+Latvia,LVA,1985,69.6,
+Latvia,LVA,1986,70.96,
+Latvia,LVA,1987,71.01,
+Latvia,LVA,1988,70.91,
+Latvia,LVA,1989,70.41,
+Latvia,LVA,1990,69.46,
+Latvia,LVA,1991,69.17,
+Latvia,LVA,1992,68.45,
+Latvia,LVA,1993,66.63,
+Latvia,LVA,1994,65.18,
+Latvia,LVA,1995,65.99,
+Latvia,LVA,1996,68.59,
+Latvia,LVA,1997,69.22,
+Latvia,LVA,1998,68.85,
+Latvia,LVA,1999,69.65,
+Latvia,LVA,2000,70.18,
+Latvia,LVA,2001,69.91,
+Latvia,LVA,2002,70.18,
+Latvia,LVA,2003,70.64,
+Latvia,LVA,2004,70.94,
+Latvia,LVA,2005,70.64,
+Latvia,LVA,2006,70.55,
+Latvia,LVA,2007,70.79,
+Latvia,LVA,2008,72.01,
+Latvia,LVA,2009,72.71,
+Latvia,LVA,2010,73.04,
+Latvia,LVA,2011,73.73,
+Latvia,LVA,2012,73.95,
+Latvia,LVA,2013,74.19,
+Latvia,LVA,2014,74.3,
+Latvia,LVA,2015,74.67,
+Latvia,LVA,2016,74.76,
+Latvia,LVA,2017,74.82,
+Latvia,LVA,2018,74.99,
+Latvia,LVA,2019,75.65,
+Latvia,LVA,2020,75.42,
+Latvia,LVA,2021,73.16,
+Latvia,LVA,2022,74.5,
+Latvia,LVA,2023,75.59,
+Latvia,LVA,2024,76.42,
+Lithuania,LTU,1959,67.73,
+Lithuania,LTU,1960,70.28,
+Lithuania,LTU,1961,70.45,
+Lithuania,LTU,1962,69.43,
+Lithuania,LTU,1963,70.56,
+Lithuania,LTU,1964,71.93,
+Lithuania,LTU,1965,71.69,
+Lithuania,LTU,1966,71.87,
+Lithuania,LTU,1967,71.95,
+Lithuania,LTU,1968,71.63,
+Lithuania,LTU,1969,71.23,
+Lithuania,LTU,1970,71.1,
+Lithuania,LTU,1971,72.04,
+Lithuania,LTU,1972,71.31,
+Lithuania,LTU,1973,71.62,
+Lithuania,LTU,1974,71.54,
+Lithuania,LTU,1975,71.11,
+Lithuania,LTU,1976,71.22,
+Lithuania,LTU,1977,71.06,
+Lithuania,LTU,1978,70.85,
+Lithuania,LTU,1979,70.72,
+Lithuania,LTU,1980,70.7,
+Lithuania,LTU,1981,70.69,
+Lithuania,LTU,1982,71.07,
+Lithuania,LTU,1983,71.01,
+Lithuania,LTU,1984,70.54,
+Lithuania,LTU,1985,70.74,
+Lithuania,LTU,1986,72.39,
+Lithuania,LTU,1987,72.23,
+Lithuania,LTU,1988,72.03,
+Lithuania,LTU,1989,71.66,
+Lithuania,LTU,1990,71.37,
+Lithuania,LTU,1991,70.51,
+Lithuania,LTU,1992,70.34,
+Lithuania,LTU,1993,68.94,
+Lithuania,LTU,1994,68.5,
+Lithuania,LTU,1995,69.02,
+Lithuania,LTU,1996,70.2,
+Lithuania,LTU,1997,71.03,
+Lithuania,LTU,1998,71.33,
+Lithuania,LTU,1999,71.72,
+Lithuania,LTU,2000,72.15,
+Lithuania,LTU,2001,71.71,
+Lithuania,LTU,2002,71.84,
+Lithuania,LTU,2003,72.09,
+Lithuania,LTU,2004,72.01,
+Lithuania,LTU,2005,71.25,
+Lithuania,LTU,2006,70.97,
+Lithuania,LTU,2007,70.7,
+Lithuania,LTU,2008,71.7,
+Lithuania,LTU,2009,72.86,
+Lithuania,LTU,2010,73.2,
+Lithuania,LTU,2011,73.61,
+Lithuania,LTU,2012,73.98,
+Lithuania,LTU,2013,74.05,
+Lithuania,LTU,2014,74.63,
+Lithuania,LTU,2015,74.53,
+Lithuania,LTU,2016,74.9,
+Lithuania,LTU,2017,75.79,
+Lithuania,LTU,2018,76,
+Lithuania,LTU,2019,76.52,
+Lithuania,LTU,2020,75.23,
+Lithuania,LTU,2021,74.3,
+Lithuania,LTU,2022,75.86,
+Lithuania,LTU,2023,77.44,
+Lithuania,LTU,2024,77.46,
+Luxembourg,LUX,1960,68.99,
+Luxembourg,LUX,1961,69.53,
+Luxembourg,LUX,1962,68.63,
+Luxembourg,LUX,1963,68.85,
+Luxembourg,LUX,1964,69.06,
+Luxembourg,LUX,1965,69.4,
+Luxembourg,LUX,1966,69.3,
+Luxembourg,LUX,1967,69.67,
+Luxembourg,LUX,1968,70.28,
+Luxembourg,LUX,1969,69.85,
+Luxembourg,LUX,1970,69.56,
+Luxembourg,LUX,1971,69.46,
+Luxembourg,LUX,1972,70.69,
+Luxembourg,LUX,1973,70.48,
+Luxembourg,LUX,1974,70.53,
+Luxembourg,LUX,1975,70.53,
+Luxembourg,LUX,1976,70.46,
+Luxembourg,LUX,1977,71.77,
+Luxembourg,LUX,1978,71.72,
+Luxembourg,LUX,1979,72.39,
+Luxembourg,LUX,1980,72.56,
+Luxembourg,LUX,1981,72.39,
+Luxembourg,LUX,1982,72.44,
+Luxembourg,LUX,1983,73.33,
+Luxembourg,LUX,1984,73.11,
+Luxembourg,LUX,1985,73.63,
+Luxembourg,LUX,1986,74.54,
+Luxembourg,LUX,1987,74.13,
+Luxembourg,LUX,1988,74.73,
+Luxembourg,LUX,1989,74.67,
+Luxembourg,LUX,1990,75.36,
+Luxembourg,LUX,1991,75.45,
+Luxembourg,LUX,1992,75.11,
+Luxembourg,LUX,1993,75.72,
+Luxembourg,LUX,1994,76.37,
+Luxembourg,LUX,1995,76.43,
+Luxembourg,LUX,1996,76.44,
+Luxembourg,LUX,1997,76.79,
+Luxembourg,LUX,1998,76.96,
+Luxembourg,LUX,1999,77.59,
+Luxembourg,LUX,2000,77.74,
+Luxembourg,LUX,2001,77.85,
+Luxembourg,LUX,2002,77.96,
+Luxembourg,LUX,2003,77.84,
+Luxembourg,LUX,2004,79.19,
+Luxembourg,LUX,2005,79.48,
+Luxembourg,LUX,2006,79.3,
+Luxembourg,LUX,2007,79.43,
+Luxembourg,LUX,2008,80.53,
+Luxembourg,LUX,2009,80.62,
+Luxembourg,LUX,2010,80.61,
+Luxembourg,LUX,2011,80.83,
+Luxembourg,LUX,2012,81.1,
+Luxembourg,LUX,2013,81.39,
+Luxembourg,LUX,2014,81.77,
+Luxembourg,LUX,2015,81.97,
+Luxembourg,LUX,2016,82.29,
+Luxembourg,LUX,2017,81.74,
+Luxembourg,LUX,2018,82.01,
+Luxembourg,LUX,2019,82.38,
+Luxembourg,LUX,2020,82.05,
+Luxembourg,LUX,2021,82.48,
+Luxembourg,LUX,2022,82.8,
+Luxembourg,LUX,2023,83.15,
+Netherlands,NLD,1850,39.84,41.12
+Netherlands,NLD,1851,40.14,40.57
+Netherlands,NLD,1852,38.71,39.96
+Netherlands,NLD,1853,38.74,40.35
+Netherlands,NLD,1854,38.72,40.02
+Netherlands,NLD,1855,34.58,39.85
+Netherlands,NLD,1856,38.47,40.23
+Netherlands,NLD,1857,35.41,38.61
+Netherlands,NLD,1858,34.79,39.05
+Netherlands,NLD,1859,30.91,39.8
+Netherlands,NLD,1860,37,41.5
+Netherlands,NLD,1861,36.51,41.17
+Netherlands,NLD,1862,38.37,42.15
+Netherlands,NLD,1863,38.31,42.37
+Netherlands,NLD,1864,37.65,42.28
+Netherlands,NLD,1865,36.47,41.66
+Netherlands,NLD,1866,33.69,43.14
+Netherlands,NLD,1867,39.3,42.99
+Netherlands,NLD,1868,37.78,42.43
+Netherlands,NLD,1869,40.43,43.57
+Netherlands,NLD,1870,37.54,42.62
+Netherlands,NLD,1871,33.01,43.16
+Netherlands,NLD,1872,36.47,44.75
+Netherlands,NLD,1873,39.27,45.72
+Netherlands,NLD,1874,41.3,45.3
+Netherlands,NLD,1875,38.34,45.12
+Netherlands,NLD,1876,40.46,45.88
+Netherlands,NLD,1877,42.08,46.44
+Netherlands,NLD,1878,41.09,46.6
+Netherlands,NLD,1879,41.98,46.66
+Netherlands,NLD,1880,40.41,46.44
+Netherlands,NLD,1881,42.89,47.67
+Netherlands,NLD,1882,43.8,48.08
+Netherlands,NLD,1883,42.36,47.84
+Netherlands,NLD,1884,41.34,48.31
+Netherlands,NLD,1885,43.28,49.72
+Netherlands,NLD,1886,41.98,49.56
+Netherlands,NLD,1887,44.98,50.59
+Netherlands,NLD,1888,44.23,50.66
+Netherlands,NLD,1889,44.37,50.58
+Netherlands,NLD,1890,44.42,51.11
+Netherlands,NLD,1891,44.27,52.04
+Netherlands,NLD,1892,43.95,52.58
+Netherlands,NLD,1893,45.86,52.95
+Netherlands,NLD,1894,46.99,54.06
+Netherlands,NLD,1895,46.73,53.78
+Netherlands,NLD,1896,48.56,55.09
+Netherlands,NLD,1897,49.43,54.92
+Netherlands,NLD,1898,49.11,55.02
+Netherlands,NLD,1899,49.36,54.94
+Netherlands,NLD,1900,48.48,55.11
+Netherlands,NLD,1901,48.75,56.2
+Netherlands,NLD,1902,50.65,57.71
+Netherlands,NLD,1903,51.54,57.39
+Netherlands,NLD,1904,50.87,58.2
+Netherlands,NLD,1905,52.1,58.86
+Netherlands,NLD,1906,52.78,59.15
+Netherlands,NLD,1907,53.51,59.99
+Netherlands,NLD,1908,52.77,60.49
+Netherlands,NLD,1909,54.92,61.63
+Netherlands,NLD,1910,55.14,61.15
+Netherlands,NLD,1911,53.18,60.82
+Netherlands,NLD,1912,57.14,63.41
+Netherlands,NLD,1913,57.35,62.93
+Netherlands,NLD,1914,57.19,62.84
+Netherlands,NLD,1915,57.24,63.33
+Netherlands,NLD,1916,56.16,63.28
+Netherlands,NLD,1917,55.65,63.12
+Netherlands,NLD,1918,47.63,63.78
+Netherlands,NLD,1919,54.78,66.01
+Netherlands,NLD,1920,57.98,66.57
+Netherlands,NLD,1921,59.71,66.42
+Netherlands,NLD,1922,59.78,68.09
+Netherlands,NLD,1923,62,68.74
+Netherlands,NLD,1924,62.88,69.06
+Netherlands,NLD,1925,63.12,69.42
+Netherlands,NLD,1926,62.98,69.98
+Netherlands,NLD,1927,62.61,70.6
+Netherlands,NLD,1928,63.71,71.13
+Netherlands,NLD,1929,62.15,71.66
+Netherlands,NLD,1930,64.66,72.2
+Netherlands,NLD,1931,64.32,72.93
+Netherlands,NLD,1932,65.39,73.4
+Netherlands,NLD,1933,66.03,
+Netherlands,NLD,1934,66.6,
+Netherlands,NLD,1935,66.51,
+Netherlands,NLD,1936,66.73,
+Netherlands,NLD,1937,66.97,
+Netherlands,NLD,1938,67.39,
+Netherlands,NLD,1939,67.72,
+Netherlands,NLD,1940,65.4,
+Netherlands,NLD,1941,65.33,
+Netherlands,NLD,1942,65.8,
+Netherlands,NLD,1943,64.41,
+Netherlands,NLD,1944,61.27,
+Netherlands,NLD,1945,55.58,
+Netherlands,NLD,1946,67.53,
+Netherlands,NLD,1947,69.56,
+Netherlands,NLD,1948,71.04,
+Netherlands,NLD,1949,70.29,
+Netherlands,NLD,1950,71.44,
+Netherlands,NLD,1951,71.5,
+Netherlands,NLD,1952,72.12,
+Netherlands,NLD,1953,71.7,
+Netherlands,NLD,1954,72.38,
+Netherlands,NLD,1955,72.5,
+Netherlands,NLD,1956,72.52,
+Netherlands,NLD,1957,72.97,
+Netherlands,NLD,1958,73.14,
+Netherlands,NLD,1959,73.19,
+Netherlands,NLD,1960,73.35,
+Netherlands,NLD,1961,73.55,
+Netherlands,NLD,1962,73.22,
+Netherlands,NLD,1963,73.35,
+Netherlands,NLD,1964,73.73,
+Netherlands,NLD,1965,73.6,
+Netherlands,NLD,1966,73.55,
+Netherlands,NLD,1967,73.83,
+Netherlands,NLD,1968,73.64,
+Netherlands,NLD,1969,73.56,
+Netherlands,NLD,1970,73.63,
+Netherlands,NLD,1971,73.87,
+Netherlands,NLD,1972,73.78,
+Netherlands,NLD,1973,74.23,
+Netherlands,NLD,1974,74.61,
+Netherlands,NLD,1975,74.55,
+Netherlands,NLD,1976,74.67,
+Netherlands,NLD,1977,75.26,
+Netherlands,NLD,1978,75.17,
+Netherlands,NLD,1979,75.65,
+Netherlands,NLD,1980,75.77,
+Netherlands,NLD,1981,75.99,
+Netherlands,NLD,1982,76.06,
+Netherlands,NLD,1983,76.26,
+Netherlands,NLD,1984,76.32,
+Netherlands,NLD,1985,76.37,
+Netherlands,NLD,1986,76.35,
+Netherlands,NLD,1987,76.81,
+Netherlands,NLD,1988,77,
+Netherlands,NLD,1989,76.83,
+Netherlands,NLD,1990,77.01,
+Netherlands,NLD,1991,77.16,
+Netherlands,NLD,1992,77.36,
+Netherlands,NLD,1993,77.04,
+Netherlands,NLD,1994,77.51,
+Netherlands,NLD,1995,77.55,
+Netherlands,NLD,1996,77.55,
+Netherlands,NLD,1997,77.93,
+Netherlands,NLD,1998,78,
+Netherlands,NLD,1999,77.96,
+Netherlands,NLD,2000,78.12,
+Netherlands,NLD,2001,78.33,
+Netherlands,NLD,2002,78.41,
+Netherlands,NLD,2003,78.66,
+Netherlands,NLD,2004,79.23,
+Netherlands,NLD,2005,79.48,
+Netherlands,NLD,2006,79.84,
+Netherlands,NLD,2007,80.25,
+Netherlands,NLD,2008,80.39,
+Netherlands,NLD,2009,80.67,
+Netherlands,NLD,2010,80.83,
+Netherlands,NLD,2011,81.11,
+Netherlands,NLD,2012,81.06,
+Netherlands,NLD,2013,81.3,
+Netherlands,NLD,2014,81.65,
+Netherlands,NLD,2015,81.48,
+Netherlands,NLD,2016,81.55,
+Netherlands,NLD,2017,81.73,
+Netherlands,NLD,2018,81.78,
+Netherlands,NLD,2019,82.05,
+Netherlands,NLD,2020,81.39,
+Netherlands,NLD,2021,81.35,
+Netherlands,NLD,2022,81.63,
+Netherlands,NLD,2023,81.84,
+New Zealand,NZL,1948,68.81,
+New Zealand,NZL,1949,68.95,
+New Zealand,NZL,1950,69.25,
+New Zealand,NZL,1951,69.13,
+New Zealand,NZL,1952,69.37,
+New Zealand,NZL,1953,70.21,
+New Zealand,NZL,1954,70.33,
+New Zealand,NZL,1955,70.48,
+New Zealand,NZL,1956,70.72,
+New Zealand,NZL,1957,70.25,
+New Zealand,NZL,1958,70.88,
+New Zealand,NZL,1959,70.77,
+New Zealand,NZL,1960,71.22,
+New Zealand,NZL,1961,70.93,
+New Zealand,NZL,1962,71.2,
+New Zealand,NZL,1963,71.27,
+New Zealand,NZL,1964,71.29,
+New Zealand,NZL,1965,71.21,
+New Zealand,NZL,1966,71.07,
+New Zealand,NZL,1967,71.44,
+New Zealand,NZL,1968,71.09,
+New Zealand,NZL,1969,71.48,
+New Zealand,NZL,1970,71.22,
+New Zealand,NZL,1971,71.72,
+New Zealand,NZL,1972,71.82,
+New Zealand,NZL,1973,71.68,
+New Zealand,NZL,1974,71.94,
+New Zealand,NZL,1975,72.2,
+New Zealand,NZL,1976,72.4,
+New Zealand,NZL,1977,72.14,
+New Zealand,NZL,1978,73.01,
+New Zealand,NZL,1979,73.05,
+New Zealand,NZL,1980,72.87,
+New Zealand,NZL,1981,73.64,
+New Zealand,NZL,1982,73.73,
+New Zealand,NZL,1983,73.83,
+New Zealand,NZL,1984,74.37,
+New Zealand,NZL,1985,73.87,
+New Zealand,NZL,1986,74.12,
+New Zealand,NZL,1987,74.21,
+New Zealand,NZL,1988,74.48,
+New Zealand,NZL,1989,74.89,
+New Zealand,NZL,1990,75.43,
+New Zealand,NZL,1991,76.08,
+New Zealand,NZL,1992,76.19,
+New Zealand,NZL,1993,76.5,
+New Zealand,NZL,1994,76.92,
+New Zealand,NZL,1995,76.79,
+New Zealand,NZL,1996,76.81,
+New Zealand,NZL,1997,77.35,
+New Zealand,NZL,1998,78.17,
+New Zealand,NZL,1999,77.91,
+New Zealand,NZL,2000,78.67,
+New Zealand,NZL,2001,78.67,
+New Zealand,NZL,2002,78.87,
+New Zealand,NZL,2003,79.15,
+New Zealand,NZL,2004,79.36,
+New Zealand,NZL,2005,80.04,
+New Zealand,NZL,2006,80.02,
+New Zealand,NZL,2007,80.12,
+New Zealand,NZL,2008,80.25,
+New Zealand,NZL,2009,80.55,
+New Zealand,NZL,2010,81.06,
+New Zealand,NZL,2011,80.85,
+New Zealand,NZL,2012,81.17,
+New Zealand,NZL,2013,81.6,
+New Zealand,NZL,2014,81.42,
+New Zealand,NZL,2015,81.59,
+New Zealand,NZL,2016,82,
+New Zealand,NZL,2017,81.61,
+New Zealand,NZL,2018,81.9,
+New Zealand,NZL,2019,81.83,
+New Zealand,NZL,2020,82.67,
+New Zealand,NZL,2021,82.3,
+Northern Ireland,,1922,54.43,
+Northern Ireland,,1923,55.55,
+Northern Ireland,,1924,54.19,
+Northern Ireland,,1925,54.4,
+Northern Ireland,,1926,55.24,
+Northern Ireland,,1927,56.72,
+Northern Ireland,,1928,56.89,
+Northern Ireland,,1929,55.14,
+Northern Ireland,,1930,58.6,
+Northern Ireland,,1931,57.63,
+Northern Ireland,,1932,57.76,
+Northern Ireland,,1933,57.12,
+Northern Ireland,,1934,58.55,
+Northern Ireland,,1935,56.73,
+Northern Ireland,,1936,58.15,
+Northern Ireland,,1937,58.06,
+Northern Ireland,,1938,59.11,
+Northern Ireland,,1939,60.63,
+Northern Ireland,,1940,58.07,
+Northern Ireland,,1941,57.76,
+Northern Ireland,,1942,60.47,
+Northern Ireland,,1943,60.93,
+Northern Ireland,,1944,62.51,
+Northern Ireland,,1945,63.39,
+Northern Ireland,,1946,63.93,
+Northern Ireland,,1947,64.08,
+Northern Ireland,,1948,66.3,
+Northern Ireland,,1949,66.54,
+Northern Ireland,,1950,67.02,
+Northern Ireland,,1951,66.1,
+Northern Ireland,,1952,68.33,
+Northern Ireland,,1953,68.59,
+Northern Ireland,,1954,69.1,
+Northern Ireland,,1955,69.08,
+Northern Ireland,,1956,69.95,
+Northern Ireland,,1957,69.64,
+Northern Ireland,,1958,70.07,
+Northern Ireland,,1959,69.94,
+Northern Ireland,,1960,70.03,
+Northern Ireland,,1961,69.84,
+Northern Ireland,,1962,70.57,
+Northern Ireland,,1963,70.08,
+Northern Ireland,,1964,70.72,
+Northern Ireland,,1965,70.77,
+Northern Ireland,,1966,70.26,
+Northern Ireland,,1967,71.69,
+Northern Ireland,,1968,71.03,
+Northern Ireland,,1969,70.68,
+Northern Ireland,,1970,70.7,
+Northern Ireland,,1971,71.18,
+Northern Ireland,,1972,70.47,
+Northern Ireland,,1973,69.93,
+Northern Ireland,,1974,70.38,
+Northern Ireland,,1975,70.98,
+Northern Ireland,,1976,70.85,
+Northern Ireland,,1977,71.16,
+Northern Ireland,,1978,71.86,
+Northern Ireland,,1979,71.65,
+Northern Ireland,,1980,71.81,
+Northern Ireland,,1981,72.51,
+Northern Ireland,,1982,72.82,
+Northern Ireland,,1983,73.1,
+Northern Ireland,,1984,73.59,
+Northern Ireland,,1985,73.62,
+Northern Ireland,,1986,73.81,
+Northern Ireland,,1987,74.46,
+Northern Ireland,,1988,74.22,
+Northern Ireland,,1989,74.7,
+Northern Ireland,,1990,75.02,
+Northern Ireland,,1991,75.4,
+Northern Ireland,,1992,75.87,
+Northern Ireland,,1993,75.49,
+Northern Ireland,,1994,76.02,
+Northern Ireland,,1995,76.04,
+Northern Ireland,,1996,76.57,
+Northern Ireland,,1997,76.86,
+Northern Ireland,,1998,77.03,
+Northern Ireland,,1999,76.74,
+Northern Ireland,,2000,77.39,
+Northern Ireland,,2001,77.85,
+Northern Ireland,,2002,77.91,
+Northern Ireland,,2003,78.33,
+Northern Ireland,,2004,78.44,
+Northern Ireland,,2005,78.62,
+Northern Ireland,,2006,78.66,
+Northern Ireland,,2007,78.86,
+Northern Ireland,,2008,78.9,
+Northern Ireland,,2009,79.37,
+Northern Ireland,,2010,79.46,
+Northern Ireland,,2011,80.16,
+Northern Ireland,,2012,80.19,
+Northern Ireland,,2013,80.22,
+Northern Ireland,,2014,80.56,
+Northern Ireland,,2015,80.25,
+Northern Ireland,,2016,80.56,
+Northern Ireland,,2017,80.47,
+Northern Ireland,,2018,80.73,
+Northern Ireland,,2019,80.94,
+Northern Ireland,,2020,80.16,
+Northern Ireland,,2021,80.14,
+Northern Ireland,,2022,80.82,
+Norway,NOR,1846,48.05,49.23
+Norway,NOR,1847,44.77,49.73
+Norway,NOR,1848,45.01,49.8
+Norway,NOR,1849,48.04,52.35
+Norway,NOR,1850,49.52,51.08
+Norway,NOR,1851,49.72,51.7
+Norway,NOR,1852,48.47,50.66
+Norway,NOR,1853,47.91,51.62
+Norway,NOR,1854,51.62,51.67
+Norway,NOR,1855,50.43,50.78
+Norway,NOR,1856,50.35,50.63
+Norway,NOR,1857,50.21,50.78
+Norway,NOR,1858,51.57,49.68
+Norway,NOR,1859,49.92,50.25
+Norway,NOR,1860,49.99,48.21
+Norway,NOR,1861,45.81,48.58
+Norway,NOR,1862,44.71,50.19
+Norway,NOR,1863,46.71,51.06
+Norway,NOR,1864,48.78,51.22
+Norway,NOR,1865,50.42,52.16
+Norway,NOR,1866,49.91,50.83
+Norway,NOR,1867,47.87,50.29
+Norway,NOR,1868,47.18,51.12
+Norway,NOR,1869,49.26,51.41
+Norway,NOR,1870,50.86,51.97
+Norway,NOR,1871,49.67,52.11
+Norway,NOR,1872,50.02,51.23
+Norway,NOR,1873,49.68,51.13
+Norway,NOR,1874,47.77,51.08
+Norway,NOR,1875,47.63,51.31
+Norway,NOR,1876,46.82,51.69
+Norway,NOR,1877,49.75,52.29
+Norway,NOR,1878,51.78,52.64
+Norway,NOR,1879,53.14,52.77
+Norway,NOR,1880,51.89,51.96
+Norway,NOR,1881,50.44,52.5
+Norway,NOR,1882,47.38,52.69
+Norway,NOR,1883,49.59,53.89
+Norway,NOR,1884,50.76,53.17
+Norway,NOR,1885,51.04,53.94
+Norway,NOR,1886,51.7,54.23
+Norway,NOR,1887,51.67,54.76
+Norway,NOR,1888,50.37,54
+Norway,NOR,1889,49.07,54.84
+Norway,NOR,1890,48.61,55.39
+Norway,NOR,1891,49.8,55.68
+Norway,NOR,1892,49.67,56.43
+Norway,NOR,1893,51.39,56.98
+Norway,NOR,1894,50.62,57.37
+Norway,NOR,1895,52.79,57.81
+Norway,NOR,1896,53.82,57.92
+Norway,NOR,1897,53.71,58.19
+Norway,NOR,1898,53.95,58.24
+Norway,NOR,1899,51.61,58.5
+Norway,NOR,1900,53.47,59.63
+Norway,NOR,1901,54.59,60.38
+Norway,NOR,1902,56.47,61.26
+Norway,NOR,1903,54.96,61.52
+Norway,NOR,1904,56.07,62.16
+Norway,NOR,1905,55.09,62.29
+Norway,NOR,1906,56.9,63.67
+Norway,NOR,1907,56.48,63.79
+Norway,NOR,1908,56.28,64.01
+Norway,NOR,1909,57.46,64.66
+Norway,NOR,1910,57.98,65.05
+Norway,NOR,1911,58.01,65.5
+Norway,NOR,1912,57.73,65.73
+Norway,NOR,1913,58.31,65.98
+Norway,NOR,1914,57.79,66.05
+Norway,NOR,1915,58.16,66.13
+Norway,NOR,1916,57.23,67.09
+Norway,NOR,1917,57.71,67.55
+Norway,NOR,1918,50.32,67.8
+Norway,NOR,1919,56.79,68.61
+Norway,NOR,1920,58.85,69.37
+Norway,NOR,1921,61.57,69.6
+Norway,NOR,1922,60.78,70.19
+Norway,NOR,1923,61.8,70.83
+Norway,NOR,1924,62.11,71.26
+Norway,NOR,1925,62.51,71.66
+Norway,NOR,1926,63.25,71.81
+Norway,NOR,1927,62.85,72.19
+Norway,NOR,1928,63.4,72.32
+Norway,NOR,1929,62.45,72.48
+Norway,NOR,1930,64.1,73.32
+Norway,NOR,1931,64.18,73.6
+Norway,NOR,1932,64.59,73.95
+Norway,NOR,1933,65.48,74.36
+Norway,NOR,1934,66.21,
+Norway,NOR,1935,65.84,
+Norway,NOR,1936,65.82,
+Norway,NOR,1937,66.02,
+Norway,NOR,1938,67.09,
+Norway,NOR,1939,67.35,
+Norway,NOR,1940,65.88,
+Norway,NOR,1941,65.74,
+Norway,NOR,1942,65.7,
+Norway,NOR,1943,66.09,
+Norway,NOR,1944,65.84,
+Norway,NOR,1945,68.19,
+Norway,NOR,1946,69.54,
+Norway,NOR,1947,70.01,
+Norway,NOR,1948,71.13,
+Norway,NOR,1949,71.52,
+Norway,NOR,1950,71.59,
+Norway,NOR,1951,72.53,
+Norway,NOR,1952,72.65,
+Norway,NOR,1953,73.15,
+Norway,NOR,1954,73.21,
+Norway,NOR,1955,73.43,
+Norway,NOR,1956,73.49,
+Norway,NOR,1957,73.43,
+Norway,NOR,1958,73.43,
+Norway,NOR,1959,73.55,
+Norway,NOR,1960,73.56,
+Norway,NOR,1961,73.56,
+Norway,NOR,1962,73.46,
+Norway,NOR,1963,73.1,
+Norway,NOR,1964,73.61,
+Norway,NOR,1965,73.73,
+Norway,NOR,1966,74.01,
+Norway,NOR,1967,74.07,
+Norway,NOR,1968,73.95,
+Norway,NOR,1969,73.67,
+Norway,NOR,1970,74.07,
+Norway,NOR,1971,74.17,
+Norway,NOR,1972,74.35,
+Norway,NOR,1973,74.44,
+Norway,NOR,1974,74.76,
+Norway,NOR,1975,74.82,
+Norway,NOR,1976,75.05,
+Norway,NOR,1977,75.4,
+Norway,NOR,1978,75.43,
+Norway,NOR,1979,75.42,
+Norway,NOR,1980,75.67,
+Norway,NOR,1981,75.88,
+Norway,NOR,1982,76.02,
+Norway,NOR,1983,76.08,
+Norway,NOR,1984,76.25,
+Norway,NOR,1985,75.93,
+Norway,NOR,1986,76.25,
+Norway,NOR,1987,76.1,
+Norway,NOR,1988,76.27,
+Norway,NOR,1989,76.54,
+Norway,NOR,1990,76.59,
+Norway,NOR,1991,77.04,
+Norway,NOR,1992,77.24,
+Norway,NOR,1993,77.22,
+Norway,NOR,1994,77.78,
+Norway,NOR,1995,77.8,
+Norway,NOR,1996,78.23,
+Norway,NOR,1997,78.24,
+Norway,NOR,1998,78.41,
+Norway,NOR,1999,78.39,
+Norway,NOR,2000,78.69,
+Norway,NOR,2001,78.89,
+Norway,NOR,2002,78.96,
+Norway,NOR,2003,79.53,
+Norway,NOR,2004,79.97,
+Norway,NOR,2005,80.17,
+Norway,NOR,2006,80.44,
+Norway,NOR,2007,80.5,
+Norway,NOR,2008,80.68,
+Norway,NOR,2009,80.86,
+Norway,NOR,2010,81.04,
+Norway,NOR,2011,81.24,
+Norway,NOR,2012,81.45,
+Norway,NOR,2013,81.66,
+Norway,NOR,2014,82.09,
+Norway,NOR,2015,82.28,
+Norway,NOR,2016,82.42,
+Norway,NOR,2017,82.63,
+Norway,NOR,2018,82.77,
+Norway,NOR,2019,82.96,
+Norway,NOR,2020,83.2,
+Norway,NOR,2021,83.17,
+Norway,NOR,2022,82.64,
+Norway,NOR,2023,83.02,
+Norway,NOR,2024,83.2,
+Poland,POL,1958,65.92,
+Poland,POL,1959,65.56,
+Poland,POL,1960,67.83,
+Poland,POL,1961,67.94,
+Poland,POL,1962,67.63,
+Poland,POL,1963,68.56,
+Poland,POL,1964,68.78,
+Poland,POL,1965,69.48,
+Poland,POL,1966,69.89,
+Poland,POL,1967,69.59,
+Poland,POL,1968,70.23,
+Poland,POL,1969,69.71,
+Poland,POL,1970,69.59,
+Poland,POL,1971,69.37,
+Poland,POL,1972,70.55,
+Poland,POL,1973,70.53,
+Poland,POL,1974,71.02,
+Poland,POL,1975,70.44,
+Poland,POL,1976,70.44,
+Poland,POL,1977,70.33,
+Poland,POL,1978,70.22,
+Poland,POL,1979,70.59,
+Poland,POL,1980,69.95,
+Poland,POL,1981,70.92,
+Poland,POL,1982,70.98,
+Poland,POL,1983,70.84,
+Poland,POL,1984,70.61,
+Poland,POL,1985,70.37,
+Poland,POL,1986,70.62,
+Poland,POL,1987,70.68,
+Poland,POL,1988,71.01,
+Poland,POL,1989,70.77,
+Poland,POL,1990,70.68,
+Poland,POL,1991,70.38,
+Poland,POL,1992,70.91,
+Poland,POL,1993,71.42,
+Poland,POL,1994,71.71,
+Poland,POL,1995,71.92,
+Poland,POL,1996,72.25,
+Poland,POL,1997,72.6,
+Poland,POL,1998,72.95,
+Poland,POL,1999,72.99,
+Poland,POL,2000,73.73,
+Poland,POL,2001,74.22,
+Poland,POL,2002,74.58,
+Poland,POL,2003,74.74,
+Poland,POL,2004,74.97,
+Poland,POL,2005,75.09,
+Poland,POL,2006,75.28,
+Poland,POL,2007,75.33,
+Poland,POL,2008,75.57,
+Poland,POL,2009,75.76,
+Poland,POL,2010,76.29,
+Poland,POL,2011,76.62,
+Poland,POL,2012,76.69,
+Poland,POL,2013,76.94,
+Poland,POL,2014,77.53,
+Poland,POL,2015,77.37,
+Poland,POL,2016,77.75,
+Poland,POL,2017,77.66,
+Poland,POL,2018,77.55,
+Poland,POL,2019,77.84,
+Poland,POL,2020,76.48,
+Poland,POL,2021,75.54,
+Poland,POL,2022,77.25,
+Poland,POL,2023,78.39,
+Portugal,PRT,1940,51.38,
+Portugal,PRT,1941,47.99,
+Portugal,PRT,1942,49.78,
+Portugal,PRT,1943,51.13,
+Portugal,PRT,1944,52.38,
+Portugal,PRT,1945,53.78,
+Portugal,PRT,1946,53.75,
+Portugal,PRT,1947,55.93,
+Portugal,PRT,1948,56.72,
+Portugal,PRT,1949,55.41,
+Portugal,PRT,1950,58.47,
+Portugal,PRT,1951,58.75,
+Portugal,PRT,1952,59.76,
+Portugal,PRT,1953,61.07,
+Portugal,PRT,1954,62.2,
+Portugal,PRT,1955,61.4,
+Portugal,PRT,1956,61.17,
+Portugal,PRT,1957,61.39,
+Portugal,PRT,1958,63.72,
+Portugal,PRT,1959,62.92,
+Portugal,PRT,1960,64.15,
+Portugal,PRT,1961,62.8,
+Portugal,PRT,1962,64.32,
+Portugal,PRT,1963,64.92,
+Portugal,PRT,1964,65.12,
+Portugal,PRT,1965,66.09,
+Portugal,PRT,1966,65.6,
+Portugal,PRT,1967,66.46,
+Portugal,PRT,1968,66.81,
+Portugal,PRT,1969,66.39,
+Portugal,PRT,1970,67.06,
+Portugal,PRT,1971,66.85,
+Portugal,PRT,1972,69.16,
+Portugal,PRT,1973,68.6,
+Portugal,PRT,1974,69.12,
+Portugal,PRT,1975,68.84,
+Portugal,PRT,1976,69.1,
+Portugal,PRT,1977,70.34,
+Portugal,PRT,1978,70.79,
+Portugal,PRT,1979,71.6,
+Portugal,PRT,1980,71.66,
+Portugal,PRT,1981,71.89,
+Portugal,PRT,1982,72.7,
+Portugal,PRT,1983,72.65,
+Portugal,PRT,1984,72.93,
+Portugal,PRT,1985,73.21,
+Portugal,PRT,1986,73.64,
+Portugal,PRT,1987,74.06,
+Portugal,PRT,1988,74.08,
+Portugal,PRT,1989,74.66,
+Portugal,PRT,1990,74.3,
+Portugal,PRT,1991,74.24,
+Portugal,PRT,1992,74.87,
+Portugal,PRT,1993,74.76,
+Portugal,PRT,1994,75.73,
+Portugal,PRT,1995,75.55,
+Portugal,PRT,1996,75.48,
+Portugal,PRT,1997,75.92,
+Portugal,PRT,1998,76.12,
+Portugal,PRT,1999,76.32,
+Portugal,PRT,2000,76.83,
+Portugal,PRT,2001,77.15,
+Portugal,PRT,2002,77.37,
+Portugal,PRT,2003,77.59,
+Portugal,PRT,2004,78.43,
+Portugal,PRT,2005,78.32,
+Portugal,PRT,2006,79.09,
+Portugal,PRT,2007,79.31,
+Portugal,PRT,2008,79.61,
+Portugal,PRT,2009,79.84,
+Portugal,PRT,2010,80.12,
+Portugal,PRT,2011,80.58,
+Portugal,PRT,2012,80.56,
+Portugal,PRT,2013,80.9,
+Portugal,PRT,2014,81.32,
+Portugal,PRT,2015,81.33,
+Portugal,PRT,2016,81.37,
+Portugal,PRT,2017,81.66,
+Portugal,PRT,2018,81.6,
+Portugal,PRT,2019,81.96,
+Portugal,PRT,2020,81.37,
+Portugal,PRT,2021,81.4,
+Portugal,PRT,2022,81.67,
+Portugal,PRT,2023,82.26,
+Russia,RUS,1959,67.69,
+Russia,RUS,1960,68.7,
+Russia,RUS,1961,68.96,
+Russia,RUS,1962,68.64,
+Russia,RUS,1963,69.13,
+Russia,RUS,1964,69.92,
+Russia,RUS,1965,69.5,
+Russia,RUS,1966,69.57,
+Russia,RUS,1967,69.35,
+Russia,RUS,1968,69.25,
+Russia,RUS,1969,68.76,
+Russia,RUS,1970,68.83,
+Russia,RUS,1971,69.07,
+Russia,RUS,1972,68.98,
+Russia,RUS,1973,68.96,
+Russia,RUS,1974,68.96,
+Russia,RUS,1975,68.32,
+Russia,RUS,1976,68.06,
+Russia,RUS,1977,67.9,
+Russia,RUS,1978,67.91,
+Russia,RUS,1979,67.58,
+Russia,RUS,1980,67.48,
+Russia,RUS,1981,67.69,
+Russia,RUS,1982,68.24,
+Russia,RUS,1983,68.07,
+Russia,RUS,1984,67.56,
+Russia,RUS,1985,68.26,
+Russia,RUS,1986,69.85,
+Russia,RUS,1987,69.9,
+Russia,RUS,1988,69.73,
+Russia,RUS,1989,69.59,
+Russia,RUS,1990,69.22,
+Russia,RUS,1991,68.96,
+Russia,RUS,1992,67.84,
+Russia,RUS,1993,65.06,
+Russia,RUS,1994,63.81,
+Russia,RUS,1995,64.51,
+Russia,RUS,1996,65.78,
+Russia,RUS,1997,66.72,
+Russia,RUS,1998,67.04,
+Russia,RUS,1999,65.92,
+Russia,RUS,2000,65.29,
+Russia,RUS,2001,65.19,
+Russia,RUS,2002,64.91,
+Russia,RUS,2003,64.85,
+Russia,RUS,2004,65.27,
+Russia,RUS,2005,65.34,
+Russia,RUS,2006,66.64,
+Russia,RUS,2007,67.55,
+Russia,RUS,2008,67.96,
+Russia,RUS,2009,68.76,
+Russia,RUS,2010,68.92,
+Russia,RUS,2011,69.81,
+Russia,RUS,2012,70.22,
+Russia,RUS,2013,70.75,
+Russia,RUS,2014,70.92,
+Scotland,,1855,42.98,43.97
+Scotland,,1856,44.32,43.2
+Scotland,,1857,43.51,43.58
+Scotland,,1858,43.05,43.93
+Scotland,,1859,43.87,42.95
+Scotland,,1860,41.49,42.71
+Scotland,,1861,44.03,43.25
+Scotland,,1862,42.58,43.83
+Scotland,,1863,40.67,44.18
+Scotland,,1864,40.18,44.29
+Scotland,,1865,41.96,44.79
+Scotland,,1866,42.29,45.06
+Scotland,,1867,43.57,45.33
+Scotland,,1868,43.41,45.26
+Scotland,,1869,41.18,44.96
+Scotland,,1870,41.84,45
+Scotland,,1871,41.47,45.54
+Scotland,,1872,41.75,46.48
+Scotland,,1873,42.11,47.09
+Scotland,,1874,40.59,47.19
+Scotland,,1875,40.93,47.73
+Scotland,,1876,43.74,48.29
+Scotland,,1877,44.52,48.67
+Scotland,,1878,43.57,49.14
+Scotland,,1879,45.28,49.14
+Scotland,,1880,43.89,49.38
+Scotland,,1881,45.46,49.82
+Scotland,,1882,45.23,50.17
+Scotland,,1883,44.42,50.42
+Scotland,,1884,45.06,50.37
+Scotland,,1885,45.66,50.78
+Scotland,,1886,46.33,50.71
+Scotland,,1887,45.89,51.06
+Scotland,,1888,47.43,51.15
+Scotland,,1889,46.52,50.27
+Scotland,,1890,44.48,50.47
+Scotland,,1891,43.95,50.95
+Scotland,,1892,46.31,51.76
+Scotland,,1893,44.83,51.87
+Scotland,,1894,48.08,52.46
+Scotland,,1895,45.1,52.51
+Scotland,,1896,48.7,52.44
+Scotland,,1897,46.33,52.04
+Scotland,,1898,46.66,52.46
+Scotland,,1899,46.86,52.83
+Scotland,,1900,46.43,53.37
+Scotland,,1901,46.73,54.28
+Scotland,,1902,48.23,55.03
+Scotland,,1903,48.99,54.75
+Scotland,,1904,48.48,55.09
+Scotland,,1905,49.71,55.64
+Scotland,,1906,49.75,55.82
+Scotland,,1907,49.46,56.31
+Scotland,,1908,49.18,56.53
+Scotland,,1909,50.69,57.07
+Scotland,,1910,51.29,57.13
+Scotland,,1911,51.5,57.41
+Scotland,,1912,51.65,57.26
+Scotland,,1913,51.5,57.34
+Scotland,,1914,51.35,56.68
+Scotland,,1915,48.92,57.9
+Scotland,,1916,52.73,58.26
+Scotland,,1917,52.62,59.11
+Scotland,,1918,48.87,57.9
+Scotland,,1919,50.8,60.17
+Scotland,,1920,53.96,59.25
+Scotland,,1921,55.92,61.02
+Scotland,,1922,53.66,61.5
+Scotland,,1923,57.33,61.76
+Scotland,,1924,54.66,62
+Scotland,,1925,56.32,62.89
+Scotland,,1926,57.19,63.41
+Scotland,,1927,56.78,63.82
+Scotland,,1928,56.86,64.03
+Scotland,,1929,55.84,65.08
+Scotland,,1930,57.54,65.31
+Scotland,,1931,58.04,66.17
+Scotland,,1932,57.56,
+Scotland,,1933,58.61,
+Scotland,,1934,58.78,
+Scotland,,1935,59.34,
+Scotland,,1936,58.84,
+Scotland,,1937,58.82,
+Scotland,,1938,60.69,
+Scotland,,1939,61.17,
+Scotland,,1940,58.52,
+Scotland,,1941,57.64,
+Scotland,,1942,60.37,
+Scotland,,1943,60.25,
+Scotland,,1944,61.2,
+Scotland,,1945,63.03,
+Scotland,,1946,63.11,
+Scotland,,1947,63.39,
+Scotland,,1948,65.55,
+Scotland,,1949,65.66,
+Scotland,,1950,66.21,
+Scotland,,1951,66.33,
+Scotland,,1952,67.36,
+Scotland,,1953,68.19,
+Scotland,,1954,68.1,
+Scotland,,1955,68.26,
+Scotland,,1956,68.65,
+Scotland,,1957,68.68,
+Scotland,,1958,68.84,
+Scotland,,1959,68.83,
+Scotland,,1960,69.19,
+Scotland,,1961,69.08,
+Scotland,,1962,69.15,
+Scotland,,1963,68.96,
+Scotland,,1964,69.83,
+Scotland,,1965,69.72,
+Scotland,,1966,69.73,
+Scotland,,1967,70.65,
+Scotland,,1968,70.18,
+Scotland,,1969,70.17,
+Scotland,,1970,70.34,
+Scotland,,1971,70.82,
+Scotland,,1972,70.55,
+Scotland,,1973,70.65,
+Scotland,,1974,70.74,
+Scotland,,1975,71.22,
+Scotland,,1976,71.21,
+Scotland,,1977,71.65,
+Scotland,,1978,71.45,
+Scotland,,1979,71.52,
+Scotland,,1980,72.15,
+Scotland,,1981,72.34,
+Scotland,,1982,72.34,
+Scotland,,1983,72.77,
+Scotland,,1984,72.99,
+Scotland,,1985,73.03,
+Scotland,,1986,73.26,
+Scotland,,1987,73.6,
+Scotland,,1988,73.69,
+Scotland,,1989,73.5,
+Scotland,,1990,74.12,
+Scotland,,1991,74.35,
+Scotland,,1992,74.54,
+Scotland,,1993,74.26,
+Scotland,,1994,75.02,
+Scotland,,1995,74.98,
+Scotland,,1996,74.99,
+Scotland,,1997,75.42,
+Scotland,,1998,75.5,
+Scotland,,1999,75.54,
+Scotland,,2000,75.98,
+Scotland,,2001,76.17,
+Scotland,,2002,76.16,
+Scotland,,2003,76.36,
+Scotland,,2004,76.88,
+Scotland,,2005,77.14,
+Scotland,,2006,77.36,
+Scotland,,2007,77.38,
+Scotland,,2008,77.65,
+Scotland,,2009,78.21,
+Scotland,,2010,78.47,
+Scotland,,2011,78.7,
+Scotland,,2012,78.84,
+Scotland,,2013,79.08,
+Scotland,,2014,79.36,
+Scotland,,2015,79.03,
+Scotland,,2016,79.05,
+Scotland,,2017,79.17,
+Scotland,,2018,79.07,
+Scotland,,2019,79.23,
+Scotland,,2020,78.45,
+Scotland,,2021,78.47,
+Scotland,,2022,79.01,
+Slovakia,SVK,1950,60.77,
+Slovakia,SVK,1951,61.14,
+Slovakia,SVK,1952,64.29,
+Slovakia,SVK,1953,65.64,
+Slovakia,SVK,1954,66.68,
+Slovakia,SVK,1955,67.84,
+Slovakia,SVK,1956,68.37,
+Slovakia,SVK,1957,67.46,
+Slovakia,SVK,1958,69.36,
+Slovakia,SVK,1959,69.01,
+Slovakia,SVK,1960,70.34,
+Slovakia,SVK,1961,70.79,
+Slovakia,SVK,1962,70.33,
+Slovakia,SVK,1963,70.69,
+Slovakia,SVK,1964,71.08,
+Slovakia,SVK,1965,70.28,
+Slovakia,SVK,1966,70.42,
+Slovakia,SVK,1967,70.97,
+Slovakia,SVK,1968,70.46,
+Slovakia,SVK,1969,69.81,
+Slovakia,SVK,1970,69.72,
+Slovakia,SVK,1971,69.86,
+Slovakia,SVK,1972,70.3,
+Slovakia,SVK,1973,70.03,
+Slovakia,SVK,1974,70.18,
+Slovakia,SVK,1975,70.3,
+Slovakia,SVK,1976,70.47,
+Slovakia,SVK,1977,70.41,
+Slovakia,SVK,1978,70.42,
+Slovakia,SVK,1979,70.74,
+Slovakia,SVK,1980,70.38,
+Slovakia,SVK,1981,70.62,
+Slovakia,SVK,1982,70.76,
+Slovakia,SVK,1983,70.48,
+Slovakia,SVK,1984,70.71,
+Slovakia,SVK,1985,70.72,
+Slovakia,SVK,1986,70.89,
+Slovakia,SVK,1987,71.07,
+Slovakia,SVK,1988,71.13,
+Slovakia,SVK,1989,70.94,
+Slovakia,SVK,1990,70.82,
+Slovakia,SVK,1991,70.92,
+Slovakia,SVK,1992,71.37,
+Slovakia,SVK,1993,71.88,
+Slovakia,SVK,1994,72.33,
+Slovakia,SVK,1995,72.25,
+Slovakia,SVK,1996,72.74,
+Slovakia,SVK,1997,72.69,
+Slovakia,SVK,1998,72.57,
+Slovakia,SVK,1999,72.97,
+Slovakia,SVK,2000,73.14,
+Slovakia,SVK,2001,73.57,
+Slovakia,SVK,2002,73.76,
+Slovakia,SVK,2003,73.82,
+Slovakia,SVK,2004,74.22,
+Slovakia,SVK,2005,74.16,
+Slovakia,SVK,2006,74.42,
+Slovakia,SVK,2007,74.49,
+Slovakia,SVK,2008,74.86,
+Slovakia,SVK,2009,75.22,
+Slovakia,SVK,2010,75.5,
+Slovakia,SVK,2011,76.01,
+Slovakia,SVK,2012,76.18,
+Slovakia,SVK,2013,76.52,
+Slovakia,SVK,2014,76.86,
+Slovakia,SVK,2015,76.65,
+Slovakia,SVK,2016,77.22,
+Slovakia,SVK,2017,77.22,
+Slovakia,SVK,2018,77.26,
+Slovakia,SVK,2019,77.68,
+Slovenia,SVN,1983,70.86,
+Slovenia,SVN,1984,71.31,
+Slovenia,SVN,1985,71.74,
+Slovenia,SVN,1986,72.27,
+Slovenia,SVN,1987,72.21,
+Slovenia,SVN,1988,72.89,
+Slovenia,SVN,1989,73.34,
+Slovenia,SVN,1990,73.83,
+Slovenia,SVN,1991,73.49,
+Slovenia,SVN,1992,73.61,
+Slovenia,SVN,1993,73.5,
+Slovenia,SVN,1994,73.94,
+Slovenia,SVN,1995,74.63,
+Slovenia,SVN,1996,75.07,
+Slovenia,SVN,1997,75.1,
+Slovenia,SVN,1998,75.21,
+Slovenia,SVN,1999,75.58,
+Slovenia,SVN,2000,76.04,
+Slovenia,SVN,2001,76.31,
+Slovenia,SVN,2002,76.56,
+Slovenia,SVN,2003,76.45,
+Slovenia,SVN,2004,77.19,
+Slovenia,SVN,2005,77.5,
+Slovenia,SVN,2006,78.12,
+Slovenia,SVN,2007,78.23,
+Slovenia,SVN,2008,78.88,
+Slovenia,SVN,2009,79.06,
+Slovenia,SVN,2010,79.5,
+Slovenia,SVN,2011,79.8,
+Slovenia,SVN,2012,79.99,
+Slovenia,SVN,2013,80.12,
+Slovenia,SVN,2014,80.86,
+Slovenia,SVN,2015,80.58,
+Slovenia,SVN,2016,80.92,
+Slovenia,SVN,2017,80.92,
+Slovenia,SVN,2018,81.17,
+Slovenia,SVN,2019,81.34,
+South Korea,KOR,2003,77.34,
+South Korea,KOR,2004,77.85,
+South Korea,KOR,2005,78.34,
+South Korea,KOR,2006,78.9,
+South Korea,KOR,2007,79.27,
+South Korea,KOR,2008,79.8,
+South Korea,KOR,2009,80.24,
+South Korea,KOR,2010,80.4,
+South Korea,KOR,2011,80.84,
+South Korea,KOR,2012,81.01,
+South Korea,KOR,2013,81.53,
+South Korea,KOR,2014,81.97,
+South Korea,KOR,2015,82.21,
+South Korea,KOR,2016,82.52,
+South Korea,KOR,2017,82.87,
+South Korea,KOR,2018,82.9,
+South Korea,KOR,2019,83.44,
+South Korea,KOR,2020,83.63,
+South Korea,KOR,2021,83.72,
+South Korea,KOR,2022,82.79,
+South Korea,KOR,2023,83.57,
+Spain,ESP,1908,41.41,48.43
+Spain,ESP,1909,41,45.74
+Spain,ESP,1910,40.84,45.57
+Spain,ESP,1911,39.79,49.59
+Spain,ESP,1912,43.43,50.89
+Spain,ESP,1913,42.61,50.12
+Spain,ESP,1914,42.78,50.51
+Spain,ESP,1915,43.09,50.42
+Spain,ESP,1916,43.91,50.58
+Spain,ESP,1917,42.6,50.25
+Spain,ESP,1918,30.36,49.89
+Spain,ESP,1919,40.95,51.22
+Spain,ESP,1920,39.38,49.51
+Spain,ESP,1921,41.99,54.74
+Spain,ESP,1922,44.2,56.05
+Spain,ESP,1923,44.75,56.52
+Spain,ESP,1924,46.3,57.66
+Spain,ESP,1925,46.98,58.54
+Spain,ESP,1926,47.7,59.63
+Spain,ESP,1927,48.48,60.21
+Spain,ESP,1928,48.62,61.04
+Spain,ESP,1929,49.49,60.29
+Spain,ESP,1930,49.25,59.97
+Spain,ESP,1931,49.28,62.81
+Spain,ESP,1932,51.14,63.71
+Spain,ESP,1933,51.6,
+Spain,ESP,1934,52.22,
+Spain,ESP,1935,52.65,
+Spain,ESP,1936,51.01,
+Spain,ESP,1937,47.32,
+Spain,ESP,1938,47.6,
+Spain,ESP,1939,47.23,
+Spain,ESP,1940,48.63,
+Spain,ESP,1941,47.25,
+Spain,ESP,1942,52.26,
+Spain,ESP,1943,54.89,
+Spain,ESP,1944,56.27,
+Spain,ESP,1945,57.79,
+Spain,ESP,1946,57.59,
+Spain,ESP,1947,59.13,
+Spain,ESP,1948,61.31,
+Spain,ESP,1949,60.94,
+Spain,ESP,1950,61.78,
+Spain,ESP,1951,61.5,
+Spain,ESP,1952,64.85,
+Spain,ESP,1953,65.76,
+Spain,ESP,1954,66.93,
+Spain,ESP,1955,66.73,
+Spain,ESP,1956,66.76,
+Spain,ESP,1957,66.58,
+Spain,ESP,1958,68.81,
+Spain,ESP,1959,68.72,
+Spain,ESP,1960,69.23,
+Spain,ESP,1961,69.59,
+Spain,ESP,1962,69.63,
+Spain,ESP,1963,69.79,
+Spain,ESP,1964,70.51,
+Spain,ESP,1965,70.93,
+Spain,ESP,1966,71.18,
+Spain,ESP,1967,71.37,
+Spain,ESP,1968,71.67,
+Spain,ESP,1969,71.15,
+Spain,ESP,1970,72.15,
+Spain,ESP,1971,71.74,
+Spain,ESP,1972,72.95,
+Spain,ESP,1973,72.73,
+Spain,ESP,1974,73.09,
+Spain,ESP,1975,73.49,
+Spain,ESP,1976,73.81,
+Spain,ESP,1977,74.31,
+Spain,ESP,1978,74.5,
+Spain,ESP,1979,74.99,
+Spain,ESP,1980,75.53,
+Spain,ESP,1981,75.7,
+Spain,ESP,1982,76.32,
+Spain,ESP,1983,76.1,
+Spain,ESP,1984,76.48,
+Spain,ESP,1985,76.41,
+Spain,ESP,1986,76.71,
+Spain,ESP,1987,76.96,
+Spain,ESP,1988,76.95,
+Spain,ESP,1989,77,
+Spain,ESP,1990,77,
+Spain,ESP,1991,77.13,
+Spain,ESP,1992,77.59,
+Spain,ESP,1993,77.73,
+Spain,ESP,1994,78.11,
+Spain,ESP,1995,78.2,
+Spain,ESP,1996,78.34,
+Spain,ESP,1997,78.85,
+Spain,ESP,1998,78.94,
+Spain,ESP,1999,78.95,
+Spain,ESP,2000,79.42,
+Spain,ESP,2001,79.74,
+Spain,ESP,2002,79.82,
+Spain,ESP,2003,79.75,
+Spain,ESP,2004,80.33,
+Spain,ESP,2005,80.32,
+Spain,ESP,2006,80.96,
+Spain,ESP,2007,80.97,
+Spain,ESP,2008,81.28,
+Spain,ESP,2009,81.63,
+Spain,ESP,2010,82.01,
+Spain,ESP,2011,82.19,
+Spain,ESP,2012,82.2,
+Spain,ESP,2013,82.7,
+Spain,ESP,2014,82.83,
+Spain,ESP,2015,82.61,
+Spain,ESP,2016,83,
+Spain,ESP,2017,82.99,
+Spain,ESP,2018,83.1,
+Spain,ESP,2019,83.49,
+Spain,ESP,2020,82.25,
+Spain,ESP,2021,83,
+Spain,ESP,2022,83.05,
+Spain,ESP,2023,83.75,
+Sweden,SWE,1751,38.43,34.22
+Sweden,SWE,1752,35.41,35.47
+Sweden,SWE,1753,39.74,35.16
+Sweden,SWE,1754,37.5,34.43
+Sweden,SWE,1755,36.58,34.21
+Sweden,SWE,1756,36.25,34.16
+Sweden,SWE,1757,33.81,35.75
+Sweden,SWE,1758,32.92,35.63
+Sweden,SWE,1759,38.21,36.48
+Sweden,SWE,1760,39.71,34.96
+Sweden,SWE,1761,37.83,34.18
+Sweden,SWE,1762,32.49,33.39
+Sweden,SWE,1763,30.46,34.46
+Sweden,SWE,1764,36.3,34.64
+Sweden,SWE,1765,35.99,34.82
+Sweden,SWE,1766,38.11,34.49
+Sweden,SWE,1767,38.23,32.52
+Sweden,SWE,1768,35.05,33.53
+Sweden,SWE,1769,34.71,34.34
+Sweden,SWE,1770,36.66,34.57
+Sweden,SWE,1771,35.43,33.34
+Sweden,SWE,1772,27.73,32.41
+Sweden,SWE,1773,17.99,37.74
+Sweden,SWE,1774,40.58,35.29
+Sweden,SWE,1775,38.15,35.96
+Sweden,SWE,1776,41.51,36.55
+Sweden,SWE,1777,38.13,34.89
+Sweden,SWE,1778,35.56,34.7
+Sweden,SWE,1779,32.82,35.62
+Sweden,SWE,1780,42.68,36.21
+Sweden,SWE,1781,37.81,36.05
+Sweden,SWE,1782,36.66,35.71
+Sweden,SWE,1783,33.72,36.7
+Sweden,SWE,1784,31.44,36.99
+Sweden,SWE,1785,33.48,37.83
+Sweden,SWE,1786,37.9,37.22
+Sweden,SWE,1787,40.27,37.99
+Sweden,SWE,1788,36.82,36.22
+Sweden,SWE,1789,31.23,36.89
+Sweden,SWE,1790,33.6,38.25
+Sweden,SWE,1791,38.45,38.41
+Sweden,SWE,1792,39.84,37.36
+Sweden,SWE,1793,39.64,38.49
+Sweden,SWE,1794,40.41,37.48
+Sweden,SWE,1795,36.55,37.94
+Sweden,SWE,1796,38.88,37.58
+Sweden,SWE,1797,40.37,38.03
+Sweden,SWE,1798,41.34,37.72
+Sweden,SWE,1799,39.34,36.52
+Sweden,SWE,1800,32.19,37.79
+Sweden,SWE,1801,36.91,38.86
+Sweden,SWE,1802,40.18,39.27
+Sweden,SWE,1803,40.24,38.46
+Sweden,SWE,1804,39.7,38.25
+Sweden,SWE,1805,41.05,37.84
+Sweden,SWE,1806,36.2,38.03
+Sweden,SWE,1807,38.77,37.85
+Sweden,SWE,1808,30.19,36.24
+Sweden,SWE,1809,26.91,39.19
+Sweden,SWE,1810,31.99,39.11
+Sweden,SWE,1811,34.59,39.88
+Sweden,SWE,1812,35.11,40.26
+Sweden,SWE,1813,36.5,41.44
+Sweden,SWE,1814,38.6,42.43
+Sweden,SWE,1815,40.45,41.99
+Sweden,SWE,1816,41.78,42.39
+Sweden,SWE,1817,40.31,43.11
+Sweden,SWE,1818,40.02,42.7
+Sweden,SWE,1819,36.97,43.15
+Sweden,SWE,1820,40.24,44.3
+Sweden,SWE,1821,38.17,44.77
+Sweden,SWE,1822,42.77,45.8
+Sweden,SWE,1823,45.2,45.75
+Sweden,SWE,1824,44.98,46.02
+Sweden,SWE,1825,45.26,44.98
+Sweden,SWE,1826,43.11,44.47
+Sweden,SWE,1827,42.66,44.67
+Sweden,SWE,1828,37.76,43.86
+Sweden,SWE,1829,36.21,44.1
+Sweden,SWE,1830,40.98,44.64
+Sweden,SWE,1831,39,45.18
+Sweden,SWE,1832,40.85,46.67
+Sweden,SWE,1833,42.52,45.94
+Sweden,SWE,1834,38.55,46.58
+Sweden,SWE,1835,47.15,47.08
+Sweden,SWE,1836,45.15,45.4
+Sweden,SWE,1837,39.6,44.99
+Sweden,SWE,1838,40,46.11
+Sweden,SWE,1839,39.87,47.09
+Sweden,SWE,1840,43.98,46.98
+Sweden,SWE,1841,45.14,46.8
+Sweden,SWE,1842,42.8,46.72
+Sweden,SWE,1843,42.83,47.21
+Sweden,SWE,1844,44.01,46.93
+Sweden,SWE,1845,45.99,46.12
+Sweden,SWE,1846,42.04,45.66
+Sweden,SWE,1847,40.14,46.47
+Sweden,SWE,1848,45.13,47.18
+Sweden,SWE,1849,44.5,46.7
+Sweden,SWE,1850,44.69,46.1
+Sweden,SWE,1851,43.62,45.39
+Sweden,SWE,1852,41.35,45.18
+Sweden,SWE,1853,39.99,46.45
+Sweden,SWE,1854,44.53,47.07
+Sweden,SWE,1855,43.06,46.68
+Sweden,SWE,1856,42.12,46.57
+Sweden,SWE,1857,34.62,47.07
+Sweden,SWE,1858,41.99,47.74
+Sweden,SWE,1859,44.26,48.03
+Sweden,SWE,1860,48.46,47.56
+Sweden,SWE,1861,47.19,47.46
+Sweden,SWE,1862,42.7,48.53
+Sweden,SWE,1863,45.5,48.58
+Sweden,SWE,1864,44.81,48.83
+Sweden,SWE,1865,45.45,48.88
+Sweden,SWE,1866,44.84,48.85
+Sweden,SWE,1867,46.27,47.62
+Sweden,SWE,1868,43.32,47.47
+Sweden,SWE,1869,41.01,49.64
+Sweden,SWE,1870,45.02,50.14
+Sweden,SWE,1871,48.91,50.29
+Sweden,SWE,1872,49.94,49.14
+Sweden,SWE,1873,48.56,48.65
+Sweden,SWE,1874,44.15,47.97
+Sweden,SWE,1875,44.47,48.4
+Sweden,SWE,1876,44.77,49.3
+Sweden,SWE,1877,46.06,50.24
+Sweden,SWE,1878,46.8,50.64
+Sweden,SWE,1879,49.02,51.56
+Sweden,SWE,1880,47.67,51.51
+Sweden,SWE,1881,48.42,51.91
+Sweden,SWE,1882,48.41,52.01
+Sweden,SWE,1883,48.82,52.58
+Sweden,SWE,1884,49,53.07
+Sweden,SWE,1885,48.83,53.46
+Sweden,SWE,1886,50.52,53.87
+Sweden,SWE,1887,51.39,54.42
+Sweden,SWE,1888,52.25,54.62
+Sweden,SWE,1889,52.23,54.56
+Sweden,SWE,1890,50.44,54.84
+Sweden,SWE,1891,51.02,55.27
+Sweden,SWE,1892,50.47,56.15
+Sweden,SWE,1893,51.16,56.8
+Sweden,SWE,1894,51.89,56.93
+Sweden,SWE,1895,54.01,57.19
+Sweden,SWE,1896,53.34,57.44
+Sweden,SWE,1897,54,58.05
+Sweden,SWE,1898,54.59,57.93
+Sweden,SWE,1899,50.9,58.11
+Sweden,SWE,1900,52.23,58.83
+Sweden,SWE,1901,52.88,59.83
+Sweden,SWE,1902,54.7,61.08
+Sweden,SWE,1903,54.98,61.72
+Sweden,SWE,1904,55.27,62.29
+Sweden,SWE,1905,54.42,62.7
+Sweden,SWE,1906,56.56,63.15
+Sweden,SWE,1907,56.87,63.83
+Sweden,SWE,1908,56.33,63.85
+Sweden,SWE,1909,58.34,64.84
+Sweden,SWE,1910,57.74,64.8
+Sweden,SWE,1911,57.99,65.43
+Sweden,SWE,1912,57.73,65.85
+Sweden,SWE,1913,58.59,66.06
+Sweden,SWE,1914,58.15,65.73
+Sweden,SWE,1915,57.1,66.38
+Sweden,SWE,1916,58.12,67.3
+Sweden,SWE,1917,58.8,67.88
+Sweden,SWE,1918,49.72,67.82
+Sweden,SWE,1919,56.42,68.9
+Sweden,SWE,1920,58.91,69.1
+Sweden,SWE,1921,60.98,69.99
+Sweden,SWE,1922,61.07,70.1
+Sweden,SWE,1923,62.91,70.61
+Sweden,SWE,1924,61.94,71.17
+Sweden,SWE,1925,62.51,71.38
+Sweden,SWE,1926,62.74,71.53
+Sweden,SWE,1927,61.56,71.86
+Sweden,SWE,1928,62.2,72.4
+Sweden,SWE,1929,62.29,72.85
+Sweden,SWE,1930,63.17,72.73
+Sweden,SWE,1931,62.71,73.61
+Sweden,SWE,1932,63.93,73.93
+Sweden,SWE,1933,64.8,74.5
+Sweden,SWE,1934,64.96,
+Sweden,SWE,1935,64.86,
+Sweden,SWE,1936,64.6,
+Sweden,SWE,1937,64.61,
+Sweden,SWE,1938,65.54,
+Sweden,SWE,1939,66.38,
+Sweden,SWE,1940,66.74,
+Sweden,SWE,1941,66.97,
+Sweden,SWE,1942,68.96,
+Sweden,SWE,1943,68.7,
+Sweden,SWE,1944,67.72,
+Sweden,SWE,1945,68.33,
+Sweden,SWE,1946,69.51,
+Sweden,SWE,1947,69.48,
+Sweden,SWE,1948,70.73,
+Sweden,SWE,1949,70.81,
+Sweden,SWE,1950,71.14,
+Sweden,SWE,1951,71.36,
+Sweden,SWE,1952,71.84,
+Sweden,SWE,1953,71.91,
+Sweden,SWE,1954,72.35,
+Sweden,SWE,1955,72.59,
+Sweden,SWE,1956,72.66,
+Sweden,SWE,1957,72.49,
+Sweden,SWE,1958,73.15,
+Sweden,SWE,1959,73.37,
+Sweden,SWE,1960,73.04,
+Sweden,SWE,1961,73.49,
+Sweden,SWE,1962,73.35,
+Sweden,SWE,1963,73.53,
+Sweden,SWE,1964,73.7,
+Sweden,SWE,1965,73.87,
+Sweden,SWE,1966,74.1,
+Sweden,SWE,1967,74.15,
+Sweden,SWE,1968,74,
+Sweden,SWE,1969,74.11,
+Sweden,SWE,1970,74.66,
+Sweden,SWE,1971,74.6,
+Sweden,SWE,1972,74.71,
+Sweden,SWE,1973,74.86,
+Sweden,SWE,1974,74.97,
+Sweden,SWE,1975,74.98,
+Sweden,SWE,1976,74.97,
+Sweden,SWE,1977,75.39,
+Sweden,SWE,1978,75.48,
+Sweden,SWE,1979,75.52,
+Sweden,SWE,1980,75.74,
+Sweden,SWE,1981,76.04,
+Sweden,SWE,1982,76.35,
+Sweden,SWE,1983,76.58,
+Sweden,SWE,1984,76.84,
+Sweden,SWE,1985,76.69,
+Sweden,SWE,1986,76.95,
+Sweden,SWE,1987,77.11,
+Sweden,SWE,1988,77,
+Sweden,SWE,1989,77.65,
+Sweden,SWE,1990,77.59,
+Sweden,SWE,1991,77.73,
+Sweden,SWE,1992,78.07,
+Sweden,SWE,1993,78.14,
+Sweden,SWE,1994,78.75,
+Sweden,SWE,1995,78.82,
+Sweden,SWE,1996,79.04,
+Sweden,SWE,1997,79.27,
+Sweden,SWE,1998,79.42,
+Sweden,SWE,1999,79.51,
+Sweden,SWE,2000,79.74,
+Sweden,SWE,2001,79.84,
+Sweden,SWE,2002,79.94,
+Sweden,SWE,2003,80.19,
+Sweden,SWE,2004,80.55,
+Sweden,SWE,2005,80.62,
+Sweden,SWE,2006,80.83,
+Sweden,SWE,2007,80.97,
+Sweden,SWE,2008,81.14,
+Sweden,SWE,2009,81.37,
+Sweden,SWE,2010,81.52,
+Sweden,SWE,2011,81.76,
+Sweden,SWE,2012,81.73,
+Sweden,SWE,2013,81.94,
+Sweden,SWE,2014,82.22,
+Sweden,SWE,2015,82.19,
+Sweden,SWE,2016,82.34,
+Sweden,SWE,2017,82.44,
+Sweden,SWE,2018,82.53,
+Sweden,SWE,2019,83.05,
+Sweden,SWE,2020,82.43,
+Sweden,SWE,2021,83.02,
+Sweden,SWE,2022,83.05,
+Sweden,SWE,2023,83.25,
+Sweden,SWE,2024,83.83,
+Switzerland,CHE,1876,40.19,45.03
+Switzerland,CHE,1877,39.99,46.18
+Switzerland,CHE,1878,40.57,46.22
+Switzerland,CHE,1879,41.83,46.44
+Switzerland,CHE,1880,42.47,47.81
+Switzerland,CHE,1881,41.94,49.05
+Switzerland,CHE,1882,43.02,49.94
+Switzerland,CHE,1883,45.02,50.26
+Switzerland,CHE,1884,45.07,50.34
+Switzerland,CHE,1885,43.92,50.38
+Switzerland,CHE,1886,44.75,51.1
+Switzerland,CHE,1887,45.46,50.81
+Switzerland,CHE,1888,46,51.68
+Switzerland,CHE,1889,45.18,52.14
+Switzerland,CHE,1890,45.01,52.16
+Switzerland,CHE,1891,44.81,53.39
+Switzerland,CHE,1892,47.2,53.71
+Switzerland,CHE,1893,46.08,53.89
+Switzerland,CHE,1894,45.85,54.5
+Switzerland,CHE,1895,46.93,54.7
+Switzerland,CHE,1896,48.87,55.85
+Switzerland,CHE,1897,49.1,55.79
+Switzerland,CHE,1898,48.26,55.5
+Switzerland,CHE,1899,49.31,56.18
+Switzerland,CHE,1900,47.59,56.51
+Switzerland,CHE,1901,48.97,58.08
+Switzerland,CHE,1902,50.44,58.12
+Switzerland,CHE,1903,50.08,58.41
+Switzerland,CHE,1904,49.23,58.78
+Switzerland,CHE,1905,49.69,59.76
+Switzerland,CHE,1906,50.75,60.31
+Switzerland,CHE,1907,51.19,61.26
+Switzerland,CHE,1908,52.29,61.89
+Switzerland,CHE,1909,51.65,61.85
+Switzerland,CHE,1910,52.93,62.8
+Switzerland,CHE,1911,51.77,62.71
+Switzerland,CHE,1912,54.4,64.19
+Switzerland,CHE,1913,54.23,64.8
+Switzerland,CHE,1914,55.11,65.43
+Switzerland,CHE,1915,55.91,65.85
+Switzerland,CHE,1916,56.52,66.66
+Switzerland,CHE,1917,55.77,66.71
+Switzerland,CHE,1918,46.3,66.64
+Switzerland,CHE,1919,54.83,67.16
+Switzerland,CHE,1920,54.5,68.35
+Switzerland,CHE,1921,57.77,69.41
+Switzerland,CHE,1922,58.48,69.87
+Switzerland,CHE,1923,59.98,70.71
+Switzerland,CHE,1924,59.47,71.06
+Switzerland,CHE,1925,59.91,71.64
+Switzerland,CHE,1926,60.59,71.83
+Switzerland,CHE,1927,60.09,72.4
+Switzerland,CHE,1928,60.43,72.88
+Switzerland,CHE,1929,60.14,73.42
+Switzerland,CHE,1930,61.4,73.71
+Switzerland,CHE,1931,61.23,74.28
+Switzerland,CHE,1932,61.2,74.42
+Switzerland,CHE,1933,62.37,
+Switzerland,CHE,1934,62.83,
+Switzerland,CHE,1935,62.13,
+Switzerland,CHE,1936,63.14,
+Switzerland,CHE,1937,63.48,
+Switzerland,CHE,1938,63.83,
+Switzerland,CHE,1939,63.98,
+Switzerland,CHE,1940,63.54,
+Switzerland,CHE,1941,64.91,
+Switzerland,CHE,1942,65.63,
+Switzerland,CHE,1943,65.82,
+Switzerland,CHE,1944,64.86,
+Switzerland,CHE,1945,65.38,
+Switzerland,CHE,1946,66.06,
+Switzerland,CHE,1947,66.23,
+Switzerland,CHE,1948,67.31,
+Switzerland,CHE,1949,67.95,
+Switzerland,CHE,1950,68.91,
+Switzerland,CHE,1951,68.69,
+Switzerland,CHE,1952,69.59,
+Switzerland,CHE,1953,69.52,
+Switzerland,CHE,1954,69.98,
+Switzerland,CHE,1955,70.07,
+Switzerland,CHE,1956,70.2,
+Switzerland,CHE,1957,70.54,
+Switzerland,CHE,1958,71.29,
+Switzerland,CHE,1959,71.45,
+Switzerland,CHE,1960,71.41,
+Switzerland,CHE,1961,71.74,
+Switzerland,CHE,1962,71.3,
+Switzerland,CHE,1963,71.29,
+Switzerland,CHE,1964,72.18,
+Switzerland,CHE,1965,72.32,
+Switzerland,CHE,1966,72.45,
+Switzerland,CHE,1967,72.74,
+Switzerland,CHE,1968,72.7,
+Switzerland,CHE,1969,72.72,
+Switzerland,CHE,1970,73.12,
+Switzerland,CHE,1971,73.24,
+Switzerland,CHE,1972,73.76,
+Switzerland,CHE,1973,74.06,
+Switzerland,CHE,1974,74.4,
+Switzerland,CHE,1975,74.79,
+Switzerland,CHE,1976,74.91,
+Switzerland,CHE,1977,75.36,
+Switzerland,CHE,1978,75.31,
+Switzerland,CHE,1979,75.61,
+Switzerland,CHE,1980,75.59,
+Switzerland,CHE,1981,75.82,
+Switzerland,CHE,1982,76.16,
+Switzerland,CHE,1983,76.16,
+Switzerland,CHE,1984,76.75,
+Switzerland,CHE,1985,76.88,
+Switzerland,CHE,1986,77.04,
+Switzerland,CHE,1987,77.34,
+Switzerland,CHE,1988,77.37,
+Switzerland,CHE,1989,77.56,
+Switzerland,CHE,1990,77.38,
+Switzerland,CHE,1991,77.65,
+Switzerland,CHE,1992,77.95,
+Switzerland,CHE,1993,78.24,
+Switzerland,CHE,1994,78.5,
+Switzerland,CHE,1995,78.57,
+Switzerland,CHE,1996,79.05,
+Switzerland,CHE,1997,79.23,
+Switzerland,CHE,1998,79.48,
+Switzerland,CHE,1999,79.73,
+Switzerland,CHE,2000,79.84,
+Switzerland,CHE,2001,80.25,
+Switzerland,CHE,2002,80.44,
+Switzerland,CHE,2003,80.54,
+Switzerland,CHE,2004,81.05,
+Switzerland,CHE,2005,81.24,
+Switzerland,CHE,2006,81.55,
+Switzerland,CHE,2007,81.7,
+Switzerland,CHE,2008,81.97,
+Switzerland,CHE,2009,81.99,
+Switzerland,CHE,2010,82.29,
+Switzerland,CHE,2011,82.58,
+Switzerland,CHE,2012,82.62,
+Switzerland,CHE,2013,82.69,
+Switzerland,CHE,2014,83.08,
+Switzerland,CHE,2015,82.85,
+Switzerland,CHE,2016,83.45,
+Switzerland,CHE,2017,83.42,
+Switzerland,CHE,2018,83.57,
+Switzerland,CHE,2019,83.78,
+Switzerland,CHE,2020,83.06,
+Switzerland,CHE,2021,83.65,
+Switzerland,CHE,2022,83.53,
+Switzerland,CHE,2023,84.06,
+Taiwan,TWN,1970,68.66,
+Taiwan,TWN,1971,69.16,
+Taiwan,TWN,1972,69.61,
+Taiwan,TWN,1973,69.78,
+Taiwan,TWN,1974,70.22,
+Taiwan,TWN,1975,70.6,
+Taiwan,TWN,1976,70.97,
+Taiwan,TWN,1977,71.04,
+Taiwan,TWN,1978,71.53,
+Taiwan,TWN,1979,71.58,
+Taiwan,TWN,1980,71.76,
+Taiwan,TWN,1981,71.83,
+Taiwan,TWN,1982,72.32,
+Taiwan,TWN,1983,72.29,
+Taiwan,TWN,1984,72.94,
+Taiwan,TWN,1985,73.11,
+Taiwan,TWN,1986,73.23,
+Taiwan,TWN,1987,73.5,
+Taiwan,TWN,1988,73.28,
+Taiwan,TWN,1989,73.54,
+Taiwan,TWN,1990,73.79,
+Taiwan,TWN,1991,74.26,
+Taiwan,TWN,1992,74.24,
+Taiwan,TWN,1993,74.56,
+Taiwan,TWN,1994,74.71,
+Taiwan,TWN,1995,74.51,
+Taiwan,TWN,1996,74.69,
+Taiwan,TWN,1997,75.23,
+Taiwan,TWN,1998,75.43,
+Taiwan,TWN,1999,75.54,
+Taiwan,TWN,2000,76.1,
+Taiwan,TWN,2001,76.41,
+Taiwan,TWN,2002,76.84,
+Taiwan,TWN,2003,77.03,
+Taiwan,TWN,2004,77.13,
+Taiwan,TWN,2005,77.13,
+Taiwan,TWN,2006,77.84,
+Taiwan,TWN,2007,78.03,
+Taiwan,TWN,2008,78.25,
+Taiwan,TWN,2009,78.71,
+Taiwan,TWN,2010,79.05,
+Taiwan,TWN,2011,78.87,
+Taiwan,TWN,2012,79.19,
+Taiwan,TWN,2013,79.63,
+Taiwan,TWN,2014,79.51,
+Taiwan,TWN,2015,79.84,
+Taiwan,TWN,2016,79.67,
+Taiwan,TWN,2017,80.09,
+Taiwan,TWN,2018,80.37,
+Taiwan,TWN,2019,80.56,
+Taiwan,TWN,2020,81.07,
+Taiwan,TWN,2021,80.68,
+Taiwan,TWN,2022,79.81,
+Taiwan,TWN,2023,80.12,
+Ukraine,UKR,1959,69.45,
+Ukraine,UKR,1960,71.08,
+Ukraine,UKR,1961,71.37,
+Ukraine,UKR,1962,70.78,
+Ukraine,UKR,1963,71.42,
+Ukraine,UKR,1964,72.22,
+Ukraine,UKR,1965,71.69,
+Ukraine,UKR,1966,71.95,
+Ukraine,UKR,1967,71.55,
+Ukraine,UKR,1968,71.66,
+Ukraine,UKR,1969,71.04,
+Ukraine,UKR,1970,70.94,
+Ukraine,UKR,1971,71.18,
+Ukraine,UKR,1972,70.95,
+Ukraine,UKR,1973,71.11,
+Ukraine,UKR,1974,71,
+Ukraine,UKR,1975,70.34,
+Ukraine,UKR,1976,70.38,
+Ukraine,UKR,1977,70.07,
+Ukraine,UKR,1978,69.99,
+Ukraine,UKR,1979,69.72,
+Ukraine,UKR,1980,69.68,
+Ukraine,UKR,1981,69.74,
+Ukraine,UKR,1982,69.94,
+Ukraine,UKR,1983,69.94,
+Ukraine,UKR,1984,69.64,
+Ukraine,UKR,1985,69.94,
+Ukraine,UKR,1986,71.3,
+Ukraine,UKR,1987,71.09,
+Ukraine,UKR,1988,70.98,
+Ukraine,UKR,1989,70.92,
+Ukraine,UKR,1990,70.46,
+Ukraine,UKR,1991,69.62,
+Ukraine,UKR,1992,69.01,
+Ukraine,UKR,1993,68.31,
+Ukraine,UKR,1994,67.67,
+Ukraine,UKR,1995,66.76,
+Ukraine,UKR,1996,67.06,
+Ukraine,UKR,1997,67.65,
+Ukraine,UKR,1998,68.49,
+Ukraine,UKR,1999,68.07,
+Ukraine,UKR,2000,67.71,
+Ukraine,UKR,2001,67.86,
+Ukraine,UKR,2002,67.74,
+Ukraine,UKR,2003,67.79,
+Ukraine,UKR,2004,67.68,
+Ukraine,UKR,2005,67.27,
+Ukraine,UKR,2006,67.93,
+Ukraine,UKR,2007,67.59,
+Ukraine,UKR,2008,67.97,
+Ukraine,UKR,2009,69.63,
+Ukraine,UKR,2010,70.27,
+Ukraine,UKR,2011,70.99,
+Ukraine,UKR,2012,71.13,
+Ukraine,UKR,2013,71.35,
+United Kingdom,GBR,1922,57.02,
+United Kingdom,GBR,1923,59.3,
+United Kingdom,GBR,1924,58.07,
+United Kingdom,GBR,1925,58.42,
+United Kingdom,GBR,1926,59.56,
+United Kingdom,GBR,1927,58.95,
+United Kingdom,GBR,1928,59.91,
+United Kingdom,GBR,1929,57.62,
+United Kingdom,GBR,1930,60.77,
+United Kingdom,GBR,1931,60,
+United Kingdom,GBR,1932,60.52,
+United Kingdom,GBR,1933,60.58,
+United Kingdom,GBR,1934,61.3,
+United Kingdom,GBR,1935,61.96,
+United Kingdom,GBR,1936,61.75,
+United Kingdom,GBR,1937,61.79,
+United Kingdom,GBR,1938,63.23,
+United Kingdom,GBR,1939,63.61,
+United Kingdom,GBR,1940,60.9,
+United Kingdom,GBR,1941,61.29,
+United Kingdom,GBR,1942,63.98,
+United Kingdom,GBR,1943,64.04,
+United Kingdom,GBR,1944,64.8,
+United Kingdom,GBR,1945,65.76,
+United Kingdom,GBR,1946,66.24,
+United Kingdom,GBR,1947,66.44,
+United Kingdom,GBR,1948,68.37,
+United Kingdom,GBR,1949,68.11,
+United Kingdom,GBR,1950,68.63,
+United Kingdom,GBR,1951,68.24,
+United Kingdom,GBR,1952,69.53,
+United Kingdom,GBR,1953,69.8,
+United Kingdom,GBR,1954,70.17,
+United Kingdom,GBR,1955,70.13,
+United Kingdom,GBR,1956,70.4,
+United Kingdom,GBR,1957,70.52,
+United Kingdom,GBR,1958,70.7,
+United Kingdom,GBR,1959,70.83,
+United Kingdom,GBR,1960,71.02,
+United Kingdom,GBR,1961,70.79,
+United Kingdom,GBR,1962,70.86,
+United Kingdom,GBR,1963,70.76,
+United Kingdom,GBR,1964,71.54,
+United Kingdom,GBR,1965,71.52,
+United Kingdom,GBR,1966,71.44,
+United Kingdom,GBR,1967,72.08,
+United Kingdom,GBR,1968,71.69,
+United Kingdom,GBR,1969,71.67,
+United Kingdom,GBR,1970,71.88,
+United Kingdom,GBR,1971,72.24,
+United Kingdom,GBR,1972,71.99,
+United Kingdom,GBR,1973,72.19,
+United Kingdom,GBR,1974,72.38,
+United Kingdom,GBR,1975,72.65,
+United Kingdom,GBR,1976,72.64,
+United Kingdom,GBR,1977,73.11,
+United Kingdom,GBR,1978,73.05,
+United Kingdom,GBR,1979,73.16,
+United Kingdom,GBR,1980,73.59,
+United Kingdom,GBR,1981,73.92,
+United Kingdom,GBR,1982,74.04,
+United Kingdom,GBR,1983,74.3,
+United Kingdom,GBR,1984,74.68,
+United Kingdom,GBR,1985,74.54,
+United Kingdom,GBR,1986,74.8,
+United Kingdom,GBR,1987,75.15,
+United Kingdom,GBR,1988,75.26,
+United Kingdom,GBR,1989,75.4,
+United Kingdom,GBR,1990,75.74,
+United Kingdom,GBR,1991,75.91,
+United Kingdom,GBR,1992,76.31,
+United Kingdom,GBR,1993,76.16,
+United Kingdom,GBR,1994,76.72,
+United Kingdom,GBR,1995,76.62,
+United Kingdom,GBR,1996,76.88,
+United Kingdom,GBR,1997,77.14,
+United Kingdom,GBR,1998,77.28,
+United Kingdom,GBR,1999,77.38,
+United Kingdom,GBR,2000,77.85,
+United Kingdom,GBR,2001,78.12,
+United Kingdom,GBR,2002,78.24,
+United Kingdom,GBR,2003,78.33,
+United Kingdom,GBR,2004,78.9,
+United Kingdom,GBR,2005,79.1,
+United Kingdom,GBR,2006,79.34,
+United Kingdom,GBR,2007,79.53,
+United Kingdom,GBR,2008,79.65,
+United Kingdom,GBR,2009,80.15,
+United Kingdom,GBR,2010,80.38,
+United Kingdom,GBR,2011,80.77,
+United Kingdom,GBR,2012,80.83,
+United Kingdom,GBR,2013,80.89,
+United Kingdom,GBR,2014,81.12,
+United Kingdom,GBR,2015,80.88,
+United Kingdom,GBR,2016,81.02,
+United Kingdom,GBR,2017,81.11,
+United Kingdom,GBR,2018,81.06,
+United Kingdom,GBR,2019,81.36,
+United Kingdom,GBR,2020,80.33,
+United Kingdom,GBR,2021,80.51,
+United Kingdom,GBR,2022,80.96,
+United States,USA,1933,60.9,
+United States,USA,1934,60.19,
+United States,USA,1935,60.91,
+United States,USA,1936,60.35,
+United States,USA,1937,61.03,
+United States,USA,1938,62.39,
+United States,USA,1939,63.07,
+United States,USA,1940,63.22,
+United States,USA,1941,63.79,
+United States,USA,1942,64.54,
+United States,USA,1943,64.36,
+United States,USA,1944,65.06,
+United States,USA,1945,65.59,
+United States,USA,1946,66.13,
+United States,USA,1947,66.8,
+United States,USA,1948,67.22,
+United States,USA,1949,67.63,
+United States,USA,1950,68.06,
+United States,USA,1951,68.17,
+United States,USA,1952,68.38,
+United States,USA,1953,68.72,
+United States,USA,1954,69.5,
+United States,USA,1955,69.56,
+United States,USA,1956,69.64,
+United States,USA,1957,69.41,
+United States,USA,1958,69.67,
+United States,USA,1959,69.9,
+United States,USA,1960,69.82,
+United States,USA,1961,70.24,
+United States,USA,1962,70.11,
+United States,USA,1963,69.94,
+United States,USA,1964,70.19,
+United States,USA,1965,70.25,
+United States,USA,1966,70.21,
+United States,USA,1967,70.52,
+United States,USA,1968,70.21,
+United States,USA,1969,70.48,
+United States,USA,1970,70.74,
+United States,USA,1971,71.1,
+United States,USA,1972,71.18,
+United States,USA,1973,71.4,
+United States,USA,1974,71.96,
+United States,USA,1975,72.54,
+United States,USA,1976,72.85,
+United States,USA,1977,73.23,
+United States,USA,1978,73.41,
+United States,USA,1979,73.83,
+United States,USA,1980,73.74,
+United States,USA,1981,74.12,
+United States,USA,1982,74.47,
+United States,USA,1983,74.56,
+United States,USA,1984,74.68,
+United States,USA,1985,74.66,
+United States,USA,1986,74.74,
+United States,USA,1987,74.88,
+United States,USA,1988,74.85,
+United States,USA,1989,75.13,
+United States,USA,1990,75.4,
+United States,USA,1991,75.55,
+United States,USA,1992,75.81,
+United States,USA,1993,75.6,
+United States,USA,1994,75.77,
+United States,USA,1995,75.88,
+United States,USA,1996,76.2,
+United States,USA,1997,76.53,
+United States,USA,1998,76.69,
+United States,USA,1999,76.7,
+United States,USA,2000,76.84,
+United States,USA,2001,76.95,
+United States,USA,2002,77.02,
+United States,USA,2003,77.17,
+United States,USA,2004,77.57,
+United States,USA,2005,77.56,
+United States,USA,2006,77.83,
+United States,USA,2007,78.08,
+United States,USA,2008,78.16,
+United States,USA,2009,78.51,
+United States,USA,2010,78.7,
+United States,USA,2011,78.74,
+United States,USA,2012,78.85,
+United States,USA,2013,78.85,
+United States,USA,2014,78.91,
+United States,USA,2015,78.75,
+United States,USA,2016,78.72,
+United States,USA,2017,78.69,
+United States,USA,2018,78.84,
+United States,USA,2019,78.97,
+United States,USA,2020,77.08,
+United States,USA,2021,76.47,
+United States,USA,2022,77.57,
+United States,USA,2023,78.56,
+West Germany,OWID_GFR,1956,68.49,
+West Germany,OWID_GFR,1957,68.53,
+West Germany,OWID_GFR,1958,69.33,
+West Germany,OWID_GFR,1959,69.52,
+West Germany,OWID_GFR,1960,69.3,
+West Germany,OWID_GFR,1961,69.82,
+West Germany,OWID_GFR,1962,70.06,
+West Germany,OWID_GFR,1963,70.02,
+West Germany,OWID_GFR,1964,70.69,
+West Germany,OWID_GFR,1965,70.63,
+West Germany,OWID_GFR,1966,70.66,
+West Germany,OWID_GFR,1967,70.91,
+West Germany,OWID_GFR,1968,70.57,
+West Germany,OWID_GFR,1969,70.4,
+West Germany,OWID_GFR,1970,70.62,
+West Germany,OWID_GFR,1971,70.8,
+West Germany,OWID_GFR,1972,71.04,
+West Germany,OWID_GFR,1973,71.26,
+West Germany,OWID_GFR,1974,71.62,
+West Germany,OWID_GFR,1975,71.53,
+West Germany,OWID_GFR,1976,72.02,
+West Germany,OWID_GFR,1977,72.72,
+West Germany,OWID_GFR,1978,72.73,
+West Germany,OWID_GFR,1979,73.18,
+West Germany,OWID_GFR,1980,73.44,
+West Germany,OWID_GFR,1981,73.68,
+West Germany,OWID_GFR,1982,74,
+West Germany,OWID_GFR,1983,74.26,
+West Germany,OWID_GFR,1984,74.83,
+West Germany,OWID_GFR,1985,75.01,
+West Germany,OWID_GFR,1986,75.25,
+West Germany,OWID_GFR,1987,75.66,
+West Germany,OWID_GFR,1988,75.88,
+West Germany,OWID_GFR,1989,76,
+West Germany,OWID_GFR,1990,76,
+West Germany,OWID_GFR,1991,76.18,
+West Germany,OWID_GFR,1992,76.56,
+West Germany,OWID_GFR,1993,76.54,
+West Germany,OWID_GFR,1994,76.83,
+West Germany,OWID_GFR,1995,76.93,
+West Germany,OWID_GFR,1996,77.11,
+West Germany,OWID_GFR,1997,77.5,
+West Germany,OWID_GFR,1998,77.8,
+West Germany,OWID_GFR,1999,77.99,
+West Germany,OWID_GFR,2000,78.24,
+West Germany,OWID_GFR,2001,78.56,
+West Germany,OWID_GFR,2002,78.64,
+West Germany,OWID_GFR,2003,78.67,
+West Germany,OWID_GFR,2004,79.26,
+West Germany,OWID_GFR,2005,79.38,
+West Germany,OWID_GFR,2006,79.73,
+West Germany,OWID_GFR,2007,79.86,
+West Germany,OWID_GFR,2008,79.94,
+West Germany,OWID_GFR,2009,80.04,
+West Germany,OWID_GFR,2010,80.21,
+West Germany,OWID_GFR,2011,80.48,
+West Germany,OWID_GFR,2012,80.61,
+West Germany,OWID_GFR,2013,80.58,
+West Germany,OWID_GFR,2014,81.03,
+West Germany,OWID_GFR,2015,80.69,
+West Germany,OWID_GFR,2016,80.97,
+West Germany,OWID_GFR,2017,81.07,
+West Germany,OWID_GFR,2018,81.02,
+West Germany,OWID_GFR,2019,81.31,
+West Germany,OWID_GFR,2020,81.18,
