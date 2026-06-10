@@ -1,0 +1,9 @@
+{
+  "answer": "36.12%",
+  "reasoning": "1. Chart Identification: Line chart showing share of urban and rural population using safely managed drinking water. 2. Data Extraction: Extracted the underlying data for the year 2011. 3. Data Reading: The Urban percentage for 2011 is 82.74% and the Rural percentage is 46.62% (rounded to two decimal places as shown in the tooltip). 4. Calculation: The difference between Urban and Rural percentages is 82.74 - 46.62 = 36.12%.",
+  "confidence": 1.0,
+  "evidence": "Internal data for 2011 shows Urban at 82.735...% and Rural at 46.618...%. Tooltip format is .2f, giving 82.74% and 46.62%. Difference is 36.12%.",
+  "interactions_performed": ["Extracted data using Playwright DOM evaluation"],
+  "pitfalls_checked": ["Checked exact underlying data points to avoid interpolation errors"],
+  "self_check": "The question asks for the percentage difference between rural and urban in 2011. The calculated difference between the two values is exactly 36.12%."
+}

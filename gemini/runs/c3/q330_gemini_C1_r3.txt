@@ -1,0 +1,9 @@
+{
+  "answer": "32.2 million (projected)",
+  "reasoning": "I identified the chart as a line chart with an interactive tooltip. To find the projected population of New Delhi in 2035, I used Playwright to hover over the x-axis at the position representing the year 2035. The tooltip triggered at that position displayed the population for New Delhi as 32.2 million, explicitly noted as a projection (proj.).",
+  "confidence": 1.0,
+  "evidence": "Interactive tooltip value for year 2035: New Delhi: 32.2 million (proj.).",
+  "interactions_performed": ["Navigated to chart URL", "Hovered over the chart area at the 2035 mark on the x-axis", "Read the population value for New Delhi from the resulting tooltip"],
+  "pitfalls_checked": ["Verified the year in the tooltip matched the requested year (2035)", "Confirmed the value was for New Delhi", "Checked the 'proj.' suffix which aligns with the post-2020 projection phase"],
+  "self_check": "The population of New Delhi in 2035 is projected to be 32.2 million."
+}

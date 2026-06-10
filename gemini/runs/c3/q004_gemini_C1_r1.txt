@@ -1,0 +1,16 @@
+{
+  "answer": "Carpenters (80%)",
+  "reasoning": "The chart shows the immigrant percentage for various occupations, color-coded by wage category. Generally, low-wage jobs have the highest immigrant percentages. However, 'Carpenters' is categorized as a Middle-wage job (colored teal) but has an immigrant percentage of 80%. This is the absolute highest percentage on the entire chart, exceeding even the highest low-wage occupation ('Maids and housekeeping cleaners' at 78%), making it unexpectedly high for its wage category.",
+  "confidence": 1.0,
+  "evidence": "Carpenters is encoded with the color for 'Middle-wage job' (#7ec8c0) and has an 80% value, which is the highest on the chart. The chart's subtitle also explicitly highlights '80% of carpenters' alongside '78% of maids and housekeepers'.",
+  "interactions_performed": [
+    "Evaluated the DOM to map legend colors to wage categories.",
+    "Extracted data points mapping percentages and colors to occupations to identify outliers."
+  ],
+  "pitfalls_checked": [
+    "Color mappings from legend confirmed",
+    "Verified value is an outlier across its specific category and the whole dataset",
+    "Read exact text values rather than estimating from pixel widths"
+  ],
+  "self_check": "The question asks for an unexpectedly high immigrant percentage compared to wage category. 'Carpenters' has an 80% immigrant rate, the highest overall, despite being a middle-wage job. This contradicts the general trend where low-wage jobs have the highest percentages. This perfectly matches the criteria for being unexpectedly high compared to its wage category."
+}

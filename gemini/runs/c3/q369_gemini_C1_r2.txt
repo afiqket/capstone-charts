@@ -1,0 +1,18 @@
+{
+  "answer": "Bulgaria",
+  "reasoning": "I identified the chart as an interactive map with an optional bar chart view. I first switched to the bar chart view which displayed a selection of countries and identified Bulgaria as having the lowest percentage (6.7%) among them. To ensure this was the lowest in the entire dataset, I returned to the map view and used a script to systematically hover over all countries to read their tooltip values. The tooltip values showed that Bulgaria has the lowest percentage at 6.69%. Other low-percentage countries included Sweden (9.44%), Finland (11.14%), and Germany (12.39%).",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for Bulgaria showed 6.69% in the map view and 6.7% (rounded) in the bar chart view. Other countries like Sweden (9.44%), Finland (11.14%), and the Netherlands (12.73%) had higher values.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Switched to Bar chart view using the '📊 Bar' button",
+    "Switched back to Map view using the '🌍 Map' button",
+    "Systematically hovered over all countries on the map using a script to read tooltip values"
+  ],
+  "pitfalls_checked": [
+    "Checked if any other country on the map had a lower percentage than those in the selected bar chart list",
+    "Verified values using tooltips instead of visual estimation from the legend",
+    "Confirmed the y-axis (scale) was linear and units were percentages"
+  ],
+  "self_check": "The question asks for the country with the lowest percentage. Based on the full dataset extraction from the interactive map, Bulgaria has the minimum value of 6.69%. This is consistent with the bar chart selection where Bulgaria was also the lowest."
+}

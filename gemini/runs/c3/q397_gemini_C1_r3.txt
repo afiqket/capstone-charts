@@ -1,0 +1,9 @@
+{
+  "answer": "25 μg/m³",
+  "reasoning": "1. Chart Identification: Line chart showing air pollution in London and Delhi. 2. Data Extraction: Extracted the internal dataset for the year 1997. 3. Data Reading: For the year 1997, the concentration in London is exactly 25 μg/m³.",
+  "confidence": 1.0,
+  "evidence": "Internal D3 data for 1997 shows London: 25.",
+  "interactions_performed": ["Evaluated the internal dataset using Playwright"],
+  "pitfalls_checked": ["Extracted exact value from the dataset to avoid visual estimation errors"],
+  "self_check": "The question asks for the air pollution in London in 1997. The raw data point for London in that year is 25 μg/m³."
+}

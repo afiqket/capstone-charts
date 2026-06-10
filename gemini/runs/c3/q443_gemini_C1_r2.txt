@@ -1,0 +1,20 @@
+{
+  "answer": "Australia",
+  "reasoning": "I used Playwright to interact with the line chart showing weekly working hours for Italy, Switzerland, Belgium, France, and Australia from 1870 to 2000. I performed hover interactions every 10 years to extract precise tooltip values. Australia was the country with the least weekly working hours for most of the recorded history, specifically from 1870 (56.2 h) until around 1970 (39.6 h), with only a temporary dip below Australia by France in 1940. Although France and Belgium achieved lower values in the most recent years (e.g., France at 35.8 h in 2000 compared to Australia's 40.5 h), Australia consistently maintained the lowest position for approximately 100 of the 130 years shown and has the lowest overall average working hours across the entire period.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for Australia were the lowest in 1870 (56.2 h), 1880 (53.3 h), 1890 (50.5 h), 1900 (48.1 h), 1910 (44.7 h), 1920 (44.7 h), 1930 (45.5 h), 1950 (39.6 h), 1960 (39.6 h), and 1970 (39.6 h). France was lowest in 1940 (39.0 h) and 2000 (35.8 h), while Belgium was lowest in 1980 (38.5 h) and 1990 (36.6 h).",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Identified the line chart and the five countries (Italy, Switzerland, Belgium, France, Australia)",
+    "Located the transparent hover rectangle at [x: 215, y: 371.1, width: 725, height: 345]",
+    "Hovered over the chart at 10-year intervals from 1870 to 2000 using precise coordinates",
+    "Extracted tooltip data for each country at each time point"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at zero",
+    "Linear scale confirmed",
+    "No dual axes",
+    "Tooltip values preferred over visual estimation"
+  ],
+  "self_check": "The question asks which country has the least weekly working hours throughout the years. Australia is the lowest for the majority of the timeline (10 out of 14 points checked) and has the lowest historical average, confirming it as the correct answer."
+}

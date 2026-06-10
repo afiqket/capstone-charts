@@ -1,0 +1,15 @@
+{
+  "answer": "Ghana",
+  "reasoning": "1. Chart Identification: Bar chart showing 'Soil Conservation Practices'.\n2. 
+        Axes and Scale: Read the percentages for each country under 'Households that practice fallowing in their fields'.
+        \n3. Interactive Elements Protocol: Read text labels for the 'fallowing' category.\n4. Data Reading: Ghana has 20%, 
+        Ethiopia 16%, Mali 10%, Malawi 6%, Tanzania 3%.\n5. Pitfalls Checklist: Checked grouped bars, no log scale.\n
+        Conclusion: Ghana has the highest percentage (20%).",
+  "confidence": 1.0,
+  "evidence": "Under 'Households that practice fallowing in their fields', the values are: Ghana (20%), Ethiopia (16%), 
+        Mali (10%), Malawi (6%), Tanzania (3%).",
+  "interactions_performed": ["Navigated to URL", "Clicked 'SOIL CONSERVATION PRACTICES' tab", "Extracted text values for 
+        the 'fallowing' section"],
+  "pitfalls_checked": ["Stacked vs grouped bars", "Y-axis truncated"],
+  "self_check": "The highest value in the fallowing section is 20%, which corresponds to Ghana."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "69.8 years",
+  "reasoning": "To retrieve France's cohort life expectancy in 1932 using the line chart, I moved the mouse cursor along the x-axis to the point labeled 1932. This triggered an interactive tooltip that listed the values for each visible data series. For the year 1932, the tooltip displayed 'Cohort life expectancy: 69.8 years'.",
+  "confidence": 1.0,
+  "evidence": "Captured tooltip content at the 1932 data point: 'France, 1932', 'Period life expectancy: 57.2 years', 'Cohort life expectancy: 69.8 years'.",
+  "interactions_performed": ["Hovered over the line chart to find the year 1932", "Extracted text from the active SVG tooltip group"],
+  "pitfalls_checked": ["Verified the year matches 1932 precisely", "Confirmed the correct series 'Cohort life expectancy' was selected"],
+  "self_check": "The cohort life expectancy for France in 1932 is explicitly stated as 69.8 years in the tooltip."
+}

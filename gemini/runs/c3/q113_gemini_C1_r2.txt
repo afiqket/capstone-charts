@@ -1,0 +1,9 @@
+{
+  "answer": "Specific flight numbers are not identifiable through this visualization; it displays aircraft location and movement data, but flight details like numbers are typically not exposed in the interface.",
+  "reasoning": "Interaction with the map focuses on spatial location and tracking, not individual flight metadata retrieval.",
+  "confidence": 1.0,
+  "evidence": "Tooltip and interactivity are limited to spatial visualization.",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Checked tooltip content"],
+  "self_check": "The tool is a map visualizer, not a flight tracking service for metadata."
+}

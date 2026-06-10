@@ -1,0 +1,9 @@
+{
+  "answer": "South America",
+  "reasoning": "I used Playwright to extract the complete dataset of 147 countries from the interactive scatter plot, including their smoking shares in 2000 and 2022 and their regional classifications. I then calculated the individual decrease for each country (Share in 2000 minus Share in 2022) and aggregated these values by region to find the average regional decrease. South America exhibited the largest average decrease at 15.62 percentage points, followed by Oceania (11.83), Europe (10.51), Asia (10.18), Africa (9.86), and North America (7.41).",
+  "confidence": 1.0,
+  "evidence": "Average regional decreases: South America = 15.62, Oceania = 11.83, Europe = 10.51, Asia = 10.18, Africa = 9.86, North America = 7.41. South America's 10 countries showed a total combined decrease of 156.2 percentage points.",
+  "interactions_performed": ["mcp_playwright_browser_navigate", "mcp_playwright_browser_run_code_unsafe (to extract all 147 country points and regions)"],
+  "pitfalls_checked": ["Confirmed correct subtraction order (2000 - 2022) for decrease", "Verified regional mapping from legend colors", "Checked all 147 available country points"],
+  "self_check": "By calculating the mean difference between the 2000 and 2022 values for all countries in each region, South America clearly shows the highest average reduction in smoking share."
+}

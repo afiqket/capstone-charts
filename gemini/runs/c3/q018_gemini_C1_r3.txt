@@ -1,0 +1,12 @@
+{
+  "answer": "UNREADABLE",
+  "reasoning": "Attempted to answer the question using the provided URL (Geography of Educational Attainment in California). However, the chart displays data for California counties, not US states, and does not show percent change or a clear nationwide positive outlier. The data required to answer the question about a 'state' outlier is not present in the provided chart.",
+  "confidence": 0.0,
+  "evidence": "none",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Verified available data layers and tooltips, finding only county-level absolute percentages for different demographics."
+  ],
+  "pitfalls_checked": [],
+  "self_check": "N/A"
+}

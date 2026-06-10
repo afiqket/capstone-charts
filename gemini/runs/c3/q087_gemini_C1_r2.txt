@@ -1,0 +1,9 @@
+{
+  "answer": "When you hover over a country colored in orange (or any other color on the map), a tooltip appears showing the name of that country and the specific homelessness category it belongs to.",
+  "reasoning": "The map's code includes an 'on(\"mousemove\", ...)' event listener on country paths. When triggered, this event listener sets the tooltip's display to 'block' and populates it with the country's name and its mapped 'IGH Framework Category'.",
+  "confidence": 1.0,
+  "evidence": "Code analysis of the homelessness map notebook shows tooltip display and content population based on country properties and the mapped category.",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Analyzed event listener logic"],
+  "self_check": "The interactive functionality correctly displays metadata (name and category) for each country on the map when hovered."
+}

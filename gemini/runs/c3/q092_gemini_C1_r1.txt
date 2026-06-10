@@ -1,0 +1,9 @@
+{
+  "answer": "Cowpea",
+  "reasoning": "1. Chart Identification: Bar chart showing 'Five Crops Most Commonly Grown'.\n2. Interactive Elements Protocol: Clicked 'CROPS MOST COMMONLY GROWN'.\n3. Data Reading: For Malawi, the crops are Maize (100%), Groundnut (73%), Soybean (52%), Bean (46%), Cowpea (35%).\n4. Conclusion: The 5th highest grown crop is Cowpea.",
+  "confidence": 1.0,
+  "evidence": "In the 'Malawi' section of the 'CROPS MOST COMMONLY GROWN' tab, the values are: Maize 100%, Groundnut 73%, Soybean 52%, Bean 46%, Cowpea 35%.",
+  "interactions_performed": ["Navigated to URL", "Clicked 'CROPS MOST COMMONLY GROWN' button", "Extracted text values for Malawi"],
+  "pitfalls_checked": ["Stacked vs grouped bars"],
+  "self_check": "The crops listed for Malawi are ordered by percentage. The 5th one in the list is Cowpea at 35%."
+}

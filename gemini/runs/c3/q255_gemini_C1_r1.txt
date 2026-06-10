@@ -1,0 +1,14 @@
+{
+  "answer": "Click on 2016 in the timeline slider, then hover over Malaysia on the map to see its status (Yes).",
+  "reasoning": "The map displays data for a specific year chosen by the timeline at the bottom. To get Malaysia's status in 2016, you must first interact with the timeline to change the year from the default (2017) to 2016. Then, hovering over Malaysia reveals the specific data for that year via a tooltip.",
+  "confidence": 1.0,
+  "evidence": "Selecting 2016 and hovering over Malaysia generates a tooltip with the values: 'Malaysia', 'Stand-alone mental health policy', 'Yes'.",
+  "interactions_performed": [
+    "Clicked the timeline slider to select 2016",
+    "Hovered over Malaysia on the map"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the year was correctly set before reading the tooltip"
+  ],
+  "self_check": "The steps accurately describe the required interactions to retrieve the requested value."
+}

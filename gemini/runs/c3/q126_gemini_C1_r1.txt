@@ -1,0 +1,17 @@
+{
+  "answer": "$159,945.13",
+  "reasoning": "Step 1: The chart is an interactive line chart showing the Zillow Home Value Index (ZHVI). Step 2: The x-axis shows years (2000 to 2015+) and the y-axis shows home values in dollars. Step 3: A single series (United States) is plotted. Step 4 & 5: To answer an aggregation question ('average across the full ZHVI period'), the full underlying data array rendered on the page ('zhviRaw') was evaluated. The array contains 277 monthly data points from April 1996 to April 2019. By summing all 277 values and dividing by 277, the exact average was calculated.",
+  "confidence": 1.0,
+  "evidence": "The raw data 'zhviRaw' extracted from the page contains 277 data points starting from {date:'30/04/1996',value:100000} and ending at {date:'30/04/2019',value:226800}. The sum of all 277 values is 44,304,800, which divided by 277 gives an average of 159945.126.",
+  "interactions_performed": [
+    "Navigate to URL",
+    "Extracted page content to read all values in 'zhviRaw' directly"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (does not start at zero)",
+    "Dual y-axes",
+    "Log scale active",
+    "Tooltip value differs from visual position"
+  ],
+  "self_check": "An average of roughly $160k makes visual sense given the line spends time starting at $100k, peaking around $200k, dipping, and ending at $226.8k."
+}

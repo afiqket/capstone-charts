@@ -1,0 +1,20 @@
+{
+  "answer": "The red/orange bar represents 'Any woman chief executive', and the blue bar represents 'Democratically-elected woman chief executive'.",
+  "reasoning": "I identified the chart as a line/bar chart showing the share of countries with women leaders. I inspected the chart's source code (seriesDef) and legend. The code explicitly maps 'Any woman chief executive' to the color '#b85a38' (red/orange) and 'Democratically-elected woman chief executive' to '#6a7fb5' (blue). I verified these mappings by checking the tooltip values where the 'Any' category (red/orange) consistently showed higher or equal values compared to the 'Democratically-elected' category (blue), which is expected as the former is a superset of the latter.",
+  "confidence": 1.0,
+  "evidence": "Series definition in code: { key: colA, label: 'Any woman chief executive', color: '#b85a38' } and { key: colD, label: 'Democratically-elected woman chief executive', color: '#6a7fb5' }. Tooltip at year 1860 showed 'Any woman chief executive' at 2% and 'Democratically-elected woman chief executive' at 0%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Inspected the accessibility tree and legend labels",
+    "Used grep on the snapshot to find the color mapping in the JavaScript code (seriesDef)",
+    "Hovered over the chart to trigger tooltips and verify values and colors",
+    "Clicked the 'Bar' button to confirm the appearance of the bars"
+  ],
+  "pitfalls_checked": [
+    "Verified color encoding from source code",
+    "Confirmed that 'Any' is the superset with higher values",
+    "Checked for y-axis truncation (starts at 0%)",
+    "Verified series names match the legend exactly"
+  ],
+  "self_check": "The red/orange series is 'Any woman chief executive' and the blue series is 'Democratically-elected woman chief executive'. This is consistent with the hex codes found in the code (#b85a38 for orange/red and #6a7fb5 for blue) and the data logic (Any >= Democratically-elected)."
+}

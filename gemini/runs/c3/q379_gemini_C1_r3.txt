@@ -1,0 +1,9 @@
+{
+  "answer": "83.12%",
+  "reasoning": "1. Chart Identification: Line chart and bar chart options for share of urban and rural population using safely managed drinking water. 2. Data Extraction: Extracted the internal dataset used by the chart for the year 2016. 3. Data Reading: For the year 2016, the data point for 'Urban' is 83.12048%, which formats to 83.12% on the tooltip.",
+  "confidence": 1.0,
+  "evidence": "Data array '__data__' on the chart path shows 'year': 2016, 'Urban': 83.12048.",
+  "interactions_performed": ["Extracted the chart's bound data from the DOM"],
+  "pitfalls_checked": ["Avoided pixel interpolation by using raw data"],
+  "self_check": "The question asks for the urban population percentage in 2016. 83.12% accurately represents the value in the chart."
+}

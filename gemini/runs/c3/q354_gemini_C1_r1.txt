@@ -1,0 +1,9 @@
+{
+  "answer": "Select 'Year-Over-Year Change (%)' from the 'Metrics' dropdown menu.",
+  "reasoning": "I observed the controls above the interactive chart. There is a section titled 'Metrics' with a dropdown menu. Currently, it is set to 'Home Sales Annualized Rate'. Among the available options in this dropdown is 'Year-Over-Year Change (%)'. Selecting this option will update the chart to display the requested data.",
+  "confidence": 1.0,
+  "evidence": "Control panel interface includes a 'Metrics' dropdown menu with 'Year-Over-Year Change (%)' as a selectable option.",
+  "interactions_performed": ["Navigated to chart URL", "Identified the filter controls above the chart", "Examined the options in the 'Metrics' dropdown"],
+  "pitfalls_checked": ["Confirmed 'Year-Over-Year Change (%)' is a discrete option in the dropdown", "Checked that the dropdown controls the visible metric"],
+  "self_check": "Selecting 'Year-Over-Year Change (%)' from the 'Metrics' filter will update the chart to show Year over Year change."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "When hovering over 1973 in the line chart, an interactive tooltip appears showing the average age of mothers born in 1973 for all birth orders: 1st birth (25.10 years), 2nd birth (28.04 years), 3rd birth (29.55 years), 4th birth (30.78 years), 5th birth or higher (32.87 years), and All (27.48 years).",
+  "reasoning": "I moved the mouse to the far right of the line chart (year 1973). This triggered the display of a tooltip group containing the specific values for each data series for the cohort of mothers born in 1973.",
+  "confidence": 1.0,
+  "evidence": "Captured tooltip content at 1973: ['United States, 1973', '1st birth: 25.10 years', '2nd birth: 28.04 years', 'All: 27.48 years', etc.].",
+  "interactions_performed": ["Hovered over the line chart at 1973", "Extracted text content from the active tooltip"],
+  "pitfalls_checked": ["Verified tooltip visibility", "Confirmed year identification (1973)"],
+  "self_check": "Hovering at 1973 reveals the specific data points for that mother's birth year cohort."
+}

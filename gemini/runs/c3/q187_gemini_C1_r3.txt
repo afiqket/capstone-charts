@@ -1,0 +1,19 @@
+{
+  "answer": "A tooltip appears showing the country name, the year, the value, and the description 'internally displaced people'.",
+  "reasoning": "I navigated to the chart and switched to the 'Bar' view. I then used Playwright to simulate a mouse hover over one of the bars (Sudan). By inspecting the DOM and taking a screenshot during the hover, I confirmed that a tooltip element (SVG group 'ttG') becomes visible. This tooltip contains multiple text elements that display the country name ('Sudan'), the selected year ('2024'), the quantitative value ('11.56M'), and the label 'internally displaced people'.",
+  "confidence": 1.0,
+  "evidence": "Screenshot at .playwright-mcp/page-2026-05-29T03-06-43-790Z.png shows the tooltip with 'Sudan', '2024', 'internally displaced people', and '11.56M'. The DOM inspection confirmed the visibility of these text elements within the tooltip group upon hover.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Clicked the 'Bar' button to switch view mode",
+    "Performed a mouse move to hover over the bar for Sudan",
+    "Inspected the visibility and content of text elements in the tooltip",
+    "Took a screenshot of the hover state"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the chart was in Bar mode",
+    "Verified the tooltip content is dynamic based on the hovered bar",
+    "Checked for other visual effects (none significantly noted besides the tooltip)"
+  ],
+  "self_check": "When hovering over a bar, does the chart show a tooltip? Yes. Does it show the country and value? Yes. The screenshot and code inspection confirm this behavior."
+}

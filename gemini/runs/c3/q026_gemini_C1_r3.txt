@@ -1,0 +1,9 @@
+{
+  "answer": "57.46%",
+  "reasoning": "I identified the chart as a horizontal bar chart ranking European countries by AI adoption. I located 'Spain' in the 'Country Ranking by AI Adoption' chart (on the left, color-coded pink/purple #b57aa4). By hovering over the bar for Spain, the interactive tooltip displayed the exact percentage: 57.46%. This represents the percentage of enterprises with more than 250 employees using at least one AI technology.",
+  "confidence": 1.0,
+  "evidence": "Tooltip value: 'Adoption of at Least One AI Technology in Enterprises with at Least 250 Employees (% of Enterprises): 57.46'.",
+  "interactions_performed": ["Navigated to URL", "Hovered over the bar for Spain in the AI Adoption chart", "Read the tooltip value"],
+  "pitfalls_checked": ["Identified the correct chart (AI Adoption vs Digital Skills)", "Verified Spain's position (11th)", "Confirmed x-axis represents percentages"],
+  "self_check": "The value 57.46% was directly extracted from the interactive tooltip and confirmed by the underlying D3 data object for Spain."
+}

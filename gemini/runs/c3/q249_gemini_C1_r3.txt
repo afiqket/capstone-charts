@@ -1,0 +1,11 @@
+{
+  "answer": "Hover over Malaysia on the map to see a tooltip displaying 32.2%.",
+  "reasoning": "The map allows users to retrieve exact data points by hovering over the corresponding country. Hovering over Malaysia triggers the tooltip with its value.",
+  "confidence": 1.0,
+  "evidence": "Hovering over Malaysia shows the tooltip: 'Malaysia', '2020', '32.2%'.",
+  "interactions_performed": [
+    "Hovered over Malaysia on the map"
+  ],
+  "pitfalls_checked": [],
+  "self_check": "The interactive method for retrieving exact values on this map is hovering."
+}

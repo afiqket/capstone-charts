@@ -1,0 +1,14 @@
+{
+  "answer": "A recovering post-recession economy coupled with decreasing housing inventory pushed more demand into the rental market, driving rents up.",
+  "reasoning": "Step 1 & 2: The chart shows the Zillow Rent Index (ZRI) over time. Step 3 & 4: Observing the ZRI data post-2012, it shows a steady, consistent upward trajectory. Step 6: When cross-referencing this with the other views (ZHVI and Inventory) during the same post-2012 period, we see home values rising rapidly and inventory of homes for sale decreasing. From this, we can infer that as the economy recovered from the 2008 housing crash, a tight supply of homes for sale and rising purchase prices kept many people in the rental market, increasing demand for rentals and steadily driving up the Zillow Rent Index.",
+  "confidence": 0.85,
+  "evidence": "ZRI data increases steadily from ~$1,240 in early 2012 to ~$1,477 by early 2019. Over this same period, Inventory data shows a steady decline from ~2M to ~1.5M, and ZHVI shows a strong increase from ~$148k to ~$226k.",
+  "interactions_performed": [
+    "Navigate to URL"
+  ],
+  "pitfalls_checked": [
+    "Dual y-axes",
+    "Linked filter still active"
+  ],
+  "self_check": "Rising rents align with lower housing inventory and rising home prices, as people who cannot buy are forced to rent."
+}

@@ -1,0 +1,16 @@
+{
+  "answer": "1,789,964.78 homes",
+  "reasoning": "Step 1: The chart shows an interactive line chart. The current metric being analyzed is Inventory (homes for sale). Step 2: The x-axis shows years and the y-axis shows the number of homes. Step 3: A single series (United States) is plotted. Step 4 & 5: To answer the aggregation question ('average across the Inventory period'), the full underlying data array rendered on the page ('inventoryRaw') was evaluated. The array contains 79 monthly data points. By summing all 79 values (141,407,218) and dividing by 79, the exact average was calculated.",
+  "confidence": 1.0,
+  "evidence": "The raw data 'inventoryRaw' extracted from the page contains 79 data points starting from early 2013 and ending in 2019. The sum of all 79 values is 141,407,218, which divided by 79 gives an average of 1789964.7848...",
+  "interactions_performed": [
+    "Extracted page content to read all values in 'inventoryRaw' directly"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (does not start at zero)",
+    "Dual y-axes",
+    "Log scale active",
+    "Tooltip value differs from visual position"
+  ],
+  "self_check": "An average of ~1.79 million homes makes sense since the Inventory starts around 2 million and ends around 1.5 million."
+}

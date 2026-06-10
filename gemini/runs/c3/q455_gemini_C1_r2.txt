@@ -1,0 +1,9 @@
+{
+  "answer": "South Korea",
+  "reasoning": "Step 1: Identified the chart as a scatter plot of annual working hours vs. GDP per capita. Step 2: Located the year slider at the bottom and moved it to 1981. Step 3: Verified the chart title updated to 'Annual working hours vs. GDP per capita, 1981'. Step 4: Identified the country with the highest position on the vertical axis (average working hours). Step 5: Hovered over the highest data point to confirm the country name as South Korea with 2,909 working hours per worker.",
+  "confidence": 1.0,
+  "evidence": "In the chart for 1981, South Korea is the highest data point on the Y-axis with 2,909 average working hours per worker.",
+  "interactions_performed": ["Navigated to URL", "Moved year slider to 1981", "Extracted data from the highest point using Playwright interaction and internal data inspection", "Took screenshots to verify the year and country position"],
+  "pitfalls_checked": ["Verified the year 1981 was active", "Checked for other countries that might be higher (none found)", "Confirmed the Y-axis represents working hours"],
+  "self_check": "Which country had the highest average working hours in 1981? South Korea, at 2,909 hours."
+}

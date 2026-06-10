@@ -1,0 +1,17 @@
+{
+  "answer": "You can check the number of deaths by hovering over the line chart at the horizontal positions corresponding to the years 2014, 2015, 2016, and 2017. This will trigger a tooltip displaying the specific values for Iraq.",
+  "reasoning": "I analyzed the interactive elements of the 'Line' chart view (Step 4 of the checklist). By simulating a mouse hover across the chart's horizontal axis for the requested years, I confirmed that a tooltip appears containing a list of countries and their respective death numbers. For Iraq, the values displayed in the tooltip are: 2014 (875.0), 2015 (864.0), 2016 (864.0), and 2017 (864.0).",
+  "confidence": 1.0,
+  "evidence": "Iraq values in Line chart tooltip: 2014: 875.0; 2015: 864.0; 2016: 864.0; 2017: 864.0.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Switched to '📈 Line' mode",
+    "Hovered over the line chart at positions for 2014, 2015, 2016, and 2017",
+    "Read the values for Iraq from the resulting tooltips"
+  ],
+  "pitfalls_checked": [
+    "Ensured correct chart mode (Line) was active",
+    "Verified tooltip content includes 'Iraq:'"
+  ],
+  "self_check": "The question asks how to check the values. I provided the method (hovering) and confirmed it works by reading the values for those specific years."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "Maryland",
+  "reasoning": "I identified the chart as an interactive choropleth map of the US states showing the percent change in marijuana use. I noted that the legend indicates a range from -3.07 to 55.60. Using Playwright, I hovered over various states to find the one matching the maximum value of 55.60. The interactive tooltip confirmed that Maryland has the highest percent change at 55.60.",
+  "confidence": 1.0,
+  "evidence": "Interactive tooltip value for Maryland: State: Maryland, Percent change: 55.60. This matches the maximum value shown on the legend.",
+  "interactions_performed": ["Navigated to chart URL", "Identified the maximum value from the legend (55.60)", "Hovered over states until the one with 55.60 was found", "Extracted the state name from the tooltip"],
+  "pitfalls_checked": ["Verified the maximum value from the legend", "Confirmed Maryland's value in the tooltip", "Checked that no other state had a higher value"],
+  "self_check": "Maryland has the highest percent change at 55.60."
+}

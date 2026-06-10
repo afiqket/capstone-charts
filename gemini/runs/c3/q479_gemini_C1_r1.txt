@@ -1,0 +1,18 @@
+{
+  "answer": "41.46%",
+  "reasoning": "I navigated to the interactive chart and used Playwright to hover over the data series. I performed a scan of the x-axis to locate the specific date, April 14, 2023. Upon hovering, the tooltip displayed the percentage values for all age groups on that date. For the '18-24 years' age group, the share of people with a COVID-19 booster dose was explicitly listed as 41.46%.",
+  "confidence": 1.0,
+  "evidence": "Tooltip value for Apr 14, 2023, in the 18-24 years category: 41.46%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Performed a linear scan of the x-axis using mouse hover",
+    "Identified the tooltip for Apr 14, 2023",
+    "Extracted the value for the 18-24 years age group"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0%",
+    "Correct age group identified (18-24 years)",
+    "Exact date verified (Apr 14, 2023)"
+  ],
+  "self_check": "The question asks for the percentage on April 14, 2023, for 18-24 years. The tooltip value retrieved is 41.46%. This matches the request perfectly."
+}

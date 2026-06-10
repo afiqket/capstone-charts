@@ -1,0 +1,18 @@
+{
+  "answer": "11.56 million (11,559,970)",
+  "reasoning": "After opening the chart, I identified it as an interactive dashboard showing internally displaced people. I confirmed the year slider was set to 2024 (the default and maximum value). To get the specific value for Sudan, I switched from the 'Map' view to the 'Bar' view by clicking the 'Bar' button, which displays a sorted list of countries and their values for the selected year. Sudan appeared at the top of the list with a value of '11.56M'. I further verified this by inspecting the chart's data via Playwright, confirming the exact value is 11,559,970.",
+  "confidence": 1.0,
+  "evidence": "Bar chart view shows 'Sudan' with value '11.56M'. Underlying data point for Sudan in 2024 is 11,559,970.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Clicked the 'Bar' chart button in the dashboard",
+    "Hovered over the Sudan entry in the bar list",
+    "Inspected the __data__ property of the Sudan text element"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation (starts at 0)",
+    "Correct year (2024 selected)",
+    "Value units (Millions)"
+  ],
+  "self_check": "The question asks how to get the value for Sudan in 2024. I set the year to 2024, switched to the Bar view, and found Sudan at 11.56M. This matches the data value 11,559,970 found in the notebook state."
+}

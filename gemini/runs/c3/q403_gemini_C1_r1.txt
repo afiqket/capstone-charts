@@ -1,0 +1,9 @@
+{
+  "answer": "197,800 tonnes",
+  "reasoning": "1. Chart Identification: Line chart showing emissions of PM10 and PM2.5 in the UK. 2. Data Extraction: Extracted the internal dataset for the years 1990 through 1999 (the 1990s). 3. Data Reading: Fetched the PM2.5 emission values for each of those 10 years. 4. Calculation: The values for 1990-1999 are: 237k, 236k, 226k, 211k, 202k, 184k, 182k, 173k, 165k, and 162k tonnes. The sum is 1,978,000 tonnes. Dividing by 10 years gives an average of 197,800 tonnes.",
+  "confidence": 1.0,
+  "evidence": "Internal dataset values for PM2.5 from 1990 to 1999 sum to 1,978,000, averaging 197,800.",
+  "interactions_performed": ["Evaluated the internal dataset bound to SVG elements using Playwright"],
+  "pitfalls_checked": ["Included all years from 1990 to 1999 inclusive", "Correctly identified the PM2.5 series"],
+  "self_check": "The question asks for the average PM2.5 emission in the 1990s. The computed average of the yearly data points is exactly 197,800 tonnes."
+}

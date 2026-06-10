@@ -1,0 +1,9 @@
+{
+  "answer": "102.7 years",
+  "reasoning": "I navigated to the line chart showing survival ages for France. To find the Top 1% survival age for 2023, I moved the mouse to the final data point on the x-axis. An interactive tooltip appeared showing the survival years for various population percentiles. The value for the 'Top 1%' series was explicitly stated as 102.7 years for the year 2023.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for France, 2023: 'Top 1%: 102.7 years'.",
+  "interactions_performed": ["Hovered over the line chart at the year 2023", "Read the value from the interactive multi-series tooltip"],
+  "pitfalls_checked": ["Verified the year is 2023", "Confirmed the correct series 'Top 1%' was read", "Checked units (years)"],
+  "self_check": "In 2023, the survival age for the top 1% was 102.7 years."
+}

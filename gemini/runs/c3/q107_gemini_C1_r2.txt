@@ -1,0 +1,9 @@
+{
+  "answer": "The most common age for newlyweds overall is 29 years old.",
+  "reasoning": "The text on the page explicitly states: 'There were nearly 4.7 million people married in the last 12 months. The most common age was 29.'",
+  "confidence": 1.0,
+  "evidence": "Text on page: 'The most common age was 29.'",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Checked provided statistics"],
+  "self_check": "Page explicitly reports 29 as the most common age."
+}

@@ -1,0 +1,13 @@
+{
+  "answer": "69.2%",
+  "reasoning": "By hovering over South Korea on the map view, the tooltip displays the country name, the year, and the exact percentage.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for South Korea shows ['South Korea', '2020', '69.2%'].",
+  "interactions_performed": [
+    "Hovered over South Korea on the map"
+  ],
+  "pitfalls_checked": [
+    "Verified country selection and checked for exact value in tooltip"
+  ],
+  "self_check": "69.2% is the value displayed in the tooltip for South Korea."
+}

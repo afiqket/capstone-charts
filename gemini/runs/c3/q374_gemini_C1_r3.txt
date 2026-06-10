@@ -1,0 +1,9 @@
+{
+  "answer": "145.37 mg/PCU",
+  "reasoning": "1. Chart Identification: Marimekko or bar chart for 'Antibiotic use in livestock, 2020'. 2. Legend and Encoding: Shows countries and milligrams of total antibiotic use per kilogram of livestock (mg/PCU). 3. Interactive Elements: Hovered over the bar representing Iran to read the specific data value in the tooltip. 4. Data Reading: The tooltip shows 'Iran', 'Asia', and '145.37 mg/PCU'.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for Iran displays exactly '145.37 mg/PCU'.",
+  "interactions_performed": ["Triggered mousemove on the overlay rect corresponding to Iran"],
+  "pitfalls_checked": ["Verified the exact tooltip value instead of estimating from the axis"],
+  "self_check": "The question asks for Iran's antibiotic use in 2020. The tooltip states 145.37 mg/PCU for Iran. The answer is direct and consistent."
+}

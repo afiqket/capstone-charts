@@ -1,0 +1,9 @@
+{
+  "answer": "Asia",
+  "reasoning": "I used Playwright to extract the complete dataset of 147 countries from the interactive scatter plot, including their regional classifications and smoking shares for 2000 and 2022. I then calculated the 'country-level smoking decline' for every nation by subtracting the 2022 share from the 2000 share. By summing these declines within each region, I determined the total regional contribution to the overall decline. Asia contributed a total of 447.7 percentage points (26.17% of the total), outperforming Europe (420.4 points, 24.58%), Africa (414.0 points, 24.20%), South America (156.2 points, 9.13%), Oceania (153.8 points, 8.99%), and North America (118.5 points, 6.93%).",
+  "confidence": 1.0,
+  "evidence": "Cumulative regional declines (sum of individual country drops): Asia = 447.7, Europe = 420.4, Africa = 414.0, South America = 156.2, Oceania = 153.8, North America = 118.5. Total global decline across all 147 countries = 1710.6 percentage points.",
+  "interactions_performed": ["mcp_playwright_browser_navigate", "mcp_playwright_browser_run_code_unsafe (to extract all 147 country points and regions)"],
+  "pitfalls_checked": ["Included all 147 available countries", "Calculated absolute sum of declines per region", "Verified regional mapping from legend"],
+  "self_check": "Asia's total cumulative decrease of 447.7 points is the largest of any region, making it the top contributor to the total country-level smoking decline."
+}

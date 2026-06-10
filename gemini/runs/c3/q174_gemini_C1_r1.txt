@@ -1,0 +1,15 @@
+{
+  "answer": "First, click the '30-44' age-group button at the top to filter the data. Then, locate 'Jan 2023' on the x-axis and visually compare the vertical positions of the 'Positive' and 'Negative' lines at that intersection.",
+  "reasoning": "Step 1: The chart is an interactive multi-series line chart. Step 4: The chart contains filter buttons for age groups. The user must interact with these buttons to see subset data. Step 5: After clicking '30-44', the chart updates. Since there are no hover tooltips with exact values (confirmed via Playwright test), the user must visually compare the y-axis positions of the specific lines ('Positive' and 'Negative') at the 'Jan 2023' x-axis marker.",
+  "confidence": 1.0,
+  "evidence": "Chart elements include `<button>` tags for age groups. Testing confirmed no tooltips appear on hover, so visual comparison is the only method to check relative magnitudes.",
+  "interactions_performed": [
+    "navigate",
+    "click '30-44' button",
+    "dispatch pointermove to test for tooltips"
+  ],
+  "pitfalls_checked": [
+    "Linked views/filters active"
+  ],
+  "self_check": "The steps accurately describe how to use the available interactive controls and read the static data output for the requested slice."
+}

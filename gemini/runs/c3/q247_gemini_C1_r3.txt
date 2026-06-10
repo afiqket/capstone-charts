@@ -1,0 +1,13 @@
+{
+  "answer": "A tooltip appears showing the country name, 'per 100,000 people', and a high value near 50 (e.g., Switzerland shows 47).",
+  "reasoning": "The map uses a log-scaled sequential color scheme where dark blue represents the highest values (up to 50). Hovering over these countries triggers the tooltip with their specific data point.",
+  "confidence": 1.0,
+  "evidence": "Hovering over Switzerland (colored rgb(8, 67, 132), the darkest blue) displays ['Switzerland', 'per 100,000 people', '47'].",
+  "interactions_performed": [
+    "Hovered over dark blue country (Switzerland)"
+  ],
+  "pitfalls_checked": [
+    "Verified log scale legend colors"
+  ],
+  "self_check": "The tooltip functionality is consistent across the map, and dark blue corresponds to the highest values."
+}

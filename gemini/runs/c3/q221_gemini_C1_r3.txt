@@ -1,0 +1,18 @@
+{
+  "answer": "Tesla's largest drop was 7.2 percentage points, occurring on March 10, 2025.",
+  "reasoning": "I analyzed the 'Year-to-date' performance chart for 2025. By playing the animation and recording Tesla's year-to-date (YTD) percentage changes daily, I found that the steepest decline happened between March 7, 2025, and March 10, 2025. Tesla's YTD value fell from −36.8% to −44.0%, a drop of 7.2 percentage points. This drop coincides with the market opening after a weekend. Other significant drops include a 6.1 percentage point fall on February 25, 2025, and a 5.5 percentage point fall on April 3, 2025.",
+  "confidence": 0.9,
+  "evidence": "Recorded YTD values for Tesla: March 7, 2025 (−36.8%) and March 10, 2025 (−44.0%). Difference: 7.2%. Source: Interactive 'Year-to-date' chart on Observable.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Identified the playback controls and the date/percentage labels",
+    "Played the animation and sampled Tesla's YTD percentage daily",
+    "Calculated the daily changes to identify the maximum drop"
+  ],
+  "pitfalls_checked": [
+    "Verified the year (2025) as displayed in the chart title and date labels",
+    "Checked for weekend gaps which often show larger multi-day drops",
+    "Distinguished between YTD percentage points and absolute stock price changes"
+  ],
+  "self_check": "The data shows a clear peak in daily decline on March 10. The value jumped from -36.8 to -44.0, which is the largest single-step drop observed in the 2025 YTD animation."
+}

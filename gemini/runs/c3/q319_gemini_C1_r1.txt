@@ -1,0 +1,9 @@
+{
+  "answer": "When hovering over France's data point in 2000, an interactive tooltip appears displaying the data for that year for both countries. For France, it shows 'France: 13.2 — Peak: Jul', and for Spain, it shows 'Spain: 9.8 — Peak: Sep'.",
+  "reasoning": "The chart uses a vertical hover line and a unified tooltip group that triggers based on the x-coordinate (the year). Hovering anywhere near the year 2000 displays the combined data for both France and Spain, including their annual birth rates and their peak birth months for that specific year.",
+  "confidence": 1.0,
+  "evidence": "Captured tooltip content at year 2000: ['2000', 'France: 13.2 — Peak: Jul', 'Spain: 9.8 — Peak: Sep'].",
+  "interactions_performed": ["Hovered mouse over the line chart at the year 2000", "Extracted text content from the active tooltip"],
+  "pitfalls_checked": ["Verified tooltip visibility", "Confirmed tooltip shows data for both series simultaneously"],
+  "self_check": "Hovering at 2000 correctly triggers the multi-series tooltip displaying the requested data."
+}

@@ -1,0 +1,14 @@
+{
+  "answer": "The chart transforms into a simple bar chart showing only the quarterly percentage contribution of Investment, without the Real GDP line or other stacked components.",
+  "reasoning": "Step 1: The chart is a stacked bar chart with an overlay line chart representing Real GDP growth. Step 3 & 4: Inspecting the interactive elements (the legend), clicking on a legend item toggles its visibility. By default, all series are active. If a user interacts with the chart to 'only see Investment contribution', they must toggle off the other 4 legend items. When 'Real GDP' is toggled off, the overlay line disappears. When the other 3 bar categories are toggled off, the 'stacking' effect disappears. This leaves only the 'Investment' segment for each quarter, effectively turning the visualization into a standard bar chart centered around the 0 baseline.",
+  "confidence": 1.0,
+  "evidence": "Source code review of the render() function shows `const showLine = active.has('Real GDP');` and `activeBars.forEach(s => ...)` which constructs the stacked segments based solely on `active.has(s.key)`. When only Investment is in the `active` Set, `showLine` is false and `activeBars` only loops over Investment.",
+  "interactions_performed": [
+    "Navigate to URL",
+    "Analyzed the rendering logic in the JS code to determine the visual outcome of isolating a single bar series."
+  ],
+  "pitfalls_checked": [
+    "Linked filter still active"
+  ],
+  "self_check": "Removing the line series removes the line, and removing the other stack segments leaves just one bar per column, matching the description of a simple bar chart."
+}

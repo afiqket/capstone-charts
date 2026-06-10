@@ -1,0 +1,9 @@
+{
+  "answer": "15.70",
+  "reasoning": "I identified the chart as an interactive choropleth map of the US states showing the percent change in marijuana use. I used Playwright to hover over the state of California on the map. The resulting interactive tooltip displayed the specific value for the state, which is 15.70.",
+  "confidence": 1.0,
+  "evidence": "Interactive tooltip value for California: State: California, Percent change: 15.70.",
+  "interactions_performed": ["Navigated to chart URL", "Hovered over the state of California on the map", "Extracted the percent change value from the tooltip"],
+  "pitfalls_checked": ["Verified the correct state (California) was hovered", "Confirmed the value (15.70) matched the state in the tooltip", "Checked that the value was indeed the 'Percent change'"],
+  "self_check": "The percent change for California is 15.70 according to the interactive map."
+}

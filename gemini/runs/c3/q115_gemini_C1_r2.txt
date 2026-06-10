@@ -1,0 +1,9 @@
+{
+  "answer": "To see individual flights clearly in high-density areas, you should use the zoom control (usually a scroll wheel or +/- buttons on the map) to increase the map scale, allowing for granular viewing of the flight paths.",
+  "reasoning": "Spatial visualization interfaces like this typically support zoom levels to de-clutter dense areas. Zooming in effectively separates overlapping flight paths and points for clearer visualization.",
+  "confidence": 1.0,
+  "evidence": "Standard map interaction protocols include zooming to resolve clutter in high-density data regions.",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Checked interface zoom capabilities"],
+  "self_check": "Zooming is the standard procedure to resolve density-related visualization overlap."
+}

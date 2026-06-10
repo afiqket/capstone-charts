@@ -1,0 +1,14 @@
+{
+  "answer": "Demand is high relative to supply, creating a seller's market and driving prices up.",
+  "reasoning": "Step 1 & 2: We have two charts over time (ZHVI for home values and Inventory for homes on the market). Step 3 & 4: By comparing the two trends after 2013, we observe that Inventory is decreasing while ZHVI (prices) are increasing. Step 6: There are no tricky scales or axes that distort this basic trend. Therefore, we can infer a basic economic principle: when supply falls and price rises simultaneously, demand is outpacing supply (a seller's market).",
+  "confidence": 0.95,
+  "evidence": "Inventory raw data shows a decrease from ~2M homes in 2013 to ~1.5M in 2019. ZHVI raw data shows an increase from ~$153k to ~$226k in the same period.",
+  "interactions_performed": [
+    "Navigate to URL"
+  ],
+  "pitfalls_checked": [
+    "Dual y-axes",
+    "Linked filter still active"
+  ],
+  "self_check": "Lower supply and higher prices mean buyers are competing for fewer homes, which matches the inference."
+}

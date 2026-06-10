@@ -1,0 +1,12 @@
+{
+  "answer": "San Francisco",
+  "reasoning": "1. Chart Identification: Map showing Geography of Educational Attainment in California by county. 2. Interactive Elements Protocol: Hovered over the paths for San Francisco and San Diego counties. 3. Data Extraction: Read the percentage of adults with bachelor's degrees for both from the hover tooltip text.",
+  "confidence": 1.0,
+  "evidence": "San Francisco: 58.1%; San Diego: 38.8%. 58.1% > 38.8%.",
+  "interactions_performed": [
+    "Hovered over the SVG path for San Francisco",
+    "Hovered over the SVG path for San Diego"
+  ],
+  "pitfalls_checked": [],
+  "self_check": "The question asks which is higher. San Francisco's percentage is significantly higher than San Diego's."
+}

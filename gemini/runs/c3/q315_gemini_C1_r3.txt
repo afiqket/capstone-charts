@@ -1,0 +1,9 @@
+{
+  "answer": "This value cannot be retrieved for 2010 because the data series for 'Completed cohort fertility rate shifted +30 years' ends before 2010 and is not present in the dataset for that year.",
+  "reasoning": "I attempted to retrieve the requested value by hovering over the year 2010 in the chart. The interactive tooltip appeared, but it only displayed values for the 'Tempo-adjusted total fertility rate' (2.07) and the 'Total fertility rate' (1.99). The 'Completed cohort fertility rate' is unavailable for recent years (like 2010) because the women in those cohorts have not yet reached the end of their childbearing years, meaning their completed fertility cannot be calculated.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for Sweden, 2010 only contains: 'Tempo-adjusted total fertility rate: 2.07', 'Total fertility rate: 1.99'.",
+  "interactions_performed": ["Hovered over the chart at the year 2010", "Analyzed the available series in the tooltip"],
+  "pitfalls_checked": ["Checked for missing data points due to demographic definitions"],
+  "self_check": "The CFR measure inherently stops before the current period, so it is absent for 2010."
+}

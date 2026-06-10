@@ -1,0 +1,9 @@
+{
+  "answer": "3",
+  "reasoning": "I typed 'Tonga Islands' into the chart's search bar. The search interface dynamically updated to show the total number of matches for that region within the current dataset.",
+  "confidence": 1.0,
+  "evidence": "Search result indicator displayed '3 matches' for 'Tonga Islands'.",
+  "interactions_performed": ["Typed 'Tonga Islands' into search bar", "Read matches count from UI"],
+  "pitfalls_checked": ["Linked filter still active when full-dataset answer is expected"],
+  "self_check": "The UI explicitly stated 3 matches for the queried region."
+}

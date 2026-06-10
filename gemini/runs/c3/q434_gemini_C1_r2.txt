@@ -1,0 +1,17 @@
+{
+  "answer": "Hover over the year 2000 in 'Line' mode or use the year slider in 'Bar' mode.",
+  "reasoning": "The chart is interactive with two modes: 'Line' and 'Bar'. In 'Line' mode, a user can hover their mouse over the horizontal axis at the year 2000; a vertical line and a tooltip will appear, displaying the exact value for Canada (1,779 h). Alternatively, the user can click the 'Bar' button to switch modes and then drag the year slider to 2000 to see the value represented as a bar.",
+  "confidence": 1.0,
+  "evidence": "In the chart's 'Line' mode, hovering over the year 2000 displays a tooltip where Canada is listed with a value of 1,779 h. In 'Bar' mode, the slider allows selecting any specific year from 1970 to 2017.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Hovered over the year 2000 in Line mode",
+    "Switched to Bar mode and moved the slider"
+  ],
+  "pitfalls_checked": [
+    "Checked both Line and Bar modes for interaction",
+    "Verified the tooltip contents",
+    "Confirmed the year range on the slider"
+  ],
+  "self_check": "The user can get the data by interacting with the visual elements (hovering for the tooltip) or the controls (switching modes and using the slider)."
+}

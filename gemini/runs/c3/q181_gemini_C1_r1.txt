@@ -1,0 +1,9 @@
+{
+  "answer": "A tooltip appears showing the region's name, the phrase 'Walk three times a week 2022:', and the corresponding percentage value.",
+  "reasoning": "1. Chart Identification: Map showing 'Which regions walk the least?'. 2. Interactive Elements: Hovering over different regions (map paths) reveals specific data points. 3. Data Reading: The text updates to show the region name (e.g., 'Aldershot') and its percentage ('40.5%') for 'Walk three times a week 2022'.",
+  "confidence": 1.0,
+  "evidence": "Hovering path 0 showed 'Aldershot Walk three times a week 2022: 40.5%'. Hovering path 1 showed 'Aldridge-Brownhills Walk three times a week 2022: 32.4%'.",
+  "interactions_performed": ["Hovered over multiple path elements (regions) on the map"],
+  "pitfalls_checked": ["Tooltip value differs from visual position"],
+  "self_check": "I hovered over the paths representing regions and verified that the displayed text updates to show the region name and its associated data percentage for 2022."
+}

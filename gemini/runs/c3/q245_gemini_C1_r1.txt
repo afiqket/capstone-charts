@@ -1,0 +1,14 @@
+{
+  "answer": "UNREADABLE",
+  "reasoning": "Afghanistan's value can be read as 0 from the map tooltip, but Andorra is not visible on the map (due to the 110m map resolution) and is not present in the bar chart. A comparison cannot be made.",
+  "confidence": 1.0,
+  "evidence": "Afghanistan tooltip reads '0'. No map element exists for Andorra.",
+  "interactions_performed": [
+    "Hovered over Afghanistan path",
+    "Searched for Andorra on map and bar chart"
+  ],
+  "pitfalls_checked": [
+    "Checked both map and bar chart views"
+  ],
+  "self_check": "Andorra is missing from the visualizations, so UNREADABLE is the correct response."
+}

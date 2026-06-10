@@ -1,0 +1,9 @@
+{
+  "answer": "79.95%",
+  "reasoning": "1. Chart Identification: Line chart showing share of rural and urban population with access to clean fuels for cooking, World. 2. Axes and Scale: Y-axis is linear from 0% to 100%, X-axis is years from 2000 to 2023. 3. Legend and Encoding: Blue line for Urban, orange line for Rural. 4. Interactive Elements: Hovered over the year 2008 on the line chart. 5. Data Reading: Read the tooltip values for Urban in 2008, which explicitly states 79.95%.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for 2008 shows Urban: 79.95%, Rural: 28.25%.",
+  "interactions_performed": ["Hovered over the x-axis corresponding to the year 2008"],
+  "pitfalls_checked": ["Y-axis starts at zero", "No dual axes", "Tooltip exact value used instead of interpolation"],
+  "self_check": "The question asks for the urban population percentage in 2008. The tooltip clearly displays 79.95% for Urban in 2008. The answer is consistent with the evidence."
+}

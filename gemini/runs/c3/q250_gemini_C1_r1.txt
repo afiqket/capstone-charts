@@ -1,0 +1,11 @@
+{
+  "answer": "A tooltip appears showing 'Peru', '2020', and '65.8%'.",
+  "reasoning": "Hovering over countries on this map triggers a tooltip that displays the country name, the year (2020), and the exact data value (percentage).",
+  "confidence": 1.0,
+  "evidence": "Hovering over Peru generates the exact text elements: 'Peru', '2020', '65.8%'.",
+  "interactions_performed": [
+    "Hovered over Peru on the map"
+  ],
+  "pitfalls_checked": [],
+  "self_check": "The tooltip contains the specific details requested."
+}

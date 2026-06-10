@@ -1,0 +1,17 @@
+{
+  "answer": "A tooltip will appear showing the value '0'.",
+  "reasoning": "I analyzed the map's interactive behavior by hovering over different countries. Step 4 of the checklist (Interactive Elements Protocol) requires hovering over relevant data points. Using Playwright, I identified that countries colored 'white' (a very light beige/orange #f7f4f0 in the implementation) correspond to a death rate of 0 in the legend. When hovering over these countries (e.g., USA, Canada), the tooltip updates to show the country name and the specific death rate value '0'. Countries with 'No data' are represented by a different light gray color (#f0ede8) and do not trigger a tooltip.",
+  "confidence": 1.0,
+  "evidence": "Hovering over countries with fill #f7f4f0 (lightest legend color for 0) triggered a tooltip with value '0'. Hovering over countries with fill #f0ede8 (No data) kept the tooltip hidden.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Switched to '🌍 Map' mode",
+    "Hovered over multiple 'white' or light-colored countries (USA, Canada, Tanzania)",
+    "Read the resulting tooltip value"
+  ],
+  "pitfalls_checked": [
+    "Distinguished between '0' value (light color) and 'No data' (gray color)",
+    "Verified tooltip visibility and content via Playwright evaluate"
+  ],
+  "self_check": "The question asks what happens and what value appears. My testing confirms a tooltip appears and the value is '0'."
+}

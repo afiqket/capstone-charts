@@ -1,0 +1,9 @@
+{
+  "answer": "Hover over the line chart at the x-axis position for the year 2000",
+  "reasoning": "Step 1: The chart is an interactive line chart. Step 4: The chart features a hover tooltip that displays data values for all plotted countries at the specific year hovered over. To see the data for Ethiopia in 2000, one must move the mouse cursor to the horizontal position corresponding to 2000 on the x-axis, and read the value next to 'Ethiopia' in the tooltip.",
+  "confidence": 1.0,
+  "evidence": "The chart uses an interactive SVG rect with a mousemove event listener that draws a vertical line at the hovered year and displays a tooltip with values for that year.",
+  "interactions_performed": ["snapshot"],
+  "pitfalls_checked": [],
+  "self_check": "The question asks how to retrieve a specific point of data on the line chart. Hovering is the correct interactive method."
+}

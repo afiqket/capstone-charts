@@ -1,0 +1,9 @@
+{
+  "answer": "82.4 years",
+  "reasoning": "I navigated to the interactive line chart for survival ages in France. To retrieve the 50% survival age for the year 2000, I moved the mouse to the x-coordinate corresponding to 2000. An interactive tooltip appeared showing the survival years for various population percentiles. The '50%' series, which represents the median survival age, was explicitly listed as 82.4 years for the year 2000.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for France, 2000: '50%: 82.4 years'.",
+  "interactions_performed": ["Hovered over the line chart at the year 2000", "Read the value from the interactive multi-series tooltip"],
+  "pitfalls_checked": ["Verified the year is 2000", "Confirmed the correct series '50%' was read", "Checked units (years)"],
+  "self_check": "In 2000, the median survival age (50% percentile) was 82.4 years."
+}

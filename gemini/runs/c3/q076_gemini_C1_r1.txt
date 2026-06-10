@@ -1,0 +1,9 @@
+{
+  "answer": "2014",
+  "reasoning": "Step 1: Chart is an interactive line chart showing 'Deaths from one-sided violence'. Step 2: X-axis is Year, Y-axis is deaths (Best estimate). Step 4/5: Interacted with the chart to extract the exact data values bound to the line elements for Iraq. The value for 2014 is 3,205, and for 2024 is 8.",
+  "confidence": 1.0,
+  "evidence": "Iraq 2014: 3205; Iraq 2024: 8",
+  "interactions_performed": ["Click Line chart button", "Extract D3 __data__ from SVG path elements"],
+  "pitfalls_checked": ["Checked exact year values"],
+  "self_check": "2014 is significantly higher (3205) than 2024 (8)."
+}

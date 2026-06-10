@@ -1,0 +1,9 @@
+{
+  "answer": "1997",
+  "reasoning": "1. Chart Identification: The interactive chart displays air pollution data for London and Delhi across several centuries. 2. Data Extraction: Searched the internal dataset bound to the chart's paths for records associated with 'Delhi'. 3. Data Reading: Identified all years for which 'Delhi' has a recorded value. 4. Determination: The earliest year in the dataset with a valid entry for Delhi is 1997.",
+  "confidence": 1.0,
+  "evidence": "Internal dataset filtering for 'Delhi' shows the minimum year with data is 1997.",
+  "interactions_performed": ["Evaluated the internal dataset using Playwright"],
+  "pitfalls_checked": ["Verified the dataset start year for Delhi specifically, as London has data going back much further (1700)"],
+  "self_check": "The question asks for the first year Delhi appears. The extracted raw data confirms that Delhi's series starts in 1997."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "The data panel does not disappear; it remains sticky, displaying the information of the last-hovered country until you hover over a new one.",
+  "reasoning": "1. Chart Identification: Interactive choropleth map. 2. Interactive Elements Protocol: Chart updates the bottom-right text area on mouseover. 3. Observation: Dispatching a 'mouseout' or 'mouseleave' event from a country path (or the entire SVG) does not clear the text area.",
+  "confidence": 1.0,
+  "evidence": "Moving the pointer away from the 'Malaysia' path after hovering it resulted in the text area continuing to display 'Malaysia 2020 27.1%'.",
+  "interactions_performed": ["Triggered mouseover on a country path", "Triggered mouseout/mouseleave from the path and SVG"],
+  "pitfalls_checked": ["Verified behavior across both individual country paths and the entire SVG element"],
+  "self_check": "The lack of a reset mechanism on mouseout means the tooltip data is persistent (sticky) between hovers."
+}

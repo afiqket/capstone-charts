@@ -1,0 +1,9 @@
+{
+  "answer": "38,000 TWh",
+  "reasoning": "I identified the chart as a streamgraph displaying energy consumption over time. To find the value for natural gas in 2020, I located the data path for 'Natural gas' (which is colored #70c4d4 according to the legend). Using Playwright, I simulated hovering over the extreme right of this path, which corresponds to the year 2020 on the x-axis. The resulting interactive tooltip displayed the specific value for Natural gas in 2020 as 38,000 TWh.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for Natural gas in 2020: Year: 2020, Value: 38,000 TWh.",
+  "interactions_performed": ["Navigated to chart URL", "Identified the natural gas path by its color", "Hovered over the rightmost end of the path (year 2020)", "Extracted the text from the resulting tooltip"],
+  "pitfalls_checked": ["Confirmed the year matches 2020", "Ensured the energy type is 'Natural gas'", "Checked the units are correctly recorded as TWh"],
+  "self_check": "In 2020, the consumption value for Natural gas was 38,000 TWh as reported by the tooltip."
+}

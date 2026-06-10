@@ -1,0 +1,9 @@
+{
+  "answer": "By hovering the mouse cursor over the line chart area along the x-axis corresponding to the years 2014 to 2017.",
+  "reasoning": "Step 1: Identified the chart as an interactive line chart. Step 4: The chart's code includes an invisible overlay rectangle that listens for 'mousemove' events. When the user hovers over the chart, the x-coordinate of the mouse is inverted using the x-scale to determine the corresponding year. A vertical line and a tooltip are then displayed, showing the data values for all selected countries (including Iraq) for that specific year.",
+  "confidence": 1.0,
+  "evidence": "The visualization code contains `lG.append(\"rect\")...on(\"mousemove\", function(event){...})` which calculates the hovered year and displays the tooltip `ttVal` and `ttCountry`.",
+  "interactions_performed": ["Navigated to the URL and analyzed the Observable notebook's source code for the line chart visualization."],
+  "pitfalls_checked": ["Checked if the chart requires clicking vs hovering.", "Confirmed the x-axis represents years."],
+  "self_check": "The question asks for the method to check data for specific years. The code explicitly uses mouse hover to trigger the tooltip showing values for a given year. The answer accurately describes this interaction."
+}

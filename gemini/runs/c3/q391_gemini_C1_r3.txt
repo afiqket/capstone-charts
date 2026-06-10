@@ -1,0 +1,9 @@
+{
+  "answer": "40.23%",
+  "reasoning": "1. Chart Identification: Small multiple line charts showing infection shares across 6 WHO regions. 2. Data Extraction: Extracted the internal dataset for the year 2019 for all six regions. 3. Data Reading: Fetched the exact underlying 'Bloodstream infections' value for each region in 2019. 4. Calculation: Summed the 6 values (241.372) and divided by 6 to get an average of 40.2286%. Rounded to two decimal places, this is 40.23%.",
+  "confidence": 1.0,
+  "evidence": "Extracted internal path data for 2019 across 6 regions (Africa, Eastern Mediterranean, Europe, Americas, South-East Asia, Western Pacific) and calculated the mathematical average.",
+  "interactions_performed": ["Evaluated the internal dataset using Playwright DOM queries"],
+  "pitfalls_checked": ["Calculated using exact numbers to prevent visual approximation errors", "Confirmed all 6 regions are included in the average calculation"],
+  "self_check": "The question asks for the average bloodstream infection percentage for all continents (regions) in 2019. The computed arithmetic mean is 40.23%."
+}

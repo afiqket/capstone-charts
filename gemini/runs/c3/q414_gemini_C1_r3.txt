@@ -1,0 +1,9 @@
+{
+  "answer": "A declining trend",
+  "reasoning": "I analyzed the interactive line chart by extracting data points from the start, middle, and end of the time series (1947 to 2014). In 1947, the number of cigarettes smoked per smoker per day was 24.0 for men and 18.0 for women. By 2014, these rates had decreased to 15.0 for men and 12.0 for women. Although there were some fluctuations during the period (including a sharp dip around 1959 and a local peak in the early 1980s for both genders), the overall movement from the beginning to the end of the chart is clearly downward for both men and women.",
+  "confidence": 1.0,
+  "evidence": "1947: Male 24.0, Female 18.0; 2014: Male 15.0, Female 12.0. Both series end at significantly lower values than where they started.",
+  "interactions_performed": ["mcp_playwright_browser_navigate", "mcp_playwright_browser_run_code_unsafe (to sample data points)"],
+  "pitfalls_checked": ["Checked intermediate fluctuations", "Verified starting and ending values"],
+  "self_check": "The long-term trend for both genders is a decline in cigarette consumption per smoker."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "A tooltip appears showing the country's name and 'None or temporary', and the country's border becomes thicker and black.",
+  "reasoning": "Step 1: It is an interactive choropleth map. Step 3: Orange color (#b13507) encodes the category 'None or temporary'. Step 4: When hovering over an orange country (e.g., Argentina), the stroke color changes to #000 (black) and width increases to 1. A tooltip also appears showing the country name and the category 'None or temporary'.",
+  "confidence": 1.0,
+  "evidence": "Hovering on Argentina (#b13507) produces the tooltip text 'Argentina\\n● None or temporary' and changes its SVG path stroke to black.",
+  "interactions_performed": ["Triggered mousemove event on an orange colored SVG path (#b13507)", "Inspected tooltip content and path attributes"],
+  "pitfalls_checked": ["Tooltip value differs from visual position"],
+  "self_check": "Hovering over the orange region triggers a tooltip with 'None or temporary' and a border highlight, matching the interactive code defined for the chart."
+}

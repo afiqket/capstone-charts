@@ -1,0 +1,9 @@
+{
+  "answer": "A tooltip appears showing the population of all displayed cities for the year 2020, sorted by population size from largest to smallest. For 2020, the cities shown are Jakarta (39.1M), Tokyo (33.7M), Dhaka (32.6M), New Delhi (29.1M), Shanghai (27.7M), Cairo (24.0M), Karachi (19.3M), New York City (14.0M), and Lahore (14.0M). Additionally, a vertical guide line appears on the chart at the 2020 position.",
+  "reasoning": "I used Playwright to simulate a mouse hover over the year 2020 on the line chart. This interaction triggered the display of the interactive tooltip and a vertical guide line. I extracted the full contents of the tooltip, which includes the year and the specific population values for each city in the dataset at that point in time.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for 2020: Year: 2020, Rows: Jakarta (39.1 million), Tokyo (33.7 million), Dhaka (32.6 million), New Delhi (29.1 million), Shanghai (27.7 million), Cairo (24.0 million), Karachi (19.3 million), New York City (14.0 million), Lahore (14.0 million).",
+  "interactions_performed": ["Navigated to chart URL", "Hovered over the 2020 mark on the x-axis", "Extracted all city population values from the triggered tooltip"],
+  "pitfalls_checked": ["Verified tooltip visibility", "Checked sorting of cities in the tooltip", "Confirmed the year displayed in the tooltip"],
+  "self_check": "Hovering over 2020 displays a sorted list of city populations, with Jakarta at 39.1M and New York City/Lahore at 14.0M."
+}

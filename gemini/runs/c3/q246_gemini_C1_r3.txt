@@ -1,0 +1,11 @@
+{
+  "answer": "Hover over Afghanistan on the map view to reveal a tooltip showing 0.",
+  "reasoning": "The visualization provides a map where data can be accessed via hover tooltips. By locating Afghanistan and triggering a hover event, the exact value is displayed.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for Afghanistan shows 'Afghanistan', 'per 100,000 people', '0'.",
+  "interactions_performed": [
+    "Hovered over Afghanistan on the map"
+  ],
+  "pitfalls_checked": [],
+  "self_check": "The question asks how to get the value, and the interactive method is hovering on the map."
+}

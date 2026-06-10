@@ -1,0 +1,9 @@
+{
+  "answer": "Sudan has the highest number of internally displaced people in 2024, with 11.56 million.",
+  "reasoning": "I navigated to the chart 'Internally displaced people due to conflict' (URL a7f11c936e3895fb). By inspecting the chart's data for the year 2024, I identified that Sudan has the largest value for internally displaced people. The UI explicitly lists Sudan at the top of the country list with a value of 11.56M. This was confirmed by extracting the text from the chart's rendering area in the iframe.",
+  "confidence": 1.0,
+  "evidence": "Chart text for 2024: 'Sudan 11.56M', followed by 'Syria 7.41M', 'Colombia 7.03M', etc.",
+  "interactions_performed": ["Navigated to URL", "Analyzed the chart's text content for the year 2024", "Confirmed Sudan as the maximum value in the list"],
+  "pitfalls_checked": ["Verified the year is 2024", "Confirmed the units (Millions)", "Checked for any higher values in the 'rawData' array"],
+  "self_check": "Sudan's 11.56M IDPs is the highest value shown for 2024, followed by Syria."
+}

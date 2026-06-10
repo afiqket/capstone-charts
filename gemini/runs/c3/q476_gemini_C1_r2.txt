@@ -1,0 +1,9 @@
+{
+  "answer": "91.24%",
+  "reasoning": "I opened the chart URL and identified it as an interactive line chart showing the 'Share of people who completed the initial COVID-19 vaccination protocol by age' in France. I followed the protocol to find the data for November 4th, 2022. By hovering over the chart at that specific date, the interactive tooltip revealed the values for all age groups. For the '50-59 years' age group, the tooltip explicitly stated a value of 91.24%. Although the question uses the term 'booster', the chart and its associated data (from Our World in Data) label this specific metric as 'completed the initial COVID-19 vaccination protocol'. No separate 'booster' category was found on the page or in the code.",
+  "confidence": 0.95,
+  "evidence": "Tooltip value for '50-59 years' on 'Nov 4, 2022' is 91.24%.",
+  "interactions_performed": ["Navigated to URL", "Hovered over the line chart at the position corresponding to November 4, 2022", "Extracted tooltip text via Playwright evaluate"],
+  "pitfalls_checked": ["Y-axis starting at zero", "Confirmed age group 50-59", "Verified date Nov 4, 2022", "Checked for other charts or data toggles (none found)"],
+  "self_check": "The percentage for the 50-59 age group on November 4, 2022, is 91.24% according to the chart's tooltip. This corresponds to the 'initial protocol completion' metric shown in the chart."
+}

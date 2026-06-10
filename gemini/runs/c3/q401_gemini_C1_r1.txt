@@ -1,0 +1,9 @@
+{
+  "answer": "PM₂.₅",
+  "reasoning": "1. Chart Identification: Line chart showing emissions of particulate matter (PM10 and PM2.5). 2. Legend and Encoding: The labels at the end of the lines indicate the type of particulate matter and correspond to the color of the line. 3. Data Reading: The text label 'PM₂.₅' is colored rgb(78, 121, 167), which is a standard blue. Therefore, the blue line represents PM₂.₅ emissions.",
+  "confidence": 1.0,
+  "evidence": "Extracted fill colors of the text labels. 'PM₂.₅' is labeled with a blue color (rgb(78, 121, 167)).",
+  "interactions_performed": ["Extracted text label colors via Playwright DOM evaluation"],
+  "pitfalls_checked": ["Verified both labels to confirm which one uses the blue color"],
+  "self_check": "The question asks what the blue line represents. Based on the label colors, PM2.5 is the blue series."
+}

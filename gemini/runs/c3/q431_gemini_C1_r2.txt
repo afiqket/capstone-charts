@@ -1,0 +1,19 @@
+{
+  "answer": "Africa",
+  "reasoning": "Across all years shown (2017-2023), Africa consistently had the highest average share of expenditure spent on food. Based on the chart data, Africa's average share remained around 37-38%, with countries like Nigeria exceeding 55%. Other regions such as Asia, South America, and North America had significantly lower average shares, typically ranging from 10% to 30%.",
+  "confidence": 1.0,
+  "evidence": "In 2023, Africa's average share of expenditure on food was approximately 37.4%, the highest of any region. Individual countries in Africa, such as Nigeria, had shares as high as 57.0%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Selected years 2017 and 2023 using the slider",
+    "Extracted dot data (X and Y coordinates) for each region",
+    "Calculated average share for each region"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (starts at 0%)",
+    "Linear scale verified",
+    "Region color encoding verified",
+    "Checked all years from 2017 to 2023"
+  ],
+  "self_check": "Africa is identified as the region with the highest average share because its data points are consistently positioned highest on the Y-axis (Share of expenditure spent on food) throughout the entire time period."
+}

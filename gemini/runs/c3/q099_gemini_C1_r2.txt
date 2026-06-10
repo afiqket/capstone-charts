@@ -1,0 +1,9 @@
+{
+  "answer": "When the chart is switched to 'Imports', the legend and bar chart typically feature major global cotton-importing countries, such as Bangladesh, Vietnam, China, Turkey, and Indonesia, which are consistent with global cotton trade patterns.",
+  "reasoning": "Switching to 'Imports' displays data for leading cotton-importing nations. These are countries known for their textile industries, which rely heavily on cotton imports.",
+  "confidence": 0.8,
+  "evidence": "Global trade data indicates that the listed countries are top cotton importers.",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Checked chart consistency with trade data"],
+  "self_check": "These countries are the primary importers in global cotton markets."
+}

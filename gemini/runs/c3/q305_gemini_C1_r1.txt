@@ -1,0 +1,9 @@
+{
+  "answer": "34.36%",
+  "reasoning": "I navigated to the interactive line chart showing the share of women by number of births. To find the percentage for women born in 1973 who had 2 births, I moved the mouse to the final data point on the x-axis (1973). An interactive tooltip appeared, providing a breakdown of birth counts for that cohort. The value for '2 births' was explicitly listed as 34.36%.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for women born in 1973: '2 births: 34.36%'.",
+  "interactions_performed": ["Hovered over the line chart at the year 1973", "Read value from the interactive tooltip"],
+  "pitfalls_checked": ["Verified the mother's birth year is 1973", "Confirmed the correct category '2 births' was read"],
+  "self_check": "34.36% of women born in 1973 had exactly 2 births."
+}

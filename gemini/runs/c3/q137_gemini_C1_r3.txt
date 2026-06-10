@@ -1,0 +1,15 @@
+{
+  "answer": "Investment",
+  "reasoning": "Step 1: The chart shows Contributions to U.S. quarterly GDP growth. Step 3: The components in question are Investment, Net exports, and Government spending. Step 4 & 5: To compare the average contribution of these components across all quarters shown (17 quarters), the underlying data array was extracted and averaged. Investment averaged ~0.75%, Government spending averaged ~0.30%, and Net exports averaged ~-0.50%. Comparing these values, Investment is the highest.",
+  "confidence": 1.0,
+  "evidence": "Extracted the __data__ property containing 17 quarters of data. The sum of 'Investment' was ~12.79 (average 0.752). The sum of 'Government spending' was ~5.09 (average 0.299). The sum of 'Net exports' was ~-8.49 (average -0.499). 0.752 is the highest of the three.",
+  "interactions_performed": [
+    "Navigate to URL",
+    "Executed JS code to extract and average the data for the specified components"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (does not start at zero)",
+    "Tooltip value differs from visual position"
+  ],
+  "self_check": "0.75 is mathematically greater than 0.30 and -0.50, correctly identifying Investment as the highest among the three options."
+}

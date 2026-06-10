@@ -1,0 +1,18 @@
+{
+  "answer": "18.8%",
+  "reasoning": "I analyzed the chart's source code (chart.js) which contains the raw data and visualization logic. For Fresno, the data is: deep: 0.190797 and poverty: 0.187995. The code defines 'total' as the sum of 'deep' and 'poverty'. The tooltip logic explicitly displays the 'Non-deep portion' using the 'poverty' value, formatted with d3.format('.1%'). 0.187995 formatted to one decimal place percent results in 18.8%.",
+  "confidence": 1.0,
+  "evidence": "Data in chart.js: { county: 'Fresno', deep: 0.190797, poverty: 0.187995 }. Tooltip code: Non-deep portion: ${d3.format('.1%')(d.poverty)}.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Extracted and analyzed the JavaScript source code",
+    "Identified the Fresno data point",
+    "Simulated the tooltip formatting logic"
+  ],
+  "pitfalls_checked": [
+    "Confirmed 'poverty' represents the non-deep portion based on the tooltip code",
+    "Verified the sum logic for 'total' poverty",
+    "Checked for filters (Fresno is in the default Central Valley view)"
+  ],
+  "self_check": "Fresno's non-deep poverty is 18.8% and deep poverty is 19.1%, totaling 37.9%. The question asks for the non-deep portion, which corresponds to the 18.8% value."
+}

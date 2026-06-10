@@ -1,0 +1,18 @@
+{
+  "answer": "Vietnam War",
+  "reasoning": "Step 1: Identified the chart as a horizontal bar chart titled 'How Many Members of the US Military Have Died in Each War?'. Step 2: Observed the horizontal axis uses a linear scale starting at 0K up to 700K. Step 3: A single series is plotted for each war. Step 4: Statically rendered data labels are present on the chart, eliminating the need to estimate from pixel positions. Step 5: Read the exact labeled values for the two wars in question: the Korean War has a label of 54,246, and the Vietnam War has a label of 58,209. Step 6: Verified no pitfalls (axis starts at 0, no dual axes, no log scale). Therefore, the Vietnam War had more deaths.",
+  "confidence": 1.0,
+  "evidence": "Statically rendered data labels on the chart: Korean War = 54,246; Vietnam War = 58,209.",
+  "interactions_performed": [
+    "Read page snapshot to capture statically rendered data labels"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (does not start at zero)",
+    "Dual y-axes (confirm which series uses which axis)",
+    "Stacked vs grouped bars",
+    "Log scale active",
+    "Linked filter still active when full-dataset answer is expected",
+    "Tooltip value differs from visual position"
+  ],
+  "self_check": "58,209 (Vietnam War deaths) is greater than 54,246 (Korean War deaths). The answer 'Vietnam War' is consistent with the evidence."
+}

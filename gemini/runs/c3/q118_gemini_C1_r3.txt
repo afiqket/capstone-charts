@@ -1,0 +1,9 @@
+{
+  "answer": "It zooms the map in and out.",
+  "reasoning": "I tested the scroll wheel interaction on the map canvas. Rotating the wheel forward resulted in a zoom-in effect (increasing map scale), while rotating it backward resulted in a zoom-out effect (decreasing map scale).",
+  "confidence": 1.0,
+  "evidence": "Visual confirmation of map scale changes upon scroll wheel input.",
+  "interactions_performed": ["Used scroll wheel on map"],
+  "pitfalls_checked": ["Interactivity level"],
+  "self_check": "Standard zoom behavior for interactive map charts."
+}

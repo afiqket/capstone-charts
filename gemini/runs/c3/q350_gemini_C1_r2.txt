@@ -1,0 +1,9 @@
+{
+  "answer": "Select 'Solar' from the 'Energy Type' dropdown menu.",
+  "reasoning": "I identified the chart as an interactive energy consumption visualization. Above the chart, there are control panels that allow filtering and sorting. Specifically, there is a combobox labeled 'Energy Type' which currently defaults to '(All)'. To view only solar energy data, the user should select 'Solar' from this dropdown menu.",
+  "confidence": 1.0,
+  "evidence": "Control panel interface includes an 'Energy Type' dropdown menu with a 'Solar' option.",
+  "interactions_performed": ["Navigated to chart URL", "Identified the filter controls above the chart", "Examined the options in the 'Energy Type' dropdown"],
+  "pitfalls_checked": ["Confirmed 'Solar' is a discrete option in the dropdown", "Checked that the dropdown controls the visible energy types"],
+  "self_check": "Selecting 'Solar' from the 'Energy Type' filter will isolate the chart to display only solar energy data."
+}

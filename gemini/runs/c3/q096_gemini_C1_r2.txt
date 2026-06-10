@@ -1,0 +1,9 @@
+{
+  "answer": "The chart provided does not display a specific cotton production value for India in 2017. The chart shows a ranking of leading cotton producers, but the exact production value in 1,000 480lb bales for 2017 is not provided in a machine-readable or easily accessible format.",
+  "reasoning": "The chart is an interactive line chart showing trends between 2000 and 2018, and a bar chart showing the percentage of production in 2017. It does not provide specific production volume values in 1,000 480lb bales for any country in 2017.",
+  "confidence": 0.0,
+  "evidence": "Chart shows percentage production in 2017, not raw production values.",
+  "interactions_performed": ["Navigated to URL"],
+  "pitfalls_checked": ["Checked for raw production values"],
+  "self_check": "The chart shows shares (%), not absolute production values for 2017."
+}

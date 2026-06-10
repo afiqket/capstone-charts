@@ -1,0 +1,9 @@
+{
+  "answer": "To view the ages of newlyweds with a Bachelor's Degree only, you would need to use the 'Educational Attainment' filter menu to select 'Bachelor's degree'.",
+  "reasoning": "The page provides an 'Educational Attainment' dropdown/filter that allows users to isolate data by specific levels of education, including 'Bachelor's degree'.",
+  "confidence": 1.0,
+  "evidence": "Filter menu includes 'Educational Attainment' with an option for 'Bachelor's degree'.",
+  "interactions_performed": ["Navigated to URL", "Checked filters"],
+  "pitfalls_checked": ["Verified filter options"],
+  "self_check": "The filter correctly targets educational levels."
+}

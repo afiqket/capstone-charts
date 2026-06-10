@@ -1,0 +1,16 @@
+{
+  "answer": "Korea",
+  "reasoning": "Across all years shown (1970–2017), Korea (South Korea) had the highest average annual working hours per person employed. Its values consistently remained above 2,000 hours, and peaked near 2,900 hours in the late 1970s and 1980s, resulting in an overall average of approximately 2,548 hours. This is significantly higher than other countries like Mexico (~2,149 h) and South Africa (~2,295 h).",
+  "confidence": 1.0,
+  "evidence": "Average annual working hours calculated from chart data: Korea (2,548 h), South Africa (2,295 h), Mexico (2,149 h), Japan (1,951 h), United States (1,773 h).",
+  "interactions_performed": [
+    "Extracted full time-series data for all 12 countries from the notebook's internal data structures via Playwright evaluation",
+    "Calculated the mean value for each country across all available years"
+  ],
+  "pitfalls_checked": [
+    "Verified that 'highest' refers to the average over the entire period, not just a single year",
+    "Confirmed country identification via color mapping",
+    "Checked for variations in the number of years available per country"
+  ],
+  "self_check": "Korea's line is positioned highest on the chart for the vast majority of the timeline, confirming it has the highest average."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "Cohort life expectancy",
+  "reasoning": "I navigated to the interactive chart and identified the data points for France in 1900 by hovering over the line chart. The interactive tooltip displayed 'Period life expectancy: 45.1 years' and 'Cohort life expectancy: 51.9 years'. Comparing these two values, the cohort life expectancy was higher than the period life expectancy in 1900.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for France, 1900: Period life expectancy: 45.1 years, Cohort life expectancy: 51.9 years.",
+  "interactions_performed": ["Hovered over the line chart at the x-position for 1900", "Read values from the resulting multi-series tooltip"],
+  "pitfalls_checked": ["Confirmed the year is exactly 1900", "Ensured both series (period and cohort) were correctly identified from the legend and tooltip labels"],
+  "self_check": "In 1900, cohort life expectancy (51.9) was greater than period life expectancy (45.1)."
+}

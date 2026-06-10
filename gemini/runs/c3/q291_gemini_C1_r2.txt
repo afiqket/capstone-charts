@@ -1,0 +1,9 @@
+{
+  "answer": "2.67",
+  "reasoning": "I navigated to the interactive stacked area chart and hovered over the year 2018 at the far right of the timeline. An interactive tooltip appeared, which broke down the sex gap in life expectancy by age group for France. The value for the 'Ages 60–79' group was explicitly listed as 2.67 years, contributing to the total sex gap of 5.94 years in that year.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for France, 2018: 'Ages 60–79: 2.67'.",
+  "interactions_performed": ["Hovered over the chart at the year 2018", "Extracted text from the active tooltip group"],
+  "pitfalls_checked": ["Verified the entity is France", "Verified the year is 2018", "Checked the correct age group (60–79)"],
+  "self_check": "In 2018, the contribution of Ages 60-79 to the sex gap was 2.67 years."
+}

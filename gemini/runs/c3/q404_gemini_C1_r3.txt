@@ -1,0 +1,17 @@
+{
+  "answer": "Ammonia",
+  "reasoning": "I identified the chart as an interactive line chart showing indexed emissions of air pollutants in the US from 1970 to 2016. I used Playwright to hover over the year 1995 on the x-axis to trigger the tooltip. The tooltip provided the following indexed values for 1995: Ammonia (99.90), PM₂.₅ (94.67), Volatile organic compounds (VOCs) (63.60), Nitrogen oxides (NOx) (92.83), PM₁₀ (25.08), and Sulphur dioxide (SO₂) (59.64). Comparing these values, Ammonia has the highest indexed value at 99.90.",
+  "confidence": 1.0,
+  "evidence": "1995 Tooltip values: Ammonia (99.90), PM₂.₅ (94.67), VOCs (63.60), NOx (92.83), PM₁₀ (25.08), SO₂ (59.64).",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Hovered over the year 1995 on the interactive line chart",
+    "Read all pollutant values from the tooltip"
+  ],
+  "pitfalls_checked": [
+    "Confirmed correct year (1995)",
+    "Compared all series values from the tooltip",
+    "Used exact values instead of visual estimation"
+  ],
+  "self_check": "Ammonia's value of 99.90 is the highest among all pollutants listed in the tooltip for 1995. The next highest is PM₂.₅ at 94.67."
+}

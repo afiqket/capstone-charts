@@ -1,0 +1,14 @@
+{
+  "answer": "Vietnam War",
+  "reasoning": "1. Identified chart as a bar chart showing deaths by war. 2. Located the Korean War on the y-axis and read the corresponding bar's data label as 54,246. 3. Located the Vietnam War on the y-axis and read its data label as 58,209. 4. Compared the two values (58,209 > 54,246) to conclude the Vietnam War had more deaths.",
+  "confidence": 1.0,
+  "evidence": "Data labels explicitly state 54,246 deaths for Korean War and 58,209 deaths for Vietnam War.",
+  "interactions_performed": [],
+  "pitfalls_checked": [
+    "Y-axis truncated (does not start at zero)",
+    "Dual y-axes (confirm which series uses which axis)",
+    "Stacked vs grouped bars",
+    "Log scale active"
+  ],
+  "self_check": "Vietnam War deaths (58,209) > Korean War deaths (54,246). Conclusion: Vietnam War. Matches evidence."
+}

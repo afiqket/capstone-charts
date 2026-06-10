@@ -1,0 +1,14 @@
+{
+  "answer": "Click the legend items for 'Real GDP', 'Investment', 'Net exports', and 'Government spending' to toggle them off.",
+  "reasoning": "Step 1: The chart is a stacked bar chart with an overlay line chart. Step 3: There are 5 series listed in the legend: Real GDP, Consumption, Investment, Net exports, and Government spending. Step 4: Inspecting the interactive elements (the legend), clicking on a legend item toggles its visibility. By default, all series are active. To see only 'Consumption', the user must interact with the legend to disable the other four series.",
+  "confidence": 1.0,
+  "evidence": "The page source code creates an 'active' Set containing all keys initially. The legend items have a click handler: 'if (active.has(s.key)) { if (active.size > 1) active.delete(s.key); } else { active.add(s.key); }'. This confirms they are toggle buttons.",
+  "interactions_performed": [
+    "Navigate to URL",
+    "Analyzed page source code for legend click handlers"
+  ],
+  "pitfalls_checked": [
+    "Linked filter still active"
+  ],
+  "self_check": "To isolate one item in a multi-select toggle system where all are on by default, the others must be turned off. This perfectly answers 'how do we only see data for Consumption'."
+}

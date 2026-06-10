@@ -1,0 +1,9 @@
+{
+  "answer": "-7.20",
+  "reasoning": "I identified the chart as an interactive choropleth map of the US states showing the percent change in cocaine use. I used Playwright to hover over the state of Texas on the map. The resulting interactive tooltip displayed the specific value for the state, which is -7.20.",
+  "confidence": 1.0,
+  "evidence": "Interactive tooltip value for Texas: State: Texas, Percent change: -7.20.",
+  "interactions_performed": ["Navigated to chart URL", "Hovered over the state of Texas on the map", "Extracted the percent change value from the tooltip"],
+  "pitfalls_checked": ["Verified the correct state (Texas) was hovered", "Confirmed the value (-7.20) matched the state in the tooltip", "Checked that the value was the 'Percent change'"],
+  "self_check": "The percent change for Texas is -7.20 according to the interactive map."
+}

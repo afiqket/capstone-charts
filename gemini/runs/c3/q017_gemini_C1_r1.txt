@@ -1,0 +1,13 @@
+{
+  "answer": "UNREADABLE",
+  "reasoning": "The provided chart displays the Geography of Educational Attainment in California at the county level (measuring the percent of adults with a bachelor's degree). It does not contain data on 'percent change', nor does it display data for multiple 'inland states and coastal states' as asked in the question. Therefore, the question cannot be answered using this chart.",
+  "confidence": 0.0,
+  "evidence": "none",
+  "interactions_performed": [
+    "Navigated to the provided Playwright URL",
+    "Analyzed the chart title 'Geography of Educational Attainment in California'",
+    "Checked the DOM tree, verifying the map data corresponds to 58 California counties rather than US states and does not measure percent change"
+  ],
+  "pitfalls_checked": [],
+  "self_check": "N/A"
+}

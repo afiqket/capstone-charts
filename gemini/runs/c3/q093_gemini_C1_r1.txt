@@ -1,0 +1,9 @@
+{
+  "answer": "The 'CROPS MOST COMMONLY GROWN' button.",
+  "reasoning": "1. Chart Identification: Dashboard with two main views.\n2. Interactive Elements Protocol: There are two main buttons/tabs at the top: 'SOIL CONSERVATION PRACTICES' and 'CROPS MOST COMMONLY GROWN'.\n3. Conclusion: To see crops, including those in Tanzania, you need to click the 'CROPS MOST COMMONLY GROWN' button.",
+  "confidence": 1.0,
+  "evidence": "The interface has a 'CROPS MOST COMMONLY GROWN' button that reveals the crops grown for all countries including Tanzania.",
+  "interactions_performed": ["Navigated to URL", "Inspected available buttons and text"],
+  "pitfalls_checked": ["Linked filter still active"],
+  "self_check": "To view crop data, the user must select the view that displays crop data, which is accessed via the 'CROPS MOST COMMONLY GROWN' button."
+}

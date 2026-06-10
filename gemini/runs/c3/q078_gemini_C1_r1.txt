@@ -1,0 +1,9 @@
+{
+  "answer": "No data",
+  "reasoning": "Step 1: Map identified. Step 3: The map includes a color-coded legend at the bottom mapping colors to numeric ranges, and lists 'No data' for regions without data (usually white/gray). Step 4: Hovering over a country without data triggers a tooltip that says 'No data'.",
+  "confidence": 0.9,
+  "evidence": "Map legend explicitly lists 'No data'. Tooltips for these regions display 'No data'.",
+  "interactions_performed": ["snapshot", "hover"],
+  "pitfalls_checked": [],
+  "self_check": "White countries on this chart signify missing data, and 'No data' is correctly shown."
+}

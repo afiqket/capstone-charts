@@ -1,0 +1,17 @@
+{
+  "answer": "Cowpea (35%).",
+  "reasoning": "I analyzed the 'Crops Most Commonly Grown' view for Malawi (Step 4 of the checklist). By filtering the country to 'Malawi' only, I obtained the following ranking of crops by percentage of households: 1. Maize (100%), 2. Groundnut (73%), 3. Soybean (52%), 4. Bean (46%), 5. Cowpea (35%).",
+  "confidence": 1.0,
+  "evidence": "Malawi crop ranking: Maize 100%, Groundnut 73%, Soybean 52%, Bean 46%, Cowpea 35%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Clicked 'CROPS MOST COMMONLY GROWN' button",
+    "Filtered the country list to select only 'Malawi'",
+    "Read the ranked values from the resulting chart"
+  ],
+  "pitfalls_checked": [
+    "Ensured only Malawi's data was being viewed",
+    "Verified the ranking order (highest to lowest)"
+  ],
+  "self_check": "The question asks for the 5th highest grown crop in Malawi. The 5th item in the ranked list is Cowpea at 35%."
+}

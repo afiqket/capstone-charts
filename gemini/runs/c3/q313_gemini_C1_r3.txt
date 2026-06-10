@@ -1,0 +1,9 @@
+{
+  "answer": "An interactive tooltip appears displaying 'Age 35' and a list of the average number of children by that age for all visible cohorts, including the 1995 cohort which shows a value of 0.40.",
+  "reasoning": "The chart's interaction is based entirely on the x-coordinate (Age), not proximity to a specific line. Hovering anywhere near age 35 triggers a vertical line at that age and displays a comprehensive tooltip. This tooltip lists the cumulative fertility values for all available cohorts at exactly age 35, sorted by value. For the 1995 cohort, the value is 0.40.",
+  "confidence": 1.0,
+  "evidence": "Captured tooltip content at Age 35: ['Age 35', 'avg. children by this age', ..., '1995: 0.40'].",
+  "interactions_performed": ["Hovered over the chart area at the x-position for age 35", "Read the resulting multi-series tooltip"],
+  "pitfalls_checked": ["Verified that hover interaction is x-axis dependent"],
+  "self_check": "Hovering at age 35 reveals the data for all cohorts at that age, including 1995."
+}

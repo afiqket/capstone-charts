@@ -1,0 +1,9 @@
+{
+  "answer": "When hovering over the France panel around 1970 in Line mode, an interactive tooltip appears displaying the values for both females and males in that year: 'Females: 83.8 years' and 'Males: 78.1 years'.",
+  "reasoning": "I navigated to the small multiples view in 'Line' mode and located the France panel. I moved the mouse cursor to the start of the timeline (1970). This interaction triggered a vertical hover line and a tooltip. The tooltip, styled with the specific series colors, provided the numeric modal age at death for both sexes in France for the year 1970.",
+  "confidence": 1.0,
+  "evidence": "Captured tooltip content for France at 1970: ['France, 1970', 'Females: 83.8 years', 'Males: 78.1 years'].",
+  "interactions_performed": ["Ensured 'Line' mode was active", "Hovered over the France panel at the year 1970", "Extracted text from the multi-series tooltip"],
+  "pitfalls_checked": ["Verified mode (Line)", "Confirmed year (1970)", "Confirmed panel (France)"],
+  "self_check": "Hovering at 1970 in the France panel correctly reveals the sex-specific values for that year."
+}

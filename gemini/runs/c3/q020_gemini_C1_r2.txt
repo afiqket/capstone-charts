@@ -1,0 +1,19 @@
+{
+  "answer": "Marin County and San Francisco County have unusually high percentages of bachelor's degrees (59.5% and 58.1% respectively) compared to the rest of California.",
+  "reasoning": "I used Playwright to extract the exact bachelor's degree percentages for all 58 counties in California under the 'All adults' filter. By sorting the data, I identified that Marin County (59.5%) and San Francisco County (58.1%) are significantly higher than the state-wide distribution. Most counties fall between 15% and 40%, making these two counties clear outliers on the high end of the educational attainment spectrum.",
+  "confidence": 1.0,
+  "evidence": "Extracted data for all counties: Marin County: 59.5%, San Francisco County: 58.1%, Santa Clara County: 52.4%, San Mateo County: 51.0%. The majority of counties are much lower, with Lassen County at the bottom with 12.9%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Used a script to hover over every county path on the map",
+    "Captured tooltip data for each county",
+    "Aggregated and sorted the data to identify outliers"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated (N/A for map)",
+    "Log scale (Legend shows linear buckets)",
+    "Filter active (Confirmed 'All adults' was selected)",
+    "Tooltip value differs from visual position (Used exact tooltip values)"
+  ],
+  "self_check": "I verified the data for all 58 counties and compared the top values to the distribution. Marin and San Francisco are clearly at the top of the 'More than 60%' color bucket (or very close to it) and are the only ones near that level."
+}

@@ -1,0 +1,9 @@
+{
+  "answer": "The age at which women reach one child on average has been steadily increasing (shifting to older ages) for more recent birth cohorts.",
+  "reasoning": "I observed the horizontal axis (Age of women) and the vertical axis (average children). By tracing the y=1 horizontal line across the chart, it is evident that the curves for earlier cohorts (e.g., 1930s, 1940s) cross the 1-child threshold at younger ages (early 20s). In contrast, the curves for more recent cohorts (e.g., 1980s, 1990s) are shifted to the right, crossing the 1-child threshold at increasingly older ages (late 20s to early 30s).",
+  "confidence": 1.0,
+  "evidence": "Visual trend of the cumulative fertility curves shifting rightward over time along the y=1 axis.",
+  "interactions_performed": ["Visually analyzed the intersection of cohort lines with the y=1 level"],
+  "pitfalls_checked": ["Confirmed the definition of cumulative fertility rate"],
+  "self_check": "The rightward shift of the curves indicates delayed childbearing across successive cohorts."
+}

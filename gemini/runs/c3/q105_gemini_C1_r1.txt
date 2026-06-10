@@ -1,0 +1,9 @@
+{
+  "answer": "217,967",
+  "reasoning": "I navigated to the provided URL and identified the chart as an interactive treemap. Following the checklist, I first located the 'Cemetery' category in the high-level view. I then used Playwright to click on the Cemetery segment to drill down into the borough-level data. Within this drill-down view, I located the segment for 'Newham'. The tooltip associated with the Newham segment explicitly provided the value for its cemetery space.",
+  "confidence": 1.0,
+  "evidence": "The drill-down tooltip for Newham under the Cemetery category shows: 'Open Space: Cemetery', 'Borough: Newham', 'Value: 217,967'.",
+  "interactions_performed": ["mcp_playwright_browser_navigate", "mcp_playwright_browser_run_code_unsafe (to click Cemetery node)", "mcp_playwright_browser_run_code_unsafe (to read tooltip)"],
+  "pitfalls_checked": ["Y-axis truncated", "Dual y-axes", "Stacked vs grouped bars", "Log scale active"],
+  "self_check": "The size of Newham's Cemetery space is 217,967. This was verified by drilling down into the specific Cemetery category of the treemap and reading the exact tooltip value for the Newham borough."
+}

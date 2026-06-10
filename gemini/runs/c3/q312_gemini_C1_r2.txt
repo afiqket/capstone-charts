@@ -1,0 +1,9 @@
+{
+  "answer": "2.08",
+  "reasoning": "I navigated to the line chart and moved the cursor to the x-axis coordinate representing age 40. This triggered an interactive tooltip that lists the average number of children by that age for each birth cohort. For the 1970 cohort, the tooltip explicitly displayed a value of 2.08.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data at Age 40: '1970: 2.08'.",
+  "interactions_performed": ["Hovered over the chart at the x-position for Age 40", "Read the value for the 1970 cohort from the tooltip"],
+  "pitfalls_checked": ["Verified the age is 40", "Confirmed the correct cohort (1970) was read"],
+  "self_check": "The average children by age 40 for the 1970 cohort is 2.08."
+}

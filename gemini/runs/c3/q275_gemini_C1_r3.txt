@@ -1,0 +1,9 @@
+{
+  "answer": "China's number of missing women increases steadily from 27.20 million in 1970, peaks at approximately 76.90 million in 2035, and then experiences a slight decline to 73.40 million by 2050.",
+  "reasoning": "I used the chart's interactive tooltip to retrieve data points for China at regular intervals. I observed that the value starts at 27.20 million in 1970 and increases throughout the late 20th and early 21st centuries. By hovering over the chart, I identified a peak value of 76.90 million in 2035. After this point, the trend shifts to a gradual decrease, reaching 73.40 million in the final projected year, 2050.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for China: 1970 (27.20 million), 2010 (62.30 million), 2035 (76.90 million peak), 2050 (73.40 million).",
+  "interactions_performed": ["Hovered over the area chart at various years (1970, 2010, 2035, 2050) to read tooltip values"],
+  "pitfalls_checked": ["Checked for peak and subsequent decline", "Verified values are for China specifically, not the total stacked value"],
+  "self_check": "The trend increases from 1970 to 2035 and then decreases to 2050. This is confirmed by the tooltip readings."
+}

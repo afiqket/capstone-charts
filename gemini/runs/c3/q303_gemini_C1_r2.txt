@@ -1,0 +1,9 @@
+{
+  "answer": "In 1950, the average age for the 2nd birth (26.54 years) was higher than the average age for the 1st birth (23.59 years).",
+  "reasoning": "I navigated to the line chart showing average age at birth by mother's birth year. I located the year 1950 on the x-axis and used the interactive tooltip to retrieve the values for the '1st birth' and '2nd birth' series. For the cohort of mothers born in 1950, the average age at their first birth was 23.59 years, while for their second birth it was 26.54 years.",
+  "confidence": 1.0,
+  "evidence": "Tooltip values for mother's birth year 1950: 1st birth: 23.59 years, 2nd birth: 26.54 years.",
+  "interactions_performed": ["Hovered over the line chart at the 1950 point", "Read values from the multi-series tooltip"],
+  "pitfalls_checked": ["Verified the year is 1950", "Compared the correct categories (1st vs 2nd birth)"],
+  "self_check": "2nd birth (26.54) > 1st birth (23.59) in the 1950 cohort."
+}

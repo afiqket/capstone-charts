@@ -1,0 +1,9 @@
+{
+  "answer": "94.36 mg/PCU",
+  "reasoning": "1. Chart Identification: Bar chart of antibiotic use in livestock by country. 2. Data Extraction: Simulated hover interactions on every invisible overlay bar to trigger tooltips. 3. Filtering: Extracted tooltip text and filtered for entries where the region is 'Asia'. 4. Calculation: Extracted the numeric value (mg/PCU) for each of the 48 Asian countries, summed them (4529.31), and calculated the arithmetic mean (4529.31 / 48 = 94.3606).",
+  "confidence": 1.0,
+  "evidence": "Tooltip data gathered by interacting with all bars on the chart. Filtered region='Asia', extracted 48 values averaging 94.36 mg/PCU.",
+  "interactions_performed": ["Hovered sequentially over all 186 bars on the chart and extracted tooltip values"],
+  "pitfalls_checked": ["Included all data points for Asia without relying solely on axis estimations"],
+  "self_check": "The question asks for the average of Asian countries. The mathematical average of exactly those values shown in the tooltip is 94.36 mg/PCU."
+}

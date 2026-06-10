@@ -1,0 +1,9 @@
+{
+  "answer": "2.14",
+  "reasoning": "I interacted with the chart to view data for Sweden in the year 1990. By hovering over the data point for 1990 on the x-axis, an interactive tooltip appeared detailing the three fertility measures. The value for the 'Total fertility rate' was listed as 2.14.",
+  "confidence": 1.0,
+  "evidence": "Tooltip data for Sweden, 1990: 'Total fertility rate: 2.14'.",
+  "interactions_performed": ["Hovered over the chart at the year 1990", "Read the value from the interactive tooltip"],
+  "pitfalls_checked": ["Verified the year is exactly 1990", "Confirmed the correct measure ('Total fertility rate') was read"],
+  "self_check": "In 1990, the TFR for Sweden was 2.14."
+}

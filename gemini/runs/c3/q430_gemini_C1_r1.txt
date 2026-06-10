@@ -1,0 +1,20 @@
+{
+  "answer": "Coffee",
+  "reasoning": "I identified the chart as an interactive line chart showing long-term global food commodity prices indexed to 1900 (where 1900 = 100). To determine which food changed the most since 1958, I compared the indexed prices in 1958 with the latest data in 2020. In 1958, Coffee had an indexed price of 164.89. By 2020, its price had dropped to 50.58, representing a net change of 114.31 points. Beef followed with a net increase of 81.68 points (114.70 to 196.38). Although Lamb and Beef saw higher price peaks between 1958 and 2020, Coffee's net change from the 1958 baseline to the 2020 endpoint is the largest among all commodities.",
+  "confidence": 0.9,
+  "evidence": "1958 Tooltip values: Coffee (164.89), Lamb (134.29), Beef (114.70). 2020 Tooltip values: Beef (196.38), Lamb (165.62), Coffee (50.58). Net changes: Coffee (-114.31), Beef (+81.68), Lamb (+31.33).",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Hovered over the year 1958 to extract all commodity prices",
+    "Hovered over the year 2020 to extract all commodity prices",
+    "Sampled years between 1958 and 2020 to check for peaks",
+    "Calculated net changes and ranges for the commodities"
+  ],
+  "pitfalls_checked": [
+    "Confirmed correct start year (1958)",
+    "Identified all series correctly",
+    "Compared net changes vs. absolute range",
+    "Used exact tooltip values instead of visual estimation"
+  ],
+  "self_check": "Coffee's price moved from 164.89 in 1958 to 50.58 in 2020. The absolute magnitude of this net change (114.31) is greater than that of any other commodity, including Beef (81.68) and Lamb (31.33)."
+}

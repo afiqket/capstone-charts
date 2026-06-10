@@ -1,0 +1,9 @@
+{
+  "answer": "The 5th most commonly grown crop in Malawi is Cowpea, with 35% of households growing it.",
+  "reasoning": "I accessed the 'Crops Most Commonly Grown' chart and filtered for Malawi. The data lists the crops in descending order by percentage: 1. Maize (100%), 2. Groundnut (73%), 3. Soybean (52%), 4. Bean (46%), and 5. Cowpea (35%).",
+  "confidence": 1.0,
+  "evidence": "Data extracted from the chart for Malawi: Maize (100%), Groundnut (73%), Soybean (52%), Bean (46%), Cowpea (35%).",
+  "interactions_performed": ["Navigated to URL", "Filtered for Malawi"],
+  "pitfalls_checked": ["Verified crop rankings for Malawi"],
+  "self_check": "The 5th crop in the ranked list for Malawi is clearly Cowpea at 35%."
+}

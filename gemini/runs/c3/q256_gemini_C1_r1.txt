@@ -1,0 +1,14 @@
+{
+  "answer": "A tooltip appears showing 'Algeria', 'Stand-alone mental health policy', and 'No'.",
+  "reasoning": "With the year set to 2016, hovering over a country like Algeria triggers a tooltip that provides the selected country's data for that specific year.",
+  "confidence": 1.0,
+  "evidence": "Hovering over Algeria while the timeline is at 2016 displays the tooltip: 'Algeria', 'Stand-alone mental health policy', 'No'.",
+  "interactions_performed": [
+    "Clicked the timeline slider to select 2016",
+    "Hovered over Algeria on the map"
+  ],
+  "pitfalls_checked": [
+    "Verified the timeline was set to 2016 before reading the tooltip"
+  ],
+  "self_check": "The tooltip accurately reflects Algeria's status as 'No' in 2016."
+}

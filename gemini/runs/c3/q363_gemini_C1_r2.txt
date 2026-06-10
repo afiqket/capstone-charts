@@ -1,0 +1,9 @@
+{
+  "answer": "UNREADABLE",
+  "reasoning": "I successfully navigated to the chart URL and identified the chart as a scatter plot showing male vs female life expectancy. However, after systematically scanning the chart by hovering over all available bubbles and searching the entire document text and underlying SVG elements (titles, labels, ARIA attributes), I was unable to locate data for 'Nigeria'. The interactive tooltips triggered for other countries but did not appear for Nigeria, and the name 'Nigeria' was not found in the accessible text content of the page.",
+  "confidence": 0.0,
+  "evidence": "Systematic hover scan of all 237 bubbles in the chart failed to produce a tooltip containing 'Nigeria'. Text search for 'Nigeria' on the page returned no results.",
+  "interactions_performed": ["Navigated to chart URL", "Identified 237 bubble elements in the SVG", "Programmatically hovered over each bubble to trigger and inspect tooltips", "Searched document text content and SVG metadata for 'Nigeria'"],
+  "pitfalls_checked": ["Checked if Nigeria was filtered out by continent controls", "Verified year was set to 2021", "Inspected tooltips and SVG title/aria tags"],
+  "self_check": "N/A"
+}
