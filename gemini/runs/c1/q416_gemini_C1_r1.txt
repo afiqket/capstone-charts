@@ -1,0 +1,19 @@
+{
+  "run_id": "5bb6672e-7c93-4073-952a-309da9873595",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart129",
+  "question_id": "q416",
+  "js_path": "charts/chart129.js",
+  "csv_path": "charts/files/chart129.csv",
+  "question": "What happens when user hover over the line chart?",
+  "prompt": "@charts/chart129.js @charts/files/chart129.csv Question: What happens when user hover over the line chart?",
+  "prompt_hash": "460cfb2af99d59e838fe9db289b07631585d37933ec8c3998880dc4a7f1dee81",
+  "returncode": 0,
+  "raw_response": "When a user hovers over the line chart in `chart129.js`, the following interactions occur:\n\n1.  **Vertical Hover Line**: A vertical grey line (`#999`) appears, snapping to the closest year based on the horizontal mouse position.\n2.  **Tooltip Display**: A tooltip box becomes visible, containing the following information:\n    *   **Title**: The specific year being hovered (e.g., \"2012\").\n    *   **Data Rows**: A list of all countries displayed in the chart (Japan, Germany, Vietnam, Italy, Thailand, United Kingdom, Peru, Finland, and Singapore) and their corresponding number of daily smokers for that year.\n    *   **Sorting**: The countries in the tooltip are sorted in descending order based on their smoker count for that year.\n    *   **Visual Indicators**: Each row includes a small colored square (matching the country's line color) next to the country name and its formatted value (e.g., \"21M\" for 21 million).\n3.  **Dynamic Positioning**: The tooltip follows the mouse cursor but automatically shifts to the left if it approaches the right edge of the chart to ensure it remains fully visible.\n4.  **Hiding**: When the mouse leaves the chart area, both the vertical hover line and the tooltip are hidden.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "8788df0e-db86-48de-838d-d08efac28b9e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart28",
+  "question_id": "q85",
+  "js_path": "charts/chart28.js",
+  "csv_path": "charts/files/chart28.csv",
+  "question": "Which homelessness status can see more on the map the \"None of temporary\" or \"None or inadequate\"?",
+  "prompt": "@charts/chart28.js @charts/files/chart28.csv Question: Which homelessness status can see more on the map the \"None of temporary\" or \"None or inadequate\"?",
+  "prompt_hash": "6f2177820fd89000566b03d8aa615981b92d880655700b094a394e3bd76cbfa0",
+  "returncode": 0,
+  "raw_response": "Based on the data, **\"None or temporary\"** can be seen much more on the map. \n\nThere are 18 countries categorized as \"None or temporary\" (such as Argentina, Brazil, Germany, Italy, and Mexico), whereas only 2 countries (China and Serbia) are categorized as \"None or inadequate\".",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

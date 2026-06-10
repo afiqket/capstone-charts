@@ -1,0 +1,19 @@
+{
+  "run_id": "c2643b38-ec17-4a8e-a2f2-617f8d4e47b0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart110",
+  "question_id": "q359",
+  "js_path": "charts/chart110.js",
+  "csv_path": "charts/files/chart110.csv",
+  "question": "How do I see the medals of Germany in Winter?",
+  "prompt": "@charts/chart110.js @charts/files/chart110.csv Question: How do I see the medals of Germany in Winter?",
+  "prompt_hash": "634f881a42d9049d74090d185d0b1436670e5a667ab47c2737f646734d3c2dcf",
+  "returncode": 0,
+  "raw_response": "To see Germany's Winter Olympic medals in this chart, follow these steps:\n\n1.  **Switch to Winter Data:** Click the **\"Winter\"** button located in the controls above the chart.\n2.  **Identify Germany's Layer:** Look for the **teal-colored** stream/layer. According to the legend and code, Germany is represented by the color `#47c8d2` (teal).\n3.  **View Specific Data:** Hover your mouse over different parts of the teal layer. A tooltip will appear showing the specific **Year** and the number of **Medals** Germany won in that Winter Olympiad.\n\nThe chart uses a silhouette stack (streamgraph), so Germany's medals are represented by the thickness of its teal section at any given point along the horizontal time axis.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "5ae8c8a9-8d04-48e1-a2eb-900e070291a2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart100",
+  "question_id": "q330",
+  "js_path": "charts/chart100.js",
+  "csv_path": "charts/files/chart100.csv",
+  "question": "How can I get the projected population of New Delhi in 2035?",
+  "prompt": "@charts/chart100.js @charts/files/chart100.csv Question: How can I get the projected population of New Delhi in 2035?",
+  "prompt_hash": "0cfba11806c1f7365b6c81e2e2d3c5640910350d0d1c2697b999899d6017c885",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart100.csv`, the projected population of New Delhi in 2035 is **32,226,618**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:6848) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

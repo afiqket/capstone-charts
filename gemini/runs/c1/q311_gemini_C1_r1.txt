@@ -1,0 +1,19 @@
+{
+  "run_id": "05f92106-1a07-4295-a22e-a8f1b727c5b1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart94",
+  "question_id": "q311",
+  "js_path": "charts/chart94.js",
+  "csv_path": "charts/files/chart94.csv",
+  "question": "What trend is visible in the age at which women reach one child on average across birth cohorts?",
+  "prompt": "@charts/chart94.js @charts/files/chart94.csv Question: What trend is visible in the age at which women reach one child on average across birth cohorts?",
+  "prompt_hash": "aa06882ee0f67fda8c2d0ecbd8fec85684e4c369828f86835b76f726a5f44ac8",
+  "returncode": 0,
+  "raw_response": "Based on the data for the United States, the trend shows that **women in more recent birth cohorts are reaching an average of one child at an older age** compared to earlier cohorts. \n\nSpecifically:\n* For women born between 1925 and roughly 1940, the age at which they reached one child on average slightly decreased (from around age 24 down to age 22). \n* However, for all cohorts born after 1940, this age has steadily and consistently increased. For example, women born in 1950 reached one child on average around age 25, while those born in 1990 did not reach this milestone until around age 29.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

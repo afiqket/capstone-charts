@@ -1,0 +1,19 @@
+{
+  "run_id": "1c1b5ae0-2c7b-44c1-9cc8-d9acdc6eb997",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart148",
+  "question_id": "q473",
+  "js_path": "charts/chart148.js",
+  "csv_path": "charts/files/chart148.csv",
+  "question": "What is the difference between the projected 2020 and the real 2020 number of deaths in December 6th 2020?",
+  "prompt": "@charts/chart148.js @charts/files/chart148.csv Question: What is the difference between the projected 2020 and the real 2020 number of deaths in December 6th 2020?",
+  "prompt_hash": "a8701e8534477c5c001636b5d6cbe34d5d21e3af9d7cee36f044377fdb5bc742",
+  "returncode": 0,
+  "raw_response": "Based on the dataset for the United States on December 6th, 2020, the difference is **19,808.7** deaths.\n\n- **Real 2020 number of deaths:** 77,271\n- **Projected 2020 number of deaths:** 57,462.3\n- **Difference:** 77,271 - 57,462.3 = 19,808.7",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:30984) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "02c5874b-187c-4901-9c80-2aadbd7f7e70",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart136",
+  "question_id": "q437",
+  "js_path": "charts/chart136.js",
+  "csv_path": "charts/files/chart136.csv",
+  "question": "What are the countries shown in this chart?",
+  "prompt": "@charts/chart136.js @charts/files/chart136.csv Question: What are the countries shown in this chart?",
+  "prompt_hash": "dde1492f5de1c2d5f87b1a192bcfa03ab089a6f386aac3d1324dfee35e0dafe8",
+  "returncode": 0,
+  "raw_response": "The countries shown in this chart are:\n- Japan\n- Germany\n- Mexico\n- United States\n- Brazil",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

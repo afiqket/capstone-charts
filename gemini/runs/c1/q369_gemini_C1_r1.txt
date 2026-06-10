@@ -1,0 +1,19 @@
+{
+  "run_id": "ede81f06-5398-4e08-836d-8fc7d5c38058",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart113",
+  "question_id": "q369",
+  "js_path": "charts/chart113.js",
+  "csv_path": "charts/files/chart113.csv",
+  "question": "What is the country with the lowest percentage?",
+  "prompt": "@charts/chart113.js @charts/files/chart113.csv Question: What is the country with the lowest percentage?",
+  "prompt_hash": "37562736bd45ed04f1d968c2c337d349d71f1ac532ac41a403b5104e6d648d12",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `charts/files/chart113.csv`, **Bulgaria** is the country with the lowest percentage, at approximately **6.69%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

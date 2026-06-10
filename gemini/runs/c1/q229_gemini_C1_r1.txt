@@ -1,0 +1,19 @@
+{
+  "run_id": "03e15886-c28c-40ef-8385-1c5b43d1c464",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart66",
+  "question_id": "q229",
+  "js_path": "charts/chart66.js",
+  "csv_path": "charts/files/chart66.csv",
+  "question": "What happens if I move my mouse away from a country?",
+  "prompt": "@charts/chart66.js @charts/files/chart66.csv Question: What happens if I move my mouse away from a country?",
+  "prompt_hash": "43a87637bba19f11b71db947a22405bb0884485cdf0b8590fab37971d85cf38f",
+  "returncode": 0,
+  "raw_response": "When you move your mouse away from a country in this chart (triggering the `mouseleave` event), two things happen:\n\n1. **The Highlight is Removed:** The border (stroke) of all countries is reset to white (`#fff`) with a width of `0.4`, which removes the dark highlighting (`#333`, width `1.5`) that was applied when you hovered over it.\n2. **The Tooltip is Hidden:** The `hideTooltip()` function is called, which hides the popup tooltip displaying the country's name and its data value.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

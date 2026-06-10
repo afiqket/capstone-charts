@@ -1,0 +1,19 @@
+{
+  "run_id": "09e82833-a3e2-4d5b-8794-b402a79dd28b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart81",
+  "question_id": "q273",
+  "js_path": "charts/chart81.js",
+  "csv_path": "charts/files/chart81.csv",
+  "question": "How can I find which birth order is highest in 1990?",
+  "prompt": "@charts/chart81.js @charts/files/chart81.csv Question: How can I find which birth order is highest in 1990?",
+  "prompt_hash": "9cd45125d94a78a1986865a3840908744ec59049abeda4fbce1e00d945894834",
+  "returncode": 0,
+  "raw_response": "To find which birth order has the highest sex ratio at birth in 1990, you can interact with the chart in a few ways:\n\n1. **Use the Slider & Bar Mode:** \n   - Drag the slider at the bottom of the chart to select the year **1990**.\n   - Click the **\"\ud83d\udcca Bar\"** button at the top left. This will display a bar chart for 1990, automatically sorted from highest to lowest. You will see that **\"Fourth child & higher\"** is at the top with a value of **214.1**.\n\n2. **Use the Slider & Line Mode (Tooltip):**\n   - In the default **\"\ud83d\udcc8 Line\"** mode, drag the slider to **1990**.\n   - Hover your mouse cursor over the points on the graph for the year 1990. A tooltip will appear showing the exact values for each birth order, allowing you to see that **\"Fourth child & higher\"** has the highest ratio.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

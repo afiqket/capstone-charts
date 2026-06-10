@@ -1,0 +1,19 @@
+{
+  "run_id": "738b1e1b-1805-4907-9ad1-c4d4b1ba932a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart107",
+  "question_id": "q352",
+  "js_path": "charts/chart107.js",
+  "csv_path": "charts/files/chart107.csv",
+  "question": "What is the natural gas value in 2020?",
+  "prompt": "@charts/chart107.js @charts/files/chart107.csv Question: What is the natural gas value in 2020?",
+  "prompt_hash": "18493044877d58b5c79d19140a5af1db40cceca4c55d7dc7c295714e6f4ebc99",
+  "returncode": 0,
+  "raw_response": "The natural gas value in 2020 is **38,000 TWh**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

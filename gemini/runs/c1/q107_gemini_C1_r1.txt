@@ -1,0 +1,19 @@
+{
+  "run_id": "49ab866b-b622-44f0-9029-7463ee7a65b8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart33",
+  "question_id": "q107",
+  "js_path": "charts/chart33.js",
+  "csv_path": "charts/files/chart33.csv",
+  "question": "What is the most common age for men and women to be married?",
+  "prompt": "@charts/chart33.js @charts/files/chart33.csv Question: What is the most common age for men and women to be married?",
+  "prompt_hash": "22d8293efa8e5caf203af30d34a14e9d4cbd30ced5aa622b27a66abb0e5ef29c",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the most common age to be married is **29 for men** and **27 for women**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

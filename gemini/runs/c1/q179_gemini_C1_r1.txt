@@ -1,0 +1,19 @@
+{
+  "run_id": "62dea874-f74e-451b-afd1-2272b52fd5f1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart50",
+  "question_id": "q179",
+  "js_path": "charts/chart50.js",
+  "csv_path": "charts/files/chart50.csv",
+  "question": "Which region appears to walk more: Putney or Blackburn?",
+  "prompt": "@charts/chart50.js @charts/files/chart50.csv Question: Which region appears to walk more: Putney or Blackburn?",
+  "prompt_hash": "be217347c34aabadc8c6829a0889dd8ccc73e60ebe28e11590b98b212f819837",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, **Putney** appears to walk more. In 2022, 61.1% of people in Putney walked for 10 minutes three times a week, compared to 31.5% in Blackburn.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

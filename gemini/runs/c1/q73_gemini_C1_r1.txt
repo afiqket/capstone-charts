@@ -1,0 +1,19 @@
+{
+  "run_id": "4bc0f908-cb73-481c-9bba-203f62c65276",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart24",
+  "question_id": "q73",
+  "js_path": "charts/chart24.js",
+  "csv_path": "charts/files/chart24.csv",
+  "question": "What does the blue color represent on the map?",
+  "prompt": "@charts/chart24.js @charts/files/chart24.csv Question: What does the blue color represent on the map?",
+  "prompt_hash": "61393518a0ffe7bb03e898ac90b38fa445c2acc1e657b514c7432274b72d633c",
+  "returncode": 0,
+  "raw_response": "Based on the code in `chart24.js`, the blue color (`#7db8d4`) represents **\"No conflict\"** (or that no interstate/intrastate war took place in that country during the selected year).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

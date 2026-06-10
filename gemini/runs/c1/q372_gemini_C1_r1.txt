@@ -1,0 +1,19 @@
+{
+  "run_id": "c7f883af-2534-4281-bee8-569076e15699",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart114",
+  "question_id": "q372",
+  "js_path": "charts/chart114.js",
+  "csv_path": "charts/files/chart114.csv",
+  "question": "How do I see the percentage for both urban and rural population percentage in bar chart?",
+  "prompt": "@charts/chart114.js @charts/files/chart114.csv Question: How do I see the percentage for both urban and rural population percentage in bar chart?",
+  "prompt_hash": "ba0bbd9cb236b75904ce50bd13c8c12552cfdd7052d42e56b8cc1facd2311d8e",
+  "returncode": 0,
+  "raw_response": "To see the percentages for both urban and rural populations in the bar chart, follow these steps:\n\n1.  **Switch to Bar Mode**: Click the **\ud83d\udcca Bar** button located at the top of the chart. The visualization defaults to a line chart, so you must manually toggle this to see the bar representation.\n2.  **View the Labels**: In the bar chart view, two horizontal bars (labeled \"Urban\" and \"Rural\") are displayed for the selected year. The exact percentage for each is shown numerically at the **right end of each bar** (e.g., `84.90%`).\n3.  **Change the Year**: Use the **slider** or the **play (\u25b6)** button at the bottom of the chart to navigate through different years. The bars and their corresponding percentage labels will update automatically to reflect the data for the selected year.\n\nIn the code (`chart114.js`), this is handled within the `renderBar()` function, which appends text elements containing the formatted value (`d3.format(\".2f\")(val) + \"%\"`) next to each bar.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

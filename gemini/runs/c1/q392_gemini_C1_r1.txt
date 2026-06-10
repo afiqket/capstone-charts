@@ -1,0 +1,19 @@
+{
+  "run_id": "e0edad4a-c78f-406e-b30f-9df94951bb9a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart121",
+  "question_id": "q392",
+  "js_path": "charts/chart121.js",
+  "csv_path": "charts/files/chart121.csv",
+  "question": "What does the red color represent in the graph?",
+  "prompt": "@charts/chart121.js @charts/files/chart121.csv Question: What does the red color represent in the graph?",
+  "prompt_hash": "b1ae9300de1b8beb378c5f71f40126a9d77aaad694f781b584690b51e6b5ab2e",
+  "returncode": 0,
+  "raw_response": "In the graph, the **red** (or reddish-brown, hex `#b84c1a`) color represents **Sulphur dioxide (SO\u2082)** emissions.\n\nThis is defined in the `SERIES` array within the code:\n```javascript\n{ key: \"Sulphur dioxide (SO\u2082)\", col: \"Sulphur dioxide (SO\\u2082)\", color: \"#b84c1a\" }\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

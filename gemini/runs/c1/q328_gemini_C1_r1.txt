@@ -1,0 +1,19 @@
+{
+  "run_id": "ba9faa5b-0d19-47e1-a2c4-330780588194",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart99",
+  "question_id": "q328",
+  "js_path": "charts/chart99.js",
+  "csv_path": "charts/files/chart99.csv",
+  "question": "What happens if I hover over Asia at 2020?",
+  "prompt": "@charts/chart99.js @charts/files/chart99.csv Question: What happens if I hover over Asia at 2020?",
+  "prompt_hash": "51f6cf13046ee5630ce600ca251787edfeff41d92ecbc3c64b429c0b4793abdb",
+  "returncode": 0,
+  "raw_response": "When you hover over the chart for **Asia** at the year **2020**, a vertical dashed line will appear at that year, and a tooltip will display the detailed population breakdown. \n\nThe tooltip will show:\n- **2020** (Title)\n- in people (Subtitle)\n- **Rural areas**: 740.11 million\n- **Towns & suburbs**: 1.83 billion\n- **Cities**: 2.12 billion (in bold)\n- **Total**: 4.69 billion",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

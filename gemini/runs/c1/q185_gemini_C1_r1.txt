@@ -1,0 +1,19 @@
+{
+  "run_id": "05e2007e-3fee-4bc2-97a5-7ffbbe70dbce",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart52",
+  "question_id": "q185",
+  "js_path": "charts/chart52.js",
+  "csv_path": "charts/files/chart52.csv",
+  "question": "Which country has the highest number of internally displaced people due to conflict in 2024?",
+  "prompt": "@charts/chart52.js @charts/files/chart52.csv Question: Which country has the highest number of internally displaced people due to conflict in 2024?",
+  "prompt_hash": "bed132dec4e843a485e7c57bbf18c5573f6032cdd7809353ca7bec064b3f3f9f",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart52.csv`, **Sudan** has the highest number of internally displaced people due to conflict in 2024, with 11,559,970 people.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:10064) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

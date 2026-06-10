@@ -1,0 +1,19 @@
+{
+  "run_id": "b4c4bdd3-e03f-44b7-8423-9c469c7f3d1b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart68",
+  "question_id": "q233",
+  "js_path": "charts/chart68.js",
+  "csv_path": "charts/files/chart68.csv",
+  "question": "Which country has the highest percentage in the dataset?",
+  "prompt": "@charts/chart68.js @charts/files/chart68.csv Question: Which country has the highest percentage in the dataset?",
+  "prompt_hash": "e9554af20acf76b8324040acc9e1faa7325ed84c52f8646cdc725bd23d2badf8",
+  "returncode": 0,
+  "raw_response": "Based on the provided dataset, **Laos** has the highest percentage at **95.36%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

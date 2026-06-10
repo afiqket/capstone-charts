@@ -1,0 +1,19 @@
+{
+  "run_id": "3b2ac560-ac75-4248-9ee9-7727762998a2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart130",
+  "question_id": "q420",
+  "js_path": "charts/chart130.js",
+  "csv_path": "charts/files/chart130.csv",
+  "question": "Which region had the highest percentage of countries where adult smoking decreased by at least 10 percentage points from 2000 to 2022?",
+  "prompt": "@charts/chart130.js @charts/files/chart130.csv Question: Which region had the highest percentage of countries where adult smoking decreased by at least 10 percentage points from 2000 to 2022?",
+  "prompt_hash": "45435c08a06f9d863196420602a4c472db4b19d68544da0fbb3a4f48aa433762",
+  "returncode": 0,
+  "raw_response": "To determine which region had the highest percentage of countries where adult smoking decreased by at least 10 percentage points from 2000 to 2022, I analyzed the data provided in `chart130.csv`. \n\nFor each country, I calculated the difference between the \"Share of adults in 2000\" and the \"Share of adults in 2022\" (or the value for 2022 provided in the corresponding column). The results for each world region are as follows:\n\n1.  **South America:** 8 out of 10 countries (80.0%) experienced a decrease of at least 10 percentage points.\n    *   **Yes (8):** Argentina (10.5), Bolivia (22.7), Brazil (11.6), Chile (18.2), Guyana (20.2), Paraguay (18.7), Peru (27.6), Uruguay (14.9).\n    *   **No (2):** Colombia (7.5), Ecuador (4.3).\n2.  **Oceania:** 8 out of 13 countries (~61.5%).\n3.  **Europe:** 19 out of 40 countries (47.5%).\n4.  **Asia:** 20 out of 44 countries (~45.5%).\n5.  **Africa:** 19 out of 42 countries (~45.2%).\n6.  **North America:** 2 out of 16 countries (12.5%).\n\nBased on the available data, **South America** had the highest percentage of countries where adult smoking decreased by at least 10 percentage points.\n\nRegion: **South America**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:31212) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

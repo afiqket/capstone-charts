@@ -1,0 +1,19 @@
+{
+  "run_id": "5ac2167d-897e-4acc-bead-99b502f1ef06",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart20",
+  "question_id": "q63",
+  "js_path": "charts/chart20.js",
+  "csv_path": "charts/files/chart20.csv",
+  "question": "What happen if I click the play button at the year slide of the chart?",
+  "prompt": "@charts/chart20.js @charts/files/chart20.csv Question: What happen if I click the play button at the year slide of the chart?",
+  "prompt_hash": "d9b03461841cc65195ed0eeddc096286c32822b51a2b8a08c33289da042d20d9",
+  "returncode": 0,
+  "raw_response": "If you click the play button next to the year slider on the chart, the following happens:\n\n1. **Animation Starts**: The chart begins to automatically animate through the years, incrementing the year by 1 every 350 milliseconds. \n2. **Icon Changes**: The play icon (\"\u25b6\") changes to a pause icon (\"\u23f8\").\n3. **Chart Updates**: With each tick, the slider handle moves forward, and the currently active chart (Map, Line, Slope, or Bar) redraws to reflect the data for that specific year.\n4. **Auto-Loop/Reset**: If the slider is already at the maximum year when you click play, it will automatically jump back to the minimum year and start the animation from the beginning.\n5. **Auto-Stop**: Once the animation reaches the maximum year, it will automatically stop, and the icon will revert to the play button. \n6. **Pause Functionality**: If you click the button again while the animation is playing, it will pause the progression at the current year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

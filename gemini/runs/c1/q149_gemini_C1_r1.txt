@@ -1,0 +1,19 @@
+{
+  "run_id": "700d744e-b90c-4181-a68a-8621e6e0d037",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart42",
+  "question_id": "q149",
+  "js_path": "charts/chart42.js",
+  "csv_path": "charts/files/chart42.csv",
+  "question": "What is the lowest share price?",
+  "prompt": "@charts/chart42.js @charts/files/chart42.csv Question: What is the lowest share price?",
+  "prompt_hash": "154740bc5d63e2d2feb5e8ee3aa1f283297d8eb7bd65a72beb632706d68ea743",
+  "returncode": 0,
+  "raw_response": "",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

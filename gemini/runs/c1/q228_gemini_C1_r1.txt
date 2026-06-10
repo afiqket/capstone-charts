@@ -1,0 +1,19 @@
+{
+  "run_id": "1bbb274d-ea12-48ab-a5c0-65034402ced3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart66",
+  "question_id": "q228",
+  "js_path": "charts/chart66.js",
+  "csv_path": "charts/files/chart66.csv",
+  "question": "How can I get the data for the highest country?",
+  "prompt": "@charts/chart66.js @charts/files/chart66.csv Question: How can I get the data for the highest country?",
+  "prompt_hash": "9cb99ddbf8c3670b879c69c551fe7a608e3c9880963f27218697a981664fb47b",
+  "returncode": 0,
+  "raw_response": "To get the data for the country with the highest value, you can filter and sort the dataset by the `Took prescribed medication` column. \n\nBased on the provided `chart66.csv`, the highest country is the **United Kingdom**, with **76.72%**.\n\nIf you want to extract this programmatically within your JavaScript code (like in `chart66.js`), you can filter out the non-country aggregates (which typically start with `OWID_` in their `Code`, except `OWID_KOS` for Kosovo) and find the maximum value:\n\n```javascript\nconst highestCountry = rawData\n  // Filter out aggregate regions like \"World\", \"Europe\", or income levels\n  // Note: Kosovo uses OWID_KOS, so we can check for actual countries\n  .filter(d => d.Code && (!d.Code.startsWith('OWID_') || d.Code === 'OWID_KOS'))\n  .reduce((max, d) => {\n    return (+d['Took prescribed medication'] > +max['Took prescribed medication']) ? d : max;\n  });\n\nconsole.log(\"Highest Country:\", highestCountry.Entity);\nconsole.log(\"Value:\", highestCountry['Took prescribed medication']);\n```\n\nAlternatively, if you're using a command-line tool, you can sort the CSV by the 4th column numerically in descending order:\n```bash\nsort -t, -k4 -nr charts/files/chart66.csv | head -n 1\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "ebb06292-d08d-4d9f-acda-2a56d18e4cdf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart77",
+  "question_id": "q261",
+  "js_path": "charts/chart77.js",
+  "csv_path": "charts/files/chart77.csv",
+  "question": "How can I get the death rate for the United States in 2020?",
+  "prompt": "@charts/chart77.js @charts/files/chart77.csv Question: How can I get the death rate for the United States in 2020?",
+  "prompt_hash": "b4efb760fa4f4c57a5a4669953835fa74793a92f390c4f330a1bc229cf931dbd",
+  "returncode": 0,
+  "raw_response": "The death rate for the United States in 2020 was **10.200385** (per 1,000 people).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:22388) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

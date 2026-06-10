@@ -1,0 +1,19 @@
+{
+  "run_id": "f19cdf66-b869-42e3-b7f8-862fdc4ac44a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart31",
+  "question_id": "q98",
+  "js_path": "charts/chart31.js",
+  "csv_path": "charts/files/chart31.csv",
+  "question": "Where do you click to change the chart from Production to Imports?",
+  "prompt": "@charts/chart31.js @charts/files/chart31.csv Question: Where do you click to change the chart from Production to Imports?",
+  "prompt_hash": "5b785dc850244f5783a125cfa001342160e62c48de3337f306c8b674b5d12dd7",
+  "returncode": 0,
+  "raw_response": "To change the chart from Production to Imports, you click on the **Title** drop-down menu located at the top right of the chart, above the legend.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

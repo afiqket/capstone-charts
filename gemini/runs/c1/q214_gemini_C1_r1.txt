@@ -1,0 +1,19 @@
+{
+  "run_id": "e7e73491-992a-40ea-afec-5600feac0dbc",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart61",
+  "question_id": "q214",
+  "js_path": "charts/chart61.js",
+  "csv_path": "charts/files/chart61.csv",
+  "question": "What happens if I click an already expanded category circle?",
+  "prompt": "@charts/chart61.js @charts/files/chart61.csv Question: What happens if I click an already expanded category circle?",
+  "prompt_hash": "52f587e9d08d1db770eac4621dfd1bf529e359ed2f2de437f49917500225959c",
+  "returncode": 0,
+  "raw_response": "If you click an already expanded category circle, it will **collapse**, hiding all of its child nodes. \n\nSpecifically, the `on(\"click\")` event handler checks if the node currently has visible children (`d.children`). Since it is already expanded, it sets the `children` property to `null` and then calls the `update` function. This triggers a D3 transition that animates the removal of the child nodes and their links from the tree.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

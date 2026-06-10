@@ -1,0 +1,19 @@
+{
+  "run_id": "72a150b9-a4a1-4d45-93d7-25fa11e08bd3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart136",
+  "question_id": "q438",
+  "js_path": "charts/chart136.js",
+  "csv_path": "charts/files/chart136.csv",
+  "question": "What happens when user click the play button?",
+  "prompt": "@charts/chart136.js @charts/files/chart136.csv Question: What happens when user click the play button?",
+  "prompt_hash": "93b6e8ad7a9158183d708c1c9d69f6c69726bd65c43111d092d12d38dd3cf7df",
+  "returncode": 0,
+  "raw_response": "When the user clicks the play button, the following actions occur:\n\n1. **Starts an Animation (if not already playing):** It starts an interval timer that automatically advances the chart to the next year every 150 milliseconds.\n2. **Updates the Button Icon:** The play button (\"\u25b6\") changes to a pause button (\"\u23f8\").\n3. **Restarts if at the End:** If the chart is already on the final available year when the button is clicked, it will automatically loop back to the first year and start playing.\n4. **Stops/Pauses (if already playing):** If the animation is currently running, clicking the button again will pause it, clear the timer, and change the icon back to a play button (\"\u25b6\").\n5. **Auto-Stops at the End:** When the playback naturally reaches the final year, it will automatically stop the animation and reset the button to the play icon.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

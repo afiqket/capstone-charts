@@ -1,0 +1,19 @@
+{
+  "run_id": "3e262e59-7975-471c-b86c-533f6af75dd7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart23",
+  "question_id": "q72",
+  "js_path": "charts/chart23.js",
+  "csv_path": "charts/files/chart23.csv",
+  "question": "What happens if I click the Line button?",
+  "prompt": "@charts/chart23.js @charts/files/chart23.csv Question: What happens if I click the Line button?",
+  "prompt_hash": "0d1c3b10df8b7abe4fd1ec182787f8cad31c93239e1d27a3a462a741e7d4d9f6",
+  "returncode": 0,
+  "raw_response": "When you click the **Line** button, the visualization switches from the geographical map view to a small multiples line chart view. Specifically, the following sequence occurs:\n\n1. **Button Styling Updates:** The \"Line\" button is highlighted (blue background, white text), and the \"Map\" button is reset to its default unselected style.\n2. **Tooltips Hidden:** Any active map tooltips are hidden.\n3. **Map Cleared:** The world map is removed from the screen.\n4. **Title Updated:** The main title updates to show a time range (e.g., \"from [Start Year] to [Max Year]\") instead of just a single year.\n5. **Line Charts Rendered:** It calls the `renderLine()` function, which draws a 2x2 grid of small timeline charts for a specific set of pre-selected countries (China, Russia, United Kingdom, and United States). \n   - Each small chart displays a step-line and colored vertical bands showing the conflict status (0 for No, 1 for Yes) over the years.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "26d085bd-8f21-42f8-9223-da38ae346de5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart87",
+  "question_id": "q290",
+  "js_path": "charts/chart87.js",
+  "csv_path": "charts/files/chart87.csv",
+  "question": "In 2018, which contributed more to the sex gap: Ages 60\u201379 or Ages 80+?",
+  "prompt": "@charts/chart87.js @charts/files/chart87.csv Question: In 2018, which contributed more to the sex gap: Ages 60\u201379 or Ages 80+?",
+  "prompt_hash": "d97c7f9938f0f75c5481dafb21747c0cebd8bc8f2d5ba916485ba4dac8d41692",
+  "returncode": 0,
+  "raw_response": "Based on the data for France (the country configured in the chart) in 2018, **Ages 60\u201379** contributed more to the sex gap. \n\n- **Ages 60\u201379** contributed approximately **2.67 years**.\n- **Ages 80+** contributed approximately **1.45 years**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

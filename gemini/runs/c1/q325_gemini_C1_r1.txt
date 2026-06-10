@@ -1,0 +1,19 @@
+{
+  "run_id": "b99e15f2-ecdb-4259-860a-59a22e9d82e9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart98",
+  "question_id": "q325",
+  "js_path": "charts/chart98.js",
+  "csv_path": "charts/files/chart98.csv",
+  "question": "What happens if I click the Bar button and move the slider to 2010?",
+  "prompt": "@charts/chart98.js @charts/files/chart98.csv Question: What happens if I click the Bar button and move the slider to 2010?",
+  "prompt_hash": "dcb3e98705e113a20a8ee9b32585dc1a313a04f0167ff657b2d2941551183397",
+  "returncode": 0,
+  "raw_response": "When you click the **Bar** button and move the slider to **2010**, the following happens:\n\n1. **View Changes**: The line chart disappears, the interactive slider becomes visible at the bottom, and the chart transforms into a horizontal bar chart. Hover tooltips are disabled.\n2. **Title Update**: The chart's title updates to exactly: `\"Peak birth month each year and the daily birth rate that month, 2010\"`.\n3. **Bar Chart Rendering**: Two horizontal bars are displayed, representing the peak daily birth rate for each country in 2010:\n   * **France**: Shows a bar colored dark teal (`#2E6B6B`, the color corresponding to **October** in the legend) with the value **`36.02`** displayed next to it.\n   * **Spain**: Shows a bar colored slightly lighter teal (`#3D8B8B`, the color corresponding to **September** in the legend) with the value **`30.45`** displayed next to it.\n4. **Layout**: The length of the bars scales relative to the maximum value (France's 36.02, padded by 10%), and a vertical gray line is drawn at `x=0`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:15528) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

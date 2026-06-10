@@ -1,0 +1,19 @@
+{
+  "run_id": "f48bc3a5-2b93-48af-833f-ce450fe8ca31",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart145",
+  "question_id": "q464",
+  "js_path": "charts/chart145.js",
+  "csv_path": "charts/files/chart145.csv",
+  "question": "In 1992, what is the female labor force participation rate of Canada? Is it the same in US?",
+  "prompt": "@charts/chart145.js @charts/files/chart145.csv Question: In 1992, what is the female labor force participation rate of Canada? Is it the same in US?",
+  "prompt_hash": "360f115b38db6ef7e34d3c22d84646177f773a2583ea7ed21a097d6b5ddd914d",
+  "returncode": 0,
+  "raw_response": "In 1992, the female labor force participation rate of Canada was 57.837%. No, it was not the same in the US (which was 57.8%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

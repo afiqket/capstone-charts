@@ -1,0 +1,19 @@
+{
+  "run_id": "f53919da-a4d2-4c88-83bc-ecd623d4d403",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart10",
+  "question_id": "q1",
+  "js_path": "charts/chart10.js",
+  "csv_path": "charts/files/chart10.csv",
+  "question": "How many Mid-level jobs require Power BI?",
+  "prompt": "@charts/chart10.js @charts/files/chart10.csv Question: How many Mid-level jobs require Power BI?",
+  "prompt_hash": "a63cf0fd0f040ebf6ba98b36991954fa7584148964b821ece965da4e25f951cd",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart10.csv`, there are **198** Mid-level jobs that require Power BI.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "d85925e9-1966-45c1-bd68-0ec6ea17a17c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart117",
+  "question_id": "q380",
+  "js_path": "charts/chart117.js",
+  "csv_path": "charts/files/chart117.csv",
+  "question": "How can user see the trend for all continent's antibiotic use in livestock per kilogram through out the year?",
+  "prompt": "@charts/chart117.js @charts/files/chart117.csv Question: How can user see the trend for all continent's antibiotic use in livestock per kilogram through out the year?",
+  "prompt_hash": "080e75a2f170e95d0f83ca521809f92e9236f3523edc1ceadd6762cd1fd2643c",
+  "returncode": 0,
+  "raw_response": "To see the trend for all continents' antibiotic use in livestock over time, users can use the following features in the interactive chart:\n\n1.  **Select \"Line\" Mode:** Click the **\"\ud83d\udcc8 Line\"** button at the top of the chart. This is the default view and displays multiple colored lines\u2014one for each continent (Africa, Americas, Asia, and Europe) and the World average. These lines show the change in antibiotic use (in mg/kg) across all available years (2014\u20132021) simultaneously.\n2.  **Use Hover Interaction:** In the Line chart, users can move their mouse over the graph. A vertical hover line and a tooltip will appear, showing the specific antibiotic use values for every continent in the selected year, allowing for easy comparison of trends.\n3.  **Animate \"Bar\" Mode:** If the chart is in Bar mode, users can click the **Play (\u25b6) button** or drag the **year slider** at the bottom. This allows them to see how the rankings and values for each continent change year by year in an animated sequence.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "7d0874cf-9922-43b9-9989-72db90dad1f3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart87",
+  "question_id": "q292",
+  "js_path": "charts/chart87.js",
+  "csv_path": "charts/files/chart87.csv",
+  "question": "What happens if I hover over the Ages 60\u201379 area near 2000?",
+  "prompt": "@charts/chart87.js @charts/files/chart87.csv Question: What happens if I hover over the Ages 60\u201379 area near 2000?",
+  "prompt_hash": "ad9438cba0e7a78be5d459696fe4be3a5673dcf2bc936bdd4e764bcbeecd3a7e",
+  "returncode": 0,
+  "raw_response": "If you hover near the year 2000 (regardless of the specific vertical area), a vertical gray line will appear at the year 2000 and a tooltip will display the breakdown for **France** in **2000**. \n\nThe tooltip will show the following values rounded to two decimal places:\n- **France, 2000**\n- **Ages 80+:** 1.26\n- **Ages 60\u201379:** 3.38\n- **Ages 40\u201359:** 1.89\n- **Ages 15\u201339:** 0.88\n- **Ages 1\u201314:** 0.05\n- **Age 0 (infancy):** 0.10\n- **Total:** 7.56 years",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

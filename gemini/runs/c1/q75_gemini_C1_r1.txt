@@ -1,0 +1,19 @@
+{
+  "run_id": "7d81a724-a80d-4691-b469-19cee6c051a7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart24",
+  "question_id": "q75",
+  "js_path": "charts/chart24.js",
+  "csv_path": "charts/files/chart24.csv",
+  "question": "What happens if I hover over a country marked in orange?",
+  "prompt": "@charts/chart24.js @charts/files/chart24.csv Question: What happens if I hover over a country marked in orange?",
+  "prompt_hash": "09638f083b792e6001faf1dd07b276dbbe166a886b52f2b3cc194e64b3451e69",
+  "returncode": 0,
+  "raw_response": "If you hover over a country marked in orange (which represents `COLOR_YES` in the code), the following visual changes and tooltip information will appear:\n\n1. **Tooltip Display**: A tooltip will appear showing:\n   - The name of the country.\n   - The currently selected year.\n   - The text **\"Yes \u2014 conflict occurred\"** colored in orange.\n\n2. **Map Highlight**: The border (stroke) of the hovered country will change from a thin white line to a thicker dark grey line (`#333` with a width of `1.5`) and the country shape will be visually brought to the front of the map to highlight it.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

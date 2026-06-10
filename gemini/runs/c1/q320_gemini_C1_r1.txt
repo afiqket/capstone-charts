@@ -1,0 +1,19 @@
+{
+  "run_id": "cedc54a6-e138-4ed9-b57a-88e0ac353bbe",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart97",
+  "question_id": "q320",
+  "js_path": "charts/chart97.js",
+  "csv_path": "charts/files/chart97.csv",
+  "question": "What seasonal trend can be observed in birth rates throughout the year?",
+  "prompt": "@charts/chart97.js @charts/files/chart97.csv Question: What seasonal trend can be observed in birth rates throughout the year?",
+  "prompt_hash": "baa9ad9ab838facb4229ece6fc2ae7beba06dcda826013cc09a151c739e96b0d",
+  "returncode": 0,
+  "raw_response": "Based on the provided dataset (and using the United States as the default country shown in the chart), a distinct seasonal trend can be observed in birth rates throughout the year:\n\n*   **Peak Birth Rates:** Birth rates consistently peak in the late summer and early autumn months, with **August and September** generally recording the highest average number of births per day. July is also typically a high-birth month.\n*   **Lowest Birth Rates:** Conversely, birth rates tend to be at their lowest during the spring (particularly **April and May**) as well as late winter (January/February). \n\n*(Note: Seasonal patterns can shift geographically. For example, countries in the Southern Hemisphere like Australia often see their peak birth rates shift towards their own autumn months, around March and April).*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:18904) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "b6289921-b423-42ee-8c03-958c71871191",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart139",
+  "question_id": "q446",
+  "js_path": "charts/chart139.js",
+  "csv_path": "charts/files/chart139.csv",
+  "question": "Which country's GDP are consistent through out the years?",
+  "prompt": "@charts/chart139.js @charts/files/chart139.csv Question: Which country's GDP are consistent through out the years?",
+  "prompt_hash": "59e121965c1d1c3fed47cdec234703a0c8f33ac720ff185269221a8e367c6807",
+  "returncode": 0,
+  "raw_response": "The country whose GDP per capita is the most consistent throughout the years in the provided dataset is **Vanuatu**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.\n(node:27404) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

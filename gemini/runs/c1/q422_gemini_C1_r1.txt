@@ -1,0 +1,19 @@
+{
+  "run_id": "e588a69e-6e22-401a-b398-892059f58728",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart131",
+  "question_id": "q422",
+  "js_path": "charts/chart131.js",
+  "csv_path": "charts/files/chart131.csv",
+  "question": "What happens when user hover over the data points?",
+  "prompt": "@charts/chart131.js @charts/files/chart131.csv Question: What happens when user hover over the data points?",
+  "prompt_hash": "67a7c59524803bbc0c8691e027ccefed4afcb37fc9183c2eb41b0e1d2db7b520",
+  "returncode": 0,
+  "raw_response": "When a user hovers over a data point in the chart, the following happens:\n\n1. **Tooltip Display:** A tooltip appears showing detailed information for that specific data point, including the country name, the year, the total consumer expenditure, and the food expenditure.\n2. **Highlighting:** The hovered data point is highlighted with full opacity (1) and a white border, while all other data points fade to a low opacity (0.2) and turn gray.\n3. **Labeling:** The label for the hovered country becomes bold and is the only label displayed on the chart (all other country labels are hidden while hovering).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "8099c186-d094-4fd5-8580-4871a9c4e84d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart121",
+  "question_id": "q394",
+  "js_path": "charts/chart121.js",
+  "csv_path": "charts/files/chart121.csv",
+  "question": "How many tonnes has the Nitrogen oxides in 1998?",
+  "prompt": "@charts/chart121.js @charts/files/chart121.csv Question: How many tonnes has the Nitrogen oxides in 1998?",
+  "prompt_hash": "e70679dcda7e66a54c2be044f125f2ab4a56e12741a09b34e01c2387b4665e91",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `chart121.csv` and the logic in `chart121.js` (which filters for the \"United Kingdom\"), the Nitrogen oxides (NOx) emissions in 1998 were **2,140,000 tonnes**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

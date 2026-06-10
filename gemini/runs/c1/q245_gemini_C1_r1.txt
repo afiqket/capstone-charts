@@ -1,0 +1,19 @@
+{
+  "run_id": "630021ad-83ca-4f6e-be8d-8a274bfa7b22",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart72",
+  "question_id": "q245",
+  "js_path": "charts/chart72.js",
+  "csv_path": "charts/files/chart72.csv",
+  "question": "How does Andorra compare with Afghanistan in psychiatrist availability?",
+  "prompt": "@charts/chart72.js @charts/files/chart72.csv Question: How does Andorra compare with Afghanistan in psychiatrist availability?",
+  "prompt_hash": "ae8a8944351e1c9c7f8571451cd12f607a02aceb42d10760b28ad2d8adf5d1af",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, Andorra has a significantly higher availability with **10 psychiatrists per 100,000 people**, whereas Afghanistan has **0 psychiatrists per 100,000 people** (as of 2019).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

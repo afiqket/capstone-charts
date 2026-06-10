@@ -1,0 +1,19 @@
+{
+  "run_id": "843e59a3-3ac7-47be-ac92-4683de812344",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart58",
+  "question_id": "q203",
+  "js_path": "charts/chart58.js",
+  "csv_path": "charts/files/chart58.csv",
+  "question": "Which club has the most World Cup 2022 players?",
+  "prompt": "@charts/chart58.js @charts/files/chart58.csv Question: Which club has the most World Cup 2022 players?",
+  "prompt_hash": "f4cd540b5fe3ed929a79a4ef5694cbf0952b22977576aa60b02a904da1659401",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **FC Barcelona** has the most World Cup 2022 players, with a total of **17** players. \n\nHere are the players from FC Barcelona included in the dataset:\n- Raphinha (Brazil)\n- Andreas Christensen (Denmark)\n- Ousmane Demb\u00e9l\u00e9 (France)\n- Jules Kound\u00e9 (France)\n- Marc Andr\u00e9 ter Stegen (Germany)\n- Memphis Depay (Netherlands)\n- Frenkie de Jong (Netherlands)\n- Robert Lewandowski (Poland)\n- Ferran Torres (Spain)\n- Jordi Alba (Spain)\n- Sergio Busquets (Spain)\n- Ansu Fati (Spain)\n- Gavi (Spain)\n- Eric Garc\u00eda (Spain)\n- Pedri (Spain)\n- Alejandro Balde (Spain)\n- Ronald Ara\u00fajo (Uruguay)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

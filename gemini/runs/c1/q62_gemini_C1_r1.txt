@@ -1,0 +1,19 @@
+{
+  "run_id": "44ad526f-395b-40ba-9ef1-e04ec4f47b15",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart20",
+  "question_id": "q62",
+  "js_path": "charts/chart20.js",
+  "csv_path": "charts/files/chart20.csv",
+  "question": "How can I get the exact data value of 4G coverage for a specific country and year?",
+  "prompt": "@charts/chart20.js @charts/files/chart20.csv Question: How can I get the exact data value of 4G coverage for a specific country and year?",
+  "prompt_hash": "df985e7b6af605736c58c74429655bbd3edf143723dda9f880dd22467d62d704",
+  "returncode": 0,
+  "raw_response": "You can get the exact data value of 4G coverage for a specific country and year in a few different ways, depending on what you are trying to do:\n\n**1. Interacting with the Chart UI:**\n- **Map / Bar Mode:** Move the timeline slider at the bottom to your desired year, then hover over the specific country on the map (or its corresponding bar). A tooltip will appear showing the exact percentage.\n- **Line Mode:** Hover over the line chart at your desired year on the x-axis. A vertical dashed line will appear along with a tooltip detailing the exact percentages for all selected countries for that year.\n\n**2. Programmatically in the Code (`chart20.js`):**\nYou can use the built-in `getValueForYear(entity, year)` function. It takes the country's name (Entity) and the year, and returns an object containing the exact value or the most recently available prior data if that exact year is missing:\n```javascript\nconst data = getValueForYear(\"Brazil\", 2020);\n// Returns: { value: 88.23, year: 2020, estimated: false }\n```\n\n**3. Manually from the Dataset (`chart20.csv`):**\nYou can directly search the underlying data file `charts/files/chart20.csv`. Find the row where the `Entity` column matches your specific country and the `Year` column matches the year, then look at the last column (`Proportion of population covered by at least a 4G mobile network (%)`). For example:\n`Brazil,BRA,2020,88.23`",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

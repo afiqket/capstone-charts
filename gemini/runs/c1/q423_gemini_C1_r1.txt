@@ -1,0 +1,19 @@
+{
+  "run_id": "c210a0be-8339-4ef5-b786-a0578d62258b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart131",
+  "question_id": "q423",
+  "js_path": "charts/chart131.js",
+  "csv_path": "charts/files/chart131.csv",
+  "question": "How can user see the trend for the expedniture through out the year?",
+  "prompt": "@charts/chart131.js @charts/files/chart131.csv Question: How can user see the trend for the expedniture through out the year?",
+  "prompt_hash": "07e76aaf3f2c38b32a279cb41e487846bdda98b258764b19715de6471d787e56",
+  "returncode": 0,
+  "raw_response": "To see the trend of expenditure over time, you can use the **timeline slider** located at the bottom of the chart. \n\nYou have two options to interact with it:\n1. **Play Button:** Click the play button (**\u25b6**) on the bottom left to automatically animate and cycle through the data year by year (from 2017 to 2023).\n2. **Manual Slider:** Click and drag the circular handle along the timeline, or simply click on a specific year on the slider track, to manually jump to the data for that year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

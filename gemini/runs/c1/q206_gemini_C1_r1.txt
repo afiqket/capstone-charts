@@ -1,0 +1,19 @@
+{
+  "run_id": "7e9cf81e-07fc-4786-8386-579f88dc0c23",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart59",
+  "question_id": "q206",
+  "js_path": "charts/chart59.js",
+  "csv_path": "charts/files/chart59.csv",
+  "question": "What is the main root node shown in the chart?",
+  "prompt": "@charts/chart59.js @charts/files/chart59.csv Question: What is the main root node shown in the chart?",
+  "prompt_hash": "c880f6e478f56f199edd5dce2babab4b029a2b911cd3c472bc698bbdaed9b76d",
+  "returncode": 0,
+  "raw_response": "Based on the provided CSV data, the main root node shown in the chart is **flare**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

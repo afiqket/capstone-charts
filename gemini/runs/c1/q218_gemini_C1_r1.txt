@@ -1,0 +1,19 @@
+{
+  "run_id": "f7f4bb74-4b96-4da0-a5c0-0e231f531d17",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart63",
+  "question_id": "q218",
+  "js_path": "charts/chart63.js",
+  "csv_path": "charts/files/chart63.csv",
+  "question": "At 1:15, who was leading? Did they manage to keep the lead until the end?",
+  "prompt": "@charts/chart63.js @charts/files/chart63.csv Question: At 1:15, who was leading? Did they manage to keep the lead until the end?",
+  "prompt_hash": "c748922e6af05c9e28beecc43abf95aeab1f66e8eb207d2e0d2e257acc866346",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the swimming race:\n\n1. **At 1:15, who was leading?**\n   **Hwang Sun-woo** was leading. At 1:15 (75 seconds), the swimmers were on their third lap (heading toward the 150m mark). Hwang Sun-woo reached the 3rd split first with a time of `01:16.6` and had the fastest pace leading up to that point.\n\n2. **Did they manage to keep the lead until the end?**\n   **No**, he did not keep the lead. He slowed down significantly on the final lap and ended up finishing 7th with a final time of `01:45.3`. **Thomas Dean** overtook the leaders in the final 50 meters and won the race with a time of `01:44.2`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

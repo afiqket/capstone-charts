@@ -1,0 +1,19 @@
+{
+  "run_id": "c496e3aa-6331-41d7-b617-f55d39703956",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart112",
+  "question_id": "q366",
+  "js_path": "charts/chart112.js",
+  "csv_path": "charts/files/chart112.csv",
+  "question": "How many shots under par that Rose has in the 18th hole?",
+  "prompt": "@charts/chart112.js @charts/files/chart112.csv Question: How many shots under par that Rose has in the 18th hole?",
+  "prompt_hash": "ffa077ff9342b44c3675327796a39fbb88374c7087fb1d1d2fb0e34e4e5c1339",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart112.csv`, which tracks the cumulative score (shots under par) for each player hole by hole, Rose's score at the 18th hole is **7** shots under par. \n\nIn the CSV, the value for Rose at column index 19 (which corresponds to hole 18) is **7**. This indicates that after completing the 18th hole, his total score was 7 under par (having been 8 under par after the 17th hole).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

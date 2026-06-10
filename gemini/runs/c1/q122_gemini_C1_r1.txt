@@ -1,0 +1,19 @@
+{
+  "run_id": "f501e3bc-2c76-4492-8dd4-31e4fd69cf02",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart36",
+  "question_id": "q122",
+  "js_path": "charts/chart36.js",
+  "csv_path": "charts/files/chart36.csv",
+  "question": "In 2022, on what date did Brazil overtake Belgium to claim first place?",
+  "prompt": "@charts/chart36.js @charts/files/chart36.csv Question: In 2022, on what date did Brazil overtake Belgium to claim first place?",
+  "prompt_hash": "ad95806e16fbb736360d268d94387f1c79e5a671aba52e59a6afb7c53291c944",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, Brazil overtook Belgium to claim first place on **31/3/2022** (March 31, 2022). \n\nOn the previous ranking date (10/2/2022), Belgium was ahead with 1828.45 points compared to Brazil's 1823.42. By 31/3/2022, Brazil reached 1832.69 points, surpassing Belgium's 1827 points.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

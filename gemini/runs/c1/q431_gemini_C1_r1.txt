@@ -1,0 +1,19 @@
+{
+  "run_id": "e45a6637-b9b0-4ff2-b5b0-77c7c7a69467",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart134",
+  "question_id": "q431",
+  "js_path": "charts/chart134.js",
+  "csv_path": "charts/files/chart134.csv",
+  "question": "Across all years shown, which region had the highest average share of expenditure spent on food?",
+  "prompt": "@charts/chart134.js @charts/files/chart134.csv Question: Across all years shown, which region had the highest average share of expenditure spent on food?",
+  "prompt_hash": "59d50505cddea9afdd7d29020701f382f863ac7491f53f5b0e4457327aadc487",
+  "returncode": 0,
+  "raw_response": "Based on the provided dataset, the region with the highest average share of expenditure spent on food across all years shown is **Africa**. \n\nCountries in Africa consistently show the highest percentages in the dataset (e.g., Nigeria at ~59%, Kenya at ~42-58%, and Angola at ~48-50%), bringing the regional average well above those of Asia, South America, North America, Europe, and Oceania.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

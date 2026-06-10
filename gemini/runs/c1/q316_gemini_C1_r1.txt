@@ -1,0 +1,19 @@
+{
+  "run_id": "94593e83-82c9-4aaa-9122-2ce214a2a1e6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart95",
+  "question_id": "q316",
+  "js_path": "charts/chart95.js",
+  "csv_path": "charts/files/chart95.csv",
+  "question": "What happens if I click the Bar button and move the slider to 2000?",
+  "prompt": "@charts/chart95.js @charts/files/chart95.csv Question: What happens if I click the Bar button and move the slider to 2000?",
+  "prompt_hash": "bc9a5682fe291d980506b09b6fd240e524f956e2eeefb0b7dbac0d46b0ad8fd8",
+  "returncode": 0,
+  "raw_response": "If you click the **Bar** button and move the slider to **2000**, the following happens:\n\n1. **Chart Type & Title:** The visualization switches from a line chart to a horizontal bar chart, and the title updates to **\"Total fertility rate vs cohort fertility rate vs tempo-adjusted TFR, Sweden, 2000\"**.\n2. **Data Display:** Three bars appear, sorted from highest to lowest value based on Sweden's data for the year 2000.\n3. **Values:** The bars represent the following metrics (formatted to two decimal places):\n   * **Completed cohort fertility rate shifted +30 years:** 2.00\n   * **Tempo-adjusted total fertility rate:** 1.84\n   * **Total fertility rate:** 1.56",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:31608) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

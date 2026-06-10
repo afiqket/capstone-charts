@@ -1,0 +1,19 @@
+{
+  "run_id": "27e347de-ac52-455d-ac23-b127a8ff6c83",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart36",
+  "question_id": "q121",
+  "js_path": "charts/chart36.js",
+  "csv_path": "charts/files/chart36.csv",
+  "question": "On the first day of 2018, how many points did Argentina have?",
+  "prompt": "@charts/chart36.js @charts/files/chart36.csv Question: On the first day of 2018, how many points did Argentina have?",
+  "prompt_hash": "3028b3c7a9658a966437293894a47360988abc37c475d253068ebb35b02526da",
+  "returncode": 0,
+  "raw_response": "Based on the dataset, Argentina had **1348** points on the first day of 2018. The points for both December 21, 2017, and January 18, 2018, were recorded as 1348, so the value remained steady at 1348 across the turn of the year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

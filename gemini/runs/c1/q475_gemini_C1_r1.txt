@@ -1,0 +1,19 @@
+{
+  "run_id": "088670d4-f718-4459-b896-daab20bed847",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart148",
+  "question_id": "q475",
+  "js_path": "charts/chart148.js",
+  "csv_path": "charts/files/chart148.csv",
+  "question": "What does the red color represent?",
+  "prompt": "@charts/chart148.js @charts/files/chart148.csv Question: What does the red color represent?",
+  "prompt_hash": "b5bdbbf21a619c4c1ecd857a20fe67d471f0267b683e946cebbb8ae5f45fa6cf",
+  "returncode": 0,
+  "raw_response": "Based on the provided chart code, the red color (`#c0523a`) represents the year **2020**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

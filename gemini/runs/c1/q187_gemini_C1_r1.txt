@@ -1,0 +1,19 @@
+{
+  "run_id": "20d83b8b-9f6a-4df7-b512-03d112aaf6cf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart52",
+  "question_id": "q187",
+  "js_path": "charts/chart52.js",
+  "csv_path": "charts/files/chart52.csv",
+  "question": "What happens if I hover over a bar in the bar chart?",
+  "prompt": "@charts/chart52.js @charts/files/chart52.csv Question: What happens if I hover over a bar in the bar chart?",
+  "prompt_hash": "c8b9390acb37b4f0b2971b3ec7094053c91b58d7aacfd46fea938bab3f6c3f3e",
+  "returncode": 0,
+  "raw_response": "When you hover over a bar in the bar chart, a tooltip appears near your mouse pointer displaying the following information:\n- The country name.\n- The year of the data point.\n- The formatted number of internally displaced people.\n- The subtitle text \"internally displaced people\".\n\nAdditionally, the sparkline graph (which is shown in the map view's tooltip) is explicitly hidden for the bar chart tooltip. When your mouse leaves the bar, the tooltip is hidden.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

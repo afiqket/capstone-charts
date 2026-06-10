@@ -1,0 +1,19 @@
+{
+  "run_id": "783e64cd-6010-4dbb-b5fe-e996b3991939",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart107",
+  "question_id": "q351",
+  "js_path": "charts/chart107.js",
+  "csv_path": "charts/files/chart107.csv",
+  "question": "How do I see only between 1800 and 1880?",
+  "prompt": "@charts/chart107.js @charts/files/chart107.csv Question: How do I see only between 1800 and 1880?",
+  "prompt_hash": "065a6879f83f3b44517885797718e5f54b35e210de106aa72ca85ab5079309e8",
+  "returncode": 0,
+  "raw_response": "To view the energy consumption data specifically between **1800 and 1880**, you can use the interactive **Year** slider located in the controls row of the chart:\n\n1.  Locate the **Year** control at the top right of the chart interface.\n2.  Move the slider (which defaults to 2020) to the left until the label shows **1880**.\n3.  The chart will automatically redraw to show only the years from the baseline (1800) up to 1880.\n\nIn the code (`@charts/chart107.js`), this is handled by the `yearRange` state and the `yearSlider` event listener:\n\n```javascript\n// The slider updates the end year of the range (start year is fixed at 1800)\nyearWrap.querySelector(\"#yearSlider\").addEventListener(\"input\", e => {\n  yearRange = [1800, +e.target.value] // Setting this to 1880 filters the data\n  yearWrap.querySelector(\"#yearLabel\").textContent = e.target.value\n  draw()\n})\n```\n\nThe `draw()` function then filters the dataset based on this range:\n```javascript\nlet years = [...new Set(data.map(d => d.year))]\n  .filter(y => y >= yearRange[0] && y <= yearRange[1])\n  .sort((a, b) => a - b);\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

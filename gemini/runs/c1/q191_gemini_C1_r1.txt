@@ -1,0 +1,19 @@
+{
+  "run_id": "f1dcb984-ca26-4721-b93c-94d089a74c7d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart54",
+  "question_id": "q191",
+  "js_path": "charts/chart54.js",
+  "csv_path": "charts/files/chart54.csv",
+  "question": "Did Irion, TX have a net gain or net loss relationship with Coke, TX?",
+  "prompt": "@charts/chart54.js @charts/files/chart54.csv Question: Did Irion, TX have a net gain or net loss relationship with Coke, TX?",
+  "prompt_hash": "bdf9eaf295845068fc80bbd886a00bebb064c83649487a90b8f2e58e52cf3f84",
+  "returncode": 1,
+  "raw_response": "",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError when talking to Gemini API Full report available at: C:\\Users\\anees\\AppData\\Local\\Temp\\gemini-client-error-Turn.run-sendMessageStream-2026-06-09T06-55-48-898Z.json TerminalQuotaError: You have exhausted your capacity on this model. Your quota will reset after 20h34m16s.\n    at classifyGoogleError (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:304211:18)\n    at retryWithBackoff (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:304871:31)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async GeminiChat.makeApiCallAndProcessStream (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:328260:28)\n    at async GeminiChat.streamWithRetries (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:328078:29)\n    at async Turn.run (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:328824:24)\n    at async GeminiClient.processTurn (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:342314:22)\n    at async GeminiClient.sendMessageStream (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/chunk-LSXUKR6W.js:342411:14)\n    at async file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/gemini-75GSY6S7.js:10882:26\n    at async main (file:///C:/Users/anees/AppData/Roaming/npm/node_modules/@google/gemini-cli/bundle/gemini-75GSY6S7.js:16290:5) {\n  cause: {\n    code: 429,\n    message: 'You have exhausted your capacity on this model. Your quota will reset after 20h34m16s.',\n    details: [ [Object], [Object] ]\n  },\n  retryDelayMs: 74056062.652198,\n  reason: 'QUOTA_EXHAUSTED'\n}\nAn unexpected critical error occurred:[object Object]",
+  "parsed_answer": ""
+}

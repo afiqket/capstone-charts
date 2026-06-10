@@ -1,0 +1,19 @@
+{
+  "run_id": "6af20f74-3a70-4da8-9e83-8b484f7cb560",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart16",
+  "question_id": "q50",
+  "js_path": "charts/chart16.js",
+  "csv_path": "charts/files/chart16.csv",
+  "question": "How can I get the exact data value for Canada from this chart?",
+  "prompt": "@charts/chart16.js @charts/files/chart16.csv Question: How can I get the exact data value for Canada from this chart?",
+  "prompt_hash": "fb5cbaea0092effa6a45c1178465ccd75cefc8e0cd3b47bb2e4b6bf27ace8b24",
+  "returncode": 0,
+  "raw_response": "To get the exact data value for Canada from this chart, you can hover your mouse over Canada on the map. This will display a tooltip showing the exact percentage, which is **73.0%** (based on the underlying data value of 72.9736). \n\nNote that Canada is not included in the default bar chart view, so the map is the only way to view its value interactively in this chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

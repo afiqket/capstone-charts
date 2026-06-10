@@ -1,0 +1,19 @@
+{
+  "run_id": "d15dea14-3873-4e1d-922d-5ca075ff7659",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart26",
+  "question_id": "q80",
+  "js_path": "charts/chart26.js",
+  "csv_path": "charts/files/chart26.csv",
+  "question": "What happen if I move the slider at the bottom of the line chart?  ",
+  "prompt": "@charts/chart26.js @charts/files/chart26.csv Question: What happen if I move the slider at the bottom of the line chart?  ",
+  "prompt_hash": "b593493afb16c2fa954a64e99bc39c6c9f5bb8a8a8de26ea6fbe9f4a43f09994",
+  "returncode": 0,
+  "raw_response": "When you move the slider at the bottom while in the line chart view, it updates the starting year (`lineStartYear`) of the chart. \n\nThe chart redraws to filter the displayed data, showing only the deaths from the newly selected year up to the maximum year in the dataset. This effectively adjusts the X-axis to \"zoom in\" on the timeline, cutting off the data from any years prior to the one you selected with the slider.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

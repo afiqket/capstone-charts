@@ -1,0 +1,19 @@
+{
+  "run_id": "08a0f5d5-ce4a-4528-9a27-8fe049993916",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart118",
+  "question_id": "q384",
+  "js_path": "charts/chart118.js",
+  "csv_path": "charts/files/chart118.csv",
+  "question": "In 2021 what is the usage of penicillin with extended spectrum?",
+  "prompt": "@charts/chart118.js @charts/files/chart118.csv Question: In 2021 what is the usage of penicillin with extended spectrum?",
+  "prompt_hash": "39ca49f285db8488a9e9d0e60fd39d57bfba972eaa19e7e0ef64576bcaadaf0b",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart118.csv`, the usage of **Penicillins with extended spectrum** in the **United Kingdom** for the year **2021** was approximately **2.52** (specifically **2.5166612**) defined daily doses per 1,000 people.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "d5c3abf3-364b-4f4e-a43b-1afaefcd2b0e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart46",
+  "question_id": "q168",
+  "js_path": "charts/chart46.js",
+  "csv_path": "charts/files/chart46.csv",
+  "question": "How can I get the exact trading volume for April 2025?",
+  "prompt": "@charts/chart46.js @charts/files/chart46.csv Question: How can I get the exact trading volume for April 2025?",
+  "prompt_hash": "7cc925c39536e07ecea3048fc08abcb47163d70a6074e941865707dbb67abdc4",
+  "returncode": 0,
+  "raw_response": "To find the exact trading volume for April 2025, you can hover your mouse over the volume bar (the blue bar) corresponding to April 2025 on the chart. A tooltip will appear displaying the exact volume for that specific point.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

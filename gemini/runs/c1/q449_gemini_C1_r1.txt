@@ -1,0 +1,19 @@
+{
+  "run_id": "186d687d-58df-4048-92b8-fb7d4ed42d72",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart140",
+  "question_id": "q449",
+  "js_path": "charts/chart140.js",
+  "csv_path": "charts/files/chart140.csv",
+  "question": "Which country had the highest life satisfaction in 2024? Did they have a relatively high life expectancy as well?",
+  "prompt": "@charts/chart140.js @charts/files/chart140.csv Question: Which country had the highest life satisfaction in 2024? Did they have a relatively high life expectancy as well?",
+  "prompt_hash": "9928f130851bd68803b760871a3459a4d8de60db6e800454e780a22a18561aed",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided file:\n\n1. **Finland** had the highest life satisfaction in 2024, with a score of **7.736** on the Cantril Ladder.\n2. **Yes**, they also have a relatively high life expectancy. While the exact life expectancy data for 2024 is absent for most countries, Finland's life expectancy at birth in **2023** was **81.91 years**. This is well above the global average (around 73 years) and places them in the upper tier globally alongside other highly developed nations, making their life expectancy relatively high in correlation with their life satisfaction.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:15184) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

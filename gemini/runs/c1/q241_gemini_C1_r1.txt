@@ -1,0 +1,19 @@
+{
+  "run_id": "c8d6c51b-b741-4f55-bc74-5a333833ea04",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart70",
+  "question_id": "q241",
+  "js_path": "charts/chart70.js",
+  "csv_path": "charts/files/chart70.csv",
+  "question": "What happens if I hover over a bar in the bar chart?",
+  "prompt": "@charts/chart70.js @charts/files/chart70.csv Question: What happens if I hover over a bar in the bar chart?",
+  "prompt_hash": "1ac00bc10d56332c48668c412f86b8a03df8e9faeecc3bb5f8469e388ad15fd9",
+  "returncode": 0,
+  "raw_response": "When you hover over a bar in the bar chart, a tooltip appears displaying the country name (entity) and its corresponding value formatted to one decimal place with a percentage sign (e.g., \"54.6%\"). The tooltip follows the mouse cursor position while you remain hovered over the bar. When the mouse leaves the bar, the tooltip is hidden.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

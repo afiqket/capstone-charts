@@ -1,0 +1,19 @@
+{
+  "run_id": "9791c009-2ede-43e9-b4d5-cf69eddd8e21",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart38",
+  "question_id": "q132",
+  "js_path": "charts/chart38.js",
+  "csv_path": "charts/files/chart38.csv",
+  "question": "Across the whole chart period, which category had more total cases?",
+  "prompt": "@charts/chart38.js @charts/files/chart38.csv Question: Across the whole chart period, which category had more total cases?",
+  "prompt_hash": "dce6b6d6462297cc930801a3668f1ec6cc4c573614073acc4e774ec719616265",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the **Synthetic Cannabinoid** category had more total cases across the whole chart period. \n\nHere is a summary of the approximate totals:\n*   **Synthetic Cannabinoid Cases:** ~17,962 total cases (heavily weighted by large spikes in 2015\u20132016).\n*   **Cannabidiol (CBD) Cases:** ~12,151 total cases (gradually increasing over time but yielding a lower overall total).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

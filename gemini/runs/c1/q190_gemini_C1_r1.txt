@@ -1,0 +1,19 @@
+{
+  "run_id": "f6eeea81-3755-4806-b8bc-1ed5737e4dd4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart53",
+  "question_id": "q190",
+  "js_path": "charts/chart53.js",
+  "csv_path": "charts/files/chart53.csv",
+  "question": "What happens if I hover over South Korea on the map?",
+  "prompt": "@charts/chart53.js @charts/files/chart53.csv Question: What happens if I hover over South Korea on the map?",
+  "prompt_hash": "d3d6c688a81bddad14c26049d1bea3549db9094c9a728f08fe9e2854c2f67313",
+  "returncode": 0,
+  "raw_response": "If you hover over South Korea on the map, a tooltip will appear displaying:\n\n*   **South Korea** (The country name)\n*   **Change in male height, 1896 \u2192 1996** (The subtitle)\n*   **9.49%** (The relative increase in mean height, rounded to two decimal places)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

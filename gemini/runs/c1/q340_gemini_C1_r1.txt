@@ -1,0 +1,19 @@
+{
+  "run_id": "039704d9-e22e-430d-a638-92eaa7a05c8e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart103",
+  "question_id": "q340",
+  "js_path": "charts/chart103.js",
+  "csv_path": "charts/files/chart103.csv",
+  "question": "Which sector is selected by default in the visualization?",
+  "prompt": "@charts/chart103.js @charts/files/chart103.csv Question: Which sector is selected by default in the visualization?",
+  "prompt_hash": "b39bb35d7a396f058f6c064ed269d6e918c2150f3f8b548ebd55eb0735bd2048",
+  "returncode": 0,
+  "raw_response": "Based on the code in `charts/chart103.js`, the **Manufacturing** sector is selected by default. \n\nThe relevant logic in the script is:\n```javascript\nlet selectedSector = sectors.includes(\"Manufacturing\") ? \"Manufacturing\" : sectors[0];\n```\nSince the associated data file (`chart103.csv`) contains \"Manufacturing\" in its records, the visualization initializes with this sector selected.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "64475515-850f-4ad9-ab05-ae9abaaa5089",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart122",
+  "question_id": "q397",
+  "js_path": "charts/chart122.js",
+  "csv_path": "charts/files/chart122.csv",
+  "question": "What is the air pollution in London in 1997?",
+  "prompt": "@charts/chart122.js @charts/files/chart122.csv Question: What is the air pollution in London in 1997?",
+  "prompt_hash": "34f8ac8984d69d834184623ad6c033d3423fd111d0d0390ce995897a3fb65496",
+  "returncode": 0,
+  "raw_response": "The air pollution in London in 1997 was **25 \u03bcg/m\u00b3** (measured as Suspended Particulate Matter).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "a2c22009-a9da-4bdd-b008-c3afd214c9bb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart86",
+  "question_id": "q289",
+  "js_path": "charts/chart86.js",
+  "csv_path": "charts/files/chart86.csv",
+  "question": "What happens if I click a country dot, such as Norway 1960?",
+  "prompt": "@charts/chart86.js @charts/files/chart86.csv Question: What happens if I click a country dot, such as Norway 1960?",
+  "prompt_hash": "1e17e96f2b12114ed6247446daee9c13c871a5229b665baaed7f486d338c57ab",
+  "returncode": 0,
+  "raw_response": "Based on the provided code for `chart86.js`, **nothing happens** if you click a country dot (like Norway 1960). \n\nWhile the dots have a CSS style of `cursor: pointer` making them look clickable, and they have interactive behaviors defined for `mouseover` (showing a tooltip and highlighting the country's data points) and `mouseout` (hiding the tooltip and resetting the highlight), there is no `click` event listener implemented in the code for the dots.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

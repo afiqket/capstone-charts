@@ -1,0 +1,19 @@
+{
+  "run_id": "17d5c871-0c61-4cae-9156-ff21ffa7a16c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart55",
+  "question_id": "q195",
+  "js_path": "charts/chart55.js",
+  "csv_path": "charts/files/chart55.csv",
+  "question": "How can I get the percentage of people reporting lifetime anxiety or depression for Malaysia?",
+  "prompt": "@charts/chart55.js @charts/files/chart55.csv Question: How can I get the percentage of people reporting lifetime anxiety or depression for Malaysia?",
+  "prompt_hash": "9853eb8bcb616d83482df4b8963319343bf18fb31d073cc23b2a2b3984d85b4d",
+  "returncode": 0,
+  "raw_response": "To get the percentage of people reporting lifetime anxiety or depression for Malaysia, you can look up the row where the `Entity` is **Malaysia** in the `chart55.csv` file. \n\nHere is the data from the CSV:\n```csv\nEntity,Code,Year,Share reporting lifetime anxiety or depression\nMalaysia,MYS,2020,19.344215\n```\n\nThe percentage is **19.34%**. \n\nIf you are trying to retrieve this programmatically in JavaScript from the loaded data, you can filter the parsed CSV array:\n```javascript\nconst malaysiaData = rawData.find(d => d.Entity === \"Malaysia\");\nconst percentage = malaysiaData[\"Share reporting lifetime anxiety or depression\"]; // 19.344215\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

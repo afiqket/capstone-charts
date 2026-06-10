@@ -1,0 +1,19 @@
+{
+  "run_id": "ab2ee512-8c98-4b78-a04c-f3f983636ee1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart145",
+  "question_id": "q466",
+  "js_path": "charts/chart145.js",
+  "csv_path": "charts/files/chart145.csv",
+  "question": "What does the play button do in the Line chart view versus the Bar chart view",
+  "prompt": "@charts/chart145.js @charts/files/chart145.csv Question: What does the play button do in the Line chart view versus the Bar chart view",
+  "prompt_hash": "cee20b67c315f020770b61a12a6f070dd9de43311360401bf754a7565f39ca99",
+  "returncode": 0,
+  "raw_response": "Based on the code provided in `@charts/chart145.js`, the play button behaves differently depending on the active view mode:\n\n*   **In the Line chart view:** Clicking the play button moves the slider handle across the timeline and updates the year displayed in the chart's title. However, the line chart itself remains static because it is designed to show the entire timeline of data at once.\n*   **In the Bar chart view:** Clicking the play button moves the slider handle, updates the title, and actively redraws the bars (`drawBar()` is called inside the `updateYear` function) to animate the changing values for each country year-by-year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

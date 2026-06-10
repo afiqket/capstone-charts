@@ -1,0 +1,19 @@
+{
+  "run_id": "c2e1d1d1-a513-4bc3-84bf-5e24dba33ba4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart17",
+  "question_id": "q54",
+  "js_path": "charts/chart17.js",
+  "csv_path": "charts/files/chart17.csv",
+  "question": "What happens if I change the Sheriff department filter from \u201cAll\u201d to \u201cHarris County\u201d?",
+  "prompt": "@charts/chart17.js @charts/files/chart17.csv Question: What happens if I change the Sheriff department filter from \u201cAll\u201d to \u201cHarris County\u201d?",
+  "prompt_hash": "e4c961ae3b6c7a1e39a426b95e41f62bb0cb2a48ec0970e4f1e85c0db5cdd7dc",
+  "returncode": 0,
+  "raw_response": "When you change the Sheriff department filter from \"All\" to \"Harris County\", the following happens in the chart:\n\n1. **Data Filtering**: The underlying data is filtered to only include rows where the `Agency` is \"Harris County\". \n2. **Lines Disappear**: The chart removes the thick (reported crimes) and thin (population) lines for Montgomery County, Brazoria County, and Fort Bend County.\n3. **Lines Remaining**: Only the thick orange line (`#f5a11c`) representing the number of violent crimes and the thin orange line representing the population for Harris County remain visible.\n4. **Static Axes**: The chart axes do not rescale. The X-axis (Years 1990-2012), left Y-axis (crimes 0K-9K), and right Y-axis (population 0K-4M) remain exactly the same, as their domains are hardcoded.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "e46c51b2-12ef-4d27-aaf4-81d4006a4781",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart124",
+  "question_id": "q401",
+  "js_path": "charts/chart124.js",
+  "csv_path": "charts/files/chart124.csv",
+  "question": "What does the blue line means in the line chart?",
+  "prompt": "@charts/chart124.js @charts/files/chart124.csv Question: What does the blue line means in the line chart?",
+  "prompt_hash": "233ac2e4a8fe23fa199da9708e257a6104896fd3a94afb9391559bd6bc16e992",
+  "returncode": 0,
+  "raw_response": "The blue line in the line chart represents **PM\u2082.\u2085** (particulate matter less than 2.5 microns in diameter).\n\nThis is identified in the code by the `SERIES` configuration:\n```javascript\nconst SERIES = [\n  { key: \"PM\u2081\u2080\",  col: \"PM\\u2081\\u2080\",          color: \"#b84c1a\" }, // Orange-brown\n  { key: \"PM\u2082.\u2085\", col: \"PM\\u2082.\\u2085\",          color: \"#4e79a7\" }  // Blue\n];\n```\n\nAccording to the chart's subtitle, **PM\u2082.\u2085** denotes particulate matter with a diameter of less than 2.5 micrometers.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

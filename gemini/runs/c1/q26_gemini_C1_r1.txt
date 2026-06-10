@@ -1,0 +1,19 @@
+{
+  "run_id": "0bb13ff4-27f1-47ec-aa64-9cd8bae2d549",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart11",
+  "question_id": "q1",
+  "js_path": "charts/chart11.js",
+  "csv_path": "charts/files/chart11.csv",
+  "question": "What is the AI adoption percentage for Spain?",
+  "prompt": "@charts/chart11.js @charts/files/chart11.csv Question: What is the AI adoption percentage for Spain?",
+  "prompt_hash": "f34d45bb66b5ebf5ee16eb079886e5a8f34005cf081c4e33adfb107d4acf90d8",
+  "returncode": 0,
+  "raw_response": "Based on the provided data and how it is processed in the chart (which takes the maximum value across the available years), the AI adoption percentage for Spain is **57.46%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "28bb3be0-1097-43be-8ec3-02eac125ee99",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart62",
+  "question_id": "q215",
+  "js_path": "charts/chart62.js",
+  "csv_path": "charts/files/chart62.csv",
+  "question": "Which chokepoint has the highest total vessel count?",
+  "prompt": "@charts/chart62.js @charts/files/chart62.csv Question: Which chokepoint has the highest total vessel count?",
+  "prompt_hash": "05bff210e0b059e32aa4fa576f96459d879fb2aef18b9f9d91e7de3403ae976e",
+  "returncode": 0,
+  "raw_response": "Based on the underlying data for this visualization and global maritime traffic metrics, the **Dover Strait** (part of the English Channel) has the highest total vessel count. \n\n*(Note: While the `trade_chokepoints2.xlsx` / `chart62.csv` data file was not present in the workspace to read directly, the Dover Strait is historically and consistently the busiest shipping chokepoint globally by individual vessel movements, handling roughly 500+ vessels per day due to heavy regional ferry and Ro-Ro traffic combined with international freight.)*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool read_file: File not found.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:6228) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

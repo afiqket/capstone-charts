@@ -1,0 +1,19 @@
+{
+  "run_id": "96f9cacc-bdd4-406c-a439-3578575890dd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart37",
+  "question_id": "q127",
+  "js_path": "charts/chart37.js",
+  "csv_path": "charts/files/chart37.csv",
+  "question": "What can be inferred when Inventory decreases while ZHVI increases after 2013?",
+  "prompt": "@charts/chart37.js @charts/files/chart37.csv Question: What can be inferred when Inventory decreases while ZHVI increases after 2013?",
+  "prompt_hash": "0823a288f59e82c6a83be75030110a5a340c95ce64a1d7c1c3ec45a1fc7973b8",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, when **Inventory** (the number of homes for sale) decreases while the **ZHVI** (Zillow Home Value Index) increases after 2013, it can be inferred that **housing demand is outpacing supply**. \n\nA lower inventory means there are fewer homes available on the market. This scarcity increases competition among prospective buyers, which puts upward pressure on home prices and drives the median home value (ZHVI) higher. In economic terms, this reflects a restricted supply in a \"seller's market.\"",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

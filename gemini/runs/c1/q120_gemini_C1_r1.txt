@@ -1,0 +1,20 @@
+{
+  "run_id": "ac91efc4-4e15-413f-90ae-420dd5a2d646",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "auth_method": "Login with Google",
+  "subscription": "Google AI Pro",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart35",
+  "question_id": "q120",
+  "js_path": "charts/chart35.js",
+  "csv_path": "charts/files/chart35.csv",
+  "question": "What is the average magnitude of the earthquakes of the South Sandwich Islands?",
+  "prompt": "@charts/chart35.js @charts/files/chart35.csv Question: What is the average magnitude of the earthquakes of the South Sandwich Islands?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "The average magnitude of the earthquakes in the South Sandwich Islands is **7.67** (calculated from the magnitudes 7.4, 7.5, and 8.1).",
+  "parsed_answer": ""
+}

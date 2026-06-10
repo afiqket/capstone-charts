@@ -1,0 +1,19 @@
+{
+  "run_id": "a7f55dec-530c-4795-955f-aed336dc8042",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart27",
+  "question_id": "q83",
+  "js_path": "charts/chart27.js",
+  "csv_path": "charts/files/chart27.csv",
+  "question": "How can I check the number of deaths occur in Iraq between year 2014 and 2017 in line chart?",
+  "prompt": "@charts/chart27.js @charts/files/chart27.csv Question: How can I check the number of deaths occur in Iraq between year 2014 and 2017 in line chart?",
+  "prompt_hash": "55f81a569ee09909b69863ce248afe6570905d529bc27c9ea1e014bde2573a51",
+  "returncode": 0,
+  "raw_response": "To check the number of deaths in Iraq between 2014 and 2017 using the line chart, you can use the interactive features built into the visualization:\n\n1. **Switch to Line Chart Mode:** Click the **\"\ud83d\udcc8 Line\"** button located at the top of the visualization to switch from the Map view to the Line chart.\n2. **Adjust the Timeline:** Use the timeline slider at the bottom of the chart. Drag the handle to set the starting year to 2014 or earlier, ensuring the period from 2014 to 2017 is clearly visible on the x-axis.\n3. **Hover to View Data:** Move your mouse cursor over the graph area along the x-axis corresponding to the years 2014, 2015, 2016, and 2017.\n4. **Read the Tooltip:** As you hover over each year, a vertical dotted line will appear along with a tooltip. The tooltip will list the exact number of deaths for Iraq (and other tracked countries) for that specific year.\n\nFor quick reference, based on the underlying data (`chart27.csv`), the number of deaths in Iraq for those years are:\n* **2014:** 13,168\n* **2015:** 10,136\n* **2016:** 9,635\n* **2017:** 10,228",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:20276) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

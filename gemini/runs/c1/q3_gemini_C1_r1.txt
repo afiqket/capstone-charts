@@ -1,0 +1,17 @@
+{
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart2",
+  "question_id": "q1",
+  "js_path": "charts/chart2.js",
+  "csv_path": "charts/files/chart2.csv",
+  "question": "Do low-wage jobs tend to have higher immigrant percentages than high-wage jobs?",
+  "prompt": "@charts/chart2.js @charts/files/chart2.csv Question: Do low-wage jobs tend to have higher immigrant percentages than high-wage jobs?",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **yes**, low-wage jobs tend to have higher immigrant percentages than high-wage jobs. \n\nLooking at the data:\n*   **Low-wage jobs** frequently have immigrant percentages above 40%, with several occupations having very high concentrations. For example, Maids and housekeeping cleaners (77.7%), Taxi drivers and chauffeurs (70.4%), Cooks (61.3%), and Janitors and building cleaners (57.9%).\n*   **High-wage jobs** generally have much lower immigrant percentages, typically falling between 10% and 30%. While there are a few exceptions (like Economists at 45.7% and Mathematicians/Statisticians at 43.4%), the vast majority of high-wage roles have significantly lower percentages of immigrants compared to low-wage roles.",
+  "stderr": "",
+  "parsed_answer": ""
+}

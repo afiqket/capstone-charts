@@ -1,0 +1,19 @@
+{
+  "run_id": "823b2fe8-9dd6-47b0-801f-a11a00def9da",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart132",
+  "question_id": "q427",
+  "js_path": "charts/chart132.js",
+  "csv_path": "charts/files/chart132.csv",
+  "question": "Which decade had the highest average combined price index across Petroleum, Wheat, and Corn?",
+  "prompt": "@charts/chart132.js @charts/files/chart132.csv Question: Which decade had the highest average combined price index across Petroleum, Wheat, and Corn?",
+  "prompt_hash": "989cbcfcd74f8fdf1f4a4ff6a1b4d2f13d02da1d03bad3c7f4e25a7a0a30760b",
+  "returncode": 0,
+  "raw_response": "Based on the provided dataset, the **2010s** (2010-2019) had the highest average combined price index across Petroleum, Wheat, and Corn. \n\nTo determine this, we can look at the sum of the three indices for each year and average them by decade. The 2010s saw a massive peak in the first half of the decade (especially from 2011 to 2014, where the combined index consistently exceeded 650), leading to an average combined price index of approximately **527.6** for the decade, which outpaces the second-highest decade (the 1980s, which averaged around 478.7).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

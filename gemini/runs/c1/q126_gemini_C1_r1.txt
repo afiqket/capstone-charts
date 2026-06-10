@@ -1,0 +1,19 @@
+{
+  "run_id": "dc8a39ee-f947-468d-b0e7-cde92cb032fd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart37",
+  "question_id": "q126",
+  "js_path": "charts/chart37.js",
+  "csv_path": "charts/files/chart37.csv",
+  "question": "What is the average United States median home value across the full ZHVI period shown?",
+  "prompt": "@charts/chart37.js @charts/files/chart37.csv Question: What is the average United States median home value across the full ZHVI period shown?",
+  "prompt_hash": "46963cf0d448eea67d3c322792db9bd3c8c49c3e9555519fd572a4a17adb389c",
+  "returncode": 0,
+  "raw_response": "Based on the provided ZHVI (Zillow Home Value Index) data for the United States, here is the calculation for the average median home value across the full period shown (April 1996 to April 2019):\n\n*   **Total number of months:** 277\n*   **Sum of all median home values:** $44,324,800\n*   **Average:** $44,324,800 / 277 = **$160,017.33**\n\nThe average United States median home value across the full ZHVI period shown is approximately **$160,017**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\nError executing tool read_file: File not found.",
+  "parsed_answer": ""
+}

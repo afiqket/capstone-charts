@@ -1,0 +1,19 @@
+{
+  "run_id": "b9641b26-86c5-40e5-915a-7d69283071dd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart84",
+  "question_id": "q282",
+  "js_path": "charts/chart84.js",
+  "csv_path": "charts/files/chart84.csv",
+  "question": "How can I retrieve France\u2019s cohort life expectancy in 1932 using the line chart?",
+  "prompt": "@charts/chart84.js @charts/files/chart84.csv Question: How can I retrieve France\u2019s cohort life expectancy in 1932 using the line chart?",
+  "prompt_hash": "89e916cb6d3d78053708b213070b8d2af2b0231e9449c6b3f05cdf75214a269d",
+  "returncode": 0,
+  "raw_response": "To retrieve France's cohort life expectancy in 1932 using the line chart, simply hover your cursor over the data point for the year 1932 on the graph. A tooltip will appear displaying both metrics for that year, where you will see the **Cohort life expectancy** listed as **69.8 years** (rounded from 69.84).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:27368) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

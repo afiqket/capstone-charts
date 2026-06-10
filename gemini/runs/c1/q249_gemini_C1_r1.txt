@@ -1,0 +1,19 @@
+{
+  "run_id": "59ab792d-88a3-495b-9572-50aeab0205f4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart73",
+  "question_id": "q249",
+  "js_path": "charts/chart73.js",
+  "csv_path": "charts/files/chart73.csv",
+  "question": "How can I get the percentage for Malaysia?",
+  "prompt": "@charts/chart73.js @charts/files/chart73.csv Question: How can I get the percentage for Malaysia?",
+  "prompt_hash": "78b9bc0dbaa9af6cdb99020f31d895f6344ab676b5802d36d59b2bb8193cf7cc",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the percentage for Malaysia is **32.2%** (or exactly 32.197147%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

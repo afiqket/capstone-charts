@@ -1,0 +1,19 @@
+{
+  "run_id": "9fb220b9-dcbd-4fc0-8850-a881c10973f7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart32",
+  "question_id": "q101",
+  "js_path": "charts/chart32.js",
+  "csv_path": "charts/files/chart32.csv",
+  "question": "What is the Open Space that is colored green?",
+  "prompt": "@charts/chart32.js @charts/files/chart32.csv Question: What is the Open Space that is colored green?",
+  "prompt_hash": "05743966f5f9ccb1069c8c310e565c2dd8e59d83d48e98d7a33a66ed34c13a81",
+  "returncode": 0,
+  "raw_response": "Based on the code in `chart32.js`, the Open Space that is colored green (`#bfe3b4`) is **Golf Course**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

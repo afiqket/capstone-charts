@@ -1,0 +1,19 @@
+{
+  "run_id": "7fe9b005-562f-4ecd-8ac2-ae811f692d19",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart119",
+  "question_id": "q388",
+  "js_path": "charts/chart119.js",
+  "csv_path": "charts/files/chart119.csv",
+  "question": "What does the Red color represent on the graphs?",
+  "prompt": "@charts/chart119.js @charts/files/chart119.csv Question: What does the Red color represent on the graphs?",
+  "prompt_hash": "3bcf6a645108fa556888db12c35453d92bf2a5c150109b35d64f4dd0d587db4c",
+  "returncode": 0,
+  "raw_response": "Based on the code for **chart119.js**, the red color (hex code `#c0392b`) represents **Bloodstream infections**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

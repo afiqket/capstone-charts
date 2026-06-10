@@ -1,0 +1,19 @@
+{
+  "run_id": "12b497fa-fd4b-41c6-8ae8-64a357d6cb83",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart120",
+  "question_id": "q389",
+  "js_path": "charts/chart120.js",
+  "csv_path": "charts/files/chart120.csv",
+  "question": "What can the user see when they hover over the line charts?",
+  "prompt": "@charts/chart120.js @charts/files/chart120.csv Question: What can the user see when they hover over the line charts?",
+  "prompt_hash": "e20b893c4328de472b3c6558930bf45b5f2c777773ac970294cc0021070d561f",
+  "returncode": 0,
+  "raw_response": "When a user hovers over the line charts, the following visual elements appear:\n\n1.  **Vertical Indicator Line:** A gray vertical line appears at the year corresponding to the mouse position.\n2.  **Tooltip:** A tooltip box is displayed, which contains:\n    *   **The Year:** Displayed as a bold title at the top of the tooltip.\n    *   **Data for each Infection Type:** For every tracked infection category (Bloodstream, Gonorrhea, Gastrointestinal, and Urinary tract) that has data for that year, the tooltip shows:\n        *   A small **colored square** corresponding to the line's color.\n        *   The **name of the infection type**.\n        *   The **percentage value**, formatted to one decimal place (e.g., \"Bloodstream infections: 25.5%\").",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

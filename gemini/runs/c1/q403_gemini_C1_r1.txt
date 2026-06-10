@@ -1,0 +1,19 @@
+{
+  "run_id": "4266caa9-661b-4c62-81eb-22dd3f73dd5c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart124",
+  "question_id": "q403",
+  "js_path": "charts/chart124.js",
+  "csv_path": "charts/files/chart124.csv",
+  "question": "What is the average for emission of PM2.5 throughout 1990s?",
+  "prompt": "@charts/chart124.js @charts/files/chart124.csv Question: What is the average for emission of PM2.5 throughout 1990s?",
+  "prompt_hash": "2111618aaa3b3f58cf6031ac1f1cac9e89016271d07bcf9533f62db3df8b4dca",
+  "returncode": 0,
+  "raw_response": "To calculate the average emission of PM\u2082.\u2085 for the United Kingdom throughout the 1990s (1990\u20131999), we use the data provided in the CSV for that decade:\n\n*   **1990:** 237,000 tonnes\n*   **1991:** 236,000 tonnes\n*   **1992:** 226,000 tonnes\n*   **1993:** 211,000 tonnes\n*   **1994:** 202,000 tonnes\n*   **1995:** 184,000 tonnes\n*   **1996:** 182,000 tonnes\n*   **1997:** 173,000 tonnes\n*   **1998:** 165,000 tonnes\n*   **1999:** 162,000 tonnes\n\n**Sum:** 237,000 + 236,000 + 226,000 + 211,000 + 202,000 + 184,000 + 182,000 + 173,000 + 165,000 + 162,000 = **1,978,000 tonnes**\n\n**Average:** 1,978,000 \u00f7 10 = **197,800 tonnes**\n\nThe average emission of PM\u2082.\u2085 throughout the 1990s was **197,800 tonnes**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "bbc8a43c-2551-4a77-8f9e-43fd9121f86a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart83",
+  "question_id": "q279",
+  "js_path": "charts/chart83.js",
+  "csv_path": "charts/files/chart83.csv",
+  "question": "How can I get the Missing female births value for the World in 2010?",
+  "prompt": "@charts/chart83.js @charts/files/chart83.csv Question: How can I get the Missing female births value for the World in 2010?",
+  "prompt_hash": "33dbe729da9a9b61692536cfc0e54960903cc4ffc9d7135c885170b0fe4764e2",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart83.csv`, you can find the \"Missing female births\" value for the **World** in **2010** by looking at the corresponding row:\n\n```csv\nEntity,Code,Year,Excess female deaths,Missing female births\n...\nWorld,OWID_WRL,2010,1660000,1710000\n```\n\nThe value for Missing female births for the World in 2010 is **1,710,000**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

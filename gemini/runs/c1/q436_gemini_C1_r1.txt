@@ -1,0 +1,19 @@
+{
+  "run_id": "087bf2da-62f0-4a29-a4ea-eeee21b102d2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart135",
+  "question_id": "q436",
+  "js_path": "charts/chart135.js",
+  "csv_path": "charts/files/chart135.csv",
+  "question": "Across all years shown, which country had the highest average annual working hours per person employed?",
+  "prompt": "@charts/chart135.js @charts/files/chart135.csv Question: Across all years shown, which country had the highest average annual working hours per person employed?",
+  "prompt_hash": "44c7f71b11fa98629939ade11b302568543a638ebd57ec72aac6ff0a94e3c2da",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Korea** had the highest average annual working hours per person employed across all the years shown (reaching over 2,800 hours in the mid-1980s).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

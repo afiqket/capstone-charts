@@ -1,0 +1,19 @@
+{
+  "run_id": "413b7838-d5e0-4f0d-883c-a23553ea2813",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart39",
+  "question_id": "q134",
+  "js_path": "charts/chart39.js",
+  "csv_path": "charts/files/chart39.csv",
+  "question": "How do we only see data for \"Consumption\" as the only contributions to the US GDP?",
+  "prompt": "@charts/chart39.js @charts/files/chart39.csv Question: How do we only see data for \"Consumption\" as the only contributions to the US GDP?",
+  "prompt_hash": "f99511ddd6c247e6bc9ae32a8ef2ad3bf11df8c3954874e8a439fff48ca3af41",
+  "returncode": 0,
+  "raw_response": "To view only the data for \"Consumption,\" you can interact directly with the chart's legend. \n\nBy default, all categories are active. You can **click on the other labels in the legend** (\"Real GDP\", \"Investment\", \"Net exports\", and \"Government spending\") to deselect and hide them from the chart. Since clicking a label toggles its visibility, hiding the others will leave only \"Consumption\" visible on the chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

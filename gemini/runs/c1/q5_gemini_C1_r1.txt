@@ -1,0 +1,21 @@
+{
+  "run_id": "5de0135a-588c-40db-a30b-32e72b378235",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "auth_method": "Login with Google",
+  "subscription": "Google AI Pro",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart3",
+  "question_id": "q1",
+  "js_path": "charts/chart3.js",
+  "csv_path": "charts/files/chart3.csv",
+  "question": "How many deaths occurred in the World War II?",
+  "prompt": "@charts/chart3.js @charts/files/chart3.csv Question: How many deaths occurred in the World War II?",
+  "prompt_hash": "b4ad366958c16bb4f53d58cdb16a8be90a63e7b66505292038994ce2dca6d1a2",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, there were **405,399** deaths in World War II.",
+  "stderr": "",
+  "parsed_answer": ""
+}

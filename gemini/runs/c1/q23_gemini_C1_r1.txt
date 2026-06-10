@@ -1,0 +1,19 @@
+{
+  "run_id": "9fd27051-2341-4d8b-b74b-42242f3158ba",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart10",
+  "question_id": "q3",
+  "js_path": "charts/chart10.js",
+  "csv_path": "charts/files/chart10.csv",
+  "question": "Which seniority level contributes the largest total demand across all skills?",
+  "prompt": "@charts/chart10.js @charts/files/chart10.csv Question: Which seniority level contributes the largest total demand across all skills?",
+  "prompt_hash": "eba39df24a87b9067118290c0402bb7342437c41d02c3cdb07f6fbc5f6047a29",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Mid** level seniority contributes the largest total demand across all skills (with a total distinct count of 1,360 job IDs).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "3fb2c3b9-ad80-42c1-b1f9-c25ee48b7cc7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart47",
+  "question_id": "q172",
+  "js_path": "charts/chart47.js",
+  "csv_path": "charts/files/chart47.csv",
+  "question": "What happens if I hover across the Social media area from 2014 to 2024?",
+  "prompt": "@charts/chart47.js @charts/files/chart47.csv Question: What happens if I hover across the Social media area from 2014 to 2024?",
+  "prompt_hash": "ecbe993a9443d506cac53941ea83fbd0db9b67ba89f748141deb72322958168c",
+  "returncode": 0,
+  "raw_response": "When you hover across the **Social media** area from 2014 to 2024, a tooltip will appear and follow your cursor. \n\nThe tooltip displays:\n1. The title \"**Social media**\" in blue text.\n2. The **Year** and the **Spend** for that specific year on the second line (e.g., \"2014: \u00a33.4K\").\n\nAs you move your cursor from left to right (2014 to 2024), the spend value shown in the tooltip increases steadily from **\u00a33.4K** in 2014, reaching its peak at **\u00a332.0K** in 2023, before dipping slightly to **\u00a331.5K** in 2024.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

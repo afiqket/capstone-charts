@@ -1,0 +1,19 @@
+{
+  "run_id": "1188f37b-3b00-4a55-b0be-08a0374bd157",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart99",
+  "question_id": "q326",
+  "js_path": "charts/chart99.js",
+  "csv_path": "charts/files/chart99.csv",
+  "question": "In 2020, which had a larger population in Asia: cities or rural areas?",
+  "prompt": "@charts/chart99.js @charts/files/chart99.csv Question: In 2020, which had a larger population in Asia: cities or rural areas?",
+  "prompt_hash": "d87b65ccd4ba88b95bb4a04e975c998d86d5bc9fb79995b81290031d69ff368c",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for Asia in 2020:\n\n*   **Cities population:** 2,117,841,900\n*   **Rural areas population:** 740,105,600\n\n**Cities** had a larger population in Asia in 2020.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

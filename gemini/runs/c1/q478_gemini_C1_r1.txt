@@ -1,0 +1,19 @@
+{
+  "run_id": "a1448590-452a-409c-aacd-7d2edae01060",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart149",
+  "question_id": "q478",
+  "js_path": "charts/chart149.js",
+  "csv_path": "charts/files/chart149.csv",
+  "question": "What age group does the yellow color represent?",
+  "prompt": "@charts/chart149.js @charts/files/chart149.csv Question: What age group does the yellow color represent?",
+  "prompt_hash": "6a5fed8500213f7d81991cec1f0d1759f39063d4a72658e3523b3346012d1bc4",
+  "returncode": 0,
+  "raw_response": "Based on the chart's source code, the yellow color (`#b89a4a`) represents the **80+ years** age group.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "5d785d53-ff4e-46db-8599-a12036ea380c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart140",
+  "question_id": "q450",
+  "js_path": "charts/chart140.js",
+  "csv_path": "charts/files/chart140.csv",
+  "question": "What happens if I click on the play button?",
+  "prompt": "@charts/chart140.js @charts/files/chart140.csv Question: What happens if I click on the play button?",
+  "prompt_hash": "f4da95367ca433dc1ce02f1304ceafe4242bc68bef78939ca985fc10da4d3b95",
+  "returncode": 0,
+  "raw_response": "Clicking the play button starts an automatic animation that progresses through the years in the dataset. Specifically:\n\n1. **Animation Starts:** The chart updates to show the data for each consecutive year, updating the bubble positions, the chart title, and the slider handle every 500 milliseconds.\n2. **Icon Changes:** The play button (\"\u25b6\") changes to a pause button (\"\u23f8\"). \n3. **Pausing:** If you click the button again while the animation is running, it will pause the playback and change the icon back to \"\u25b6\".\n4. **Auto-Reset:** If the timeline is already at the final year when you click play, it will automatically reset to the first available year and begin animating from the start. \n5. **Auto-Stop:** Once the animation reaches the final year, it will automatically stop and reset the icon to the play button.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

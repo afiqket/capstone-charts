@@ -1,0 +1,19 @@
+{
+  "run_id": "96d6009f-7878-475c-a0d2-26080d60e478",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart107",
+  "question_id": "q350",
+  "js_path": "charts/chart107.js",
+  "csv_path": "charts/files/chart107.csv",
+  "question": "How do I get to see only solar energy?",
+  "prompt": "@charts/chart107.js @charts/files/chart107.csv Question: How do I get to see only solar energy?",
+  "prompt_hash": "a84a0ee4521270460130e658f185883b49fd9f42339d7799b63a48a2368f59bd",
+  "returncode": 0,
+  "raw_response": "To see only solar energy consumption, use the **Energy Type** dropdown menu in the controls section and select **Solar**. This will filter the chart to display only the data for that category.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

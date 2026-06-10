@@ -1,0 +1,19 @@
+{
+  "run_id": "d21f25b3-3e97-4842-abe5-2fafd22845f8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart94",
+  "question_id": "q313",
+  "js_path": "charts/chart94.js",
+  "csv_path": "charts/files/chart94.csv",
+  "question": "What happens if I hover near the 1995 cohort line around age 35?",
+  "prompt": "@charts/chart94.js @charts/files/chart94.csv Question: What happens if I hover near the 1995 cohort line around age 35?",
+  "prompt_hash": "007929ddda086e9af73295ead6c4a2ce5fe8ef9392af8cb4082748812e856e5d",
+  "returncode": 0,
+  "raw_response": "Based on the logic in `chart94.js` and the provided data, here is what will happen:\n\n1. **The 1995 line doesn't exist at age 35:** In the dataset for the United States, the data for the 1995 birth cohort only goes up to age 28. Therefore, there is no line for the 1995 cohort at age 35 to hover over.\n2. **X-Axis based hovering:** If you simply hover your mouse anywhere at the horizontal position corresponding to age 35, the chart's interaction is based entirely on the X-coordinate (ignoring the Y-coordinate of your mouse for data selection).\n3. **Shared Tooltip:** A vertical gray crosshair line will appear at Age 35. A tooltip will pop up near your cursor that says **\"Age 35\"**.\n4. **Cohort list:** Inside that tooltip, it will list the average number of children for **all other cohorts** that *do* have data at age 35 (which are the 1925 through 1985 cohorts). These will be sorted from highest value to lowest value. \n5. **No 1995 in the list:** Because the script explicitly filters out cohorts with missing data (`.filter(d => d && d.value != null)`), the 1995 cohort will simply not appear in the tooltip's list at that age.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

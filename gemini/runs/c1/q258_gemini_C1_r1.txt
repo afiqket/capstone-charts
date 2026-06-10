@@ -1,0 +1,19 @@
+{
+  "run_id": "20574f18-31d3-440a-8d74-6a420e2cb8bd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart76",
+  "question_id": "q258",
+  "js_path": "charts/chart76.js",
+  "csv_path": "charts/files/chart76.csv",
+  "question": "How can I get the 2024 immigrant share for Malaysia?",
+  "prompt": "@charts/chart76.js @charts/files/chart76.csv Question: How can I get the 2024 immigrant share for Malaysia?",
+  "prompt_hash": "3caa77b1b6a1e3cc5ef8f7c2d2ef4b5fe40f5c7d64527d8be6475f7b7483effd",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided CSV file, the 2024 immigrant share (share of the population born in another country) for Malaysia is **10.71%** (or exactly 10.705183%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "1ee06287-82e4-4619-b347-929db2d6d4da",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart41",
+  "question_id": "q144",
+  "js_path": "charts/chart41.js",
+  "csv_path": "charts/files/chart41.csv",
+  "question": "How can we see all Everton managers and current managers?",
+  "prompt": "@charts/chart41.js @charts/files/chart41.csv Question: How can we see all Everton managers and current managers?",
+  "prompt_hash": "cba5c53db6596c1b83dcb0a07a88ef7674315701257a32e0949d38a9e5ef2ffa",
+  "returncode": 0,
+  "raw_response": "To see all of Everton's past and current managers, you should:\n\n1. **Click on both \"Manager\" and \"Current Manager\"** in the legend at the top of the chart. By default, managers are hidden, so clicking these will display all managers on the network graph.\n2. **Hover your cursor over the \"Everton\" club node**. This will highlight Everton and draw visible links to all of its managers (both past and current) while fading out the rest of the chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

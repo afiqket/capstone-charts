@@ -1,0 +1,19 @@
+{
+  "run_id": "b0266a74-b562-41bf-b05a-9b62ac6bbd63",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart111",
+  "question_id": "q363",
+  "js_path": "charts/chart111.js",
+  "csv_path": "charts/files/chart111.csv",
+  "question": "What is the male life expectancy in Nigeria in 2021?",
+  "prompt": "@charts/chart111.js @charts/files/chart111.csv Question: What is the male life expectancy in Nigeria in 2021?",
+  "prompt_hash": "93f701c379768552a19db578dd463adcaf3a1aaf85dd0d3751f0c8513a1090f7",
+  "returncode": 0,
+  "raw_response": "Based on the data in `charts/files/chart111.csv`, the male life expectancy in Nigeria in 2021 was **52.3** years.\n\nAccording to the CSV structure (`Country,Code,Year,Female,Male,All population,Continent`), the record for Nigeria in 2021 is:\n`Nigeria,NGA,2021,53.1,52.3,213401330,Africa`",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:11208) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

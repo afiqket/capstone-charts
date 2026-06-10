@@ -1,0 +1,19 @@
+{
+  "run_id": "267ba793-742f-4533-acfd-0cf8cf4233eb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart20",
+  "question_id": "q61",
+  "js_path": "charts/chart20.js",
+  "csv_path": "charts/files/chart20.csv",
+  "question": "What overall trend can be observed in 4G mobile network coverage across the selected countries over time?",
+  "prompt": "@charts/chart20.js @charts/files/chart20.csv Question: What overall trend can be observed in 4G mobile network coverage across the selected countries over time?",
+  "prompt_hash": "1421635dfbec5e4ae1d5cdca73c343655bb2f85f918c5ef9898463ae3de593c6",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in the CSV and the context from the chart's JavaScript file, the overall trend is a **significant and steady increase** in 4G mobile network coverage across the selected countries over time. \n\nMost countries start with very low or 0% coverage around 2012\u20132015 and show a rapid expansion in the following years. By 2022\u20132023, the vast majority of developed nations and global regions reach near-universal coverage (95% to 100%), while developing nations also demonstrate substantial, continuous growth in their 4G coverage percentages.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

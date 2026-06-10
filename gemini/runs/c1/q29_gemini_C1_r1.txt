@@ -1,0 +1,19 @@
+{
+  "run_id": "6a832849-de60-4e27-b99c-1539fe0ac68e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart11",
+  "question_id": "q4",
+  "js_path": "charts/chart11.js",
+  "csv_path": "charts/files/chart11.csv",
+  "question": "How can I get the digital skills trend of a specific country from 2021 to 2025?",
+  "prompt": "@charts/chart11.js @charts/files/chart11.csv Question: How can I get the digital skills trend of a specific country from 2021 to 2025?",
+  "prompt_hash": "67bf45205618b4173e4796c315c4b6fc8e02b6b5a4f7de971ded2d858443d67f",
+  "returncode": 0,
+  "raw_response": "To get the digital skills trend for a specific country from 2021 to 2025, follow these steps:\n\n1. Click on the **\"Digital Skills Trend by Population\"** button to switch to the trend line chart.\n2. **Hover your mouse over any data point** (the circles on the lines) on the chart. \n\nWhen you hover over a point, the chart will automatically highlight the entire trend line for that specific country across all years (increasing its opacity and thickness) while fading out the lines of all other countries. A tooltip will also appear displaying the country's name, the year, and the exact percentage value.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

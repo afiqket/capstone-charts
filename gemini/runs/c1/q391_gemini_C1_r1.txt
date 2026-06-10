@@ -1,0 +1,19 @@
+{
+  "run_id": "899f93a8-da96-4db5-9965-9525e68d77c0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart120",
+  "question_id": "q391",
+  "js_path": "charts/chart120.js",
+  "csv_path": "charts/files/chart120.csv",
+  "question": "what is the average for bloodstream infection for all the continents in 2019?",
+  "prompt": "@charts/chart120.js @charts/files/chart120.csv Question: what is the average for bloodstream infection for all the continents in 2019?",
+  "prompt_hash": "0b2f71517925d18cad644080154599b42887f2d714f1cbd9a640d590b2f28b4b",
+  "returncode": 0,
+  "raw_response": "To find the average for bloodstream infections across all continents (WHO regions) in 2019, we take the values for each region from the data:\n\n1.  **African Region (WHO):** 14.89%\n2.  **Eastern Mediterranean (WHO):** 72.73%\n3.  **European Region (WHO):** 49.06%\n4.  **Region of the Americas (WHO):** 11.43%\n5.  **South-East Asia Region (WHO):** 63.64%\n6.  **Western Pacific Region (WHO):** 29.63%\n\n**Average Calculation:**\n(14.893617 + 72.72727 + 49.056602 + 11.428572 + 63.636364 + 29.62963) / 6 = **40.23%**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

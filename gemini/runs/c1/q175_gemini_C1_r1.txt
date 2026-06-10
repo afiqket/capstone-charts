@@ -1,0 +1,19 @@
+{
+  "run_id": "5d4966f9-d7d9-41bd-a89f-ab2213aee96c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart48",
+  "question_id": "q175",
+  "js_path": "charts/chart48.js",
+  "csv_path": "charts/files/chart48.csv",
+  "question": "What happens if I click the 18\u201329 age-group tab?",
+  "prompt": "@charts/chart48.js @charts/files/chart48.csv Question: What happens if I click the 18\u201329 age-group tab?",
+  "prompt_hash": "b08acd606a60efd8f43f0d7f165a27f307f6356b5c0d35a51652e7e59186abd5",
+  "returncode": 0,
+  "raw_response": "If you click the \"18\u201329\" age-group tab, two main things happen:\n\n1. **The Chart Updates:** The line graph re-renders to display the mental health impact data specifically for the 18\u201329 age group. It will plot the percentages for \"Positive,\" \"Negative,\" \"Neither,\" \"Not applicable,\" and \"Don't know\" responses over time based on that specific age demographic in the CSV data.\n2. **Visual Highlight:** The \"18\u201329\" tab button becomes visually active. Its background color changes to a light grey (`#e7e7e7`) and its text color turns dark (`#2b2b2b`), while the previously selected tab will revert to a transparent background with lighter text.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "1d21808f-0248-4048-bde4-66b59a0cbe51",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart102",
+  "question_id": "q336",
+  "js_path": "charts/chart102.js",
+  "csv_path": "charts/files/chart102.csv",
+  "question": "How can I find the population of Istanbul in 2010?",
+  "prompt": "@charts/chart102.js @charts/files/chart102.csv Question: How can I find the population of Istanbul in 2010?",
+  "prompt_hash": "da1a87a3e8aaf6d4fc7fc46bfe767821a661763ea88b3a6f3c109ad951c641e9",
+  "returncode": 0,
+  "raw_response": "The population of Istanbul in 2010 was **12,584,885**, according to the data in `chart102.csv`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

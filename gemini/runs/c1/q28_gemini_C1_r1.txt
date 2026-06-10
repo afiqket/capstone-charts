@@ -1,0 +1,19 @@
+{
+  "run_id": "5c24549d-ad87-4f0a-ad9c-4aeb17e074b3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart11",
+  "question_id": "q3",
+  "js_path": "charts/chart11.js",
+  "csv_path": "charts/files/chart11.csv",
+  "question": "Which countries appear to have strong digital skills but lower AI adoption?",
+  "prompt": "@charts/chart11.js @charts/files/chart11.csv Question: Which countries appear to have strong digital skills but lower AI adoption?",
+  "prompt_hash": "9aa0c65680d64d5419424e39beac2752e7de95554b679da73f3bde2b2e69131a",
+  "returncode": 0,
+  "raw_response": "Based on the provided data comparing digital skills (population with at least basic digital skills) and AI adoption (enterprises with >250 employees using AI), several countries show a mismatch where they have **strong digital skills but relatively lower AI adoption** compared to their peers. \n\nThe most notable examples include:\n\n*   **Ireland:** Ranks near the very top for digital skills (~83%), but its AI adoption is only around ~57%. This is significantly lower than other highly-skilled nations like Finland (~79% AI adoption) or Denmark (~75% AI adoption).\n*   **Czechia:** Has strong digital skills (~70%), but a much more modest AI adoption rate of ~54%.\n*   **Malta:** Shows high digital skills (~67%), but falls behind in AI adoption at ~52%.\n*   **Croatia:** Has solid digital skills (~63%), but a notably low AI adoption rate of only ~40%. \n\n*(Note: Data values are based on the latest 2025 figures provided in the dataset).*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "6c4daf75-7d24-4af7-9b04-8de9d64b662e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart130",
+  "question_id": "q421",
+  "js_path": "charts/chart130.js",
+  "csv_path": "charts/files/chart130.csv",
+  "question": "Across all countries shown, which region contributed the largest share of the total country-level smoking decline?",
+  "prompt": "@charts/chart130.js @charts/files/chart130.csv Question: Across all countries shown, which region contributed the largest share of the total country-level smoking decline?",
+  "prompt_hash": "af4db3e7c200981090f03f3f6c1ce481c53c94bdbafeadf10b5a4bea70df1237",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in the chart and the underlying CSV file, the region that contributed the largest share of the total country-level smoking decline is **Asia**.\n\nTo determine this, we analyze the smoking prevalence data for all countries (those with a valid country code and no \"OWID_\" prefix) between the years 2000 and 2022. The \"country-level smoking decline\" is measured as the difference in the share of adults who smoke (Share in 2000 minus Share in 2022). \n\n1.  **High Magnitudes of Decline:** Asia contains several countries with the most significant percentage point declines in the dataset, such as **Nepal** (36.4 points), **India** (31.5 points), **Bangladesh** (25.2 points), **Cambodia** (24.8 points), and **Laos** (24.6 points).\n2.  **Number of Countries:** Asia also has one of the highest numbers of countries represented in the dataset (44 countries).\n3.  **Aggregate Decline:** By summing the net percentage point declines (treating each country as an equal unit of \"country-level decline\") across all regions:\n    *   **Asia:** Approximately **455.5** total percentage points of decline.\n    *   **Africa:** Approximately **431.1** total percentage points of decline.\n    *   **Europe:** Approximately **420.2** total percentage points of decline.\n    *   **South America:** Approximately **156.2** points.\n    *   **Oceania:** Approximately **153.8** points.\n    *   **North America:** Approximately **118.5** points.\n\nEven when looking at the regional aggregates provided in the CSV, **Asia** shows the largest absolute drop in the share of adults who smoke (from 38.1% in 2000 to 24.2% in 2022, a **13.9 percentage point** drop), which is higher than any other regional aggregate (e.g., South America at 12.9 points, Oceania at 11.2 points).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

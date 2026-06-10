@@ -1,0 +1,19 @@
+{
+  "run_id": "70c8a62a-7d1f-4132-a7f9-3fa3666f32ee",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart53",
+  "question_id": "q189",
+  "js_path": "charts/chart53.js",
+  "csv_path": "charts/files/chart53.csv",
+  "question": "How can I find the percentage value for Japan using the map?",
+  "prompt": "@charts/chart53.js @charts/files/chart53.csv Question: How can I find the percentage value for Japan using the map?",
+  "prompt_hash": "b456f22d91b678e6a00142ca2852e8d9301a87b5ec33bd5c3959a138666ccda6",
+  "returncode": 0,
+  "raw_response": "To find the percentage value for Japan using the map, you can hover your mouse cursor over the country of Japan on the map visualization. This will trigger a tooltip to appear, displaying the country name (\"Japan\") along with its specific percentage value for the relative change in male height.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

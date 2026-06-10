@@ -1,0 +1,19 @@
+{
+  "run_id": "c4711592-9650-43b7-8b28-23f415f47411",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart55",
+  "question_id": "q196",
+  "js_path": "charts/chart55.js",
+  "csv_path": "charts/files/chart55.csv",
+  "question": "What information is displayed in the tooltip when I hover over a country or bar?",
+  "prompt": "@charts/chart55.js @charts/files/chart55.csv Question: What information is displayed in the tooltip when I hover over a country or bar?",
+  "prompt_hash": "f86904d7b9036c46af8d97ce5ed224a0eae0f07f1910c1f6beed406405ad9498",
+  "returncode": 0,
+  "raw_response": "When you hover over a country or bar, the tooltip displays the following information:\n\n1. **Country Name:** The specific country being hovered over.\n2. **Subtitle:** The hardcoded text *\"Change in male height, 1896 \u2192 1996\"* (this appears to be a leftover copy-paste error in the chart's code, as it doesn't match the actual topic).\n3. **Value:** The percentage share of people who report lifetime anxiety or depression in that country, formatted to two decimal places (e.g., \"19.32%\").",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

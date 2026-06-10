@@ -1,0 +1,19 @@
+{
+  "run_id": "6e7519b7-61a6-4020-9cc6-6caa4b8682b6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart69",
+  "question_id": "q236",
+  "js_path": "charts/chart69.js",
+  "csv_path": "charts/files/chart69.csv",
+  "question": "How does Iceland compare with Hungary?",
+  "prompt": "@charts/chart69.js @charts/files/chart69.csv Question: How does Iceland compare with Hungary?",
+  "prompt_hash": "98266a893f8781887deb65eb9aa6c3309df29f2b53e15df04328a28c0980e181",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for mental health units in general hospitals (per 100,000 population) in 2016:\n\n* **Iceland** has **4.54** units per 100,000 people.\n* **Hungary** has **2.65** units per 100,000 people.\n\nIceland has a significantly higher number of mental health units in general hospitals per capita compared to Hungary.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

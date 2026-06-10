@@ -1,0 +1,19 @@
+{
+  "run_id": "32835354-08af-4e42-b71a-3f5378065cb2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart142",
+  "question_id": "q457",
+  "js_path": "charts/chart142.js",
+  "csv_path": "charts/files/chart142.csv",
+  "question": "What does the slider do?",
+  "prompt": "@charts/chart142.js @charts/files/chart142.csv Question: What does the slider do?",
+  "prompt_hash": "e994b28f6269209815ea6edfc219a446398dbe4a9953bf1542a8a38572abeaea",
+  "returncode": 0,
+  "raw_response": "The slider controls the **year** of the data being displayed on the chart. \n\nWhen you drag the slider or click the play button, it updates the `currentYear` variable and triggers a redraw of the chart. Specifically, it:\n1. Updates the chart title to reflect the selected year (e.g., \"Annual working hours vs. GDP per capita, 2021\").\n2. Filters the underlying dataset to get the GDP per capita, working hours, and population for each country for that specific year.\n3. Updates the position and size of the scatter plot bubbles to reflect the data for the newly selected year, allowing you to visualize how the relationship between working hours and GDP has changed over time.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "7f7f04c9-510c-4cef-9460-89714c2f1090",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart62",
+  "question_id": "q217",
+  "js_path": "charts/chart62.js",
+  "csv_path": "charts/files/chart62.csv",
+  "question": "How can I get the total vessel count for Malacca Strait?",
+  "prompt": "@charts/chart62.js @charts/files/chart62.csv Question: How can I get the total vessel count for Malacca Strait?",
+  "prompt_hash": "fb7d157331421396fb36da4c208ea8cb51a620a82ee2cf826b9473753573eeba",
+  "returncode": 0,
+  "raw_response": "To get the total vessel count for the Malacca Strait, you can either **hover over** or **click on** its corresponding point (red circle) on the map. \n\nDoing so will display a tooltip that includes the text \"Total vessel count in the last 12 months: [count]\" along with a detailed vessel breakdown. Clicking the point will keep the tooltip open.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\nError executing tool read_file: File not found.",
+  "parsed_answer": ""
+}

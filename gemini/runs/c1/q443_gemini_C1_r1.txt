@@ -1,0 +1,19 @@
+{
+  "run_id": "9357991f-8498-41df-ae63-c96c10d125e1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart138",
+  "question_id": "q443",
+  "js_path": "charts/chart138.js",
+  "csv_path": "charts/files/chart138.csv",
+  "question": "Which country has the least weekly working hours throughout the years?",
+  "prompt": "@charts/chart138.js @charts/files/chart138.csv Question: Which country has the least weekly working hours throughout the years?",
+  "prompt_hash": "2f0d2d31297535b6b1e19ee1c0c2c651b679be6674b47f6b07d609b82c3dfe3a",
+  "returncode": 0,
+  "raw_response": "Based on the data and the chart provided, the country that has the least weekly working hours for the vast majority of the timeline (from 1870 up until the 1970s) and the lowest average overall is **Australia**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

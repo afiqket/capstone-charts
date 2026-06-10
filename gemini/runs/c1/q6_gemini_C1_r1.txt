@@ -1,0 +1,21 @@
+{
+  "run_id": "45237a69-5c81-4432-acd9-b56076cfeb0c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "auth_method": "Login with Google",
+  "subscription": "Google AI Pro",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart3",
+  "question_id": "q2",
+  "js_path": "charts/chart3.js",
+  "csv_path": "charts/files/chart3.csv",
+  "question": "Which war had more deaths: Korean War or Vietnam War?",
+  "prompt": "@charts/chart3.js @charts/files/chart3.csv Question: Which war had more deaths: Korean War or Vietnam War?",
+  "prompt_hash": "fda8154dd4b81b790fe92102982bfd3ccb7f81e0ab23d85cf54f3a7512724000",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart3.csv`, the **Vietnam War** had more deaths. \n\n* **Vietnam War:** 58,209 deaths\n* **Korean War:** 54,246 deaths",
+  "stderr": "",
+  "parsed_answer": ""
+}

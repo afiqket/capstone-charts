@@ -1,0 +1,19 @@
+{
+  "run_id": "83635cd4-2172-4362-affd-4e2f188311e6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart119",
+  "question_id": "q387",
+  "js_path": "charts/chart119.js",
+  "csv_path": "charts/files/chart119.csv",
+  "question": "What is the difference between European Region and South-East Asia Region in the percentage of bloodstream infections in 2018?",
+  "prompt": "@charts/chart119.js @charts/files/chart119.csv Question: What is the difference between European Region and South-East Asia Region in the percentage of bloodstream infections in 2018?",
+  "prompt_hash": "e6e11f9dc0af6bbed4ae199b567cbe7cecb004c9c893482d730ccf633bb88e07",
+  "returncode": 0,
+  "raw_response": "Based on the data for 2018:\n\n*   **South-East Asia Region (WHO):** 63.64% (specifically 63.636364)\n*   **European Region (WHO):** 47.17% (specifically 47.16981)\n\nThe difference between the two regions in the percentage of countries reporting bloodstream infections is **16.47 percentage points** (63.64% - 47.17%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

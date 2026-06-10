@@ -1,0 +1,19 @@
+{
+  "run_id": "932da422-68a6-41a4-9e0d-3ed812d99013",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart37",
+  "question_id": "q128",
+  "js_path": "charts/chart37.js",
+  "csv_path": "charts/files/chart37.csv",
+  "question": "What is the average ZRI across the whole period shown?",
+  "prompt": "@charts/chart37.js @charts/files/chart37.csv Question: What is the average ZRI across the whole period shown?",
+  "prompt_hash": "6cb48df4748aa0d7c9cab6e49d2435e38c5f9d64f3a67816f5460af232f75690",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `chart37.js` for the Zillow Rent Index (ZRI):\n\n1. There are **102** data points for ZRI spanning from November 2010 to April 2019.\n2. The sum of all ZRI values over this period is **137,056**.\n3. Dividing the total by the number of months gives an average of **1,343.69** (or `1343.686...`).\n\nThe average ZRI across the whole period shown is approximately **$1,343.69**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

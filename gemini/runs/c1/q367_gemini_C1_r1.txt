@@ -1,0 +1,19 @@
+{
+  "run_id": "d41ffdb3-ef3f-4dcc-b210-ce363aa53363",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart112",
+  "question_id": "q367",
+  "js_path": "charts/chart112.js",
+  "csv_path": "charts/files/chart112.csv",
+  "question": "Who does the orange line represent?",
+  "prompt": "@charts/chart112.js @charts/files/chart112.csv Question: Who does the orange line represent?",
+  "prompt_hash": "18ac27a910b8e12e462d7e0dc4cb488d4ce80f9d36e46f89a8c0aac080be1288",
+  "returncode": 0,
+  "raw_response": "Based on the configuration in `chart112.js`, the colors are assigned to specific players as follows:\n\n*   **Rose**: `rgb(105, 185, 255)` (Blue)\n*   **McIlroy**: `rgb(248, 228, 76)` (Yellow)\n*   **DeChambeau**: `rgb(250, 154, 90)` (**Orange**)\n\nTherefore, the orange line represents **DeChambeau**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

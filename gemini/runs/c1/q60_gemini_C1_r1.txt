@@ -1,0 +1,19 @@
+{
+  "run_id": "6da4f2ac-b7c9-40a4-9d15-491b286404a0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart19",
+  "question_id": "q60",
+  "js_path": "charts/chart19.js",
+  "csv_path": "charts/files/chart19.csv",
+  "question": "What happens if I drag the year slider from 1998 to 2025?",
+  "prompt": "@charts/chart19.js @charts/files/chart19.csv Question: What happens if I drag the year slider from 1998 to 2025?",
+  "prompt_hash": "eb3bbf98128a8604619cef636424bc8a4a06ea8fd05ba7b869689859564fa34b",
+  "returncode": 0,
+  "raw_response": "When you drag the year slider from 1998 to 2025, the following sequence of events occurs in the code:\n\n1. **Stops Playback:** The `stopPlay()` function is immediately called, pausing any active auto-play animation.\n2. **Updates Current Year:** The `currentYear` state variable is continuously calculated based on the slider handle's X coordinate (using `sliderScale.invert`), rounded to the nearest integer, and clamped between the `minYear` (1998) and `maxYear` (2025).\n3. **Triggers Redraw:** The `redraw()` function is called, which performs two main tasks:\n   - **Updates Slider UI:** It calls `updateSlider()` to visually move the handle and extend the active blue track line (`activeTrack`) to match the new year.\n   - **Re-renders the Active Chart:** It re-renders the currently selected chart mode to reflect the new `currentYear`:\n     - **Map Mode:** Updates the country colors using the data for the new year and changes the title to *\"Landline Internet subscriptions, [Year]\"*.\n     - **Line Mode:** Re-draws the line chart to show data starting from the new selected year up to the maximum year, updating the title to *\"Landline Internet subscriptions, [Year] to 2025\"*.\n     - **Bar Mode:** Re-calculates and re-sorts the horizontal bars based on the new year's values and updates the title to *\"Landline Internet subscriptions, [Year]\"*.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

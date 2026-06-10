@@ -1,0 +1,19 @@
+{
+  "run_id": "5484e885-d122-427a-902c-df35f370776f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart81",
+  "question_id": "q272",
+  "js_path": "charts/chart81.js",
+  "csv_path": "charts/files/chart81.csv",
+  "question": "In 2017, which was higher: First child or Third child?",
+  "prompt": "@charts/chart81.js @charts/files/chart81.csv Question: In 2017, which was higher: First child or Third child?",
+  "prompt_hash": "832079931937a4745a45546c328c452ae6da871b10938ff357b76bcb6d092028",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for 2017, the ratio for **First child** (106.5) was higher than for **Third child** (105.9).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

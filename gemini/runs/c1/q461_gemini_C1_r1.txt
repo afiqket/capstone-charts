@@ -1,0 +1,19 @@
+{
+  "run_id": "a702474f-093d-4e7f-8dec-16718719b75c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart144",
+  "question_id": "q461",
+  "js_path": "charts/chart144.js",
+  "csv_path": "charts/files/chart144.csv",
+  "question": "In 2010, how many countries had pay equity mandated?",
+  "prompt": "@charts/chart144.js @charts/files/chart144.csv Question: In 2010, how many countries had pay equity mandated?",
+  "prompt_hash": "322708bd0b35071f3b34a970a7898ecb13c2cc7606f1687c0dea604fd9ed50d9",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, in 2010 there were **67** countries that had pay equity mandated.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

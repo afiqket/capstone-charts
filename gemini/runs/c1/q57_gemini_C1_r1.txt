@@ -1,0 +1,19 @@
+{
+  "run_id": "82ff0e3a-c3bd-49c1-9379-a71766e073bf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart18",
+  "question_id": "q57",
+  "js_path": "charts/chart18.js",
+  "csv_path": "charts/files/chart18.csv",
+  "question": "What happen if I click the left or right arrow button in the charts?",
+  "prompt": "@charts/chart18.js @charts/files/chart18.csv Question: What happen if I click the left or right arrow button in the charts?",
+  "prompt_hash": "9fa1768e30e78ab490fc889001bfcf2ff3b6e99214d1b20a86e26f049ac2f173",
+  "returncode": 0,
+  "raw_response": "Clicking the left (\"\u25c0\") or right (\"\u25b6\") arrow buttons will change the selected year to the previous or next year, respectively. \n\nWhen you click these buttons, the chart updates to display the leading causes of death for that newly selected year, and the year dropdown menu updates to match.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

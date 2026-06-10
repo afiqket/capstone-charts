@@ -1,0 +1,19 @@
+{
+  "run_id": "9b8118aa-5925-4d1e-9663-071e5f34885b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart105",
+  "question_id": "q346",
+  "js_path": "charts/chart105.js",
+  "csv_path": "charts/files/chart105.csv",
+  "question": "Which state has the lowest percent change?",
+  "prompt": "@charts/chart105.js @charts/files/chart105.csv Question: Which state has the lowest percent change?",
+  "prompt_hash": "2902c97bbcf3ca10adadc3eaacc856948cc90b902f273f6152af653a4cc64be6",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `chart105.csv`, the state with the lowest percent change is **Kansas**, with a value of **-12.1**.\n\nHere is a comparison of the states with the most significant decreases (negative percent changes):\n*   **Kansas: -12.1**\n*   Mississippi: -10.6\n*   Missouri: -7.9\n*   New Mexico: -7.8\n*   Texas: -7.2\n*   Utah: -7.2\n*   Wisconsin: -6.8\n*   New Jersey: -6.76",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

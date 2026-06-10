@@ -1,0 +1,19 @@
+{
+  "run_id": "70fc6436-4372-4b0b-a1ae-c06c9f293d22",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart66",
+  "question_id": "q227",
+  "js_path": "charts/chart66.js",
+  "csv_path": "charts/files/chart66.csv",
+  "question": "How does Malaysia compare with the United Kingdom?",
+  "prompt": "@charts/chart66.js @charts/files/chart66.csv Question: How does Malaysia compare with the United Kingdom?",
+  "prompt_hash": "4819437586ee22ebef6032f20090f96d2f7bb2fdbe13b20938cb2393e3095b53",
+  "returncode": 0,
+  "raw_response": "In 2020, a significantly lower percentage of respondents in Malaysia (27.11%) reported dealing with anxiety or depression by taking prescribed medication compared to the United Kingdom (76.72%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

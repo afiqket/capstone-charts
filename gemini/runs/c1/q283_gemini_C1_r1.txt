@@ -1,0 +1,19 @@
+{
+  "run_id": "ffaad4cd-bb33-46b0-a6a0-60e9250a0594",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart84",
+  "question_id": "q283",
+  "js_path": "charts/chart84.js",
+  "csv_path": "charts/files/chart84.csv",
+  "question": "What happens if I hover over the line chart near France, 1900?",
+  "prompt": "@charts/chart84.js @charts/files/chart84.csv Question: What happens if I hover over the line chart near France, 1900?",
+  "prompt_hash": "9a8d49cd4c3579e29f207e073fa85f3d305048bbf3d2c7a94584b6982f937325",
+  "returncode": 0,
+  "raw_response": "If you hover over the line chart near the year 1900, a tooltip will appear displaying the following information:\n\n**France, 1900**\n* **Period life expectancy:** 45.1 years *(in red)*\n* **Cohort life expectancy:** 51.9 years *(in blue)*\n\nThe chart finds the closest data point to your cursor (the year 1900) and displays both the period and cohort life expectancy values from the dataset, formatting the numbers to one decimal place.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

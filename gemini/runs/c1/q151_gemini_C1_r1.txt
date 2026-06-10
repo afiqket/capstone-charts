@@ -1,0 +1,19 @@
+{
+  "run_id": "4063bc2d-6bda-436c-b6f4-9f082efab84f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart42",
+  "question_id": "q151",
+  "js_path": "charts/chart42.js",
+  "csv_path": "charts/files/chart42.csv",
+  "question": "What overall trend does the share price show from January to October 2025?",
+  "prompt": "@charts/chart42.js @charts/files/chart42.csv Question: What overall trend does the share price show from January to October 2025?",
+  "prompt_hash": "d3b3c96e8bd717277f8f68400fca53d5af4209a984eee71698239f837658c46b",
+  "returncode": 0,
+  "raw_response": "Based on the data, the share price exhibits an overall **upward trend** over the 10-month period, but it occurs in two distinct phases:\n\n1. **Initial Decline (January \u2013 April):** The price starts at $199.43 in early January, fluctuates, and then generally trends downwards, hitting a low point of $154.70 in early April.\n2. **Strong Recovery and Growth (May \u2013 October):** From May onwards, the share price begins a consistent and significant upward climb. It breaks past its initial January levels in late July and continues to surge, ultimately reaching its peak of $291.48 by the end of October. \n\nOverall, despite the initial dip in the first quarter, the stock grew substantially by the end of the period.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

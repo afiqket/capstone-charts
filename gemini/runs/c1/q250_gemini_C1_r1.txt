@@ -1,0 +1,19 @@
+{
+  "run_id": "25a424cf-ad3c-48f8-9443-c45f34b28437",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart73",
+  "question_id": "q250",
+  "js_path": "charts/chart73.js",
+  "csv_path": "charts/files/chart73.csv",
+  "question": "What happens if I hover over Peru on the map?",
+  "prompt": "@charts/chart73.js @charts/files/chart73.csv Question: What happens if I hover over Peru on the map?",
+  "prompt_hash": "9992d9bbaf6f777fc2d866c5d70cece5386983106bd6cc11dc81a79725f0db11",
+  "returncode": 0,
+  "raw_response": "If you hover over Peru on the map, the following will happen:\n\n1. **Highlighting:** The border of Peru will become thicker (1.5px) and change to a dark gray/black color (`#333`) to highlight the country.\n2. **Tooltip:** A white tooltip box with a slight drop shadow will appear near your cursor.\n3. **Tooltip Content:** The tooltip will display:\n   - **Peru** (the country name in bold)\n   - **2020** (the year)\n   - **65.8%** (the data value for Peru, formatted to one decimal place in bold, dark purple text)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

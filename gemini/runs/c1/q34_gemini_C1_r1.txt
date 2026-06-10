@@ -1,0 +1,19 @@
+{
+  "run_id": "fef60f96-3925-4551-baf3-811e82cede2d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart12",
+  "question_id": "q4",
+  "js_path": "charts/chart12.js",
+  "csv_path": "charts/files/chart12.csv",
+  "question": "How can I find the exact revenue value for Mini in July 2025?",
+  "prompt": "@charts/chart12.js @charts/files/chart12.csv Question: How can I find the exact revenue value for Mini in July 2025?",
+  "prompt_hash": "cc31f8c15d0b3f1708610d4c33549584e5afcb632b28c71489d990ec3b7681b2",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the exact revenue value for Mini in July 2025 is **7,266**. \n\nHere is the breakdown of the revenue entries for Mini in July 2025:\n* 482\n* 820\n* 605\n* 462\n* 761\n* 1,964\n* 1,125\n* 1,047\n\nSumming these gives a total of **7,266**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "43f7aa52-08fd-442e-a361-4f9cef12b217",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart50",
+  "question_id": "q181",
+  "js_path": "charts/chart50.js",
+  "csv_path": "charts/files/chart50.csv",
+  "question": "What happens if I hover over different color regions one by one?",
+  "prompt": "@charts/chart50.js @charts/files/chart50.csv Question: What happens if I hover over different color regions one by one?",
+  "prompt_hash": "b1bea730a45b19dc9691511038dbfc9e9a8dcd45106b6d3c42ddc896d77366de",
+  "returncode": 0,
+  "raw_response": "When you hover over different color regions, a tooltip appears near your cursor. It displays the name of the specific region, followed by the text \"Walk three times a week\", \"2022:\", and the percentage of people who walk three times a week in that region (formatted to one decimal place). The tooltip disappears when you move your cursor off the region.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

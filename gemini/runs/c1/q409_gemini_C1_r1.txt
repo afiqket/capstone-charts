@@ -1,0 +1,18 @@
+{
+  "run_id": "e60f3115-7b63-4bd3-8259-fca0f16fe85b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart126",
+  "question_id": "q409",
+  "js_path": "charts/chart126.js",
+  "csv_path": "charts/files/chart126.csv",
+  "question": "Which continent has the highest difference between men and women obesity?",
+  "prompt": "@charts/chart126.js @charts/files/chart126.csv Question: Which continent has the highest difference between men and women obesity?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, Africa has the highest maximum difference between men and women's obesity (with South Africa reaching a difference of 31.8% in 2022).",
+  "parsed_answer": ""
+}

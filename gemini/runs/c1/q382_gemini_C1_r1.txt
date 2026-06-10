@@ -1,0 +1,19 @@
+{
+  "run_id": "d8a2b0d3-26d2-4d20-bfe0-3e1d8d289b1d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart117",
+  "question_id": "q382",
+  "js_path": "charts/chart117.js",
+  "csv_path": "charts/files/chart117.csv",
+  "question": "What is the percentage of Europe's antibiotic usage?",
+  "prompt": "@charts/chart117.js @charts/files/chart117.csv Question: What is the percentage of Europe's antibiotic usage?",
+  "prompt_hash": "5efd0902294297a1998d603c32350423c676574b89e1de51d9fe04e3c9cd2b78",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `chart117.csv` and the visualization logic in `chart117.js`, the antibiotic use for **Europe (WOAH)** in the most recent year recorded (**2021**) is **48.04 mg/kg** (milligrams per kilogram of meat product).\n\nWhile the question asks for a \"percentage,\" the chart's subtitle and data units explicitly state that antibiotic use is measured in **milligrams per kilogram (mg/kg)**. This unit allows for comparing the intensity of antibiotic use between regions. \n\nThe trend for Europe shows a significant decrease from **92.16 mg/kg** in 2014 to **48.04 mg/kg** in 2021. If the question intended to ask for the percentage reduction over this period, it would be approximately **47.87%** (calculated as `(92.16 - 48.04) / 92.16`). However, based on the literal values displayed in the chart (especially in \"Bar\" mode for 2021), the direct value for Europe's usage is **48.04 mg/kg**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:17244) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

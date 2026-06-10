@@ -1,0 +1,19 @@
+{
+  "run_id": "aae52817-2852-4d5c-a857-568b0a37cb80",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart149",
+  "question_id": "q477",
+  "js_path": "charts/chart149.js",
+  "csv_path": "charts/files/chart149.csv",
+  "question": "What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?",
+  "prompt": "@charts/chart149.js @charts/files/chart149.csv Question: What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?",
+  "prompt_hash": "94fcfcafd39a1b44bfd9273a2624418beb59403f2f7bacf7ed49edabfe63c9ea",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for France, the share of people aged 60-69 years who completed the initial vaccination protocol became higher than the share of people aged 80+ years on **December 17, 2021** (17/12/2021). \n\nOn this date, the 60-69 age group reached **86.02%**, surpassing the 80+ age group which was at **85.39%**. (In the preceding week of December 10, 2021, the 60-69 group was at 84.78% compared to the 80+ group's 84.80%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:29444) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

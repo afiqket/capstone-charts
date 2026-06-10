@@ -1,0 +1,19 @@
+{
+  "run_id": "939e4e81-abcd-4a74-bb74-2494b60469bf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart40",
+  "question_id": "q141",
+  "js_path": "charts/chart40.js",
+  "csv_path": "charts/files/chart40.csv",
+  "question": "Is Chelsea\u2019s spending higher than Arsenal and Manchester City combined?",
+  "prompt": "@charts/chart40.js @charts/files/chart40.csv Question: Is Chelsea\u2019s spending higher than Arsenal and Manchester City combined?",
+  "prompt_hash": "b112e057d50188c44fd4488322a05c53db1efe1e179a825bc671d9ca842eda83",
+  "returncode": 0,
+  "raw_response": "No, Chelsea's total spending (\u20ac464.1m) is not higher than the combined spending of Arsenal and Manchester City (\u20ac472.7m). \n\n*   **Chelsea:** \u20ac464.1m\n*   **Arsenal:** \u20ac231.6m\n*   **Manchester City:** \u20ac241.1m",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

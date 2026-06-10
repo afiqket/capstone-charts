@@ -1,0 +1,19 @@
+{
+  "run_id": "6de8294e-b0d3-4b3d-9b49-6c4092fc36c2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart12",
+  "question_id": "q1",
+  "js_path": "charts/chart12.js",
+  "csv_path": "charts/files/chart12.csv",
+  "question": "What is the total booking value for Mini in May 2024?",
+  "prompt": "@charts/chart12.js @charts/files/chart12.csv Question: What is the total booking value for Mini in May 2024?",
+  "prompt_hash": "6a2363c9e0beef007e6467ed77d445ea5a3af12f58d7b6828bb2c1b9917b83f4",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the total booking value for Mini in May 2024 is **8,665**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

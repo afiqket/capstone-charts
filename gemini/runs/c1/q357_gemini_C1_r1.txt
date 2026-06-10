@@ -1,0 +1,19 @@
+{
+  "run_id": "1890727e-6e4d-4434-8693-597fc97f0e97",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart109",
+  "question_id": "q357",
+  "js_path": "charts/chart109.js",
+  "csv_path": "charts/files/chart109.csv",
+  "question": "What is the value of South America in 1995?",
+  "prompt": "@charts/chart109.js @charts/files/chart109.csv Question: What is the value of South America in 1995?",
+  "prompt_hash": "f394394505a71640928235764328dfbad73bca28bfb25bd9956af2d147029506",
+  "returncode": 0,
+  "raw_response": "Based on the data for **South America** in **1995**:\n\n*   **Homicide rate:** 21.1 (per 100,000 population)\n*   **Homicide count:** 67,923 victims",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

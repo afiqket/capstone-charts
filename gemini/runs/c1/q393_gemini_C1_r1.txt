@@ -1,0 +1,19 @@
+{
+  "run_id": "e601a59e-fcdc-408e-9ad1-b02334f12743",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart121",
+  "question_id": "q393",
+  "js_path": "charts/chart121.js",
+  "csv_path": "charts/files/chart121.csv",
+  "question": "What is the total million tones of emissions in 1986?",
+  "prompt": "@charts/chart121.js @charts/files/chart121.csv Question: What is the total million tones of emissions in 1986?",
+  "prompt_hash": "3581953877f5e1ce1843dc294fa3e93f3adfc4f48193a42f78ff0b15052ffa87",
+  "returncode": 0,
+  "raw_response": "Based on the data for the **United Kingdom** in **1986** from the provided chart and CSV file, the emissions for the three tracked pollutants were:\n\n*   **Nitrogen oxides (NOx):** 2,860,000 tonnes\n*   **Sulphur dioxide (SO\u2082):** 3,900,000 tonnes\n*   **Volatile organic compounds (VOCs):** 2,620,000 tonnes\n\nThe total emissions for these three pollutants in 1986 were **9,380,000 tonnes**, which equals **9.38 million tonnes**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

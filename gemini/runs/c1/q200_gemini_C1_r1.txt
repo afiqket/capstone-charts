@@ -1,0 +1,19 @@
+{
+  "run_id": "bf0c0cbc-d7c9-423f-bae9-6e61eea51456",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart57",
+  "question_id": "q200",
+  "js_path": "charts/chart57.js",
+  "csv_path": "charts/files/chart57.csv",
+  "question": "Which category takes up the largest area in the chart?",
+  "prompt": "@charts/chart57.js @charts/files/chart57.csv Question: Which category takes up the largest area in the chart?",
+  "prompt_hash": "bdafceebd87be802cb72d45ffe5457f59c3514a66d6cc7ebda4bdf4a9dcb779b",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for the sunburst chart, the size (area) of each category is determined by the sum of the values of its child nodes. \n\nIf we sum the values of all leaves within each main category (depth 1), we get:\n- **vis**: ~432,729\n- **util**: ~165,157\n- **animate**: ~100,024\n- **query**: ~84,051\n- **analytics**: ~48,716\n- **scale**: ~31,294\n- **data**: ~30,284\n- **physics**: ~29,934\n- **display**: ~24,254\n- **flex**: 4,116\n\nTherefore, **vis** is the category that takes up the largest area in the chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

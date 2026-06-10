@@ -1,0 +1,19 @@
+{
+  "run_id": "848d7e0f-4520-402b-a985-f7b6dc6db677",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart150",
+  "question_id": "q479",
+  "js_path": "charts/chart150.js",
+  "csv_path": "charts/files/chart150.csv",
+  "question": "What was the percentage of people with a COVID-19 booster in April 14th 2023 between the ages of 18-24 years?",
+  "prompt": "@charts/chart150.js @charts/files/chart150.csv Question: What was the percentage of people with a COVID-19 booster in April 14th 2023 between the ages of 18-24 years?",
+  "prompt_hash": "73eb538f2dbe83424810933373a3a01acb3946e5043fcad1f0460f6c37cf3796",
+  "returncode": 0,
+  "raw_response": "Based on the data in the chart for Sweden, the percentage of people with a COVID-19 booster dose on April 14th, 2023, between the ages of 18-24 years was **41.46%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:15824) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

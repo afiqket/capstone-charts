@@ -1,0 +1,19 @@
+{
+  "run_id": "4a84ed3e-0625-4b37-943a-4afa764b1f20",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart58",
+  "question_id": "q205",
+  "js_path": "charts/chart58.js",
+  "csv_path": "charts/files/chart58.csv",
+  "question": "What happens if I click on a country circle like Spain?",
+  "prompt": "@charts/chart58.js @charts/files/chart58.csv Question: What happens if I click on a country circle like Spain?",
+  "prompt_hash": "8f95bcb7e6f801221eca33c5e72afe337e2e2f0e2a6b51ec3bb79c7f263024ce",
+  "returncode": 0,
+  "raw_response": "If you click on a country circle like Spain, the chart will smoothly zoom in to focus on that specific circle, and the dropdown menu at the top will automatically update to show the selected country (\"Spain\").",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

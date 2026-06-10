@@ -1,0 +1,19 @@
+{
+  "run_id": "98396c87-6720-4be7-824e-0010f1558ab1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart27",
+  "question_id": "q82",
+  "js_path": "charts/chart27.js",
+  "csv_path": "charts/files/chart27.csv",
+  "question": "How many deaths occur in Colombia in 2011?",
+  "prompt": "@charts/chart27.js @charts/files/chart27.csv Question: How many deaths occur in Colombia in 2011?",
+  "prompt_hash": "d9d17e8a1016c5a97464c31e4ebfe0e8cdffc106037e08ab61152c09d1a104ed",
+  "returncode": 0,
+  "raw_response": "202 deaths occurred in Colombia in 2011 due to intrastate conflicts.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

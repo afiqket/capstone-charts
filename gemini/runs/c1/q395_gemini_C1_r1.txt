@@ -1,0 +1,19 @@
+{
+  "run_id": "b30ef2b4-746f-42cb-a70b-744a339096f0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart122",
+  "question_id": "q395",
+  "js_path": "charts/chart122.js",
+  "csv_path": "charts/files/chart122.csv",
+  "question": "What is the difference between London and Delhi in 2008?",
+  "prompt": "@charts/chart122.js @charts/files/chart122.csv Question: What is the difference between London and Delhi in 2008?",
+  "prompt_hash": "6edc1145636fe158757829dbfc686915c5a6ae481c0a814801201065b71661e6",
+  "returncode": 0,
+  "raw_response": "In 2008, the concentration of Suspended Particulate Matter (SPM) for the two cities was:\n\n*   **Delhi:** 416 \u03bcg/m\u00b3\n*   **London:** 18.81 \u03bcg/m\u00b3\n\nThe difference between Delhi and London in 2008 was **397.19 \u03bcg/m\u00b3**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

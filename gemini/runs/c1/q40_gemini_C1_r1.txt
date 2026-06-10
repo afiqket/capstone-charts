@@ -1,0 +1,19 @@
+{
+  "run_id": "95ae95cb-6595-44bf-bcd8-2684428be40e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart13",
+  "question_id": "q5",
+  "js_path": "charts/chart13.js",
+  "csv_path": "charts/files/chart13.csv",
+  "question": "If I click on the Bar button at the top, how will the chart change?",
+  "prompt": "@charts/chart13.js @charts/files/chart13.csv Question: If I click on the Bar button at the top, how will the chart change?",
+  "prompt_hash": "093677226395e9536130fc5d0ac5eebbb97e4734af9506fd751191961834faaf",
+  "returncode": 0,
+  "raw_response": "Clicking the \"Bar\" button will completely change the visualization from a time-series line chart to a horizontal bar chart. Here are the specific changes that will occur:\n\n1. **Chart Type & Layout:** The line chart will be replaced by horizontal bars.\n2. **Axes Swapped & Changed:** \n   - The **Y-axis**, which previously showed a logarithmic scale of prices, will change to list the categories (\"Memory\", \"Flash\", \"Disk\", \"Solid state\").\n   - The **X-axis**, which previously showed the years, will change to a linear scale representing the price.\n3. **Data Displayed:** Instead of showing the full historical trend over time, the chart will only display a single value for each category: the most recent available price within the selected timeframe (typically the final year, like 2023).\n4. **Color Scheme:** The distinct colors used for each individual line will be replaced by a uniform light blue color (`#6b8cbf`) for all the bars.\n5. **Title Update:** The chart's title will be updated to include the selected year range at the end (e.g., \"Historical price of computer memory and storage, 1956\u20132023\").\n6. **Labels and Grid:** Text labels showing the formatted price will appear at the right end of each bar, and the background grid lines will be removed.\n7. **Tooltip Behavior:** The vertical dashed line and multi-category tooltip that appears on hover in line mode will be replaced by a simpler tooltip that shows the specific value and category for a single hovered bar.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

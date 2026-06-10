@@ -1,0 +1,19 @@
+{
+  "run_id": "32305da6-3021-410e-bbe3-bdefe3700fac",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart111",
+  "question_id": "q362",
+  "js_path": "charts/chart111.js",
+  "csv_path": "charts/files/chart111.csv",
+  "question": "How can I see the life expectancy in the year 2000?",
+  "prompt": "@charts/chart111.js @charts/files/chart111.csv Question: How can I see the life expectancy in the year 2000?",
+  "prompt_hash": "b3c45ecf86d521dd0c6c2a3571672ac209839e59ec16b75bed0733d18445d4ba",
+  "returncode": 0,
+  "raw_response": "To see the life expectancy in the year 2000 using the chart's interface:\n\n1.  **Adjust the Slider:** Use the year slider located at the top of the chart to navigate to the year **2000**.\n2.  **Verify the Year:** You can confirm the selected year by checking the **year label** next to the slider or the large **background watermark** in the center of the chart.\n3.  **Interact with Data Points:** Hover your mouse over any of the colored circles (representing different countries) to display a **tooltip** containing specific male and female life expectancy values for that country in 2000.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

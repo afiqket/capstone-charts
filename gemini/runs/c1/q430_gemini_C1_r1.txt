@@ -1,0 +1,19 @@
+{
+  "run_id": "edd31e95-f442-41ed-978e-cc9e38c769b5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart133",
+  "question_id": "q430",
+  "js_path": "charts/chart133.js",
+  "csv_path": "charts/files/chart133.csv",
+  "question": "What food has changes the most since 1958 in terms of price?",
+  "prompt": "@charts/chart133.js @charts/files/chart133.csv Question: What food has changes the most since 1958 in terms of price?",
+  "prompt_hash": "829f2f9872a4e2679ab4f15b08ee7212f3e7e8a3384cd1ba56efd162b7093c9d",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the answer depends on whether you are looking at the **absolute change** in the price index or the **percentage change**:\n\n*   **Largest Absolute Change:** **Coffee** changed the most. Its relative price index dropped from 164.89 in 1958 to 50.57 in 2020, which is an absolute decrease of **~114.3 points**. (For comparison, Beef had the largest absolute increase, rising by ~81.7 points).\n*   **Largest Percentage Change:** **Pork** changed the most. Its index dropped from 56.57 in 1958 down to 10.79 in 2020, representing an **80.9% decrease** in its relative price.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

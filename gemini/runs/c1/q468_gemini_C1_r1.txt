@@ -1,0 +1,19 @@
+{
+  "run_id": "97a3e0fc-f3d4-426d-866c-af86bfb895ff",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart146",
+  "question_id": "q468",
+  "js_path": "charts/chart146.js",
+  "csv_path": "charts/files/chart146.csv",
+  "question": "What does the red/orange bar represent, and what does the blue bar represent?",
+  "prompt": "@charts/chart146.js @charts/files/chart146.csv Question: What does the red/orange bar represent, and what does the blue bar represent?",
+  "prompt_hash": "736e70f0dc4e3299b03892316af3f40c2de7a4c85e4c969275eafa48373d3110",
+  "returncode": 0,
+  "raw_response": "Based on the chart's code, the colors represent the following countries:\n\n*   The **red/orange** color (`#c0392b`) represents **Germany**.\n*   The **blue** color (`#4472c4`) represents the **United States**. \n\n*(Note: While the question mentions \"bars\", in the chart's \"Bar\" view mode, all bars are actually rendered in a uniform blue color (`#6a8fc0`). The distinct red/orange and blue colors are used to differentiate these countries in the \"Line\" view mode and the tooltip indicators.)*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

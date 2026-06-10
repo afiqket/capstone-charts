@@ -1,0 +1,19 @@
+{
+  "run_id": "01da9c60-5f07-4153-a901-ace85921c31b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart89",
+  "question_id": "q296",
+  "js_path": "charts/chart89.js",
+  "csv_path": "charts/files/chart89.csv",
+  "question": "What was the Top 1% survival age in France in 2023?",
+  "prompt": "@charts/chart89.js @charts/files/chart89.csv Question: What was the Top 1% survival age in France in 2023?",
+  "prompt_hash": "c4c10df0c579657d616701c230ad4acc878b866573579001fed3d7589be44e8c",
+  "returncode": 0,
+  "raw_response": "The Top 1% survival age in France in 2023 was 102.67 years.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:14492) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

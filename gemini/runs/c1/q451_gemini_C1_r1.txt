@@ -1,0 +1,19 @@
+{
+  "run_id": "fe57a3cc-2965-4f30-a9b5-327cce679589",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart140",
+  "question_id": "q451",
+  "js_path": "charts/chart140.js",
+  "csv_path": "charts/files/chart140.csv",
+  "question": "How do I see the exact life satisfaction, life expectancy and population of a country?",
+  "prompt": "@charts/chart140.js @charts/files/chart140.csv Question: How do I see the exact life satisfaction, life expectancy and population of a country?",
+  "prompt_hash": "48f054fef49088525cd207f9b6874fe327d7c6331704bfeec32bbde0ecfe9899",
+  "returncode": 0,
+  "raw_response": "To see the exact life satisfaction, life expectancy, and population of a country, you can **hover your mouse over any of the circles** on the chart. \n\nWhen you hover over a country's circle, a tooltip will appear displaying the country's name, the selected year, and its precise values for life satisfaction, life expectancy, and population (formatted in millions or billions).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "d6ec188d-b0ae-44e1-9fcb-d69c7dda30c9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart51",
+  "question_id": "q182",
+  "js_path": "charts/chart51.js",
+  "csv_path": "charts/files/chart51.csv",
+  "question": "Does Syria show an increasing or decreasing trend across the years?",
+  "prompt": "@charts/chart51.js @charts/files/chart51.csv Question: Does Syria show an increasing or decreasing trend across the years?",
+  "prompt_hash": "d7f9c24c22986f94f650d80459821a212a1427a090710db9935ce3407d4e4871",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided CSV file, Syria does not show a single continuous trend, but rather a combination of both:\n\n* **1989 to 2010:** The value is constant at 0.\n* **2011 to 2017 (Increasing Trend):** The numbers rise sharply, starting from 30 in 2011 and peaking at 12,464 deaths in 2017.\n* **2018 to 2024 (Decreasing Trend):** The numbers show a general decrease from the 2017 peak, dropping to 3,485 in 2019 and further down to around 307 to 712 deaths in the 2021\u20132024 period. \n\nTherefore, Syria shows an **initial increasing trend** that peaks in 2017, followed by a **decreasing trend** in the more recent years.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:3412) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

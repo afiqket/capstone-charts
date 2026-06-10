@@ -1,0 +1,19 @@
+{
+  "run_id": "c42cfa55-9602-4546-ab38-bac16aefd7d0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart130",
+  "question_id": "q419",
+  "js_path": "charts/chart130.js",
+  "csv_path": "charts/files/chart130.csv",
+  "question": "Which region had the largest average decrease in adult smoking share from 2000 to 2022?",
+  "prompt": "@charts/chart130.js @charts/files/chart130.csv Question: Which region had the largest average decrease in adult smoking share from 2000 to 2022?",
+  "prompt_hash": "d41c1b9971dc3b5f14538c43c8b96e8edb018641a695a23e439e1226c2de4833",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `chart130.csv`, which tracks the share of adults who smoke in 2000 vs. 2022 for various countries and aggregate regions, we can calculate the **average decrease** (Share in 2000 - Share in 2022) for each world region.\n\nThe visualization in `chart130.js` defines the regions as Africa, Asia, Europe, North America, Oceania, and South America, excluding aggregate entities (those with codes starting with `OWID_`). Calculating the arithmetic mean of the decreases for the individual countries in each region yields the following results:\n\n*   **South America**: **15.62 percentage points** (based on 10 countries, including notable decreases in Peru (27.6), Bolivia (22.7), and Guyana (20.2)).\n*   **Oceania**: **11.83 percentage points** (based on 13 countries, with Kiribati showing a 28.3 decrease).\n*   **Europe**: **10.56 percentage points** (based on 40 countries, with Norway showing a 30.7 decrease).\n*   **Africa**: **10.25 percentage points** (based on 42 countries, with Comoros showing a 33.0 decrease).\n*   **Asia**: **10.24 percentage points** (based on 44 countries; while some like Nepal (36.4) and India (31.5) had huge decreases, several others like Indonesia and Jordan saw increases, lowering the average).\n*   **North America**: **7.41 percentage points** (based on 16 countries).\n\nEven when considering the population-weighted aggregate decreases (the \"Region\" rows in the CSV), **South America** still shows the most significant overall progress compared to other regions' arithmetic averages, although **Asia**'s aggregate decrease (13.87) is slightly higher than its arithmetic mean due to the heavy weight of India's large decrease. However, the arithmetic mean of country-level decreases in South America (**15.62**) remains the highest regional average in the dataset.\n\n**South America** had the largest average decrease in adult smoking share from 2000 to 2022.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:24360) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

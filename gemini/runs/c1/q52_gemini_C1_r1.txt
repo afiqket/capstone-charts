@@ -1,0 +1,19 @@
+{
+  "run_id": "f7741dc2-7e14-4f9b-b59b-51b8a984c773",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart17",
+  "question_id": "q52",
+  "js_path": "charts/chart17.js",
+  "csv_path": "charts/files/chart17.csv",
+  "question": "Around which year did Harris County reach its highest reported violent crime count?",
+  "prompt": "@charts/chart17.js @charts/files/chart17.csv Question: Around which year did Harris County reach its highest reported violent crime count?",
+  "prompt_hash": "85f7d56e26bfe4dd09e304064d8bea49c55d93124408d959bd034cf8fbb07e40",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, Harris County reached its highest reported total violent crime count in **2009**, with a total of **8,439** reported violent crimes (5,087 Aggravated Assaults, 2,975 Robberies, 281 Forcible Rapes, and 96 Murders and Non-negligent Manslaughters).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

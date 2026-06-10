@@ -1,0 +1,19 @@
+{
+  "run_id": "c5dc2746-a0eb-4835-9dd3-e69da9028de8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart16",
+  "question_id": "q49",
+  "js_path": "charts/chart16.js",
+  "csv_path": "charts/files/chart16.csv",
+  "question": "Which region generally shows higher values: North America or Southeast Asia?",
+  "prompt": "@charts/chart16.js @charts/files/chart16.csv Question: Which region generally shows higher values: North America or Southeast Asia?",
+  "prompt_hash": "b22f82a40b0d09fa726887f8cc82107a2cce16e35da6212774cebfd5d85b32f9",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **North America** generally shows higher values (North America as a region is listed at 60.56%, and countries like Canada and the US show 72.97% and 67.08% respectively). In contrast, countries in Southeast Asia typically show lower values (e.g., Malaysia at 27.11%, Philippines at 41.71%, Indonesia at 45.83%), with a few exceptions like Laos (68.33%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

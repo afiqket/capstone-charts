@@ -1,0 +1,19 @@
+{
+  "run_id": "b0dacd49-5d11-427c-b042-3c7573aff52a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart80",
+  "question_id": "q271",
+  "js_path": "charts/chart80.js",
+  "csv_path": "charts/files/chart80.csv",
+  "question": "What happens if I hover near 1900 on the line chart?",
+  "prompt": "@charts/chart80.js @charts/files/chart80.csv Question: What happens if I hover near 1900 on the line chart?",
+  "prompt_hash": "f440dae147e51d2d97bef39eab758c86287f7499d4ad165b3605485f1d5a4a2d",
+  "returncode": 0,
+  "raw_response": "If you hover near the year 1900 on the line chart, a tooltip will appear showing the following behavior:\n\n1. **Title:** The tooltip title will say **\"Year: 1900\"** (because it pulls the year from the closest point of the first series in alphabetical order, which is Durand 1977 at exactly 1900).\n2. **Values shown:** It will display data for 7 of the 8 lines currently rendered on the chart.\n   - For **Durand (1977)**, **Durand, lower estimate (1974)**, **Durand, upper estimate (1974)**, **McEvedy and Jones (1978)**, and **Thomlinson, lower estimate (1975)**, it will show their 1900 estimates (which range from 1.6 to 1.7 billion).\n   - For **Maddison (1991)** and **Maddison (2001)**, it will unexpectedly show their values for the year **1700** (603 million). This happens because the tooltip logic finds the closest available point for each series and includes it if it is within 5% of the total X-axis range. Since the X-axis spans 11,950 years (from -10000 to 1950), the 5% threshold is roughly 597.5 years. The 200-year gap between 1900 and 1700 falls within this threshold, so the 1700 data is shown alongside the 1900 data.\n3. **Missing Data:** \n   - **Thomlinson, upper estimate (1975)** will be omitted from the tooltip because its closest (and latest) data point is in the year 5000 BCE, which is well outside the ~597-year hover threshold.\n   - **Tuve (1976)** will not be shown because it isn't rendered on the chart at all. Although \"Tuve\" is in the `SELECTED` list, the initial filtering matches any source name containing the author's name and limits the selection to the first 8 matches alphabetically. Tuve ends up 9th on that matched list and is therefore left out entirely.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

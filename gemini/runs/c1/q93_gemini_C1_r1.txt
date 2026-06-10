@@ -1,0 +1,19 @@
+{
+  "run_id": "ad75dd58-3230-468d-be6d-342e2fd6264a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart30",
+  "question_id": "q93",
+  "js_path": "charts/chart30.js",
+  "csv_path": "charts/files/chart30.csv",
+  "question": "What should I click to see the most grown crops in Tanzania?",
+  "prompt": "@charts/chart30.js @charts/files/chart30.csv Question: What should I click to see the most grown crops in Tanzania?",
+  "prompt_hash": "60f268cfe775aab8b712c23ffa0d5bc21e2d4061ac17b426d45297d2f7cefef2",
+  "returncode": 0,
+  "raw_response": "To see the most grown crops in Tanzania, you should click the **CROPS MOST COMMONLY GROWN** button to switch to the crop statistics view. Tanzania is included by default in the list of countries shown.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

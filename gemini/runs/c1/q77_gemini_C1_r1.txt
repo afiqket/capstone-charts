@@ -1,0 +1,19 @@
+{
+  "run_id": "100903b7-544b-4ec2-8016-3183298f087a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart25",
+  "question_id": "q77",
+  "js_path": "charts/chart25.js",
+  "csv_path": "charts/files/chart25.csv",
+  "question": "How can I find the range of the death rate numbers based on the map?",
+  "prompt": "@charts/chart25.js @charts/files/chart25.csv Question: How can I find the range of the death rate numbers based on the map?",
+  "prompt_hash": "05fb30894d1a43d4a7a714fe78791dc95fd8b1a84296e741e118b0ab1e88b885",
+  "returncode": 0,
+  "raw_response": "Based on the provided code for the map, you can find the range of the death rate numbers by looking at the **color legend** located at the bottom of the map visualization. \n\nSpecifically:\n1. **The Legend:** It displays a stepped color scale (from very light to dark red) mapped to numerical threshold breaks (`0`, `<1`, `10`, `100`, `1,000`, and `10,000`). This shows you the minimum and maximum ranges of death metrics currently displayed across the map.\n2. **Interactive Tooltips:** By hovering your cursor over any specific country on the map, an interactive tooltip will appear that shows the exact number of deaths (or death rate) for that specific country in the selected year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

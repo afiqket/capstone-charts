@@ -1,0 +1,19 @@
+{
+  "run_id": "cbf6d7cf-22bf-4ae6-b94b-ea80d182b891",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart79",
+  "question_id": "q267",
+  "js_path": "charts/chart79.js",
+  "csv_path": "charts/files/chart79.csv",
+  "question": "How can I get the 2024 projection value for world population in 2050?",
+  "prompt": "@charts/chart79.js @charts/files/chart79.csv Question: How can I get the 2024 projection value for world population in 2050?",
+  "prompt_hash": "30b7732e2f821a397f6ae1126e55fb6f1684d7ea40e60c0798856d99554ab668",
+  "returncode": 0,
+  "raw_response": "To get the 2024 projection value for the world population in 2050, you can look at the provided `chart79.csv` data. \n\nFind the row where the `Entity` is `World` and the `Year` is `2050`. The value in the final column (`2024 projection`) of that row is **9,664,378,585**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "105ee666-a44e-4b48-badf-bf9659ecab31",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart128",
+  "question_id": "q413",
+  "js_path": "charts/chart128.js",
+  "csv_path": "charts/files/chart128.csv",
+  "question": "What does the red line in the line chart for?",
+  "prompt": "@charts/chart128.js @charts/files/chart128.csv Question: What does the red line in the line chart for?",
+  "prompt_hash": "43115c7338aff61b3493a48e965d49a2db62fdca8776f1f72923899481ff4cce",
+  "returncode": 0,
+  "raw_response": "Based on the provided code in `@charts/chart128.js`, the line chart represents the **Number of cigarettes smoked per smoker per day** for different genders in the United States.\n\nIn the code, the `SERIES` constant defines the colors for each group:\n*   **Male:** `#4e79a7` (Blue)\n*   **Female:** `#b84c1a` (Reddish-brown/Burnt orange)\n\nThe red line in the chart represents the data for **Females** (women).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

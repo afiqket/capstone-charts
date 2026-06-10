@@ -1,0 +1,19 @@
+{
+  "run_id": "e2862aa3-30a8-4171-bc2e-0c7a41172df9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart38",
+  "question_id": "q131",
+  "js_path": "charts/chart38.js",
+  "csv_path": "charts/files/chart38.csv",
+  "question": "In April 2022, how many CBD cases were recorded?",
+  "prompt": "@charts/chart38.js @charts/files/chart38.csv Question: In April 2022, how many CBD cases were recorded?",
+  "prompt_hash": "74e67513e08851f955aa43eaa21f06ab0dc314dac9d93d4b57a9fcd89b833848",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, there were **480** CBD cases recorded in April 2022.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

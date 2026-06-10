@@ -1,0 +1,19 @@
+{
+  "run_id": "84cb4c2c-4693-4b64-9349-634674d5bc87",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart86",
+  "question_id": "q287",
+  "js_path": "charts/chart86.js",
+  "csv_path": "charts/files/chart86.csv",
+  "question": "What was the highest female life expectancy in 2023?",
+  "prompt": "@charts/chart86.js @charts/files/chart86.csv Question: What was the highest female life expectancy in 2023?",
+  "prompt_hash": "24f0940b2468c880a5a3ead9c086d1ad054efd6bb2f27062235729d0686d4d61",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, the highest female life expectancy in 2023 was **88.1294** years (in Hong Kong).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

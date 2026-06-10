@@ -1,0 +1,19 @@
+{
+  "run_id": "cad1bb36-f836-4547-be48-f9eec87ddf6d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart108",
+  "question_id": "q353",
+  "js_path": "charts/chart108.js",
+  "csv_path": "charts/files/chart108.csv",
+  "question": "What is the difference between the National Home Sales Annualized Rate value in January 2021 and January 2024?",
+  "prompt": "@charts/chart108.js @charts/files/chart108.csv Question: What is the difference between the National Home Sales Annualized Rate value in January 2021 and January 2024?",
+  "prompt_hash": "d51a2bb079da8cd816730fbae06ff889180eb6818f65247056612164b0ebc134",
+  "returncode": 0,
+  "raw_response": "To determine the difference between the National Home Sales Annualized Rate values for January 2021 and January 2024, we first identify the correct data source from the provided files.\n\nIn **chart108.js**, the \"Home Sales Annualized Rate\" metric is derived from `dataAR`, which corresponds to the file with large numeric values (formatted in millions in the UI). Looking at **chart108.csv**, `file_2` contains these large values:\n\n*   **January 2021 value:** `6,967,398` (found at the row `file_2,1/1/2021,6967398`)\n*   **January 2024 value:** `4,134,501` (found at the row `file_2,1/1/2024,4134501`)\n\n**Calculation:**\n$6,967,398 - 4,134,501 = 2,832,897$\n\nThe difference between the National Home Sales Annualized Rate in January 2021 and January 2024 is **2,832,897**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "0871e90a-08b9-40c6-b60f-3ecbbe794064",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart13",
+  "question_id": "q4",
+  "js_path": "charts/chart13.js",
+  "csv_path": "charts/files/chart13.csv",
+  "question": "How can I get the exact price data of Memory in 2010 from this chart?",
+  "prompt": "@charts/chart13.js @charts/files/chart13.csv Question: How can I get the exact price data of Memory in 2010 from this chart?",
+  "prompt_hash": "3282aca74d0c70ccdb2a030fa9e996eef1ac2320cd283e7e40ca00d7f7529696",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the exact price of Memory in 2010 was **11587.933**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "98baf7f1-bdc2-4579-a0a1-0184397d9fdb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart30",
+  "question_id": "q91",
+  "js_path": "charts/chart30.js",
+  "csv_path": "charts/files/chart30.csv",
+  "question": "Which country has the highest number of hHouseholds that practice fallowing in their fields?",
+  "prompt": "@charts/chart30.js @charts/files/chart30.csv Question: Which country has the highest number of households, that practice fallowing in their fields?",
+  "prompt_hash": "77b8ade43e4f7efb103ba046b35623c58acf27bb5eed426ab3bb5fc50082baca",
+  "returncode": 0,
+  "raw_response": "Based on the data, **Ghana** has the highest number of households that practice fallowing in their fields (at 20% of its 1,267 total households, which is approximately 253 households).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

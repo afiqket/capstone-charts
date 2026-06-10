@@ -1,0 +1,19 @@
+{
+  "run_id": "fa405bf4-c677-4b2f-9a7f-6b7c5901bd11",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart103",
+  "question_id": "q339",
+  "js_path": "charts/chart103.js",
+  "csv_path": "charts/files/chart103.csv",
+  "question": "In which year did the Manufacturing sector have the highest positive Measure Value?",
+  "prompt": "@charts/chart103.js @charts/files/chart103.csv Question: In which year did the Manufacturing sector have the highest positive Measure Value?",
+  "prompt_hash": "5cdc09eb6446cba9d278c8ecc260823d5391547859d0a0e8abb08f8c3351060e",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart103.csv` and the logic in `chart103.js`, the values for the **Manufacturing** sector are aggregated by year to calculate the total **Measure Value** (RM/bil) shown in the chart.\n\nSumming the \"Measure Value\" for each year for the Manufacturing sector:\n*   **2015**: 0.223 - 1.527 - 0.035 + 0.717 = **-0.622**\n*   **2016**: -0.896 - 0.670 - 1.349 - 1.780 = **-4.695**\n*   **2017**: -0.815 - 0.682 + 0.287 - 0.915 = **-2.125**\n*   **2018**: 0.001 + 0.104 - 0.462 + 0.123 = **-0.234**\n*   **2019**: -0.992 - 0.243 - 1.474 + 1.020 = **-1.689**\n*   **2020**: 0.291 - 0.674 - 0.636 - 0.650 = **-1.669**\n*   **2021**: -1.109 - 1.325 - 0.266 - 5.252 = **-7.952**\n*   **2022**: -2.137 + 1.089 - 0.549 - 4.376 = **-5.973**\n*   **2023**: 1.907 + 2.215 + 3.138 + 5.425 = **12.685**\n*   **2024**: -0.414 + 7.178 - 8.649 + 2.793 = **0.908**\n*   **2025 (Jan-Sep)**: 3.727 + 1.472 + 0.117 = **5.316**\n\nThe year with the highest positive aggregated Measure Value for the Manufacturing sector is **2023**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "f8114cef-c531-4dfc-8ca7-b127768f90a1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart10",
+  "question_id": "q2",
+  "js_path": "charts/chart10.js",
+  "csv_path": "charts/files/chart10.csv",
+  "question": "Is Senior Tableau demand higher than Senior Power BI demand?",
+  "prompt": "@charts/chart10.js @charts/files/chart10.csv Question: Is Senior Tableau demand higher than Senior Power BI demand?",
+  "prompt_hash": "90307c2658def8474828c9e15feb03e6b8caec5577ba034a4f8a0a66eca2fb6d",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart10.csv`:\n\n*   **Senior Tableau demand:** 63\n*   **Senior Power BI demand:** 104\n\n**No**, Senior Tableau demand (63) is not higher than Senior Power BI demand (104).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

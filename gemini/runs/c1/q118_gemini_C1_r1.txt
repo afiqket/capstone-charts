@@ -1,0 +1,18 @@
+{
+  "run_id": "db41c644-fef9-4d81-8b56-9520de8d649c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart35",
+  "question_id": "q118",
+  "js_path": "charts/chart35.js",
+  "csv_path": "charts/files/chart35.csv",
+  "question": "What happens if you use the scroll wheel in this chart?",
+  "prompt": "@charts/chart35.js @charts/files/chart35.csv Question: What happens if you use the scroll wheel in this chart?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "Using the scroll wheel on the chart triggers the zoom function, allowing you to **zoom in and out** of the map view.",
+  "parsed_answer": ""
+}

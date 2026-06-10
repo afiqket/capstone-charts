@@ -1,0 +1,19 @@
+{
+  "run_id": "b08c3e40-72f6-4b69-86c9-5ea76ec1c4db",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart134",
+  "question_id": "q433",
+  "js_path": "charts/chart134.js",
+  "csv_path": "charts/files/chart134.csv",
+  "question": "What happens when I click on the year slider instead of clicking the play button?",
+  "prompt": "@charts/chart134.js @charts/files/chart134.csv Question: What happens when I click on the year slider instead of clicking the play button?",
+  "prompt_hash": "966d15dbae36ad731789b8646e043287da16c7086f76b1485addae4bc8992c29",
+  "returncode": 0,
+  "raw_response": "When you click on the year slider, the chart immediately updates to display the data for the year closest to the location you clicked. The circular handle on the slider moves to that year's position, and the chart title updates to reflect the newly selected year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

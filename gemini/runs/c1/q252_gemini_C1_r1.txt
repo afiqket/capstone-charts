@@ -1,0 +1,19 @@
+{
+  "run_id": "211ba456-4342-4435-8fdf-41416d12efda",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart74",
+  "question_id": "q252",
+  "js_path": "charts/chart74.js",
+  "csv_path": "charts/files/chart74.csv",
+  "question": "How can I get the exact percentage for Malaysia in the chart?",
+  "prompt": "@charts/chart74.js @charts/files/chart74.csv Question: How can I get the exact percentage for Malaysia in the chart?",
+  "prompt_hash": "265e32de26c779cec1eb6e772c116aea2d64730da47508ed1816aa112bf596ad",
+  "returncode": 0,
+  "raw_response": "The exact percentage for Malaysia is **62.25645%**, which can be found directly in the underlying `chart74.csv` file. \n\nIn the chart's visual interface (both the Map and Bar views), the tooltip automatically rounds this value to one decimal place (**62.3%**). If you need the chart to display the exact percentage, you can modify the formatting in `chart74.js` by changing `d3.format(\".1f\")` to a format with more decimal places, such as `d3.format(\".5f\")` or removing the formatter entirely.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

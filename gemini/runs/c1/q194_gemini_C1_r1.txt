@@ -1,0 +1,19 @@
+{
+  "run_id": "c5f1db2f-ed3b-49b0-ad21-e45b6e2107a6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart55",
+  "question_id": "q194",
+  "js_path": "charts/chart55.js",
+  "csv_path": "charts/files/chart55.csv",
+  "question": "What patterns can be observed globally in the share of people reporting lifetime anxiety or depression?",
+  "prompt": "@charts/chart55.js @charts/files/chart55.csv Question: What patterns can be observed globally in the share of people reporting lifetime anxiety or depression?",
+  "prompt_hash": "6f8c1bc08f30d9239e3a7b61164af55828244f98a229b4e6289567faa7c4c9f3",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, several global patterns can be observed regarding the share of people reporting lifetime anxiety or depression in 2020:\n\n1. **Geographic/Regional Variations**: \n   - **South America** is the region with the highest overall reported share at **34.9%**, significantly above the global average of **19.0%**.\n   - **Asia** reports the lowest regional share at **16.0%**.\n   - Other regions hover closer to the global average: Oceania (25.7%), North America (22.8%), Europe (22.8%), and Africa (19.7%).\n\n2. **Highest Reporting Countries (Latin America & Parts of Africa)**:\n   - Latin American countries dominate the highest reporting rates globally. **Peru** has the highest recorded share at **49.3%**, followed by **Ecuador** (42.7%).\n   - Numerous other Latin American countries report rates above 35%, including the Dominican Republic, Bolivia, Venezuela, El Salvador, Chile, Nicaragua, and Argentina. \n   - A few African countries also report very high rates, most notably **Zambia** (40.4%) and Cameroon (36.3%).\n\n3. **Lowest Reporting Countries (East/Southeast Asia & Parts of Europe/Africa)**:\n   - East and Southeast Asian countries frequently report the lowest shares. **Taiwan** has the lowest globally at **2.9%**, followed by Cambodia (6.9%), China (8.6%), Japan (10.0%), and Thailand (10.2%).\n   - Several nations in Eastern Europe/Balkans (e.g., Montenegro at 7.5%, Lithuania at 7.8%, Slovenia at 9.4%, Serbia at 10.1%) and specific African/Middle Eastern nations (Israel at 6.2%, Algeria at 7.7%, Namibia at 9.0%) also report very low figures.\n\n4. **Income Group Disparities**:\n   - There is no direct linear correlation between a country's income level and its reported rates of anxiety or depression. \n   - **Lower-middle-income countries** report the highest average (21.6%), slightly above **High-income countries** (19.7%).\n   - **Upper-middle-income** (15.9%) and **Low-income countries** (14.7%) report the lowest averages among the income groups.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

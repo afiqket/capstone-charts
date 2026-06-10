@@ -1,0 +1,19 @@
+{
+  "run_id": "71c64436-f8c2-4d6d-926a-a49a4b733f16",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart22",
+  "question_id": "q67",
+  "js_path": "charts/chart22.js",
+  "csv_path": "charts/files/chart22.csv",
+  "question": "Compare the death rate of Ethiopia and Afghanistan. Which one is higher?",
+  "prompt": "@charts/chart22.js @charts/files/chart22.csv Question: Compare the death rate of Ethiopia and Afghanistan. Which one is higher?",
+  "prompt_hash": "6cc5face422c290af0f248af9335a1e0ea0242ecd2a0e20b214efdffe029953d",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Afghanistan** has a higher overall death rate than Ethiopia. \n\nWhile Ethiopia experienced significant, isolated spikes in 2021 (106.0) and 2022 (131.6), Afghanistan's death rate has been consistently and significantly higher across the vast majority of the timeline from 1989 to 2024, resulting in a much higher average and cumulative death rate over the entire period.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:24480) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

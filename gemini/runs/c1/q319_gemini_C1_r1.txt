@@ -1,0 +1,19 @@
+{
+  "run_id": "82c0c79d-46d9-4677-b28d-ad55007f856b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart96",
+  "question_id": "q319",
+  "js_path": "charts/chart96.js",
+  "csv_path": "charts/files/chart96.csv",
+  "question": "What happens if I hover over France's data point in 2000?",
+  "prompt": "@charts/chart96.js @charts/files/chart96.csv Question: What happens if I hover over France's data point in 2000?",
+  "prompt_hash": "d2e7e64f4c98db1fee1a3141f0fd7459d9cc0043e9444fa7319ce06646431c2d",
+  "returncode": 0,
+  "raw_response": "If you hover over France's data point in the year 2000, a tooltip will appear displaying the data for all tracked countries (France and Spain) for that specific year. \n\nIt will show the year **2000** as the title and display the following two lines:\n\n*   **France: 13.2 \u2014 Peak: Jul**\n*   **Spain: 9.8 \u2014 Peak: Sep** \n\nThe tooltip will also display small colored squares next to each country indicating their respective peak birth month colors.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:15860) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "a2938475-7b30-45b6-aa8c-435a22b41a95",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart31",
+  "question_id": "q96",
+  "js_path": "charts/chart31.js",
+  "csv_path": "charts/files/chart31.csv",
+  "question": "What was India\u2019s cotton production value in 2017?",
+  "prompt": "@charts/chart31.js @charts/files/chart31.csv Question: What was India\u2019s cotton production value in 2017?",
+  "prompt_hash": "4d4bad5dc1731b639533aa43bdfd174dac981558bc5f9316fe37d26f7aaae2a5",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, India's cotton production value in 2017 was **29,004.98** (in thousands of 480-pound bales).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

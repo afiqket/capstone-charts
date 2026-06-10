@@ -1,0 +1,19 @@
+{
+  "run_id": "61449dfa-2241-4e05-9b32-17fe456d5560",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart100",
+  "question_id": "q329",
+  "js_path": "charts/chart100.js",
+  "csv_path": "charts/files/chart100.csv",
+  "question": "How has the population of Tokyo changed over time?",
+  "prompt": "@charts/chart100.js @charts/files/chart100.csv Question: How has the population of Tokyo changed over time?",
+  "prompt_hash": "ed2503898ae5d179ec3d55fed75737769c779b0c644f025fd5dfee390c6bd697",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided dataset, Tokyo's population has experienced significant growth over the decades, peaking recently, and is projected to steadily decline in the future. \n\nHere is the breakdown of its population changes over time:\n\n**Historical Growth (1950 - 2020)**\nThe population grew rapidly throughout the second half of the 20th century and continued to increase into the 21st century:\n* **1950:** ~12.55 million\n* **1960:** ~16.77 million\n* **1970:** ~21.69 million\n* **1980:** ~25.91 million\n* **1990:** ~28.59 million\n* **2000:** ~30.30 million\n* **2010:** ~32.56 million\n* **2020:** ~33.70 million (Peak population)\n\n**Future Projections (2025 - 2100)**\nFrom its peak around 2020, Tokyo's population is projected to gradually decline over the remainder of the century:\n* **2030:** ~33.04 million\n* **2050:** ~30.66 million\n* **2075:** ~26.64 million\n* **2100:** ~24.07 million\n\nIn summary, Tokyo almost tripled its population between 1950 and 2020, but it is projected to lose over 9.5 million people from its peak by the end of the century.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:2864) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

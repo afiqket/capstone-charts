@@ -1,0 +1,19 @@
+{
+  "run_id": "41354d27-846c-4a80-88c6-e3466b21ecf5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart150",
+  "question_id": "q480",
+  "js_path": "charts/chart150.js",
+  "csv_path": "charts/files/chart150.csv",
+  "question": "What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?",
+  "prompt": "@charts/chart150.js @charts/files/chart150.csv Question: What day does the number of people of the ages 60-69 years become higher than the people of the ages 80+ years?",
+  "prompt_hash": "2bd93259ffd7b45df5f52aa72f519d1e0ac2845950b3389615d9e4e6dbc40391",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the share of people of the ages 60-69 years becomes higher than the people of the ages 80+ years in Sweden on **August 5, 2022** (represented as `5/8/2022` in the data). \n\nOn July 29, 2022, the share for 60-69 years was 84.55% and 80+ years was 84.56%. By August 5, 2022, the share for 60-69 years reached 84.58%, surpassing the 80+ years group at 84.57%.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:7580) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

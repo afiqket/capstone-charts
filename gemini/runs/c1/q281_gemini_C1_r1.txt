@@ -1,0 +1,19 @@
+{
+  "run_id": "25e06952-b5ca-40f6-94f0-cbc786788c0d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart84",
+  "question_id": "q281",
+  "js_path": "charts/chart84.js",
+  "csv_path": "charts/files/chart84.csv",
+  "question": "In 1900, which was higher: France\u2019s period life expectancy or cohort life expectancy?",
+  "prompt": "@charts/chart84.js @charts/files/chart84.csv Question: In 1900, which was higher: France\u2019s period life expectancy or cohort life expectancy?",
+  "prompt_hash": "acaf4d36f70f85d84d855436c20aa2b60ec4e531cf1908559b35a8834963b879",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, in 1900, France's **cohort life expectancy** (51.87 years) was higher than its period life expectancy (45.1 years).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

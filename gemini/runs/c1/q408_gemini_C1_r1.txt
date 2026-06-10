@@ -1,0 +1,19 @@
+{
+  "run_id": "c4c4aa50-3e15-42c7-91da-c9b6e8166a76",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart126",
+  "question_id": "q408",
+  "js_path": "charts/chart126.js",
+  "csv_path": "charts/files/chart126.csv",
+  "question": "How does the overall trend for women obesity percentage throughout the time?",
+  "prompt": "@charts/chart126.js @charts/files/chart126.csv Question: How does the overall trend for women obesity percentage throughout the time?",
+  "prompt_hash": "c8a3117c3249da9837bab70399b8d6951a75185e10ef248bbe12f3094bbd571b",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in the chart and the underlying CSV file, the overall trend for women's obesity percentage has shown a **steady and significant increase** globally from 1990 to 2022.\n\nKey observations regarding the trend:\n*   **Universal Increase:** Across all listed countries and regions (including Africa, Asia, Europe, and the Americas), the percentage of women with obesity has risen consistently every year.\n*   **Significant Growth:** In many cases, the percentages have doubled or even tripled. For example, in **Afghanistan**, the rate grew from approximately **2.12% in 1990 to 23.72% in 2022**. In **Algeria**, it rose from **15.57% to 32.30%**.\n*   **Regional Highs:** Some regions started with very high rates and continued to climb. **American Samoa**, for instance, saw an increase from **68.22% in 1990 to 80.39% in 2022**.\n*   **WHO Regional Trends:** The **Americas (WHO)** region saw a rise from **16.08% to 36.48%**, while the **Africa (WHO)** region increased from **5.52% to 17.03%**.\n\nIn summary, there is a clear and persistent upward trajectory in the prevalence of obesity among women worldwide over the three-decade period covered by the data.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

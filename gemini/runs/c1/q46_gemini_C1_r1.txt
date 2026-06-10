@@ -1,0 +1,19 @@
+{
+  "run_id": "6b4255f4-1a71-4537-b60b-37ce66891cbf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart15",
+  "question_id": "q46",
+  "js_path": "charts/chart15.js",
+  "csv_path": "charts/files/chart15.csv",
+  "question": "What percentage of people in Australia own a mobile phone?",
+  "prompt": "@charts/chart15.js @charts/files/chart15.csv Question: What percentage of people in Australia own a mobile phone?",
+  "prompt_hash": "513b41f5c92fa5b35b7cbc7395a6a218df160cfae074b383f43fc3dbc49ef5c1",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, as of the most recent year available (2023), **94.6%** of people in Australia own a mobile phone.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

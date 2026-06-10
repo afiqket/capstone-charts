@@ -1,0 +1,19 @@
+{
+  "run_id": "d72b4e06-cebe-4728-95d2-8e0bb6f8d4a3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart138",
+  "question_id": "q445",
+  "js_path": "charts/chart138.js",
+  "csv_path": "charts/files/chart138.csv",
+  "question": "What is the difference in average working hours for France and Italy",
+  "prompt": "@charts/chart138.js @charts/files/chart138.csv Question: What is the difference in average working hours for France and Italy",
+  "prompt_hash": "23ff378119b923949cb6e3e9c7d75ec6ded8e411f10baceddca9f31e8b9040d5",
+  "returncode": 0,
+  "raw_response": "To find the difference in average working hours for France and Italy across all the recorded years in the dataset, we can calculate the average for both countries:\n\n**France:**\nSum of working hours: 66.1 + 66 + 65.9 + 65.9 + 62 + 48 + 39 + 44.8 + 45.9 + 44.8 + 40.7 + 39.9 + 35.75 = **664.75 hours**\nAverage = 664.75 / 13 years \u2248 **51.13 hours**\n\n**Italy:**\nSum of working hours: 63.3 + 63.4 + 63.6 + 63.8 + 62.4 + 48.8 + 48.5 + 47.8 + 42.4 + 42.9 + 42.5 + 39.6 + 38.4 = **667.4 hours**\nAverage = 667.4 / 13 years \u2248 **51.34 hours**\n\n**Difference:**\n51.34 (Italy) - 51.13 (France) \u2248 **0.20 hours** \n\n*(Note: Interestingly, if you are looking for the difference in the most recent year 2000, it is 38.4 - 35.75 = 2.65 hours)*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

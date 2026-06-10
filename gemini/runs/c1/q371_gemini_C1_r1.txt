@@ -1,0 +1,19 @@
+{
+  "run_id": "a7017166-841e-4977-890c-2803bb2df4a5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart114",
+  "question_id": "q371",
+  "js_path": "charts/chart114.js",
+  "csv_path": "charts/files/chart114.csv",
+  "question": "What is the percentage of the urban population percentage in 2008?",
+  "prompt": "@charts/chart114.js @charts/files/chart114.csv Question: What is the percentage of the urban population percentage in 2008?",
+  "prompt_hash": "868eba6bebc7eac4c4a5a6ee60c6d9f0bcd31f0a91cac20cb537c5c436da8f26",
+  "returncode": 0,
+  "raw_response": "Based on the data for the **World** entity in the year **2008** from `charts/files/chart114.csv`, the urban population percentage (specifically the share of the urban population with access to clean fuels for cooking) was **79.955%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:21420) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "b40e4af4-7842-4b43-a8cb-863a0a3fb357",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart14",
+  "question_id": "q4",
+  "js_path": "charts/chart14.js",
+  "csv_path": "charts/files/chart14.csv",
+  "question": "How can I find the exact value of active mobile money accounts for Sub-Saharan Africa in 2024 from this chart?",
+  "prompt": "@charts/chart14.js @charts/files/chart14.csv Question: How can I find the exact value of active mobile money accounts for Sub-Saharan Africa in 2024 from this chart?",
+  "prompt_hash": "4bfd143445e1e11991001968aba583251ebae6e20ac176073fd32d2b4b3ad465",
+  "returncode": 0,
+  "raw_response": "To find the value from the interactive chart, you can hover your mouse over the far right side of the chart area corresponding to the year **2024**. A tooltip will appear listing the values for each region, where you will see Sub-Saharan Africa listed. \n\nHowever, because the chart's tooltip formats large numbers for readability (displaying it as **430.03 million**), you won't see the exact raw number in the UI. \n\nTo find the **exact** value, you need to look at the underlying CSV data (`chart14.csv`). If you scroll to the end of the file, you will find the specific row:\n`Sub-Saharan Africa,2024,430034750`\n\nSo the exact value is **430,034,750**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

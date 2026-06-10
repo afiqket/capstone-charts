@@ -1,0 +1,19 @@
+{
+  "run_id": "6632fd75-b1ac-4cf4-86a0-c91e47ace5b5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart115",
+  "question_id": "q375",
+  "js_path": "charts/chart115.js",
+  "csv_path": "charts/files/chart115.csv",
+  "question": "What happens if I hover over the bars?",
+  "prompt": "@charts/chart115.js @charts/files/chart115.csv Question: What happens if I hover over the bars?",
+  "prompt_hash": "4963eefa65a01e9c1ea0a279c18e1d22437bfe23ee61d1707a26c9761d5c106d",
+  "returncode": 0,
+  "raw_response": "When you hover over the bars in the chart (specifically the invisible overlays for each bar), a **tooltip** appears that follows your mouse cursor. The tooltip displays the following information:\n\n*   **Country Name:** Shown in bold at the top of the tooltip.\n*   **World Region:** The geographical region the country belongs to (e.g., Asia, Europe).\n*   **Antibiotic Use Value:** The specific value formatted to two decimal places followed by \"mg/PCU\" (e.g., \"67.55 mg/PCU\").\n\nThe tooltip has a white background with a light border and a subtle drop shadow to make it stand out against the chart. When you move your mouse away from a bar, the tooltip disappears.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

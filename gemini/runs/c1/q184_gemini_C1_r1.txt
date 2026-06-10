@@ -1,0 +1,19 @@
+{
+  "run_id": "2622364e-cec9-442e-a0f4-e845443078f0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart51",
+  "question_id": "q184",
+  "js_path": "charts/chart51.js",
+  "csv_path": "charts/files/chart51.csv",
+  "question": "What happens if I click the play button on the timeline?",
+  "prompt": "@charts/chart51.js @charts/files/chart51.csv Question: What happens if I click the play button on the timeline?",
+  "prompt_hash": "3a23f163ae47561070f807a317f356a237f13f5663421938591df613393afacd",
+  "returncode": 0,
+  "raw_response": "If you click the play button on the timeline, the following will happen:\n\n1. **Animation Starts**: The chart begins automatically advancing through time, incrementing the current year by 1 every 350 milliseconds.\n2. **Visual Update**: As the year changes, the active visualization (Map, Line, or Bar chart) continuously redraps to show the data for that specific year.\n3. **Icon Change**: The play icon (\"\u25b6\") changes to a pause icon (\"\u23f8\").\n4. **Auto-Reset**: If the slider is already at the maximum year when you click play, it will automatically reset to the minimum year and start playing from the beginning.\n5. **Auto-Stop**: Once the animation reaches the maximum year, it will automatically stop playing.\n6. **Pause**: If you click the button again while the animation is running, it will pause the playback.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

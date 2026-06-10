@@ -1,0 +1,19 @@
+{
+  "run_id": "27c91186-4d93-4497-9d44-4bdcd350b49e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart113",
+  "question_id": "q368",
+  "js_path": "charts/chart113.js",
+  "csv_path": "charts/files/chart113.csv",
+  "question": "What is the percentage of people that dealt with anxiety or depression by engaging with religious or spiritual activities in Brazil?",
+  "prompt": "@charts/chart113.js @charts/files/chart113.csv Question: What is the percentage of people that dealt with anxiety or depression by engaging with religious or spiritual activities in Brazil?",
+  "prompt_hash": "f3e3c02696694bebeb56712b4bf97f0856a4e6b74463fdbd4420447030832652",
+  "returncode": 0,
+  "raw_response": "The percentage of people in Brazil who dealt with anxiety or depression by engaging in religious or spiritual activities is **53.73%** (or approximately 53.7% as shown in the bar chart).\n\nAccording to the data in `charts/files/chart113.csv`:\n- **Entity:** Brazil\n- **Engaged in religious/spiritual activities:** 53.729458",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

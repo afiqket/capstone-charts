@@ -1,0 +1,19 @@
+{
+  "run_id": "739e72ec-a543-4cdc-beb9-941f96e7971a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart144",
+  "question_id": "q462",
+  "js_path": "charts/chart144.js",
+  "csv_path": "charts/files/chart144.csv",
+  "question": "Can I look at the bar chart version of the given chart? How?",
+  "prompt": "@charts/chart144.js @charts/files/chart144.csv Question: Can I look at the bar chart version of the given chart? How?",
+  "prompt_hash": "7bdf1a6654642e29df41c5caa0bbdfc5c5b5de56a0a98f6d41f57649b5b8e9c0",
+  "returncode": 0,
+  "raw_response": "Yes, you can look at the bar chart version of the chart. To do so, simply click the \"**\ud83d\udcca Bar**\" button located at the top of the chart, which will switch the view from the default line chart to a bar chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

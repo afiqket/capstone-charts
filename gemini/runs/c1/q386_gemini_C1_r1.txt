@@ -1,0 +1,19 @@
+{
+  "run_id": "52aa1373-051c-406b-8c1f-32f10a8706c7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart119",
+  "question_id": "q386",
+  "js_path": "charts/chart119.js",
+  "csv_path": "charts/files/chart119.csv",
+  "question": "In the European union what percentage of infections were Gastrointestinal infection sin 2019?",
+  "prompt": "@charts/chart119.js @charts/files/chart119.csv Question: In the European union what percentage of infections were Gastrointestinal infection sin 2019?",
+  "prompt_hash": "b4e767e1daef8c4a02836b931ecf90c833008fd88a1aecbe887a82a5697acbef",
+  "returncode": 0,
+  "raw_response": "In 2019, **15.09%** (specifically 15.094339%) of countries in the **European Region (WHO)** reported confirmed **Gastrointestinal infections**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

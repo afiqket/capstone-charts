@@ -1,0 +1,19 @@
+{
+  "run_id": "1d05a225-a52d-4043-9403-919dd5ba12ae",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart47",
+  "question_id": "q170",
+  "js_path": "charts/chart47.js",
+  "csv_path": "charts/files/chart47.csv",
+  "question": "Between Television and Email, which had higher spending in 2024?",
+  "prompt": "@charts/chart47.js @charts/files/chart47.csv Question: Between Television and Email, which had higher spending in 2024?",
+  "prompt_hash": "e32fa5f5fdc2a72026cc8a4b694dce617d522ac5fa135ea770df4a2dfdf6f731",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Email** had higher spending in 2024. \n\nIn 2024, the spending was:\n*   **Email:** 14,300\n*   **Television:** 5,300",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

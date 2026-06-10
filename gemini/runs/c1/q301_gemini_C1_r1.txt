@@ -1,0 +1,19 @@
+{
+  "run_id": "3c79c41d-6605-4f0e-a9e7-f0531c18d6f1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart90",
+  "question_id": "q301",
+  "js_path": "charts/chart90.js",
+  "csv_path": "charts/files/chart90.csv",
+  "question": "What happens if I hover over the 2023 point in the line chart?",
+  "prompt": "@charts/chart90.js @charts/files/chart90.csv Question: What happens if I hover over the 2023 point in the line chart?",
+  "prompt_hash": "f74ee5f7a846d23ac74a24afff39908ec833645263ef579d0d7d3d68a7cb7166",
+  "returncode": 0,
+  "raw_response": "",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n[ERROR] Invalid stream: The model returned an empty response or malformed tool call.",
+  "parsed_answer": ""
+}

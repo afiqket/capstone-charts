@@ -1,0 +1,19 @@
+{
+  "run_id": "8d1cf1c3-95f0-4e4d-a926-6809e6ec0ce9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart75",
+  "question_id": "q256",
+  "js_path": "charts/chart75.js",
+  "csv_path": "charts/files/chart75.csv",
+  "question": "What happens if I hover over Algeria in 2016?",
+  "prompt": "@charts/chart75.js @charts/files/chart75.csv Question: What happens if I hover over Algeria in 2016?",
+  "prompt_hash": "3dc51c414d7ada00ad80ccd14bb78e1455e073bb85204ee05249bd46024139ca",
+  "returncode": 0,
+  "raw_response": "If you hover over **Algeria** when the year is set to **2016**, the following will happen:\n\n1. **Map Highlight:** The borders of Algeria on the map will be highlighted with a thicker, dark gray stroke (`#333`, 1.5px width) and brought to the front.\n2. **Tooltip:** A white tooltip box with a subtle drop-shadow will appear near your cursor.\n3. **Tooltip Content:** The tooltip will display:\n   - **Algeria** (in bold, dark text at the top)\n   - **Stand-alone mental health policy** (in smaller, gray text)\n   - **No** (in large, bold text, colored salmon/orange `#e8a07a`, indicating they did not have a stand-alone policy that year)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

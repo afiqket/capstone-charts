@@ -1,0 +1,19 @@
+{
+  "run_id": "8098de57-67bb-480b-be4b-c7d52c2fbce6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart87",
+  "question_id": "q291",
+  "js_path": "charts/chart87.js",
+  "csv_path": "charts/files/chart87.csv",
+  "question": "How can I get the value for Ages 60\u201379 in France in 2018?",
+  "prompt": "@charts/chart87.js @charts/files/chart87.csv Question: How can I get the value for Ages 60\u201379 in France in 2018?",
+  "prompt_hash": "85b7f2622877505f3c91d042e6ff9cdb5a9a0b35564f3b81c8b9ee08e9d58713",
+  "returncode": 0,
+  "raw_response": "To get the value for Ages 60\u201379 in France in 2018, you can look up the row for **France** and the year **2018** in the `chart87.csv` file. \n\nThe columns in the CSV are ordered as follows:\n`Entity, Code, Year, Ages 80+, Ages 60\u201379, Ages 40\u201359, Ages 15\u201339, Ages 1\u201314, Age 0 (infancy)`\n\nIf we look at the specific row for France in 2018:\n`France,FRA,2018,1.4466238,2.6660638,1.1665837,0.57023615,0.025021374,0.061575316`\n\nThe value for **Ages 60\u201379** (the 5th column) is **2.6660638**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

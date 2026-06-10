@@ -1,0 +1,19 @@
+{
+  "run_id": "d600eaff-285b-4196-9bff-45d81f482972",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart88",
+  "question_id": "q294",
+  "js_path": "charts/chart88.js",
+  "csv_path": "charts/files/chart88.csv",
+  "question": "How can I get the latest available value for France females?",
+  "prompt": "@charts/chart88.js @charts/files/chart88.csv Question: How can I get the latest available value for France females?",
+  "prompt_hash": "52d8fe9c29ba08435347a801c9e1b245c7c2e0a914d728fff35bb01768c73461",
+  "returncode": 0,
+  "raw_response": "Based on the provided CSV data (`chart88.csv`), the latest available year for **France** is **2021**. \n\nThe value for **Females** in 2021 is **91.6**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

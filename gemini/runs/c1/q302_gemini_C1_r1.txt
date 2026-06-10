@@ -1,0 +1,19 @@
+{
+  "run_id": "1fc0bca7-2812-4df5-9b60-abbe15e0eb9f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart91",
+  "question_id": "q302",
+  "js_path": "charts/chart91.js",
+  "csv_path": "charts/files/chart91.csv",
+  "question": "What was the overall average age for All births across 1918\u20131973?",
+  "prompt": "@charts/chart91.js @charts/files/chart91.csv Question: What was the overall average age for All births across 1918\u20131973?",
+  "prompt_hash": "d2d6d11fba542cd30c607f2ae52481a9fbb1f5ca6a7db7e14d09af0929368cfc",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the United States from 1918 to 1973, the overall average age for \"All\" births across that period is approximately **26.43 years** (the sum of the 56 yearly averages is 1480.22, which divided by 56 equals 26.4325).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

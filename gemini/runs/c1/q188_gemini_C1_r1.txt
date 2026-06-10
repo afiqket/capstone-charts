@@ -1,0 +1,19 @@
+{
+  "run_id": "67ebc31c-3444-419f-9191-103e6fcd2742",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart53",
+  "question_id": "q188",
+  "js_path": "charts/chart53.js",
+  "csv_path": "charts/files/chart53.csv",
+  "question": "Which country has a higher relative increase in male height: South Korea or Japan?",
+  "prompt": "@charts/chart53.js @charts/files/chart53.csv Question: Which country has a higher relative increase in male height: South Korea or Japan?",
+  "prompt_hash": "aaf1e04133401f091aa499c21416555e8fc33ddc8842f5a071075b46244e79dc",
+  "returncode": 0,
+  "raw_response": "South Korea has a higher relative increase in male height (9.49%) compared to Japan (9.38%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

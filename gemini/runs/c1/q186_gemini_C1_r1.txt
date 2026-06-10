@@ -1,0 +1,19 @@
+{
+  "run_id": "0a06377a-5214-41c5-b8cd-8df66ed4fda3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart52",
+  "question_id": "q186",
+  "js_path": "charts/chart52.js",
+  "csv_path": "charts/files/chart52.csv",
+  "question": "How can I get the data value for Sudan in 2024 from this chart?",
+  "prompt": "@charts/chart52.js @charts/files/chart52.csv Question: How can I get the data value for Sudan in 2024 from this chart?",
+  "prompt_hash": "58b3ffec2a4085a86a0836781a01a3a16152dd3d32a0ee538986274156e967fc",
+  "returncode": 0,
+  "raw_response": "To get the data value for Sudan in 2024 from this chart, you can use any of the available visualization modes. First, ensure that the time slider at the bottom of the chart is set to the year **2024** (this is the default starting position). \n\nThen, depending on the mode you select from the buttons at the top, do the following:\n\n*   **\ud83c\udf0d Map:** Hover your cursor over Sudan on the map. A tooltip will appear displaying the value.\n*   **\ud83d\udcca Bar or \u25a6 Marimekko:** Find the bar labeled \"Sudan\" and hover over it to view the exact value in the tooltip. In the Bar view, the value is also written directly next to the bar.\n*   **\ud83d\udcc8 Line:** Hover your cursor over the rightmost end of the chart (the year 2024 on the x-axis). A tooltip will pop up showing the values for all tracked countries, including Sudan. Additionally, the label at the end of the line for Sudan corresponds to its 2024 value.\n*   **\u2197 Slope:** Look at the right side of the chart (which represents the end year, 2024). There is a direct label next to the line for Sudan showing its final value.\n\nFollowing any of these methods will show you that the value for Sudan in 2024 is **11,559,970** internally displaced people.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:340) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

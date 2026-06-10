@@ -1,0 +1,19 @@
+{
+  "run_id": "feed1396-480f-463a-8d6c-68ccaf547db2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart28",
+  "question_id": "q86",
+  "js_path": "charts/chart28.js",
+  "csv_path": "charts/files/chart28.csv",
+  "question": "How can I get the information of the status of homelessness people in Madagascar?",
+  "prompt": "@charts/chart28.js @charts/files/chart28.csv Question: How can I get the information of the status of homelessness people in Madagascar?",
+  "prompt_hash": "e3dc2cea9bcbcf0e79f89276c3aa59b993b60196c3543b4580bd9d6007dc84db",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the status of homelessness for Madagascar falls under the category of **\"No accommodation\"** (as recorded in the year 2022). \n\nYou can find this information by looking up \"Madagascar\" in the `chart28.csv` file, where its \"IGH Framework Category\" is listed as \"No accommodation\".",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

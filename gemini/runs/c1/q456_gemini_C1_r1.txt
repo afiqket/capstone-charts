@@ -1,0 +1,19 @@
+{
+  "run_id": "807c05ca-50d8-4dd8-922e-d3629adae600",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart142",
+  "question_id": "q456",
+  "js_path": "charts/chart142.js",
+  "csv_path": "charts/files/chart142.csv",
+  "question": "What is the general trend of United States' annual working hours and GDP per capita from 1956 to 2023?",
+  "prompt": "@charts/chart142.js @charts/files/chart142.csv Question: What is the general trend of United States' annual working hours and GDP per capita from 1956 to 2023?",
+  "prompt_hash": "9e7649a09f3ff87141d0ac657dced7b7f1b5139083be78c137889aff7af65842",
+  "returncode": 0,
+  "raw_response": "Based on the data, the general trends for the United States from 1956 to 2023 are:\n\n*   **Annual Working Hours:** The general trend is a decrease. Average working hours dropped from 2,023 hours in 1956 to 1,788 hours in 2023. However, the decline wasn't perfectly linear; hours fell until the early 1980s, rose slightly until 2000 (peaking around 1,887 hours), and have generally trended downwards again since then.\n*   **GDP per Capita:** There has been a steady and significant upward trend. GDP per capita grew consistently from roughly $20,306 in 1956 to $72,886 in 2023. \n\nIn summary, over this 67-year period, economic output per person has increased substantially while the average number of hours worked per year has generally declined.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:27356) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

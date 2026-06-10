@@ -1,0 +1,19 @@
+{
+  "run_id": "96279e17-35ea-464e-8150-49f10ca60cf2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart82",
+  "question_id": "q277",
+  "js_path": "charts/chart82.js",
+  "csv_path": "charts/files/chart82.csv",
+  "question": "What happens if I drag the right slider handle from 2050 to 2020?",
+  "prompt": "@charts/chart82.js @charts/files/chart82.csv Question: What happens if I drag the right slider handle from 2050 to 2020?",
+  "prompt_hash": "46891dd5b8ad09c1029f928f0379d6b415fd9eb5b8b1ed956877ae2465af77ae",
+  "returncode": 0,
+  "raw_response": "When you drag the right slider handle from 2050 to 2020, the following visual updates occur:\n\n1. **Slider:** The right slider handle physically moves to the left to the position representing 2020.\n2. **Chart Title:** The title updates to reflect the new range, changing its end year from 2050 to 2020 (e.g., `\"Number of 'missing women' in the world, 1970 to 2020\"`).\n3. **X-Axis:** The X-axis domain updates so that 2020 becomes the new maximum limit on the far right. The horizontal scale adjusts, effectively zooming in horizontally on the data up to 2020.\n4. **Stacked Areas:** The stacked area paths representing China, India, and the Rest of the World are redrawn. The data points from 2025 to 2050 are removed, and the remaining areas (up to 2020) stretch horizontally to fill the full chart width.\n5. **Labels:** The text labels on the right side of the chart (\"China\", \"India\", \"Rest of World\") reposition themselves to align vertically with the data values at the new rightmost edge (the year 2020). \n6. **Y-Axis:** The Y-axis domain evaluates the maximum total within the new visible range (up to 142.6 million in 2020). Since it rounds up to the nearest 20 million, the Y-axis maximum will remain at 160 million.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

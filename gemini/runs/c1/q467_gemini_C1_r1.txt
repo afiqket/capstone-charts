@@ -1,0 +1,19 @@
+{
+  "run_id": "e158ac7c-082e-4822-907a-4280b01f2097",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart146",
+  "question_id": "q467",
+  "js_path": "charts/chart146.js",
+  "csv_path": "charts/files/chart146.csv",
+  "question": "At what year did we have the first democratically-elected woman chief executive?",
+  "prompt": "@charts/chart146.js @charts/files/chart146.csv Question: At what year did we have the first democratically-elected woman chief executive?",
+  "prompt_hash": "2ecf65707ca1826e1031891762a5d89bb94450d22191b76c57ca8f2559b84315",
+  "returncode": 0,
+  "raw_response": "Based on the provided files, there is no information about the first democratically-elected woman chief executive. The provided chart and CSV data only track the \"Female labor force participation rate\" for countries like Canada, Germany, the United Kingdom, and the United States.\n\nHowever, answering your question from historical facts: the first democratically-elected female chief executive (head of government) in the world was Sirimavo Bandaranaike of Ceylon (now Sri Lanka), who was elected Prime Minister in **1960**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

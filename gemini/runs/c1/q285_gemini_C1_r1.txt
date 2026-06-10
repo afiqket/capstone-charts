@@ -1,0 +1,19 @@
+{
+  "run_id": "056e149c-e99b-42b3-8b3d-d400ad7c1025",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart85",
+  "question_id": "q285",
+  "js_path": "charts/chart85.js",
+  "csv_path": "charts/files/chart85.csv",
+  "question": "How can I get the death rate for 20\u201324 years old in 2023 using the chart?",
+  "prompt": "@charts/chart85.js @charts/files/chart85.csv Question: How can I get the death rate for 20\u201324 years old in 2023 using the chart?",
+  "prompt_hash": "4b1b37d45c9966005d74132d5a30b45e78aef147514dcf072bf2d77af9e6f19e",
+  "returncode": 0,
+  "raw_response": "To get the death rate for 20\u201324 years old in 2023 using the chart, you should follow these steps:\n\n1. **Select the Year:** Use the slider at the bottom of the chart. Drag the circular handle until the current year displays as **2023**. Alternatively, you can click the play button (\u25b6) and pause it when it reaches 2023.\n2. **Locate the Age Group:** Look at the labels on the left side of the chart (the y-axis) and find the row labeled **\"20\u201324 years old\"**.\n3. **Read the Value:** \n   * You can read the exact value directly from the text label displayed just to the right of that specific bar.\n   * Alternatively, you can hover your mouse cursor over the bar for the \"20\u201324 years old\" group to see a tooltip pop up with the exact death rate per 1,000 people.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

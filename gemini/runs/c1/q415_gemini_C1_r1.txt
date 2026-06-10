@@ -1,0 +1,19 @@
+{
+  "run_id": "b6b371d2-16df-4886-ad9f-0dc11796e94b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart128",
+  "question_id": "q415",
+  "js_path": "charts/chart128.js",
+  "csv_path": "charts/files/chart128.csv",
+  "question": "Across all years shown, what is the average difference between male and female values?",
+  "prompt": "@charts/chart128.js @charts/files/chart128.csv Question: Across all years shown, what is the average difference between male and female values?",
+  "prompt_hash": "b14896639c53cb503fc4187b15208c992169d596b5505344d7ce74136c41dba2",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in the dataset for the United States, the difference between the male and female values (number of cigarettes smoked per smoker per day) was calculated for each of the 48 years listed. \n\nThe average of these differences across all years is approximately **3.38**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.",
+  "parsed_answer": ""
+}

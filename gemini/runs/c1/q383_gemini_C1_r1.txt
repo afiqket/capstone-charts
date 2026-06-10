@@ -1,0 +1,19 @@
+{
+  "run_id": "f8f8c2f5-a053-4838-9fe6-c97d387bc218",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart118",
+  "question_id": "q383",
+  "js_path": "charts/chart118.js",
+  "csv_path": "charts/files/chart118.csv",
+  "question": "What does the color green of the line graph represent?",
+  "prompt": "@charts/chart118.js @charts/files/chart118.csv Question: What does the color green of the line graph represent?",
+  "prompt_hash": "cc956457611cd3d55f8aa1ea6946650323eade8e8572fdb340e163bfca45b9e9",
+  "returncode": 0,
+  "raw_response": "In the line graph for **chart 118**, the color **green** represents **Tetracyclines**.\n\nAccording to the chart's source code (`chart118.js`), the antibiotic types are mapped to a specific color palette. The first entry in the `ANTIBIOTIC_COLS` array is **\"Tetracyclines\"**, and it is assigned the first color in the `PALETTE` array, which is **`#2ca02c`** (a standard green color). Additionally, in the data for the United Kingdom, Tetracyclines consistently shows the highest consumption rate among the types listed.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

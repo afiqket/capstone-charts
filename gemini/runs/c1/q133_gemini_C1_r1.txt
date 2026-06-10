@@ -1,0 +1,19 @@
+{
+  "run_id": "a5ba213d-bdcd-40e7-916b-ebf7c90faebf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart38",
+  "question_id": "q133",
+  "js_path": "charts/chart38.js",
+  "csv_path": "charts/files/chart38.csv",
+  "question": "In March 2019, which was higher: CBD cases or Synthetic Cannabinoid cases?",
+  "prompt": "@charts/chart38.js @charts/files/chart38.csv Question: In March 2019, which was higher: CBD cases or Synthetic Cannabinoid cases?",
+  "prompt_hash": "4ab8b6d49d70edea6e663544dded80db21b061c66fee797072dfe1c26f183da8",
+  "returncode": 0,
+  "raw_response": "Based on the data, in March 2019 there were **118** CBD cases and **97** Synthetic Cannabinoid cases. \n\nTherefore, **CBD cases** were higher.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

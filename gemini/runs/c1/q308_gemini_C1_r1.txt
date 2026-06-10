@@ -1,0 +1,19 @@
+{
+  "run_id": "aa84560e-7053-43f4-98e6-da8c1c07d110",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart93",
+  "question_id": "q308",
+  "js_path": "charts/chart93.js",
+  "csv_path": "charts/files/chart93.csv",
+  "question": "At age 30, which cohort had a higher fertility rate in the United States: women born in 1990 or 1970?",
+  "prompt": "@charts/chart93.js @charts/files/chart93.csv Question: At age 30, which cohort had a higher fertility rate in the United States: women born in 1990 or 1970?",
+  "prompt_hash": "6d69383e6de976a0e7f61fd56ad461026cdf05103da5b1f83411a27895ecbdcc",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the United States at age 30:\n\n*   **Women born in 1990:** 0.10151 births per woman\n*   **Women born in 1970:** 0.10784 births per woman\n\nWomen born in **1970** had a higher fertility rate at age 30.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "e3cc6337-0be0-4441-968f-1db2cad70413",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart71",
+  "question_id": "q244",
+  "js_path": "charts/chart71.js",
+  "csv_path": "charts/files/chart71.csv",
+  "question": "What happens if I click the \u201cMap\u201d button?",
+  "prompt": "@charts/chart71.js @charts/files/chart71.csv Question: What happens if I click the \u201cMap\u201d button?",
+  "prompt_hash": "e77775e3471d1066090753113bfe35dac4dd0d21abe6a443d8b6736c8be4f0e5",
+  "returncode": 0,
+  "raw_response": "When you click the \"Map\" button, the following happens:\n\n1. **Button Styling Updates:** The \"Map\" button is highlighted with a blue background (`#3a6fc4`) and white text to indicate it is active, while the \"Bar\" button reverts to a white background with dark gray text.\n2. **Tooltip Hidden:** Any currently visible tooltip is hidden.\n3. **Map Rendered:** The `renderMap()` function is executed, which clears the current visualization (e.g., the Bar chart) and renders a choropleth map showing the global data distribution.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "78e2a02f-a63d-4762-bc0e-5615fc647f45",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart39",
+  "question_id": "q136",
+  "js_path": "charts/chart39.js",
+  "csv_path": "charts/files/chart39.csv",
+  "question": "What happens when user only see Investment contribution in the chart?",
+  "prompt": "@charts/chart39.js @charts/files/chart39.csv Question: What happens when user only see Investment contribution in the chart?",
+  "prompt_hash": "b751c6c4a03985db1167ca8a7d10235e00fe21d535678101a3a425c863b79c53",
+  "returncode": 0,
+  "raw_response": "When a user interacts with the legend to only show the **Investment** contribution, the following happens in the chart:\n\n1. **Other Elements Disappear:** The dark blue line for \"Real GDP\" and the stacked bars for \"Consumption\", \"Net exports\", and \"Government spending\" are hidden from the visualization.\n2. **Only Investment Bars Remain:** The chart will display only a single series of light blue (`#7ec0df`) bars, which represent the quarterly Investment contribution.\n3. **Labels Update:** The percentage labels above (for positive values) and below (for negative values) the bars will update to show the exact values for the Investment contribution alone. For example, it will show a peak of **4.7%** in Oct-21 and a low of **-1.7%** in Apr-22.\n4. **Y-Axis Remains Unchanged:** The Y-axis scale will stay exactly the same (ranging from **-5% to 10%**). This is because the code sets a fixed minimum boundary of `[-5, 10]` (`Math.min(-5, ...)` and `Math.max(10, ...)`), and the Investment values (-1.67 to 4.68) do not exceed these limits to force the axis to rescale.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

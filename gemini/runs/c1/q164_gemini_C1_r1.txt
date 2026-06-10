@@ -1,0 +1,19 @@
+{
+  "run_id": "2bb2b6fc-11dd-4fec-92e9-2b2371632f98",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart45",
+  "question_id": "q164",
+  "js_path": "charts/chart45.js",
+  "csv_path": "charts/files/chart45.csv",
+  "question": "I don't know where my constituency is on the map, but I know the name. To know where my constituency is and the election results of my constituency, what button should I click?",
+  "prompt": "@charts/chart45.js @charts/files/chart45.csv Question: I don't know where my constituency is on the map, but I know the name. To know where my constituency is and the election results of my constituency, what button should I click?",
+  "prompt_hash": "e9bef00000d4904f4ca5bdb86f8fc60f7da5d124db0f236edcef645d8711a9f5",
+  "returncode": 0,
+  "raw_response": "To find your constituency and its election results, you should click the **\"Search constituency\"** button, which is represented by a magnifying glass icon (\ud83d\udd0d). This will open a search panel where you can type in the name of your constituency.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

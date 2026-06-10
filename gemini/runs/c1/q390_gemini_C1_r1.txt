@@ -1,0 +1,19 @@
+{
+  "run_id": "347fabce-b4c7-45fb-9436-d25945970319",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart120",
+  "question_id": "q390",
+  "js_path": "charts/chart120.js",
+  "csv_path": "charts/files/chart120.csv",
+  "question": "If the user clicks the play button at the bottom, what will happen?",
+  "prompt": "@charts/chart120.js @charts/files/chart120.csv Question: If the user clicks the play button at the bottom, what will happen?",
+  "prompt_hash": "42d5d304daea4a8c50081e459e52462f1cdb801ade6078cc48f0bb8886f3d5ee",
+  "returncode": 0,
+  "raw_response": "When the user clicks the play button (which is visible in the **Bar** mode), the chart will start an **animation that cycles through the years** in the dataset (from 2016 to 2022).\n\nSpecifically, the following will happen:\n1.  **Year-by-Year Update:** The visualization will advance through the years one by one every 600 milliseconds.\n2.  **Chart Rerendering:** For each year, the bar charts for all six WHO regions will update to show the specific data for that year.\n3.  **Title Change:** The main title of the chart will dynamically update to display the currently selected year (e.g., \"...antibiotic susceptibility, 2018\").\n4.  **UI Feedback:** \n    *   The play button icon (\"\u25b6\") will change to a pause icon (\"\u23f8\").\n    *   The slider handle will move automatically along the timeline to reflect the passing years.\n5.  **Auto-Stop:** The animation will continue until it reaches the final year (2022), at which point it stops, and the icon reverts to the play symbol. If the button is clicked while the animation is already running, it will pause immediately.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

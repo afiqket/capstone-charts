@@ -1,0 +1,19 @@
+{
+  "run_id": "95a77e49-ae1a-4228-bdd7-89d16974f7bb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart79",
+  "question_id": "q268",
+  "js_path": "charts/chart79.js",
+  "csv_path": "charts/files/chart79.csv",
+  "question": "What happens if I click the Bar button?",
+  "prompt": "@charts/chart79.js @charts/files/chart79.csv Question: What happens if I click the Bar button?",
+  "prompt_hash": "efd8acebbbd76a001200f34b3babccf3cc1d642ba06fec3863910822f90743ca",
+  "returncode": 0,
+  "raw_response": "When you click the \"\ud83d\udcca Bar\" button, the following happens:\n\n1. **Changes the Chart Type:** The visualization switches from a line chart (showing trends over time) to a horizontal bar chart (`renderBar()`).\n2. **Filters Data:** The bar chart compares the various UN population projections specifically for the currently selected year (it excludes the \"Latest observed data\" from this view) and sorts the bars in descending order by population size.\n3. **Shows the Time Slider:** A time slider and play button appear at the bottom (`sliderG.style(\"display\", null)`), allowing you to manually drag to different years or play an animation of the projections changing over time. \n4. **Updates the Title:** The chart title updates to include the currently selected year (e.g., \"World population, comparison of UN projections, 2024\").\n5. **Updates Button Styling:** The Bar button turns blue to indicate it is the active mode, and the Line button turns white. Any open tooltips are also hidden.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

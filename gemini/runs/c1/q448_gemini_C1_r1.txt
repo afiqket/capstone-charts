@@ -1,0 +1,19 @@
+{
+  "run_id": "f00426bf-edfe-499b-893d-6c884d899be8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart139",
+  "question_id": "q448",
+  "js_path": "charts/chart139.js",
+  "csv_path": "charts/files/chart139.csv",
+  "question": "What is the difference in average of life satisfaction score for South America adn North America?",
+  "prompt": "@charts/chart139.js @charts/files/chart139.csv Question: What is the difference in average of life satisfaction score for South America adn North America?",
+  "prompt_hash": "08949e7c62f334bd548a5cc78aad8c743ff68853d728d229582dd57762bf30ce",
+  "returncode": 0,
+  "raw_response": "The average life satisfaction score is **6.05** for South America and **6.21** for North America. \n\nThe absolute difference in the average life satisfaction score between South America and North America is approximately **0.16** (exact difference: `0.159529616910867`).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:12744) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

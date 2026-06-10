@@ -1,0 +1,19 @@
+{
+  "run_id": "9c39110e-70ca-44a1-b409-10b1eb87cc3e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart83",
+  "question_id": "q278",
+  "js_path": "charts/chart83.js",
+  "csv_path": "charts/files/chart83.csv",
+  "question": "What was the number of Excess female deaths in the World in 2015?",
+  "prompt": "@charts/chart83.js @charts/files/chart83.csv Question: What was the number of Excess female deaths in the World in 2015?",
+  "prompt_hash": "e0b0a8a0a803a875e38c9964a2fe1d07cb11f9543fb0e8250f13a2aadf8f06d9",
+  "returncode": 0,
+  "raw_response": "The number of Excess female deaths in the World in 2015 was 1,650,000.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

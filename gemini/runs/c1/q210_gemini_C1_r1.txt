@@ -1,0 +1,19 @@
+{
+  "run_id": "1123ff87-bbd9-4c2b-a2f3-7aa5da0da17f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart60",
+  "question_id": "q210",
+  "js_path": "charts/chart60.js",
+  "csv_path": "charts/files/chart60.csv",
+  "question": "How can I retrieve deeper data in the tree?",
+  "prompt": "@charts/chart60.js @charts/files/chart60.csv Question: How can I retrieve deeper data in the tree?",
+  "prompt_hash": "38a1c350115ec13233e688492cbaa212bf5dcbae68045de11f4b4da6c95c196c",
+  "returncode": 0,
+  "raw_response": "You can retrieve deeper data in the tree by **clicking on the nodes**. \n\nIn the provided code, the tree is initially rendered with all child nodes collapsed (except for the root). An interactive `click` event listener is attached to each node, which toggles its children (expanding them if they are collapsed, or collapsing them if they are expanded) and then updates the chart:\n\n```javascript\n      .on(\"click\", (event, d) => {\n        d.children = d.children ? null : d._children;\n        update(event, d);\n      });\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

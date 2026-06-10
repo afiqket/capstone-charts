@@ -1,0 +1,19 @@
+{
+  "run_id": "4858ed66-144c-43bc-9809-350cabda3082",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart71",
+  "question_id": "q242",
+  "js_path": "charts/chart71.js",
+  "csv_path": "charts/files/chart71.csv",
+  "question": "What does the darker pink/purple color on the map mean?",
+  "prompt": "@charts/chart71.js @charts/files/chart71.csv Question: What does the darker pink/purple color on the map mean?",
+  "prompt_hash": "3f1bd79722bcde6f5ff932ec81e686ae6db819e9159f20ae2d74e1ef0473a661",
+  "returncode": 0,
+  "raw_response": "The darker pink/purple colors on the map represent a higher percentage (up to 50% or more) of the population who say that science helps \"a lot\" in treating anxiety or depression. The color scale ranges from light pink (0%) to dark purple (approaching 50%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

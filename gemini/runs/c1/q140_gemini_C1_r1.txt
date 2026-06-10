@@ -1,0 +1,19 @@
+{
+  "run_id": "93755967-32be-44bb-b392-5485d900995e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart40",
+  "question_id": "q140",
+  "js_path": "charts/chart40.js",
+  "csv_path": "charts/files/chart40.csv",
+  "question": "Which team spent more on sumemr 2023 transfers? Manchester City or Manchester United?",
+  "prompt": "@charts/chart40.js @charts/files/chart40.csv Question: Which team spent more on sumemr 2023 transfers? Manchester City or Manchester United?",
+  "prompt_hash": "203814e84fde48523330f3f40d938a54eb6f66df438cb8342d84e1ffd31f3a52",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Manchester City** spent more on summer 2023 transfers. \n\nHere is the breakdown of their spending:\n* **Manchester City Total: \u20ac241.10m** (Gvardiol 90, Nunes 62, Doku 60, Kovacic 29.1)\n* **Manchester United Total: \u20ac196.70m** (H\u00f8jlund 75, Mount 64.2, Onana 52.5, Bayindir 5)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

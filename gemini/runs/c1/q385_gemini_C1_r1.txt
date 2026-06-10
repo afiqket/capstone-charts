@@ -1,0 +1,19 @@
+{
+  "run_id": "3e328454-bd2b-4643-9925-83b278c49624",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart118",
+  "question_id": "q385",
+  "js_path": "charts/chart118.js",
+  "csv_path": "charts/files/chart118.csv",
+  "question": "In the bar chart how can I see the information for Nitroimidazole for 2018?",
+  "prompt": "@charts/chart118.js @charts/files/chart118.csv Question: In the bar chart how can I see the information for Nitroimidazole for 2018?",
+  "prompt_hash": "48835e1a5976a9fa69c2495331ba7d7374c2c321bb4d6b7bcb6053457b338f72",
+  "returncode": 0,
+  "raw_response": "To see the information for **Nitroimidazole** in **2018** using the bar chart, follow these steps:\n\n1.  **Switch to Bar Mode**: Click the **\"\ud83d\udcca Bar\"** button located at the top left of the chart container.\n2.  **Select the Year**: Use the slider at the bottom of the chart. Drag the circular handle or click along the horizontal line until the label indicates **2018**. \n3.  **Locate the Data**: Once 2018 is selected, the bars will update. Look for the bar labeled **\"Nitroimidazole\"** in the list. The value (daily doses per 1,000 people) will be displayed numerically next to the bar.\n\nFor the United Kingdom in 2018, the value for Nitroimidazole is **0.31** (as seen in the underlying data).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

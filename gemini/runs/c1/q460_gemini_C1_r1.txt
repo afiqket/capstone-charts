@@ -1,0 +1,19 @@
+{
+  "run_id": "0a291cd9-ba49-4b7c-b3e2-71b30f70a727",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart143",
+  "question_id": "q460",
+  "js_path": "charts/chart143.js",
+  "csv_path": "charts/files/chart143.csv",
+  "question": "Choose a year from the slider. What does it change on the graph?",
+  "prompt": "@charts/chart143.js @charts/files/chart143.csv Question: Choose a year from the slider. What does it change on the graph?",
+  "prompt_hash": "1b5a68806c69e473ebb11130661cf679914b8a2746e959b3c0911e34ad96f47a",
+  "returncode": 0,
+  "raw_response": "Choosing a year from the slider updates the **start year** of the graph. \n\nWhen you select a year, the graph filters the data to display only the timeframe from that chosen year up to the latest year available. As a result, it automatically recomputes and updates the following visual elements:\n- The **X-axis** is adjusted to begin at the selected start year.\n- The **Y-axis** and its gridlines rescale based on the maximum value within this newly selected time range.\n- The **area shapes** (representing the number of terrorist attacks per region) are redrawn to match the filtered data.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "4f27ca5e-f62b-493b-87c3-cc34bb899398",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart11",
+  "question_id": "q2",
+  "js_path": "charts/chart11.js",
+  "csv_path": "charts/files/chart11.csv",
+  "question": "Between Netherlands and Finland",
+  "prompt": "@charts/chart11.js @charts/files/chart11.csv Question: Between Netherlands and Finland",
+  "prompt_hash": "e9af307c3abfe46ee01ac3ce24fad6465923b80580d72edc76c9888f8ee227c8",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the **Netherlands** has a higher digital skills percentage (84%) compared to Finland (81%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

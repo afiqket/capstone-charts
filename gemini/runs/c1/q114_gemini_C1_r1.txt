@@ -1,0 +1,18 @@
+{
+  "run_id": "1821c899-5060-4dce-a1d3-203872d80ee4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart1",
+  "question_id": "q114",
+  "js_path": "charts/chart34.js",
+  "csv_path": "charts/files/chart34.csv",
+  "question": "What does the slider do?",
+  "prompt": "@charts/chart34.js @charts/files/chart34.csv Question: What does the slider do?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "The slider allows the user to change the **Time**. As the slider is moved, the visualization updates the flight positions to reflect the specific time selected within the two-hour dataset.",
+  "parsed_answer": ""
+}

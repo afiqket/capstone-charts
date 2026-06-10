@@ -1,0 +1,19 @@
+{
+  "run_id": "d4caa678-16f2-45ec-b2ba-52ef5b31f3c6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart13",
+  "question_id": "q1",
+  "js_path": "charts/chart13.js",
+  "csv_path": "charts/files/chart13.csv",
+  "question": "What was the approximate price per byte of Disk in 1980?",
+  "prompt": "@charts/chart13.js @charts/files/chart13.csv Question: What was the approximate price per byte of Disk in 1980?",
+  "prompt_hash": "30f2d587d70636137d89ea3036994ab1b6a20a0cec8eb2941ad2866e61c027da",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, the price of Disk in 1980 was **$581,068,400 per Terabyte (TB)**. \n\nTo find the approximate price per byte, we divide this by 1 trillion (10\u00b9\u00b2 bytes in a TB):\n\n$581,068,400 / 1,000,000,000,000 = **~$0.00058 per byte** (or about 0.058 cents per byte).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

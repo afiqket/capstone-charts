@@ -1,0 +1,19 @@
+{
+  "run_id": "a9549df5-234e-44d5-bd7c-0a9d5f35f0ac",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart27",
+  "question_id": "q84",
+  "js_path": "charts/chart27.js",
+  "csv_path": "charts/files/chart27.csv",
+  "question": "What happens if I click the play button besides the slider of the map chart?",
+  "prompt": "@charts/chart27.js @charts/files/chart27.csv Question: What happens if I click the play button besides the slider of the map chart?",
+  "prompt_hash": "fae5b1428273f132a05711bf8ef2357920f618df8d7b13022e5a49fc8857fd48",
+  "returncode": 0,
+  "raw_response": "When you click the play button next to the slider on the map chart, the following sequence of events occurs:\n\n1.  **Icon Change**: The play button icon (\"\u25b6\") changes to a pause icon (\"\u23f8\").\n2.  **Year Reset (if at end)**: If the slider is currently at the maximum year (2024), it automatically resets to the minimum year available in the data.\n3.  **Animation Starts**: An automated playback begins, incrementing the displayed year by 1 every 350 milliseconds.\n4.  **Chart and Slider Updates**: With each passing year, the slider handle moves to the right, and the active chart (whether you are viewing the Map, Line, or Bar chart) redraws itself to reflect the data for that specific year.\n5.  **Auto-Stop**: The animation continues automatically until it reaches the maximum year, at which point the playback stops, and the icon reverts to the play button (\"\u25b6\").\n6.  **Pause Functionality**: If you click the button again while the animation is running, it will pause the playback at the current year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

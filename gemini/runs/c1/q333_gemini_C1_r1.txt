@@ -1,0 +1,19 @@
+{
+  "run_id": "678248fa-383a-4726-8283-31beacb36534",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart101",
+  "question_id": "q333",
+  "js_path": "charts/chart101.js",
+  "csv_path": "charts/files/chart101.csv",
+  "question": "How can I get the projected population density of Hong Kong in 2100?",
+  "prompt": "@charts/chart101.js @charts/files/chart101.csv Question: How can I get the projected population density of Hong Kong in 2100?",
+  "prompt_hash": "b28e9281e0397942b3519ac62514ca1079ddc57c83af67bb9e32f94954ea29d6",
+  "returncode": 0,
+  "raw_response": "To get the projected population density of Hong Kong in 2100 from the provided data:\n\n1.  **Directly from the Data File (`chart101.csv`):** Locate the row where the **Entity** is \"Hong Kong\" and the **Year** is \"2100\". The value in the column **\"Population density of the top 100 most populous cities (projected) (Projected)\"** is **8,510.985**.\n2.  **Using the Interactive Chart (`chart101.js`):**\n    *   **Bar Mode:** Click the **\"\ud83d\udcca Bar\"** button, then move the slider at the bottom to the year **2100**. Look for the bar labeled **\"Hong Kong\"**; the value displayed at the end of the bar will be **8,511 per km\u00b2** (the chart rounds the value to the nearest whole number).\n    *   **Line Mode:** Ensure the chart is in **\"\ud83d\udcc8 Line\"** mode and hover your cursor over the rightmost end of the graph (year 2100). A tooltip will appear showing the projected density for Hong Kong.\n\n**Value:** 8,510.985 per km\u00b2 (or approximately **8,511 per km\u00b2**).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

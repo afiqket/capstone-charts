@@ -1,0 +1,19 @@
+{
+  "run_id": "ca85e24b-2100-4841-a352-3c559651487e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart116",
+  "question_id": "q379",
+  "js_path": "charts/chart116.js",
+  "csv_path": "charts/files/chart116.csv",
+  "question": "What is the percentage of urban population using safely managed water in 2016?",
+  "prompt": "@charts/chart116.js @charts/files/chart116.csv Question: What is the percentage of urban population using safely managed water in 2016?",
+  "prompt_hash": "f0c4108707c7593d433c5b58d8af925731aff1860cd8ab310cc3aa420fa3b3dc",
+  "returncode": 0,
+  "raw_response": "Based on the data in `charts/files/chart116.csv`, the percentage of the urban population using safely managed drinking water in **2016** for the **World** was approximately **83.12%** (specifically 83.12048%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:18824) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

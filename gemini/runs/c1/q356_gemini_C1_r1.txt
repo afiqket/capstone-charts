@@ -1,0 +1,19 @@
+{
+  "run_id": "eb8a2c66-18d1-4d1d-8dcb-11f201ae9650",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart109",
+  "question_id": "q356",
+  "js_path": "charts/chart109.js",
+  "csv_path": "charts/files/chart109.csv",
+  "question": "What is the difference between Afghanistan and South America in 2017?",
+  "prompt": "@charts/chart109.js @charts/files/chart109.csv Question: What is the difference between Afghanistan and South America in 2017?",
+  "prompt_hash": "ea627ce31e40a6fbed0966615f198f278fef791bdd72219c5819398107459828",
+  "returncode": 0,
+  "raw_response": "In 2017, the differences between South America and Afghanistan regarding intentional homicides were as follows:\n\n*   **Homicide Rate:** South America had a rate of **23.6** per 100,000 population, while Afghanistan's rate was **6.7**. The difference is **16.9** per 100,000 population.\n*   **Homicide Count:** South America recorded **99,295** homicides, whereas Afghanistan recorded **2,424**. The difference is **96,871** victims.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

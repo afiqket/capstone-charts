@@ -1,0 +1,19 @@
+{
+  "run_id": "4d6f0d8f-b398-462c-b329-21c30d2ad725",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart12",
+  "question_id": "q5",
+  "js_path": "charts/chart12.js",
+  "csv_path": "charts/files/chart12.csv",
+  "question": "What information is displayed when I hover over a point in the Premium revenue chart?",
+  "prompt": "@charts/chart12.js @charts/files/chart12.csv Question: What information is displayed when I hover over a point in the Premium revenue chart?",
+  "prompt_hash": "f3afe5136f951543cea31ccc52f134e1d8b2ca3fcbe1f7d45f30fb99af8d879b",
+  "returncode": 0,
+  "raw_response": "When you hover over a point in the Premium revenue chart, the tooltip displays the following information:\n\n1. **Vehicle Type**: **Premium** (in bold)\n2. **Month**: The specific month and year (e.g., \"Month: Jan 2024\")\n3. **Metric Value**: The total revenue for that month (e.g., \"Total Revenue: 1,517\")",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

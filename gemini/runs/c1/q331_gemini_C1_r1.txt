@@ -1,0 +1,19 @@
+{
+  "run_id": "0fd082b0-2af3-47b1-8845-bdd5b9678341",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart100",
+  "question_id": "q331",
+  "js_path": "charts/chart100.js",
+  "csv_path": "charts/files/chart100.csv",
+  "question": "What happens if I hover over 2020 on the line chart?",
+  "prompt": "@charts/chart100.js @charts/files/chart100.csv Question: What happens if I hover over 2020 on the line chart?",
+  "prompt_hash": "6328d0133df1fe7b8047182fa31327cd4fb673cf7ca8b55c790fa68779a2ae50",
+  "returncode": 0,
+  "raw_response": "When you hover over the year 2020 on the line chart, a vertical hover line appears on the chart at the 2020 position, and a tooltip is displayed containing \"2020\" as the title. \n\nInside the tooltip, it will list the top 9 most populous cities featured on the chart, sorted in descending order by their 2020 population estimates. Each city is displayed with a colored square corresponding to its line, followed by its name and formatted population value:\n\n1. **Jakarta:** 39.1 million\n2. **Tokyo:** 33.7 million\n3. **Dhaka:** 32.6 million\n4. **New Delhi:** 29.1 million\n5. **Shanghai:** 27.7 million\n6. **Cairo:** 24.0 million\n7. **Karachi:** 19.3 million\n8. **New York City:** 14.0 million\n9. **Lahore:** 14.0 million",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:27244) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "b56fecaf-f893-4a34-ad4d-9bb6b09728e6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart139",
+  "question_id": "q447",
+  "js_path": "charts/chart139.js",
+  "csv_path": "charts/files/chart139.csv",
+  "question": "How do user get the GDP per capita data for Brazil in 2019?",
+  "prompt": "@charts/chart139.js @charts/files/chart139.csv Question: How do user get the GDP per capita data for Brazil in 2019?",
+  "prompt_hash": "e7f0054005f2e75475cb8491bdc0b1d03058cad84599c8ec21c6e4c97909df02",
+  "returncode": 0,
+  "raw_response": "To get the GDP per capita data for Brazil in 2019 from the chart, a user should:\n\n1. **Select the Year:** Use the time slider at the bottom of the visualization and drag the handle (or click the play button) until the year **2019** is selected. \n2. **Hover over Brazil:** Locate and hover your mouse cursor over the data point (dot) representing **Brazil** on the scatter plot.\n3. **Read the Tooltip:** A tooltip will appear displaying the specific details for Brazil in 2019, including the exact **GDP per capita** (which will be displayed as **$18,019** based on the underlying data value of `18018.621`).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

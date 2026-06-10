@@ -1,0 +1,19 @@
+{
+  "run_id": "7f92b410-725e-43bc-8f8c-acd38c026678",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart69",
+  "question_id": "q238",
+  "js_path": "charts/chart69.js",
+  "csv_path": "charts/files/chart69.csv",
+  "question": "What happens if I hover over a country on the map?",
+  "prompt": "@charts/chart69.js @charts/files/chart69.csv Question: What happens if I hover over a country on the map?",
+  "prompt_hash": "caea15bcd9dfc6ee8b6f37827e489cce08efd322c818c2fdc6a5d4d821e9dce1",
+  "returncode": 0,
+  "raw_response": "When you hover over a country on the map that has available data, the following happens:\n\n1. **Country Highlight:** The border of the hovered country changes to a thicker, dark grey color (`#333` stroke with `1.5` width), and the country is visually raised above the others.\n2. **Tooltip Display:** A tooltip appears near your cursor displaying:\n   - The name of the country.\n   - The exact value of mental health units in general hospitals per 100,000 people for that country. \n   \nIf the country has no data available, no tooltip is shown.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "63b9bd2d-4614-4801-ab80-d8627f8b9347",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart30",
+  "question_id": "q94",
+  "js_path": "charts/chart30.js",
+  "csv_path": "charts/files/chart30.csv",
+  "question": "I want to compare soil conservation practices between Ethiopia and Ghana only. What action should I do?",
+  "prompt": "@charts/chart30.js @charts/files/chart30.csv Question: I want to compare soil conservation practices between Ethiopia and Ghana only. What action should I do?",
+  "prompt_hash": "7cdd015e2aab0680eb81e5893fbdee12a3fac806c4207efcc0670de22f1348ca",
+  "returncode": 0,
+  "raw_response": "To compare soil conservation practices for only Ethiopia and Ghana, follow these steps:\n\n1. Ensure the **\"SOIL CONSERVATION PRACTICES\"** tab is selected at the top.\n2. Click on the **\"Country\"** dropdown menu to reveal the list of countries.\n3. Uncheck **Mali**, **Malawi**, and **Tanzania** (leaving only **Ethiopia** and **Ghana** checked). \n\n*(Alternatively, you can uncheck the **(All)** option to clear the selection, and then manually check **Ethiopia** and **Ghana**).*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

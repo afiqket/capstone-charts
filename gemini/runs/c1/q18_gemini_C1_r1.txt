@@ -1,0 +1,19 @@
+{
+  "run_id": "7c3ad6c9-5d26-4002-9633-d9a65e0f34ff",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart8",
+  "question_id": "q2",
+  "js_path": "charts/chart8.js",
+  "csv_path": "charts/files/chart8.csv",
+  "question": "Which state appears to be the strongest positive outlier on the map?",
+  "prompt": "@charts/chart8.js @charts/files/chart8.csv Question: Which state appears to be the strongest positive outlier on the map?",
+  "prompt_hash": "0490dace2224983b9ee5e8fbf17dfafa4419d8401c93268367fb276d24b5efa2",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, **Utah** is the strongest positive outlier on the map with a percentage change of **17.5%**, which is significantly higher than any other state in the dataset (the next highest being New Mexico at 13.1% and Nebraska at 10.5%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

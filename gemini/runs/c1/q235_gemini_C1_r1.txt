@@ -1,0 +1,19 @@
+{
+  "run_id": "5bbe9a64-915d-4c6b-8acc-b427a6a2c181",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart68",
+  "question_id": "q235",
+  "js_path": "charts/chart68.js",
+  "csv_path": "charts/files/chart68.csv",
+  "question": "What happens if I click the Bar button?",
+  "prompt": "@charts/chart68.js @charts/files/chart68.csv Question: What happens if I click the Bar button?",
+  "prompt_hash": "0f7a01a19f0359edf3b2ee15dd47d4553832772d6f334acd5d4092889e16eabe",
+  "returncode": 0,
+  "raw_response": "When you click the **Bar** button, the following happens:\n\n1. **Button Styling Updates:** The \"Bar\" button becomes active, changing its background to blue (`#3a6fc4`) and text to white. The \"Map\" button becomes inactive, changing its background to white and text to dark gray (`#333`).\n2. **Tooltip Hides:** Any currently visible map tooltip is hidden.\n3. **Map is Cleared:** The existing map visualization and its legend are removed from the screen.\n4. **Bar Chart Renders:** A horizontal bar chart is drawn in place of the map. It displays the data exclusively for the pre-defined `selectedCountries` (Sweden, India, Ghana, Laos, South Korea, Russia, and Nicaragua), sorted in descending order from the highest percentage to the lowest.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

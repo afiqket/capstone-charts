@@ -1,0 +1,18 @@
+{
+  "run_id": "ff847ca9-fde5-44ec-86eb-cca66de49438",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart127",
+  "question_id": "q411",
+  "js_path": "charts/chart127.js",
+  "csv_path": "charts/files/chart127.csv",
+  "question": "Which decade had the highest average difference between men and women across all countries shown?",
+  "prompt": "@charts/chart127.js @charts/files/chart127.csv Question: Which decade had the highest average difference between men and women across all countries shown?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the **1980s** had the highest average difference between men and women across all countries shown (averaging a difference of about 32.3 deaths per 100,000).",
+  "parsed_answer": ""
+}

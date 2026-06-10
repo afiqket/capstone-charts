@@ -1,0 +1,19 @@
+{
+  "run_id": "109364cd-8f76-490e-b586-269096a43c3d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart29",
+  "question_id": "q90",
+  "js_path": "charts/chart29.js",
+  "csv_path": "charts/files/chart29.csv",
+  "question": "What happen if I hover the United State bar?",
+  "prompt": "@charts/chart29.js @charts/files/chart29.csv Question: What happen if I hover the United State bar?",
+  "prompt_hash": "fc0dcb53b4518755a720bdc57f31e4a4c2ba7e10978536c299e7faaaa4944cd8",
+  "returncode": 0,
+  "raw_response": "When you hover over the \"United States\" bar, a tooltip will appear displaying the following information:\n\n**Title:** United States\n* **Revenue Share:** 45%\n* **Profit Margin:** 17%\n* **Economy:** U.S.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

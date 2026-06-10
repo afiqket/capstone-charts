@@ -1,0 +1,19 @@
+{
+  "run_id": "47c54d15-b67b-4f34-8b6f-d53837b0f883",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart92",
+  "question_id": "q305",
+  "js_path": "charts/chart92.js",
+  "csv_path": "charts/files/chart92.csv",
+  "question": "What percentage of women born in 1973 had 2 births?",
+  "prompt": "@charts/chart92.js @charts/files/chart92.csv Question: What percentage of women born in 1973 had 2 births?",
+  "prompt_hash": "e16b9ddc1dd9cf6e5950e04132820cc5ed47cf5e450d862f00f5bb977900a3bd",
+  "returncode": 0,
+  "raw_response": "Based on the data for the United States (the focus of the provided chart), **34.36%** of women born in 1973 had 2 births.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

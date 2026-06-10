@@ -1,0 +1,19 @@
+{
+  "run_id": "d7ca8e1b-a16f-4a35-9861-0701736a3ac6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart122",
+  "question_id": "q396",
+  "js_path": "charts/chart122.js",
+  "csv_path": "charts/files/chart122.csv",
+  "question": "In which year does Delhi appear for the first time in the bar chart?",
+  "prompt": "@charts/chart122.js @charts/files/chart122.csv Question: In which year does Delhi appear for the first time in the bar chart?",
+  "prompt_hash": "543f549c0fa07f6f86d8b4058bd630fed7fa8b3572f9bfb15c0a2e21d9b96b10",
+  "returncode": 0,
+  "raw_response": "In the bar chart, Delhi appears for the first time in the year **1997**.\n\nAccording to the underlying data in `chart122.csv`, the recorded measurements for Delhi begin in 1997 (with a value of 363 \u03bcg/m\u00b3), whereas the data for London starts much earlier, in 1700. In the interactive visualization (`chart122.js`), the bar chart displays data for the `currentYear` selected; therefore, Delhi would not be present in the bar chart view for any year prior to 1997.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

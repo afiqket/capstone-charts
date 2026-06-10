@@ -1,0 +1,19 @@
+{
+  "run_id": "aa709a0b-4de9-4da1-860e-7e67793fc34f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart48",
+  "question_id": "q173",
+  "js_path": "charts/chart48.js",
+  "csv_path": "charts/files/chart48.csv",
+  "question": "Which response category appears most stable over time for All adults?",
+  "prompt": "@charts/chart48.js @charts/files/chart48.csv Question: Which response category appears most stable over time for All adults?",
+  "prompt_hash": "78bfb939de5430d79182146cd358d7007745edad93bccb72ae3b53abe365544f",
+  "returncode": 0,
+  "raw_response": "Based on the data for \"All adults,\" the **Neither** response category appears most stable over time. It consistently hovers between 33% and 35% across all the surveyed dates, showing the least variation among all the categories.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

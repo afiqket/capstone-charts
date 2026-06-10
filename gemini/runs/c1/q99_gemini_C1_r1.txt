@@ -1,0 +1,19 @@
+{
+  "run_id": "b6ccbaed-ab83-4c79-838e-b3b8dfd21c06",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart31",
+  "question_id": "q99",
+  "js_path": "charts/chart31.js",
+  "csv_path": "charts/files/chart31.csv",
+  "question": "If the chart is showing Imports, which countries appear in the legend and the 2017 bar chart?",
+  "prompt": "@charts/chart31.js @charts/files/chart31.csv Question: If the chart is showing Imports, which countries appear in the legend and the 2017 bar chart?",
+  "prompt_hash": "c7260026f96b35eed7ce594abb8f36da4e863b3e5670a18037bdf10c03acc4d0",
+  "returncode": 0,
+  "raw_response": "Based on the provided code and data, if the chart is showing **Imports**, the countries that appear in the legend and the 2017 bar chart are:\n\n* **Bangladesh**\n* **Vietnam**\n* **China**\n* **Turkey**\n* **Indonesia**\n\nThis is determined by the `presetConfig` for `imports` in the JavaScript file, which sets the specific order, and matches the subset of countries listed under the \"Imports\" title in the CSV data.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "1d99f1b4-7480-45d3-a5ba-91142585b647",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart34",
+  "question_id": "q113",
+  "js_path": "charts/chart34.js",
+  "csv_path": "charts/files/chart34.csv",
+  "question": "Around 1:40 am on 4 September, there are a few airplanes flying across the Atlantic Ocean near Europe. What is the flight number of the airplane flying from France?",
+  "prompt": "@charts/chart34.js @charts/files/chart34.csv Question: Around 1:40 am on 4 September, there are a few airplanes flying across the Atlantic Ocean near Europe. What is the flight number of the airplane flying from France?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the flight number (callsign) of the airplane flying from France across the Atlantic Ocean near Europe around 1:40 am on September 4 is **AFR853**.",
+  "parsed_answer": ""
+}

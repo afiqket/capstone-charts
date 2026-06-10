@@ -1,0 +1,21 @@
+{
+  "run_id": "3ffba348-ecf7-4e8d-ae76-4c9da8b3a580",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "auth_method": "Login with Google",
+  "subscription": "Google AI Pro",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart3",
+  "question_id": "q3",
+  "js_path": "charts/chart3.js",
+  "csv_path": "charts/files/chart3.csv",
+  "question": "How has the number of deaths changed from early wars to modern wars?",
+  "prompt": "@charts/chart3.js @charts/files/chart3.csv Question: How has the number of deaths changed from early wars to modern wars?",
+  "prompt_hash": "32790a9bf71bd945c9a535efddffe424d7cc7320a52626a9b3f0f1728980b6b2",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the number of deaths in US military conflicts has fluctuated dramatically over time, characterized by massive spikes during global and civil conflicts, followed by a sharp decline in modern wars:\n\n*   **Early Wars (1775\u20131848):** The earliest conflicts (Revolutionary War, War of 1812, Mexican-American War) had relatively moderate death tolls ranging from roughly 13,000 to 25,000.\n*   **The Massive Outlier (1861\u20131865):** The American Civil War represents the highest death toll by far, with 750,000 deaths.\n*   **The World Wars (1917\u20131945):** After a period of lower casualties (e.g., the Philippine-American War at ~4,200), death numbers spiked massively again during global conflicts, with 116,516 deaths in World War I and 405,399 in World War II. \n*   **Mid-Century Conflicts (1950\u20131975):** The Korean and Vietnam Wars maintained relatively high, though lower than WWII, death tolls (approximately 54,000 and 58,000, respectively).\n*   **Modern Wars (1991\u2013Present):** In recent decades, the total number of US military deaths has dropped significantly. The Gulf War saw 294 deaths, and the Iraq/Afghanistan Wars have resulted in 6,717 deaths, showing a steep decline in absolute casualties compared to historical major conflicts.",
+  "stderr": "",
+  "parsed_answer": ""
+}

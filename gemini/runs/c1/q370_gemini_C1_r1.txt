@@ -1,0 +1,19 @@
+{
+  "run_id": "e292751d-9f0e-4f2e-8fae-6d6d2da4eb8b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart113",
+  "question_id": "q370",
+  "js_path": "charts/chart113.js",
+  "csv_path": "charts/files/chart113.csv",
+  "question": "What does the strong pink color mean?",
+  "prompt": "@charts/chart113.js @charts/files/chart113.csv Question: What does the strong pink color mean?",
+  "prompt_hash": "45a72cb5e237c8685f0701c9f80506fcb6cb200f17b1975e8ba2118b469608d0",
+  "returncode": 0,
+  "raw_response": "In the provided chart, the **strong pink color** represents a **higher percentage** (share) of people who reported dealing with anxiety or depression by engaging in religious or spiritual activities.\n\nThe chart uses a sequential color scale where lighter, grayish tones represent low percentages (near 0%) and deeper, stronger shades of pink and purple represent higher percentages. Specifically:\n*   The legend indicates that the color intensity increases as the share of the population grows from **0% to 50%**.\n*   Countries with the strongest pink or purple colors (like Nigeria at 79.6% or Zambia at 77.4%, which are capped at the maximum intensity on the map) have the highest reported rates of using religious or spiritual engagement as a coping mechanism for mental health.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

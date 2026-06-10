@@ -1,0 +1,19 @@
+{
+  "run_id": "10281af8-5b64-437a-8f00-f505dc513ffd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart30",
+  "question_id": "q95",
+  "js_path": "charts/chart30.js",
+  "csv_path": "charts/files/chart30.csv",
+  "question": "Does the \"Soil Conservation Practices\" view affect the \"Crops Most Commonly Grown\" view?",
+  "prompt": "@charts/chart30.js @charts/files/chart30.csv Question: Does the \"Soil Conservation Practices\" view affect the \"Crops Most Commonly Grown\" view?",
+  "prompt_hash": "4d48dde704cc6e2aebf5358f0114c649918c1e427569c98ba695ea69533884a0",
+  "returncode": 0,
+  "raw_response": "No, the \"Soil Conservation Practices\" view does not affect the \"Crops Most Commonly Grown\" view. They are rendered as independent charts that are toggled using the tab buttons. Each view maintains its own isolated filter controls and state, so interacting with the filters in one view has no impact on the other.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

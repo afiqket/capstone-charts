@@ -1,0 +1,19 @@
+{
+  "run_id": "ee7c0b8c-eb70-494f-8fe8-9509d9937db4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart32",
+  "question_id": "q105",
+  "js_path": "charts/chart32.js",
+  "csv_path": "charts/files/chart32.csv",
+  "question": "What is size (value) of Newham's Cemetery space? No units needed",
+  "prompt": "@charts/chart32.js @charts/files/chart32.csv Question: What is size (value) of Newham's Cemetery space? No units needed",
+  "prompt_hash": "5fd23f84ba1d2022bc6763bf16524ba8945ac1c2f764b67073ddee4b4208fba1",
+  "returncode": 0,
+  "raw_response": "217966.669",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

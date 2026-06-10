@@ -1,0 +1,19 @@
+{
+  "run_id": "9e9e688a-110f-42ea-a23c-51796fe81355",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart10",
+  "question_id": "q5",
+  "js_path": "charts/chart10.js",
+  "csv_path": "charts/files/chart10.csv",
+  "question": "If I click or hover on the Junior Tableau segment",
+  "prompt": "@charts/chart10.js @charts/files/chart10.csv Question: If I click or hover on the Junior Tableau segment",
+  "prompt_hash": "0a3d3845cd3d678d894c2501111056e54984df1f6e94b6e62376ca57b249b587",
+  "returncode": 0,
+  "raw_response": "If you hover over the Junior Tableau segment, the tooltip will display:\n\n*   **Skill:** Tableau\n*   **Seniority:** Junior\n*   **Distinct Job Count:** 45\n\n*(Note: Clicking on the segment does not trigger any additional action in this chart as no `onclick` event is defined, only `mouseover`, `mousemove`, and `mouseout` events for the tooltip).*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

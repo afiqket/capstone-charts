@@ -1,0 +1,19 @@
+{
+  "run_id": "caeabf6e-16dd-4622-ab6b-2f28f1e03c7f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart128",
+  "question_id": "q414",
+  "js_path": "charts/chart128.js",
+  "csv_path": "charts/files/chart128.csv",
+  "question": "What is the overall trend seen for both men and women for this chart?",
+  "prompt": "@charts/chart128.js @charts/files/chart128.csv Question: What is the overall trend seen for both men and women for this chart?",
+  "prompt_hash": "fc5ced0081207e1b554ba2cf02bb9f85f41e16a1cf18d6d0e891d7f1485d57f9",
+  "returncode": 0,
+  "raw_response": "The overall trend for both men and women in this chart is a **long-term decline** in the number of cigarettes smoked per smoker per day. \n\nBased on the data for the United States from 1947 to 2014:\n*   **Long-Term Decrease:** Both genders show a significant reduction in daily cigarette consumption. Men's consumption dropped from **24** cigarettes per day in 1947 to **15** in 2014, while women's dropped from **18** to **12** over the same period.\n*   **Steady Decline Post-1980:** After a peak around 1980 (where men averaged 23 and women 19.5 cigarettes), there has been a consistent and steady downward trend for both groups.\n*   **Consistent Gender Gap:** Throughout the entire period, men have consistently smoked more cigarettes per smoker per day than women, though both trends follow a similar downward trajectory.\n*   **Lowest Levels:** By 2014, both men and women reached their lowest recorded consumption levels in the dataset (with the exception of a brief, sharp dip in the late 1950s).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool write_file: Access denied: plan path (C:\\Users\\anees\\.gemini\\tmp\\c1-gemini-1\\plans\\analyze_trend.md) must be within the designated plans directory (C:\\Users\\anees\\.gemini\\tmp\\c1-gemini-1\\2b7667f9-963c-49e7-add2-f24a864576c1\\plans).\n[ERROR] Invalid stream: The model returned an empty response or malformed tool call.",
+  "parsed_answer": ""
+}

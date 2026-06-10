@@ -1,0 +1,19 @@
+{
+  "run_id": "46c99d18-5b11-4ebb-83a2-d80e77f1c5b3",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart32",
+  "question_id": "q102",
+  "js_path": "charts/chart32.js",
+  "csv_path": "charts/files/chart32.csv",
+  "question": "What are the 3 Boroughs that has the largest Play Space?",
+  "prompt": "@charts/chart32.js @charts/files/chart32.csv Question: What are the 3 Boroughs that has the largest Play Space?",
+  "prompt_hash": "e4cbf1b7838214197cf137365a6d7ca7e7baef8befaaa0c62cf29b885d20f519",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the 3 Boroughs with the largest Play Space are:\n\n1. **Bromley** (217,139.536)\n2. **Hillingdon** (212,738.736)\n3. **Croydon** (177,308.001)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

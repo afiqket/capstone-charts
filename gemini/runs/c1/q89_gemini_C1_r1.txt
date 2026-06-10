@@ -1,0 +1,19 @@
+{
+  "run_id": "f76925ce-4bb6-440e-b5c7-c31f0d9b757c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart29",
+  "question_id": "q89",
+  "js_path": "charts/chart29.js",
+  "csv_path": "charts/files/chart29.csv",
+  "question": "How can I identify which country is developed or emerging",
+  "prompt": "@charts/chart29.js @charts/files/chart29.csv Question: How can I identify which country is developed or emerging",
+  "prompt_hash": "0f401ae70819a9c8e78566631b4376608c5f5dff0a5f0fed57a3a9cd77edca0f",
+  "returncode": 0,
+  "raw_response": "You can identify whether a country is developed or emerging in the chart through two main ways:\n\n1. **By Color (using the Legend):** The chart uses color coding for the bars based on the economy type. According to the top-left legend:\n   *   **Teal/Blue-green (`#2c8794`)** indicates a **Developed** country.\n   *   **Gray (`#9aa7a8`)** indicates an **Emerging** country.\n   *   *(Pink is used specifically for the U.S.)*\n\n2. **By Hovering (Tooltip):** If you hover your mouse over any of the bars, a tooltip will appear. The third line of the tooltip is labeled **\"Economy\"** and explicitly states whether that specific country/region is \"Developed\", \"Emerging\", or \"U.S.\".",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

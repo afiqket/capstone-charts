@@ -1,0 +1,17 @@
+{
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart2",
+  "question_id": "q2",
+  "js_path": "charts/chart2.js",
+  "csv_path": "charts/files/chart2.csv",
+  "question": "Which occupation has an unexpectedly high immigrant percentage compared to its wage category?",
+  "prompt": "@charts/chart2.js @charts/files/chart2.csv Question: Which occupation has an unexpectedly high immigrant percentage compared to its wage category?",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Carpenters** have an unexpectedly high immigrant percentage (80.1%) compared to their wage category. \n\nDespite being classified as a **Middle-wage job**, carpenters have the highest immigrant percentage of *any* occupation in the dataset, surpassing even the most heavily immigrant-populated **Low-wage jobs** like Maids and housekeeping cleaners (77.8%).",
+  "stderr": "",
+  "parsed_answer": ""
+}

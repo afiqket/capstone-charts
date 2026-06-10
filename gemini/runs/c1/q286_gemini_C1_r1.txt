@@ -1,0 +1,19 @@
+{
+  "run_id": "6043852d-0b52-4770-bd81-caadbe8f02bf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart85",
+  "question_id": "q286",
+  "js_path": "charts/chart85.js",
+  "csv_path": "charts/files/chart85.csv",
+  "question": "What happens if I hover over the 85\u201389 years old bar in 2023?",
+  "prompt": "@charts/chart85.js @charts/files/chart85.csv Question: What happens if I hover over the 85\u201389 years old bar in 2023?",
+  "prompt_hash": "bb0c70cf15e401173336812ff81e042b7b738001f274e1f25e798edd2e76acb2",
+  "returncode": 0,
+  "raw_response": "When you hover over the **85\u201389 years old** bar in 2023 for the United States, the following happens:\n\n1. **Bar Highlighting:** All other bars in the chart fade to 50% opacity (`0.5`), while the hovered bar remains fully opaque (`1`).\n2. **Tooltip Display:** A tooltip appears near the cursor showing the age group title **\"85\u201389 years old\"**.\n3. **Value Display:** The tooltip displays the annual death rate for that group, which is **\"102.49 per 1,000\"**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:7040) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

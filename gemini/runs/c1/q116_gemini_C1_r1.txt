@@ -1,0 +1,19 @@
+{
+  "run_id": "d6eed093-be3f-4919-8d23-725220a3b493",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart35",
+  "question_id": "q116",
+  "js_path": "charts/chart35.js",
+  "csv_path": "charts/files/chart35.csv",
+  "question": "What is the magnitude of the earthquake that happened in Sobral, Brazil?",
+  "prompt": "@charts/chart35.js @charts/files/chart35.csv Question: What is the magnitude of the earthquake that happened in Sobral, Brazil?",
+  "prompt_hash": "1c55b164df293b15fa1e608dc34308d609bd7199adcd49d5e209b23b6eaed3b6",
+  "returncode": 0,
+  "raw_response": "The magnitude of the earthquake that happened in Sobral, Brazil is 4.3.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:11340) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n[LocalAgentExecutor] Blocked call: Unauthorized tool call: 'run_shell_command' is not available to this agent.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "46e7319d-ca24-440c-ad65-85cbbf6e711f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart4",
+  "question_id": "q1",
+  "js_path": "charts/chart4.js",
+  "csv_path": "charts/files/chart4.csv",
+  "question": "What is Malaysia\u2019s total trade (% of GDP) in 1990?",
+  "prompt": "@charts/chart4.js @charts/files/chart4.csv Question: What is Malaysia\u2019s total trade (% of GDP) in 1990?",
+  "prompt_hash": "fad33b2d66f3ab59e882ca3a89957741b5c87ec431643e214772a7687f7fa1b9",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, Malaysia's total trade as a percentage of GDP in 1990 was **133.3252156%** (or approximately **133.3%** as formatted in the chart's tooltip).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

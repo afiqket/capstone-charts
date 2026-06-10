@@ -1,0 +1,19 @@
+{
+  "run_id": "d6f7a293-a9ff-404e-8510-329014ee9d50",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart36",
+  "question_id": "q124",
+  "js_path": "charts/chart36.js",
+  "csv_path": "charts/files/chart36.csv",
+  "question": "What does the button to the left of the bar do?",
+  "prompt": "@charts/chart36.js @charts/files/chart36.csv Question: What does the button to the left of the bar do?",
+  "prompt_hash": "7300e0888a9607d540817059f402a14070c21093ba4576298cbfb543884f8875",
+  "returncode": 0,
+  "raw_response": "Based on the provided code, the button to the left of the slider bar is a **play/pause button** that controls the animation of the chart over time. \n\nWhen clicked, it triggers the following event listener:\n```javascript\nbutton.on(\"click\", () => {\n  playing ? pause() : play();\n});\n```\nThis allows the user to start or stop the time-lapse animation of the FIFA rankings.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

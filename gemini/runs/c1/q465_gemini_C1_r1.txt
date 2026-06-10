@@ -1,0 +1,19 @@
+{
+  "run_id": "230bb9c9-6754-4597-ad98-3772f8ead2b1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart145",
+  "question_id": "q465",
+  "js_path": "charts/chart145.js",
+  "csv_path": "charts/files/chart145.csv",
+  "question": "Can I click on the bars in the bar chart view?",
+  "prompt": "@charts/chart145.js @charts/files/chart145.csv Question: Can I click on the bars in the bar chart view?",
+  "prompt_hash": "8c3a8fb74793bfdb71f8b91e406955befaf0a4616acbe2aa10199f9af6797a20",
+  "returncode": 0,
+  "raw_response": "Based on the provided code in `@charts/chart145.js`, no, you cannot click on the bars in the bar chart view. \n\nIf you look at the `drawBar()` function, the bars are drawn as `<rect>` elements, but there are no click event listeners (like `.on(\"click\", ...)`) attached to them. They are purely visual.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

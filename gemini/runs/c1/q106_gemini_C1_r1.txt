@@ -1,0 +1,19 @@
+{
+  "run_id": "243ef205-d7c1-41c2-8746-5fa6ac6dacef",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart33",
+  "question_id": "q106",
+  "js_path": "charts/chart33.js",
+  "csv_path": "charts/files/chart33.csv",
+  "question": "Can you click or hover on the graphs?",
+  "prompt": "@charts/chart33.js @charts/files/chart33.csv Question: Can you click or hover on the graphs?",
+  "prompt_hash": "7db638b678df16fe2e0a3cf67a51715b829a4cfd5e75207b94e73543b8943f35",
+  "returncode": 0,
+  "raw_response": "No, you cannot click or hover on the graphs. The chart elements (bars and lines) do not have any interaction events like tooltips or clickable actions implemented. You can only interact with the dropdown menus (Region, Sex, Educational Attainment, Chart Type, and Breakout) to update the data and chart type.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

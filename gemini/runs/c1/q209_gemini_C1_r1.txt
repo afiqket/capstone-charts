@@ -1,0 +1,19 @@
+{
+  "run_id": "7f7ad35b-a05c-4099-a035-af31023c5c63",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart60",
+  "question_id": "q209",
+  "js_path": "charts/chart60.js",
+  "csv_path": "charts/files/chart60.csv",
+  "question": "What subcategories are inside analytics?",
+  "prompt": "@charts/chart60.js @charts/files/chart60.csv Question: What subcategories are inside analytics?",
+  "prompt_hash": "eeae541e42382820d20e154da8088966a21e4f64e791e5d059a7f7a50e6c00ba",
+  "returncode": 0,
+  "raw_response": "The subcategories inside **analytics** are:\n\n* **cluster**\n* **graph**\n* **optimization**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

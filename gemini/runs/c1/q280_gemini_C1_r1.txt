@@ -1,0 +1,19 @@
+{
+  "run_id": "be1f08f0-beef-4524-bfd3-b354191cfed6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart83",
+  "question_id": "q280",
+  "js_path": "charts/chart83.js",
+  "csv_path": "charts/files/chart83.csv",
+  "question": "What happens if I hover over the 2010 point on the line chart?",
+  "prompt": "@charts/chart83.js @charts/files/chart83.csv Question: What happens if I hover over the 2010 point on the line chart?",
+  "prompt_hash": "0beef48a52fddca2676e3ea32228d195c170cada080a8f77b3dc0281168560ca",
+  "returncode": 0,
+  "raw_response": "When you hover over the 2010 point on the line chart, a tooltip will appear displaying the data for that year. Specifically, it will show:\n\n**Title:** `World, 2010`\n\n**Data Rows:**\n* `Excess female deaths: 1.66 million`\n* `Missing female births: 1.71 million`",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

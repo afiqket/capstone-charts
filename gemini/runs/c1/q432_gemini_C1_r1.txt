@@ -1,0 +1,19 @@
+{
+  "run_id": "e3abd7a9-6bce-4711-a941-ea278ea6538b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart134",
+  "question_id": "q432",
+  "js_path": "charts/chart134.js",
+  "csv_path": "charts/files/chart134.csv",
+  "question": "From 2017 to 2023, which region had the largest increase in average food expenditure per person?",
+  "prompt": "@charts/chart134.js @charts/files/chart134.csv Question: From 2017 to 2023, which region had the largest increase in average food expenditure per person?",
+  "prompt_hash": "2446e243eb9acd3f3c31ccc999518f529ec82e27018f85e5f63e380610f0850f",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, we can calculate the average food expenditure per person for each region in 2017 and 2023.\n\n*   **Europe**\n    *   2017 Average: $2,096.21\n    *   2023 Average: $2,714.97\n    *   **Increase: $618.76**\n*   **North America**\n    *   2017 Average: $1,593.07\n    *   2023 Average: $2,110.42\n    *   **Increase: $517.35**\n*   **Oceania**\n    *   2017 Average: $3,151.45\n    *   2023 Average: $3,542.98\n    *   **Increase: $391.53**\n*   **Asia**\n    *   2017 Average: $1,276.47\n    *   2023 Average: $1,601.56\n    *   **Increase: $325.09**\n*   **South America**\n    *   2017 Average: $1,249.01\n    *   2023 Average: $1,414.12\n    *   **Increase: $165.11**\n*   **Africa**\n    *   2017 Average: $576.95\n    *   2023 Average: $615.60\n    *   **Increase: $38.65**\n\n**Europe** had the largest increase in average food expenditure per person from 2017 to 2023.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "75ca6c09-e857-4881-a8ca-edbdd5239807",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart104",
+  "question_id": "q343",
+  "js_path": "charts/chart104.js",
+  "csv_path": "charts/files/chart104.csv",
+  "question": "Which has the highest percent change out of all the states?",
+  "prompt": "@charts/chart104.js @charts/files/chart104.csv Question: Which has the highest percent change out of all the states?",
+  "prompt_hash": "5cbd8828dcef78bc571cd008da7b1b6bad56fa3d725f7c05a7ba20ca431983f4",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in `charts/files/chart104.csv`, **Maryland** has the highest percent change with a value of **55.6%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

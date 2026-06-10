@@ -1,0 +1,19 @@
+{
+  "run_id": "83e01a92-a0ae-49db-b93b-1820bd835614",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart95",
+  "question_id": "q314",
+  "js_path": "charts/chart95.js",
+  "csv_path": "charts/files/chart95.csv",
+  "question": "What is the Total fertility rate in Sweden in 1990?",
+  "prompt": "@charts/chart95.js @charts/files/chart95.csv Question: What is the Total fertility rate in Sweden in 1990?",
+  "prompt_hash": "194460d6c5b0c98016675d44c062739e298faf721f9bb217550f7a1ffd1e2d92",
+  "returncode": 0,
+  "raw_response": "Based on the data in `@charts/files/chart95.csv`, the Total fertility rate in Sweden in 1990 was **2.14**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:8876) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

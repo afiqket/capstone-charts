@@ -1,0 +1,19 @@
+{
+  "run_id": "dabbb92d-57f7-412e-b8a8-f8fafdab3354",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart125",
+  "question_id": "q404",
+  "js_path": "charts/chart125.js",
+  "csv_path": "charts/files/chart125.csv",
+  "question": "In 1995 which of the pollutants was the highest?",
+  "prompt": "@charts/chart125.js @charts/files/chart125.csv Question: In 1995 which of the pollutants was the highest?",
+  "prompt_hash": "1a42aecc1d9533fc775739097f942e50736191be9454bcb191cc040f9c683178",
+  "returncode": 0,
+  "raw_response": "In 1995, for the **United States**, the pollutant with the highest emission level (indexed to base years 1970 or 1990) was **Ammonia**, with a value of **99.9**.\n\nAccording to the data for the United States in 1995:\n*   **Ammonia:** 99.9\n*   **PM\u2082.\u2085:** 94.67\n*   **Nitrogen oxides (NOx):** 92.83\n*   **Volatile organic compounds (VOCs):** 63.6\n*   **Sulphur dioxide (SO\u2082):** 59.64\n*   **PM\u2081\u2080:** 25.08",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

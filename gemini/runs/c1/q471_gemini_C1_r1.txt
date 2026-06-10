@@ -1,0 +1,19 @@
+{
+  "run_id": "5c809749-7dba-4126-a21e-88caf4e5e14b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart147",
+  "question_id": "q471",
+  "js_path": "charts/chart147.js",
+  "csv_path": "charts/files/chart147.csv",
+  "question": "Generally, did people with higher doeses of vaccines have less deaths?",
+  "prompt": "@charts/chart147.js @charts/files/chart147.csv Question: Generally, did people with higher doeses of vaccines have less deaths?",
+  "prompt_hash": "7cced40a150b850ff3932ad579c90c021e4e9b69c47e78d28b6118a767f7e0e0",
+  "returncode": 0,
+  "raw_response": "Yes.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

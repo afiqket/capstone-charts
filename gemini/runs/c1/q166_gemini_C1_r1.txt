@@ -1,0 +1,19 @@
+{
+  "run_id": "fd58e463-6d68-497e-b5eb-440158d57973",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart45",
+  "question_id": "q166",
+  "js_path": "charts/chart45.js",
+  "csv_path": "charts/files/chart45.csv",
+  "question": "When I hover on a constituency, I can't see all the candidates. What should I do to see all the names and portraits of the candidates?",
+  "prompt": "@charts/chart45.js @charts/files/chart45.csv Question: When I hover on a constituency, I can't see all the candidates. What should I do to see all the names and portraits of the candidates?",
+  "prompt_hash": "57446ebbf94a0a786eb2f31cfb851bf83fe76160c95fc2a0451645c8a5b13937",
+  "returncode": 0,
+  "raw_response": "To see all the candidates, you should **click on the constituency**. \n\nBy default, hovering only shows a floating tooltip that follows your mouse and cannot be scrolled. Clicking on the constituency \"pins\" the tooltip in place and enables scrolling within the tooltip body, allowing you to view the full list of candidates and their portraits.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

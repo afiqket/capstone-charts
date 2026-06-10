@@ -1,0 +1,19 @@
+{
+  "run_id": "049de54d-3002-4410-b51f-47b86c3352db",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart115",
+  "question_id": "q376",
+  "js_path": "charts/chart115.js",
+  "csv_path": "charts/files/chart115.csv",
+  "question": "What are the average of the antibiotic usage for Asian countries?",
+  "prompt": "@charts/chart115.js @charts/files/chart115.csv Question: What are the average of the antibiotic usage for Asian countries?",
+  "prompt_hash": "ecc05f35f1bd35dc8ee1d90320b745dd0dca72c574f9b3e1d039a6bad770a52d",
+  "returncode": 0,
+  "raw_response": "To find the average antibiotic usage for Asian countries in 2020, we identify all countries categorized under the \"Asia\" region in the provided dataset and calculate their mean value.\n\nBased on the data in `chart115.csv`, there are **48 countries/entities** listed in the **Asia** region:\n\n| Entity | Antibiotic Use (mg/PCU) | Entity | Antibiotic Use (mg/PCU) |\n| :--- | :--- | :--- | :--- |\n| Afghanistan | 67.548805 | Malaysia | 90.55596 |\n| Armenia | 83.974335 | Mongolia | 252.78731 |\n| Azerbaijan | 94.63444 | Myanmar | 91.840385 |\n| Bahrain | 87.99928 | Nepal | 102.81655 |\n| Bangladesh | 93.60142 | North Korea | 83.744736 |\n| Bhutan | 109.80575 | Oman | 75.25929 |\n| Brunei | 57.93007 | Pakistan | 101.17341 |\n| Cambodia | 123.39872 | Palestine | 94.70892 |\n| China | 208.46768 | Philippines | 116.32984 |\n| East Timor | 12.87329 | Qatar | 53.69376 |\n| Georgia | 82.61754 | Saudi Arabia | 42.535236 |\n| Hong Kong | 72.16804 | Singapore | 64.36674 |\n| India | 114.25339 | South Korea | 121.5339 |\n| Indonesia | 87.04435 | Sri Lanka | 75.823845 |\n| Iran | 145.3703 | Syria | 88.994446 |\n| Iraq | 56.085197 | Taiwan | 111.91895 |\n| Israel | 51.04705 | Tajikistan | 89.30186 |\n| Japan | 62.793568 | Thailand | 337.77734 |\n| Jordan | 41.05746 | Turkey | 68.738304 |\n| Kazakhstan | 88.820786 | Turkmenistan | 115.282005 |\n| Kuwait | 51.577732 | United Arab Emirates | 52.438774 |\n| Kyrgyzstan | 107.879776 | Uzbekistan | 83.21526 |\n| Laos | 107.583084 | Vietnam | 124.16831 |\n| Lebanon | 29.444818 | Yemen | 52.33308 |\n\n**Calculation:**\n*   **Sum of values:** 4529.315092 mg/PCU\n*   **Count of countries:** 48\n*   **Average:** 4529.315092 / 48 \u2248 **94.36**\n\nThe average antibiotic usage for Asian countries is approximately **94.36 mg/PCU**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

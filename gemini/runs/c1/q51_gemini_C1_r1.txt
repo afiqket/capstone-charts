@@ -1,0 +1,19 @@
+{
+  "run_id": "ac4ca17d-1ac0-4e72-b6fd-111a410432a4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart16",
+  "question_id": "q51",
+  "js_path": "charts/chart16.js",
+  "csv_path": "charts/files/chart16.csv",
+  "question": "What happens if I hover over Canada on the map?",
+  "prompt": "@charts/chart16.js @charts/files/chart16.csv Question: What happens if I hover over Canada on the map?",
+  "prompt_hash": "ec8faa4d9065b72dbcadddffffc6a7fb621b9ace539e33076c30b2a7c058bde1",
+  "returncode": 0,
+  "raw_response": "If you hover over Canada on the map, the following visual changes will occur:\n\n1. **Highlighting:** The border of Canada will be highlighted with a dark grey/black stroke (`#333`) and its stroke width will increase to `1.5`, making it stand out from the other countries (which have a white border of `0.4` width). The element is also brought to the front (`raise()`).\n2. **Tooltip Display:** A tooltip with a white background and drop-shadow will appear near the cursor. Inside the tooltip, you will see:\n   - The country name: **Canada** in bold.\n   - A subtitle: **\"2020 \u00b7 % took prescribed medication\"**.\n   - The data value: **73.0%** in bold red text (the value `72.9736` from the CSV is formatted to 1 decimal place).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

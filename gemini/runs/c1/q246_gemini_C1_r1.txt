@@ -1,0 +1,19 @@
+{
+  "run_id": "20d43701-8232-4c14-b65c-35210543663f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart72",
+  "question_id": "q246",
+  "js_path": "charts/chart72.js",
+  "csv_path": "charts/files/chart72.csv",
+  "question": "How can I get the psychiatrist value for Afghanistan?",
+  "prompt": "@charts/chart72.js @charts/files/chart72.csv Question: How can I get the psychiatrist value for Afghanistan?",
+  "prompt_hash": "f8493b8169cd713122cd835386b6294956756a66d1c1834088fd0d38228bfccc",
+  "returncode": 0,
+  "raw_response": "To get the psychiatrist value for Afghanistan, you can look up its entry in the dataset:\n\n1. **From the CSV file (`charts/files/chart72.csv`)**: \n   Find the row where the `Entity` is `Afghanistan`. \n   `Afghanistan,AFG,2019,0`\n   The value in the \"Total number of psychiatrists per 100,000 population\" column is **0**.\n\n2. **From the JavaScript Code (`charts/chart72.js`)**:\n   The value is stored in the `dataByCountry` map and can be retrieved using:\n   ```javascript\n   dataByCountry.get(\"Afghanistan\") // Returns 0\n   ```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

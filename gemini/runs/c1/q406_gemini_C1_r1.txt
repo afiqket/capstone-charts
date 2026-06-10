@@ -1,0 +1,19 @@
+{
+  "run_id": "873dd7bb-7910-4c57-8d4f-95c979447d37",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart125",
+  "question_id": "q406",
+  "js_path": "charts/chart125.js",
+  "csv_path": "charts/files/chart125.csv",
+  "question": "What is the difference between Ammonia and Nitrogen Oxides in 2003?",
+  "prompt": "@charts/chart125.js @charts/files/chart125.csv Question: What is the difference between Ammonia and Nitrogen Oxides in 2003?",
+  "prompt_hash": "6eee3b4f1cf517c04e7e792b663f517a1edf1053912afa2a1cf05ca1e979a5b4",
+  "returncode": 0,
+  "raw_response": "In 2003, for the United States, the values for the two pollutants were:\n\n*   **Ammonia:** 99.89\n*   **Nitrogen oxides (NOx):** 84.26\n\nThe difference between Ammonia and Nitrogen Oxides in 2003 was **15.63**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

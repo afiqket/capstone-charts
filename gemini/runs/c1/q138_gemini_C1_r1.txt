@@ -1,0 +1,19 @@
+{
+  "run_id": "04a262ad-848c-44e2-a185-0ce51e404f14",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart39",
+  "question_id": "q138",
+  "js_path": "charts/chart39.js",
+  "csv_path": "charts/files/chart39.csv",
+  "question": "Compare Jul-22 and Jan-25. How did Investment and Net exports affect GDP differently in these two quarters?",
+  "prompt": "@charts/chart39.js @charts/files/chart39.csv Question: Compare Jul-22 and Jan-25. How did Investment and Net exports affect GDP differently in these two quarters?",
+  "prompt_hash": "0b1a3b8ae03697b44f2bad90fe949dabcf1d18ab476daecd090c2f55767bbc10",
+  "returncode": 0,
+  "raw_response": "In Jul-22, **Net exports** contributed positively to GDP (2.5%), while **Investment** contributed negatively (-1.05%). \n\nIn Jan-25, the roles were completely reversed: **Investment** contributed positively (3.98%), while **Net exports** contributed negatively (-4.9%).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

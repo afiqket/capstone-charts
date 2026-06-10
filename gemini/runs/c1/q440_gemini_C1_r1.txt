@@ -1,0 +1,19 @@
+{
+  "run_id": "8a30b3b3-09dc-4c20-b50f-ce17296744f9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart137",
+  "question_id": "q440",
+  "js_path": "charts/chart137.js",
+  "csv_path": "charts/files/chart137.csv",
+  "question": "What is the overall trend that can be seen in the chart?",
+  "prompt": "@charts/chart137.js @charts/files/chart137.csv Question: What is the overall trend that can be seen in the chart?",
+  "prompt_hash": "85eb2a20f5bb5d711674a71dc2e58636f84e081be603653d7a73f96218d7a31c",
+  "returncode": 0,
+  "raw_response": "Based on the provided chart and data, the overall trend is a **significant increase in the number of days off from work for vacations and holidays** over the period from 1870 to 2000 across all the highlighted countries (United States, United Kingdom, Netherlands, France, and Germany). \n\nWhile there are some slight fluctuations (such as dips around 1950 for some European countries or a slight decrease for the US from 1990 to 2000), the long-term trajectory for every country shown is strongly upward.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

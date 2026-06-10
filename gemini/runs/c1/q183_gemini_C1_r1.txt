@@ -1,0 +1,19 @@
+{
+  "run_id": "eba5b5d2-6a49-4ae4-8fe7-7676970c23c5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart51",
+  "question_id": "q183",
+  "js_path": "charts/chart51.js",
+  "csv_path": "charts/files/chart51.csv",
+  "question": "How can I use the line chart to get Iraq\u2019s value for a certain year?",
+  "prompt": "@charts/chart51.js @charts/files/chart51.csv Question: How can I use the line chart to get Iraq\u2019s value for a certain year?",
+  "prompt_hash": "f8fa32fb6bacdffef4f1a81c3a2104b8f60dfa5d08bd66c15f681067a3dc882c",
+  "returncode": 0,
+  "raw_response": "To get Iraq\u2019s value for a specific year using the line chart, you can follow these steps:\n\n1. **Switch to Line Chart Mode:** If you aren't already on the line chart, click the **\"\ud83d\udcc8 Line\"** button at the top left of the visualization to change the view.\n2. **Hover over the Chart:** Move your mouse cursor horizontally over the chart area to the specific year you are interested in (along the X-axis). \n3. **Read the Tooltip:** As you hover, a vertical dashed line will follow your cursor, and a tooltip box will appear displaying the exact values for all the tracked countries (including Iraq) for that specific year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

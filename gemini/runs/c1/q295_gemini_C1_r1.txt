@@ -1,0 +1,19 @@
+{
+  "run_id": "0a992bbc-0b05-4aac-987c-de72b7567683",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart88",
+  "question_id": "q295",
+  "js_path": "charts/chart88.js",
+  "csv_path": "charts/files/chart88.csv",
+  "question": "What happens if I hover over France around 1970 in Line mode?",
+  "prompt": "@charts/chart88.js @charts/files/chart88.csv Question: What happens if I hover over France around 1970 in Line mode?",
+  "prompt_hash": "a291ff31f4c0bc28fff5b1dd0c091d3e3f738ae828996ea2b9bacc1d1824d176",
+  "returncode": 0,
+  "raw_response": "If you hover over the chart for France around 1970 in Line mode, a tooltip will appear displaying the following information:\n\n*   **France, 1970** (as the title)\n*   **Females: 83.8 years** \n*   **Males: 78.1 years**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

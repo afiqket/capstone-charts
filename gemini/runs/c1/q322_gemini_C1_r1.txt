@@ -1,0 +1,19 @@
+{
+  "run_id": "c70122b4-1784-4153-955c-fe816bb96096",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart97",
+  "question_id": "q322",
+  "js_path": "charts/chart97.js",
+  "csv_path": "charts/files/chart97.csv",
+  "question": "What happens if I drag the slider from 2000 to 2010?",
+  "prompt": "@charts/chart97.js @charts/files/chart97.csv Question: What happens if I drag the slider from 2000 to 2010?",
+  "prompt_hash": "40d33d989fdb461572a10718bd973cd2d58145f88cd27531efb8f2371cb1c481",
+  "returncode": 0,
+  "raw_response": "When you drag the slider from 2000 to 2010, the chart dynamically updates to reflect the selected year. Specifically:\n\n1. **Title Update**: The title changes to display the currently selected year (e.g., from \"Birth seasonality, United States, 2000\" to \"Birth seasonality, United States, 2010\").\n2. **Bar Chart Update**: The bars redraw to show the average number of births per day (per million people) for each month in the United States for the year the slider is currently resting on.\n3. **Slider Handle**: The circular handle on the slider moves along the track to visually indicate the current year within the 2000\u20132010 range.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

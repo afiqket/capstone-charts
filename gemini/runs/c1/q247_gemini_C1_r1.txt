@@ -1,0 +1,19 @@
+{
+  "run_id": "23335416-1d10-4ba8-a512-ecb7c025403a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart72",
+  "question_id": "q247",
+  "js_path": "charts/chart72.js",
+  "csv_path": "charts/files/chart72.csv",
+  "question": "What happens if I hover over a dark blue country?",
+  "prompt": "@charts/chart72.js @charts/files/chart72.csv Question: What happens if I hover over a dark blue country?",
+  "prompt_hash": "3548aacde64bd073d0ad16f9ab0bb3f38d9609812a320a40d0a4b5057774d907",
+  "returncode": 0,
+  "raw_response": "When you hover over a dark blue country on the map, the following visual and interactive changes occur:\n\n1. **Highlighting:** The hovered country's border changes from white (`#fff`) to a thicker, dark gray stroke (`#333` with a width of `1.5px`). The country is also visually brought to the front (raised above other shapes) so the borders aren't overlapped by neighboring countries.\n2. **Tooltip Display:** A tooltip box appears near your cursor containing:\n   - The **Country's Name** in bold at the top.\n   - The text **\"per 100,000 people\"** below it in a smaller, lighter font.\n   - The **Exact Value** for that country in large, bold blue text (formatted to up to 2 decimal places). Since the country is dark blue, the color scale indicates this will be a relatively high value (approaching the maximum of 50 psychiatrists per 100,000 people).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

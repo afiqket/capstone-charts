@@ -1,0 +1,19 @@
+{
+  "run_id": "e445d359-ba5c-41ab-8361-03a277302589",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart49",
+  "question_id": "q176",
+  "js_path": "charts/chart49.js",
+  "csv_path": "charts/files/chart49.csv",
+  "question": "What is the happiness score of Malaysia in 2024?",
+  "prompt": "@charts/chart49.js @charts/files/chart49.csv Question: What is the happiness score of Malaysia in 2024?",
+  "prompt_hash": "54eba986315da062687d253a10043dae04faf7995ab2006014394276ae5a4e6a",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the happiness score of Malaysia in 2024 is **5.955**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

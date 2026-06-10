@@ -1,0 +1,19 @@
+{
+  "run_id": "3e8de232-b996-4fbb-b2cc-7c17e7bd6073",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart108",
+  "question_id": "q354",
+  "js_path": "charts/chart108.js",
+  "csv_path": "charts/files/chart108.csv",
+  "question": "How do I see Year over Year change?",
+  "prompt": "@charts/chart108.js @charts/files/chart108.csv Question: How do I see Year over Year change?",
+  "prompt_hash": "08b92c121d807b424a522a586ebafc1053a17c0ed64b9dc0b7f4bc8239654ead",
+  "returncode": 0,
+  "raw_response": "To see the **Year over Year change**, use the **Metrics** dropdown menu located below the date sliders and select **\"Year-Over-Year Change (%)\"**. \n\nThis will update the chart to display the annual percentage change in home sales rather than the annualized rate or month-over-month data.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

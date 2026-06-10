@@ -1,0 +1,19 @@
+{
+  "run_id": "e696a00b-5b65-4503-b9c9-12ddffa0914f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart32",
+  "question_id": "q103",
+  "js_path": "charts/chart32.js",
+  "csv_path": "charts/files/chart32.csv",
+  "question": "After clicking an Open Space to see the boroughs, how do you get back to the view of Open Spaces?",
+  "prompt": "@charts/chart32.js @charts/files/chart32.csv Question: After clicking an Open Space to see the boroughs, how do you get back to the view of Open Spaces?",
+  "prompt_hash": "8d919ffec59f9525eb94a412d96aaf6aee0392c78f2dcad1c54f8e3a4e6b6d8f",
+  "returncode": 0,
+  "raw_response": "To get back to the view of Open Spaces after zooming in, you click on the white header bar at the top of the chart that displays the name of the Open Space you are currently viewing.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

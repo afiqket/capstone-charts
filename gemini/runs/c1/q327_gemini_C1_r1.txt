@@ -1,0 +1,19 @@
+{
+  "run_id": "8009e579-9e72-4daa-938b-be82d8d690a8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart99",
+  "question_id": "q327",
+  "js_path": "charts/chart99.js",
+  "csv_path": "charts/files/chart99.csv",
+  "question": "How can I find the population living in cities in North America in 2010?",
+  "prompt": "@charts/chart99.js @charts/files/chart99.csv Question: How can I find the population living in cities in North America in 2010?",
+  "prompt_hash": "688583f7c9e0301432ef9b7733d3874d63401cd52fab106af85b5248d80fe596",
+  "returncode": 0,
+  "raw_response": "To find the population living in cities in North America in 2010 based on the provided dataset, you look at the row for `North America` and the year `2010`.\n\nAccording to the data in `chart99.csv`:\n`North America,OWID_NAM,2010,142927790,196194220,204470820`\n\nThe columns represent:\n1. Entity: `North America`\n2. Code: `OWID_NAM`\n3. Year: `2010`\n4. Rural areas: `142,927,790`\n5. Towns & suburbs: `196,194,220`\n6. Cities: `204,470,820`\n\nThe population living in **cities** in North America in 2010 was **204,470,820**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:9292) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

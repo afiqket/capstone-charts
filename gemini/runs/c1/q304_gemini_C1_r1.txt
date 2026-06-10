@@ -1,0 +1,19 @@
+{
+  "run_id": "fe964e84-3ab8-404a-a95f-be03fd33f300",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart91",
+  "question_id": "q304",
+  "js_path": "charts/chart91.js",
+  "csv_path": "charts/files/chart91.csv",
+  "question": "What happens if I hover over 1973 in the line chart?",
+  "prompt": "@charts/chart91.js @charts/files/chart91.csv Question: What happens if I hover over 1973 in the line chart?",
+  "prompt_hash": "78b5c38c5234fa2edd9a96cd67d4ce9ea8cb368057b17b9c9e0cb332dd89c34c",
+  "returncode": 0,
+  "raw_response": "When you hover over the year 1973 on the line chart, the following happens:\n\n1. A vertical gray line appears on the chart exactly at the 1973 mark to indicate the hovered year.\n2. A tooltip pops up near your cursor with the title **\"United States, 1973\"**.\n3. The tooltip displays the average age of mothers at childbirth for that year, broken down by birth order (matching the colors of the lines on the chart):\n   - **5th birth or higher:** 32.87 years\n   - **4th birth:** 30.78 years\n   - **3rd birth:** 29.55 years\n   - **2nd birth:** 28.04 years\n   - **All:** 27.48 years (displayed in **bold**)\n   - **1st birth:** 25.10 years",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

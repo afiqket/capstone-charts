@@ -1,0 +1,19 @@
+{
+  "run_id": "0359228a-40e3-4a0b-b941-d6a9bda8f954",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart146",
+  "question_id": "q469",
+  "js_path": "charts/chart146.js",
+  "csv_path": "charts/files/chart146.csv",
+  "question": "In the Bar chart view, what happens if you click on the slider?",
+  "prompt": "@charts/chart146.js @charts/files/chart146.csv Question: In the Bar chart view, what happens if you click on the slider?",
+  "prompt_hash": "eb36bde9f674211e7ba23cac28b989c26d8f339fa02a7f0210eb6b056efc8a08",
+  "returncode": 0,
+  "raw_response": "When you click on the slider in the Bar chart view, the following sequence of events happens:\n\n1. **Calculates the Year:** It determines which year on the slider is closest to the position you clicked.\n2. **Updates the Slider Handle:** The circular slider handle moves to the newly selected year's position.\n3. **Updates the Title:** The chart's title changes to reflect the selected year (e.g., \"Female labor force participation rate, 1890 to [Selected Year]\").\n4. **Redraws the Bars:** Because the view mode is set to \"bar\", the `drawBar()` function is called. This function fetches the data for each country for the newly selected year.\n5. **Re-sorts the Data:** It re-sorts the countries in descending order based on their participation rate for that specific year. \n6. **Renders the Updates:** The old bars are removed and new bars are drawn reflecting the values and the new sorted order for the selected year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "aae64faa-df10-4c4a-8ce4-f0151c291fc4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart42",
+  "question_id": "q153",
+  "js_path": "charts/chart42.js",
+  "csv_path": "charts/files/chart42.csv",
+  "question": "How can a user retrieve the exact trading volume for a specific date or bar?",
+  "prompt": "@charts/chart42.js @charts/files/chart42.csv Question: How can a user retrieve the exact trading volume for a specific date or bar?",
+  "prompt_hash": "10b2f5585bbf19405038e7731f39a23de8cd28f6500812d96868e6947cf8e7c6",
+  "returncode": 0,
+  "raw_response": "A user can retrieve the exact trading volume for a specific date or bar by **hovering their mouse over the corresponding volume bar** on the chart. \n\nThis triggers a tooltip to appear, displaying the month/year and the precise volume value for that specific point in time.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

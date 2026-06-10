@@ -1,0 +1,19 @@
+{
+  "run_id": "93ee640e-0849-4261-b126-96d327707c5d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart36",
+  "question_id": "q125",
+  "js_path": "charts/chart36.js",
+  "csv_path": "charts/files/chart36.csv",
+  "question": "How many days or months do the small intervals of the bar represent, approximately?",
+  "prompt": "@charts/chart36.js @charts/files/chart36.csv Question: How many days or months do the small intervals of the bar represent, approximately?",
+  "prompt_hash": "23fec4c9c438413c4ea8c96f202b9b44027dcf27ba07e8725f261ee0e20b93f1",
+  "returncode": 0,
+  "raw_response": "Based on the dataset columns used for the timeline, the dates are recorded at intervals such as 17/01/2013, 14/02/2013, 14/03/2013, and 11/04/2013. These small intervals on the slider represent approximately **1 month**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

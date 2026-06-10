@@ -1,0 +1,19 @@
+{
+  "run_id": "382e7d55-6abd-4f93-a66e-17d09b140676",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart42",
+  "question_id": "q150",
+  "js_path": "charts/chart42.js",
+  "csv_path": "charts/files/chart42.csv",
+  "question": "What was the average share price across the whole period shown?",
+  "prompt": "@charts/chart42.js @charts/files/chart42.csv Question: What was the average share price across the whole period shown?",
+  "prompt_hash": "2829d00954b214f1d7e783f2c3a0352e27112e7fc7993c7806f7573248913e7a",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart42.csv`, the average share price across the whole period shown was **$202.09** (exact calculation: ~202.085).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

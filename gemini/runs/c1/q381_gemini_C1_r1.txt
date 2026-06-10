@@ -1,0 +1,19 @@
+{
+  "run_id": "b12f3044-f1d3-4240-bdb3-4f9d3f95903f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart117",
+  "question_id": "q381",
+  "js_path": "charts/chart117.js",
+  "csv_path": "charts/files/chart117.csv",
+  "question": "What is the antibitic use in livestock per kilogram for Africa in 2018?",
+  "prompt": "@charts/chart117.js @charts/files/chart117.csv Question: What is the antibitic use in livestock per kilogram for Africa in 2018?",
+  "prompt_hash": "f846d9bcf3682879769c12f8c8723b8575ec1bb7187750ad9c2fc85ee92af8ed",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart117.csv`, the antibiotic use in livestock per kilogram for **Africa (WOAH)** in **2018** was **17.73 mg/kg**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "9a42319d-cef9-476f-b7fa-008fdae4cdd8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart101",
+  "question_id": "q334",
+  "js_path": "charts/chart101.js",
+  "csv_path": "charts/files/chart101.csv",
+  "question": "What happens if I hover over 2020 on the line chart?",
+  "prompt": "@charts/chart101.js @charts/files/chart101.csv Question: What happens if I hover over 2020 on the line chart?",
+  "prompt_hash": "0ca446dfaf8003848608a21209c56a8c660ec9c1bd415eabf645739d67393a48",
+  "returncode": 0,
+  "raw_response": "When you hover over the year **2020** on the line chart, the following happens:\n\n1.  **Vertical Hover Line:** A solid gray vertical indicator line (`#999`) appears at the 2020 mark. This line helps align the cursor with the specific data points for that year.\n2.  **Tooltip Appearance:** A tooltip box appears near the mouse cursor. It has a white background, rounded corners, a light gray border, and a subtle drop shadow.\n3.  **Tooltip Header:** The title at the top of the tooltip displays the year **\"2020\"**.\n4.  **Data List:** The tooltip displays a list of the cities tracked in the chart (**Karachi, Surat, Mumbai, Kinshasa, Kabul, and Hong Kong**), sorted in descending order based on their population density in 2020.\n5.  **Entry Details:** For each city, the tooltip shows:\n    *   A small **colored square** that matches the city's specific line color on the chart.\n    *   The **City Name**.\n    *   The **Population Density value**, formatted with commas and the unit \"per km\u00b2\" (e.g., \"Mumbai: 26,696 per km\u00b2\").\n6.  **No Projection Label:** Although 2020 is the transition point to projected data, the tooltip does **not** show the \"(proj.)\" label for this year; that label only appears for years greater than 2020.\n\nAdditionally, you will notice that the 2020 position is already marked by a permanent, light gray dashed vertical line that acts as a visual separator between the historical estimates (solid lines) and the future projections (dashed lines).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

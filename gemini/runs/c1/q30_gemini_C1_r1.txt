@@ -1,0 +1,19 @@
+{
+  "run_id": "a7f4811d-7c59-420b-bbe1-fe9e98f31ba5",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart11",
+  "question_id": "q5",
+  "js_path": "charts/chart11.js",
+  "csv_path": "charts/files/chart11.csv",
+  "question": "What happens if I click \u201cDigital Skills Trend by Population\u201d?",
+  "prompt": "@charts/chart11.js @charts/files/chart11.csv Question: What happens if I click \u201cDigital Skills Trend by Population\u201d?",
+  "prompt_hash": "90afeb32ccba58a7505b42576c5cfc8d085f4348f1e7045def6fda7e3984ed7c",
+  "returncode": 0,
+  "raw_response": "When you click the **\"Digital Skills Trend by Population\"** button, the following happens:\n\n1. **Button Styling Updates:** The clicked button turns blue (`#4f7fae`) with white text to indicate it is the active view, while the \"Country Rankings\" button reverts to a white background with black text.\n2. **View Changes:** The chart area is cleared of the previous bar charts.\n3. **Line Chart Appears:** A new line chart titled **\"Digital Skills Trend: All Countries\"** is rendered in the chart area. \n4. **Data Displayed:** The chart plots the trend of \"Digital Skills (% of Population)\" over the years 2021 to 2025 for all countries in the dataset. The x-axis represents the **Year** and the y-axis represents **Digital Skills (% of Population)**.\n5. **Interactive Hover:** The line chart is interactive. When you hover your mouse over the chart:\n   - The line for the specific country you are hovering near is highlighted (made thicker and fully opaque), while all other country lines fade into the background.\n   - A tooltip appears displaying the **country name**, the **year**, and the precise **percentage value** of the population with at least basic digital skills for that year.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

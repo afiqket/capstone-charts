@@ -1,0 +1,19 @@
+{
+  "run_id": "8cdbd782-74ac-49a1-a347-04128674b9a4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart131",
+  "question_id": "q424",
+  "js_path": "charts/chart131.js",
+  "csv_path": "charts/files/chart131.csv",
+  "question": "What continents has the most significant increase the the total expenditure throughout the years?",
+  "prompt": "@charts/chart131.js @charts/files/chart131.csv Question: What continents has the most significant increase the the total expenditure throughout the years?",
+  "prompt_hash": "516753efb2dc3e461f0ebed9c2fe4edc715e251faafd972e2bfb4e6f6ee9b5f1",
+  "returncode": 0,
+  "raw_response": "Based on the data provided in the chart, the continent (world region) with the most significant absolute increase in total consumer expenditure across its countries from 2017 to 2023 is **Europe**.\n\nHowever, depending on how you measure the \"most significant\" increase, here are the key takeaways:\n\n1. **Europe (Highest Cumulative Absolute Increase):** Because Europe has a large number of high-income countries in the dataset, the combined increase of their per-capita consumer expenditures is by far the largest globally (an aggregate increase of over $130,000 when summing the individual per-capita growths of all listed European nations).\n2. **North America (Highest Percentage & Individual Growth):** North America experienced the highest relative/percentage growth as a continent (roughly 31% on average). Additionally, it contains the **United States**, which had the single largest individual increase in total consumer expenditure of any country in the dataset (growing from $39,780.10 per capita in 2017 to $54,370.33 in 2023\u2014an increase of nearly $14,600 per person).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

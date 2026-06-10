@@ -1,0 +1,19 @@
+{
+  "run_id": "2f9f694d-cf71-4976-8a52-4e219f9d46a1",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart129",
+  "question_id": "q417",
+  "js_path": "charts/chart129.js",
+  "csv_path": "charts/files/chart129.csv",
+  "question": "Which country has the highest number of smokers in 1990, Italy or the UK?",
+  "prompt": "@charts/chart129.js @charts/files/chart129.csv Question: Which country has the highest number of smokers in 1990, Italy or the UK?",
+  "prompt_hash": "3cd679790c7d6ae8337927c53c2a8201b2f226d8e5540fe8dcfa08e19317422b",
+  "returncode": 0,
+  "raw_response": "Based on the data in `charts/files/chart129.csv`, the number of daily smokers in 1990 for both countries was:\n\n*   **Italy:** 13,804,637\n*   **United Kingdom:** 13,572,064\n\nTherefore, **Italy** had the highest number of smokers in 1990 between the two countries.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:14944) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

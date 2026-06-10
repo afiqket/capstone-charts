@@ -1,0 +1,19 @@
+{
+  "run_id": "ae670b37-d6d8-4689-b068-72c153b0f38a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart147",
+  "question_id": "q470",
+  "js_path": "charts/chart147.js",
+  "csv_path": "charts/files/chart147.csv",
+  "question": "Which day did people with 0 or 1 doses have the highest deaths?",
+  "prompt": "@charts/chart147.js @charts/files/chart147.csv Question: Which day did people with 0 or 1 doses have the highest deaths?",
+  "prompt_hash": "0e2a41a82927e29de86d5285815ee4ee83e74dd9e0cbc6e0eb2b978ec7c3daea",
+  "returncode": 0,
+  "raw_response": "Based on the data for \"All ages\", people with 0 or 1 doses had the highest death rate on **February 27, 2022** (at 11.76 per 100,000 people).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "4259f259-0bbe-40ef-b065-550988c94829",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart15",
+  "question_id": "q48",
+  "js_path": "charts/chart15.js",
+  "csv_path": "charts/files/chart15.csv",
+  "question": "What happens if I hover over a country with a darker blue color?",
+  "prompt": "@charts/chart15.js @charts/files/chart15.csv Question: What happens if I hover over a country with a darker blue color?",
+  "prompt_hash": "80e370e47c50f9eeb07f37dfad0c54e1f7656d2521fa7e09f93783dec1904b7a",
+  "returncode": 0,
+  "raw_response": "If you hover over a country with a darker blue color on the map, the following will happen:\n\n1.  **Country Highlight:** The borders of the country you are hovering over will be highlighted with a thicker, dark outline (a `#222` stroke with `1.5` width) to make it stand out.\n2.  **Tooltip Display:** A tooltip will appear near your cursor showing:\n    *   The **name of the country**.\n    *   The **year** of the data.\n    *   A **high percentage value (closer to 100%)**, because the color scale maps darker blue to higher percentages. This value represents the proportion of individuals in that country who own a mobile telephone.\n    *   An **informational note** (if applicable), which appears if the exact data for the current year is not available and the closest available data point is being shown instead.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

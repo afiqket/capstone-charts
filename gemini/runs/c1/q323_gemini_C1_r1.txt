@@ -1,0 +1,19 @@
+{
+  "run_id": "176acf0d-6199-4a72-9fb8-3df23f100cb8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart98",
+  "question_id": "q323",
+  "js_path": "charts/chart98.js",
+  "csv_path": "charts/files/chart98.csv",
+  "question": "What was the daily birth rate in the peak month for Spain in 1990?",
+  "prompt": "@charts/chart98.js @charts/files/chart98.csv Question: What was the daily birth rate in the peak month for Spain in 1990?",
+  "prompt_hash": "da640ce655c851db06f2e206a47081e0d4c23664907e514d0e8e4ac5adeebfb4",
+  "returncode": 0,
+  "raw_response": "The daily birth rate in the peak month for Spain in 1990 was 28.969765.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:28128) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

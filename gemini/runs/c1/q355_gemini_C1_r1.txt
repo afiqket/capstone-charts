@@ -1,0 +1,19 @@
+{
+  "run_id": "e7c9c253-f7a6-4902-9cd3-910e760b2c85",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart108",
+  "question_id": "q355",
+  "js_path": "charts/chart108.js",
+  "csv_path": "charts/files/chart108.csv",
+  "question": "What is the National Home Sales Annualized Rate of August 2013?",
+  "prompt": "@charts/chart108.js @charts/files/chart108.csv Question: What is the National Home Sales Annualized Rate of August 2013?",
+  "prompt_hash": "38ce4cce8e604e86d43084082bab228d3034548214f0657e85d063beaf9ce320",
+  "returncode": 0,
+  "raw_response": "The National Home Sales Annualized Rate for August 2013 is **4,999,167**.\n\nThis is determined from the `chart108.js` and `chart108.csv` files:\n1.  **Metric Identification**: In `chart108.js`, the \"Home Sales Annualized Rate\" metric is mapped to `dataAR`, which corresponds to the `homes_sold.csv` file. In the provided `chart108.csv` content, `file_2` contains values in the millions (consistent with sales rates), identifying it as the source for this metric.\n2.  **Date Selection**: The data follows a `1/Month/Year` format. For August 2013, the corresponding entry is `1/8/2013`.\n3.  **Value Extraction**: Searching `file_2` for the date `1/8/2013` yields the value `4,999,167`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

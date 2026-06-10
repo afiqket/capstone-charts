@@ -1,0 +1,19 @@
+{
+  "run_id": "1991e851-b0c9-4dcc-8b6d-9ed5a5287abd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart91",
+  "question_id": "q303",
+  "js_path": "charts/chart91.js",
+  "csv_path": "charts/files/chart91.csv",
+  "question": "How can I compare 1st birth and 2nd birth in 1950?",
+  "prompt": "@charts/chart91.js @charts/files/chart91.csv Question: How can I compare 1st birth and 2nd birth in 1950?",
+  "prompt_hash": "ce9dcb62323db2ecfee529fb7e8caeccdb1389eefe300bf2b6a012a119f499f3",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the United States in 1950:\n\n*   **1st birth:** The average age of mothers was **23.46 years**.\n*   **2nd birth:** The average age of mothers was **26.39 years**.\n\n**Comparison:**\nMothers having their second child in 1950 were, on average, **2.93 years older** than mothers having their first child (26.39 - 23.46).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

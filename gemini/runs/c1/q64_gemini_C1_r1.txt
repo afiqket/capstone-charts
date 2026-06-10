@@ -1,0 +1,19 @@
+{
+  "run_id": "f956328c-7da0-476e-ae87-da7874477f4f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart21",
+  "question_id": "q64",
+  "js_path": "charts/chart21.js",
+  "csv_path": "charts/files/chart21.csv",
+  "question": "What was the percentage of people covered by a 4G mobile network in Malaysia in 2023?",
+  "prompt": "@charts/chart21.js @charts/files/chart21.csv Question: What was the percentage of people covered by a 4G mobile network in Malaysia in 2023?",
+  "prompt_hash": "a61c0015e85db3b53d0f2720f5ad69f966fa14f98a5fd4ac9a575950923bca10",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **98.4%** of individuals in Malaysia owned a mobile telephone in 2023. \n\n*(Note: The provided dataset tracks the proportion of individuals who own a mobile telephone, rather than 4G mobile network coverage specifically.)*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "93f6c6c2-e527-4483-a312-2e2a45d6b3b4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart137",
+  "question_id": "q442",
+  "js_path": "charts/chart137.js",
+  "csv_path": "charts/files/chart137.csv",
+  "question": "How much did the average vacation days per year across all countries increase from 1870 to 2000?",
+  "prompt": "@charts/chart137.js @charts/files/chart137.csv Question: How much did the average vacation days per year across all countries increase from 1870 to 2000?",
+  "prompt_hash": "48d1090504ad4b7cd886831932a2d8ba93ecaf4f632aee6cd8e9b8771611e60c",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, we can calculate the average vacation days per year across all 14 countries for the years 1870 and 2000.\n\n**1870 Vacation Days:**\n* Australia: 8\n* Belgium: 18\n* Canada: 8\n* Denmark: 13\n* France: 19\n* Germany: 13\n* Ireland: 14\n* Italy: 23\n* Netherlands: 4\n* Spain: 31\n* Sweden: 11\n* Switzerland: 13\n* United Kingdom: 14\n* United States: 4\n* **Total = 193 days**\n* **Average (1870) = 193 / 14 \u2248 13.79 days**\n\n**2000 Vacation Days:**\n* Australia: 32\n* Belgium: 33\n* Canada: 24\n* Denmark: 37\n* France: 36\n* Germany: 42.5\n* Ireland: 30\n* Italy: 41.5\n* Netherlands: 37.5\n* Spain: 36\n* Sweden: 38\n* Switzerland: 33\n* United Kingdom: 32.5\n* United States: 20\n* **Total = 473 days**\n* **Average (2000) = 473 / 14 \u2248 33.79 days**\n\n**Increase:**\n33.79 - 13.79 = **20 days**\n\nThe average vacation days per year across all countries increased by exactly **20 days**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

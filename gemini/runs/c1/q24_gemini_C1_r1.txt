@@ -1,0 +1,19 @@
+{
+  "run_id": "4b2b1df9-2ffa-4a3e-8512-05fd5f2d5ff9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart10",
+  "question_id": "q4",
+  "js_path": "charts/chart10.js",
+  "csv_path": "charts/files/chart10.csv",
+  "question": "How can I retrieve the exact distinct job count for Mid-level Azure positions?",
+  "prompt": "@charts/chart10.js @charts/files/chart10.csv Question: How can I retrieve the exact distinct job count for Mid-level Azure positions?",
+  "prompt_hash": "c48f166aa95b0d97edae48f3f1f324aa8fbeb42aef0b0e69cd4791bf102bf863",
+  "returncode": 0,
+  "raw_response": "To retrieve the exact distinct job count for Mid-level Azure positions, you can do this in two ways:\n\n**1. From the Interactive Chart:**\nHover your mouse over the **yellow segment** (which represents \"Mid\" seniority) of the bar labeled **\"Azure\"**. A tooltip will appear showing the exact details:\n- **Skill:** Azure\n- **Seniority:** Mid\n- **Distinct Job Count: 152**\n\n**2. From the Raw Data (CSV):**\nIf you look at the underlying `chart10.csv` data, you can find the specific row for this combination:\n`Azure,Mid,152` \n\nThis confirms that there are exactly **152** distinct job IDs for Mid-level Azure positions.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

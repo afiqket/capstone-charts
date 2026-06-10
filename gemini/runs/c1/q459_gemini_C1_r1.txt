@@ -1,0 +1,19 @@
+{
+  "run_id": "89a20eed-71c2-4209-ba47-0b31bc936bdf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart143",
+  "question_id": "q459",
+  "js_path": "charts/chart143.js",
+  "csv_path": "charts/files/chart143.csv",
+  "question": "Can the slider be dragged?",
+  "prompt": "@charts/chart143.js @charts/files/chart143.csv Question: Can the slider be dragged?",
+  "prompt_hash": "429efd48cbe3cbd3e78919c73d6cc1c8f3ede78927fbf7e1e3c419ea035ee84b",
+  "returncode": 0,
+  "raw_response": "Yes, the slider can be dragged. The code attaches a `d3.drag()` behavior to the slider handle (the circle element), which updates the chart's start year as you drag it:\n\n```javascript\nhandle.call(d3.drag().on(\"drag\", function(event) {\n  const mx = Math.max(sliderX0, Math.min(sliderX1, event.x));\n  updateStartYear(allYears.reduce((a,b) => Math.abs(xSlider(a)-mx)<Math.abs(xSlider(b)-mx)?a:b));\n}));\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

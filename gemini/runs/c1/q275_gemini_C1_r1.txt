@@ -1,0 +1,19 @@
+{
+  "run_id": "dd359d06-eedf-4a35-8e44-ef7aaee4f533",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart82",
+  "question_id": "q275",
+  "js_path": "charts/chart82.js",
+  "csv_path": "charts/files/chart82.csv",
+  "question": "How does China\u2019s trend change from 1970 to 2050?",
+  "prompt": "@charts/chart82.js @charts/files/chart82.csv Question: How does China\u2019s trend change from 1970 to 2050?",
+  "prompt_hash": "3264b6335ea8dddd89396bafd33c7c8a2297820fd8f552aedd645151c0f835e6",
+  "returncode": 0,
+  "raw_response": "Based on the data, the number of \"missing women\" in China consistently increases from 27.2 million in 1970 until it reaches a peak of 76.9 million in 2035. After 2035, the trend reverses and the number gradually decreases to 73.4 million by 2050.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

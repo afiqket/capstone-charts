@@ -1,0 +1,19 @@
+{
+  "run_id": "c4222a4c-e80e-4503-983e-bc3c2bc9d295",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart80",
+  "question_id": "q269",
+  "js_path": "charts/chart80.js",
+  "csv_path": "charts/files/chart80.csv",
+  "question": "What was the world population estimate by McEvedy and Jones (1978) in 1950?",
+  "prompt": "@charts/chart80.js @charts/files/chart80.csv Question: What was the world population estimate by McEvedy and Jones (1978) in 1950?",
+  "prompt_hash": "a17c547ac3086e79956795fee545a129abdb07291a255d81ff43b720bae5682f",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the world population estimate by McEvedy and Jones (1978) in 1950 was **2,500,000,000** (2.5 billion).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

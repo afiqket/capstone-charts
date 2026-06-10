@@ -1,0 +1,19 @@
+{
+  "run_id": "e855f4d1-1b7f-4ab9-9037-fac378e6a56d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart79",
+  "question_id": "q266",
+  "js_path": "charts/chart79.js",
+  "csv_path": "charts/files/chart79.csv",
+  "question": "What trend does the 2024 projection show from 2025 to 2050?",
+  "prompt": "@charts/chart79.js @charts/files/chart79.csv Question: What trend does the 2024 projection show from 2025 to 2050?",
+  "prompt_hash": "dec012f285890fe9bf3300fdb2a0fb1868c14f78287da67e531bfe7701efdcb4",
+  "returncode": 0,
+  "raw_response": "Based on the data, the 2024 projection shows an **increasing trend** from 2025 to 2050. The projected world population grows steadily from approximately 8.23 billion in 2025 to 9.66 billion in 2050.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

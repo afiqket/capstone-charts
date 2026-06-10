@@ -1,0 +1,19 @@
+{
+  "run_id": "18a81c7b-084b-41a7-9d1d-9365e88b4b2f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart149",
+  "question_id": "q476",
+  "js_path": "charts/chart149.js",
+  "csv_path": "charts/files/chart149.csv",
+  "question": "What was the percentage of people with a COVID-19 booster in November 4th 2022 between the ages of 50-59 years?",
+  "prompt": "@charts/chart149.js @charts/files/chart149.csv Question: What was the percentage of people with a COVID-19 booster in November 4th 2022 between the ages of 50-59 years?",
+  "prompt_hash": "bb0eec2e5a2ecbd67ce12866e3435aba9f35a55502b2ccfe3fd82e8d13dd482c",
+  "returncode": 0,
+  "raw_response": "The percentage of people who completed their COVID-19 vaccination protocol (or booster as referred to in your question) on November 4th, 2022, for the age group of 50-59 years in France was **91.24%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:31120) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

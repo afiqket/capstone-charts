@@ -1,0 +1,19 @@
+{
+  "run_id": "73ae972d-fbbc-49e0-a1d1-375538961474",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart32",
+  "question_id": "q104",
+  "js_path": "charts/chart32.js",
+  "csv_path": "charts/files/chart32.csv",
+  "question": "Which borough has the smallest Bowling spaces?",
+  "prompt": "@charts/chart32.js @charts/files/chart32.csv Question: Which borough has the smallest Bowling spaces?",
+  "prompt_hash": "7d6c70e66285926356b34e092c5dfb5515294d8c1ad781a5918826a325be356c",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, the borough with the smallest Bowling spaces (Bowling Green) is **City of London**, which has a value of 0. \n\nIf excluding boroughs with zero space, the smallest is **Hammersmith and Fulham** with a value of 2,539.74.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

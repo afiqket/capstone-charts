@@ -1,0 +1,18 @@
+{
+  "run_id": "89d4122b-f1fa-49e1-8848-3f668b66b87d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart1",
+  "question_id": "q115",
+  "js_path": "charts/chart34.js",
+  "csv_path": "charts/files/chart34.csv",
+  "question": "In certain areas, for example in the United States, there are many flights near other, to the point where we can't see each flight individually. What action would a user do to see each flight and their locations clearly?",
+  "prompt": "@charts/chart34.js @charts/files/chart34.csv Question: In certain areas, for example in the United States, there are many flights near other, to the point where we can't see each flight individually. What action would a user do to see each flight and their locations clearly?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "To see overlapping flights clearly in dense areas, a user can **zoom in** on the visualization (e.g., using the scroll wheel or pinch gesture) and **pan** across the map (by clicking and dragging) to separate the individual flight paths.",
+  "parsed_answer": ""
+}

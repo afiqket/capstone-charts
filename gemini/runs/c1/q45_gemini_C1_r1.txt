@@ -1,0 +1,19 @@
+{
+  "run_id": "b1736269-14ef-473e-81f1-daca425f02a7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart14",
+  "question_id": "q5",
+  "js_path": "charts/chart14.js",
+  "csv_path": "charts/files/chart14.csv",
+  "question": "What happens if I click or drag the timeline slider at the bottom of the chart?",
+  "prompt": "@charts/chart14.js @charts/files/chart14.csv Question: What happens if I click or drag the timeline slider at the bottom of the chart?",
+  "prompt_hash": "e089dba92a1769a993a15a91e10f60ab9f883cb756e26c324132e4fde4365bdf",
+  "returncode": 0,
+  "raw_response": "When you click or drag the timeline slider at the bottom of the chart, the following sequence of events occurs:\n\n1. **Stops Animation:** If the timeline is currently playing (via the play button), it immediately stops the animation (`stopPlay()`).\n2. **Updates `startYear`:** It calculates the new starting year based on your mouse's horizontal position, clamping it between 2010 (`minYear`) and 2023 (`maxYear - 1`). \n3. **Updates the Slider UI:** It moves the slider handle to the new position, updates the text label displaying the current start year, and adjusts the blue active track line (`updateSlider()`).\n4. **Redraws the Chart:** It filters the underlying dataset to only include years from the newly selected `startYear` onwards, dynamically adjusts the scales (X and Y axes), and re-renders the stacked area chart and its axes to reflect this narrower time window (`render()`).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

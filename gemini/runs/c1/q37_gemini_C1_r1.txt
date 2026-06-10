@@ -1,0 +1,19 @@
+{
+  "run_id": "b8e6cca7-f4a8-4a21-8e97-8f8b0fb1c3a6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart13",
+  "question_id": "q2",
+  "js_path": "charts/chart13.js",
+  "csv_path": "charts/files/chart13.csv",
+  "question": "In 2005, which was cheaper: Memory or Disk?",
+  "prompt": "@charts/chart13.js @charts/files/chart13.csv Question: In 2005, which was cheaper: Memory or Disk?",
+  "prompt_hash": "7ec2cce3874fd9cfcde3e9d28f272bcd1d0e01664619b51cff666b81fae61b61",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the year 2005, **Disk** was cheaper. \n\nThe cost per terabyte (in constant 2020 US$) was:\n* **Disk:** $538.36\n* **Memory:** $100,942.77",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

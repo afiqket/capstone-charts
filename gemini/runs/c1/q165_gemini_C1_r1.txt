@@ -1,0 +1,19 @@
+{
+  "run_id": "9616f0be-b8f9-445b-ab7d-da23a28e3218",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart45",
+  "question_id": "q165",
+  "js_path": "charts/chart45.js",
+  "csv_path": "charts/files/chart45.csv",
+  "question": "Where do I click to switch the results between 2 years?",
+  "prompt": "@charts/chart45.js @charts/files/chart45.csv Question: Where do I click to switch the results between 2 years?",
+  "prompt_hash": "89ce98078ed2fb55346a4cd5345ab707fabea650b231c40cf3a42748d283c5f1",
+  "returncode": 0,
+  "raw_response": "Based on the code in `@charts/chart45.js`, you can switch the results between the two years by clicking on the **\"Result 2019\"** or **\"Result 2017\"** buttons. \n\nThese are defined in the code as a pair of buttons grouped together:\n```javascript\n  buttons.selectAll(\"button\")\n    .data([\n      { year: \"2019\", label: \"Result 2019\" },\n      { year: \"2017\", label: \"Result 2017\" }\n    ])\n```",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

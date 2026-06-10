@@ -1,0 +1,19 @@
+{
+  "run_id": "53d05dd6-6994-470e-bc62-bf897fd71b40",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart46",
+  "question_id": "q169",
+  "js_path": "charts/chart46.js",
+  "csv_path": "charts/files/chart46.csv",
+  "question": "What information would I get if I hover over both the price line and volume bar for the same month?",
+  "prompt": "@charts/chart46.js @charts/files/chart46.csv Question: What information would I get if I hover over both the price line and volume bar for the same month?",
+  "prompt_hash": "21ee23aede3d72d481be7cbdf986b4773c76bf7f9af2bed852798f0f70400ff1",
+  "returncode": 0,
+  "raw_response": "If you hover over the price line and the volume bar for the same month, you will get the following information from the tooltips:\n\n1.  **Month and Year** (e.g., \"Jan-25\")\n2.  **Share Price** formatted in dollars (e.g., \"$200.00\") from the price line tooltip\n3.  **Traded Volume** formatted as a whole number (representing thousands, e.g., \"50,000\") from the volume bar tooltip",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

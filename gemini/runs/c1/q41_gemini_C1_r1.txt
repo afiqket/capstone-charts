@@ -1,0 +1,19 @@
+{
+  "run_id": "b165d955-7abf-4c58-956f-345502cb670c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart14",
+  "question_id": "q1",
+  "js_path": "charts/chart14.js",
+  "csv_path": "charts/files/chart14.csv",
+  "question": "What was the number of active mobile money accounts in Sub-Saharan Africa in 2024?",
+  "prompt": "@charts/chart14.js @charts/files/chart14.csv Question: What was the number of active mobile money accounts in Sub-Saharan Africa in 2024?",
+  "prompt_hash": "7dce3972486403348bf50246a93775967b88d253cff746e4b28774c32b9ca160",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart14.csv`, the number of active mobile money accounts in Sub-Saharan Africa in 2024 was **430,034,750**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

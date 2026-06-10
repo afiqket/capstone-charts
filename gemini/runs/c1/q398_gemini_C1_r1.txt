@@ -1,0 +1,19 @@
+{
+  "run_id": "c76175a0-14d6-4ffa-a616-735a36ce980f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart123",
+  "question_id": "q398",
+  "js_path": "charts/chart123.js",
+  "csv_path": "charts/files/chart123.csv",
+  "question": "What is the emissions of Nitrogen oxides in the 2000?",
+  "prompt": "@charts/chart123.js @charts/files/chart123.csv Question: What is the emissions of Nitrogen oxides in the 2000?",
+  "prompt_hash": "0a9621e1d7ab45a5713af1f2aeb310900a9794444c42540e876ead1b752402bc",
+  "returncode": 0,
+  "raw_response": "Based on the data for **France** in the year **2000**, the emissions index for **Nitrogen oxides (NOx)** was **82.61**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

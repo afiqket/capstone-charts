@@ -1,0 +1,19 @@
+{
+  "run_id": "368f16e2-8ed5-4410-8aa1-33698fa76ea4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart69",
+  "question_id": "q237",
+  "js_path": "charts/chart69.js",
+  "csv_path": "charts/files/chart69.csv",
+  "question": "How can I read the meaning of the map colors?",
+  "prompt": "@charts/chart69.js @charts/files/chart69.csv Question: How can I read the meaning of the map colors?",
+  "prompt_hash": "fab949d50d68eb2b46f7a20cdd4e97827a8d64fc6446111365513b3569ab768a",
+  "returncode": 0,
+  "raw_response": "To read the meaning of the map colors in Chart 69, you can refer to the following elements built into the visualization:\n\n1. **The Subtitle:** The text just below the chart title explains the unit of measurement: *\"Shown as the number of mental health units in general hospitals per 100,000 people in the population.\"*\n2. **The Color Scale:** The map uses a gradient ranging from very light orange/white to dark red/brown. \n   - **Lighter colors** indicate a **lower** number of mental health units per 100,000 people.\n   - **Darker colors** indicate a **higher** number of mental health units per 100,000 people.\n3. **The Legend:** At the bottom of the map, there is a color scale legend showing exactly what values the colors correspond to on a logarithmic scale (with labeled markers at 0, 0.1, 0.2, 0.5, 1, 2, 5, and 10). \n4. **Hatched Pattern:** Any country filled with a diagonal hatched line pattern (grey lines) indicates that there is **\"No data\"** available for that country. \n5. **Interactive Tooltips:** You can hover over any country on the map with your mouse to see a tooltip popup displaying the exact numerical value for that specific country.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

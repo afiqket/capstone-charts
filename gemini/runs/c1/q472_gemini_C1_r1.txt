@@ -1,0 +1,19 @@
+{
+  "run_id": "d41d73ad-4ec4-4945-afb5-10fb9d823008",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart147",
+  "question_id": "q472",
+  "js_path": "charts/chart147.js",
+  "csv_path": "charts/files/chart147.csv",
+  "question": "What are the two views of the graph that can be chosen in this chart? How does a user choose between them?",
+  "prompt": "@charts/chart147.js @charts/files/chart147.csv Question: What are the two views of the graph that can be chosen in this chart? How does a user choose between them?",
+  "prompt_hash": "b071739d9365e3c7be5158de1f460dece0e1838119e767c0a550909f3fa4ec37",
+  "returncode": 0,
+  "raw_response": "Based on the provided chart code, here are the answers to your questions:\n\n**1. What are the two views of the graph that can be chosen in this chart?**\nThe two views are **Line** and **Bar**.\n\n**2. How does a user choose between them?**\nThe user can choose between them by clicking on the **\"Line\"** or **\"Bar\"** toggle buttons located near the top-left of the chart (just below the subtitle). Clicking either button updates the chart to display the selected view mode.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

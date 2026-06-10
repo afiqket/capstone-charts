@@ -1,0 +1,19 @@
+{
+  "run_id": "65b016a9-299e-4526-8903-33ae97b9e442",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart41",
+  "question_id": "q145",
+  "js_path": "charts/chart41.js",
+  "csv_path": "charts/files/chart41.csv",
+  "question": "Which club has more current managers? Aston Villa or Sunderland?",
+  "prompt": "@charts/chart41.js @charts/files/chart41.csv Question: Which club has more current managers? Aston Villa or Sunderland?",
+  "prompt_hash": "4c18d5b981c42988d4fb7b0aeb5d1f3591078799cd224b323268498bcdb0e10f",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Sunderland** has more current managers. \n\nHere is the breakdown:\n*   **Sunderland** is linked to 2 \"Current Managers\" in the dataset: David Moyes and Regis Le Bris.\n*   **Aston Villa** is linked to 1 \"Current Manager\": Unai Emery.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

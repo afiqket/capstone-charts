@@ -1,0 +1,19 @@
+{
+  "run_id": "4b39e39d-d1ad-427e-b0f3-18a7f16abd4a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart93",
+  "question_id": "q310",
+  "js_path": "charts/chart93.js",
+  "csv_path": "charts/files/chart93.csv",
+  "question": "What happens if I hover over age 30 in the United Kingdom panel?",
+  "prompt": "@charts/chart93.js @charts/files/chart93.csv Question: What happens if I hover over age 30 in the United Kingdom panel?",
+  "prompt_hash": "a0d6d1b0c7784d61ce9d3c497b78929e543c865ecacff8c94d8086a68a69540e",
+  "returncode": 0,
+  "raw_response": "When you hover over age 30 in the United Kingdom panel, a tooltip will appear displaying the fertility rate for women of different birth cohorts at that specific age. \n\nThe tooltip is structured with a title, subtitle, and a list of up to 10 cohorts sorted from highest to lowest rate, rounded to two decimal places:\n\n**30 (Age of women)**\nin births per woman at a specific age\n*   **1975**: 0.12\n*   **1955**: 0.11\n*   **1980**: 0.11\n*   **1970**: 0.11\n*   **1960**: 0.11\n*   **1950**: 0.11\n*   **1945**: 0.10\n*   **1965**: 0.10\n*   **1985**: 0.10\n*   **1940**: 0.08",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

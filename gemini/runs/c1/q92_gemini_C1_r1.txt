@@ -1,0 +1,19 @@
+{
+  "run_id": "89a2b16e-8e6a-493d-bb29-5d5bb980a2bc",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart30",
+  "question_id": "q92",
+  "js_path": "charts/chart30.js",
+  "csv_path": "charts/files/chart30.csv",
+  "question": "What is the 5th most highest grown crop in Malawi?",
+  "prompt": "@charts/chart30.js @charts/files/chart30.csv Question: What is the 5th most highest grown crop in Malawi?",
+  "prompt_hash": "efcf632f65048ef5c1a0a485f58f4da0de8b4b130783708ad9ae602f1f1f35be",
+  "returncode": 0,
+  "raw_response": "Based on the data, the 5th highest grown crop in Malawi is **Cowpea** (grown by 35% of households).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

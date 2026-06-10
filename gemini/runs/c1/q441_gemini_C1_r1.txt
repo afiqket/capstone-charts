@@ -1,0 +1,19 @@
+{
+  "run_id": "83326634-3aa2-4b50-ab67-ccf289cf88c2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart137",
+  "question_id": "q441",
+  "js_path": "charts/chart137.js",
+  "csv_path": "charts/files/chart137.csv",
+  "question": "Which country had the largest increase in vacation days per year from 1870 to 2000?",
+  "prompt": "@charts/chart137.js @charts/files/chart137.csv Question: Which country had the largest increase in vacation days per year from 1870 to 2000?",
+  "prompt_hash": "82641b92ba822ee158affd51e516b324b8a397bb19e293f5c2f72b2878ddfe5e",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the **Netherlands** had the largest increase in vacation days per year from 1870 to 2000. \n\nIt increased from **4 days** in 1870 to **37.5 days** in 2000, which is an increase of 33.5 days.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "cc25679f-2f78-44c5-b3b7-7078c3c3053c",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart148",
+  "question_id": "q474",
+  "js_path": "charts/chart148.js",
+  "csv_path": "charts/files/chart148.csv",
+  "question": "In the bar chart, what two categories are shown?",
+  "prompt": "@charts/chart148.js @charts/files/chart148.csv Question: In the bar chart, what two categories are shown?",
+  "prompt_hash": "206e281bd08a3beba219a7f0392374a69d1f395256c900fb0f4b7a1f5319334e",
+  "returncode": 0,
+  "raw_response": "Based on the code for the bar chart in `@charts/chart148.js`, the two categories shown are:\n\n1. **2020**\n2. **Projected, 2020**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "9c19c4ca-c309-4fab-8bc4-8e41e043c3cc",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart115",
+  "question_id": "q374",
+  "js_path": "charts/chart115.js",
+  "csv_path": "charts/files/chart115.csv",
+  "question": "What is Iran's antibiotic use in 2020?",
+  "prompt": "@charts/chart115.js @charts/files/chart115.csv Question: What is Iran's antibiotic use in 2020?",
+  "prompt_hash": "a82c06466f5f94b6244d3acab8cc35f04caf96ad0872e17ba1f68941564d8370",
+  "returncode": 0,
+  "raw_response": "According to the data for 2020, Iran's antibiotic use in livestock was **145.37 mg/PCU** (milligrams per kilogram of livestock).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

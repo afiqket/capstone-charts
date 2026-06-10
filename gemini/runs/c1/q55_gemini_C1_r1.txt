@@ -1,0 +1,19 @@
+{
+  "run_id": "2415f4b8-6a49-4131-a3b9-4769ccd4bd6d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart18",
+  "question_id": "q55",
+  "js_path": "charts/chart18.js",
+  "csv_path": "charts/files/chart18.csv",
+  "question": "What is the rank of cerebrovascular diseases in the chart of UK on 2018?",
+  "prompt": "@charts/chart18.js @charts/files/chart18.csv Question: What is the rank of cerebrovascular diseases in the chart of UK on 2018?",
+  "prompt_hash": "6c5526734397e3dbe0facb006edfcce32db34af0c9e69c6436077b3a3ef4c7ec",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided CSV file, the rank of cerebrovascular diseases in the UK in 2018 is **4**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

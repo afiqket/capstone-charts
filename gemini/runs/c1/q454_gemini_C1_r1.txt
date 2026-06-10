@@ -1,0 +1,19 @@
+{
+  "run_id": "ea5bed7a-882c-494d-82bf-d0e29eac9f77",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart141",
+  "question_id": "q454",
+  "js_path": "charts/chart141.js",
+  "csv_path": "charts/files/chart141.csv",
+  "question": "How would I see the graph in the yar 2015",
+  "prompt": "@charts/chart141.js @charts/files/chart141.csv Question: How would I see the graph in the yar 2015",
+  "prompt_hash": "a03dc83ccdcb95a8f288797cbfacaf68c25381897b0b8a9174b25331d09d86e7",
+  "returncode": 0,
+  "raw_response": "To see the graph for the year 2015, you can use the interactive slider at the bottom of the chart.\n\nThere are three ways you can select the year 2015:\n1. **Drag the slider handle:** Click and drag the circular handle on the timeline at the bottom until the chart title updates to \"Life satisfaction vs. life expectancy, 2015\".\n2. **Click on the timeline:** Click directly on the timeline track roughly where 2015 would fall.\n3. **Use the play button:** Click the **\u25b6** (play) button to the left of the timeline to animate through the years, and click it again (**\u23f8**) to pause when it reaches 2015.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

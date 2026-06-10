@@ -1,0 +1,19 @@
+{
+  "run_id": "23b21a00-8301-4f3c-b368-f92ed1931f69",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart135",
+  "question_id": "q435",
+  "js_path": "charts/chart135.js",
+  "csv_path": "charts/files/chart135.csv",
+  "question": "Which country had the largest decrease in annual working hours from its first year to its latest year shown, and what does this suggest?",
+  "prompt": "@charts/chart135.js @charts/files/chart135.csv Question: Which country had the largest decrease in annual working hours from its first year to its latest year shown, and what does this suggest?",
+  "prompt_hash": "6d4b4020c91121927e972d29c4d4c9766ae3da31b6ff89cbcb6318c830d3a41a",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for the countries shown in the chart, **Germany** had the largest decrease in annual working hours. \n\n* **First year (1970):** 1,959.75 hours\n* **Latest year (2017):** 1,355.47 hours\n* **Decrease:** ~604.28 hours \n\n*(For comparison, Japan had the second-largest decrease among the shown countries at 530 hours, and Korea was third at 462 hours.)*\n\n**What this suggests:**\nA drastic reduction in average working hours over several decades generally indicates a combination of socio-economic shifts:\n1. **Stronger Labor Policies & Unions:** The implementation of laws and collective bargaining agreements that secure shorter standard workweeks and mandate more paid leave and public holidays.\n2. **Rise of Part-Time Employment:** A structural shift in the labor market toward more part-time or flexible working arrangements, which pulls down the average number of hours worked per employed person.\n3. **Increased Productivity and Wealth:** As a nation's economy and technological efficiency grow, productivity increases. This allows workers to maintain or improve their standard of living while trading some potential extra income for more leisure time and better work-life balance.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "9ebd4207-9998-4d1b-9510-2c3dd7ecfe3e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart31",
+  "question_id": "q97",
+  "js_path": "charts/chart31.js",
+  "csv_path": "charts/files/chart31.csv",
+  "question": "Which country had the highest percentage of exports throughout all the years from 2000 to 2018?",
+  "prompt": "@charts/chart31.js @charts/files/chart31.csv Question: Which country had the highest percentage of exports throughout all the years from 2000 to 2018?",
+  "prompt_hash": "3e338120c17d7675a698b83772e711e50d28b8e17b21ec15ecc44fdec5a1df86",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the **United States** had the highest percentage of exports across all the years from 2000 to 2018.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

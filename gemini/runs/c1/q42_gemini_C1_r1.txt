@@ -1,0 +1,19 @@
+{
+  "run_id": "2ea22fd5-cbf0-4262-8ee4-f88e979650af",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart14",
+  "question_id": "q2",
+  "js_path": "charts/chart14.js",
+  "csv_path": "charts/files/chart14.csv",
+  "question": "Which region had more active mobile money accounts in 2022: East Asia and Pacific or South Asia?",
+  "prompt": "@charts/chart14.js @charts/files/chart14.csv Question: Which region had more active mobile money accounts in 2022: East Asia and Pacific or South Asia?",
+  "prompt_hash": "629d3937377a8888ba5b536e8580690bfce2cbb2b3f95fcb1877bf949b03dc75",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart14.csv`, **East Asia and Pacific** had more active mobile money accounts in 2022. \n\n- **East Asia and Pacific (2022):** 124,215,224\n- **South Asia (2022):** 116,046,140",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

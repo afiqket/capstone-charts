@@ -1,0 +1,19 @@
+{
+  "run_id": "85251f38-16d7-4f25-a586-ab5c8e7d1546",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart105",
+  "question_id": "q345",
+  "js_path": "charts/chart105.js",
+  "csv_path": "charts/files/chart105.csv",
+  "question": "What is the percent change of New York?",
+  "prompt": "@charts/chart105.js @charts/files/chart105.csv Question: What is the percent change of New York?",
+  "prompt_hash": "f40312bcb049b3b302375fd0562886439de7fae2d6a120d0e89f86a6bbe7702c",
+  "returncode": 0,
+  "raw_response": "The percent change of New York is **28.1**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "ac055bfb-977a-44ba-a3aa-b4fe8b24a3da",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart123",
+  "question_id": "q399",
+  "js_path": "charts/chart123.js",
+  "csv_path": "charts/files/chart123.csv",
+  "question": "What does the purple color represent?",
+  "prompt": "@charts/chart123.js @charts/files/chart123.csv Question: What does the purple color represent?",
+  "prompt_hash": "d271713c86294da37367336a1d34c157239ffac85fd186e364e498721f17a0b5",
+  "returncode": 0,
+  "raw_response": "In the chart, the purple color (`#7D3C98`) represents **Sulphur oxides (SO\u2082)**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

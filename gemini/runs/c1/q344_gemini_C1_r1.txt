@@ -1,0 +1,19 @@
+{
+  "run_id": "e3165967-b5f7-40aa-bac9-2ccf284e217d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart105",
+  "question_id": "q344",
+  "js_path": "charts/chart105.js",
+  "csv_path": "charts/files/chart105.csv",
+  "question": "How do I get the percent change of Texas?",
+  "prompt": "@charts/chart105.js @charts/files/chart105.csv Question: How do I get the percent change of Texas?",
+  "prompt_hash": "2034a7c920b57a4e975d068bbe0e423ab38b2d7e20284d576efb730f1f240ba1",
+  "returncode": 0,
+  "raw_response": "To find the percent change for Texas, you can look at the data provided in `chart105.csv`. \n\nIn the CSV data, the entry for Texas is:\n**Texas, -7.2**\n\nThis indicates that the percent change in past-year cocaine use in Texas from 2011 to 2016 was **-7.2%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "bc8d7552-515a-4ebc-82ef-0009f8009aa2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart94",
+  "question_id": "q312",
+  "js_path": "charts/chart94.js",
+  "csv_path": "charts/files/chart94.csv",
+  "question": "How can I get the average number of children for women born in 1970 by age 40?",
+  "prompt": "@charts/chart94.js @charts/files/chart94.csv Question: How can I get the average number of children for women born in 1970 by age 40?",
+  "prompt_hash": "3e47a3eb85edb75225f59c4d2a848a4c53ceab6485df02fc164db76af033c230",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the default country in the chart (the United States), you can find this information by looking for the row where the `Year` column (which represents the woman's age in this dataset) is `40`, and then checking the value in the `1970` column.\n\nFor **United States** at age **40**, the average number of children for women born in **1970** is **2.081**. \n\n*(Note: If you are looking for a different country, you can find it by locating the country's name in the `Entity` column, finding the row where `Year` is `40`, and looking at the value in the `1970` column).*",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

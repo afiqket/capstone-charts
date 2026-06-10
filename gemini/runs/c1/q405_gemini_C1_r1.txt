@@ -1,0 +1,19 @@
+{
+  "run_id": "f75a8e39-1887-41c4-9765-09343551a24d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart125",
+  "question_id": "q405",
+  "js_path": "charts/chart125.js",
+  "csv_path": "charts/files/chart125.csv",
+  "question": "How do I get the value of Nitrogen oxides in 2004?",
+  "prompt": "@charts/chart125.js @charts/files/chart125.csv Question: How do I get the value of Nitrogen oxides in 2004?",
+  "prompt_hash": "57286be2b1ca4cf13df1e44a08aa87b371ec2f2593ec3d5d52ac1d63dcca9ad2",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart125.csv`, the value for **Nitrogen oxides (NOx)** in the **United States** for the year **2004** is **79.35**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

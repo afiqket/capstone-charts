@@ -1,0 +1,19 @@
+{
+  "run_id": "3239c004-7154-4e2b-97b6-4239335029fb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart65",
+  "question_id": "q225",
+  "js_path": "charts/chart65.js",
+  "csv_path": "charts/files/chart65.csv",
+  "question": "How can I get the pronoun breakdown for rabbits?",
+  "prompt": "@charts/chart65.js @charts/files/chart65.csv Question: How can I get the pronoun breakdown for rabbits?",
+  "prompt_hash": "e3d0f0cd63eb7eb6d0a18a56ad6f245a8095293358b6cea331b899524bf7b583",
+  "returncode": 0,
+  "raw_response": "To get the pronoun breakdown for rabbits using the interactive chart, you can follow these steps:\n\n1. Locate the **\"Filter by animal\"** dropdown menu in the controls section.\n2. Select **\"Rabbit\"** from the list of options.\n\nOnce selected, the chart will filter the data and the summary section (the labels and the colored bar) will automatically update to display the percentage breakdown of **He/him**, **She/her**, and **Other** pronouns specifically for rabbit characters.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

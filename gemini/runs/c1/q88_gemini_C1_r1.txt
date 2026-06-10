@@ -1,0 +1,19 @@
+{
+  "run_id": "82297798-b028-4362-bf8d-8a4846783c8f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart29",
+  "question_id": "q88",
+  "js_path": "charts/chart29.js",
+  "csv_path": "charts/files/chart29.csv",
+  "question": "What is the average profit margin of the developed countries?",
+  "prompt": "@charts/chart29.js @charts/files/chart29.csv Question: What is the average profit margin of the developed countries?",
+  "prompt_hash": "66efaa7cc035bb870b67b8000d7e17e38e033a34f2973b328d61ccb54260b041",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the profit margins for the developed countries are:\n\n*   **Canada:** 29%\n*   **UK:** 22%\n*   **Europe:** 25%\n*   **Japan:** 19%\n\nTo find the average: (29 + 22 + 25 + 19) / 4 = 95 / 4 = **23.75%**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

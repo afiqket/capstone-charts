@@ -1,0 +1,19 @@
+{
+  "run_id": "7c7e3b5b-22d0-4283-977f-c9b0637d6c5a",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart109",
+  "question_id": "q358",
+  "js_path": "charts/chart109.js",
+  "csv_path": "charts/files/chart109.csv",
+  "question": "How do I get the value of Afghanistan in 2012?",
+  "prompt": "@charts/chart109.js @charts/files/chart109.csv Question: How do I get the value of Afghanistan in 2012?",
+  "prompt_hash": "9418da709b02a80256c6a544c6b1ef8469ac6d7e170fa8af995709d148a38876",
+  "returncode": 0,
+  "raw_response": "To get the value for **Afghanistan** in **2012**, you can refer to the data table or the chart's source data. There are two values recorded for that year:\n\n*   **Homicide count:** 1,948\n*   **Homicide rate:** 6.3 (per 100,000 population)\n\nIf you are using the interactive chart:\n1.  Ensure **Afghanistan** is selected in the **\"Select Country\"** dropdown.\n2.  Locate the year **2012** on the X-axis.\n3.  Hover over the blue dot for 2012 to see the tooltip, or scroll down to the data table to find the corresponding row and column.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

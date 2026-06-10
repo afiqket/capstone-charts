@@ -1,0 +1,19 @@
+{
+  "run_id": "e505824f-26fe-4a76-bbed-b1a0150f8e31",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart111",
+  "question_id": "q364",
+  "js_path": "charts/chart111.js",
+  "csv_path": "charts/files/chart111.csv",
+  "question": "What do I have to do to see the female life expectancy in India in 2021?",
+  "prompt": "@charts/chart111.js @charts/files/chart111.csv Question: What do I have to do to see the female life expectancy in India in 2021?",
+  "prompt_hash": "0fc7ef3ebbc0aacc3ecfb38a7056a7aff8ea8bb58b9f04b684097e869dcbffe0",
+  "returncode": 0,
+  "raw_response": "To see the female life expectancy in India in 2021, you should follow these steps using the interactive chart:\n\n1.  **Set the Year to 2021:** Use the year slider (located at the top next to the play button) to select **2021**. The large watermark in the background of the chart and the label next to the slider will update to confirm the year is 2021. (Note: Since 2021 is the maximum year in the dataset, the chart should already be set to it by default.)\n2.  **Locate India's Circle:** Look for a **large blue circle** in the scatter plot. India is part of the **Asia** continent, which is represented by the color **#1f6ad6 (blue)**. Because of India's large population, its circle is one of the largest on the chart.\n3.  **Hover for Details:** Move your mouse cursor over the circle representing India. A tooltip will appear with detailed information.\n4.  **Read the Value:** In the tooltip, you will see the **female life expectancy**, which is **68.9 years** for 2021.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:18680) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "34858712-0e85-462c-8cda-9acdec11c2c0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart104",
+  "question_id": "q341",
+  "js_path": "charts/chart104.js",
+  "csv_path": "charts/files/chart104.csv",
+  "question": "How do I get the percent change of california?",
+  "prompt": "@charts/chart104.js @charts/files/chart104.csv Question: How do I get the percent change of california?",
+  "prompt_hash": "a075c807710d29d6e7fef3d66c7b1a430581b5282bc3d693d1e0af596bca612c",
+  "returncode": 0,
+  "raw_response": "To find the percent change for California, you can look at the data in `chart104.csv` or interact with the map in `chart104.js`.\n\nBased on the provided data in `chart104.csv`:\n\n| State | Percentage |\n| :--- | :--- |\n| **California** | **15.7** |\n\nThe percent change for California is **15.7%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

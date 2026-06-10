@@ -1,0 +1,19 @@
+{
+  "run_id": "92248d5d-bb12-4b8f-8d79-96a267aff108",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart142",
+  "question_id": "q455",
+  "js_path": "charts/chart142.js",
+  "csv_path": "charts/files/chart142.csv",
+  "question": "Which country had the highest average working hours per worker in 1981",
+  "prompt": "@charts/chart142.js @charts/files/chart142.csv Question: Which country had the highest average working hours per worker in 1981",
+  "prompt_hash": "260365a8676e8e029a5eae2d37dde6b21fd96bb5b23ce8db54df4656ec0c3d9e",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided CSV file, **South Korea** had the highest average working hours per worker in 1981, with 2,876.92 hours.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:16932) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

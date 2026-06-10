@@ -1,0 +1,19 @@
+{
+  "run_id": "4f3c0d7c-27b9-4e74-b079-de00e92d7bc4",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart106",
+  "question_id": "q348",
+  "js_path": "charts/chart106.js",
+  "csv_path": "charts/files/chart106.csv",
+  "question": "What does the black color on the counties mean?",
+  "prompt": "@charts/chart106.js @charts/files/chart106.csv Question: What does the black color on the counties mean?",
+  "prompt_hash": "a72afe94ab2c61c20ef35f260d25bbe794e8336d7ae1fc50c3d574c78c3b00ae",
+  "returncode": 0,
+  "raw_response": "Based on the code in `charts/chart106.js`, the black color (specifically the dark gray/black hex code `#3A3A3A`) indicates counties that have **both persistent and high poverty**.\n\nThis is explicitly defined in the chart's color legend and tooltip logic:\n*   **High poverty only:** Blue (`#6BAED6`)\n*   **Persistent poverty only:** Tan/Orange (`#D4956A`)\n*   **Both persistent and high poverty:** Black/Dark Gray (`#3A3A3A`)\n*   **Neither:** Light Gray (`#f0f0f0`)",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

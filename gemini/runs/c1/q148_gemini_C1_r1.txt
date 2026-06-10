@@ -1,0 +1,19 @@
+{
+  "run_id": "8e36c59a-64dd-416e-a6d1-042e6c34e5c6",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart41",
+  "question_id": "q148",
+  "js_path": "charts/chart41.js",
+  "csv_path": "charts/files/chart41.csv",
+  "question": "How can a user find the current manager connected to a specific club?",
+  "prompt": "@charts/chart41.js @charts/files/chart41.csv Question: How can a user find the current manager connected to a specific club?",
+  "prompt_hash": "24f71f197bcfa9d3fb0f8cfe16a5bb8864e21547f008b83914d0d3a1474bc8fe",
+  "returncode": 0,
+  "raw_response": "To find the current manager connected to a specific club, a user should:\n\n1. Click on **\"Current Manager\"** in the legend at the top left to toggle their visibility on.\n2. **Hover** over the specific club's circular node (logo) or its text label. \n\nThis will highlight the selected club and any currently connected managers while fading out the rest of the graph, making the direct connection clear.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

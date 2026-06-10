@@ -1,0 +1,19 @@
+{
+  "run_id": "0bbd2d92-ede4-4ac5-8deb-f47a97ec8906",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart144",
+  "question_id": "q463",
+  "js_path": "charts/chart144.js",
+  "csv_path": "charts/files/chart144.csv",
+  "question": "Where is the play button located at? In which view?",
+  "prompt": "@charts/chart144.js @charts/files/chart144.csv Question: Where is the play button located at? In which view?",
+  "prompt_hash": "9b5fa5b803c685714ca6e5d7a4dcc3e3a6bf797caf9b46bff5384a204f335de5",
+  "returncode": 0,
+  "raw_response": "The play button is located at the **bottom left** of the chart. It is visible only in the **Bar** view.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

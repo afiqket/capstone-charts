@@ -1,0 +1,19 @@
+{
+  "run_id": "481a482b-eb71-4048-bdba-e0a472b8b8e7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart132",
+  "question_id": "q426",
+  "js_path": "charts/chart132.js",
+  "csv_path": "charts/files/chart132.csv",
+  "question": "Across all common years shown, which commodity had the highest average price index?",
+  "prompt": "@charts/chart132.js @charts/files/chart132.csv Question: Across all common years shown, which commodity had the highest average price index?",
+  "prompt_hash": "12980967adcf74934a4770529731135babaeed18d57518d89b6092e4191bda60",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, across all common years where data is available for all three commodities (1860\u20132020), **Petroleum** had the highest average price index. \n\nWhile Wheat and Corn mostly remained between roughly 20 and 160 (with brief peaks during WWI), Petroleum frequently sustained values well above 150, reaching into the 300s, 400s, and up to nearly 688 in the 21st century.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

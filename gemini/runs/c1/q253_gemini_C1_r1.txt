@@ -1,0 +1,19 @@
+{
+  "run_id": "caa525b4-f643-4109-8436-9b5133a27675",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart74",
+  "question_id": "q253",
+  "js_path": "charts/chart74.js",
+  "csv_path": "charts/files/chart74.csv",
+  "question": "What happens if I hover over the South Korea bar in Bar view?",
+  "prompt": "@charts/chart74.js @charts/files/chart74.csv Question: What happens if I hover over the South Korea bar in Bar view?",
+  "prompt_hash": "5beda5be7392e474c467a70da494776634e93c844dcb06408d9772105ddc9177",
+  "returncode": 0,
+  "raw_response": "There is no South Korea bar in the Bar view because South Korea is not included in the `selectedCountries` list (which only contains Finland, Cyprus, Bulgaria, and Sri Lanka). \n\nIf a bar for South Korea were present, hovering over it would display a tooltip showing \"**South Korea**\" along with its data value, \"**69.2%**\", based on the underlying CSV data.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

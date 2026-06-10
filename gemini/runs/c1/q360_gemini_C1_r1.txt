@@ -1,0 +1,19 @@
+{
+  "run_id": "1b515447-cfe0-4720-8232-3dc17468a270",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart110",
+  "question_id": "q360",
+  "js_path": "charts/chart110.js",
+  "csv_path": "charts/files/chart110.csv",
+  "question": "How many medals does Other Europe have in 2008?",
+  "prompt": "@charts/chart110.js @charts/files/chart110.csv Question: How many medals does Other Europe have in 2008?",
+  "prompt_hash": "9da527f9c4c38e9be671a85fe8704aa0821f30177b2af0bd89b3732ae3c8462e",
+  "returncode": 0,
+  "raw_response": "In 2008 (Summer Olympics), Other Europe had **221** medals according to the data in `charts/files/chart110.csv`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

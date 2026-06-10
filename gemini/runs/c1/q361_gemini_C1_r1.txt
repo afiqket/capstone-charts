@@ -1,0 +1,19 @@
+{
+  "run_id": "7d859e1c-d413-419a-9fd5-3f580a65feb9",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart110",
+  "question_id": "q361",
+  "js_path": "charts/chart110.js",
+  "csv_path": "charts/files/chart110.csv",
+  "question": "What color do I need to look at to see the medals of Germany?",
+  "prompt": "@charts/chart110.js @charts/files/chart110.csv Question: What color do I need to look at to see the medals of Germany?",
+  "prompt_hash": "8121c2e4b628bd26f9d130270a5cc8335b4a797e60a09d0e496071133c87c250",
+  "returncode": 0,
+  "raw_response": "To see the medals for **Germany** in the chart, you need to look at the **teal** color (hex code: `#47c8d2`).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

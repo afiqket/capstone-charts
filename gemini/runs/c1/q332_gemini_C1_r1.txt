@@ -1,0 +1,19 @@
+{
+  "run_id": "005f340b-1880-4d7a-a122-cc91148c095b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart101",
+  "question_id": "q332",
+  "js_path": "charts/chart101.js",
+  "csv_path": "charts/files/chart101.csv",
+  "question": "What was the population density of Mumbai in 2020?",
+  "prompt": "@charts/chart101.js @charts/files/chart101.csv Question: What was the population density of Mumbai in 2020?",
+  "prompt_hash": "a9263f9ccaa2ba85be710f3d2ee6226ec96f8821db9d1cec321ce658fd862c8c",
+  "returncode": 0,
+  "raw_response": "According to the data for **Mumbai** in the year **2020**, the population density was **26,695.81 per km\u00b2**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

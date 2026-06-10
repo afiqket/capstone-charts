@@ -1,0 +1,19 @@
+{
+  "run_id": "9aedffe2-f88c-4394-bfba-a2e460ec8a68",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart25",
+  "question_id": "q78",
+  "js_path": "charts/chart25.js",
+  "csv_path": "charts/files/chart25.csv",
+  "question": "What happens if I hover over the white colored country on the map and what death rate value will appear?",
+  "prompt": "@charts/chart25.js @charts/files/chart25.csv Question: What happens if I hover over the white colored country on the map and what death rate value will appear?",
+  "prompt_hash": "b45ec8b9471459780d862e65aa68a9f709849f117e3a7cff731b6a18a44162b1",
+  "returncode": 0,
+  "raw_response": "If you hover over a white-colored country on the map, one of two things will happen depending on the underlying data:\n\n1. **If the country has a recorded value of zero:** \n   - The country will be highlighted with a dark border.\n   - A tooltip will appear displaying the country's name, the year, a sparkline chart of its historical data, and a death value of **0**.\n\n2. **If the country has no data at all in the dataset:**\n   - Nothing will happen (the tooltip remains hidden and no highlight is applied).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

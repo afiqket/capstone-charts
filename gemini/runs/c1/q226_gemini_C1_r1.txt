@@ -1,0 +1,19 @@
+{
+  "run_id": "8196c595-4193-415c-94c0-3b5528131c4b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart65",
+  "question_id": "q226",
+  "js_path": "charts/chart65.js",
+  "csv_path": "charts/files/chart65.csv",
+  "question": "What happens if I change the pronoun dropdown?",
+  "prompt": "@charts/chart65.js @charts/files/chart65.csv Question: What happens if I change the pronoun dropdown?",
+  "prompt_hash": "2ee6f64b626ab165b593112421657d938691e656a497d0a09568662587569ffa",
+  "returncode": 0,
+  "raw_response": "When you change the pronoun dropdown in this chart, it triggers a re-render of the visualization to show only the characters that match your selection. Specifically, the following things happen:\n\n1. **Data Filtering**: The underlying data is filtered to include only the characters with the chosen pronoun (e.g., \"he/him\", \"she/her\", \"other\", or \"All pronouns\").\n2. **Icon Grid Update**: The grid of animal icons is updated to display only the characters that match the selected pronoun filter (along with any active animal or search filters).\n3. **Count Update**: The text displaying the total number of animal characters shown (e.g., \"X animal characters shown\") is updated to reflect the new filtered count.\n4. **Summary Bar & Labels Update**: The summary bar and the percentage labels (\"He/him: X%\", \"She/her: Y%\", \"Other: Z%\") update to reflect the breakdown of pronouns within the *currently filtered* data.\n5. **Search Suggestions**: The search bar's autocomplete suggestions are also restricted to only show book titles that contain characters matching the selected pronoun.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

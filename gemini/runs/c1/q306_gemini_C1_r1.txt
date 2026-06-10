@@ -1,0 +1,19 @@
+{
+  "run_id": "ed097e22-1f8f-44f2-97ba-b6eace54e303",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart92",
+  "question_id": "q306",
+  "js_path": "charts/chart92.js",
+  "csv_path": "charts/files/chart92.csv",
+  "question": "How can I get the exact percentage for 1 birth among women born in 1973?",
+  "prompt": "@charts/chart92.js @charts/files/chart92.csv Question: How can I get the exact percentage for 1 birth among women born in 1973?",
+  "prompt_hash": "332fc889fa808eed0a4738f49c3c4cf149c709eb1e4cf27d034a10c170a732dc",
+  "returncode": 0,
+  "raw_response": "To get the exact percentage for 1 birth among women born in 1973 in the United States, you can look at the `chart92.csv` data file. \n\nIf you locate the row for the **United States** and the year **1973**, you'll find the value under the **\"1 birth\"** column:\n\n```csv\nEntity,Code,Year,No births,1 birth,2 births,3 births,4 births or more\nUnited States,USA,1973,10.299998,19.285498,34.362274,21.595285,14.456943\n```\n\nThe exact percentage is **19.285498%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

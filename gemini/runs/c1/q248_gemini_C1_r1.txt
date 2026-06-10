@@ -1,0 +1,19 @@
+{
+  "run_id": "e13bf2d6-5a06-471e-9173-a549361d17bf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart73",
+  "question_id": "q248",
+  "js_path": "charts/chart73.js",
+  "csv_path": "charts/files/chart73.csv",
+  "question": "What overall pattern can be seen among South American countries?",
+  "prompt": "@charts/chart73.js @charts/files/chart73.csv Question: What overall pattern can be seen among South American countries?",
+  "prompt_hash": "6705362f9c5fea9c3fdef189c4deef978dccdc8cfeac598c30b3c1cd6c6b0d0f",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the overall pattern among South American countries shows a generally high percentage of respondents who know friends or family who have been anxious or depressed. \n\nSpecifically:\n* **High prevalence:** Most countries in the region report shares well over 50% (e.g., Peru at 65.8%, Brazil at 61.7%, Chile at 60.8%, and Venezuela at 60.2%).\n* **Regional average:** The average for South America as a whole is quite high at **58.9%**.\n* **Notable exception:** Paraguay is the only South American country in the dataset that significantly deviates from this high-percentage trend, reporting a much lower share of **37.0%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "c3902a9b-94e2-4177-b8da-d618c5c884d0",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart126",
+  "question_id": "q407",
+  "js_path": "charts/chart126.js",
+  "csv_path": "charts/files/chart126.csv",
+  "question": "How can I get the data for the percentage of obesity in men of 1994 in Switzerland?",
+  "prompt": "@charts/chart126.js @charts/files/chart126.csv Question: How can I get the data for the percentage of obesity in men of 1994 in Switzerland?",
+  "prompt_hash": "fb57c7f68b0bf394f5bf6a89bb9b5a385414609feaf4239efe1be3eb362713c1",
+  "returncode": 0,
+  "raw_response": "Based on the data in `charts/files/chart126.csv`, the percentage of obesity in men in Switzerland for the year 1994 is **10.62777%**.\n\nYou can find this by searching for the row where `Entity` is \"Switzerland\" and `Year` is \"1994\", which contains the value `10.62777` in the `Obesity in men` column.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:5376) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError executing tool grep_search: Invalid regular expression pattern provided: (?i)switzerland. Error: Invalid regular expression: /(?i)switzerland/: Invalid group\nGrepLogic: Error in performGrepSearch (Strategy: javascript fallback): This operation was aborted\nError during GrepLogic execution: Error: Operation timed out after 30000ms. In large repositories, consider narrowing your search scope by specifying a 'dir_path' or an 'include_pattern'.\nError executing tool grep_search: Error: Operation timed out after 30000ms. In large repositories, consider narrowing your search scope by specifying a 'dir_path' or an 'include_pattern'.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

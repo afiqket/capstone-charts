@@ -1,0 +1,19 @@
+{
+  "run_id": "81cd0506-68e1-4bf7-a7e4-e8f34faf80c7",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart81",
+  "question_id": "q274",
+  "js_path": "charts/chart81.js",
+  "csv_path": "charts/files/chart81.csv",
+  "question": "What happens if I click the play button under the chart?",
+  "prompt": "@charts/chart81.js @charts/files/chart81.csv Question: What happens if I click the play button under the chart?",
+  "prompt_hash": "6a917f9d6c72dadaebe42c937b82dca2cd252eb77ed8786a820659b59d2db8c0",
+  "returncode": 0,
+  "raw_response": "When you click the play button under the chart, the following happens:\n\n1. **Starts an animation:** It automatically steps through the years in the dataset, advancing to the next year every 400 milliseconds. \n2. **Updates the chart:** As the year changes, the slider handle moves to the current year. If the chart is in \"Bar\" mode, the bars re-render to display the data for that specific year.\n3. **Changes the icon:** The play button icon (\"\u25b6\") changes to a pause icon (\"\u23f8\"). \n4. **Auto-resets if at the end:** If the slider is already at the last available year when you click play, it will automatically reset to the first year and start the animation from the beginning.\n5. **Auto-stops:** Once the animation reaches the final year, it stops automatically and the button reverts back to the play icon. \n6. **Pausing:** If you click the button while the animation is already running, it will pause the progression and switch the icon back to \"\u25b6\".",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

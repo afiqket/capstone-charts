@@ -1,0 +1,21 @@
+{
+  "run_id": "9d1b5d01-06b0-48ca-a3eb-df849c1ce157",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "auth_method": "Login with Google",
+  "subscription": "Google AI Pro",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart1",
+  "question_id": "q1",
+  "js_path": "charts/chart1.js",
+  "csv_path": "charts/files/chart1.csv",
+  "question": "What percentage of applicants received a decision in under 6 months?",
+  "prompt": "@charts/chart1.js @charts/files/chart1.csv Question: What percentage of applicants received a decision in under 6 months?",
+  "prompt_hash": "f5d32b920aa9f76c8e7cfa06d54945e478b8361df1e36c30ed44d6d4112e85eb",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **2%** of applicants received a decision in under 6 months.",
+  "stderr": "",
+  "parsed_answer": ""
+}

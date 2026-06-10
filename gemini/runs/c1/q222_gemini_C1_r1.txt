@@ -1,0 +1,19 @@
+{
+  "run_id": "6b171400-7801-4267-8aae-18f259709bc8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart64",
+  "question_id": "q222",
+  "js_path": "charts/chart64.js",
+  "csv_path": "charts/files/chart64.csv",
+  "question": "What does a large gray rectangle mean?",
+  "prompt": "@charts/chart64.js @charts/files/chart64.csv Question: What does a large gray rectangle mean?",
+  "prompt_hash": "d56b5295b6732bed16be49bfc84c6d5229c8fcca49918c5934f1b04dcc49d8a0",
+  "returncode": 0,
+  "raw_response": "Based on the chart's legend and visual encoding, a large gray rectangle represents the **Range** (specifically, the range of price movements between the minimum and maximum values over the given time period).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

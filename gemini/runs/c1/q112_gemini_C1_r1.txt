@@ -1,0 +1,19 @@
+{
+  "run_id": "510802ea-e8d8-4f14-a311-552b92f57a71",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart34",
+  "question_id": "q112",
+  "js_path": "charts/chart34.js",
+  "csv_path": "charts/files/chart34.csv",
+  "question": "What is the flight number of the flight in Costa Rica, at 1am on the 4th of September?",
+  "prompt": "@charts/chart34.js @charts/files/chart34.csv Question: What is the flight number of the flight in Costa Rica, at 1am on the 4th of September?",
+  "prompt_hash": "7d3d35b79821600e70027dfed1d9e8e0b58d27f3497b560e6b3652119967a56e",
+  "returncode": 0,
+  "raw_response": "Based on the data in `chart34.csv`, there are a few flights associated with Costa Rica (specifically, Avianca Costa Rica and Volaris Costa Rica). \n\nTo find the flight active at **1am on the 4th of September** (which corresponds to the Unix timestamp **1567558800** in the dataset):\n- Flight **LRC625** was active from `1567556120` to `1567557760`.\n- Flight **LRC640** was active from `1567556000` to `1567556720`.\n- Flight **VOC4068** was active from `1567559540` to `1567560520`.\n- Flight **LRC620** was active from `1567557560` to `1567560560`.\n\nThe only flight active at 1:00 AM on September 4th is **LRC620**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\n(node:13060) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)\nError executing tool read_file: File size exceeds the 20MB limit.\nError executing tool read_file: File size exceeds the 20MB limit.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\nError executing tool read_file: File size exceeds the 20MB limit.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "e011510f-e792-4a10-9466-d087527bd52f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart98",
+  "question_id": "q324",
+  "js_path": "charts/chart98.js",
+  "csv_path": "charts/files/chart98.csv",
+  "question": "How can I find the peak month and daily birth rate for France in 2005?",
+  "prompt": "@charts/chart98.js @charts/files/chart98.csv Question: How can I find the peak month and daily birth rate for France in 2005?",
+  "prompt_hash": "4db5e8525bdf617fb5647d1c77c905373a19f412e4732f23f8373e851d14e481",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart98.csv`, you can find this information by looking for the row where the `Entity` is \"France\" and the `Year` is 2005. \n\nHere is the exact data for **France in 2005**:\n* **Peak month:** September (Month 9)\n* **Daily birth rate:** 36.17458 births per day\n\nIf you were interacting with the visualization in `chart98.js`, you could find this by:\n1. Moving the slider at the bottom to the year **2005**.\n2. Looking at the line or bar representing **France**. \n3. Hovering over the data point for France to see the tooltip, which will display the daily rate and the peak month (indicated both in text and by the color corresponding to September in the legend).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "e58df8ca-b03d-4cb8-9fe4-578995581d9b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart49",
+  "question_id": "q178",
+  "js_path": "charts/chart49.js",
+  "csv_path": "charts/files/chart49.csv",
+  "question": "What happens if I click several countries with different trends at the same time?",
+  "prompt": "@charts/chart49.js @charts/files/chart49.csv Question: What happens if I click several countries with different trends at the same time?",
+  "prompt_hash": "ab256d0a13906499436bf39df9d177d61911001b3dbe5c6b253ca73a425a2ee8",
+  "returncode": 0,
+  "raw_response": "If you click multiple countries with different trends at the same time, all the selected countries will be highlighted and displayed on the chart simultaneously. \n\nSpecifically:\n*   **Upward Trends:** The lines, data points, and labels for countries with a positive trend (happiness score went up) will be colored **orange**.\n*   **Downward Trends:** The lines, data points, and labels for countries with a negative trend (happiness score went down) will be colored **blue**.\n\nThis allows you to visually compare multiple upward and downward trending countries on the exact same graph. If you want to unselect a country, you can click on its label on either side of the chart.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

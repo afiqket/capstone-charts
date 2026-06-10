@@ -1,0 +1,19 @@
+{
+  "run_id": "532e1e2d-d209-464d-aefd-0db2047e2e04",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart21",
+  "question_id": "q66",
+  "js_path": "charts/chart21.js",
+  "csv_path": "charts/files/chart21.csv",
+  "question": "What information could I get if I hover over to Russia in map chart?",
+  "prompt": "@charts/chart21.js @charts/files/chart21.csv Question: What information could I get if I hover over to Russia in map chart?",
+  "prompt_hash": "cf1f1272552d08743e8b7f3a0ef2200d27db4b4f934b877109aa7f1dd85527ab",
+  "returncode": 0,
+  "raw_response": "If you hover over Russia in the map chart, a tooltip will appear displaying the following information:\n\n1. **Country Name:** Russia\n2. **Year:** The specific year of the data being displayed.\n3. **Percentage Value:** The share of the population in Russia that owns a mobile phone for that year (e.g., 98.6% for the year 2023).\n4. **Estimation Note (if applicable):** A warning message (\"\u24d8 Closest available data\") if there is no exact data for the currently selected year on the slider, meaning it is falling back to the nearest previous year.\n5. **Trend Sparkline:** A small line chart visualizing the historical trend of mobile phone ownership in Russia across all its available data years (from **2017 to 2023**).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

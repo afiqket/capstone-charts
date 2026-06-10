@@ -1,0 +1,19 @@
+{
+  "run_id": "e2659782-3766-491c-8263-31994a7471d8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart12",
+  "question_id": "q2",
+  "js_path": "charts/chart12.js",
+  "csv_path": "charts/files/chart12.csv",
+  "question": "In June 2024, which vehicle type has higher total bookings, Mini or Premium?",
+  "prompt": "@charts/chart12.js @charts/files/chart12.csv Question: In June 2024, which vehicle type has higher total bookings, Mini or Premium?",
+  "prompt_hash": "0ad52551285bdcf2cae0cb26af113e3fae8e9724429699854baaa8fbe70de48d",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, **Premium** has higher total bookings in June 2024. \n\nThere are 10 bookings for Premium in June 2024, compared to only 3 bookings for Mini.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

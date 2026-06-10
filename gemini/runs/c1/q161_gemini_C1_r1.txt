@@ -1,0 +1,19 @@
+{
+  "run_id": "acd5bd41-e59b-4bbc-9f40-036b9a30cdcb",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart44",
+  "question_id": "q161",
+  "js_path": "charts/chart44.js",
+  "csv_path": "charts/files/chart44.csv",
+  "question": "What is the percentage for the cause: Improper Disposal that causes data breaching?",
+  "prompt": "@charts/chart44.js @charts/files/chart44.csv Question: What is the percentage for the cause: Improper Disposal that causes data breaching?",
+  "prompt_hash": "aee4b97d084669036377909f4d659611d2d29086c62a38cf5ce08025d64ced66",
+  "returncode": 0,
+  "raw_response": "Based on the analysis of the `chart44.csv` dataset, there are a total of **3,361** data breach records. Out of those, **103** breaches were caused by **Improper Disposal**. \n\nTherefore, the percentage of data breaches caused by Improper Disposal is approximately **3.06%**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool read_file: File not found.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:25228) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

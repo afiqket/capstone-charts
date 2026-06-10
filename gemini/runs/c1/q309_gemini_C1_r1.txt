@@ -1,0 +1,19 @@
+{
+  "run_id": "83618a22-29c8-47b9-aedd-07aaf7e12c34",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart93",
+  "question_id": "q309",
+  "js_path": "charts/chart93.js",
+  "csv_path": "charts/files/chart93.csv",
+  "question": "How can I get the fertility rate for women in Japan born in 1990 at age 30?",
+  "prompt": "@charts/chart93.js @charts/files/chart93.csv Question: How can I get the fertility rate for women in Japan born in 1990 at age 30?",
+  "prompt_hash": "10066a1e5a4000ee3a10735ac6a67ed68c930ac837cb39223372c0aec0d9dd42",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the fertility rate for women in Japan born in 1990 at age 30 is **0.10289** (births per woman). \n\nYou can find this by looking at the row for `Japan`, `JPN`, `30` (which represents the age) and finding the value in the column for the `1990` birth cohort.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

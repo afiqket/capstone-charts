@@ -1,0 +1,19 @@
+{
+  "run_id": "7530848e-7921-4004-93a9-b43b409c443d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart133",
+  "question_id": "q428",
+  "js_path": "charts/chart133.js",
+  "csv_path": "charts/files/chart133.csv",
+  "question": "Upon hovering the line chart, what can user observe in the chart?",
+  "prompt": "@charts/chart133.js @charts/files/chart133.csv Question: Upon hovering the line chart, what can user observe in the chart?",
+  "prompt_hash": "f6b6b709590da285ac47b283831a48f3c42cb1c1bdef254ae5d9c441ddf6c235",
+  "returncode": 0,
+  "raw_response": "Upon hovering over the line chart, the user can observe the following interactive elements:\n\n1. **Vertical Crosshair Line**: A vertical line appears and snaps to the nearest year based on the cursor's position along the x-axis.\n2. **Data Points (Dots)**: Colored circles appear on each commodity's line at the exact data values for the hovered year. \n3. **Tooltip**: A floating box appears near the cursor, displaying:\n   - The specific year being hovered.\n   - A list of all commodities that have data available for that year, sorted in descending order by their price value.\n   - For each commodity, it shows a color-coded square matching its line, the commodity's name, and its exact price value (formatted to two decimal places).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

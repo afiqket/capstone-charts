@@ -1,0 +1,19 @@
+{
+  "run_id": "ec53297d-e7bd-4de6-8053-070d2617e69f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart92",
+  "question_id": "q307",
+  "js_path": "charts/chart92.js",
+  "csv_path": "charts/files/chart92.csv",
+  "question": "What happens if I hover over the 2 births area around 1973?",
+  "prompt": "@charts/chart92.js @charts/files/chart92.csv Question: What happens if I hover over the 2 births area around 1973?",
+  "prompt_hash": "6c36479a5330f1fbece2c83d073774085d43fee065deab9239145d6a22871381",
+  "returncode": 0,
+  "raw_response": "If you hover over the \"2 births\" area around 1973 on the chart, the following happens:\n\n1. **Visual Indicators:**\n   - A vertical line appears at the year 1973.\n   - Five dots appear along this vertical line, one in the middle of each birth category's area.\n\n2. **Tooltip Display:**\n   - A tooltip appears with **1973** as its title.\n   - It lists all the birth categories from top to bottom (No births to 4 births or more) along with their percentages for the United States in 1973, formatted to two decimal places.\n   - Because you are hovering over the **\"2 births\"** area, that specific row in the tooltip (both the label and the percentage) will be highlighted in **bold**.\n\nThe data in the tooltip will read:\n*   No births: 10.30%\n*   1 birth: 19.29%\n*   **2 births: 34.36%** *(bolded)*\n*   3 births: 21.60%\n*   4 births or more: 14.46%",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

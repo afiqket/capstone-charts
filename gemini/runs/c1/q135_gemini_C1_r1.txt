@@ -1,0 +1,19 @@
+{
+  "run_id": "de1d63d4-f612-405c-813b-3148f7ccbfa8",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart39",
+  "question_id": "q135",
+  "js_path": "charts/chart39.js",
+  "csv_path": "charts/files/chart39.csv",
+  "question": "What was the average Real GDP growth across all quarters shown from 2021 to 2025?",
+  "prompt": "@charts/chart39.js @charts/files/chart39.csv Question: What was the average Real GDP growth across all quarters shown from 2021 to 2025?",
+  "prompt_hash": "2614256580ae232e0d39fcf5534d74318c63638b11e950a716295bd18ad8c488",
+  "returncode": 0,
+  "raw_response": "Based on the provided data in `chart39.csv`, the Real GDP values for all quarters from 2021 to 2025 are:\n\n* Jan-21: 5.6\n* Apr-21: 6.4\n* Jul-21: 3.5\n* Oct-21: 7.4\n* Jan-22: -1.0\n* Apr-22: 0.3\n* Jul-22: 2.7\n* Oct-22: 3.4\n* Jan-23: 2.8\n* Apr-23: 2.4\n* Jul-23: 4.4\n* Oct-23: 3.2\n* Jan-24: 1.6\n* Apr-24: 3.0\n* Jul-24: 3.1\n* Oct-24: 2.4\n* Jan-25: -0.2\n\n**Sum:** 51.0\n**Number of quarters:** 17\n\n**Average:** 51.0 / 17 = **3.0%**",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "9acce824-c6c0-484b-958b-39d0bee79177",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart88",
+  "question_id": "q293",
+  "js_path": "charts/chart88.js",
+  "csv_path": "charts/files/chart88.csv",
+  "question": "From 1970 to 2021, what trend is shown for Japan females?",
+  "prompt": "@charts/chart88.js @charts/files/chart88.csv Question: From 1970 to 2021, what trend is shown for Japan females?",
+  "prompt_hash": "98a877410583f800b60ed768c0313a0fcb450cda10cd31f37c3318d104960509",
+  "returncode": 0,
+  "raw_response": "Based on the data provided, the trend for the modal age at death for females in Japan from 1970 to 2021 is **increasing** (an upward trend). It rose steadily from 81.8 years in 1970 to 93.0 years in 2021.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

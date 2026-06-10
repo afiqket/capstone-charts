@@ -1,0 +1,19 @@
+{
+  "run_id": "c6634695-c8e1-4c3e-a00a-00c288183e4d",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart31",
+  "question_id": "q100",
+  "js_path": "charts/chart31.js",
+  "csv_path": "charts/files/chart31.csv",
+  "question": "What happens if you hover over one of the lines or bars? Does the chart show a tooltip or extra value label?",
+  "prompt": "@charts/chart31.js @charts/files/chart31.csv Question: What happens if you hover over one of the lines or bars? Does the chart show a tooltip or extra value label?",
+  "prompt_hash": "b12be96e30b32ad34722a99795bd649bd99cf945cc70b2385e5434eb1680a1f7",
+  "returncode": 0,
+  "raw_response": "Based on the provided code in `@charts/chart31.js`, there is no hover interaction, tooltip, or extra value label implemented for the lines or the bars. \n\nIf you hover over them, nothing happens. The chart relies solely on the axes and static bar labels to convey the data values.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "68f5d891-eb0c-4eb8-9e55-7d748d31c04f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart133",
+  "question_id": "q429",
+  "js_path": "charts/chart133.js",
+  "csv_path": "charts/files/chart133.csv",
+  "question": "In 1889, does cocoa or rice has the higher price?",
+  "prompt": "@charts/chart133.js @charts/files/chart133.csv Question: In 1889, does cocoa or rice has the higher price?",
+  "prompt_hash": "e4bbfa0781d6d95a3ce91691463ea6a5b44ea7f2742cd31071c6ce9226adb7bf",
+  "returncode": 0,
+  "raw_response": "Based on the data for the year 1889, **rice** had the higher price. \n\n*   **Rice:** 90.02\n*   **Cocoa:** 84.05",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

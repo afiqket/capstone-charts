@@ -1,0 +1,19 @@
+{
+  "run_id": "122beaae-b1d4-49ff-84a0-fa273e09715f",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart116",
+  "question_id": "q378",
+  "js_path": "charts/chart116.js",
+  "csv_path": "charts/files/chart116.csv",
+  "question": "How do I get the information for 2016 in the bar chart?",
+  "prompt": "@charts/chart116.js @charts/files/chart116.csv Question: How do I get the information for 2016 in the bar chart?",
+  "prompt_hash": "d4a9ce58c0b586a1bda24173e770ba268b6b75ebb1b246a29301ac24c4ff9eaa",
+  "returncode": 0,
+  "raw_response": "To get the information for **2016** in the bar chart, follow these steps in the interactive chart:\n\n1.  **Switch to Bar Mode:** Click the **\"\ud83d\udcca Bar\"** button located at the top left of the chart area.\n2.  **Use the Slider:** Locate the year slider at the bottom of the chart. Drag the circular handle or click along the horizontal line until the year **2016** is selected.\n3.  **View Results:** The bar chart will update to show the data specifically for 2016.\n\nFor the **World** in 2016, the \"Share of the population using safely managed drinking water\" was:\n*   **Urban:** 85.5%\n*   **Rural:** 60.1%",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

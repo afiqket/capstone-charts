@@ -1,0 +1,19 @@
+{
+  "run_id": "4c68385a-ebe3-476d-ae1c-ea3c9ae57959",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart136",
+  "question_id": "q439",
+  "js_path": "charts/chart136.js",
+  "csv_path": "charts/files/chart136.csv",
+  "question": "What is the average years for Japan in the 2000s?",
+  "prompt": "@charts/chart136.js @charts/files/chart136.csv Question: What is the average years for Japan in the 2000s?",
+  "prompt_hash": "9e20a13c537bd6f56296348017033cfa46ccbd87e2bbd44ca0406cd79fa54fdb",
+  "returncode": 0,
+  "raw_response": "Based on the data for Japan in the 2000s (years 2000 through 2009), here are the values for the average effective age of retirement for women:\n\n- 2000: 66.2\n- 2001: 66.0\n- 2002: 65.6\n- 2003: 65.9\n- 2004: 66.1\n- 2005: 66.2\n- 2006: 66.3\n- 2007: 66.5\n- 2008: 66.9\n- 2009: 67.3\n\nCalculating the average:\n(66.2 + 66.0 + 65.6 + 65.9 + 66.1 + 66.2 + 66.3 + 66.5 + 66.9 + 67.3) / 10 = 663.0 / 10 = **66.3**\n\nThe average effective retirement age for women in Japan during the 2000s was **66.3 years**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

@@ -1,0 +1,19 @@
+{
+  "run_id": "47f43f7a-21b3-4ab6-8bdc-f5cb7dcbdaad",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart123",
+  "question_id": "q400",
+  "js_path": "charts/chart123.js",
+  "csv_path": "charts/files/chart123.csv",
+  "question": "How do I see in the bar chart the information for 2007?",
+  "prompt": "@charts/chart123.js @charts/files/chart123.csv Question: How do I see in the bar chart the information for 2007?",
+  "prompt_hash": "161d0466d6e145538b2c9ac61115d7be05c38161a6c3dc167fba2e441a30bad1",
+  "returncode": 0,
+  "raw_response": "To see the information for **2007** in the bar chart, follow these steps:\n\n1.  **Switch to Bar Mode:** Click the **\"\ud83d\udcca Bar\"** button located at the top left of the chart area.\n2.  **Adjust the Slider:** Use the horizontal slider at the bottom of the chart. Drag the circular handle or click on the timeline until the chart title updates to include **2007**.\n3.  **View the Data:** Once 2007 is selected, the bar chart will display the emission levels for France in that year. Specifically, for 2007, you will see:\n    *   **Nitrogen oxides (NOx):** 65.20\n    *   **PM\u2081\u2080 (Index):** 59.15\n    *   **PM\u2082.\u2085 (Index):** 52.21\n    *   **Carbon Monoxide (CO):** 43.64\n    *   **Sulphur oxides (SO\u2082):** 31.68",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

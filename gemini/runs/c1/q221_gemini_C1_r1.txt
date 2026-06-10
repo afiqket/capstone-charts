@@ -1,0 +1,19 @@
+{
+  "run_id": "c946c60c-b945-44a3-b71d-f4aa7e61dcd2",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart64",
+  "question_id": "q221",
+  "js_path": "charts/chart64.js",
+  "csv_path": "charts/files/chart64.csv",
+  "question": "What is Tesla's largest drop in percentage? When does that happen?",
+  "prompt": "@charts/chart64.js @charts/files/chart64.csv Question: What is Tesla's largest drop in percentage? When does that happen?",
+  "prompt_hash": "777d6ce33157e56fab1d7ef1877fe5200f38fc59ed41eb43c4141060446bf008",
+  "returncode": 0,
+  "raw_response": "Based on the data in the provided CSV file, Tesla's largest percentage drop (year-to-date) is **45.10%**. This drop occurs on **8/4/2025**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?\n(node:10200) [DEP0190] DeprecationWarning: Passing args to a child process with shell option true can lead to security vulnerabilities, as the arguments are not escaped, only concatenated.\n(Use `node --trace-deprecation ...` to show where the warning was created)",
+  "parsed_answer": ""
+}

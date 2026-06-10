@@ -1,0 +1,19 @@
+{
+  "run_id": "70c1110b-bd2f-47e3-8bff-4dc069bdeffa",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart28",
+  "question_id": "q87",
+  "js_path": "charts/chart28.js",
+  "csv_path": "charts/files/chart28.csv",
+  "question": "What happen if I hover at the country labeled with orange color?",
+  "prompt": "@charts/chart28.js @charts/files/chart28.csv Question: What happen if I hover at the country labeled with orange color?",
+  "prompt_hash": "5a506652ebe43132309157fb73946ef09a5920c59261933c839622c5ed81317f",
+  "returncode": 0,
+  "raw_response": "Based on the provided code, when you hover over a country labeled with an orange color, the following visual changes and interactions occur:\n\n1. **Country Highlight**: The border (stroke) of the hovered country will change to solid black (`#000`) and become slightly thicker (stroke-width of `1`).\n2. **Tooltip Appearance**: A tooltip will appear next to your mouse cursor.\n3. **Tooltip Content**: The tooltip will display:\n   - The **name of the country** in bold text.\n   - An orange-colored dot symbol (\u25cf).\n   - The corresponding category for that country, which will be **\"None or temporary\"** (if it's Deep Orange) or **\"None or inadequate\"** (if it's Coral).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

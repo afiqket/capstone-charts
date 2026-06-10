@@ -1,0 +1,19 @@
+{
+  "run_id": "1e45cebc-1a50-4763-9795-95092c9c656b",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart59",
+  "question_id": "q207",
+  "js_path": "charts/chart59.js",
+  "csv_path": "charts/files/chart59.csv",
+  "question": "How can I get to the MaxFlowMinCut in the chart?",
+  "prompt": "@charts/chart59.js @charts/files/chart59.csv Question: How can I get to the MaxFlowMinCut in the chart?",
+  "prompt_hash": "d61bbefb243f48d97a8ec53ee0e25827b5dc67e94ffdd0cac46858e0fa881301",
+  "returncode": 0,
+  "raw_response": "Based on the chart's data and initial state, the tree starts with everything collapsed except for the main root node (`flare`), which means the top-level categories are visible. \n\nTo find **MaxFlowMinCut**, you need to follow its hierarchical path: `flare` > `analytics` > `graph` > `MaxFlowMinCut`.\n\nHere are the exact steps to reveal it:\n1. Click on the **analytics** node to expand its contents.\n2. Click on the **graph** node that appears to expand it.\n\n**MaxFlowMinCut** will now be visible in the list under `graph`.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

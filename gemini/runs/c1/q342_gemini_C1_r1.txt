@@ -1,0 +1,19 @@
+{
+  "run_id": "f41daf66-a8b2-4d8b-a78e-07d668fbf2db",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart104",
+  "question_id": "q342",
+  "js_path": "charts/chart104.js",
+  "csv_path": "charts/files/chart104.csv",
+  "question": "What is the percent change of Alaska?",
+  "prompt": "@charts/chart104.js @charts/files/chart104.csv Question: What is the percent change of Alaska?",
+  "prompt_hash": "a5d5bbd25f7cb32327eda8baddb2a49bb7179e2ef7d508cc241453390cd765f9",
+  "returncode": 0,
+  "raw_response": "The percent change of Alaska is **30.3**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

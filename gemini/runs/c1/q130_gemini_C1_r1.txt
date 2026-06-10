@@ -1,0 +1,19 @@
+{
+  "run_id": "9dc191e4-8fbc-4936-a982-df21882b461e",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart37",
+  "question_id": "q130",
+  "js_path": "charts/chart37.js",
+  "csv_path": "charts/files/chart37.csv",
+  "question": "What is the average number of homes for sale across the Inventory period?",
+  "prompt": "@charts/chart37.js @charts/files/chart37.csv Question: What is the average number of homes for sale across the Inventory period?",
+  "prompt_hash": "3fe76507d8b44b147ec40e387388e282c6d1b65652dc2de0dd4d783af3905add",
+  "returncode": 0,
+  "raw_response": "Based on the data provided for the \"Inventory\" period in `chart37.js`, there are 79 monthly data points from January 2013 to July 2019.\n\nThe sum of all the values in the `inventoryRaw` array is **142,079,361**.\nDividing this by 79 gives an average of approximately **1,798,472.92** homes for sale across the period.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.\nError executing tool run_shell_command: Tool \"run_shell_command\" not found. Did you mean one of: \"update_topic\", \"grep_search\", \"invoke_agent\"?",
+  "parsed_answer": ""
+}

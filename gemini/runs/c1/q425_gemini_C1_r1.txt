@@ -1,0 +1,19 @@
+{
+  "run_id": "2104f6cb-b94f-4dfb-908b-e3ef92121ffd",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart132",
+  "question_id": "q425",
+  "js_path": "charts/chart132.js",
+  "csv_path": "charts/files/chart132.csv",
+  "question": "In 2020, which commodity had the highest price index?",
+  "prompt": "@charts/chart132.js @charts/files/chart132.csv Question: In 2020, which commodity had the highest price index?",
+  "prompt_hash": "2cf1febb71b64abf12c8d15661f3ef43893884c2794e7ba074f57ba84a735ed3",
+  "returncode": 0,
+  "raw_response": "Based on the provided data for the year 2020, **Petroleum** had the highest price index (225.98).",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

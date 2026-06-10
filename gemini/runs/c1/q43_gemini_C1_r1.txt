@@ -1,0 +1,19 @@
+{
+  "run_id": "e935e1f9-4ca5-44b3-b944-16083387a3bf",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart14",
+  "question_id": "q3",
+  "js_path": "charts/chart14.js",
+  "csv_path": "charts/files/chart14.csv",
+  "question": "What overall trend can be observed in active mobile money accounts from 2010 to 2024?",
+  "prompt": "@charts/chart14.js @charts/files/chart14.csv Question: What overall trend can be observed in active mobile money accounts from 2010 to 2024?",
+  "prompt_hash": "181bb209f7fb547f457a97c76900d142a1adc65d773179992e1b1971d6dbd1aa",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the overall trend observed is a **consistent and significant increase** in the number of active mobile money accounts from 2010 to 2024 across all listed regions. \n\nThe growth is especially massive in regions like Sub-Saharan Africa (growing from ~10.4 million to over 430 million), South Asia, and East Asia & Pacific, indicating a rapid global adoption of mobile money services over this 14-year period.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}

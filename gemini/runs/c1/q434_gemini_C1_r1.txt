@@ -1,0 +1,19 @@
+{
+  "run_id": "f0351020-45cc-42b3-85ee-d256001a9a33",
+  "vendor": "Google",
+  "tool": "Gemini CLI",
+  "model_name": "gemini-3.1-pro-preview",
+  "condition": "C1",
+  "input_modality": "JS+CSV",
+  "chart_id": "chart135",
+  "question_id": "q434",
+  "js_path": "charts/chart135.js",
+  "csv_path": "charts/files/chart135.csv",
+  "question": "How can user get the annual working hours for Canada in 2000?",
+  "prompt": "@charts/chart135.js @charts/files/chart135.csv Question: How can user get the annual working hours for Canada in 2000?",
+  "prompt_hash": "cc94d9b11ee10f5d4d9714e186d242c35a7be8ecb9240ea7cad9d34dc1275378",
+  "returncode": 0,
+  "raw_response": "Based on the provided data, the annual working hours per person employed for Canada in 2000 was **1778.6146**.",
+  "stderr": "Ripgrep is not available. Falling back to GrepTool.",
+  "parsed_answer": ""
+}
