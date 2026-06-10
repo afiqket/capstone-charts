@@ -1,0 +1,20 @@
+{
+  "answer": "The blue line represents PM₂.₅ emissions: particulate matter less than 2.5 microns in diameter, measured in tonnes.",
+  "reasoning": "The rendered line chart title is 'Emissions of particulate matter, United Kingdom, 1970 to 2016'. The chart has two series: PM₁₀ and PM₂.₅. The right-side series labels show PM₁₀ in orange/brown and PM₂.₅ in blue. The subtitle defines PM₂.₅ as particulate matter less than 2.5 microns in diameter. A hover tooltip also listed PM₂.₅ as one of the line series with values in tonnes.",
+  "confidence": 0.99,
+  "evidence": "SVG labels showed 'PM₂.₅' in blue/rgb(78, 121, 167). Subtitle states PM₁₀ and PM₂.₅ denote particulate matter less than 10 and 2.5 microns in diameter, respectively. Hover tooltip included 'PM₂.₅: 120,000 tonnes'.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the notebook/chart to render",
+  "Inspected the rendered iframe/SVG text labels",
+  "Hovered over the line chart plot area to read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at 0 tonnes",
+  "No dual y-axes observed",
+  "Line chart has two separate series, not stacked",
+  "No log scale indicated",
+  "Tooltip series label matched the visual blue label"
+  ],
+  "self_check": "The blue line is the PM₂.₅ series, meaning annual UK emissions of fine particulate matter under 2.5 microns, measured in tonnes; this matches both the blue label and tooltip."
+ }

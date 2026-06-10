@@ -1,0 +1,21 @@
+{
+  "answer": "2.08 children per woman",
+  "reasoning": "I identified the chart as an interactive line chart titled \"Cumulative fertility rate by women's birth year, United States.\" The x-axis is age of women and the y-axis is average number of children by that age. I hovered at age 40 and read the tooltip values rather than estimating from the line position. In the Age 40 tooltip, the row for the 1970 birth cohort shows 2.08.",
+  "confidence": 0.98,
+  "evidence": "Tooltip at Age 40 listed cohort 1970 with value 2.08 avg. children by this age.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Inspected the rendered chart frame and SVG",
+  "Hovered over the chart at age 40",
+  "Read the tooltip values for Age 40"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at 0 and is not truncated",
+  "No dual y-axes observed",
+  "Line chart, not stacked or grouped bars",
+  "Linear axis ticks observed, no log scale active",
+  "No filter or linked selection was active",
+  "Tooltip value was used instead of pixel estimation"
+  ],
+  "self_check": "For women born in 1970, the chart tooltip at age 40 reports an average cumulative fertility of 2.08 children, so the answer is 2.08 children per woman."
+ }

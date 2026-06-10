@@ -1,0 +1,1 @@
+Hover over Afghanistan on the map to show its tooltip; the value is 0 psychiatrists per 100,000 people.

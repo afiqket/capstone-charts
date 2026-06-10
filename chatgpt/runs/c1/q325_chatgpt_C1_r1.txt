@@ -1,0 +1,1 @@
+The chart switches to bar mode for 2010, showing two horizontal bars: France at 36.02098 births per day with peak month October, and Spain at 30.446602 births per day with peak month September.

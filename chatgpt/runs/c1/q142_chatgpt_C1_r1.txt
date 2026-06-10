@@ -1,0 +1,1 @@
+A user can click Chelsea to zoom into the club, then hover over an individual player bubble. A tooltip appears showing the player name, club, and transfer fee.

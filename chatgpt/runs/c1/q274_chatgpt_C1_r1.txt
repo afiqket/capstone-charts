@@ -1,0 +1,1 @@
+Clicking the play button animates the year slider through the available years, updating the bar chart every 400 milliseconds. If it starts at the last year, it jumps back to the first year first; clicking again pauses it.

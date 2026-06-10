@@ -1,0 +1,23 @@
+{
+  "answer": "Hovering over 2020 shows a vertical guide line and a tooltip for 2020 listing each city’s population: Jakarta 39.1 million, Tokyo 33.7 million, Dhaka 32.6 million, New Delhi 29.1 million, Shanghai 27.7 million, Cairo 24.0 million, Karachi 19.3 million, New York City 14.0 million, and Lahore 14.0 million.",
+  "reasoning": "I identified the chart as an interactive line chart titled \"Number of people living in the world's largest cities\". The x-axis is years from 1950 to 2100 and the y-axis is population from 0 to 60 million, with a linear scale starting at zero. I hovered at the 2020 x-axis position on the rendered SVG and read the displayed tooltip values directly.",
+  "confidence": 0.98,
+  "evidence": "Tooltip after hovering 2020 displayed: 2020; Jakarta: 39.1 million; Tokyo: 33.7 million; Dhaka: 32.6 million; New Delhi: 29.1 million; Shanghai: 27.7 million; Cairo: 24.0 million; Karachi: 19.3 million; New York City: 14.0 million; Lahore: 14.0 million.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Captured an accessibility snapshot",
+  "Inspected the rendered SVG chart structure",
+  "Hovered over the 2020 x-axis position on the line chart",
+  "Read the tooltip text from the rendered chart"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Line chart, not stacked or grouped bars",
+  "Linear scale, not logarithmic",
+  "No active linked filter affecting the full line chart",
+  "Tooltip values were used instead of pixel estimates"
+  ],
+  "self_check": "The hover interaction on 2020 produces a 2020 tooltip with nine city population values, led by Jakarta at 39.1 million, matching the tooltip evidence."
+ }

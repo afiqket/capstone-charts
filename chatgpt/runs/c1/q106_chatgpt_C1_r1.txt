@@ -1,0 +1,1 @@
+No. The graph marks do not have click or hover interactions; only the dropdown controls are interactive.

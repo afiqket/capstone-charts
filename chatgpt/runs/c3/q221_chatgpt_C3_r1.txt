@@ -1,0 +1,22 @@
+{
+  "answer": "Tesla's largest displayed drop is \u221244.4%, occurring on 10 Mar 2025 and again on 08 Apr 2025.",
+  "reasoning": "I identified the chart as an interactive horizontal range/current-value chart for 2025-to-date asset price movements. The x-axis is a linear percentage scale from about \u221250% to 40% with 10 percentage-point ticks; there is no dual axis. I used the date slider and read the rendered Tesla row value label rather than estimating from pixels. Scrubbing across the full date range showed Tesla's most negative displayed value as \u221244.4%. Rechecking around the low points after waiting for rendering confirmed \u221244.4% on 10 Mar 2025 and \u221244.4% on 08 Apr 2025.",
+  "confidence": 0.88,
+  "evidence": "Tesla row value labels read from the rendered chart: 10 Mar 2025 = \u221244.4%; 08 Apr 2025 = \u221244.4%. Nearby checks included 11 Mar 2025 = \u221241.6% and 07 Apr 2025 = \u221241.9%, so the \u221244.4% readings were the lowest displayed values.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the notebook iframe and chart to render",
+  "Inspected the rendered SVG chart and axis labels",
+  "Clicked/scrubbed the interactive date slider across the full range",
+  "Rechecked Tesla values around the minimum dates with additional slider interactions"
+  ],
+  "pitfalls_checked": [
+  "Confirmed chart uses a single linear percentage x-axis",
+  "Confirmed no dual y-axes",
+  "Confirmed the chart is a horizontal range/current-value display, not stacked bars",
+  "Checked that the interactive slider state was driving the displayed date and Tesla value",
+  "Used rendered value labels instead of pixel-only estimation",
+  "Allowed time for the chart to settle after slider interactions"
+  ],
+  "self_check": "The lowest Tesla percentage shown by the chart is \u221244.4%; this minimum appears on both 10 Mar 2025 and 08 Apr 2025, consistent with the Tesla row readings during slider checks."
+ }

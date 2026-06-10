@@ -1,0 +1,1 @@
+Filter the CSV to Entity = France and Year = 2018, then read the Ages 60-79 column. The value is 2.6660638 years, shown as 2.67 in the tooltip.

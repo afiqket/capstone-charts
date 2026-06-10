@@ -1,0 +1,1 @@
+Select Bachelor's degree from the Educational Attainment dropdown, but the provided code/data do not actually filter by education.

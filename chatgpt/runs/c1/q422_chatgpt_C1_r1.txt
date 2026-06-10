@@ -1,0 +1,1 @@
+When the user hovers near a data point, that country is highlighted, other points are dimmed, its label appears in bold, and a tooltip shows the country, year, total consumer expenditure, and food expenditure.

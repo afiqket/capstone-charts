@@ -1,0 +1,1 @@
+Use the Year slider and move it to 1880; the chart shows years from 1800 through 1880.

@@ -1,0 +1,9 @@
+{
+  "answer": "67 countries",
+  "reasoning": "I identified the chart as an interactive multi-series line chart titled Number of countries with key economic and social rights for women, World. The y-axis is a linear count scale from 0 to 200 with 20-country tick intervals and starts at zero; the x-axis is year from 1970 to 2023. I hovered at the 2010 x-position and read the tooltip rather than estimating from pixels. The tooltip row for Pay equity mandated shows 67.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for year 2010 listed Pay equity mandated: 67.",
+  "interactions_performed": ["Opened the Observable chart URL with Playwright", "Inspected the rendered SVG chart in the Observable iframe", "Hovered over the 2010 position on the line chart", "Read the tooltip values for 2010"],
+  "pitfalls_checked": ["Y-axis starts at zero", "No dual y-axes observed", "Line chart is not stacked or grouped", "Linear scale observed, not log scale", "No active linked filter affecting the displayed full World series", "Tooltip value was used instead of visual estimation"],
+  "self_check": "For 2010, the tooltip reports Pay equity mandated as 67, so the number of countries was 67."
+ }

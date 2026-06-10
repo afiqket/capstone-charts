@@ -1,0 +1,1 @@
+Click the 18th hole on the x-axis to stop the animation there.

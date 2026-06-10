@@ -1,0 +1,1 @@
+Hovering over a bar shows a tooltip with the country name, the year 2020, and the discomfort percentage formatted to one decimal place.

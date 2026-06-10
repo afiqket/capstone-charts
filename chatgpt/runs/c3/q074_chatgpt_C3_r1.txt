@@ -1,0 +1,22 @@
+{
+  "answer": "Hover over the orange \"Yes\" countries on the 2010 map to see their information. The countries marked \"Yes\" in 2010 are Colombia, Iraq, and Pakistan; each tooltip says \"2010 — Yes — conflict occurred.\"",
+  "reasoning": "The chart is an interactive choropleth map titled \"Countries where interstate or intrastate wars took place, 2010.\" The legend encodes No data, No, and Yes, with Yes shown in orange. The year slider is at 2010. I inspected the rendered SVG map and hovered the orange countries to read tooltips rather than estimating from color alone.",
+  "confidence": 0.98,
+  "evidence": "Legend: orange = Yes. Tooltip readings: Colombia, 2010, Yes — conflict occurred; Iraq, 2010, Yes — conflict occurred; Pakistan, 2010, Yes — conflict occurred. Rendered orange country list: Colombia, Iraq, Pakistan.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Captured page snapshot and screenshot",
+  "Inspected the rendered SVG legend and country fills",
+  "Hovered orange Yes countries and read tooltips for Colombia, Iraq, and Pakistan"
+  ],
+  "pitfalls_checked": [
+  "Confirmed this is a map, not an axis-based chart",
+  "Confirmed legend color mapping: orange means Yes",
+  "Confirmed year shown is 2010",
+  "Checked for filters/views: Map and Line buttons present; map view used for the question",
+  "Used tooltips/rendered SVG rather than pixel estimation",
+  "No y-axis truncation, dual y-axis, log scale, or stacked bars apply"
+  ],
+  "self_check": "In 2010, the map marks Colombia, Iraq, and Pakistan as Yes, and their tooltips consistently report that conflict occurred."
+ }

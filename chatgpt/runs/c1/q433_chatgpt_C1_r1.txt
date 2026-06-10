@@ -1,0 +1,1 @@
+It jumps directly to the nearest year on the slider and updates the chart immediately, without starting the automatic year-by-year animation.

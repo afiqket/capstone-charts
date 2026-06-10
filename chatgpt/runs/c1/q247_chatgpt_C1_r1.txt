@@ -1,0 +1,1 @@
+A tooltip appears showing the country name and its psychiatrist value per 100,000 people, and the country is highlighted with a darker outline.

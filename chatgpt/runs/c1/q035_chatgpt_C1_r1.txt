@@ -1,0 +1,1 @@
+The tooltip displays the vehicle type Premium, the month, and the Total Revenue value for that point.

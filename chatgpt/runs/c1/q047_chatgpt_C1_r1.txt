@@ -1,0 +1,1 @@
+Hover over Mexico on the map to see a tooltip with Mexico's mobile phone ownership percentage for the selected year.

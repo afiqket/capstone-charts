@@ -1,0 +1,23 @@
+{
+  "answer": "It starts from the current selected year, not the starting year, unless the selected year is already the final year.",
+  "reasoning": "I opened the chart in Playwright, switched to Bar mode because the year slider/play control is visible there, selected a non-final year with the slider, and then clicked play. The chart title stayed at the selected year immediately after clicking play, then advanced to the next available year after the timer tick. This shows playback continues from the current slider-selected year. The only observed/implemented exception is when the current year is the last year, where play resets to the starting year.",
+  "confidence": 0.98,
+  "evidence": "After selecting the slider year, the chart title read 'Weekly working hours, 1913'. Immediately after clicking play, it still read 'Weekly working hours, 1913' with the play icon changed to pause. After the next interval, it advanced to 'Weekly working hours, 1929'. Slider endpoints shown were 1870 and 2000.",
+  "interactions_performed": [
+  "Opened https://observablehq.com/d/6ffc65cc247c63fe with Playwright MCP",
+  "Captured page snapshot",
+  "Clicked the Bar mode button",
+  "Identified the chart SVG and transparent slider overlay",
+  "Selected year 1913 via the year slider",
+  "Clicked the play button",
+  "Read the chart title and slider handle state before play, immediately after play, and after one playback tick"
+  ],
+  "pitfalls_checked": [
+  "Verified Bar mode was active so the slider/play control was visible",
+  "Verified the selected year was not the endpoint year before testing playback",
+  "Checked that the play action did not reset to the starting year",
+  "Checked behavior after the first playback interval",
+  "Noted endpoint exception: if current year is the final year, playback resets to the starting year"
+  ],
+  "self_check": "When a user selects 1913 and presses play, the chart remains at 1913 first and then advances to 1929, so playback begins from the current selected year rather than from 1870."
+ }

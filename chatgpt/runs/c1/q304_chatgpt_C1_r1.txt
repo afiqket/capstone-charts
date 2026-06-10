@@ -1,0 +1,1 @@
+Hovering over 1973 shows a vertical hover line and a tooltip for United States, 1973 with: 5th birth or higher 32.87 years, 4th birth 30.78 years, 3rd birth 29.55 years, 2nd birth 28.04 years, All 27.48 years, and 1st birth 25.10 years.

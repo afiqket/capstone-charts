@@ -1,0 +1,1 @@
+When you move your mouse away from a country, the country outline resets to the default white stroke and the tooltip disappears.

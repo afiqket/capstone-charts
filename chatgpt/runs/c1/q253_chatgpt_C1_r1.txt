@@ -1,0 +1,1 @@
+Nothing, because South Korea is not included in the Bar view, so there is no South Korea bar to hover over.

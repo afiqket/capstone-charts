@@ -1,0 +1,1 @@
+Clicking the Map button switches the chart to the map view, updates the Map button to the active blue style, hides any tooltip, and redraws the choropleth map.

@@ -1,0 +1,1 @@
+Turn on both legend options, Current Manager and Manager, then hover over the Everton club bubble to show the Everton-connected manager nodes and highlighted links.

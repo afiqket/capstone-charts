@@ -1,0 +1,1 @@
+Filter the digital skills CSV or the chart's trendData by the desired Country, then sort by Year of Time and read the digital skills percentage values. The available years in the data are 2021, 2023, and 2025.

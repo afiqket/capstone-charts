@@ -1,0 +1,1 @@
+A vertical hover line appears at the nearest year and a tooltip opens for France around 2000, listing all age groups. For 2000, Ages 60-79 is shown as 3.38 years.

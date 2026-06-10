@@ -1,0 +1,1 @@
+Dragging the year slider from 1990 to 2024 updates the map or bar chart through the available years, changing the title, colors or bars, and tooltip values to reflect each selected year.

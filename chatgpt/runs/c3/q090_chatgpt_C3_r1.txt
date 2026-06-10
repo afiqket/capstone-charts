@@ -1,0 +1,20 @@
+{
+  "answer": "Hovering the United States bar shows a tooltip: United States; Revenue Share 45%; Profit Margin 17%; Economy U.S.",
+  "reasoning": "I identified the chart as an interactive horizontal bar chart titled Profit Margin. The x-axis is Profit Margin from 0% to 28% in 2% ticks, and the y-axis is Revenue Share (%) from 0 to 100. I hovered the United States bar and read the rendered tooltip rather than estimating from the bar position.",
+  "confidence": 0.98,
+  "evidence": "Tooltip text after hovering United States: Revenue Share 45%, Profit Margin 17%, Economy U.S.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Inspected the rendered iframe and SVG chart",
+  "Hovered the United States bar",
+  "Read the visible tooltip text from the rendered chart"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Bars are not stacked; each horizontal bar represents one region/country",
+  "No log scale observed",
+  "Tooltip value was used instead of pixel estimation"
+  ],
+  "self_check": "The hover interaction displays a tooltip for United States with 45% revenue share, 17% profit margin, and Economy listed as U.S.; this matches the rendered tooltip evidence."
+ }

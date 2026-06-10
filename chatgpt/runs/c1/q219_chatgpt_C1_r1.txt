@@ -1,0 +1,1 @@
+It plays from the current slider position. It only restarts from the beginning if the slider is already at the end.

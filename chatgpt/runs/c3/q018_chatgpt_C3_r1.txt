@@ -1,0 +1,9 @@
+{
+  "answer": "Marin County, California, at 59.5% of all adults with a bachelor's degree",
+  "reasoning": "The chart is a California county choropleth, not a state-level map. The active group is All adults. The legend encodes higher bachelor’s-degree percentages with darker purple shades. I hovered the darkest counties and then swept the county paths; Marin County had the highest tooltip value at 59.5%, above San Francisco County at 58.1% and Santa Clara County at 52.4%.",
+  "confidence": 0.94,
+  "evidence": "Tooltip readings: Marin County All adults: 59.5%; San Francisco County All adults: 58.1%; Santa Clara County All adults: 52.4%; San Mateo County All adults: 51.0%; Alameda County All adults: 47.4%. Legend label: Percent with a bachelor's degree.",
+  "interactions_performed": ["Opened chart URL with Playwright", "Waited for chart rendering", "Inspected accessibility snapshot and SVG structure", "Captured screenshot", "Hovered San Francisco County path", "Hovered candidate high-value counties", "Swept rendered county paths with Playwright hover and read tooltips"],
+  "pitfalls_checked": ["Confirmed chart is a choropleth map with county regions", "Confirmed active filter is All adults", "Used tooltip values instead of pixel estimation", "Checked legend color encoding for higher values", "Checked that the question says state but rendered map is county-level", "No dual axes or y-axis truncation applicable", "No log scale applicable"],
+  "self_check": "Among the visible county-level regions, Marin County has the highest tooltip value, so it is the strongest positive outlier on the map."
+ }

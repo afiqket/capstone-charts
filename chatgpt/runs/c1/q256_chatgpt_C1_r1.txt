@@ -1,0 +1,1 @@
+Hovering over Algeria in 2016 shows a tooltip for Algeria with the value No, and Algeria is highlighted on the map.

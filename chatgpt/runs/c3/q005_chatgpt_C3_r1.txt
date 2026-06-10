@@ -1,0 +1,21 @@
+{
+  "answer": "405,399 deaths",
+  "reasoning": "This is a horizontal bar chart titled \"How Many Members of the US Military Have Died in Each War?\". I used the active \"Deaths\" view, read the x-axis labeled \"Deaths\" with ticks from 0K to 700K, and matched the World War II row to its displayed value label. The World War II bar is labeled 405,399.",
+  "confidence": 0.99,
+  "evidence": "Rendered chart shows the World War II row with value label \"405,399\" in the Deaths view.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Captured a page snapshot of the rendered chart",
+  "Hovered the World War II value label \"405,399\"",
+  "Re-read the rendered chart snapshot after hover"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the selected metric was Deaths, not Deaths per Day or Deaths per Population",
+  "Confirmed the x-axis unit was Deaths",
+  "Confirmed the chart is a horizontal bar chart, not stacked or grouped",
+  "Checked that there was no dual y-axis",
+  "Checked that the displayed value label was used instead of estimating from bar length"
+  ],
+  "self_check": "World War II corresponds to the bar labeled 405,399, so the number of deaths was 405,399 deaths."
+ }

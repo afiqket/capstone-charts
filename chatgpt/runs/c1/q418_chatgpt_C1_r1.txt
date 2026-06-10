@@ -1,0 +1,1 @@
+The chart can be biased toward certain countries because it shows absolute smoker counts rather than rates or population-adjusted values, so larger-population countries may appear more important even if their smoking prevalence is not higher. It also includes only a selected set of countries, which can shape the comparison.

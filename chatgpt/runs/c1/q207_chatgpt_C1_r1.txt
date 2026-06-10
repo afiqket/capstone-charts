@@ -1,0 +1,1 @@
+Click analytics, then click graph; MaxFlowMinCut is under flare/analytics/graph.

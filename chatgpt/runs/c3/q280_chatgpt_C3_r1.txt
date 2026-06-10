@@ -1,0 +1,20 @@
+{
+  "answer": "A tooltip appears for World, 2010 showing Excess female deaths: 1.66 million and Missing female births: 1.71 million.",
+  "reasoning": "I opened the Observable chart with Playwright, confirmed the active view is a line chart titled Annual number of missing female births and excess mortality, World, and hovered at the 2010 x-position in the rendered SVG. The hover interaction displayed a tooltip for the nearest year, 2010, with both line-series values.",
+  "confidence": 0.98,
+  "evidence": "Tooltip text after hover: World, 2010; Excess female deaths: 1.66 million; Missing female births: 1.71 million.",
+  "interactions_performed": [
+  "Opened chart URL with Playwright",
+  "Inspected rendered chart snapshot",
+  "Hovered over the 2010 position on the line chart",
+  "Read the rendered tooltip text from the SVG"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes detected",
+  "Line chart has two color-encoded series",
+  "Tooltip value used instead of pixel estimation",
+  "2010 is before the post-2015 projection region"
+  ],
+  "self_check": "Hovering on the 2010 point causes the chart to show a World 2010 tooltip with 1.66 million excess female deaths and 1.71 million missing female births, matching the observed tooltip."
+ }

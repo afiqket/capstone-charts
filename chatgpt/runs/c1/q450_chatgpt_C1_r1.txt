@@ -1,0 +1,1 @@
+Clicking the play button animates the chart through the available years. If it is already at the last year, it restarts at the first year, then advances one year every 500 milliseconds until the last year; clicking again pauses it.

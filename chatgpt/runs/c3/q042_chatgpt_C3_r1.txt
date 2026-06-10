@@ -1,0 +1,22 @@
+{
+  "answer": "East Asia and Pacific had more active mobile money accounts in 2022: 124.22 million versus South Asia's 116.05 million.",
+  "reasoning": "I identified the chart as an interactive stacked area chart titled 'Active mobile money accounts' with regions encoded by color. The x-axis is years from 2010 to 2024 and the y-axis is active accounts from 0 to 800 million on a linear scale. I hovered the rendered chart at 2022 and read the tooltip values for the two requested regions. East Asia and Pacific was higher than South Asia.",
+  "confidence": 0.99,
+  "evidence": "2022 tooltip: East Asia and Pacific = 124.22 million active accounts; South Asia = 116.05 million active accounts.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered chart snapshot",
+  "Hovered the 2022 chart area to display the tooltip",
+  "Read the tooltip values from the rendered SVG"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Chart is stacked, so tooltip segment values were used rather than stacked top positions",
+  "No log scale observed",
+  "No linked filter active",
+  "Tooltip values used instead of pixel estimation"
+  ],
+  "self_check": "The comparison is consistent: 124.22 million is greater than 116.05 million, so East Asia and Pacific had more active mobile money accounts in 2022."
+ }

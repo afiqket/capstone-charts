@@ -1,0 +1,1 @@
+Switch to the Line chart and hover around year 2000 on the x-axis; the tooltip will list Ethiopia's value. Ethiopia in 2000 has a Best estimate value of 24.

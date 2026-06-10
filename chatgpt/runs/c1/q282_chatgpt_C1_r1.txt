@@ -1,0 +1,1 @@
+Hover over the line chart at the year 1932; the tooltip shows France's cohort life expectancy as 69.8 years.

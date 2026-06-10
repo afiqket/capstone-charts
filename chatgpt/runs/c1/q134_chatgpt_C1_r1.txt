@@ -1,0 +1,1 @@
+Click the legend items for Real GDP, Investment, Net exports, and Government spending to turn them off, leaving only Consumption active.

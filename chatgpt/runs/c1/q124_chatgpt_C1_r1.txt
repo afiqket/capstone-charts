@@ -1,0 +1,1 @@
+It plays or pauses the animation through the ranking dates.

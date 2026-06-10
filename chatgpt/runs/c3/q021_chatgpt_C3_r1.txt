@@ -1,0 +1,21 @@
+{
+  "answer": "198 Mid-level jobs",
+  "reasoning": "I identified the chart as an interactive stacked horizontal bar chart titled \"Top Skills Demand 2024-2026 by Seniority\". The y-axis lists skill names, including Power BI, and the x-axis is \"Distinct Count of Job ID\" with a linear scale from 0 to 500. I inspected the Power BI row and hovered the Mid seniority segment to read the tooltip value directly rather than estimating from bar length.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for Power BI showed: Seniority: Mid; Distinct Job Count: 198.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the rendered chart to load",
+  "Captured an accessibility snapshot of the chart",
+  "Inspected rendered SVG marks",
+  "Hovered the Power BI Senior, Mid, and Junior segments and read tooltips"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the x-axis starts at 0, so it is not truncated",
+  "Confirmed the chart uses stacked horizontal bars by seniority",
+  "Used tooltip values rather than pixel estimation",
+  "Confirmed the relevant segment was Mid seniority",
+  "Checked there was no dual y-axis or log scale indicated"
+  ],
+  "self_check": "The Mid-level segment for Power BI reports a distinct job count of 198, so 198 Mid-level jobs require Power BI."
+ }

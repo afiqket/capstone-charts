@@ -1,0 +1,1 @@
+Clicking the play button starts animating the map year by year along the slider. The map redraws every 350 ms, the button changes to a pause icon, and playback stops when it reaches the final year.

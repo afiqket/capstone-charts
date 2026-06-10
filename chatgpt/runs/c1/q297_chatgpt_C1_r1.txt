@@ -1,0 +1,1 @@
+Filter the data to Entity = France and Year = 2000, then read the 50% column: 82.4 years.

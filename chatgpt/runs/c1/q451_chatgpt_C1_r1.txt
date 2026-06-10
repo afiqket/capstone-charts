@@ -1,0 +1,1 @@
+Hover over a country’s bubble. A tooltip appears showing the country name, year, exact life satisfaction, life expectancy, and population.

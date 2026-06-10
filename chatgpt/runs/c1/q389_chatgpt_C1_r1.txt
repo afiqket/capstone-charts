@@ -1,0 +1,1 @@
+When hovering over a line chart, the user sees a vertical guide line and a tooltip for the nearest year showing the percentage values for each infection type: bloodstream, gonorrhea, gastrointestinal, and urinary tract infections.

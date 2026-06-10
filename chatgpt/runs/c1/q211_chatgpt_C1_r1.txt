@@ -1,0 +1,1 @@
+Clicking a leaf node such as Easing or TextSprite does not reveal anything deeper because it has no children; the tree updates but the visible structure is unchanged.

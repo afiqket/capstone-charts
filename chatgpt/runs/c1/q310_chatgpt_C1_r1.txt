@@ -1,0 +1,1 @@
+A tooltip appears titled "30 (Age of women)" with the subtitle "in births per woman at a specific age". It lists the top cohorts at that age in the United Kingdom panel, sorted by fertility rate, including 1980: 0.12, 1960: 0.11, 1985: 0.11, 1975: 0.11, 1965: 0.11, 1955: 0.11, 1950: 0.10, 1970: 0.10, 1990: 0.10, and 1945: 0.08.

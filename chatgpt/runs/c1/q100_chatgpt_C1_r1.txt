@@ -1,0 +1,1 @@
+Nothing special happens on hover; the chart does not show a tooltip or extra hover value label.

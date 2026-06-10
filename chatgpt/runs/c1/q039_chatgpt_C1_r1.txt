@@ -1,0 +1,1 @@
+Hover over the line chart around the year 2010 to see the tooltip; the Memory value is 11,587.933 constant 2020 US$ per terabyte.

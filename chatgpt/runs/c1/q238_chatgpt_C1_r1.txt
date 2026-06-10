@@ -1,0 +1,1 @@
+Hovering over a country highlights its border and shows a tooltip with the country name and its value per 100,000 people.

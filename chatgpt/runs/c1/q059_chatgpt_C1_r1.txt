@@ -1,0 +1,1 @@
+Use the Line view to compare the selected countries over time: United States, United Kingdom, China, India, and Japan. You can also use the Bar view to compare those countries for the currently selected year, or hover countries on the map to inspect individual values.

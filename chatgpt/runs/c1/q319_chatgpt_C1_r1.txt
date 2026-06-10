@@ -1,0 +1,1 @@
+A vertical hover line appears and a tooltip for 2000 is shown, including France: 13.2 — Peak: Jul, and Spain: 9.8 — Peak: Sep.

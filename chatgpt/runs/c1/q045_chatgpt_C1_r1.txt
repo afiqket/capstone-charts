@@ -1,0 +1,1 @@
+Clicking or dragging the timeline slider changes the starting year shown in the chart, filtering the view to display data from that selected year through 2024.

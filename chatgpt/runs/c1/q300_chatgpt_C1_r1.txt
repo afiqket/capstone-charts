@@ -1,0 +1,1 @@
+Switch to Bar mode and set the year slider to 2023; the 5th birth or higher bar value is 34.45 years.

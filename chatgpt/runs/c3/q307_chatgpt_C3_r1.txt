@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering over the 2 births area around 1973 shows a tooltip for 1973, with 2 births highlighted at 34.36%.",
+  "reasoning": "I identified the chart as an interactive stacked area chart titled 'Share of women who have had a given number of births, United States'. The x-axis is women's birth year from 1918 to 1973, and the y-axis is percentage from 0% to 100% on a linear scale. I hovered over the rendered 2 births band at the 1973 position and read the generated tooltip. The tooltip lists all birth-count categories for 1973, with the hovered 2 births row bolded.",
+  "confidence": 0.98,
+  "evidence": "Tooltip at 1973: No births 10.30%, 1 birth 19.29%, 2 births 34.36% (bold/highlighted), 3 births 21.60%, 4 births or more 14.46%.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the notebook chart to render",
+  "Inspected the rendered SVG chart and axis labels",
+  "Moved the browser mouse to the 1973 position within the 2 births area",
+  "Read the visible tooltip text and bolded hovered row from the rendered chart"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at 0% and runs to 100%",
+  "No dual y-axes observed",
+  "Chart is stacked area, so the 2 births value is read from tooltip rather than stacked height",
+  "No log scale observed",
+  "Full range shown from 1918 to 1973; no active range filter narrowing the chart",
+  "Tooltip value was used instead of estimating from pixel position"
+  ],
+  "self_check": "At women's birth year 1973, the hover tooltip highlights the 2 births category and reports it as 34.36%, consistent with the displayed tooltip evidence."
+ }

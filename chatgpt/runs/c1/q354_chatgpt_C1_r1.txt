@@ -1,0 +1,1 @@
+Select "Year-Over-Year Change (%)" from the Metrics dropdown.

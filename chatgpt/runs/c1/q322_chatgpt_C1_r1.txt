@@ -1,0 +1,1 @@
+The chart updates from the 2000 monthly bars to the 2010 monthly bars. Most bars become shorter, showing lower birth rates in 2010, while September remains one of the highest months.

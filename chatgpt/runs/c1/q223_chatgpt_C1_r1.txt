@@ -1,0 +1,1 @@
+Clicking the play button starts the animation through the dates, moving the slider and updating the chart values over time; while playing it becomes a pause button.

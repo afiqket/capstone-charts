@@ -1,0 +1,1 @@
+The visible range changes to 1970 through 2020, so years after 2020 disappear. The chart title updates to 1970 to 2020, the right-side labels move to the 2020 values, and China ends at 72.30 million instead of the 2050 value.

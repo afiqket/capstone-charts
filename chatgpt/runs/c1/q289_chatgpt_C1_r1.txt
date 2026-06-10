@@ -1,0 +1,1 @@
+There is no click handler, so clicking a dot does not trigger a persistent action. On hover, Norway 1960 is highlighted, other countries fade, the Norway legend is emphasized, and a tooltip shows Norway 1960 with 75.9 years.

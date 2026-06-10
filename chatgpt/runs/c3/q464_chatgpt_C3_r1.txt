@@ -1,0 +1,20 @@
+{
+  "answer": "In 1992, Canada’s female labor force participation rate was 57.8%. It was the same in the United States: 57.8%.",
+  "reasoning": "I identified the chart as an interactive line chart showing female labor force participation rates by country over time, with percentage on a linear y-axis from 0% to 70% and years on the x-axis. I used the hover tooltip at the 1992 x-position and moved vertically to lock onto Canada and the United States separately. Both tooltips reported 57.8%.",
+  "confidence": 0.98,
+  "evidence": "Tooltip at 1992 for Canada: 57.8%; tooltip at 1992 for United States: 57.8%.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Captured the page accessibility snapshot",
+  "Hovered over the 1992 position in the rendered line chart",
+  "Moved the pointer vertically at 1992 to inspect Canada and United States tooltip values"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero and uses a 0% to 70% linear scale",
+  "No dual y-axes observed",
+  "Line chart mode was active, not stacked or grouped bars",
+  "No log scale observed",
+  "Tooltip values were used instead of pixel estimation"
+  ],
+  "self_check": "Canada and the United States both read 57.8% in the 1992 tooltip, so Canada’s 1992 rate is the same as the US rate."
+ }

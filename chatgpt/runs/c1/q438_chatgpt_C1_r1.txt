@@ -1,0 +1,1 @@
+It starts animating through the years on the slider, updating the bar chart each step; if already playing, it pauses.

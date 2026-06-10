@@ -1,0 +1,22 @@
+{
+  "answer": "Trade was higher in 2000: 192.1% of GDP versus 142.1% of GDP in 2010.",
+  "reasoning": "Identified a single-series line chart titled Malaysia Total Trade with World. The y-axis is Total Trade, Percentage of GDP (%), running from 0 to 200 with 20-point ticks, so it is not truncated and has no dual axis. I hovered the relevant data points for 2000 and 2010 and compared the tooltip values directly.",
+  "confidence": 0.99,
+  "evidence": "Tooltip for 2000: Total Trade (%): 192.1. Tooltip for 2010: Total Trade (%): 142.1.",
+  "interactions_performed": [
+  "Opened the chart URL in Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the chart snapshot for title, axes, and scale",
+  "Hovered the 2000 data point and read the tooltip",
+  "Hovered the 2010 data point and read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Single line series, not stacked or grouped bars",
+  "Linear-looking y-axis with evenly spaced 20-point ticks",
+  "No chart filter was active",
+  "Tooltip values were used instead of visual estimation"
+  ],
+  "self_check": "The 2000 value, 192.1% of GDP, is greater than the 2010 value, 142.1% of GDP, so trade was higher in 2000."
+ }

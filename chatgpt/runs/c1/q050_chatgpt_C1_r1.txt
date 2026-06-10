@@ -1,0 +1,1 @@
+Hover over Canada on the map to see its tooltip; Canada’s value is shown as 73.0%.

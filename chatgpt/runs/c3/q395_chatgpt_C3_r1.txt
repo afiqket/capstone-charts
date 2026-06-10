@@ -1,0 +1,9 @@
+{
+  "answer": "397 μg/m³",
+  "reasoning": "I identified the chart as an interactive line chart titled Air pollution, 1700 to 2016, comparing London and Delhi. The y-axis is suspended particulate matter concentration in μg/m³, linear from 0 to 700, and the x-axis is year from 1700 to 2016. I hovered at year 2008 and read the tooltip values directly: London was 19 μg/m³ and Delhi was 416 μg/m³. The difference is 416 - 19 = 397 μg/m³.",
+  "confidence": 0.98,
+  "evidence": "Tooltip at 2008 showed London: 19 μg/m³ and Delhi: 416 μg/m³.",
+  "interactions_performed": ["Opened the Observable chart URL with Playwright MCP", "Waited for the chart to render", "Inspected the rendered SVG in the Observable iframe", "Hovered over the 2008 x-position to read the tooltip"],
+  "pitfalls_checked": ["Y-axis starts at zero", "No dual y-axes observed", "Line chart, not stacked or grouped bars in the active view", "Linear scale observed from evenly spaced 0-700 μg/m³ ticks", "Tooltip values used instead of pixel-only estimation"],
+  "self_check": "Delhi's 2008 value exceeds London's by 397 μg/m³, consistent with 416 μg/m³ minus 19 μg/m³."
+ }

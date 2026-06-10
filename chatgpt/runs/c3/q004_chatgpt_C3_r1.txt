@@ -1,0 +1,23 @@
+{
+  "answer": "Economists: about 46% immigrant workers, despite being a high-wage occupation.",
+  "reasoning": "I identified the chart as a horizontal bar chart showing immigrant percentages by occupation, with color encoding for low-, middle-, and high-wage jobs. I compared occupations within the high-wage category and found that Economists had the highest immigrant percentage among high-wage jobs. Its 45.8% value is much higher than the high-wage category average of about 22.9%, making it unexpectedly high for its wage category.",
+  "confidence": 0.92,
+  "evidence": "Rendered chart data showed Economists as a High-wage job with pct = 0.457831325, displayed as 46%. Other high-wage examples below it included Miscellaneous mathematical science occupations at 43%, Physical scientists at 42%, Accountants and auditors at 36%, and Physicians and surgeons at 32%.",
+  "interactions_performed": [
+  "Opened the chart URL in Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered page snapshot",
+  "Inspected the rendered SVG elements and data bound to visible bars",
+  "Hovered over the Economists bar area",
+  "Compared high-wage occupations in the rendered chart"
+  ],
+  "pitfalls_checked": [
+  "Y-axis truncation checked: horizontal bars use percentage lengths with labels, not a vertical truncated axis",
+  "Dual y-axes checked: no dual axes present",
+  "Stacked vs grouped checked: bars are individual horizontal bars, not stacked",
+  "Log scale checked: no log scale indicated",
+  "Linked filter checked: no active linked filter observed",
+  "Tooltip/visual mismatch checked: rendered bar label and bound data both indicate about 46% for Economists"
+  ],
+  "self_check": "The occupation standing out within the high-wage category is Economists, because its immigrant share is about 46%, the highest among high-wage jobs and roughly double the high-wage category average."
+ }

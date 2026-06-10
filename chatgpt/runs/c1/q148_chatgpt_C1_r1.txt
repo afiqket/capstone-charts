@@ -1,0 +1,1 @@
+Turn on the Current Manager legend, then hover over the specific club bubble. The connected current manager node and link are shown and highlighted while unrelated nodes fade.

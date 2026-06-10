@@ -1,0 +1,1 @@
+The chart does not contain an exact Thailand value for 2018. To check what the chart displays, set the year slider to 2018 and hover Thailand; it will show 88.1% from 2017 as closest available data.

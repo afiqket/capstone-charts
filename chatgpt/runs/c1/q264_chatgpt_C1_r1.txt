@@ -1,0 +1,1 @@
+Hover near the year 1749 in Line mode to see the tooltip, or read the Sweden row for 1749 in the data: the crude death rate is 28.1.

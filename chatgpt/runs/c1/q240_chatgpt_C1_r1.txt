@@ -1,0 +1,1 @@
+Look up the country in the data by Entity name, for example dataByCountry.get('Japan'), or find the Japan row in the CSV. Japan's 2020 value is 47.1174%, shown as about 47.1%.

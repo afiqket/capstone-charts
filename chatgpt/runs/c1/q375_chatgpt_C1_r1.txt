@@ -1,0 +1,1 @@
+A tooltip appears showing the country name, its region, and its antibiotic use value formatted to two decimals in mg/PCU.

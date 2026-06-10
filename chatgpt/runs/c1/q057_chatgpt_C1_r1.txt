@@ -1,0 +1,1 @@
+Clicking the left arrow moves the selected year back by one year, and clicking the right arrow moves it forward by one year. The bar chart updates to show the rankings and death counts for the selected year.

@@ -1,0 +1,1 @@
+Hover near 2020 on the line chart, or switch to Bar mode and move the year slider to 2020. The death rate is 10.200385, shown as 10.2.
