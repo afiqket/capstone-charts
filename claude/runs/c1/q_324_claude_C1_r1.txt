@@ -1,0 +1,16 @@
+For France in 2005, the row in `data/csvs/chart_098.csv` (line 1442) is:
+
+```
+France,FRA,2005,36.17458,9
+```
+
+So:
+
+- **Peak month**: `9` → **September** (the code maps month numbers to names via `MONTH_NAMES = ["Jan","Feb","Mar",...,"Sep",...]`, where index `9-1 = 8` is `"Sep"` — see `chart_098.js:18` and `:100`).
+- **Daily birth rate in the peak month**: **36.17** (≈36.17458, formatted as `36.17` by `d3.format(".2f")` in the tooltip at `chart_098.js:100`).
+
+How to find it yourself in the chart:
+
+1. **Line mode (default)**: Hover the France line at year **2005**. The tooltip reads `2005` and `France: 36.17 — Peak: Sep` (logic at `chart_098.js:184-197`).
+2. **Bar mode**: Click the **📊 Bar** button, then drag the slider (or click) to year **2005**. The bar's color matches the September swatch in the month legend, and the numeric label at the bar's end reads `36.17` (logic at `chart_098.js:201-234`).
+3. **Direct from CSV**: Filter `chart_098.csv` for `Entity=France, Year=2005` — columns `Daily birth rate in the peak month` and `Month with peak value` give `36.17458` and `9` (September).

@@ -1,0 +1,10 @@
+To get the projected population of New Delhi in 2035, look in the CSV file `data/csvs/chart_100.csv` for the row where `Entity = "New Delhi"` and `Year = 2035`, then read the `Population of the top 100 most populous cities (projected) (Projected)` column.
+
+That row is:
+```
+New Delhi,,2035,,32226618,,India
+```
+
+So the projected population of New Delhi in 2035 is **32,226,618** (about 32.2 million).
+
+In the chart code, this is parsed in `chart_100.js:35` via the `COL_PROJ` column (filtered to `Year > 2020`) and rendered as the dashed projection line for New Delhi.

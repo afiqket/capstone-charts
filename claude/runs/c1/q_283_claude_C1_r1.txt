@@ -1,0 +1,8 @@
+This chart is a **bar chart** of annual death rates by age group for the **United States**, with a year slider — it's not a line chart, and it doesn't include France.
+
+If you hover near "France, 1900," nothing related to France will happen because:
+- The data is filtered to `country = "United States"` only (line 13, 38).
+- The visualization renders horizontal bars per age group, not a line chart.
+- Tooltips only fire on `mousemove` over a `.bar` element (lines 121–126), showing the age group label and value formatted as `"{value} per 1,000"`, while dimming other bars to 0.5 opacity.
+
+So hovering in empty space would do nothing. If you happened to be over one of the U.S. bars, you'd get that bar's tooltip — but there is no France series and no line chart in this code.

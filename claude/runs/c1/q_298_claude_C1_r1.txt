@@ -1,0 +1,26 @@
+Hovering over the line chart around 1950 triggers the following (lines 174–196 of `chart_089.js`):
+
+1. **Snap to closest year** — the mouse x is converted to a year and snapped to the nearest year in the data (1950 exists for France, so it snaps to 1950).
+2. **Vertical guide line** — a thin gray vertical line (`#888`) is drawn through x=1950 across the plot area.
+3. **Colored dots** — a small dot (radius 4, white outline) appears on each of the 11 series lines at their 1950 value.
+4. **Tooltip box** — a white rounded box with a drop shadow appears near the cursor (flipped to the left if it would overflow the right edge). It contains:
+   - Title: **1950**
+   - One row per series (top‑to‑bottom in legend order), each with a colored swatch, the series label on the left, and the value formatted as `X.X years` (via `d3.format(".1f")`) right‑aligned.
+
+For **France in 1950**, the tooltip rows would be:
+
+| Series | Value |
+|---|---|
+| Top 1% | 94.3 years |
+| 10% | 86.5 years |
+| 20% | 82.6 years |
+| 30% | 79.4 years |
+| 40% | 76.3 years |
+| 50% | 73.1 years |
+| 60% | 69.3 years |
+| 70% | 64.4 years |
+| 80% | 57.2 years |
+| 90% | 44.1 years |
+| 99% | 0.2 years |
+
+When the cursor leaves the plot area, the guide line, dots, and tooltip all hide again.

@@ -1,0 +1,10 @@
+The 2024 immigrant share for Malaysia is **10.705183%** (≈10.7%).
+
+**How to get it:**
+1. The chart loads `migrant-stock-share.csv` (called `rawData`) with columns `Entity, Code, Year, Share of the population born in another country`.
+2. The code builds a lookup `dataByYear: Map<year, Map<entity, value>>` (lines 25–30) where the value column is `valueCol = "Share of the population born in another country"`.
+3. So programmatically: `dataByYear.get(2024).get("Malaysia")` → `10.705183`.
+
+Equivalent direct lookup in the CSV: row 1137 — `Malaysia,MYS,2024,10.705183`.
+
+In the rendered chart, you can read this by hovering Malaysia on the map (with the year slider at 2024) — the tooltip formats it as `10.7%`.

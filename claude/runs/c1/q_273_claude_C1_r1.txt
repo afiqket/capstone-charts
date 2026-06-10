@@ -1,0 +1,23 @@
+## How to find the highest birth order for 1990
+
+The chart shows **South Korea** (filtered via `rows = rawData.filter(d => d.Entity === country)` with `country = "South Korea"`). There are two ways to find this in the chart:
+
+**Option 1 — Use the Bar view (easiest):**
+1. Click the **📊 Bar** button at the top.
+2. Drag the slider at the bottom to **1990** (or click the play ▶ button until it reaches 1990).
+3. The bars are sorted descending by value, so the **top bar is the highest**. Each bar is labeled and shows its numeric value.
+
+**Option 2 — Use the Line view (hover):**
+1. In the default Line view, hover over the chart around year 1990.
+2. The tooltip shows all four series with their values for that year — pick the largest.
+
+**Answer from the data (row for 1990):**
+
+| Birth order | Value |
+|---|---|
+| First child | 108.6 |
+| Second child | 117.2 |
+| Third child | 190.8 |
+| **Fourth child & higher** | **214.1** ← highest |
+
+So in 1990, **"Fourth child & higher"** has the highest sex ratio at birth (214.1 males per 100 females).

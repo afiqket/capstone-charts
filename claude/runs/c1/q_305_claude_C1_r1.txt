@@ -1,0 +1,1 @@
+The chart shows United States data (filtered with `country = "United States"`). For women born in 1973 in the US, the "2 births" value is **34.36%**.

@@ -1,0 +1,10 @@
+The 2024 projection shows a steadily increasing trend from 2025 to 2050:
+
+- 2025: ~8.23 billion
+- 2030: ~8.57 billion
+- 2035: ~8.89 billion
+- 2040: ~9.18 billion
+- 2045: ~9.44 billion
+- 2050: ~9.66 billion
+
+World population is projected to grow continuously over this period, rising by roughly 1.43 billion people. However, the rate of growth gradually decelerates — each 5-year interval adds less than the previous one (from ~0.34B in 2025–2030 down to ~0.22B in 2045–2050), indicating a slowing growth trajectory.

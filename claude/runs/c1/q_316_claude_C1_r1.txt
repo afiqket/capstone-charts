@@ -1,0 +1,14 @@
+Clicking the **Bar** button switches `mode` to `"bar"`, which:
+- Reveals the slider (hidden in line mode)
+- Updates the title to `"Annual birth rate and peak birth month, {currentYear}"`
+- Calls `renderBar()`
+
+Moving the slider to **2000** sets `currentYear = 2000` and re-renders the bar chart. From the CSV, year 2000 values are:
+- **France**: rate `13.167751`, peak month `7` (July) → color `#7EC8C8` (light teal)
+- **Spain**: rate `9.760985`, peak month `9` (September) → color `#3D8B8B` (darker teal)
+
+The result is a horizontal bar chart titled **"Annual birth rate and peak birth month, 2000"** showing:
+- A light-teal **France** bar (~the full width, since the x-axis maxes at `13.17 × 1.1 ≈ 14.48`) with the label `13.2` at its end
+- A darker-teal **Spain** bar (~67% of France's length) with the label `9.8` at its end
+- Country names ("France", "Spain") as bold labels on the left side of each bar
+- The slider handle positioned over the "2000" mark on the timeline below

@@ -1,0 +1,13 @@
+In the chart's sidebar there's a radio-button control labeled **"Choose counties to view:"** with three options: **(All)**, **Nonmetro**, and **Metro**.
+
+To see only the metro counties, **click the "Metro" radio button**.
+
+How it works in the code (`chart_106.js`): selecting a radio button sets `countyFilter` and re-runs `draw()`. In the fill logic, any county whose data row doesn't match the selected filter is greyed out:
+
+```js
+if (countyFilter !== "All" && row.metro !== countyFilter) return colors.none
+```
+
+So with **Metro** selected, every non-metro county is drawn in the "none" color (`#f0f0f0`), and only metro counties keep their high/persistent/both poverty colors.
+
+One caveat worth noting: this filter only changes the *color* — non-metro counties are still drawn (just blanked out), not removed from the map. Metro counties that fall in the "none" category will also look blank, since they have no poverty designation to show.

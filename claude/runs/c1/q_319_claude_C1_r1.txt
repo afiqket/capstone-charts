@@ -1,0 +1,9 @@
+Hovering anywhere over the x-position of year 2000 (the hover is a full-height transparent overlay, not the dot itself) in the default Line view triggers the tooltip handler. It:
+
+1. Draws a vertical grey guide line at year 2000.
+2. Looks up both countries' records for 2000 and shows a tooltip near the cursor with:
+   - **Title:** `2000`
+   - **France:** `13.2 — Peak: Jul` (swatch colored `#7EC8C8`, the July color)
+   - **Spain:** `9.8 — Peak: Sep` (swatch colored `#3D8B8B`, the September color)
+
+The tooltip is rendered to the right of the cursor, flipping to the left if it would overflow the chart width. Note the line/segment leaving France's 2000 point is also colored with the July color, since segments are colored by the starting point's peak month.

@@ -1,0 +1,27 @@
+This chart is **Malaysia's Direct Investment Abroad (DIA) by Sector**, an interactive bar chart. Here's how to get the 2016 manufacturing information from it:
+
+## In the chart (interactive)
+
+1. **Sector dropdown** (right sidebar, "Sector"): Manufacturing is already selected by default (chart code line 32 — it defaults to `"Manufacturing"` since that sector exists).
+2. **Year list** (right sidebar, "Year"): a multi-select list where all years start selected. Make sure **2016** is selected (or select only 2016 to isolate it).
+3. **Hover over the 2016 bar**: a tooltip appears (lines 235–252) showing the sector, the year, and the aggregated value in both currencies:
+   - `Value (bil): RM <value> | US$ <value>`
+
+## What the 2016 value actually is
+
+The chart **aggregates (sums) the four quarterly rows per year** (lines 10–27, `d3.rollup` + `d3.sum`). For 2016 Manufacturing, the CSV has four rows (lines 6–9):
+
+| Measure Value (RM bil) | Measure Value (US$ bil) |
+|---|---|
+| -0.89647835 | -0.213265813 |
+| -0.67084121 | -0.167156299 |
+| -1.34952684 | -0.333077130 |
+| -1.7802305 | -0.411648130 |
+
+**Summed totals (what the tooltip displays, rounded to 1 decimal):**
+- **RM −4.7 bil** (sum = −4.6970769)
+- **US$ −1.1 bil** (sum = −1.125147372)
+
+So 2016 Manufacturing shows a **net negative DIA of about RM −4.7 billion (US$ −1.1 billion)** — appearing as a downward bar below the zero line.
+
+A note on the data itself: the year column also includes a quarterly "View more: QUARTERLY" button in the UI, but in this code the quarter/period column isn't present in the CSV — each year just has its four (quarterly) rows summed into one bar.

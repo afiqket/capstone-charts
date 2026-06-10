@@ -1,0 +1,11 @@
+Dragging the slider handle from the 2000 position to the 2010 position triggers the `d3.drag` handler on lines 173–176. As your pointer moves, the handler repeatedly:
+
+1. Clamps the x position to `[sliderX0, sliderX1]`.
+2. Snaps to the nearest year in `years` via `years.reduce(...)`.
+3. Calls `updateYear(...)`, which sets `currentYear`, moves the handle's `cx` to that year's slider position, and calls `renderBar()`.
+
+`renderBar()` clears `mainG`, updates the title to `Birth seasonality, United States, <year>`, rebuilds the x‑scale from the new year's max value (×1.08), and redraws the 12 horizontal bars + value labels for that year.
+
+So visually, as you drag from 2000 → 2010 you'll see the chart "scrub" through each intermediate year (2001, 2002, … 2010). The title year ticks up, and the bars rescale/relabel for each year. The US values trend downward over that decade — e.g. May goes from ~41.07 (2000) to ~37.82 (2010), and December from ~38.41 (2000) to ~35.30 (2010) — so on the whole the bars get visibly shorter by the time you release at 2010, with the final frame titled "Birth seasonality, United States, 2010".
+
+Note: the play button isn't involved; this is purely the drag interaction, and snapping means the handle only ever rests on a real data year.

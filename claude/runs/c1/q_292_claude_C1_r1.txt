@@ -1,0 +1,19 @@
+When you hover over the Ages 60–79 area near 2000, the chart's interaction handler snaps to the nearest year (2000) and:
+
+1. **Draws a vertical hover line** (`#888`, 1px) at x = 2000 spanning the full chart height.
+2. **Shows a tooltip** positioned next to the cursor. Note: the hover region is one big invisible `<rect>` over the whole plot area — it's not bound to the Ages 60–79 layer specifically, so hovering anywhere at that x-position shows the same tooltip.
+
+The tooltip contents for France, 2000 (values from data row `France,FRA,2000,1.2649707,3.38432,1.885413,0.88092196,0.045414675,0.102143005`, formatted with `d3.format(".2f")`):
+
+- **Title:** `France, 2000`
+- **Subtitle:** `contribution to sex gap (years)`
+- Color swatches + labels, listed top-to-bottom in reverse layer order:
+  - Ages 80+: **1.26**
+  - Ages 60–79: **3.38**
+  - Ages 40–59: **1.89**
+  - Ages 15–39: **0.88**
+  - Ages 1–14: **0.05**
+  - Age 0 (infancy): **0.10**
+- Divider line, then **Total: 7.56 years**
+
+The tooltip flips to the left of the cursor if it would overflow the right edge (`mx + 220 + 20 > 900`), and its y is clamped within the SVG.

@@ -1,0 +1,3 @@
+The chart and data are about **birth rate** (and peak birth month), not total fertility rate. The data file contains no Total fertility rate column.
+
+For Sweden in 1990, the dataset shows a **Birth rate of 14.534941** (with peak month 4 / April). There is no Total fertility rate value available in this data.

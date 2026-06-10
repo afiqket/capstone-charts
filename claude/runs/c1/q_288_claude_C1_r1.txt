@@ -1,0 +1,37 @@
+To retrieve all years where Japan had the highest female life expectancy, you can follow this approach (using the CSV data and assuming columns like `year`, `country`, and `female_life_expectancy`):
+
+**Using pandas (Python):**
+```python
+import pandas as pd
+
+df = pd.read_csv("data/csvs/chart_086.csv")
+
+# For each year, find the country with the max female life expectancy
+idx = df.groupby("year")["female_life_expectancy"].idxmax()
+top_per_year = df.loc[idx]
+
+# Filter to years where that country is Japan
+japan_years = top_per_year.loc[top_per_year["country"] == "Japan", "year"].tolist()
+print(japan_years)
+```
+
+**Using SQL:**
+```sql
+SELECT year
+FROM chart_086
+WHERE (year, female_life_expectancy) IN (
+    SELECT year, MAX(female_life_expectancy)
+    FROM chart_086
+    GROUP BY year
+)
+AND country = 'Japan'
+ORDER BY year;
+```
+
+**Logic in plain terms:**
+1. Group rows by `year`.
+2. Within each year, find the row with the maximum `female_life_expectancy`.
+3. Keep only the years where that top row's `country` equals `"Japan"`.
+4. Return the list of those years.
+
+Adjust the column names to match what's actually in `chart_086.csv` (e.g., `Year`, `Country`, `LifeExpectancyFemale`).

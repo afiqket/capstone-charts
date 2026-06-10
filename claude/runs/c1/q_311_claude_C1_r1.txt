@@ -1,0 +1,3 @@
+The chart doesn't actually contain data on the age at which women reach one child on average. It plots three fertility-rate measures for Sweden — the total fertility rate, the tempo-adjusted total fertility rate, and the completed cohort fertility rate (shifted +30 years) — all expressed as the average **number of children per woman**, not as ages.
+
+The only age-related element in the chart is a fixed +30-year shift applied to the cohort series, which the footnote explains is used "to compare with period measures at roughly the average age of mothers at childbirth." That shift is a constant, not a trend, so no trend in the age at which women reach one child can be inferred from this chart.

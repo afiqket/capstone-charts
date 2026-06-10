@@ -1,0 +1,11 @@
+To get the latest available value for France females:
+
+**Latest value: 91.6 years (in 2021)**
+
+The France data ends at row 157 of the CSV: `France,FRA,2021,91.6,88.8`. The "Females" column for the most recent year (2021) is **91.6 years**.
+
+How to retrieve it via the chart:
+
+1. **Bar mode**: Click the "📊 Bar" button. The chart auto-selects the latest year in the dataset (`years[years.length - 1]`, which is 2022) via `currentYear`. Since France has no 2022 record, the bar chart's fallback logic at line 203-204 finds the closest available year (2021), and renders France's bar in the Females section as `91.6 years in 2021`.
+
+2. **Line mode**: Hover over the rightmost end of the France panel's pink/orange (Females) line — the tooltip will display `France, 2021` and `Females: 91.6 years`.

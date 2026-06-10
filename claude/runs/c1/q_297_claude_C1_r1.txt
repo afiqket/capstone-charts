@@ -1,0 +1,23 @@
+To retrieve the 50% survival age for France in 2000 from this dataset:
+
+**Answer: 82.4 years**
+
+## How to retrieve it
+
+**From the CSV directly** (`data/csvs/chart_089.csv`):
+- Columns: `Entity, Code, Year, 99%, 90%, 80%, 70%, 60%, 50%, 40%, 30%, 20%, 10%, Top 1%`
+- Find the row where `Entity = "France"` and `Year = 2000`, then read the `50%` column (the 9th column).
+- Matching row (line 1546):
+  ```
+  France,FRA,2000,24.61,58.92,69.11,74.99,79.18,82.4,85.12,87.73,90.44,93.74,100.6
+                                          ^^^^
+                                          50% = 82.4
+  ```
+
+**From the chart code** (`data/charts/chart_089.js`):
+The code builds a `byYear` Map keyed by year for the filtered `country = "France"` rows (lines 29–39). You'd access it as:
+```js
+byYear.get(2000)["50%"]   // → 82.4
+```
+
+**Interpretation** (per the chart's description text): if someone were born in France in 2000 and experienced the age-specific death rates of that year, the top 50% of survivors would live to about **82.4 years**.

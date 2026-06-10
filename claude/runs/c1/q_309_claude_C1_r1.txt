@@ -1,0 +1,13 @@
+To find that value, you look up the right row and column in the CSV — note that in this dataset the column labeled `Year` actually stores the mother's **age**, while the year columns (`2010`, `2005`, ..., `1925`) represent the mother's **birth year (cohort)**. The chart code confirms this at line 31: `const age = +d.Year;` and line 33: `const v = d[String(cy)];` where `cy` is the cohort year.
+
+**Steps:**
+1. Open `data/csvs/chart_093.csv`.
+2. Header row: `Entity, Code, Year, 2010, 2005, 2000, 1995, 1990, 1985, ...`
+3. Filter to the row where `Entity = "Japan"` and `Year = 30` (i.e., age 30).
+4. Read the value in the `1990` column (cohort = 1990 birth year).
+
+**Result:** That row is:
+```
+Japan,JPN,30,,,,,0.10289,0.11013,...
+```
+So the fertility rate for Japanese women born in 1990, at age 30, is **0.10289** births per woman (the age-specific fertility rate).

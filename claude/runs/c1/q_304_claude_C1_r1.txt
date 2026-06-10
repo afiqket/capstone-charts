@@ -1,0 +1,17 @@
+Hovering over 1973 in the line chart triggers the `mousemove` handler on the transparent rect, which snaps to the nearest year (1973) and displays:
+
+1. **A vertical gray hover line** at x = 1973, spanning the full chart height.
+2. **A tooltip** with a white background, rounded corners, light gray border, and drop shadow, positioned near the cursor (flipped to the left side if it would overflow the right edge).
+
+The tooltip header reads: **"United States, 1973"** (bold, 13px).
+
+Below the header, one line per series (11px, colored to match each line, "All" in bold):
+
+- 5th birth or higher: **32.87 years**
+- 4th birth: **30.78 years**
+- 3rd birth: **29.55 years**
+- 2nd birth: **28.04 years**
+- All: **27.48 years**
+- 1st birth: **25.10 years**
+
+When the cursor leaves the chart area, both the hover line and tooltip are hidden.

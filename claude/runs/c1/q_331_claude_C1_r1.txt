@@ -1,0 +1,13 @@
+Hovering over 2020 on the line chart triggers the `mousemove` handler on the transparent overlay rect (chart_100.js:194):
+
+1. **Year snapping** — the mouse x is converted to a year and rounded to the nearest multiple of 5 (`Math.round(xScale.invert(mx) / 5) * 5`), so 2020 is a snap target.
+
+2. **Vertical hover line** — a gray vertical line is shown at x = xScale(2020), spanning the full plot height (chart_100.js:190-197). Note this sits on top of the existing dashed gray separator already drawn at 2020 (the estimates/projections boundary, chart_100.js:143-146).
+
+3. **Tooltip** — `showTooltip(2020, items, sx, sy)` is called with:
+   - **Title**: "2020"
+   - **Rows**: one per city that has a 2020 data point, sorted by population descending. Each row shows a colored swatch (the city's color from `CITY_COLORS`) plus `"{city}: {pop in millions}"` formatted via `fmtPop` (e.g., "Tokyo: 37.4 million").
+   - **No "(proj.)" suffix** for 2020 — the parser puts 2020 in the estimates bucket (`proj: false`), since projections are filtered to `+d.Year > 2020` (chart_100.js:35).
+   - **Position**: placed to the right of the cursor, or flipped left if it would overflow the right edge; vertically clamped within the SVG (chart_100.js:104-106).
+
+4. On `mouseleave`, both the line and tooltip are hidden (chart_100.js:207).

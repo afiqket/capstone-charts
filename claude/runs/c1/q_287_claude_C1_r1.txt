@@ -1,0 +1,3 @@
+This chart and dataset do not contain female life expectancy values. They show contributions of each age group to the **sex gap** in life expectancy (female minus male, in years) — not absolute female life expectancy figures.
+
+The question cannot be answered from this data.

@@ -1,0 +1,9 @@
+California's percent change is **15.7** (from the `Percentage` column in `chart_104.csv`).
+
+To get it programmatically in the chart code, you'd use the existing `valueByState` lookup map:
+
+```js
+valueByState.get("California")  // → 15.7
+```
+
+This map is built on line 23 from `data.map(d => [d.State, d.Percentage])`, keying each state name to its percentage. It's the same lookup the map fill and tooltip use.

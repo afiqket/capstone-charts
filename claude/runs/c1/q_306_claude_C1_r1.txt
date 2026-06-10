@@ -1,0 +1,18 @@
+# Getting the exact percentage for "1 birth" among women born in 1973 (United States)
+
+## What the chart shows you
+The chart only renders this data for the **United States** (hardcoded at `chart_092.js:12`: `const country = "United States"`). When you hover over the 1973 column, the tooltip formats values with `d3.format(".2f")` (`chart_092.js:94`), so it will display only **`19.29%`** — a rounded value, not the exact one.
+
+## How to get the exact value
+The full-precision number lives in the CSV, not in the chart. Open `data/csvs/chart_092.csv` and find the row:
+
+```
+United States,USA,1973,10.299998,19.285498,34.362274,21.595285,14.456943
+```
+
+The columns are `Entity, Code, Year, No births, 1 birth, 2 births, 3 births, 4 births or more`, so the **"1 birth"** value for 1973 is:
+
+**`19.285498%`**
+
+## If you want it from the chart code instead
+You could modify `chart_092.js:94` and change the formatter from `d3.format(".2f")` to something like `d3.format(".6f")` (or just `v` with no formatter) so the tooltip prints the raw number. The underlying `rowData[l.col]` already holds the full-precision value parsed at line 27.

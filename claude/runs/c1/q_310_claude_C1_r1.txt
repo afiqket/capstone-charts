@@ -1,0 +1,25 @@
+Hovering over age 30 in the United Kingdom panel triggers the `mousemove` handler on the panel's transparent rect, which computes `age = 30` via `xScale.invert`, looks up each cohort's value at age 30, filters out missing/near-zero values, sorts the rest descending by value, and shows the tooltip.
+
+For the UK at age 30, the CSV row is:
+`United Kingdom,GBR,30,,,,,0.10073,0.11148,0.11722,0.11011,0.1021,0.10897,0.11191,0.10542,0.10241,0.08333,,,,`
+
+Cohorts 2010, 2005, 2000, 1995, 1940, 1935, 1930, 1925 are empty and get filtered out. The remaining 10 cohorts have exact values at age 30, so no interpolation is needed. The tooltip appears with:
+
+- **Title:** "30 (Age of women)"
+- **Subtitle:** "in births per woman at a specific age"
+- **Rows** (sorted by value descending, each with a color swatch of the cohort gradient, the year, and the value formatted to 2 decimals):
+
+| Cohort | Value (.2f) |
+|--------|-------------|
+| 1980 | 0.12 |
+| 1960 | 0.11 |
+| 1985 | 0.11 |
+| 1975 | 0.11 |
+| 1965 | 0.11 |
+| 1955 | 0.11 |
+| 1950 | 0.10 |
+| 1970 | 0.10 |
+| 1990 | 0.10 |
+| 1945 | 0.08 |
+
+The tooltip box is 175px wide and ~256px tall (white background with a soft drop shadow), positioned to the right of the cursor — or flipped to the left if it would overflow the SVG's right edge — and clamped vertically so it stays within the chart. It disappears on `mouseleave`.

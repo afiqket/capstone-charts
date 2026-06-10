@@ -1,0 +1,10 @@
+To get the percent change for Texas, you look it up in the data file by the state name.
+
+**Texas's percent change = -7.2**
+
+How it works in the chart:
+- The data is loaded into a lookup map at `chart_105.js:23`: `valueByState = new Map(data.map(d => [d.State, d.Percentage]))`, which maps each state name to its `Percentage` value.
+- For Texas, `valueByState.get("Texas")` returns `-7.2` (from `chart_105.csv:22` — `Texas,-7.2`).
+- This is the value shown in the tooltip's "Percent change" field, formatted as `-7.20` via `val.toFixed(2)`.
+
+So hovering over Texas on the map displays **Percent change: -7.20**.

@@ -1,0 +1,9 @@
+For France in 2018, the value for **Ages 60–79** is **2.6660638**.
+
+You can get this value by:
+
+1. **Reading the CSV directly** (`data/csvs/chart_087.csv`): The header row is `Entity,Code,Year,Ages 80+,Ages 60–79,Ages 40–59,Ages 15–39,Ages 1–14,Age 0 (infancy)`. Find the row where `Entity = "France"` and `Year = 2018` — it's line 1232: `France,FRA,2018,1.4466238,2.6660638,1.1665837,0.57023615,0.025021374,0.061575316`. The 5th column (Ages 60–79) is **2.6660638**.
+
+2. **Via the chart code** (`chart_087.js`): The code at lines 25–32 filters `rawData` by `d.Entity === country` (where `country = "France"`) and maps each row's `"Ages 60–79"` column to a number. So `rows.find(r => r.year === 2018)["Ages 60–79"]` would yield `2.6660638`.
+
+This value represents the contribution of the 60–79 age group's death-rate differences to the female-male life expectancy gap in France (in years).

@@ -1,0 +1,9 @@
+Looking at the hover handler (lines 192-208), the tooltip behavior doesn't actually understand "cohorts" or "ages" — it only snaps to the nearest **calendar year** on the x-axis and shows values for all three series at that year.
+
+So "the 1995 cohort around age 35" doesn't map to the interaction directly. A few things to note:
+
+- The cohort fertility line is shifted **+30 years** (line 13, plus the footnote), so the 1995 birth cohort is plotted at x ≈ 2025, not at any "age 35" position. A point at age 35 of the 1995 cohort would correspond to year 2030, which is outside the data shown.
+- When you move the mouse anywhere over the plot area, the code computes `Math.round(xScale.invert(mx))`, snaps to the closest year in the data via `years.reduce(...)`, draws a vertical gray hover line at that year (lines 189–190, 200), and displays a tooltip.
+- The tooltip (lines 82–98) shows: a bold title `"Sweden, {year}"`, then one colored line per series — "Completed cohort fertility rate shifted +30 years", "Tempo-adjusted total fertility rate", and "Total fertility rate" — each with the value formatted to 2 decimals. It does **not** highlight whichever line is nearest your cursor; all available series for that year are listed.
+
+In short: hovering near where you think the "1995 cohort at age 35" is just shows the tooltip for whatever calendar year your x-position snaps to, with all three series values for Sweden in that year.

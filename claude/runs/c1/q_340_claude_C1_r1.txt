@@ -1,0 +1,14 @@
+Summing the **Measure Value (US$)** column for Manufacturing across 2015–2020:
+
+| Year | US$ subtotal |
+|------|-------------|
+| 2015 | −0.197 |
+| 2016 | −1.125 |
+| 2017 | −0.494 |
+| 2018 | −0.057 |
+| 2019 | −0.410 |
+| 2020 | −0.396 |
+
+**Total ≈ −2.679 (US$ billion)** — i.e. about **−$2.68 billion**.
+
+(The units are "bil" per the chart's `RM/bil` axis and the tooltip's `US$` figure, so this represents roughly negative US$2.68 billion in net direct investment abroad for Manufacturing over 2015–2020.)

@@ -1,0 +1,21 @@
+## Answer
+
+The "average number of children for women born in 1970" is the **completed cohort fertility rate** for the 1970 birth cohort. Here's how to read it from the chart:
+
+1. **Pick the right series**: the orange line labeled **"Completed cohort fertility rate shifted +30 years"** — this is the one that represents the average number of children born to a woman by the end of her childbearing years.
+
+2. **Apply the +30-year shift**: the chart shifts this series by +30 years so it aligns with period measures at roughly the average age of childbirth. So women **born in 1970** are plotted at **x = 1970 + 30 = year 2000**.
+
+3. **Read the value at year 2000** on the orange line (or hover the tooltip at 2000 in line mode, or move the slider to 2000 in bar mode).
+
+From the underlying data (`Sweden, 2000`):
+
+```
+Sweden,SWE,2000,1.559,1.999,1.839
+                       ^^^^^
+                       Completed cohort fertility rate shifted +30 years
+```
+
+So the answer is **≈ 2.00 children per woman** (1.999) for Swedish women born in 1970.
+
+Note: the chart's cohort measure is the *completed* cohort fertility (lifetime childbearing), not strictly "by age 40" — but for cohorts born in 1970, the vast majority of childbearing was complete by 40, so this number is the best available proxy in this chart.

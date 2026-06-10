@@ -1,0 +1,9 @@
+**Nothing happens** — there is no South Korea bar in the Bar view to hover over.
+
+The Bar view is built from `selectedCountries` (line 222-228), which contains only:
+- Finland
+- Cyprus
+- Bulgaria
+- Sri Lanka
+
+`renderBar()` at chart_074.js:142-145 filters bar data to just those entities. South Korea (KOR, 69.23%) exists in the CSV and would show on the Map view, but it is not rendered as a bar, so there is nothing there to receive a `mousemove` event.

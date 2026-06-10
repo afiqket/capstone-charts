@@ -1,0 +1,20 @@
+Clicking the **Bar** button triggers `setMode("bar")` (chart_098.js:304), which:
+
+1. Highlights the Bar button blue and Line button white.
+2. Reveals the year slider (hidden in line mode, line 298).
+3. Calls `renderBar()` to draw horizontal bars for the current year.
+
+Moving the slider to **2010** calls `updateYear(2010)` → `renderBar()` again. The 2010 data is:
+
+- **France**: rate 36.02, peak month = 10 (October) → bar color `#2E6B6B` (dark teal)
+- **Spain**: rate 30.45, peak month = 9 (September) → bar color `#3D8B8B` (teal)
+
+So the chart shows:
+
+- **Title** updates to: *"Peak birth month each year and the daily birth rate that month, 2010"*
+- **Two horizontal bars** (one per country), since `barData` has both entries:
+  - France bar — longer (rate 36.02), colored October-teal
+  - Spain bar — shorter (rate 30.45), colored September-teal
+- The x-scale is rebuilt with `maxVal = 36.02 × 1.1 ≈ 39.62`, so France fills ~91% of the plot width and Spain ~77%.
+- Country names sit to the left of each bar; the rate (formatted `.2f`: "36.02" and "30.45") sits to the right.
+- The slider handle slides to the 2010 position on the track.

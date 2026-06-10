@@ -1,0 +1,15 @@
+I haven't been shown the actual contents of either file — only their paths. Since you've asked me not to use any tools, I can't read them to give you the specific number.
+
+To find the population of Istanbul in 2010 yourself:
+
+1. **Open `data/csvs/chart_102.csv`** — this is the underlying data. Look for:
+   - A **row** labeled "Istanbul" (or a column if cities are in the header)
+   - A **column** (or row) for the year **2010**
+   - The cell at their intersection is the population value
+
+2. **Cross-check with `data/charts/chart_102.js`** to understand:
+   - Which column in the CSV maps to the city name vs. the year vs. the population
+   - Any unit scaling (e.g., values stored in thousands or millions)
+   - Any filtering/transformation applied before plotting
+
+If you'd like, lift the restriction and I'll read both files and give you the exact figure.

@@ -1,0 +1,12 @@
+In Line mode, the France panel has a transparent `<rect>` overlay listening for `mousemove`. When you hover near 1970:
+
+1. The handler inverts the mouse x-position to a year, then snaps to the closest year present in France's data (1970 itself, since that's France's earliest year in the dataset).
+2. `showTooltip("France", 1970, {f: 83.8, m: 78.1}, ...)` is called.
+3. A white tooltip box (200×66, rounded corners, drop shadow) appears near the cursor, positioned to flip left if it would overflow the right edge.
+
+It displays:
+- **France, 1970** (bold title)
+- **Females: 83.8 years** (in salmon `#C07050`)
+- **Males: 78.1 years** (in purple `#6B3FA0`)
+
+Values come from the CSV row `France,FRA,1970,83.8,78.1`, formatted via `d3.format(".1f")`. The tooltip hides on `mouseleave`.

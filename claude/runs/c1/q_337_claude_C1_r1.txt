@@ -1,0 +1,22 @@
+# Hovering over 2020 on the line chart
+
+The mousemove handler on the chart's hover rectangle snaps the cursor's x position to the nearest 5-year multiple (`Math.round(xScale.invert(mx) / 5) * 5`), so hovering near 2020 lands exactly on 2020. Two things happen:
+
+**1. A vertical hover line** is drawn at x = 2020 across the plot area in grey (`#999`).
+
+**2. A tooltip appears** titled "2020", listing each tracked city with a colored square swatch, the city name, and its population formatted as "X.XX million". Rows are sorted by population (descending), and since 2020 is past the 2015 cutoff and only the "Population (Projected)" column has data, every row is suffixed with " (proj.)".
+
+The filtered city list in the code is `["Istanbul","Mumbai (Bombay)","New York-Newark","Tokyo","Lagos","Kolkata","Dhaka","Delhi","Paris"]`. Note: `"Kolkata"` does not exactly match the CSV entity `"Kolkata (Calcutta)"`, so it's dropped from `seriesData` and won't appear.
+
+The tooltip rows (sorted descending) will be:
+
+- 🟦 Tokyo: 37.39 million (proj.)
+- 🟪 Delhi: 30.29 million (proj.)
+- 🟥 Dhaka: 21.01 million (proj.)
+- 🟪 Mumbai (Bombay): 20.41 million (proj.)
+- 🟦 New York-Newark: 18.80 million (proj.)
+- 🟨 Istanbul: 15.19 million (proj.)
+- 🟩 Lagos: 14.37 million (proj.)
+- 🟦 Paris: 11.02 million (proj.)
+
+The tooltip is positioned to the right of the cursor, flipping to the left if it would overflow the chart's right edge, and clamped vertically within the SVG.

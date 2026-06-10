@@ -1,0 +1,3 @@
+The chart and data are about **female life expectancy at birth** by country, not death rates by age group. There is no data on death rates for the 85–89 age group, and the years 1933 and 2023 are not directly comparable in this dataset for that question.
+
+This question cannot be answered from the provided chart code and data — the dataset tracks the country with the highest female life expectancy each year, not age-specific death rates.

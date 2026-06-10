@@ -1,0 +1,11 @@
+To retrieve France's cohort life expectancy in 1932 from the line chart:
+
+1. **Locate the France line**: Find the line in the chart legend labeled "France" and note its color/style. Trace that specific line on the chart.
+
+2. **Find the x-axis value 1932**: Move along the x-axis (years) to the position of 1932.
+
+3. **Read the y-value**: From the 1932 mark on the x-axis, go straight up until you intersect France's line, then read across to the y-axis (cohort life expectancy in years) to get the value.
+
+4. **Use the interactive tooltip** (if available): Most line charts built with libraries like Chart.js, D3, Plotly, or ECharts include hover tooltips. Hover your cursor over France's line at the 1932 position — a tooltip should pop up showing the exact value (e.g., "France, 1932: XX.X years").
+
+The tooltip is the most accurate method since visual estimation from gridlines may be off by a year or two of life expectancy.

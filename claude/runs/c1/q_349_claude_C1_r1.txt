@@ -1,0 +1,8 @@
+Merced County, California has the category **`high`** — meaning **high poverty only** (not persistent poverty).
+
+From line 182 of the data:
+```
+06047,"Merced County, California",high,Metro
+```
+
+Per the chart's legend, `high` corresponds to "High poverty only" — a county with high current poverty, but not classified as persistent poverty (it's a Metro county).

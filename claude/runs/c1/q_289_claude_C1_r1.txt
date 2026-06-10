@@ -1,0 +1,12 @@
+Nothing happens — there are no country dots in this chart, and no data for Norway is ever rendered.
+
+Looking at the code:
+
+- The chart is hardcoded to a single country: `const country = "France"` (line 12), and rows are filtered with `d.Entity === country` (line 26). Norway is never plotted.
+- The visualization consists only of **stacked areas** (one `path` per age-group layer) plus a thin total line — there are no `circle` / dot marks for individual country-year points.
+- The only interactive elements are:
+  - A transparent `hoverRect` covering the plot area that shows a vertical hover line + tooltip on `mousemove` / hides on `mouseleave` (lines 211–222). No `click` handler.
+  - The two slider handles and slider track (with drag + click to set the year range).
+  - The play/pause button (▶) that animates the right slider handle.
+
+So even on the France chart, clicking inside the plot area triggers no action — and a "Norway 1960 dot" doesn't exist to be clicked in the first place.

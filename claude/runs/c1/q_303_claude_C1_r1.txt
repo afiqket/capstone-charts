@@ -1,0 +1,11 @@
+Since I'm instructed not to use any tools, I'll answer based on general guidance for comparing two data series at a specific point on a chart.
+
+To compare 1st birth and 2nd birth values for 1950 on the chart:
+
+1. **Locate the year 1950** on the x-axis (horizontal axis).
+2. **Trace a vertical line upward** from 1950 to where it intersects each series.
+3. **Identify the two series** by their color/legend labels — find the "1st birth" line/bar and the "2nd birth" line/bar.
+4. **Read the y-axis values** for each at that vertical position, or hover over the points if the chart is interactive (most JS charts show tooltips with exact values).
+5. **Compute the comparison**: the difference (1st − 2nd) shows how much more frequent first births were, and the ratio (1st ÷ 2nd) shows the relative magnitude.
+
+If you'd like the actual numeric values from the CSV for 1950, let me know and I can read the data file directly.

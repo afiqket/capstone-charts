@@ -1,0 +1,13 @@
+Clicking the play button (▶) animates the chart through the years. Specifically:
+
+- **Note:** The play button lives on the slider, which is only visible in **Bar** mode (the slider is hidden in Line mode via `sliderG.style("display", m==="line" ? "none" : null)`). So this only matters once you've switched to the 📊 Bar view.
+
+- **What it does** (chart_081.js:263-274):
+  1. If the current year is the last year (2017), it first resets to the first year (1970).
+  2. It sets `playing = true` and changes the icon from ▶ to ⏸.
+  3. It starts a `setInterval` that, every **400 ms**, advances `currentYear` to the next year in the sorted list and re-renders the bar chart for that year (via `updateYear` → `renderBar`). The slider handle moves along, and the title updates to show the new year.
+  4. When it reaches the final year (2017), it auto-stops, clears the interval, and the icon flips back to ▶.
+
+- **Clicking it again while playing** stops the animation immediately (`clearInterval`, `playing=false`, icon reverts to ▶).
+
+So effectively: it plays an animated time-lapse of South Korea's sex-ratio-by-birth-order bars from 1970 through 2017, ~400 ms per year.

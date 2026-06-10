@@ -1,0 +1,11 @@
+To get the death rate for the United States in 2020, look in `data/csvs/chart_077.csv`, where columns are `Entity,Code,Year,Death rate,Birth rate`. The matching row is:
+
+```
+United States,USA,2020,10.200385,10.93
+```
+
+So the **death rate is 10.200385** (per 1,000 people). In the chart it's rendered as `10.2` via `d3.format(".1f")`.
+
+Programmatic ways to retrieve it:
+- From the raw CSV: filter rows where `Entity === "United States"` and `Year === 2020`, then read the `Death rate` column.
+- From the chart code's data structure (chart_077.js:25–31): `byYear.get(2020).death` — which yields `10.200385`.

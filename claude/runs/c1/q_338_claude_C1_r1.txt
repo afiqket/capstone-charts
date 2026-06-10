@@ -1,0 +1,5 @@
+For Manufacturing in 2023, the chart sums the four quarterly US$ rows:
+
+0.434529823 + 0.489438106 + 0.678182806 + 1.154869943 = **2.757020678**
+
+The tooltip displays this rounded to one decimal: **US$ 2.8 billion**.

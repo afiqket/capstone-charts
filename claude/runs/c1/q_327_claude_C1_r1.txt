@@ -1,0 +1,10 @@
+To find the population living in cities in North America in 2010, look at the row in `data/csvs/chart_099.csv` where `Entity = "North America"` and `Year = 2010`, then read the value from the **"Cities"** column (the 6th column).
+
+That row is:
+```
+North America,OWID_NAM,2010,142927790,196194220,204470820
+```
+
+With the header `Entity,Code,Year,Rural areas,Towns & suburbs,Cities`, the **Cities** value is **204,470,820** people.
+
+In the chart code, this corresponds to `byRegion["North America"]` filtered to `year === 2010`, reading the `cities` field (chart_099.js:32-40), which maps from the CSV's `"Cities"` column via `COLS.cities` (chart_099.js:9).

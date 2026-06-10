@@ -1,0 +1,22 @@
+Hovering over the "2 births" area around 1973 (United States) triggers the `mousemove` handler on the transparent overlay rect, which does the following:
+
+1. **Snaps to the nearest year** — 1973 is the closest data point, so the hover is locked to that year.
+
+2. **Vertical hover line** — a gray line (`#888`, 1px) appears at x = 1973, spanning the full plot height.
+
+3. **Dots on every layer** — five small circles (r=4, white stroke) appear at the vertical midpoint of each stacked band at x=1973, one colored to match each layer.
+
+4. **Tooltip appears** with:
+   - Title: **1973**
+   - Subtitle: *(Women's birth year)*
+   - A row per layer (top→bottom: No births, 1 birth, 2 births, 3 births, 4 births or more), each with a colored swatch, label, and value formatted as `.2f%`.
+   - The **"2 births" row is bolded** (both label and value), because `hoveredCol` is determined by which stack band contains the cursor's y-position.
+
+For 1973 (US), the values shown would be:
+- No births — 10.30%
+- 1 birth — 19.29%
+- **2 births — 34.36%** (bold)
+- 3 births — 21.60%
+- 4 births or more — 14.46%
+
+The tooltip is positioned to the right of the cursor (or left if it would overflow `W=900`), and clamped vertically inside the SVG.

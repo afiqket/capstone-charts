@@ -1,0 +1,15 @@
+Dragging the right handle from 2050 to 2020 triggers the drag handler at `chart_082.js:284-288`:
+
+1. **`mx` is clamped** between `xSlider(yearStart) + 10` and `sliderX1`. Since `yearStart` is 1970, dragging to 2020 is well within bounds.
+2. The nearest year on the slider's point scale is snapped to — **2020**.
+3. The guard `if (y > yearStart)` passes (2020 > 1970), so `yearEnd` is updated to 2020, handles reposition, and `render()` is called.
+
+**Visible effects of the re-render:**
+- **Title** updates to `"Number of 'missing women' in the world, 1970 to 2020"` (line 150).
+- **X-axis domain** rescales to `[1970, 2020]`, stretching that range across the full plot width (line 159).
+- **Stacked areas** only draw the years 1970, 1975, …, 2020 (11 data points instead of 17).
+- **Y-axis max** recomputes from the visible-year totals. The peak in the new range is 2020 (China 72.3M + India 45.8M + RoW 24.5M = 142.6M), rounded up to the next 20M → **160 million** (line 157). The previous max went up to 160M as well (2035 peak = 149.9M → 160M), so the y-scale here happens to stay the same.
+- **End-of-area labels** (China / India / Rest of World) move to sit at year 2020, vertically centered on the 2020 stack segments (lines 200–210).
+- **Hover/tooltip interactions** are rebound to the new visible years.
+
+The left handle, gridlines, slider track, play button, and footer are unaffected. Note also that if you tried to drag the right handle *past* the left handle, the `Math.max(xSlider(yearStart)+10, …)` clamp and the `if (y > yearStart)` guard would prevent it.

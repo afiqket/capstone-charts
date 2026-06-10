@@ -1,0 +1,13 @@
+Clicking the **📊 Bar button** switches the chart from line mode to bar mode via `setMode("bar")`. Specifically:
+
+1. **Button styling**: The Bar button becomes active (blue background `#3a6fc4`, white text), and the Line button reverts to white/grey.
+2. **Slider appears**: The year slider at the bottom (hidden in line mode) becomes visible, letting you scrub through years from 1950 to 2050. A ▶ play button can auto-advance through the years.
+3. **Tooltip is hidden** and the main chart area is cleared.
+4. **`renderBar()` runs**, which:
+   - Updates the title to include the current year, e.g. *"World population, comparison of UN projections, 2050"* (initially `currentYear` is the last year in the data, **2050**).
+   - Pulls the row for `currentYear` and builds a horizontal bar for each UN projection series that has a value for that year, **excluding "Latest observed data"**.
+   - Sorts bars descending by value.
+   - For year 2050, it would show bars for 1998, 2002, 2012, 2017, 2019, 2022, and 2024 projections (sorted: 2019 ≈ 9.77B at top, down to 1998 ≈ 8.91B).
+   - Each bar is colored on the same light→dark blue scale, labeled on the left with the projection name, and annotated on the right with its value formatted as e.g. `9.77 billion`.
+   - An x-axis baseline is drawn but no x-axis ticks/gridlines.
+5. Moving the slider (or hitting play) re-runs `renderBar()` for the newly selected year. If a year has no projection data (e.g. 1950–1965, or 2023), it shows "No projection data for this year".

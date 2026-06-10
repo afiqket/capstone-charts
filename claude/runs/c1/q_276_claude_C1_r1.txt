@@ -1,0 +1,40 @@
+You have two main options to restrict the data range to 2000–2050:
+
+## Option 1: Use the built-in range slider (no code changes)
+
+The chart already has a two-handle range slider at the bottom. Drag the **left handle** until it lands on **2000** — the right handle is already at 2050 (the last year in the data). The chart will re-render to the 2000–2050 range automatically.
+
+## Option 2: Change the initial range in code
+
+In `chart_082.js` at lines 49–50, the defaults are set to the full data range:
+
+```js
+let yearStart = years[0];                    // currently 1970
+let yearEnd   = years[years.length - 1];     // currently 2050
+```
+
+Change `yearStart` to `2000`:
+
+```js
+let yearStart = 2000;
+let yearEnd   = 2050;
+```
+
+## Option 3: Filter the source data
+
+Since the CSV (`data/csvs/chart_082.csv`) contains years 1970–2050 in 5-year steps, you can either:
+
+- **Pre-filter the CSV**: delete the rows for 1970, 1975, 1980, 1985, 1990, 1995 (lines 2–7, 19–24, 36–41, 53–58). That leaves only 2000 through 2050.
+- **Filter in code** at line 23, change:
+
+  ```js
+  const years = [...new Set(rawData.map(d => +d.Year))].sort((a,b) => a - b);
+  ```
+  to:
+  ```js
+  const years = [...new Set(rawData.map(d => +d.Year))]
+    .filter(y => y >= 2000 && y <= 2050)
+    .sort((a,b) => a - b);
+  ```
+
+**Recommendation:** Option 2 is the smallest change and keeps the slider usable. Option 1 requires no edits at all.

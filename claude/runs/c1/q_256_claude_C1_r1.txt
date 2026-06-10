@@ -1,0 +1,9 @@
+Hovering over Algeria in 2016 triggers the `mousemove` handler, which:
+
+1. **Highlights Algeria's border** — the country's stroke changes from white (0.4 width) to dark gray `#333` (1.5 width), and it's raised to the top.
+2. **Shows a tooltip** near the cursor with three lines of text:
+   - **"Algeria"** (country name, bold, 15px, dark)
+   - "Stand-alone mental health policy" (gray subtitle, 11px)
+   - **"No"** (the value for Algeria in 2016, per the CSV row `Algeria,DZA,2016,No`), rendered in the orange/red "No" color `#e8a07a` at 20px bold.
+
+The tooltip is a white rounded rectangle (260×80) with a drop shadow, positioned to the right of the cursor — or flipped to the left if it would overflow the chart's right edge.

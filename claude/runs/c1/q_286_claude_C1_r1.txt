@@ -1,0 +1,11 @@
+The question doesn't match this chart. This chart is a scatter plot of "Country with highest female life expectancy" — it shows yearly life expectancy values as dots, not bars representing age groups. There is no "85–89 years old bar" and no age-group data in either the code or CSV.
+
+The only 2023 data point is **Hong Kong 2023** with a life expectancy of 88.1294. If you hovered over that dot (not a bar), the tooltip would show:
+- Title: "Hong Kong 2023" (in Hong Kong's color #4C6FAD)
+- Year: 2023
+- Life expectancy: "88.1 years"
+- Country: Hong Kong
+
+All other Hong Kong dots would highlight while non-Hong Kong dots fade to grey (opacity 0.12), and "Hong Kong" would be bolded in the legend.
+
+So: there is no 85–89 age bar to hover over — the chart has no age-group bars at all.

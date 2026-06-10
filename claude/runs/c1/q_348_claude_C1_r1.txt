@@ -1,0 +1,18 @@
+The black color means the county is classified as **"both" — i.e., it is both a persistent poverty county AND a high poverty county.**
+
+From the chart code:
+
+```js
+const colors = {
+  high:       "#6BAED6",   // light blue
+  persistent: "#D4956A",   // orange/tan
+  both:       "#3A3A3A",   // near-black
+  none:       "#f0f0f0"    // very light gray
+}
+```
+
+The county fill is set by `colors[row.category]`, where `category` comes from the CSV. A county shaded the dark/black color (`#3A3A3A`) has `category = "both"`, and the legend labels it **"Both persistent and high poverty"** (the tooltip confirms: `both: "Both persistent and high poverty"`).
+
+So a black county is one that qualifies as *both* a persistent-poverty county and a high-poverty county — the most severely poverty-affected category.
+
+(Note: the near-white `#f0f0f0` is used for "none" / neither, and is also what's shown when a county is filtered out by the Metro/Nonmetro radio selection.)

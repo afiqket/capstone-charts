@@ -1,0 +1,23 @@
+## What happens hovering near 1900 on the line chart
+
+Looking at the mousemove handler (lines 201–215), here's the behavior:
+
+1. **Year detection** — The mouse x coordinate is converted to a year via `xScale.invert(mx)`, giving roughly `yearHover ≈ 1900`.
+
+2. **Closest-point lookup per series** — For each visible source (Maddison, Durand, Thomlinson, Tuve, McEvedy), it finds the data point with the year closest to 1900 (line 206–208).
+
+3. **Proximity filter** — Each closest point is kept only if its year is within **5% of the total x-extent** of `yearHover` (line 210). Since the historical data spans thousands of years (BCE → 2000s), 5% is a very wide window (~hundreds of years), so essentially all sources with a point near 1900 will pass.
+
+4. **Tooltip display** (`showTooltip`, lines 112–129):
+   - A white rounded rectangle with shadow appears.
+   - Header reads `Year: 1900` (or whichever closest year the first series matched — line 213 uses `items[0].year`).
+   - Below, one colored row per source: `Maddison (1991): X.X billion`, `Durand (1977): X.X billion`, etc., each tinted with that source's palette color.
+   - Tooltip width is fixed at 240px; height grows with the number of rows (`28 + items.length * 16`).
+
+5. **Positioning** (lines 126–128):
+   - If the tooltip would overflow the right edge (`mx + 260 > 900`), it flips to the left of the cursor; otherwise it sits 12px to the right.
+   - Vertically clamped so it stays inside the SVG.
+
+6. **Leaving** — `mouseleave` calls `hideTooltip()` which sets the tooltip group to `display:none`.
+
+If you hovered somewhere with no series points within the 5% window, `items` would be empty and the tooltip would be hidden — but at 1900, modern-era data is dense, so you'll see a multi-row tooltip listing each source's population estimate (in billions) for the year nearest 1900.

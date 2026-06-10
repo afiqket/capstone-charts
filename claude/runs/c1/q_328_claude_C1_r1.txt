@@ -1,0 +1,12 @@
+Hovering over Asia at 2020 triggers two things in chart_099.js: a vertical dashed gray hover line appears at the 2020 position on the Asia small-multiple (chart_099.js:188-191, 201), and the shared tooltip (chart_099.js:88-129, 197-203) is shown next to the cursor.
+
+The tooltip uses the CSV row at chart_099.csv:196 — `Asia,OWID_ASI,2020,740105600,1828863500,2117841900` — and the `fmt` helper at chart_099.js:77-81, so it renders:
+
+- **2020** (header)
+- in people (subtitle)
+- ▪ Rural areas — 740.11 million
+- ▪ Towns & suburbs — 1.83 billion
+- ▪ **Cities** — **2.12 billion** (bold, since `bold: true` for Cities at chart_099.js:104)
+- Total — 4.69 billion
+
+The tooltip is positioned to the right of the cursor unless that would overflow the SVG width, in which case it flips to the left (chart_099.js:126-128).

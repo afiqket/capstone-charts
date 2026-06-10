@@ -1,0 +1,12 @@
+This chart cannot provide that information.
+
+The chart (`chart_095.js`) visualizes **annual birth rate and peak birth month** for France and Spain. Its data columns are:
+
+- `Entity` (country: France or Spain)
+- `Year`
+- `Birth rate` (annual births per 1,000 people)
+- `Month with peak value` (1–12, the month with the highest average daily births)
+
+There is no "Completed cohort fertility rate" series and no "shifted +30 years" concept in this code or dataset. The chart only plots crude annual birth rates colored by the peak birth month — it has nothing to do with completed cohort fertility (which would track the total number of children women born in a given year eventually had) or any 30-year shift.
+
+You'd need a different chart/dataset (e.g., one tracking completed cohort fertility by birth cohort) to answer that question.

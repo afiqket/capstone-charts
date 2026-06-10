@@ -1,0 +1,6 @@
+To find the birth rate for September 2010, look in the CSV data file (`data/csvs/chart_097.csv`) for the row where the date column matches September 2010 (likely formatted as "2010-09", "Sep 2010", "9/2010", or similar depending on the file's date format). The birth rate value will be in the corresponding birth rate column for that row.
+
+Without being able to read the files, I can't give you the exact value — but the process is:
+1. Open `data/csvs/chart_097.csv`
+2. Locate the row for September 2010
+3. Read the value in the birth rate column

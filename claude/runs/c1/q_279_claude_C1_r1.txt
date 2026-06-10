@@ -1,0 +1,9 @@
+You can't get that value from this chart.
+
+This chart (`chart_083.js`) is titled **"Period versus cohort life expectancy, France"**. Looking at the code:
+
+- Line 18: `const country = "France";` — the country is hardcoded to France
+- Line 20: `rows = rawData.filter(d => d.Entity === country)` — only France's rows are kept; "World" is filtered out
+- Lines 12–15: The only columns read from the data are `"Period life expectancy"` and `"Cohort life expectancy"` — there is no `"Missing female births"` column being referenced anywhere
+
+So even if the underlying CSV happened to contain a "Missing female births" series for "World" in 2010 (which is unlikely given the data source is the Human Mortality Database for life expectancy — line 338), this chart's code would never surface it. You'd need a different chart/dataset (e.g., one based on Our World in Data's "missing-female-births-and-excess-female-deaths" data) to answer that question.

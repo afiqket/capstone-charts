@@ -1,0 +1,4 @@
+Summing the "All" column for United States from 1918 through 1973 (56 years):
+
+Total = 1480.22
+Average = 1480.22 / 56 ≈ **26.43 years**

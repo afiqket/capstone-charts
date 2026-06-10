@@ -1,0 +1,17 @@
+When you hover over 2020 on the line chart, two things happen:
+
+**1. A vertical hover line** (gray, 1px) appears at the 2020 x-position spanning the full chart height.
+
+**2. A tooltip** appears near the cursor showing:
+- **Title:** `2020`
+- **Rows** (sorted by value descending, each with a colored swatch):
+  - 🟦 Mumbai: 26,696 per km²
+  - 🟫 Karachi: 24,328 per km²
+  - 🟪 Surat: 23,384 per km²
+  - 🟩 Kinshasa: 21,869 per km²
+  - 🟦 Hong Kong: 21,763 per km²
+  - 🟥 Kabul: 15,289 per km²
+
+None of the rows carry a `(proj.)` suffix — 2020 is the cutoff, and the projection filter only includes years strictly greater than 2020 (line 30), so all six values come from the estimated column.
+
+The tooltip is positioned to the right of the cursor unless that would overflow the chart, in which case it flips to the left.

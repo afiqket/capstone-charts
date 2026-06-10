@@ -1,0 +1,15 @@
+To get the 2024 projection value for world population in 2050, look at the CSV file `data/csvs/chart_079.csv`:
+
+- **Row**: the row where `Entity = "World"` and `Year = 2050` (the last row)
+- **Column**: `2024 projection` (the last column)
+- **Value**: `9664378585` (~9.66 billion)
+
+In the chart code, this same value is computed by:
+
+1. Filtering rows to `Entity === "World"` (chart_079.js:45)
+2. Looking up the row for year 2050 via `byYear.get(2050)` (chart_079.js:50)
+3. Reading the `"2024 projection"` column and dividing by `1e9` to convert to billions (chart_079.js:57), yielding **≈ 9.66 billion**
+
+In the rendered chart, you can read it interactively two ways:
+- **Line mode**: hover near x = 2050; the tooltip lists each series, including `2024 projection: 9.66B`.
+- **Bar mode**: drag the slider to 2050; the `2024 projection` bar shows `9.66 billion`.

@@ -1,0 +1,17 @@
+Dragging the slider handle from 1990 to 2024 (in the default Map mode) does the following:
+
+1. **Snapping**: As you drag, the handle snaps to the nearest year in the data — it doesn't move continuously, it picks the closest year via `years.reduce((a,b) => Math.abs(xScale(a)-mx) < Math.abs(xScale(b)-mx) ? a : b)` (line 297-298).
+
+2. **Re-renders the map for each year passed through**: Each drag event calls `updateYear(y)` (line 299), which:
+   - Updates `currentYear` to the new year
+   - Moves the handle's `cx` to `xScale(y)`
+   - Calls `renderMap()` again (since mode is "map") — clearing `mainG` and re-painting every country with the color from `dataByYear.get(currentYear)`
+   - Hides the tooltip
+
+3. **Title updates**: The title text re-renders to `"Share of the population born in another country, {currentYear}"` (line 108) for every intermediate year.
+
+4. **Visual effect**: You see the choropleth fill colors animate as country migrant-share values change year by year between 1990 and 2024. Countries with no data for a given year switch to the hatched "No data" pattern.
+
+5. **If in Bar mode** instead, the same drag would call `renderBar()`, re-sorting the six selected countries by their value for that year and resizing the bars. **In Line mode the slider is hidden** (line 324), so dragging isn't possible there.
+
+Note: there's no transition/animation — each year change is a full redraw, so the map flickers through discrete repaints rather than smoothly tweening.

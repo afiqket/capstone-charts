@@ -1,0 +1,10 @@
+Hovering over Peru on the map triggers the `mousemove` handler, which does the following:
+
+1. **Highlights Peru's border** — Peru's stroke changes from white (`#fff`, width 0.4) to dark gray (`#333`, width 1.5), and the country path is raised to the top. All other countries' borders are reset to the default white outline.
+
+2. **Shows a tooltip** near the cursor containing:
+   - **Country name:** "Peru" (bold, 15px)
+   - **Year label:** "2020" (small gray text)
+   - **Value:** `65.8%` — formatted from Peru's data value `65.78001` using `d3.format(".1f")`, displayed in bold 22px dark magenta (`#800060`)
+
+The tooltip is a 240×80 white rounded rectangle with a drop shadow. Its position flips to the left of the cursor if it would overflow the right edge of the 900px-wide chart, and is clamped vertically to stay within the chart bounds.

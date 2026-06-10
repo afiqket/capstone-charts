@@ -1,0 +1,11 @@
+To get the projected population density of Hong Kong in 2100, look in the CSV row where `Entity = "Hong Kong"` and `Year = 2100`, and read the column **"Population density of the top 100 most populous cities (projected) (Projected)"**.
+
+From `data/csvs/chart_101.csv:910`:
+
+```
+Hong Kong,HKG,2100,,8510.985,,China
+```
+
+So the projected population density of Hong Kong in 2100 is **8,510.985 people per km²** (the estimated/observed column is empty since 2100 is a projection year > 2020, which matches the chart code's logic at `chart_101.js:30`).
+
+In the chart UI, you can also retrieve it by switching to the 📊 Bar view and dragging the slider to 2100 — the Hong Kong bar will show "8,511 per km² (proj.)".

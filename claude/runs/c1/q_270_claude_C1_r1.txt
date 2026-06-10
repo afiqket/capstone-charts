@@ -1,0 +1,14 @@
+## How to get the McEvedy and Jones (1978) value for 1950
+
+The chart offers two ways to read this value:
+
+**Option 1 — Bar mode (most precise)**
+1. Click the **📊 Bar** button at the top of the chart.
+2. Drag the slider at the bottom to year **1950** (or click on that position along the slider track).
+3. The bar chart will show each source's value for 1950. The McEvedy and Jones (1978) bar will be labeled with its value: **2.5 billion**.
+
+**Option 2 — Line mode (hover tooltip)**
+1. In the default Line view, hover over the chart area near year 1950.
+2. The tooltip will list the nearest data point for each visible source, including `McEvedy and Jones (1978): 2.5 billion`.
+
+The underlying CSV value at `chart_080.csv:562` is `2,500,000,000`, which the `fmtBillion` formatter renders as **"2.5 billion"**.

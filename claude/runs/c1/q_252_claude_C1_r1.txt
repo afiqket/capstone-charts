@@ -1,0 +1,3 @@
+To get the exact percentage for Malaysia, open the data file `data/csvs/chart_074.csv` directly (in a text editor, spreadsheet app, or with a quick `grep Malaysia data/csvs/chart_074.csv`). The CSV holds the raw values the chart is rendered from, so the number listed there for Malaysia is the exact percentage — the chart itself only shows a rounded/visual approximation via bar length or label.
+
+If you'd rather read it off the chart, hover over the Malaysia data point in the rendered chart to trigger the tooltip (most chart libraries show the precise underlying value on hover), but the CSV is the authoritative source.

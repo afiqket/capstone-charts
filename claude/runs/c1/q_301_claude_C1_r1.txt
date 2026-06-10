@@ -1,0 +1,20 @@
+Based on the chart code (chart_090.js, lines 167–182) and the data for the United States in 2023:
+
+When you hover over the area near the 2023 point in the line chart, the mousemove handler on the transparent `rect` overlay (line 170) fires and does the following:
+
+1. **A vertical hover line appears** at x = 2023 (a gray `#999`, 1px-wide line spanning the full chart height — defined on line 167, shown on line 178).
+
+2. **A tooltip appears** near the cursor (positioned via lines 102–104 — it flips to the cursor's left if it would overflow the right edge). The tooltip is a white rounded rectangle with a drop shadow (lines 80–82) containing:
+
+   - **Title (bold, black):** `United States, 2023`
+   - One line per series, colored to match the line, with values formatted to 2 decimals + " years":
+     - `5th birth or higher: 34.45 years` (light blue-gray)
+     - `4th birth: 32.66 years`
+     - `3rd birth: 31.57 years`
+     - `2nd birth: 30.35 years`
+     - `All: 29.96 years` (orange `#C07038`, **bold** — per line 95)
+     - `1st birth: 27.85 years` (dark navy)
+
+3. When the mouse leaves the plot area, the `mouseleave` handler (line 182) hides both the vertical line and the tooltip.
+
+Note: 2023 is the last year in the data, so it sits at the right edge of the x-axis; the tooltip will flip to render to the left of the cursor.

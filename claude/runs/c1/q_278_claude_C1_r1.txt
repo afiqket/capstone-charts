@@ -1,0 +1,3 @@
+The chart and data file do not contain any information about "Excess female deaths" or data for the "World" entity. The dataset only contains "Period life expectancy" and "Cohort life expectancy" columns, and the chart is specifically about life expectancy in France.
+
+The question cannot be answered from this chart's data.

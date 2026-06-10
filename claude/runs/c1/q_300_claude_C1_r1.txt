@@ -1,0 +1,21 @@
+## Answer
+
+The bar value for **"5th birth or higher" in 2023** is **34.45** years.
+
+### How to retrieve it from the chart:
+
+1. **Switch to Bar view** — click the "📊 Bar" button (line 62, 291). This calls `setMode("bar")` → `renderBar()`.
+2. **Set the year to 2023** — drag the slider handle, or click the slider track at the 2023 position (lines 255–265). This triggers `updateYear(2023)`, which re-renders the bar chart for that year.
+3. **Read the value** — in `renderBar()` (lines 186–226), the bar labeled "5th birth or higher" will display its value next to the bar via:
+   ```js
+   .text(d3.format(".2f")(d.value))  // line 221
+   ```
+
+### Where the value comes from:
+
+From the CSV (`chart_090.csv:2606`):
+```
+United States,USA,2023,27.85,30.35,31.57,32.66,34.45,29.96
+```
+
+The columns are `1st birth, 2nd birth, 3rd birth, 4th birth, 5th birth or higher, All`, so the **5th birth or higher** value is **34.45**, formatted by `d3.format(".2f")` → **"34.45"**.

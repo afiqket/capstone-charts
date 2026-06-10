@@ -1,0 +1,8 @@
+Hovering near 2023 on the line chart triggers the invisible `rect` overlay's `mousemove` handler (chart_077.js:211-223). It converts the cursor's x-position back to a year via `xScale.invert`, snaps to the closest year in the data (2023), and looks up that year's values from `byYear`.
+
+A tooltip then appears showing:
+- **Title**: `United States, 2023`
+- **Birth rate: 10.8** (in blue `#4C6FAD`, from 10.75 in the CSV, formatted to one decimal)
+- **Death rate: 9.2** (in red `#B04B2D`, from 9.154587, formatted to one decimal)
+
+The tooltip is a white rounded box (200×70, drop shadow) positioned 12 px to the right of the cursor — or flipped to the left if it would overflow the 900 px-wide SVG (which it would near 2023, the rightmost edge of the series), and clamped vertically to stay inside the chart. It disappears on `mouseleave`.

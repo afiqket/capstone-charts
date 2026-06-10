@@ -1,0 +1,5 @@
+Looking at the data for the United States:
+- 2014: **No** (no stand-alone policy or plan for mental health)
+- 2016: **Yes** (had a stand-alone policy or plan for mental health)
+
+The United States changed from **not having** a stand-alone mental health policy/plan in 2014 to **having** one in 2016.

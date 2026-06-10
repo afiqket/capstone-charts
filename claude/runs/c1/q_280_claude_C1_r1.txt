@@ -1,0 +1,10 @@
+Hovering over the 2010 point on the line chart triggers the `mousemove` handler on the transparent overlay rect (chart_083.js:165). It finds the closest year (2010), fetches the France/2010 row, and calls `showTooltip` which displays a tooltip styled with a white background, rounded corners, and drop shadow (chart_083.js:70–72).
+
+The tooltip contents for France, 2010:
+
+- **Title:** `France, 2010`
+- **Row:** `Period life expectancy: 81.4 years` (rendered in the period color `#B04B2D`, formatted to 1 decimal via `d3.format(".1f")`)
+
+There is **no** Cohort life expectancy row, because the CSV value for France 2010 is empty (`France,FRA,2010,81.41,`), and the code filters out null values at chart_083.js:174 (`.filter(d => d.value != null)`).
+
+The tooltip is positioned near the cursor — to the right by default, or flipped to the left if it would overflow the right edge of the chart (chart_083.js:89), and clamped vertically to stay within the chart bounds (chart_083.js:90).

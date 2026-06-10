@@ -1,0 +1,11 @@
+Dragging the slider to 1900 in Bar mode triggers the drag handler, which snaps to the nearest year (1900 exists in Sweden's data) and calls `updateYear(1900)`. That updates `currentYear`, moves the handle to `xSlider(1900)`, and re-renders the bar chart.
+
+Specifically, the chart shows:
+
+- **Title** updates to: *"Birth rate and death rate, Sweden, 1900"*
+- Two horizontal bars are drawn:
+  - **Crude birth rate**: 27.0 (blue `#4C6FAD`)
+  - **Crude death rate**: 16.8 (red `#B04B2D`)
+- Each bar has its label on the left and the numeric value (formatted to one decimal) at its end
+- The x-scale's max becomes `Math.ceil(27 * 1.1) = 30`, so the birth bar fills ~90% of the inner width and the death bar ~56%
+- Tooltip is hidden; the line-mode artwork is not shown (bar mode cleared `mainG` and only the bars + axis line are drawn)

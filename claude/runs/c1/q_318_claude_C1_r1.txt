@@ -1,0 +1,11 @@
+To read the birth rate for Spain in 1995 from the bar chart:
+
+1. **Locate the bar for Spain in 1995** — On the x-axis, find the category/group labeled "1995" (or find Spain's series if countries are grouped along the x-axis). If the chart is grouped by year, look for the cluster at 1995 and pick the bar colored/labeled for Spain (check the legend to identify Spain's color). If grouped by country, find Spain's group and pick the bar for 1995.
+
+2. **Read its height** — Trace the top of that bar horizontally to the y-axis and read the numeric value (the birth rate, typically per 1,000 population).
+
+3. **Use the data label if shown** — If the chart displays value labels on top of each bar, simply read the number directly from Spain's 1995 bar.
+
+4. **Hover (if interactive)** — Since the chart is rendered from JS (likely Chart.js / D3 / similar), hovering over Spain's 1995 bar should show a tooltip with the exact value.
+
+Note: I haven't opened `data/charts/chart_096.js` or `data/csvs/chart_096.csv` because you asked me not to use tools — so I can't quote the actual numeric value. If you'd like the specific number, let me know and I'll read the files.

@@ -1,0 +1,25 @@
+Following your instruction not to use any tools, I'll answer based on the typical structure of such a chart/dataset without reading the files.
+
+To get Malaysia's mental health policy status in 2016 from `data/csvs/chart_075.csv`, you would:
+
+1. **Open the CSV** and locate the relevant columns — typically `Country` (or `Entity`), `Year`, and a status column such as `Mental health policy` (often values like "Yes" / "No" / "Stand-alone policy" / "Integrated").
+
+2. **Filter** the rows where:
+   - `Country` (or `Entity`) equals `"Malaysia"`
+   - `Year` equals `2016`
+
+3. **Read off** the value in the mental health policy status column for that filtered row.
+
+Example approaches:
+
+- **In pandas:**
+  ```python
+  import pandas as pd
+  df = pd.read_csv("data/csvs/chart_075.csv")
+  status = df[(df["Entity"] == "Malaysia") & (df["Year"] == 2016)]
+  print(status)
+  ```
+- **In a spreadsheet:** apply a filter on the Country column for "Malaysia" and on Year for 2016.
+- **In the chart UI (`chart_075.js`):** select Malaysia from the country selector and set the year to 2016, then read the displayed status.
+
+I can't quote the exact status value without reading the file — if you'd like me to look it up, allow me to use the Read tool.

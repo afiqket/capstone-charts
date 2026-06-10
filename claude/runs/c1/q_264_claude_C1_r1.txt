@@ -1,0 +1,12 @@
+Since I'm instructed not to use any tools, I can't open the files to read the exact value. Based on the file names and your question, here's how you'd retrieve it:
+
+1. **Open the CSV** at `data/csvs/chart_078.csv`. A chart of crude death rates typically has columns like `Entity` (or `Country`), `Year`, and `Crude death rate` (deaths per 1,000 people).
+2. **Filter** the rows where `Entity = "Sweden"` and `Year = 1749`.
+3. **Read** the value in the crude-death-rate column for that row.
+
+Quick ways to do it:
+- In a spreadsheet: open the CSV, apply filters on Entity = Sweden and Year = 1749.
+- Command line: `awk -F, '$1=="Sweden" && $3==1749' data/csvs/chart_078.csv` (adjust the field indexes to match the actual column order).
+- Pandas: `df[(df.Entity=="Sweden") & (df.Year==1749)]`.
+
+If you'd like, re-ask without the "no tools" restriction and I'll read the file and give you the exact number.

@@ -1,0 +1,5 @@
+At age 30 in the United States:
+- **Women born in 1990**: 0.10151
+- **Women born in 1970**: 0.10784
+
+The **1970 cohort** had a higher fertility rate at age 30 (0.108 vs 0.102 births per woman).
