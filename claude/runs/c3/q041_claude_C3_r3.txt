@@ -1,0 +1,20 @@
+{
+  "answer": "Approximately 430 million active mobile money accounts in Sub-Saharan Africa in 2024 (exactly 430,034,750).",
+  "reasoning": "Step 1: Stacked area chart 'Active mobile money accounts' by region; x-axis = year (2010-2024), y-axis = number of accounts (0 to ~800 million), six region bands. Step 3: Sub-Saharan Africa is the bottom band of the stack (blue #4e79a7). Step 5 rule 3: in a stacked chart you must read the band's own height (top minus bottom), not the cumulative top. I read the Sub-Saharan Africa series' bound stack data: 15 yearly points (2010..2024); the last point's underlying data row is {year:2024, 'Sub-Saharan Africa':430034750, ...} and its stack pair is [0, 430034750], so the band value (y1 - y0) = 430,034,750. As the bottom band its offset is 0, so cumulative and segment values coincide here. Step 6: y-axis starts at 0 (not truncated), linear scale, correct series, correct year (2024 confirmed via bound data row), value from data not pixels.",
+  "confidence": 0.97,
+  "evidence": "Sub-Saharan Africa path: key='Sub-Saharan Africa', 15 points (2010-2024), last point data row year=2024, 'Sub-Saharan Africa'=430034750; stack pair [0, 430034750]; segment = 430,034,750. Axis 0-800 million.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/64887ee832929930 with Playwright",
+    "Waited for the chart worker iframe to render",
+    "Read the bound stack data of the Sub-Saharan Africa region path",
+    "Extracted its 2024 point and verified the year via the bound data row"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: axis starts at 0 - not truncated",
+    "Stacked vs simple: read the Sub-Saharan Africa band's own value (430,034,750), not the cumulative stack top",
+    "Correct series: used 'Sub-Saharan Africa' (bottom blue band), not another region/total",
+    "Correct year: confirmed the point's data row has year=2024 (no interpolation)",
+    "Tooltip/pixel: value taken from bound data, not estimated from axis pixels"
+  ],
+  "self_check": "Restated: in 2024 Sub-Saharan Africa had ~430 million active mobile money accounts (430,034,750), the explicit value in the 2024 data row and the bottom band's height at the chart's right edge. Consistent and reproduced in run r3."
+}

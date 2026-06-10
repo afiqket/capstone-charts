@@ -1,0 +1,21 @@
+{
+  "answer": "Use the chart's interactive controls rather than reading the color: (1) set the year slider to 2018 (the map title updates to 'Share of people in range of 4G mobile network, 2018'), then (2) hover over Thailand on the choropleth map to open its tooltip, which displays the exact value. Doing this gives Thailand = 98.0% for 2018.",
+  "reasoning": "Step 1 (Chart Identification): The notebook '4G network' is an interactive choropleth world map titled 'Share of people in range of 4G mobile network, <year>', with Map/Line/Slope/Bar view toggles and a year slider (2012–2024). The Map view is the only one exposing individual countries like Thailand (Line/Slope show 7 regional aggregates). Step 2 (Axes/Scale): Color encodes a 0%–100% sequential scale (legend gradient + 'No data' hatch); value column = 'Proportion of population covered by at least a 4G mobile network (%)'. The color scale alone cannot be read to a tenth of a percent, which is why the tooltip is required for an 'exact' value. Step 4 (Interactive Protocol): The map defaults to 2012, so the year slider must first be moved to 2018; I did this and confirmed the title changed to '...2018'. Then hovering Thailand triggers the per-country tooltip. Step 5 (Data Reading Rules): Read the tooltip value (formatted to one decimal, .1f), do not estimate from pixel color. The tooltip rendered 'Thailand / 2018 / 98.0%'.",
+  "confidence": 0.97,
+  "evidence": "Map title after moving slider: 'Share of people in range of 4G mobile network, 2018'. Hover tooltip on the Thailand country path showed: 'Thailand', '2018', '98.0%'. Value column label: 'Proportion of population covered by at least a 4G mobile network (%)'.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/c796dd26baa3c4f8 and waited for the chart iframe to render",
+    "Clicked the year slider track at the 2018 position (offset = width * 6/12), changing the map year from 2012 to 2018 (title confirmed '...2018')",
+    "Identified the Thailand country path via its bound feature data (properties.name === 'Thailand')",
+    "Triggered the map's mousemove tooltip handler over the Thailand path and read the rendered tooltip text"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: N/A (choropleth color scale, full 0%–100% range)",
+    "Dual y-axes: N/A",
+    "Stacked vs grouped bars: N/A (map view)",
+    "Log scale active: No, linear 0–100% color scale",
+    "Linked filter still active: Verified the year filter was set to 2018 (title) before reading, not the default 2012",
+    "Tooltip value vs visual position: Used exact tooltip value (98.0%) rather than estimating from the country's shading"
+  ],
+  "self_check": "Restated: to obtain the precise figure, set the slider to 2018 and hover Thailand; the tooltip — not the color — yields the exact number, 98.0%. This is consistent with Thailand's near-saturated dark-blue shading on the 2018 map (close to 100%)."
+}

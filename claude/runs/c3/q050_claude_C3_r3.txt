@@ -1,0 +1,20 @@
+{
+  "answer": "Hover your mouse pointer over Canada on the map. A tooltip appears next to the cursor showing Canada's exact value: 'Canada — 2020 · % took prescribed medication — 73.0%'. So the exact value for Canada is 73.0% (year 2020). Canada is also highlighted with a darker outline while hovered. Alternatively, click the '📊 Bar' toggle to switch to the bar-chart view and read Canada's bar value/label directly. Reading the tooltip is the recommended way because it gives the precise number rather than an estimate from the country's fill color.",
+  "reasoning": "Step 1 (Chart Identification): Interactive choropleth world map titled 'Dealt with anxiety or depression by taking prescribed medication, 2020' (Wellcome Global Monitor 2021), with a '🌍 Map' / '📊 Bar' toggle. Step 3 (Encoding): A sequential Oranges/Reds color scale encodes the percentage (legend 0%–100%); Canada's fill rgb(219,65,44) is one of the darkest reds, indicating a high value. Step 4 (Interactive Protocol): The reliable retrieval method is to hover the country region so its native tooltip displays the exact value (Step 5 rule: prefer tooltips over color/pixel estimation). I located Canada's path and triggered its mousemove handler, then read the tooltip text. Step 6: Confirmed the read by checking it against Canada's dark-red fill (consistent with ~73%).",
+  "confidence": 0.97,
+  "evidence": "Hover tooltip on Canada: 'Canada | 2020 · % took prescribed medication | 73.0%'. Canada fill color rgb(219,65,44) (a dark red, near the top of the scale). UI controls present: '🌍 Map' / '📊 Bar' toggle buttons. Legend ticks: No data / 0% … 100%.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/fdbb3d8a0cd4bd58 and waited for render",
+    "Located the embedded chart iframe (worker frame) containing the map paths",
+    "Identified the SVG path whose bound data properties.name === 'Canada'",
+    "Triggered the path's D3 mousemove handler to surface the tooltip",
+    "Read the tooltip text and the path fill color"
+  ],
+  "pitfalls_checked": [
+    "Tooltip value preferred over color/pixel estimation (read 73.0% from tooltip, not from legend color)",
+    "Confirmed color encoding direction: darker red = higher (Canada's dark red consistent with 73%)",
+    "Single fixed year (2020) — no year filter to reset",
+    "Not a truncated/dual/log axis chart (choropleth with color legend) — N/A"
+  ],
+  "self_check": "Restated: to obtain Canada's exact figure, hover Canada on the map (or use the Bar view); the tooltip reports 73.0% for 2020. This is consistent with Canada's dark-red fill rgb(219,65,44), which sits near the top of the 0–100% color scale, matching the tooltip value."
+}

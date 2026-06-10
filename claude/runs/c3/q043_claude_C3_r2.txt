@@ -1,0 +1,19 @@
+{
+  "answer": "A strong, sustained, uninterrupted upward trend: total active mobile money accounts grew every single year from ~13 million in 2010 to ~780 million in 2024 - roughly a 59x increase (about 34% compound annual growth). The growth is continuous (no year-on-year decline) and accelerating in absolute terms, and it is driven primarily by Sub-Saharan Africa, the largest region throughout, which itself rose from ~10 million (2010) to ~430 million (2024).",
+  "reasoning": "Step 1: Stacked area chart 'Active mobile money accounts' by region; x-axis = year (2010-2024), y-axis = number of accounts (0 to ~800 million); six region bands. The question is a trend question over the full 2010-2024 range. Step 5 rule 3: to judge the OVERALL trend I summed all six regions' raw values per year (from each year's bound data row) to get the total stack height, and also tracked Sub-Saharan Africa as the dominant band. Step (trend analysis): the total rises monotonically every year: 2010 ≈13.1M -> 2014 ≈100.6M -> 2018 ≈328.5M -> 2020 ≈445.3M -> 2022 ≈601.9M -> 2024 ≈780.1M. Factor 2024/2010 ≈ 59.5; implied CAGR ≈ 34%/yr. No decreases in any year. Sub-Saharan Africa is the largest contributor at every point (10.4M -> 430.0M). Step 6: y-axis starts at 0 (not truncated), linear scale; used exact data rows not pixel estimates; included all regions; full 2010-2024 range.",
+  "confidence": 0.92,
+  "evidence": "Total active accounts by year: 2010=13,119,627; 2011=20,838,923; 2012=35,353,700; 2013=66,112,518; 2014=100,630,379; 2015=148,525,482; 2016=200,840,520; 2017=262,048,543; 2018=328,485,544; 2019=367,844,438; 2020=445,252,714; 2021=527,389,147; 2022=601,927,338; 2023=691,194,579; 2024=780,133,247. Monotonic; ratio 2024/2010 ≈ 59.5. Sub-Saharan Africa 2010=10,431,262 -> 2024=430,034,750 (largest band every year).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/64887ee832929930 with Playwright",
+    "Waited for the chart worker iframe to render",
+    "Read every yearly data row and summed all six regions per year to get the total trend"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: axis starts at 0 - not truncated",
+    "Stacked chart: computed overall total by summing region raw values per year (not misreading one band as the total)",
+    "All regions/years included (2010-2024), no filter active",
+    "Linear scale (not log)",
+    "Trend guard: verified monotonic year-on-year increase (no decline) before calling it a sustained uptrend"
+  ],
+  "self_check": "Restated: from 2010 to 2024 active mobile money accounts climbed continuously and steeply - ~59-fold, ~34%/yr, no down years - led by Sub-Saharan Africa. The strictly increasing yearly totals confirm a strong sustained growth trend. Consistent and reproduced in run r2."
+}

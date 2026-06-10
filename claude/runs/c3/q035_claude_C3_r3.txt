@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering a point on the Premium revenue chart shows a tooltip with three lines: (1) the vehicle type / series name 'Premium', (2) 'Month: <Mon YYYY>' (the data point's month), and (3) 'Total Revenue: <value>' (the revenue, formatted with a thousands comma). For example, hovering the Premium point at November 2024 displays: 'Premium / Month: Nov 2024 / Total Revenue: 9,104'. The hovered marker is also visually emphasised (point radius set to 7 with a red #dc2626 stroke).",
+  "reasoning": "Step 1: The embed is tabbed; the Premium revenue chart is the right panel of the 'Total Revenue' view, so I clicked the 'Total Revenue' tab and used the Premium (right) panel. Step 4 (Interactive Elements Protocol): I hovered a Premium data point (chose Nov-2024, the series peak, to be unambiguous) and read the tooltip directly rather than estimating. The tooltip text is composed of three lines: 'Premium', 'Month: Nov 2024', 'Total Revenue: 9,104'. The bound datum {month:'Nov-24', value:9104} matches the tooltip, and the marker's attributes change on hover (r=7, stroke=#dc2626) i.e. the point is highlighted. Step 6: confirmed correct tab (Revenue) and correct panel (Premium right), value read from the tooltip not pixels.",
+  "confidence": 0.95,
+  "evidence": "Total Revenue tab, Premium (right) panel, Nov-24 point hovered: tooltip = 'Premium Month: Nov 2024 Total Revenue: 9,104'; bound datum {month:'Nov-24', date:2024-10-31T15:00Z, value:9104}; hovered marker attributes r=7, stroke=#dc2626 (highlight).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/d5d39f0d9ccdf508 with Playwright",
+    "Waited for the chart worker iframe to fully render",
+    "Clicked the 'Total Revenue' tab",
+    "Identified the Premium (right) panel and hovered its November-2024 data point",
+    "Captured the resulting tooltip text and the marker's highlight attribute changes"
+  ],
+  "pitfalls_checked": [
+    "Correct tab: used 'Total Revenue' (Premium revenue chart), not 'Total Bookings'",
+    "Correct panel: Premium = right (not Mini = left)",
+    "Tooltip vs pixel position: read the rendered tooltip text directly",
+    "Verified the tooltip value equals the point's bound datum (9,104) so the displayed info is exact",
+    "Y-axis 'Total Revenue' starts at 0 - not truncated"
+  ],
+  "self_check": "Restated: hovering a Premium revenue point reveals (a) the series label 'Premium', (b) the month, and (c) the exact total revenue (comma-formatted), plus a visual highlight of the point. Demonstrated with Nov 2024 -> 'Premium / Month: Nov 2024 / Total Revenue: 9,104', matching the bound data. Consistent and reproduced in run r3."
+}
