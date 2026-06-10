@@ -1,0 +1,1 @@
+Hovering over the line chart shows a vertical hover line at the nearest year and displays a tooltip listing each country's smoker count for that year, sorted from highest to lowest.

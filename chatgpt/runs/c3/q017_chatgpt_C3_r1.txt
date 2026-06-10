@@ -1,0 +1,29 @@
+{
+  "answer": "The chart does not show percent change by state. For the displayed measure, percent of California county adults with a bachelor's degree, coastal/Bay Area counties are generally higher than inland counties: coastal examples range from 32.5% to 58.1%, while sampled inland counties range from 14.6% to 21.2%.",
+  "reasoning": "The rendered chart is a California county choropleth titled Geography of Educational Attainment in California, not a percent-change-by-state chart. It has no x/y axes; color encodes percent with a bachelor's degree, with legend bins from less than 15% up to more than 60%. I used the All adults dropdown state and hovered representative coastal and inland counties. Coastal/Bay Area counties showed higher tooltip values, while inland Central Valley/desert counties showed lower values.",
+  "confidence": 0.82,
+  "evidence": "Tooltip values: San Francisco County 58.1%, Santa Clara County 52.4%, San Diego County 38.8%, Los Angeles County 32.5%; Fresno County 21.2%, San Bernardino County 21.0%, Kern County 16.4%, Tulare County 14.6%. Legend label: Percent with a bachelor's degree.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Captured page snapshot and screenshot",
+  "Inspected chart controls and legend",
+  "Hovered San Francisco County",
+  "Hovered Fresno County",
+  "Hovered Santa Clara County",
+  "Hovered San Diego County",
+  "Hovered Los Angeles County",
+  "Hovered Tulare County",
+  "Hovered San Bernardino County",
+  "Hovered Kern County"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the rendered chart is a choropleth map, not a percent-change state chart",
+  "Confirmed there are no x/y axes, no y-axis truncation issue, and no dual axes",
+  "Confirmed the chart uses color bins rather than bar stacking or grouping",
+  "Confirmed no log scale is present",
+  "Confirmed the active filter is All adults",
+  "Used tooltip values rather than estimating from color alone"
+  ],
+  "self_check": "Restated: the requested percent-change-by-state comparison is not available in this chart; using the actual chart measure, coastal counties generally have higher bachelor's-degree percentages than inland counties, consistent with the sampled tooltip values."
+ }

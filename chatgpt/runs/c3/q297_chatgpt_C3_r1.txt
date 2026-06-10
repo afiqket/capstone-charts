@@ -1,0 +1,21 @@
+{
+  "answer": "Use the rendered chart tooltip: in Line mode, hover over year 2000 and read the 50% row; the 50% survival age for France in 2000 is 82.4 years.",
+  "reasoning": "Chart identification: interactive line/bar chart titled Survival ages across the population, showing France from 1816 to 2023 with multiple percentile series. Axes/scale: x-axis is year, y-axis is survival age in years, linear scale from 0 to 120 years. Legend/encoding: the 50% series is one of the colored percentile lines/bars. Interaction: I hovered the rendered line chart at year 2000 and read the tooltip, then switched to Bar mode and set the slider to 2000 to confirm the 50% label/value.",
+  "confidence": 0.98,
+  "evidence": "Tooltip for year 2000 listed 50% = 82.4 years. Bar mode for France, 2000 also showed 50% = 82.4.",
+  "interactions_performed": [
+  "Opened the Observable chart with Playwright MCP",
+  "Inspected the rendered SVG chart and axes",
+  "Hovered the line chart at x-axis year 2000 to reveal the tooltip",
+  "Clicked Bar mode and moved the year slider to 2000 to verify the value"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at 0 years and runs to 120 years",
+  "No dual y-axes observed",
+  "Line mode uses separate percentile series, not stacked values",
+  "Bar mode uses separate horizontal bars, not stacked bars",
+  "Tooltip value was used instead of pixel estimation",
+  "France is the chart country shown in the title"
+  ],
+  "self_check": "The requested 50% survival age can be retrieved by hovering year 2000 and reading the 50% tooltip row; both tooltip and bar view give 82.4 years."
+ }

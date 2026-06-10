@@ -1,0 +1,1 @@
+Clicking the Bar button switches the chart from lines to a horizontal bar chart for the selected year, shows the year slider, hides the line tooltip, and compares the projection values sorted from highest to lowest.

@@ -1,0 +1,1 @@
+No. In the bar chart view, the bars do not have a click interaction.

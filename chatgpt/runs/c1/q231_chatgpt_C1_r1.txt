@@ -1,0 +1,1 @@
+Click the Line button. The chart switches to a United Kingdom time-series view showing the dependency ratio trends over time for age dependency, labor force dependency, and higher-participation labor force dependency.

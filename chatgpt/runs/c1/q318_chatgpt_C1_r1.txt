@@ -1,0 +1,1 @@
+Switch to the Bar view, move the year slider to 1995, then read Spain's bar label: 9.2 births per 1,000 people.

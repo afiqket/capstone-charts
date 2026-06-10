@@ -1,0 +1,1 @@
+The play button is in the bar chart view, at the bottom-left of the chart next to the year slider.

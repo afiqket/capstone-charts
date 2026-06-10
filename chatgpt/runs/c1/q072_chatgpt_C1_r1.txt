@@ -1,0 +1,1 @@
+Clicking the Line button switches the visualization from the world map to a small-multiple line view for the selected countries: China, Russia, United Kingdom, and United States. It shows their year-by-year conflict status from the selected start year to the latest year, using blue for No and orange for Yes.

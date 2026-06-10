@@ -1,0 +1,1 @@
+Changing the pronoun dropdown filters the chart to only animal characters with that pronoun, updates the character count, redraws the summary percentages/bar, refreshes the icon grid, and limits search suggestions to matching results.

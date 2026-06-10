@@ -1,0 +1,1 @@
+Clicking the animate node toggles it open or closed. When opened, it shows its child nodes such as Easing, FunctionSequence, interpolate, ISchedulable, Parallel, Pause, Scheduler, Sequence, Transition, Transitioner, TransitionEvent, and Tween.

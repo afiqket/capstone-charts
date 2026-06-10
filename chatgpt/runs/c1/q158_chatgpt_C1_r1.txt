@@ -1,0 +1,1 @@
+Hover over the chart at the desired year; the tooltip lists all breach-type counts for that year.

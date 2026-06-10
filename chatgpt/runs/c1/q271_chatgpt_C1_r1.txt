@@ -1,0 +1,1 @@
+A tooltip appears for the nearest available points around 1900, titled Year: 1900, listing each selected source's population estimate such as McEvedy and Jones (1978): 1.6 billion.

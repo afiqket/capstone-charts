@@ -1,0 +1,1 @@
+The chart switches from the map view to a sorted bar chart of the selected countries.

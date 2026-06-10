@@ -1,0 +1,1 @@
+The 85–89 years old bar stays fully opaque while the other bars fade, and a tooltip appears showing "85–89 years old" and "102.49 per 1,000".

@@ -1,0 +1,1 @@
+The highest country is the United Kingdom at 76.7%. You can get its data by hovering over the United Kingdom on the map or its bar to show the tooltip.

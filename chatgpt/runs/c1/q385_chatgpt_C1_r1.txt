@@ -1,0 +1,1 @@
+Switch to the Bar chart and move the year slider to 2018, then look for the Nitroimidazole bar; its value is 0.31365466, shown as about 0.3.

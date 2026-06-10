@@ -1,0 +1,1 @@
+Click the animate category circle to expand it, then click the interpolate category circle to reveal its child data.

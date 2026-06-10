@@ -1,0 +1,20 @@
+{
+  "answer": "Australia had no armed conflict in 1989: No — no conflict.",
+  "reasoning": "I identified the chart as an interactive world map showing whether each country had an armed conflict in a selected year. The legend encodes blue as No and orange as Yes. I changed the year control from 2024 to 1989, then hovered Australia and read the tooltip rather than estimating from map color.",
+  "confidence": 0.98,
+  "evidence": "Tooltip after setting the map year to 1989: Australia; 1989; No — no conflict. Australia was also colored blue, matching the legend value No.",
+  "interactions_performed": [
+  "Opened the chart URL in Playwright MCP",
+  "Inspected the rendered chart snapshot",
+  "Hovered Australia on the map",
+  "Moved the year slider/control to 1989",
+  "Hovered Australia again and read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the map year was 1989 before reading Australia",
+  "Used tooltip value rather than pixel estimation",
+  "Checked legend encoding: blue = No, orange = Yes",
+  "No y-axis, truncation, log scale, or dual-axis issue applies to this map"
+  ],
+  "self_check": "Restated: for Australia in 1989, the chart reports the opposite of conflict, meaning no armed conflict occurred."
+ }

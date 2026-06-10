@@ -1,0 +1,1 @@
+It changes the start year shown on the area chart, filtering the graph to display data from the selected year onward and rescaling the axes.

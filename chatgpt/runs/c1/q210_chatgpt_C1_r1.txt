@@ -1,0 +1,1 @@
+Click an expandable node to toggle its hidden children open; continue clicking child categories to reveal deeper levels of the tree.

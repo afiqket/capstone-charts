@@ -1,0 +1,26 @@
+{
+  "answer": "4G mobile network coverage increased strongly over time across the selected regions/countries, with most moving toward near-universal coverage by 2024.",
+  "reasoning": "The chart is an interactive line/slope/map/bar visualization titled 'Share of people in range of 4G mobile network, 2012 to 2024'. The y-axis is a linear percentage scale from 0% to 100%, and the x-axis spans 2012 to 2024. In the slope view, all visible selected series rise or remain very high: World increases from 43.5% to 91.8%, Asia from 39.8% to 96.0%, Latin America and the Caribbean from 57.8% to 90.3%, Europe from 76.3% to 98.6%, and Oceania from 74.9% to 88.9%. Northern America was already near saturation, changing only slightly from 99.4% to 99.6%. This indicates broad expansion and convergence toward high 4G coverage.",
+  "confidence": 0.9,
+  "evidence": "Slope view labels: World 43.5% in 2012 to 91.8% in 2024; Northern America 99.4% to 99.6%; Asia 39.8% to 96.0%; Latin America and the Caribbean 57.8% to 90.3%; Europe 76.3% to 98.6%; Oceania 74.9% to 88.9%. Axis labels show 0%, 20%, 40%, 60%, 80%, 100% and years 2012 to 2024.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the initial map view and year range",
+  "Clicked the Line view",
+  "Clicked the Slope view",
+  "Clicked the Bar view",
+  "Returned to the Slope view",
+  "Inspected rendered SVG text labels",
+  "Moved the mouse over representative slope endpoints to check for hover behavior"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at 0% and runs to 100%",
+  "No dual y-axes observed",
+  "Linear percentage scale used",
+  "Slope/line view is not stacked",
+  "Full time range checked: 2012 to 2024",
+  "Rendered labels used rather than estimating from pixels"
+  ],
+  "self_check": "The answer is consistent with the displayed endpoint labels: coverage rises substantially in every visible selected series except Northern America, which was already around 99%, so the overall trend is strong growth toward near-universal 4G coverage."
+ }

@@ -1,0 +1,23 @@
+{
+  "answer": "Use the chart's Line view to compare multiple countries across time, or the Bar view to compare the selected countries for a single year. The Line view displays the selected country series together: United States, United Kingdom, China, India, and Japan.",
+  "reasoning": "I identified the chart as an interactive landline internet subscriptions visualization with Map, Line, and Bar views. The Line button changes the chart from a single-year map to a multi-series time-series chart from 1998 to 2025, which is the best view for comparing countries over time. The Bar button shows a same-year country comparison for the selected year. The visible year control/play control can be used to change the year for Map or Bar comparisons.",
+  "confidence": 0.92,
+  "evidence": "Rendered controls showed buttons labeled Map, Line, and Bar. In Line view, the chart title was 'Landline Internet subscriptions, 1998 to 2025' and the visible country labels were China, United States, Japan, India, and United Kingdom. In Bar view for 1998, the visible bars included United States at 706k and Japan at 32k.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Captured page snapshot and screenshot",
+  "Clicked the Line button",
+  "Inspected the Line view labels and axes",
+  "Clicked the Bar button",
+  "Inspected the Bar view labels and values",
+  "Returned to the Map view and inspected available controls"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the chart is interactive, not static",
+  "Checked that Line view is multi-series while Map and Bar are single-year views",
+  "Checked the y-axis in Line view starts at 0 and uses fixed broadband subscription counts",
+  "Checked there is no visible separate country dropdown or search control in the rendered UI",
+  "Checked that the Bar view compares only countries with visible data for the selected year"
+  ],
+  "self_check": "To compare several countries, switch from Map to Line for trends across 1998-2025, or use Bar with the year control for a one-year side-by-side comparison; this matches the visible controls and country labels."
+ }

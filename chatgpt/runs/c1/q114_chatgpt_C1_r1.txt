@@ -1,0 +1,1 @@
+It changes the time, updating which flights are shown and where they are along their routes.

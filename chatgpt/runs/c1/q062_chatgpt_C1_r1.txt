@@ -1,0 +1,1 @@
+Hover over the country or data mark in the chart to open the tooltip, which shows the country or region, year, and exact 4G coverage value formatted as a percentage.

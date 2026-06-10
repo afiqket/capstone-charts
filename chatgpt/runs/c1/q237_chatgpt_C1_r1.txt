@@ -1,0 +1,1 @@
+The map colors show the number of mental health units in general hospitals per 100,000 people. Lighter orange means lower values, darker orange/brown means higher values, and hatched areas mean no data. The legend uses a log scale from 0 to 10.

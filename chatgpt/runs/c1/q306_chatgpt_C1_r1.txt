@@ -1,0 +1,1 @@
+Hover over the 1 birth area at birth year 1973; the tooltip shows 19.29%. The underlying data value is 19.285498%.

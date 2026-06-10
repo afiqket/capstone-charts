@@ -1,0 +1,1 @@
+Set the year slider to 1989 and hover over Australia on the map. The tooltip will show whether conflict occurred; for Australia in 1989, the data value is 0, meaning "No — no conflict".

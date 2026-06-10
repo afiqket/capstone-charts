@@ -1,0 +1,1 @@
+Hover over Malaysia on the map to see the tooltip value, shown as 62.3%; the underlying exact data value is 62.25645%.

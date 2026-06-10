@@ -1,0 +1,1 @@
+Hovering over a colored country highlights its border and shows a tooltip with the country name, the selected year, and the available values for age dependency ratio, labor force dependency ratio, and higher-participation labor force dependency ratio.

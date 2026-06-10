@@ -1,0 +1,1 @@
+Click or drag the timeline slider to the time you want; the swimmer icons update immediately to show each player's position at that time.

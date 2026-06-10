@@ -1,0 +1,23 @@
+{
+  "answer": "Madagascar, with GDP per capita staying roughly between $1,546 and $1,708 international-$ in 2021 prices across the displayed years.",
+  "reasoning": "I identified the chart as an interactive scatterplot of GDP per capita vs. life satisfaction with a year slider. I sampled the rendered slider years from 2011 through 2024 and compared each country's displayed GDP per capita values. Among countries present in all sampled years, Madagascar had the smallest absolute GDP range, about $162, so it appears the most consistent throughout the years.",
+  "confidence": 0.82,
+  "evidence": "Tooltip checks for Madagascar showed $1,546 in 2020 and $1,708 in 2019. Rendered SVG values across 2011-2024 ranged from 1545.7272 to 1707.8315 international-$; next closest complete-country ranges were Malawi at about $169 and Liberia at about $253.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered iframe and SVG chart",
+  "Clicked the year slider positions from 2011 through 2025",
+  "Read rendered circle data for each slider year",
+  "Hovered Madagascar's minimum and maximum GDP points to confirm tooltip values"
+  ],
+  "pitfalls_checked": [
+  "Y-axis does not start at zero, but the answer uses x-axis GDP values",
+  "No dual y-axes observed",
+  "Chart is a scatterplot, not stacked or grouped bars",
+  "GDP x-axis is logarithmic, so tooltip/rendered values were used instead of visual distance",
+  "Year slider state was changed and re-read for each sampled year",
+  "Tooltip values were checked against rendered data"
+  ],
+  "self_check": "Madagascar is the country whose GDP per capita varies least in absolute terms across the displayed years, remaining near $1.6k-$1.7k international-$, consistent with the tooltip evidence."
+ }

@@ -1,0 +1,1 @@
+Use the projected population series for New Delhi and read the 2035 row; the projected value is 32,226,618 people, about 32.2 million.

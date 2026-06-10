@@ -1,0 +1,1 @@
+Clicking the slider selects the nearest year, moves the slider handle there, updates the title to that year, and redraws the bars for that selected year.

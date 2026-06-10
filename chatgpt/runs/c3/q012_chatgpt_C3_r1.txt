@@ -1,0 +1,22 @@
+{
+  "answer": "3,738 transfers out",
+  "reasoning": "Identified the chart as an interactive two-panel line chart titled \"Number of Dublin requests and transfers, in and out, per year, 2008 to 2020\". The left panel was set to Austria. The y-axis is labeled \"Number of requests or transfers\" and starts at 0, with linear tick marks at 5,000 intervals up to 20,000. The legend maps Transfers out to the red line. I hovered the Austria red data point for 2017 and read the tooltip value directly.",
+  "confidence": 1.0,
+  "evidence": "Tooltip for Austria, Transfers out, Year: 2017 showed \"Transfers out: 3,738\".",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered chart snapshot",
+  "Checked the legend color mapping",
+  "Hovered the Austria 2017 red Transfers out data point and read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Line chart, not stacked or grouped bars",
+  "Linear scale indicated by evenly spaced numeric ticks",
+  "Austria selected in Country 1 panel",
+  "Tooltip value used instead of pixel estimation"
+  ],
+  "self_check": "Austria's transfers out value for 2017 is 3,738, matching the tooltip for the red Transfers out series at year 2017."
+ }

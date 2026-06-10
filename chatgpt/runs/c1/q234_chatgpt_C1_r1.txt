@@ -1,0 +1,1 @@
+Look up the South Korea row in the data file; its exact value is 58.99228%.

@@ -1,0 +1,1 @@
+Hover or click the Mid-level Azure segment in the chart; the tooltip shows a distinct job count of 152.

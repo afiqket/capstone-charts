@@ -1,0 +1,1 @@
+A large gray rectangle means the asset has had a wide range between its lowest and highest year-to-date price movement values up to the selected date.

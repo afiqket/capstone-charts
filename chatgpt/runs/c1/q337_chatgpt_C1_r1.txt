@@ -1,0 +1,1 @@
+A vertical hover line appears at 2020 and a tooltip shows the 2020 projected populations for the cities, sorted from largest to smallest, with '(proj.)' labels.

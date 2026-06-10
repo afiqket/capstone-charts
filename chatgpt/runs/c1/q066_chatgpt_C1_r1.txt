@@ -1,0 +1,1 @@
+Hovering over Russia on the default map would show Russia, year 2023, 98.6%, a closest-available-data note because the current map year is 2024, and a sparkline of Russia's available values over time.

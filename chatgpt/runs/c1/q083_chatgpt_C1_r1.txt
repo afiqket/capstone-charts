@@ -1,0 +1,1 @@
+Click the Line button, then move the cursor over the Iraq line around the years 2014 to 2017. The hover tooltip shows the year and Iraq's death value: 2014: 13,168; 2015: 10,136; 2016: 9,635; 2017: 10,228.

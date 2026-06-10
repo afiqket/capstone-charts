@@ -1,0 +1,1 @@
+Clicking "Digital Skills Trend by Population" switches to the second page, showing a line chart titled "Digital Skills Trend: All Countries" with all countries' digital skills trends and hover tooltips for country, year, and value.

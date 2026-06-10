@@ -1,0 +1,1 @@
+Find the France row for 2005 in the data or hover/select 2005 in the chart: the peak month is September and the daily birth rate is 36.17458 births per day.

@@ -1,0 +1,1 @@
+Use the chart legend and bar colors: Developed countries are teal, Emerging countries are gray, and the U.S. is pink as its own category.

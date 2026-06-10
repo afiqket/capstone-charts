@@ -1,0 +1,1 @@
+Move the year slider to 2000, then hover over a country's circle to see its male and female life expectancy in the tooltip.

@@ -1,0 +1,1 @@
+Dragging the bottom slider changes the selected year, stops playback if it is running, moves the slider handle, and redraws the current Map, Line, or Bar view for that year.

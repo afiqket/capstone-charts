@@ -1,0 +1,1 @@
+When you hover over an orange-colored country, its border turns black and a tooltip appears showing the country name and its homelessness category.

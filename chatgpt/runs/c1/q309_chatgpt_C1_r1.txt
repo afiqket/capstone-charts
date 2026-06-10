@@ -1,0 +1,1 @@
+Use the Japan row where Year is 30 and read the 1990 column; the fertility rate is 0.10289 births per woman.

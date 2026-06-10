@@ -1,0 +1,1 @@
+Matching earthquake spikes stay prominent while non-matching spikes fade; the first match gets a dashed focus ring and a match counter is shown.

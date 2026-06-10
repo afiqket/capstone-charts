@@ -1,0 +1,21 @@
+{
+  "answer": "Use the \"Digital Skills Trend by Population\" view, then hover the specific country's line/points for years 2021, 2022, 2023, 2024, and 2025 to read its digital-skills percentage from the tooltip. The rendered chart does not expose a visible country dropdown/filter; it shows \"Country: (All)\".",
+  "reasoning": "The chart is an interactive line chart. I selected the AI Adoption and Digital Skills chart, opened the Digital Skills Trend by Population tab, and verified the x-axis is Year from 2021 to 2025 and the y-axis is Digital Skills (% of Population) from 0 to 90 on a linear scale. The chart displays all countries together and uses hover tooltips for exact country-year values. Because no specific country was named in the question and no country selector was visible, the correct way to get a specific country's trend is to hover that country's data points across the five years.",
+  "confidence": 0.86,
+  "evidence": "Trend view title: \"Digital Skills Trend: All Countries\". X-axis labels: 2021, 2022, 2023, 2024, 2025. Y-axis label: \"Digital Skills (% of Population)\". Tooltip example observed on hover: country name, year, and \"Population with at Least Basic Digital Skills (% of Population Aged 16–74)\" value.",
+  "interactions_performed": [
+  "Opened the chart URL with Playwright MCP",
+  "Selected the AI Adoption and Digital Skills chart from the chart dropdown",
+  "Clicked \"Digital Skills Trend by Population\"",
+  "Inspected the rendered chart axes and controls",
+  "Hovered trend points to check tooltip behavior"
+  ],
+  "pitfalls_checked": [
+  "Confirmed this is a line chart, not a ranking bar chart",
+  "Checked x-axis covers 2021 through 2025",
+  "Checked y-axis is digital skills percentage and starts at 0",
+  "Checked for a country filter/dropdown; none was visibly exposed",
+  "Used hover/tooltips rather than estimating from line position"
+  ],
+  "self_check": "To retrieve a specific country's 2021-2025 digital skills trend, switch to the trend tab and read that country's tooltip values year by year; the chart itself remains in all-countries mode unless a hidden or unavailable filter is added."
+ }

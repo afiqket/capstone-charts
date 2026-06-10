@@ -1,0 +1,1 @@
+In Bar mode, dragging the slider to 1900 updates the chart title to 1900 and shows two horizontal bars: crude birth rate 27.0 and crude death rate 16.8.

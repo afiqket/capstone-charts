@@ -1,0 +1,1 @@
+Hovering around age 35 shows the vertical hover guide and an Age 35 tooltip with cohorts that have data at that age. The 1995 cohort is not listed there because its available data stops before age 35.

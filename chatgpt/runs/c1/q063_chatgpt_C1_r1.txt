@@ -1,0 +1,1 @@
+Clicking the play button starts an animation through the years. The current year advances by one every 350 milliseconds, the slider and chart redraw for each year, and playback stops when it reaches the latest year. If the chart is already at the latest year, playback restarts from the earliest year.

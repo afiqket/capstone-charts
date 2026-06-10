@@ -1,0 +1,1 @@
+Hover over the North America chart near the year 2010 and read the tooltip's Cities value: 204,470,820 people.

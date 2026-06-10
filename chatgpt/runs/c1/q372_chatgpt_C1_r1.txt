@@ -1,0 +1,1 @@
+Click the Bar button, then use the year slider to select a year; the bar chart shows both Urban and Rural percentages with value labels.

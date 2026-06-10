@@ -1,0 +1,22 @@
+{
+  "answer": "Middle East & North Africa had the most terrorist attacks in 2014, with 6,996 attacks.",
+  "reasoning": "I identified the chart as an interactive stacked area chart titled 'Terrorist attacks by region, 1992 to 2021'. The x-axis is year and the y-axis is number of attacks, using a linear scale from 0 to 18,000. I hovered at the 2014 position and read the tooltip values for all regions. Comparing the 2014 tooltip values, Middle East & North Africa had 6,996 attacks, which is higher than South Asia at 4,997 and all other regions.",
+  "confidence": 0.99,
+  "evidence": "2014 tooltip values included Middle East & North Africa: 6,996; South Asia: 4,997; Sub-Saharan Africa: 2,321; Southeast Asia: 1,083; Eastern Europe: 963; South America: 283; East Asia: 43; North America: 37; Australasia & Oceania: 9; Central Asia: 9; Central America & Caribbean: 4.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered SVG in the Observable iframe",
+  "Hovered over the chart at year 2014 to display the tooltip",
+  "Read and compared the tooltip values for all regions"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Chart is stacked area, so tooltip values were used rather than visual segment heights",
+  "Linear scale observed from evenly spaced y-axis ticks",
+  "No linked filter was active for the 2014 tooltip reading",
+  "Tooltip values were used instead of pixel estimation"
+  ],
+  "self_check": "The largest 2014 tooltip value is 6,996 for Middle East & North Africa, so the region with the most attacks in 2014 is Middle East & North Africa."
+ }

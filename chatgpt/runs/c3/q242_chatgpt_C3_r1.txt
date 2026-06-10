@@ -1,0 +1,22 @@
+{
+  "answer": "The darker pink/purple color means a higher share of people who say science helps a lot in treating anxiety or depression, measured as a percentage.",
+  "reasoning": "The chart is a choropleth map titled 'Perceived importance of science in treating anxiety or depression, 2020'. The legend is a continuous pink-to-purple scale labeled from 0% to 50%, with colors becoming darker toward the 50% end. Hovering a dark-colored country confirmed a high value: Senegal showed 51.8%. Therefore, darker pink/purple encodes higher percentages.",
+  "confidence": 0.96,
+  "evidence": "Legend labels run from 0%, 10%, 20%, 30%, 40%, to 50%, with darker purple at the high end. Tooltip on a darkest country showed Senegal, 2020, 51.8%.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Captured accessibility snapshot of the rendered page",
+  "Captured viewport screenshot",
+  "Inspected rendered SVG legend text and controls",
+  "Hovered the darkest rendered map region and read tooltip values"
+  ],
+  "pitfalls_checked": [
+  "Verified color legend direction",
+  "Checked that the map uses a continuous percentage scale",
+  "Verified tooltip value for a dark-colored country",
+  "Confirmed no dual y-axis applies to this map question",
+  "Confirmed no stacked or grouped bars apply to this map question",
+  "Checked no-data encoding is separate from the pink/purple scale"
+  ],
+  "self_check": "Dark purple corresponds to higher percentages, not lower percentages; this is consistent with the 0%-to-50% legend and the 51.8% tooltip on a dark country."
+ }

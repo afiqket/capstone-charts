@@ -1,0 +1,1 @@
+A vertical hover line appears at 2020 and a tooltip opens listing the 2020 populations for the plotted cities, sorted from largest to smallest.

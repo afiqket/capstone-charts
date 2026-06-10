@@ -1,0 +1,20 @@
+{
+  "answer": "57.46%",
+  "reasoning": "The question is a direct data retrieval task. I opened the chart URL in Playwright, identified the active view as a horizontal bar chart for Country Ranking by AI Adoption, checked the x-axis unit as enterprises using AI technology (%), and hovered the Spain bar to read the tooltip rather than estimate from the bar length.",
+  "confidence": 0.99,
+  "evidence": "Tooltip for Spain: Adoption of at Least One AI Technology in Enterprises with at Least 250 Employees (% of Enterprises): 57.46",
+  "interactions_performed": [
+  "Opened the chart link using Playwright MCP",
+  "Waited for the rendered chart",
+  "Inspected the page snapshot and chart structure",
+  "Hovered the Spain AI adoption bar and read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the relevant chart was Country Ranking by AI Adoption, not Digital Skills",
+  "Confirmed the axis unit was percentage",
+  "Confirmed this was a grouped side-by-side dashboard, not a stacked bar",
+  "Used tooltip value instead of pixel estimation",
+  "Checked that the AI adoption axis starts at 0 and uses linear tick marks"
+  ],
+  "self_check": "Spain's AI adoption percentage is 57.46%, matching the tooltip value for the Spain bar in the AI adoption ranking."
+ }

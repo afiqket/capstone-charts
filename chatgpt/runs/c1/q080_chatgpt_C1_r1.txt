@@ -1,0 +1,1 @@
+Moving the bottom slider changes the selected year and redraws the chart. In the line chart, it changes the starting year of the displayed lines, so the chart shows data from that year through 2024.

@@ -1,0 +1,21 @@
+{
+  "answer": "Set the chart to 4G network, move the year slider to 2018, then hover over Thailand on the map; the tooltip shows 98.0%.",
+  "reasoning": "I opened the rendered chart with Playwright, switched the chart selector from the initial phone-ownership chart to the relevant 4G network chart, used the map view, set the timeline to 2018, and hovered over Thailand. The chart title confirmed it was showing 4G mobile network coverage for 2018, and the hover tooltip provided the exact value rather than requiring visual estimation.",
+  "confidence": 0.98,
+  "evidence": "Tooltip on Thailand in the 2018 4G network map showed: Thailand, 2018, 98.0%. The metric label was 'Proportion of population covered by at least a 4G mobile network (%)'.",
+  "interactions_performed": [
+  "Opened the chart URL in Playwright",
+  "Selected '4G network' from the chart dropdown",
+  "Used the Map view",
+  "Moved the timeline to 2018",
+  "Hovered over Thailand on the rendered map and read the tooltip"
+  ],
+  "pitfalls_checked": [
+  "Confirmed the chart was the 4G network chart, not the initially loaded phone ownership chart",
+  "Used tooltip value instead of estimating from color",
+  "Confirmed the selected year was 2018",
+  "Checked that the map uses a percentage color scale from 0% to 100%",
+  "No dual y-axes or stacked/grouped bars apply to this map view"
+  ],
+  "self_check": "Thailand's exact 2018 4G mobile network coverage is 98.0%, read directly from the rendered chart tooltip."
+ }

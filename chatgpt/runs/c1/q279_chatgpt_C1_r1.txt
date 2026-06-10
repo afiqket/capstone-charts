@@ -1,0 +1,1 @@
+Filter the data to Entity = World and Year = 2010, then read the Missing female births column: 1,710,000.

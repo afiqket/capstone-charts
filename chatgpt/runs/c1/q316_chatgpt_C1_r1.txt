@@ -1,0 +1,1 @@
+The chart switches to a Sweden 2000 horizontal bar chart with three bars sorted by value: Completed cohort fertility rate shifted +30 years 2.00, Tempo-adjusted total fertility rate 1.84, and Total fertility rate 1.56.

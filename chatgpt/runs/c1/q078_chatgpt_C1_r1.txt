@@ -1,0 +1,1 @@
+Hovering over a white country with data shows the tooltip, and the death rate value appears as 0.

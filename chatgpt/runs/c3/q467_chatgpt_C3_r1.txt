@@ -1,0 +1,22 @@
+{
+  "answer": "1960",
+  "reasoning": "I identified the chart as an interactive line chart showing the share of current countries that have had a woman as chief executive since 1789, with two series: Any woman chief executive and Democratically-elected woman chief executive. The x-axis is year, running from 1789 to 2025, and the y-axis is percent starting at 0. I used hover tooltips on the democratically-elected series around the first visible increase. The tooltip showed 1959 at 0% and 1960 at 1%, so the first year with a nonzero democratically-elected woman chief executive is 1960.",
+  "confidence": 0.96,
+  "evidence": "Tooltip readings: 1959: Democratically-elected woman chief executive = 0%; 1960: Democratically-elected woman chief executive = 1%. Earlier checked anchor years 1850, 1900, and 1950 also showed 0%.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright MCP",
+  "Waited for the chart to render",
+  "Inspected the rendered SVG chart and axes",
+  "Hovered over year positions including 1850, 1900, 1950, 1959, 1960, 1961, and 1962",
+  "Read the rendered tooltip values for the democratically-elected woman chief executive series"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Line chart, not stacked or grouped bars for the relevant reading",
+  "Linear year axis observed",
+  "No relevant filters active",
+  "Tooltip values used instead of pixel estimation"
+  ],
+  "self_check": "The first nonzero tooltip value for democratically-elected woman chief executive occurs in 1960, immediately after 1959 remains at 0%, so the answer is 1960."
+ }

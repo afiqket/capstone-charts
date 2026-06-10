@@ -1,0 +1,1 @@
+A vertical hover line appears at 2020 and a tooltip opens showing the 2020 population densities for the cities, sorted from highest to lowest.

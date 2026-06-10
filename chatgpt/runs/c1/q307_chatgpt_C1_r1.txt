@@ -1,0 +1,1 @@
+A vertical hover line appears at 1973, dots are shown for each stacked area, and a tooltip appears with 2 births highlighted at 34.36%.

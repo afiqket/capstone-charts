@@ -1,0 +1,1 @@
+Set the year slider to 2019 and hover over Brazil; the tooltip shows Brazil's GDP per capita as $18,018.621.

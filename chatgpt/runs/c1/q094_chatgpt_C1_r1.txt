@@ -1,0 +1,1 @@
+In the Country dropdown, select only Ethiopia and Ghana and deselect the other countries.

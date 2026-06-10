@@ -1,0 +1,1 @@
+Dragging the year slider from 1998 to 2025 updates the chart year continuously. In Map view, country colors are recalculated for each year and the title changes to the selected year; in Bar view, the bars update for that year. At 2025, the chart shows the latest available data.

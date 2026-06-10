@@ -1,0 +1,1 @@
+Click the Manager legend item. Historical manager nodes appear in teal, and their links to clubs become visible; hovering a club then highlights only its connected historical managers.

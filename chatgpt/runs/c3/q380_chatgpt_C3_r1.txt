@@ -1,0 +1,22 @@
+{
+  "answer": "Click the 📈 Line button to view the trend over years; the chart shows all regions as colored lines from 2014 to 2021, with antibiotic use measured in mg/kg. Hover over any year on the line chart to see exact values for each continent/region.",
+  "reasoning": "Chart identification: the rendered chart is an interactive multi-series line chart titled 'Antibiotic use in livestock per kilogram of meat product'. Axes and scale: x-axis is year, 2014-2021; y-axis is antibiotic use in mg/kg, 0-250, linear and starts at zero. Legend/encoding: regions are encoded by separate colored lines labeled at the right. Interactivity: the chart has Line and Bar buttons; Line mode is the appropriate mode for seeing trends across years, while Bar mode compares regions for one selected year. Hovering in Line mode displays tooltip values for all regions at the selected year.",
+  "confidence": 0.93,
+  "evidence": "Observed controls: '📈 Line' and '📊 Bar'. In Line mode the x-axis labels are 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021 and y-axis ticks are 0, 50, 100, 150, 200, 250 mg/kg. Region labels shown: World, Africa (WOAH), Americas (WOAH), Asia (WOAH), Europe (WOAH). Hover tooltip at 2021 showed Asia 165.8 mg/kg, World 105.2 mg/kg, Americas 81.6 mg/kg, Africa 61.9 mg/kg, Europe 48.0 mg/kg.",
+  "interactions_performed": [
+  "Opened the Observable chart URL with Playwright",
+  "Inspected the rendered chart iframe",
+  "Clicked 📊 Bar mode to verify it shows one-year regional comparison",
+  "Clicked 📈 Line mode to return to trend view",
+  "Hovered over the line chart at 2021 to read tooltip values"
+  ],
+  "pitfalls_checked": [
+  "Y-axis starts at zero",
+  "No dual y-axes observed",
+  "Line mode used for trend, Bar mode only for single-year comparison",
+  "No log scale observed",
+  "No linked filter remained active",
+  "Tooltip values used instead of estimating from pixel position"
+  ],
+  "self_check": "To see the trend for all continents/regions, the user should use the Line view and hover along the years; this is consistent with the rendered multi-line chart and the tooltip values observed."
+ }

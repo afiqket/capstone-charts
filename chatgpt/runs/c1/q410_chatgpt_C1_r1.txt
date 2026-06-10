@@ -1,0 +1,1 @@
+The play button animates the United States year by year, showing men’s lung cancer death rates rising steeply from 1950 to a peak around 1990, then declining steadily, while women’s rates rise more slowly, peak in the late 1990s, and then decline. Men remain higher in every year, but the gender gap narrows strongly after the 1980s and 1990s.

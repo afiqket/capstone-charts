@@ -1,0 +1,1 @@
+A vertical hover line appears at 2020 and a tooltip shows Asia's 2020 values: Rural areas 740.11 million, Towns & suburbs 1.83 billion, Cities 2.12 billion, and Total 4.69 billion.

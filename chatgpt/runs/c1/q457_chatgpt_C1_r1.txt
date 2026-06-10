@@ -1,0 +1,1 @@
+The slider changes the selected year, updating the chart title and repositioning the bubbles to show that year's data; it can also be animated with the play button.

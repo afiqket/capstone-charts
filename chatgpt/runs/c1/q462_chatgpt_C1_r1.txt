@@ -1,0 +1,1 @@
+Click the "Bar" button at the top of the chart to switch from the line chart to the bar chart view.

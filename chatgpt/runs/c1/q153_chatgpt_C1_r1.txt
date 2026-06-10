@@ -1,0 +1,1 @@
+Hover over the relevant volume bar to display the tooltip with the date and trading volume; the CSV's Volume column can also be checked for the raw exact value.

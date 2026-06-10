@@ -1,0 +1,1 @@
+In the Line chart view, the play button advances the year slider and title through the years, but the full line series stays visible. In the Bar chart view, it advances year by year and redraws the bars for each selected year.

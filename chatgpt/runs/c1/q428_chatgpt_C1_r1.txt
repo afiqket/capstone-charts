@@ -1,0 +1,1 @@
+A tooltip appears for the nearest year, showing a vertical guide line, dots on each commodity line, and the commodities' prices sorted from highest to lowest.

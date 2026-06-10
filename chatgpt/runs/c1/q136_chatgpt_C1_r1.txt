@@ -1,0 +1,1 @@
+Only the Investment bars remain visible; the Real GDP line and the other contribution bars are hidden. Investment shows both positive and negative contributions, ranging from -1.67% to 4.68%.
