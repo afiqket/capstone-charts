@@ -1,0 +1,18 @@
+{
+  "answer": "Stay on the 'SOIL CONSERVATION PRACTICES' tab (the default view), then open the 'Country' filter dropdown (the control currently showing '(All)') and select only Ethiopia and Ghana — i.e. check Ethiopia and Ghana (and clear/uncheck the others, including '(All)'). The bar charts will then redraw showing just those two countries, so you can compare their soil conservation practices side by side.",
+  "reasoning": "Step 1/4 (Interactive Elements Protocol): The dashboard's default tab is 'SOIL CONSERVATION PRACTICES', which is the view the question is about, so no tab switch is needed. The controls row has two filter dropdowns: 'Country' and 'Soil Conservation Practices', both at '(All)'. I opened the 'Country' dropdown and found it is a multi-select list (it revealed checkbox options for (All), Ethiopia, Ghana, Mali, Malawi, Tanzania). Therefore the correct action to compare only Ethiopia and Ghana is to use that Country filter and select exactly those two countries, which limits every soil-practice bar chart to Ethiopia and Ghana. Step 6: After filtering, the charts re-render to only the selected countries, enabling a clean two-country comparison.",
+  "confidence": 0.92,
+  "evidence": "Country dropdown options found on open: (All), Ethiopia, Ghana, Mali, Malawi, Tanzania, with checkbox inputs present (multi-select), confirming you can select Ethiopia and Ghana together. The active tab is the default 'SOIL CONSERVATION PRACTICES'.",
+  "interactions_performed": [
+    "Navigated to the ARBES Observable dashboard",
+    "Waited for the chart iframe to render",
+    "Accessed the cross-origin chart frame and opened the 'Country' filter dropdown, enumerating its checkbox options (All/Ethiopia/Ghana/Mali/Malawi/Tanzania)"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the soil conservation view is already the default tab (no tab change needed)",
+    "Verified the Country filter is multi-select (checkboxes), so two countries can be chosen at once",
+    "Noted that '(All)' should be cleared so only Ethiopia and Ghana remain",
+    "How-to interaction question — no numeric axis pitfalls apply"
+  ],
+  "self_check": "Restated: the action is to use the 'Country' filter (on the soil conservation tab) and check only Ethiopia and Ghana; because the dropdown is multi-select, picking exactly those two restricts the charts to them for comparison — consistent with the enumerated checkbox options."
+}

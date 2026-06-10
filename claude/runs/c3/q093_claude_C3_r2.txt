@@ -1,0 +1,18 @@
+{
+  "answer": "Click the 'CROPS MOST COMMONLY GROWN' tab/button at the top of the dashboard. That switches the view to 'Five Crops Most Commonly Grown in Program and Control Communities', which lists the most grown crops for each country, Tanzania included. To show Tanzania on its own, additionally open the 'Country' filter dropdown (currently showing '(All)') and select 'Tanzania'.",
+  "reasoning": "Step 1/4 (Interactive Elements Protocol): The ARBES dashboard has two view tabs at the top — 'SOIL CONSERVATION PRACTICES' (the default) and 'CROPS MOST COMMONLY GROWN' — plus two filter dropdowns labeled 'Country' and 'Soil Conservation Practices', both set to '(All)'. The default view shows soil conservation, not crops, so to see crops you must click the 'CROPS MOST COMMONLY GROWN' tab. Once on that view, the chart shows each country's top crops; Tanzania already appears as one of the country groups. The 'Country' dropdown lets you narrow the view to a single country if you want only Tanzania. I confirmed both tab buttons exist and that a 'Country' filter control is present.",
+  "confidence": 0.93,
+  "evidence": "Tab buttons present: ['SOIL CONSERVATION PRACTICES', 'CROPS MOST COMMONLY GROWN']. A 'Country' filter (custom dropdown rendering '(All) ▼') is present in the controls row. Clicking the crops tab loads the 'Five Crops Most Commonly Grown...' chart that includes a Tanzania group.",
+  "interactions_performed": [
+    "Navigated to the ARBES Observable dashboard",
+    "Waited for the chart iframe to render",
+    "Accessed the cross-origin chart frame and enumerated the view tabs and confirmed presence of the Country filter control"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the default tab is Soil Conservation, so a click is required to reach the crops view",
+    "Identified the exact control to click ('CROPS MOST COMMONLY GROWN' tab) rather than guessing",
+    "Noted the optional 'Country' dropdown for isolating Tanzania",
+    "This is a 'how-to' interaction question, so no numeric axis pitfalls apply"
+  ],
+  "self_check": "Restated: to view Tanzania's most grown crops, the action is to click the 'CROPS MOST COMMONLY GROWN' tab (then optionally filter Country = Tanzania) — consistent with the dashboard having a separate crops tab and a Country filter, and identical to the prior run."
+}

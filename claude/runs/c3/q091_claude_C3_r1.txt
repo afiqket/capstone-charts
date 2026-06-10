@@ -1,0 +1,18 @@
+{
+  "answer": "Ghana has the highest share of households that practice fallowing in their fields, at 20%.",
+  "reasoning": "Step 1: The page is an ARBES dashboard ('Soil Conservation Practices in Program and Control Communities') containing five small-multiple horizontal bar charts, one per practice, each broken out by country (Ethiopia, Ghana, Mali, Malawi, Tanzania). Step 3: Each bar carries a data label showing the percentage of households. Step 4/5: I located the panel whose title is 'Households that practice fallowing in their fields' and read each bar's value, matching label to country by shared y-coordinate (rather than relying on snapshot order). The fallowing panel (title at y≈345.8) rows: Ethiopia (y≈345.8)=16%, Ghana (y≈373.9)=20%, Mali (y≈402)=10%, Malawi (y≈430.1)=6%, Tanzania (y≈458.2)=3%. The maximum is Ghana at 20%. Note: the metric is the percentage of households, since the chart labels are percentages.",
+  "confidence": 0.97,
+  "evidence": "Fallowing panel data labels aligned by y-coordinate — Ethiopia 16%, Ghana 20%, Mali 10%, Malawi 6%, Tanzania 3%. Ghana 20% is the largest. (Cross-checked that these belong to the 'fallowing' title, distinct from the adjacent 'crop rotation' panel above [90/65/91/70/20%] and 'irrigate' panel below [13/3/10/11/2%].)",
+  "interactions_performed": [
+    "Navigated to the ARBES Observable dashboard",
+    "Waited for the chart iframe to render",
+    "Accessed the cross-origin chart frame, found the SVG panel containing 'fallowing', and extracted every text label with its x/y position to map percentages to countries by shared y-coordinate"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the values belong to the 'fallowing' panel, not a neighboring small-multiple, via y-coordinate alignment with the panel title",
+    "Read printed data labels rather than estimating bar lengths by pixels",
+    "Noted the metric is a percentage of households (no axis truncation/log/dual-axis issues for a labeled categorical bar chart)",
+    "Did not apply the Country/Practice dropdown filters, so the answer reflects the full (All) dataset"
+  ],
+  "self_check": "Restated: among the five countries, the fallowing percentages are 16, 20, 10, 6, 3 for Ethiopia, Ghana, Mali, Malawi, Tanzania; the single largest is Ghana's 20%, so Ghana has the highest number/share of households practicing fallowing — consistent with the y-aligned label evidence."
+}

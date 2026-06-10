@@ -1,0 +1,18 @@
+{
+  "answer": "When the chart shows Imports, five countries appear in both the legend and the 2017 bar chart: Bangladesh, Vietnam, China, Turkey, and Indonesia. (Their 2017 import shares are Bangladesh 18.93%, Vietnam 17.19%, China 13.70%, Turkey 9.96%, Indonesia 8.84%.)",
+  "reasoning": "Step 1/4 (Interactive Elements Protocol): I changed the 'Title' dropdown to 'Imports', which re-renders the line chart and the 'Imports, 2017 (%)' bar chart. Step 5: I read the data bound to the chart elements rather than eyeballing — the legend corresponds to the line-series countries (each line path's bound datum.country), and the 2017 bar chart's countries come from each bar rect's bound datum. Both returned the same five countries in the same order: Bangladesh, Vietnam, China, Turkey, Indonesia. The bars also carry their 2017 percent values, confirming identity between the two.",
+  "confidence": 0.97,
+  "evidence": "Selector = 'Imports'. Legend (line series countries): [Bangladesh, Vietnam, China, Turkey, Indonesia]. 2017 bar chart: Bangladesh 18.93%, Vietnam 17.19%, China 13.70%, Turkey 9.96%, Indonesia 8.84% — identical set of countries.",
+  "interactions_performed": [
+    "Navigated to the Cotton notebook and waited for render",
+    "Set the 'Title' dropdown to 'Imports' and waited for the chart to re-render",
+    "Accessed the cross-origin chart frame and read the legend (line-path bound data) and the 2017 bar chart (bar-rect bound data) country sets"
+  ],
+  "pitfalls_checked": [
+    "Switched the Title filter to 'Imports' before reading (not the default 'Production')",
+    "Read country identity from bound data rather than estimating from colors/positions",
+    "Confirmed the legend and the 2017 bar chart contain the same five countries",
+    "Listing question — no numeric axis truncation/log/dual-axis pitfalls apply"
+  ],
+  "self_check": "Restated: on the Imports view the legend lists Bangladesh, Vietnam, China, Turkey, Indonesia, and the 2017 bar chart shows those exact same five countries — identical to the prior run."
+}

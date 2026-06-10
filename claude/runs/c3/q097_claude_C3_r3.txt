@@ -1,0 +1,19 @@
+{
+  "answer": "The United States. On the Exports view its line is the highest in every year from 2000 to 2018, and it leads the 2017 export share at 38.94% — far ahead of India, Brazil and Australia.",
+  "reasoning": "Step 1/4 (Interactive Elements Protocol): The notebook's 'Title' selector lets you switch the metric; I changed it to 'Exports', which redraws the line chart 'Leading cotton exports, 2000-2018' (value in 1,000 480lb bales) and the bottom 'Exports, 2017 (%)' bar. Step 5: I read the data bound to each line path (D3 datum) for all four export countries (United States, India, Brazil, Australia) and computed, for every year 2000-2018, which country had the highest export value. The United States is the maximum in all 19 years (usAlwaysTop = true). The 2017 percent bar corroborates this: United States 38.94%, India 12.78%, Brazil 10.26%, Australia 9.83%. Thus, across the whole period the U.S. consistently had the highest exports/share.",
+  "confidence": 0.95,
+  "evidence": "Per-year top exporter (from line data) = United States for every year 2000–2018 (usAlwaysTop=true). 2017 export share bar: United States 38.94% (highest), India 12.78%, Brazil 10.26%, Australia 9.83%.",
+  "interactions_performed": [
+    "Navigated to the Cotton notebook and waited for render",
+    "Changed the 'Title' selector from 'Production' to 'Exports' and waited for the chart to re-render",
+    "Accessed the cross-origin chart frame, read each line path's bound data, and computed the yearly maximum across 2000–2018",
+    "Read the bottom 'Exports, 2017 (%)' bar values for corroboration"
+  ],
+  "pitfalls_checked": [
+    "Switched the Title filter to 'Exports' before answering (not the default 'Production')",
+    "Confirmed the answer holds across ALL years, not just 2017, by computing the per-year maximum",
+    "Used bound data values rather than estimating line pixel heights",
+    "Cross-checked the line-chart conclusion against the 2017 percent bar (US 38.94%)"
+  ],
+  "self_check": "Restated: comparing the four export lines year by year, the United States is on top in 2000 through 2018 without exception, and holds the largest 2017 share (38.94%) — identical across all three runs."
+}
