@@ -1,0 +1,20 @@
+{
+  "answer": "Hover over the Mid (yellow) segment of the Azure bar in the chart; the chart's built-in tooltip then displays the exact value as 'Distinct Job Count: 152'. So the exact distinct job count for Mid-level Azure positions is 152.",
+  "reasoning": "Step 1: The chart is a horizontal stacked bar chart ('Top Skills Demand 2024-2026 by Seniority'), skills on the y-axis, Distinct Count of Job ID on the x-axis, stacked by Seniority (Senior=red, Mid=yellow, Junior=blue). Step 4 (Interactive Elements Protocol): the chart exposes an interactive tooltip on hover of each segment. Step 5 rule 1: prefer the tooltip over pixel estimation, because in a stacked bar the Mid segment does not start at zero - reading its left/right pixel positions off the x-axis would require computing top-minus-bottom and is error prone. The reliable retrieval procedure is: (1) locate the Azure row on the y-axis, (2) identify the Mid (yellow) segment within that bar, (3) hover the cursor over that yellow segment, (4) read the tooltip line 'Distinct Job Count', which reports the exact integer for that exact Skill x Seniority combination. I performed this hover via Playwright and the tooltip reported 152, matching the segment's stacked value (d[1]-d[0]=152). Step 6: no log scale, x-axis not truncated, correct stacked segment identified.",
+  "confidence": 1.0,
+  "evidence": "Tooltip on the Azure / Mid segment: 'Skill: Azure  Seniority: Mid  Distinct Job Count: 152'. Cross-checked against the segment's bound stacked data: d[1]-d[0] = 152.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/456e2c8beae6ca2a with Playwright",
+    "Waited for the chart iframe to fully render",
+    "Located the Azure / Mid (yellow) stacked rect and dispatched its mouseover to display the chart tooltip",
+    "Read the tooltip line 'Distinct Job Count: 152'"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: x-axis (value axis) starts at 0 - not truncated",
+    "Stacked vs grouped: confirmed stacked bars; the Mid segment is offset (does not start at 0), which is exactly why hovering the tooltip is the correct retrieval method instead of reading pixel x-position",
+    "Log scale: x-axis is linear, not log",
+    "Dual axes: only a single value axis present",
+    "Tooltip vs pixel position: tooltip used as the authoritative exact value"
+  ],
+  "self_check": "Restated: the method is to hover the yellow Mid segment of the Azure bar and read the tooltip's 'Distinct Job Count'; doing so yields 152. This matches the underlying stacked-segment value (152), confirming the procedure returns the exact figure. Consistent and reproduced in run r3."
+}

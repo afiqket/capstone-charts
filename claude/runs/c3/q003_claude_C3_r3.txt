@@ -1,0 +1,16 @@
+I have enough data. Let me also reset the filter to confirm the visual pattern.
+
+High-wage values: 46, 43, 42, 36, 32, 32, 31, 30, 27, 27, 26, 26, 23, 23, 23, 21, 21, 20, 19, 18, 17, 15, 13, 13, 12, 11, 10, 7, 0 (mean ≈ 23%, max = 46%).
+Low-wage values: 78, 70, 61, 58, 57, 54, 51, 47, 45, 44, 41, 36, 24, 21, 21, 21, 21, 19, 18, 14 (mean ≈ 40%, max = 78%, min = 14%).
+
+```json
+{
+  "answer": "Yes. Low-wage occupations have substantially higher immigrant shares than high-wage occupations in D.C. (low-wage mean ≈ 40%, max 78%; high-wage mean ≈ 23%, max 46%).",
+  "reasoning": "Step 1: Identified a horizontal bar chart of % immigrant workers by occupation, color-coded by wage tier (low/middle/high), with a wage filter. Step 2: X-axis is percent (0% baseline, ticks ~10% apart); y-axis is occupations sorted descending by %. Step 3: Color encodes wage tier. Step 4: Applied the 'Low-wage job' filter, then the 'High-wage job' filter, and read every bar's labeled value (values are printed on each bar, no tooltip estimation needed). Step 5: Compared distributions — every one of the top 10 occupations by immigrant % (80%–47%) is a low-wage job (e.g., Carpenters 80%, Maids 78%, Chefs 71%, Taxi drivers 70%, Cooks 61%, Janitors 58%, Childcare 57%, Construction laborers 54%, Nursing aides 51%). The single highest high-wage occupation is Economists at 46% — below 12 of the 20 low-wage occupations. Means differ by ~17 pp (≈40% vs ≈23%). Step 6: Verified x-axis starts at 0 (no truncation), single linear axis, not stacked, no log scale, filter was correctly toggled between reads.",
+  "confidence": 0.97,
+  "evidence": "Low-wage filtered (n=20): 78, 70, 61, 58, 57, 54, 51, 47, 45, 44, 41, 36, 24, 21, 21, 21, 21, 19, 18, 14 — sum 801, mean 40.1%, median ≈42.5%. High-wage filtered (n=29): 46, 43, 42, 36, 32, 32, 31, 30, 27, 27, 26, 26, 23, 23, 23, 21, 21, 20, 19, 18, 17, 15, 13, 13, 12, 11, 10, 7, 0 — sum 664, mean ≈22.9%, median 23%. Carpenters (low) 80% is the chart maximum; chart subtitle confirms '80% of carpenters and 78% of maids and housekeepers working in D.C. are immigrants.'",
+  "interactions_performed": ["browser_navigate to chart URL", "browser_snapshot of full (All) view", "browser_click radio 'Low-wage job'", "browser_snapshot of filtered low-wage view", "browser_click radio 'High-wage job'", "browser_snapshot of filtered high-wage view"],
+  "pitfalls_checked": ["Y-axis (here x-axis since horizontal bars) starts at 0 — not truncated", "Single axis, not dual", "Bars are simple (not stacked or grouped)", "Linear scale, not log", "Filter state confirmed by which radio is checked before reading values", "Used printed bar labels rather than pixel estimation"],
+  "self_check": "Restated: in D.C., immigrant share of workers is markedly higher in low-wage occupations than in high-wage occupations. Consistent with evidence — low-wage mean (40%) exceeds high-wage mean (23%) by ~17 percentage points, low-wage maximum (78%) far exceeds high-wage maximum (46%), and the ten most immigrant-heavy occupations are all low-wage."
+}
+```

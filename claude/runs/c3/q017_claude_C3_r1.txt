@@ -1,0 +1,23 @@
+{
+  "answer": "Coastal states predominantly DECREASED in past-month alcohol use 2011-2016 (18 of 23 coastal states declined; mean -2.5%, median -2.1%), while inland states tended to INCREASE (15 of 27 inland states rose; mean +1.5%, median +0.8%). All of the most extreme positive changes are inland (Utah +17.5, New Mexico +13.1, Nebraska +10.5, Kansas +7.4), while the deepest declines cluster on the coasts (North Carolina -9.9, Hawaii -8.7, Mississippi -8.6, South Carolina -6.2, Massachusetts -6.1). Pacific Coast and Atlantic Coast states are uniformly or nearly uniformly negative.",
+  "reasoning": "Step 1: Choropleth map of US states; encoding = percent change 2011 to 2016 (diverging color scale: orange/brown = negative, blue = positive). Step 2: No x/y axes; color legend ranges from -3.07 (darkest brown) to 55.60 (darkest blue). The legend's extreme values likely reflect the global range across all related charts - the alcohol map's actual values fall in roughly -10 to +18. Diverging-around-zero scale. Step 3: Color encodes percent change; single map layer; no other encodings. Step 4: Verified hover tooltips work ('State: X, Percent change: Y'). Iterated through all 50 state paths via mouse event dispatch and captured each tooltip to build the full dataset. Step 5: With exact values per state, classified each as 'coastal' (touches Pacific, Atlantic, Gulf of Mexico, or sits on a coast/island) or 'inland'. Coastal list (23): ME, NH, MA, RI, CT, NY, NJ, DE, MD, VA, NC, SC, GA, FL, AL, MS, LA, TX, CA, OR, WA, AK, HI. Inland (27): the other states. Computed group means, medians, counts of positive/negative, and extremes. Step 6: All pitfalls verified.",
+  "confidence": 0.9,
+  "evidence": "Per-state percent change (read from hover tooltips, 50 of 50 states captured). COASTAL group (n=23): mean=-2.51, median=-2.10; 18 decreases vs 5 increases; range [-9.9 (NC), +6.6 (LA)]. Coastal decreasers: NC -9.9, HI -8.7, MS -8.6, SC -6.2, MA -6.1, NJ -5.7, AL -5.4, TX -5.0, DE -4.9, VA -4.8, CT -3.7, OR -2.1, WA -2.1, AK -2.0, GA -1.3, RI -1.1, NY -0.6, CA -0.1. Coastal increasers: MD +1.7, NH +3.1, ME +4.2, FL +4.9, LA +6.6. INLAND group (n=27): mean=+1.53, median=+0.80; 15 increases vs 12 decreases; range [-9.0 (ID), +17.5 (UT)]. Inland top increasers: UT +17.5, NM +13.1, NE +10.5, KS +7.4, IA +6.2, SD +5.3, AZ +4.6, WV +4.5, TN +3.1, MO +3.0, WY +2.8, PA +1.9, ND +1.5, KY +0.8, MN +0.3. Inland decreasers: ID -9.0, CO -6.4, NV -5.6, OK -5.2, MT -4.4, IL -3.0, WI -2.6, AR -1.7, OH -1.2, IN -0.9, VT -0.7, MI -0.6.",
+  "interactions_performed": [
+    "browser_navigate to the alcohol-use map chart",
+    "browser_take_screenshot to confirm map and legend",
+    "browser_evaluate to test hover behavior on a sample state path and confirm the tooltip text format ('State: X, Percent change: Y')",
+    "browser_evaluate to iterate through all 56 SVG paths, dispatch mouseenter/over/move, read the tooltip from document text, and collect 50 unique (state, value) pairs",
+    "browser_evaluate to classify each state as coastal/inland and compute group statistics (mean, median, sign counts, extremes)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: N/A (choropleth)",
+    "Dual y-axes: N/A",
+    "Stacked vs grouped: N/A",
+    "Log scale: NO - diverging linear color scale around zero (legend -3.07 to 55.60 maps the global palette; visible alcohol values are ~-10 to +18, well inside)",
+    "Linked filter still active: no filters on this chart",
+    "Tooltip differs from visual position: used the exact tooltip percent-change value for every state rather than estimating shade",
+    "Classification ambiguity: 'coastal' defined as Atlantic, Pacific, Gulf, or island; states only on Great Lakes (MI, WI, MN, OH, IL, IN, PA) treated as inland because the question contrasts inland vs coastal and Great-Lakes states are not normally called 'coastal' in this context - flagged because reclassifying MI/PA/etc. would shift means modestly but the qualitative pattern holds either way"
+  ],
+  "self_check": "Restated: Coastal vs inland shows a clear contrast. Coastal states overwhelmingly trended downward (78% decreased, mean -2.5%), with the steepest declines concentrated along the Atlantic, Gulf, and Pacific coasts (NC, HI, MS, SC, MA). Inland states leaned upward (mean +1.5%), and every state with a percent-change above +7 (UT, NM, NE, KS) is inland - especially Mountain West and Plains. The qualitative picture is robust to minor reclassification of borderline states and matches the visible color pattern in the map (orange clusters concentrated coastally and in scattered Mountain-West interior; blues clustered in Plains/Mountain interior)."
+}

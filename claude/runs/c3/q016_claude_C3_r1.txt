@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "UNREADABLE",
+  "reasoning": "Step 1 — identified chart as a Tableau visualization titled 'International Merchandise Trade Malaysia and ASEAN' with Country and Category filters and a 'Total RM' color legend (5.0M–1.2B, log scale). Step 2/3 — only the color legend axis was exposed in the accessibility snapshot. Step 4 — applied the Country filter (Vietnam) successfully, but Playwright hover/click on the chart area did not surface any tooltip text in the snapshot, and tools needed to verify exact values (browser_evaluate to read SVG/data and browser_take_screenshot) are not approved in this session, so I cannot read individual data points or compare the totals for Vietnam vs. Cambodia. Per CLAUDE.md I must not answer from memory.",
+  "confidence": 0.0,
+  "evidence": "none — only the legend (Total RM: 1.2B, 300M, 76M, 20M, 5.0M) is readable; no Vietnam or Cambodia data values could be extracted",
+  "interactions_performed": ["browser_navigate to chart URL", "opened Country filter dropdown", "selected Vietnam in Country filter", "hovered over chart svg element", "attempted clicks/hovers on chart area", "captured multiple snapshots (with boxes, increased depth)"],
+  "pitfalls_checked": ["Confirmed color scale is logarithmic (5M→1.2B is non-linear)", "Confirmed Category filter remained on (All)", "Verified country filter applied (Vietnam selected)"],
+  "self_check": "N/A"
+}
+```

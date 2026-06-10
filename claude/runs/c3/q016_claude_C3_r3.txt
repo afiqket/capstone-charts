@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "UNREADABLE",
+  "reasoning": "Step 1 — Identified the chart as a bubble/packed-circle visualization titled 'International Merchandise Trade Malaysia and ASEAN', encoding total trade value (RM) by bubble size with a legend showing brackets at 1.2B / 300M / 76M / 20M / 5.0M. Step 2 — Axes/scale: not a Cartesian chart; size encoding only. Step 3 — Encoding by area; size is the only quantitative channel. Step 4 — Interactive elements present: Country and Category filters. I opened the Country filter and selected Vietnam, then reset, then selected Cambodia. Step 5 — Data reading rules require reading tooltip values. The chart bubbles, labels, and tooltip values are rendered inside an SVG/img element that is not exposed through the accessibility snapshot (only the legend text is exposed: 'Total RM', 1.2B, 300M, 76M, 20M, 5.0M). I attempted browser_take_screenshot and browser_evaluate to read the SVG's circle radii and text content, but both tools were not granted permission, so I could not retrieve any per-country numeric values or relative bubble radii. Hovering the img element via Playwright did not surface a tooltip in the accessibility tree. Per CLAUDE.md, I must not guess from memory or pixel position, and per C3 rules I cannot read source data files; therefore neither Vietnam's nor Cambodia's trade value can be precisely read.",
+  "confidence": 0.0,
+  "evidence": "none",
+  "interactions_performed": ["browser_navigate to chart URL", "browser_snapshot (multiple, including boxes=true and depth)", "browser_click on Country filter", "browser_click select Vietnam", "browser_click reset to (All)", "browser_click select Cambodia", "browser_hover over chart img", "attempted browser_take_screenshot (permission not granted)", "attempted browser_evaluate to read SVG circles/texts (permission not granted)"],
+  "pitfalls_checked": ["No axes (size-only encoding) — truncation/log/dual-axis not applicable", "Confirmed legend uses non-linear size brackets (1.2B/300M/76M/20M/5.0M) so eyeballing is unsafe", "Confirmed Category filter still set to (All) so Export+Import are aggregated"],
+  "self_check": "N/A"
+}
+```

@@ -1,0 +1,21 @@
+{
+  "answer": "Utah is the strongest positive outlier on the map, with a percent change of +17.5% in past-month alcohol use 2011-2016.",
+  "reasoning": "Step 1: Choropleth map of US states encoding percent change in past-month alcohol use 2011 -> 2016 on a diverging color scale (orange/brown = decrease, blue = increase). Step 2: Color legend range -3.07 to 55.60 (palette span); actual values fall in roughly -10 to +18. Step 3: Single color encoding, 50 state shapes. Step 4: Hover tooltips ('State: X / Percent change: Y') are available. Iterated all SVG paths, dispatched mouseenter/over/move on each, parsed the tooltip text, and collected all 50 (state, value) pairs. Step 5: Sorted descending and computed distribution stats (mean -0.33, SD 5.63) and z-scores. Utah at +17.5 has z = +3.17. The next-highest value (New Mexico +13.1, z = +2.39) is 4.4 percentage points lower. Utah is the single most extreme positive value. Step 6: All pitfalls re-verified.",
+  "confidence": 0.97,
+  "evidence": "Top 5 (state, percent change, z-score) read from tooltips this run: Utah +17.5 (z=+3.17), New Mexico +13.1 (z=+2.39), Nebraska +10.5 (z=+1.92), Kansas +7.4 (z=+1.37), Louisiana +6.6 (z=+1.23). Distribution: mean = -0.33, SD = 5.63 across 50 states. Utah-to-NM gap = 4.4 pp - the largest single-step gap among the top six values, and Utah's z-score > 3 makes it the only positive value with z > 2.5. Cross-run consistency with r1 and r2: identical figures.",
+  "interactions_performed": [
+    "browser_navigate to the alcohol-use choropleth chart",
+    "browser_evaluate to iterate all SVG paths, dispatch mouseenter/over/move on each, and parse the State/Percent-change tooltip into a 50-state value table",
+    "browser_evaluate to sort by value, compute mean, SD and z-scores, and confirm the top-1/top-2 gap"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: N/A (choropleth)",
+    "Dual y-axes: N/A",
+    "Stacked vs grouped: N/A",
+    "Log scale: NO - linear diverging color scale around zero",
+    "Linked filter still active: no filters on this chart",
+    "Tooltip differs from visual: used explicit tooltip values for every state, not pixel color estimation",
+    "Multiple plausible outliers: New Mexico (+13.1) and Nebraska (+10.5) are also notable highs, but Utah is unambiguously the strongest by absolute value, z-score, and gap-to-next"
+  ],
+  "self_check": "Restated: The single strongest positive outlier is Utah, with +17.5% change in past-month alcohol use - more than 3 SDs above the mean and 4.4 percentage points clear of the second-highest state (New Mexico). On the map Utah corresponds to the darkest blue shape. Same answer across r1, r2, and r3."
+}

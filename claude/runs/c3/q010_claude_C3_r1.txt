@@ -1,0 +1,13 @@
+I have the exact SVG path data for the percentage line. The Q2 values can be computed precisely.
+
+```json
+{
+  "answer": "In Q2, the percentage of speeding citations is non-monotonic. It starts around 37% in 2003, drifts down to a low near 25% in 2007, rises sharply to a peak of about 42% in 2009, then fluctuates downward and stabilizes around 35% by 2012–2013. Overall, no clear long-term up- or down-trend; the share oscillates roughly between 25% and 42%.",
+  "reasoning": "Step 1: chart is interactive line chart filtered by quarter dropdown. Step 2: y-axis is linear 0%–50% (axis labels 0.0/10.0/20.0/30.0/40.0/50.0%). Step 3: green line encodes the speeding-share metric. Step 4: applied filter Quarter=Q2 — Apr–Jun. Step 5: extracted the exact SVG <path> 'd' attribute for the Q2 line and converted each y to a percentage using (174−y)/174×50%. Computed values per Q2 year: 2003≈37.4%, 2004≈30.1%, 2005≈28.5%, 2006≈33.1%, 2007≈25.3%, 2008≈34.6%, 2009≈42.0%, 2010≈40.3%, 2011≈31.3%, 2012≈35.1%, 2013≈35.6%. Step 6: y-axis starts at 0%, single y-axis, no log scale, filter correctly set to Q2.",
+  "confidence": 0.9,
+  "evidence": "Green-line SVG path d='M0,43.848 L65.125,69.252 L130.071,74.82 L195.018,58.812 L259.964,85.956 L325.089,53.592 L390.036,27.84 L454.982,33.756 L519.929,65.076 L585.053,51.852 L650,50.112' with plot height 174 mapped to 0–50%; x-axis labels 2003 Q2 through 2013 Q2.",
+  "interactions_performed": ["navigate to chart URL", "open Quarter-of-year dropdown", "select 'Q2 — Apr–Jun'", "snapshot chart axes", "locate svg path elements to read line geometry"],
+  "pitfalls_checked": ["y-axis starts at 0% (not truncated)", "single y-axis (not dual)", "linear scale (not log)", "filter Q2 active and correct for the question", "line chart (not stacked/grouped bars)"],
+  "self_check": "Restated: Q2 speeding share has no monotonic trend; lowest ~25% (2007), highest ~42% (2009), endpoints ~37% (2003) and ~36% (2013). Consistent with the 11 extracted point values, which range 25%–42% with peak in 2009."
+}
+```

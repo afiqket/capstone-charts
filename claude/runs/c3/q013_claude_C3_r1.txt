@@ -1,0 +1,22 @@
+{
+  "answer": "Switzerland's Requests out increased from 11,029 in 2012 to 13,145 in 2016, a rise of 2,116 requests (about +19.2%).",
+  "reasoning": "Step 1 — Identified the chart as a small-multiples interactive line chart titled 'Number of Dublin requests and transfers, in and out, per year, 2008 to 2020', with one panel per selected country (Country 1: Austria; Country 2: Switzerland). Step 2 — Axes: x-axis = year (2008–2020, linear, 1-year ticks); y-axis = 'Number of requests or transfers' (linear, starts at 0, ticks every 5,000 up to 15,000 on Switzerland panel). Step 3 — Color encodes measure (yellow = Requests out, per legend). Step 4 — To isolate Switzerland's Requests out, set Country 2's measure dropdown to 'Requests out'; then hovered the 2012 and 2016 markers to read tooltip values directly rather than estimating from pixel position. Step 5 — Used tooltip values (preferred over interpolation). Step 6 — Pitfalls verified: y-axis starts at 0 (no truncation), single y-axis, line (not stacked), linear scale, no other filters active interfering with the country measure.",
+  "confidence": 0.97,
+  "evidence": "Hover tooltip on Switzerland panel at year 2012: 'Switzerland — Requests out: 11,029 — Year: 2012'. Hover tooltip at year 2016: 'Switzerland — Requests out: 13,145 — Year: 2016'. Difference: 13,145 − 11,029 = 2,116; relative change: 2,116/11,029 ≈ 19.19%.",
+  "interactions_performed": [
+    "Navigated to https://afiqket.github.io/capstone-charts/?chart=dublin_stats",
+    "Opened Country 2 'Select measure' dropdown and selected 'Requests out' to isolate Switzerland's Requests out series",
+    "Hovered the 2012 data point on the Switzerland chart to read tooltip (11,029)",
+    "Hovered the 2016 data point on the Switzerland chart to read tooltip (13,145)",
+    "Captured screenshots of both tooltips for evidence"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: no — starts at 0",
+    "Dual y-axes: no — single y-axis on the Switzerland panel",
+    "Stacked vs grouped: N/A — line chart, single series after filtering",
+    "Log scale: no — linear",
+    "Linked filter still active: confirmed Country 2 measure = 'Requests out' targets the Switzerland panel only; Country 1 panel unaffected",
+    "Tooltip vs visual position: used tooltip values, not pixel estimation"
+  ],
+  "self_check": "Restated: Between 2012 and 2016, Switzerland's outbound Dublin requests rose by roughly 2.1k (from ~11.0k to ~13.1k), an increase of about one-fifth. This matches the tooltip readings (11,029 → 13,145) and the upward visual trend on the Switzerland panel across that span."
+}

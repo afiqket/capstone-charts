@@ -1,0 +1,13 @@
+The tooltip displayed "Year of Year: 1990" and "Total Trade (%): 133.3". I have the answer.
+
+```json
+{
+  "answer": "133.3% of GDP",
+  "reasoning": "Step 1: Identified an interactive line chart titled 'Malaysia's Total Trade with World, Percentage of GDP (%)' from CEIC. Step 2: X-axis is years (1965–2015, linear, 5-year ticks); Y-axis is Total Trade % of GDP (linear, 0–200, ticks every 20). Y starts at 0 (not truncated). Step 3: Single blue series, no stacking. Step 4: Hovered the chart's transparent overlay rect (which controls Plot's Tip mark); the snapshot revealed the tooltip generic for the nearest x-bin: 'Year of Year: 1990' and 'Total Trade (%): 133.3'. Step 5: Read tooltip value directly rather than estimating from pixels. Cross-checked against the line path d-attribute: at x=475 (1965+25*15.8 → year 1990), y=186.686 SVG-units; mapping with axis domain (y=30.5↔200, y=500.5↔0) gives 200 − (186.686−30.5)/2.35 ≈ 133.5%, consistent with the tooltip's 133.3.",
+  "confidence": 0.97,
+  "evidence": "Tooltip text from Plot Tip mark: 'Year of Year: 1990' / 'Total Trade (%): 133.3'. Path d-attribute point at index 25 (1990): (475, 186.686) → ~133.5% via linear y-axis (0–200) mapping.",
+  "interactions_performed": ["browser_navigate to chart URL", "browser_snapshot with boxes to read axes", "browser_hover on rect[pointer-events='all'] (Plot tip overlay)", "browser_snapshot to capture tooltip text"],
+  "pitfalls_checked": ["Y-axis starts at 0 (not truncated)", "Single y-axis (no dual axis)", "Line chart (no stacking)", "Linear scale (not log)", "No active filter; full-range view", "Tooltip value (133.3) matches geometric back-calculation (~133.5) so visual position agrees with tooltip"],
+  "self_check": "Restated: In 1990, Malaysia's total trade with the world equalled approximately 133.3% of its GDP, i.e. exports + imports together exceeded GDP by about a third — consistent with both the tooltip readout and the line height between the 120 and 140 gridlines, slightly closer to 140."
+}
+```

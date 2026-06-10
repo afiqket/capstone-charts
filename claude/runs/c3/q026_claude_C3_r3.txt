@@ -1,0 +1,21 @@
+{
+  "answer": "The AI adoption percentage for Spain is 57.46% (companies with more than 250 employees using at least one AI technology, % of companies).",
+  "reasoning": "Step 1: The page renders a dual-panel horizontal bar chart inside an Observable worker iframe. There are two side-by-side ranking panels in one SVG: left panel titled 'Country Ranking by AI Adoption' and right panel titled 'Country Ranking by Digital Skills'. The question asks specifically for AI adoption, so the relevant panel is the LEFT one. Step 2: The left panel's x-axis is linear, starts at 0, ticks every 10 up to 80 (px positions 211=0 ... 568=80, ~4.5 px per unit). Step 3: Bars colored purple (#b57aa4) for the 'Altri paesi' group in the AI panel. Step 4-5: I located the Spain row and read its bound datum on the left/AI panel rather than estimating from pixels. The Spain AI bar has data {country:'Spain', value:57.46, group:'Altri paesi'}, geometry x=214 (right after the 0 tick). Pitfall guard: a SECOND Spain bar exists with value 66, but it belongs to the RIGHT panel ('Country Ranking by Digital Skills', group 'Others') - that is digital skills, not AI adoption, so it must not be used here. Step 6: verified axis not truncated (starts at 0), no log scale, single x-axis per panel, and that the adjacent panel value (66) was NOT confused with the AI value.",
+  "confidence": 0.97,
+  "evidence": "Left 'Country Ranking by AI Adoption' panel (title x=243,y=296), Spain bar bound datum: {country:'Spain', value:57.46, group:'Altri paesi'}, x=214. Distractor: right panel 'Country Ranking by Digital Skills' (title x=651,y=296) shows Spain=66 (x=624) - excluded.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/01c45e5b545d634b with Playwright",
+    "Waited for the chart worker iframe to fully render",
+    "Enumerated SVG bars and their bound data in the chart iframe",
+    "Mapped the two panel titles by on-screen position to disambiguate the AI Adoption panel from the Digital Skills panel",
+    "Read the Spain datum on the AI Adoption panel"
+  ],
+  "pitfalls_checked": [
+    "X-axis truncation: AI panel x-axis starts at 0 - not truncated",
+    "Multiple panels: confirmed two ranking panels (AI Adoption vs Digital Skills) and selected the AI Adoption panel only",
+    "Linked/adjacent view confusion: did NOT use the right-panel Spain value (66, Digital Skills); used the AI panel value (57.46)",
+    "Log scale: x-axis is linear, not log",
+    "Tooltip vs pixel position: used the bound data value rather than eyeballing pixels"
+  ],
+  "self_check": "Restated: on the 'Country Ranking by AI Adoption' panel, Spain's bar reads 57.46%. The 66 value is from the separate Digital Skills panel and was deliberately excluded. Consistent and reproduced in run r3."
+}
