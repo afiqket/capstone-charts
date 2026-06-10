@@ -1,0 +1,23 @@
+{
+  "answer": "Sudan has the highest number of internally displaced people due to conflict in 2024 — 11.56 million. The chart's Bar view ranks the top countries: Sudan 11.56M, Syria 7.41M, Colombia 7.03M, Democratic Republic of the Congo 6.91M, Yemen 4.80M, Iraq 1.03M, Nepal 0. Sudan tops the list by ~4 million over Syria (the #2), reflecting the massive displacement caused by Sudan's ongoing civil war (Sudanese Armed Forces vs. RSF since April 2023).",
+  "reasoning": "Step 1 — Chart Identification: Observable notebook 'Internally displaced people due to conflict' with five view modes (🌍 Map / 📈 Line / ↗ Slope / 📊 Bar / ▦ Marimekko). Default = Map view of 177 countries; subtitle: 'People who were forced to leave their homes due to armed conflict or violence. This includes all displaced people, not just those displaced that year.' Step 2 — Axes & Scale: Map title 'Internally displaced people due to conflict, 2024'; colour scale is log-spaced — legend ticks 0 / 10k / 50k / 100k / 500k / 1M / 5M (extending to ~10M+ at the darkest end). Step 3 — Legend & Encoding: deeper red = more IDPs. Step 4 — Interactive Elements: I clicked the '📊 Bar' button which lists 7 featured countries ranked by 2024 IDP count, with on-chart value labels next to each bar. I then switched back to Map view and verified Sudan's tooltip on hover: tooltip reads 'Sudan / 2024 / 11.56M'. Sudan's polygon fill is the darkest red on the scale (#3b0100) — the 4 countries painted that darkest tier are Sudan, Syria, Colombia, and Dem. Rep. Congo, the same top-4 from the Bar view, with Sudan numerically highest. Step 5 — Data Reading: Bar view labels + hover tooltip on Map view, both giving 11.56M for Sudan. Step 6 — Pitfalls: the Bar view only shows the chart's 7 pinned countries; if any non-pinned country had a higher value it would have a darker fill on the map than Sudan's #3b0100 — confirmed by sorting all 177 country fills that no country exceeds Sudan's tier; the colour scale is logarithmic (not linear) so colour differences understate the magnitude differences.",
+  "confidence": 0.98,
+  "evidence": "Bar view labels (top→bottom): Sudan 11.56M, Syria 7.41M, Colombia 7.03M, Democratic Republic of the Congo 6.91M, Yemen 4.80M, Iraq 1.03M, Nepal 0. Map view hover on Sudan returns tooltip: 'Sudan' / '2024' / '11.56M'. Sudan's polygon fill = '#3b0100' (the darkest red on the legend). Countries sharing that darkest tier (top end of the log scale): Sudan, Syria, Colombia, Dem. Rep. Congo (4 of 177 countries) — matches the Bar view's top 4 exactly. Source: UNHCR (2025) – with major processing by Our World in Data.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/a7f11c936e3895fb",
+    "browser_wait_for 3s for chart render (default Map view)",
+    "browser_snapshot to find iframe ref",
+    "browser_evaluate to enumerate the 5 view-mode buttons (🌍 Map / 📈 Line / ↗ Slope / 📊 Bar / ▦ Marimekko), click '📊 Bar' to switch to ranked-bar view",
+    "browser_wait_for 2s after click",
+    "browser_evaluate to read the bar chart's text labels showing 7 pinned countries with values, then click '🌍 Map' to return to Map view, hover Sudan's polygon to read its tooltip (Sudan/2024/11.56M), and enumerate all 177 country fills to verify that no country has a darker fill than Sudan (the 4 countries at the darkest tier are Sudan, Syria, Colombia, DRC — matching the Bar view's top 4)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: N/A — Map and Bar views",
+    "Dual y-axes: N/A",
+    "Stacked vs grouped bars: Bar view shows individual country bars (not stacked) with on-bar value labels",
+    "Log scale active: yes — the COLOUR scale is log-spaced (legend ticks 0 / 10k / 50k / 100k / 500k / 1M / 5M), so visual colour differences understate the multiplicative size differences (e.g., Sudan at 11.56M vs Iraq at 1.03M is a >10× gap but the colour difference is smaller)",
+    "Linked filter still active: the title says '...2024' — the year is fixed at 2024 by default; the play button would animate other years",
+    "Tooltip value differs from visual position: tooltip values used as authoritative (Sudan tooltip: 11.56M); cross-validated against the Bar view's text labels"
+  ],
+  "self_check": "Restated: among the chart's 7 featured countries shown in the Bar view, Sudan has the highest 2024 IDP value at 11.56M, more than 4M ahead of Syria (7.41M). The Map view independently confirms by showing Sudan painted in the darkest-red colour tier (#3b0100, top of the log colour scale), and the hover tooltip on Sudan also reads 11.56M. No country has a darker fill than Sudan on the map. So Sudan is the answer."
+}
