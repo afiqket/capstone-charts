@@ -1,0 +1,20 @@
+{
+  "answer": "Flight AFR639 (Air France, origin country France). At ~01:40 GMT on 4 Sep 2019 it is the airplane from France out over the open North Atlantic near Europe.",
+  "reasoning": "Step 1 (Chart ID): Interactive 'All the Flights in the World' map — an SVG world map with the aircraft drawn as points (with short trajectory trails) on an overlaid canvas, a time slider, and hover tooltips that report callsign, ICAO24, Origin country, Airline, Altitude and Time. Step 4 (Interactive protocol): I set the time slider to 'Wed, 04 Sep 2019 01:40:00 GMT'. Because the aircraft are canvas-rendered, I read them via the hover tooltip (which uses nearest-aircraft lookup). I swept synthetic mouse-moves across the Atlantic west of Europe and recorded each aircraft's callsign + origin country + estimated position (converting screen x to longitude). Over the open eastern/North Atlantic near Europe the French-origin aircraft are AFR639 (Air France) at roughly lon -30 to -35, ~56 N — i.e. in the open-ocean gap between North America and Europe, the classic transatlantic crossing position — and AFR853 (Air France) further east at ~lon -23, closer to the Iberian approach amid several Spanish flights. The aircraft best matching 'flying across the Atlantic Ocean near Europe' (out in the open mid-ocean, clearly crossing) is AFR639. Its tooltip reads: 'AFR639, ICAO24 394a14, Origin country: France, Airline: Air France, Airline country: France, Altitude 11308 m, Time Wed 04 Sep 2019 01:40:00 GMT'. Step 5 (Reading rules): origin and callsign read directly from the tooltip, not inferred from the dot colour (all dots are red).",
+  "confidence": 0.6,
+  "evidence": "Time set to 'Wed, 04 Sep 2019 01:40:00 GMT'. Tooltip for the open-Atlantic French aircraft: 'AFR639 ICAO24: 394a14 Origin country: France Airline: Air France Airline country: France Altitude: 11308 m Time: Wed, 04 Sep 2019 01:40:00 GMT', centroid ~ screen (387-401, 239) => lon ~ -30 to -35 (open North Atlantic). A second French flight, AFR853 (Air France, ICAO24 3949f0, alt 11870 m), sits further east at ~lon -23, closer to Iberia among Spanish flights (IBE/PUE/AEA).",
+  "interactions_performed": [
+    "Set the time slider to 01:40:00 GMT on 4 Sep 2019",
+    "Confirmed aircraft show a hover tooltip with callsign and 'Origin country'",
+    "Swept synthetic hovers across the Atlantic west of Europe, recording callsign + origin country + position for each aircraft",
+    "Filtered to French-origin aircraft and located them by longitude; identified AFR639 in the open North Atlantic and AFR853 nearer Iberia",
+    "Captured a full-map screenshot to confirm the sparse transatlantic aircraft sit in the open gap between North America and Europe"
+  ],
+  "pitfalls_checked": [
+    "Read origin/callsign from tooltips, not from dot colour (all aircraft dots are red, so colour does not encode origin)",
+    "Used the time slider to fix the moment at exactly 01:40:00 GMT before reading",
+    "Noted there are multiple French-origin flights over the Atlantic; restricted to the open ocean 'near Europe' and chose the one clearly crossing mid-ocean (AFR639)",
+    "Documented the alternative French flight (AFR853, nearer Iberia) given the question's mild ambiguity"
+  ],
+  "self_check": "Restated: at 01:40 GMT the French (Air France) aircraft crossing the open Atlantic near Europe is AFR639. If the intended aircraft is instead the French flight nearest the European coast, it would be AFR853; both are Air France, but AFR639 best fits 'flying across the Atlantic Ocean near Europe'. Confidence is moderate because two Air France flights are present over the eastern Atlantic."
+}

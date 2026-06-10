@@ -1,0 +1,19 @@
+{
+  "answer": "The maximum number of flights over South Africa at any single moment is 4 (peaking around 00:07:20 UTC on 4 Sep 2019). Over the full 2-hour window, 10 distinct flights pass over South Africa, but at most 4 are airborne over the country simultaneously.",
+  "reasoning": "Step 1: The chart is an animated WebGL (deck.gl/kepler-style) map of ~2 hours of OpenSky flight trajectories, controlled by a single 'Time' slider (range 1567555200–1567561720 epoch, step 40s = 164 frames). Step 4: It has no tooltip, no on-map counter, and the deck layer's data is held in the Observable runtime closure (not exposed on window/DOM/canvas), so a per-country flight count cannot be read from the rendered UI. Step 5: To answer precisely and reproducibly I used the chart's own data: each flight row is a GeoJSON LineString of [lon, lat, alt, timestamp] points. I also decoded the South Africa polygon (outer ring + Lesotho hole) from the same world-atlas countries TopoJSON the chart loads. For every 40-second slider frame I interpolated each flight's position and tested point-in-polygon against South Africa, counting concurrent flights per frame and taking the maximum. Result: peak concurrency = 4; total distinct flights crossing SA in the window = 10. 'Maximum number of flights at a given time' = peak simultaneous count = 4.",
+  "confidence": 0.6,
+  "evidence": "Dataset: 12,938 flights total; 10 have any trajectory point within South Africa's bounds. Per-frame concurrent-over-SA counts hover at 2–4 and peak at 4 (frame at epoch 1567555640 = Wed 04 Sep 2019 00:07:20 GMT). Slider: min 1567555200, max 1567561720, step 40. SA polygon bbox ≈ [16.35,-34.82, 32.83,-22.09], Lesotho treated as a hole.",
+  "interactions_performed": [
+    "Navigated to the 'All the Flights in the World' notebook and waited for render",
+    "Inspected the slider range/step and confirmed the map has no tooltip/counter and the deck data is not exposed via DOM/globals",
+    "Retrieved the chart's loaded flight-trajectory data and the countries TopoJSON it uses",
+    "Decoded the South Africa polygon and computed, per 40s frame, the number of flights whose interpolated position lies within South Africa; took the maximum"
+  ],
+  "pitfalls_checked": [
+    "Confirmed no in-chart readout exists (no tooltip, no counter) and deck layer data is unreachable from the page, so visual pixel-counting would be imprecise; computed from the chart's underlying data instead",
+    "Used the actual South Africa polygon (with the Lesotho hole excluded) rather than a loose bounding box",
+    "Interpreted 'at a given time' as peak simultaneous count (4), and also report the total distinct flights touching SA (10) to disambiguate",
+    "Aligned the time grid to the slider's 40-second step over its full range"
+  ],
+  "self_check": "Restated: scrubbing the time slider, the busiest instant has 4 flights positioned over South Africa at once (around 00:07 UTC); only 10 flights cross SA in the whole 2-hour clip. So the maximum at any one time is 4. Caveat: this required computing from the chart's trajectory data because the visualization exposes no count; the figure depends on interpreting 'in South Africa' as inside the country polygon."
+}

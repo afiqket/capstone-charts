@@ -1,0 +1,19 @@
+{
+  "answer": "When you type in the search bar, the chart keeps the matching earthquake spikes at full colour and opacity while fading every non-matching spike to a faint, nearly-transparent ghost of itself. So the searched region's spikes 'pop' as the only vivid ones on a map of dimmed spikes. It also shows a count of how many events matched (e.g. '1 match', '44 matches'); the spikes keep their magnitude colour — matches just stay opaque while the rest are dimmed.",
+  "reasoning": "Step 1 (Chart ID): Interactive world spike map of earthquakes (SVG map + canvas spikes) with a search bar and a live match count. Step 4 (Interactive protocol): I measured the canvas pixels of specific spikes with and without a search active. Baseline (no search): the Japan/Honshu spike averaged alpha ~246 (vivid purple [87,39,128]) and the Sobral spike was vivid teal [0,128,128]. Searching 'Honshu' (Japan = match, Sobral = non-match): the Japan (match) spike stayed at alpha ~241 / colour [87,38,127] — essentially unchanged, i.e. fully opaque and coloured — while the Sobral (non-match) spike's average opacity collapsed to ~31 (max ~62), keeping its hue but becoming almost transparent. The reciprocal search 'Sobral' faded the Japan spike (alpha 246 -> 126). Step 5: conclusions from measured opacity/colour changes, plus the on-screen 'N match(es)' label.",
+  "confidence": 0.92,
+  "evidence": "Baseline no-search: Japan spike avgAlpha 246 (color [87,39,128]); Sobral avgAlpha 156 (color [0,128,128]). Search 'Honshu' (match=Japan): Japan avgAlpha 241, color [87,38,127] (unchanged, stays vivid); Sobral (non-match) avgAlpha 31, maxAlpha 62, color [0,128,128] (faded to near-transparent). Search 'Sobral': Japan (non-match) avgAlpha dropped 246 -> 126. Search also displays a match count ('1 match', '44 matches').",
+  "interactions_performed": [
+    "Measured canvas opacity/colour of a match and a non-match spike with no search (baseline)",
+    "Searched 'Sobral' and re-measured (Japan, a non-match, faded)",
+    "Searched 'Honshu' (match cluster at Japan) and re-measured: Japan match stayed fully opaque/vivid while Sobral (non-match) faded to near-transparent",
+    "Read the live match-count label shown by the search"
+  ],
+  "pitfalls_checked": [
+    "Verified the highlight by measuring actual pixel opacity/colour, not by assumption",
+    "Used a clean cross-check (search 'Honshu' so Japan is a match) to avoid the Sobral window being contaminated by neighbouring faded spikes",
+    "Confirmed the matched spike's opacity is unchanged while non-matches drop to ~13-20% opacity",
+    "Noted the magnitude colour hue is preserved for both; only opacity (prominence) changes, plus a match-count label"
+  ],
+  "self_check": "Restated: the search does not recolour or move spikes — it dims all non-matching spikes to a faint translucent state while leaving matching spikes at full colour/opacity, so the searched region stands out; a 'N match(es)' counter is shown. This matches the measured alpha: match ~241 (unchanged) vs non-match ~31 (faded)."
+}

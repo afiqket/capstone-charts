@@ -1,0 +1,18 @@
+{
+  "answer": "No — the graph marks themselves (the bars and the line) are not clickable or hoverable: hovering or clicking them produces no tooltip, highlight, cursor change, or any other response. The chart is interactive only through the dropdown menus above it (Region, Sex, Educational Attainment, Chart Type, and Breakout), which redraw the graph when changed.",
+  "reasoning": "Step 4 (Interactive Elements Protocol): I tested the marks empirically. I dispatched mouseover/mouseenter/mousemove/click/pointerover on a bar and compared the SVG before and after: it was unchanged (svgChanged=false). There are no tooltip elements ([class*=tooltip]/[id*=tooltip]/<title> = 0), the bar has no inline mouse/click handlers, and its CSS cursor is the default 'auto' (no clickable affordance). Step 1/3: The page does have 5 interactive controls — <select> dropdowns for Region, Sex, Educational Attainment, Chart Type (Stacked Bar/Line), and Breakout (Overall/Sex/Region/Race and Ethnicity) — each wired to a 'change' handler that redraws the chart and the side panel. So interaction happens via those dropdowns, not by clicking/hovering the graph itself.",
+  "confidence": 0.93,
+  "evidence": "Hover/click test on a bar: SVG unchanged (svgChanged=false); tooltip elements = 0; bar cursor = 'auto'; bar inline handlers = none. Page has 5 <select> dropdowns (Region, Sex, Educational Attainment, Chart Type, Breakout) that drive the chart.",
+  "interactions_performed": [
+    "Navigated to the 'How Old Are Recent Newlyweds?' notebook and waited for render",
+    "Accessed the cross-origin chart frame and dispatched hover/click/pointer events on a bar mark",
+    "Compared the SVG before/after, checked for tooltip elements, cursor style, and event handlers, and counted the dropdown controls"
+  ],
+  "pitfalls_checked": [
+    "Verified empirically (before/after DOM comparison) rather than assuming",
+    "Distinguished the graph marks (non-interactive) from the dropdown controls (interactive)",
+    "Confirmed absence of tooltip nodes, mouse/click handlers, and pointer cursor on the marks",
+    "Behavioral question — no numeric axis pitfalls apply"
+  ],
+  "self_check": "Restated: clicking or hovering the bars/line does nothing (no tooltip or highlight); the only way to interact is through the dropdown selectors above the chart — identical across all three runs."
+}

@@ -1,0 +1,19 @@
+{
+  "answer": "Flight AFR639 (Air France, origin country France). At ~01:40 GMT on 4 Sep 2019 it is the airplane from France out over the open North Atlantic near Europe.",
+  "reasoning": "Step 1 (Chart ID): Interactive 'All the Flights in the World' map — SVG world map with aircraft drawn as points (with trajectory trails) on an overlaid canvas, a time slider, and hover tooltips reporting callsign, ICAO24, Origin country, Airline, Altitude and Time. Step 4 (Interactive protocol): I set the time slider to 'Wed, 04 Sep 2019 01:40:00 GMT'. Since aircraft are canvas-rendered, I read them via hover tooltips (nearest-aircraft lookup), sweeping synthetic mouse-moves across the Atlantic west of Europe and recording each aircraft's callsign + origin country + position (screen x -> longitude). The French-origin aircraft over the eastern/North Atlantic near Europe are: AFR639 (Air France) at ~lon -32, the dominant one in the open mid-ocean crossing gap (highest hover hit-count, n=85); AFR853 (Air France) at ~lon -23, further east near the Iberian approach; and a faint DJT101 at ~lon -45 (far west, near North America). The aircraft best matching 'flying across the Atlantic Ocean near Europe' (out in the open ocean, clearly crossing) is AFR639. Step 5: origin/callsign read from the tooltip, not dot colour.",
+  "confidence": 0.6,
+  "evidence": "Time 'Wed, 04 Sep 2019 01:40:00 GMT'. French-origin aircraft over eastern Atlantic: AFR639 (Air France, alt 11308 m, ~lon -32, n=85 — open North Atlantic), AFR853 (Air France, alt 11870 m, ~lon -23, near Iberia), DJT101 (~lon -45, faint). AFR639 occupies the open-ocean crossing position.",
+  "interactions_performed": [
+    "Set the time slider to 01:40:00 GMT on 4 Sep 2019 and reset zoom",
+    "Swept synthetic hovers across the Atlantic west of Europe, recording callsign + origin country + position",
+    "Filtered to French-origin aircraft: AFR639 (open North Atlantic), AFR853 (near Iberia), DJT101 (far west)",
+    "Selected AFR639 as the aircraft clearly crossing the open Atlantic near Europe"
+  ],
+  "pitfalls_checked": [
+    "Read origin/callsign from tooltips, not dot colour (all dots red)",
+    "Fixed the time at 01:40:00 GMT before reading",
+    "Noted multiple French flights over the Atlantic; chose the one in the open mid-ocean near Europe (AFR639)",
+    "Documented the alternative French flight (AFR853, nearer Iberia)"
+  ],
+  "self_check": "Restated: at 01:40 GMT the French (Air France) aircraft crossing the open Atlantic near Europe is AFR639; the other French flight present (AFR853) sits nearer the Iberian coast. This run reproduced the r1 finding. Confidence moderate due to two Air France flights over the eastern Atlantic."
+}
