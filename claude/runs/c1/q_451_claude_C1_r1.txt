@@ -1,0 +1,24 @@
+You don't need to read more of the data file — the answer is in how the chart's interactivity works (`chart_140.js`).
+
+## How to see exact values for a country
+
+**Hover your mouse over the country's bubble.** This is the only way to get exact numbers — the bubbles themselves only encode approximate values (x-position = life satisfaction, y-position = life expectancy, circle size = population).
+
+When you hover near a bubble, a **tooltip** appears showing that country's precise figures (`showTT`, lines 133–148):
+
+- **Country name** and **the selected year**
+- **Life satisfaction** — formatted to 2 decimal places (e.g. `6.27`) — line 136
+- **Life expectancy at birth** — formatted to 1 decimal place, in years (e.g. `75.8 years`) — line 137
+- **Population** — formatted to 2 decimals as millions or billions (e.g. `211.14 million` or `1.42 billion`) — lines 138–141
+
+### Important details
+
+1. **You hover near the bubble, not exactly on it.** The chart finds the *closest* bubble to your cursor within a small radius, so you don't have to land precisely on tiny circles (lines 210–218). The hovered country is highlighted in color while all others fade to grey.
+
+2. **Population is shown rounded, not to the exact person.** The tooltip rounds to 2 decimal places (millions/billions). To see the population to the exact integer (e.g. `211140731`), you'd need to look at the CSV data file directly — that level of precision isn't displayed anywhere in the chart.
+
+3. **The values are for the currently selected year.** Use the **slider at the bottom** to change the year (drag the handle or click along the track), or press the **▶ play button** (lower-left) to animate through all years. The tooltip always reflects whichever year is active.
+
+4. **Not every country is labelled by default.** Only ~33 countries (Hong Kong, Italy, France, USA, China, India, etc.) show a permanent text label. For any other country, hovering is the only way to identify it and read its values.
+
+So in short: **set the year with the slider, then hover over the bubble to read the tooltip.** For population down to the exact person, consult `chart_140.csv` directly.

@@ -1,0 +1,24 @@
+## What the play button does
+
+The play button is the `▶` text element near the slider (chart code `chart_145.js:396`). Its click handler (`chart_145.js:439`) toggles an animation: if at the last year it resets to the first year, then sets a 700 ms interval that advances `currentYear` one step at a time through `allYears` via `updateYear()`, swapping the icon to `⏸` until it reaches the end (or you click again to pause).
+
+The crucial detail is in `updateYear()` (`chart_145.js:415`), which on every tick:
+1. sets `currentYear`
+2. moves the slider handle (`handle.attr("cx", …)`)
+3. updates the title to `"…1890 to {year}"`
+4. **redraws the chart only if `viewMode === "bar"`** — `if (viewMode === "bar") drawBar();`
+
+### Line chart view
+The animation runs, but it's almost inert visually. The line chart is drawn by `drawLine()`, which always plots each country's **full** time series and never reads `currentYear` (`chart_145.js:230`). Since `updateYear` doesn't call any redraw in line mode, the lines never change as the year advances. The only visible effects of pressing play are:
+- the slider **handle sliding** left-to-right across the years, and
+- the **title's end-year ticking up** ("…1890 to 1911", "…1890 to 1912", …).
+
+The actual line plot stays static the whole time.
+
+### Bar chart view
+Here play produces a real animation. `drawBar()` computes each bar from `getValueAtYear(c, currentYear)` and **sorts the countries by value descending** (`chart_145.js:324-327`). Because `updateYear` calls `drawBar()` on every tick, each step:
+- recomputes each country's participation rate **for that year**,
+- **resizes the bars** to match, and
+- **re-sorts/reorders** the countries.
+
+So in bar view the play button drives a "bar-chart-race"-style animation through time, while in line view it merely scrubs the slider and title with no change to the plotted data.

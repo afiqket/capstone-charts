@@ -1,0 +1,6 @@
+The bar chart shows two categories (from the `barSeries` definition in `drawBar()`):
+
+1. **2020** — the actual reported number of deaths in 2020
+2. **Projected, 2020** — the projected number of deaths for 2020 (based on 2015–2019 data)
+
+So it compares the actual deaths in 2020 against the projected deaths for 2020.

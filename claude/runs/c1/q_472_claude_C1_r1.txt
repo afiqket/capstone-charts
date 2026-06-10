@@ -1,0 +1,18 @@
+The two views are **"Line"** and **"Bar"**.
+
+**Line view** (the default — `viewMode` is initialized to `"line"`): draws a multi-series time-series line chart, with one line per vaccination-status group ("0 or 1 dose", "2 doses", "3 doses", "4 doses") plotted across the full date range, plus dots, end labels, and a hover tooltip.
+
+**Bar view**: draws a horizontal bar chart of the four groups' death rates for a single selected date (controlled by the date slider / play button at the bottom), with bars sorted by value.
+
+**How the user chooses:** by clicking one of two toggle buttons rendered near the top-left of the chart (at `y=78`), labeled "Line" and "Bar":
+
+```js
+const btnDefs = [
+  { label:"Line", mode:"line", x:margin.left },
+  { label:"Bar",  mode:"bar",  x:margin.left+62 }
+];
+...
+g.on("click",() => { viewMode=b.mode; updateView(); });
+```
+
+Clicking a button sets `viewMode` to `"line"` or `"bar"` and calls `updateView()`, which redraws the chart accordingly. The active button is highlighted (blue fill/border `#dce8f5`/`#4472c4`) via `styleButtons()`, while the inactive one stays gray.

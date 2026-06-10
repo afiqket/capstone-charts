@@ -1,0 +1,20 @@
+The answer is entirely in the chart code (`chart_143.js`), specifically the slider section at lines 258–349. I don't need the rest of the CSV — the data just feeds the stacked areas.
+
+## What the slider does
+
+Despite the misleading comment at line 258 (`decorative, no bar mode here`), the slider is fully functional. It's a **start-year selector**, not a single-year picker. The handle's position maps to a year via `xSlider` (line 261), and dragging/clicking calls `updateStartYear(y)` (line 280).
+
+Choosing a year sets `startYear` and then **trims the left edge of the chart to that year**, keeping the end fixed at the last year (2021). Concretely, `updateStartYear` does the following:
+
+1. **Filters the data** to years `>= startYear` (lines 285–286) — everything before the chosen year is dropped from view.
+2. **Re-stacks** the remaining years (line 289) and recomputes the stacked-area series.
+3. **Rescales the X axis** to the new domain `[startYear, 2021]` (line 292), so the visible window stretches to fill the full plot width.
+4. **Rescales the Y axis** to the new max within the visible window (lines 290, 293) — `Math.ceil(newYMax/2000)*2000`. So if you cut off the high-attack years, the Y axis shrinks; if they're still in view, it stays tall.
+5. **Redraws the gridlines and Y-axis labels** (lines 296–305) and the **X-axis tick labels** (lines 308–314, showing the start year, multiples of 5, and the final year).
+6. **Redraws the stacked areas** (line 319) to fill the new, zoomed-in window, preserving any current hover highlight.
+
+There's also a **play button** (▶, lines 277/335–346) that auto-advances the start year one step at a time every 150 ms, animating the window progressively shrinking from the left until it reaches the last year.
+
+## In short
+
+Picking a year on the slider chooses the **starting year of the visible range**. The graph zooms to show only that year through 2021, restretching the X axis, rescaling the Y axis to the new visible maximum, and redrawing the gridlines, axis ticks, and stacked areas accordingly. The chart **title** (line 81), however, is set once at load and does *not* update — it always reads "1992 to 2021" regardless of the slider position.

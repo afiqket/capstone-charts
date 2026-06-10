@@ -1,0 +1,11 @@
+I have the data I need. Looking at the France series, comparing the **60-69 years** value against the **80+ years** value over time:
+
+| Day | 60-69 years | 80+ years | Higher |
+|-----|-------------|-----------|--------|
+| 2021-12-03 | 83.70 | 84.31 | 80+ |
+| 2021-12-10 | 84.78 | 84.80 | 80+ (barely) |
+| **2021-12-17** | **86.02** | **85.39** | **60-69** |
+
+The number (share) of people aged **60-69 years** first becomes higher than that of **80+ years** on **December 17, 2021** (86.02% vs. 85.39%).
+
+Up through Dec 10, 2021 the 80+ group was still slightly ahead (84.80% vs 84.78%); on Dec 17 the 60-69 line crosses above and stays above for the rest of the series.

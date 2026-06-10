@@ -1,0 +1,8 @@
+For December 6, 2020 (United States):
+
+- **Real 2020 deaths:** 77,271
+- **Projected 2020 deaths:** 57,462.3
+
+**Difference = 77,271 − 57,462.3 = 19,808.7**
+
+The real number of deaths exceeded the projection by about **19,809** deaths.

@@ -1,0 +1,3 @@
+**Finland** had the highest life satisfaction in 2023, with a Cantril Ladder score of **7.741**.
+
+It's the only country at or above 7.7 for that year. The next closest were Denmark (7.583) and Iceland (7.525). (Note: rows coded `OWID_*` and `UN_*` are regional/aggregate entities, which the chart code explicitly filters out, so they aren't "countries.")

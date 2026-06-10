@@ -1,0 +1,8 @@
+**Iceland.**
+
+In the default view (the chart opens on the latest year, 2025), Iceland's bubble shows:
+
+- **Share "very happy" / "rather happy" (IVS): 95%** — the tooltip formats this to a whole number (`.0f`), and Iceland's nearest available share value to 2025 is its 2022 figure of `95.11448` → **95%**.
+- **Self-reported life satisfaction (Cantril Ladder): 7.54** — Iceland's 2025 value is exactly `7.54` (formatted to two decimals).
+
+So the country matching "95% very happy" and "life satisfaction of 7.54" is **Iceland** (`ISL`).

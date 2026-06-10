@@ -1,0 +1,7 @@
+The chart displays only the **"All ages"** data (the code filters `d.Entity === "All ages"`). Scanning the `0 or 1 dose` column for those rows, the values peak in late February 2022:
+
+- Feb 20, 2022 → 10.64
+- **Feb 27, 2022 → 11.76** ← highest
+- Mar 6, 2022 → 11.58
+
+**Answer: February 27, 2022**, where the "0 or 1 dose" group reached its highest weekly death rate of ~11.76 per 100,000.

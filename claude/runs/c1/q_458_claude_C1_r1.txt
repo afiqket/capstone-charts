@@ -1,0 +1,19 @@
+**Middle East & North Africa** had the most terrorist attacks in 2014, with **6,996 attacks**.
+
+The full 2014 ranking for the chart's regions:
+
+| Region | Attacks (2014) |
+|---|---|
+| **Middle East & North Africa** | **6,996** |
+| South Asia | 4,997 |
+| Sub-Saharan Africa | 2,321 |
+| Southeast Asia | 1,083 |
+| Eastern Europe | 963 |
+| South America | 283 |
+| East Asia | 43 |
+| North America | 37 |
+| Australasia & Oceania | 9 |
+| Central Asia | 9 |
+| Central America & Caribbean | 4 |
+
+(Note: the chart filters to these specific sub-regions, ignoring the continent-level "Asia"/"Africa" aggregate rows in the data.)

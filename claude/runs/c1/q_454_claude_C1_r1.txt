@@ -1,0 +1,15 @@
+This is an **interactive animated bubble chart** with a year slider, so 2015 isn't a fixed view — you select it. Here's how, based on the code:
+
+**Where the control is:** A horizontal slider runs along the bottom of the chart (`sliderY = H - 50`, lines 280–342), spanning from the earliest year on the left to the latest on the right. By default the chart opens on the **most recent year** (`currentYear = Math.max(...allYears)`, line 27), so you have to move back to 2015.
+
+**Three ways to get to 2015:**
+
+1. **Drag the handle** — grab the dark circle on the slider track and drag it left until it snaps to 2015. The code snaps to the nearest available year (lines 324–328).
+
+2. **Click the track** — click directly on the slider at the spot for 2015; it jumps to the nearest year (lines 314–322).
+
+3. **Press play (▶)** — the button at the far left (lines 286–289, 330–342) animates year-by-year every 700 ms. It passes through 2015 along the way; pause (⏸) when the title reads 2015.
+
+**How to confirm you're on 2015:** The chart title updates to read **"Happiness vs. life satisfaction, 2015"** (line 308), and the slider handle sits at the 2015 tick.
+
+A note on the data: 2015 *is* one of the available years in the slider (it's present throughout the CSV, e.g. `Afghanistan,AFG,2015` / `Albania,ALB,2015`). The years list is built from the data and sorted (line 26), and points for each country use the row closest to the selected year (lines 173–180), so every country with 2015 data will show its 2015 values directly.

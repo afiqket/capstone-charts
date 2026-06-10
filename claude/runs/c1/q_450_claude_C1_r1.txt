@@ -1,0 +1,25 @@
+I have the full chart code (lines 1–341), which contains everything needed to answer. The play button logic is at lines 256–257 and 292–303.
+
+## What clicking the play button does
+
+The play button is the `▶` text element (line 256). Clicking it toggles an **animated playback through the years**, Gapminder-style. The exact behavior depends on whether it's already playing (lines 292–303):
+
+**If it's NOT currently playing (the normal first click):**
+1. **Reset-to-start check** — if the current year is the last year in the data (`allYears[allYears.length-1]`), it jumps back to the first year (`allYears[0]`) via `updateYear`. Since the chart loads with `currentYear` set to the *latest* year (line 32), the very first click will rewind the animation to the earliest year before playing.
+2. Sets `playing = true` and **changes the icon from `▶` to `⏸`** (pause symbol).
+3. Starts a `setInterval` that fires **every 500 ms** (line 301). Each tick advances to the next year via `updateYear(allYears[idx+1])`, which:
+   - updates `currentYear`,
+   - slides the handle to that year's position (line 272),
+   - updates the title to e.g. *"Life satisfaction vs. life expectancy, 2014"* (line 273),
+   - hides any tooltip and **redraws all the bubbles** at their new positions/sizes for that year (line 275).
+4. The result is the bubbles **animating year-by-year**, moving and resizing as each country's life satisfaction, life expectancy, and population change over time.
+
+**Auto-stop:** When the animation reaches the final year, the interval clears itself, sets `playing = false`, and **resets the icon back to `▶`** (line 300).
+
+**If you click it again while it IS playing:** it pauses — clears the timer, sets `playing = false`, and switches the icon back to `▶` (line 293). The animation freezes on the current year.
+
+## Concrete specifics from the data
+
+The years in this dataset run from **2011 to 2025** (only years that have a life-satisfaction value and a real country code — `OWID_*` aggregate rows like "Africa"/"Asia" are excluded, per lines 26–30). So on a fresh load (showing 2025), the first click rewinds to 2011 and plays forward through all ~15 years, one frame every half-second, finishing back at 2025 where it stops automatically.
+
+One small note: each frame is a 500 ms `setInterval` that swaps the data with `.join()` but there are **no D3 transitions**, so the bubbles *jump* between yearly positions rather than smoothly tweening.

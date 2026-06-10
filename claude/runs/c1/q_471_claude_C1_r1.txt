@@ -1,0 +1,19 @@
+Yes — generally, more doses tracked with a lower death rate. This is clearest in the age‑standardized **"All ages"** series that the chart displays by default (the note explains it's age‑adjusted precisely so vaccination‑rate differences between old and young don't distort the comparison).
+
+The pattern is most visible during the high‑mortality wave of Feb–Mar 2022, where the four series spread out in a clean dose‑gradient (deaths per 100,000):
+
+| Week | 0 or 1 dose | 2 doses | 3 doses | 4 doses |
+|------|------------|---------|---------|---------|
+| 2022‑02‑27 | 11.76 | 11.04 | 3.32 | 0.83 |
+| 2022‑03‑06 | 11.58 | 9.94 | 3.95 | 0.68 |
+| 2022‑03‑13 | 10.42 | 8.40 | 3.58 | 0.39 |
+
+So at the peak, the unvaccinated/minimally‑vaccinated group had ~10–14× the death rate of the 4‑dose group, with 2 and 3 doses falling in between — a consistent "more doses, fewer deaths" ordering.
+
+A few caveats worth noting:
+
+- **It's a near‑monotonic gradient, not a perfect one.** "0 or 1 dose" and "2 doses" are often close together (and 2 doses occasionally edges higher), but 3 doses and 4 doses are reliably lower during the deadly periods.
+- **The gap collapses in low‑mortality periods.** From mid‑2022 onward, when overall death rates fell to ~1 per 100,000, the four lines converge and even cross, so the dose ordering becomes noisy and inconsistent. The protective separation is mainly a feature of the high‑transmission waves.
+- **These are death *rates* (deaths ÷ group size), not raw counts**, and the comparison is observational — so it reflects association, not a controlled measurement of vaccine effect.
+
+Bottom line: yes, higher‑dose groups generally had lower COVID death rates, with the effect strongest exactly when it mattered most (the mortality peaks).

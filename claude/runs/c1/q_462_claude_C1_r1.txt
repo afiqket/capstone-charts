@@ -1,0 +1,29 @@
+Yes — this chart has a built-in bar chart mode. Here's how to switch to it:
+
+## How to view the bar chart
+
+At the top-left of the chart there are two toggle buttons (chart_144.js:45-46):
+
+- **📈 Line** (active by default)
+- **📊 Bar**
+
+**Click the "📊 Bar" button** and the chart re-renders as a horizontal bar chart (chart_144.js:276-277 → `setMode("bar")` → `renderBar()`).
+
+## What you'll see in bar mode
+
+- The six rights become **horizontal bars**, sorted largest-to-smallest, all in a single blue-gray color (`#6b7fad`), with the country count labeled at the end of each bar (chart_144.js:167-211).
+- The chart shows **one year at a time**. The title updates to include the year, e.g. *"…World, 2023"*.
+
+## Picking the year
+
+Bar mode reveals a **year slider** near the bottom (hidden in line mode, shown in bar mode — chart_144.js:271). To choose which year's data the bars show, you can:
+
+1. **Drag the round handle** along the slider (chart_144.js:248-251), or
+2. **Click anywhere on the slider track** to jump to the nearest year (chart_144.js:243-246), or
+3. **Click the ▶ play button** on the left to animate through every year from 1970 → 2023 automatically (~120 ms per year), watching the bars grow (chart_144.js:253-264).
+
+It defaults to the latest year, **2023**, where the World values are: Equal right to start a business 184, Equal property rights 170, Employment discrimination prohibited 161, Domestic violence sanctioned 164, Substantial paid leave for mothers 122, Pay equity mandated 97.
+
+To go back, just click **📈 Line** again.
+
+Note: this only works in a rendered/interactive environment (it's an Observable/D3 notebook cell) — the buttons and slider aren't usable from the raw `.js` source itself.

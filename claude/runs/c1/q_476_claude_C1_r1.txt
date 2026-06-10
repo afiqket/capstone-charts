@@ -1,0 +1,14 @@
+I found the row. Let me map the columns precisely.
+
+The header column order (after Entity, Code, Day) is: `0-17 years, 18-29 years, 25-49 years, 45-54 years, 50-54 years, 40-49 years, 30-39 years, 25-34 years, 18-24 years, 50-59 years, ...`
+
+The France row for 2022-11-04 is:
+`France,FRA,2022-11-04,28.02,,89.28,,,,,,89.73,91.24,...`
+
+Mapping the values: `0-17 years`=28.02, `25-49 years`=89.28, then the next non-empty value `89.73` lands on the **`50-59 years`** column.
+
+## Answer
+
+For France on **November 4, 2022**, the value for the **50–59 years** age group was **89.73%**.
+
+One important caveat: this chart and its data are **not** about COVID-19 *boosters*. The title and data file (`covid-fully-vaccinated-by-age.csv`) describe the *"Share of people who completed the initial COVID-19 vaccination protocol by age"* — i.e., people who received all prescribed doses of the primary vaccination series, not booster doses. So **89.73%** is the share of 50–59-year-olds who completed the **initial vaccination protocol** on that date; there is no booster data in this dataset.

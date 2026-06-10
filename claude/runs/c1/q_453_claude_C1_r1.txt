@@ -1,0 +1,37 @@
+## Short answer
+
+Yes — broadly, the two measures are **positively correlated**, and that positive relationship holds across the years the chart animates through. But it's a *moderate* correlation with real scatter and some clear outliers, not a tight one-to-one relationship.
+
+## What the chart actually plots
+
+It's an animated bubble scatter plot (`chart_141.js`):
+
+- **X axis** = *Share of people who say they are 'very happy' or 'rather happy'* (IVS) → "happiness"
+- **Y axis** = *Self-reported life satisfaction (Cantril Ladder)* → "life satisfaction"
+- Bubbles = countries (sized by population, colored by region), with a year slider/play button.
+
+For each selected year, `getPoints()` takes each country's *nearest-available* happiness reading and *nearest-available* life-satisfaction reading and plots them (line 169–192).
+
+## What the data shows
+
+Reading across countries, high-happiness countries also report high life satisfaction, and low-happiness ones report low satisfaction:
+
+| Country | Happiness share (IVS) | Life satisfaction |
+|---|---|---|
+| Denmark | ~96% | ~7.6–7.9 |
+| Canada / Australia | ~95% / ~93% | ~7.3–7.5 |
+| Finland | ~89% | ~7.6–7.8 |
+| Bulgaria | ~35–60% | ~3.9–5.5 |
+| Belarus | ~44–88% | ~5.5 |
+
+So the cloud of points trends up and to the right — the standard positive association.
+
+## Important caveats (visible in the data)
+
+1. **Outliers weaken it.** Some countries break the pattern badly — e.g. **Egypt 2014** has a very low happiness share (≈26%) yet a mid-range satisfaction (~4.2), and **Bangladesh 2022** has high happiness (≈91%) but low satisfaction (~4.3). These are emphasized as labeled countries in the code.
+
+2. **"Throughout the years" is limited by the data.** The happiness (IVS) values exist only for sparse survey-wave years (1984, 1993, 1998, 2004, 2010, 2014, 2022…), while life satisfaction is reported yearly from 2011 on. Because the code snaps to the *nearest* value, the X positions barely change as you scrub the slider — so the animation mostly shows life-satisfaction drift over a largely static happiness axis, rather than two independently moving series. The positive correlation persists across years, but the chart isn't really testing year-by-year *co-movement* of the two metrics.
+
+**Bottom line:** the graph supports a positive correlation between happiness and life satisfaction that is consistent across the years shown, but it's a moderate trend with notable exceptions, and the sparse happiness data means "throughout the years" should be read with that limitation in mind.
+
+Note: I read the chart code in full and a representative ~70-country slice of the data (the file is ~2,550 rows); the pattern is consistent in that sample, so I didn't page through every remaining country.

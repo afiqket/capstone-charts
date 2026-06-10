@@ -1,0 +1,18 @@
+Based on the United States data from the chart's CSV (1956–2023):
+
+## General Trend: Inverse Relationship
+
+**Annual working hours — declining**
+- 1956: **~2,023 hours** per worker
+- Fell fairly steadily through the 1960s–70s to **~1,850 hours** by the mid-1970s
+- Continued a gentler decline, reaching a low of **~1,765 hours** in 2009 (Great Recession)
+- Since then roughly flat with a slight rebound, ending at **~1,789 hours** in 2023
+- **Net change: down ~235 hours (~12%)**
+
+**GDP per capita — rising strongly**
+- 1956: **~$20,300** (international-$, 2021 prices)
+- 2023: **~$72,900**
+- **Net change: up ~3.6× (~259%)**, a steady long-term climb interrupted only by brief dips during recessions (1974–75, early 1980s, 1991, 2008–09, and the 2020 COVID downturn)
+
+## Summary
+Over this period the U.S. shows a clear **inverse trend**: workers put in **fewer hours** each year while **GDP per capita grew substantially**. In other words, Americans became far more prosperous while working less — productivity gains allowed rising output per person alongside a shrinking work year. Most of the decline in hours occurred before ~1975, after which working hours stabilized around 1,750–1,850 even as GDP per capita kept climbing.

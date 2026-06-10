@@ -1,0 +1,15 @@
+The slider is a **year selector** for this animated scatterplot (working hours vs. GDP per capita).
+
+**What it controls:** The chart plots one dot per country for a single year. The slider sets `currentYear`, which drives which year's data is shown. Moving it re-filters the data and redraws every bubble's position (GDP on the log x-axis, working hours on the y-axis), updates bubble sizes (population), and rewrites the title to include the selected year (e.g. *"Annual working hours vs. GDP per capita, 2019"*).
+
+**Mechanics (chart_142.js:274–336):**
+- The track spans `allYears` — the sorted set of distinct years in the CSV — mapped left-to-right via a `d3.scalePoint` (`xSlider`). It starts at the latest year (`currentYear = Math.max(...allYears)`).
+- **Dragging the handle** (lines 318–322): snaps to the nearest year tick and calls `updateYear`.
+- **Clicking anywhere on the track** (lines 308–316): jumps the handle to the nearest year under the click.
+- Each change calls `updateYear(y)` (lines 299–305), which moves the handle, updates the title, hides any tooltip, and redraws the dots/labels for that year.
+
+**Play button (▶/⏸):** Next to the slider is a play toggle (lines 280–336). Pressing it auto-advances the slider one year every 700 ms, animating the bubbles through time; if you're at the last year it rewinds to the first, and it stops/flips back to ▶ at the end or when paused.
+
+So in short: the slider scrubs through time, choosing which year's snapshot of countries is displayed, and the play button animates that scrubbing automatically.
+
+(Note: I couldn't read the CSV — it's 517 KB, over the read limit — but the answer comes entirely from the chart code, which is sufficient here.)

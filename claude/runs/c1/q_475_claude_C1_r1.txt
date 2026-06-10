@@ -1,0 +1,11 @@
+The red color (`#c0523a`) represents **the reported number of deaths from all causes in 2020**.
+
+In the chart code, the highlighted series defines:
+
+```js
+{ key: "2020", label: "2020", color: "#c0523a", width: 2 }
+```
+
+This is an Our World in Data "excess mortality" chart for the United States. It plots the raw weekly/monthly death count for several years against a black "Projected, 2020" line (the deaths expected based on 2015–2019 trends). The red line/bar is the **actual reported deaths in 2020** — the year that, compared against the black projection, reveals the excess mortality during the early COVID-19 pandemic.
+
+(The other highlighted years use different colors — 2021 purple, 2022 teal, 2023 blue — and 2015–2019 appear as faint gray background lines.)

@@ -1,0 +1,17 @@
+The play button (the `▶` symbol) is part of the **year slider**, and it only appears in the **Bar view**.
+
+**Location details:**
+
+- It's created as part of `sliderG` at `data/charts/chart_144.js:219-220`:
+  ```js
+  const playBtn = sliderG.append("text").attr("x",24).attr("y",sliderY+5)
+      .style("font-size","18px").style("cursor","pointer").style("fill","#555").text("▶");
+  ```
+- Position: `x = 24` and `y = sliderY + 5`, where `sliderY = H - 46 = 464` (with `H = 510`). So it sits at roughly **(24, 469)** — the **far bottom-left of the chart**, at the left end of the year-slider track.
+
+**Which view:** Only the **Bar view**. The entire slider group (including the play button) is hidden in Line view via line 271:
+```js
+sliderG.style("display", m==="line" ? "none" : null);
+```
+
+When clicked, it animates through the years (1970→2023), updating the bar chart, and toggles its icon between `▶` (play) and `⏸` (pause).

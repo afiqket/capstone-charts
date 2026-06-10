@@ -1,0 +1,3 @@
+**1960.**
+
+In the data, the `Democratically-elected woman chief executive` column is `0` for every year from 1789 through 1959, and first becomes non-zero in **1960** (value `0.5586592`%, i.e. one country out of ~179). So 1960 is the first year the world had a democratically-elected woman chief executive.

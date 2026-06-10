@@ -1,0 +1,18 @@
+No — the bars in the bar chart view are not clickable.
+
+Looking at `drawBar()` (lines 341–362), each bar is drawn as a plain rectangle:
+
+```js
+barG.append("rect")
+  .attr("x", 0).attr("y", y)
+  .attr("width", xBar(d.value)).attr("height", barH)
+  .attr("fill", barColor).attr("rx", 2);
+```
+
+There's no `.on("click", …)` (or any other event handler like hover/mousemove) attached to these rects. In fact, `drawBar()` even removes the hover overlay and hides the tooltip (lines 316–317), so the bar view has no interactivity on the bars themselves at all.
+
+The only clickable/interactive elements in this chart are:
+- The **Line / Bar toggle buttons** (line 71) — `.on("click", …)`
+- The **year slider** track and handle, and the **play button** (lines 423–451)
+
+So while you can click the slider/play button to change which year the bars represent, **clicking on a bar itself does nothing**.

@@ -1,0 +1,6 @@
+In 1992, the female labor force participation rate was:
+
+- **Canada: 57.837%** (line 25)
+- **United States: 57.8%** (line 200)
+
+**No, they are not exactly the same** — but they're remarkably close. Canada's rate (57.837%) is just **0.037 percentage points** higher than the US rate (57.8%). Rounded to one decimal place (as the chart displays values with `.1f` formatting), both would show as **57.8%**, so they'd appear identical on the chart even though the underlying values differ slightly.

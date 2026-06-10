@@ -1,0 +1,3 @@
+In 2010, **67** countries had pay equity mandated.
+
+This comes from the World row for 2010 in the data (`World,OWID_WRL,2010,138,67,...`), where the "Pay equity mandated" column equals 67 — and the chart filters specifically to `Entity === "World"`.

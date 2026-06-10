@@ -1,0 +1,19 @@
+In the **Bar chart view**, clicking on the slider snaps it to the nearest year and re-draws the bars to reflect that year.
+
+Here's the mechanism:
+
+**The click target** — There's a transparent `rect` overlaying the slider track (lines 357–365) with an `on("click", …)` handler. (The handle circle itself only responds to *dragging*, line 367; plain clicks are caught by this overlay rect.)
+
+**On click:**
+1. It reads the mouse x-position (`d3.pointer`) and finds the year whose position on the slider scale (`xSlider`) is closest to the click (lines 362–364).
+2. It calls `updateYear(y)` with that snapped year.
+
+**Inside `updateYear` (lines 345–354):**
+- Sets `currentYear = y` and moves the handle circle to that year's position (`handle.attr("cx", xSlider(y))`).
+- Because `viewMode === "bar"`, it takes the `else` branch:
+  - Updates the title to include the year: **`"Share of countries that have had a woman as leader, {y}"`** (line 351).
+  - Calls **`drawBar()`** (line 352), which redraws the two horizontal bars ("Any woman chief executive" and "Democratically-elected woman chief executive") using that selected year's values, with bar widths and the `%` labels updated accordingly.
+
+So clicking anywhere on the slider jumps to the nearest year and the bar chart updates to show that year's two percentages, with the year appended to the title.
+
+(For contrast, in Line view the same click still moves the handle and sets `currentYear`, but it only resets the title to the plain text and does **not** otherwise change the line chart — the year selection has no visible effect there.)

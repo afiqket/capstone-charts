@@ -1,0 +1,7 @@
+Based on the code, the two bars map directly to the `seriesDef` color assignments (chart_146.js:15-18):
+
+- **Red/orange bar** (`#b85a38`) = **"Any woman chief executive"** — the share of countries that have *ever* had a woman as chief executive (head of government or head of state), regardless of how she came to power.
+
+- **Blue bar** (`#6a7fb5`) = **"Democratically-elected woman chief executive"** — the share of countries that have had a woman chief executive in a country classified as a democracy (per V-Dem's "Regimes of the World" classification).
+
+The chart tracks these as a share of current countries since 1789. The blue figure is always ≤ the red/orange figure, since democratically-elected female leaders are a subset of all female leaders. In the latest year (2025), the red/orange bar reaches ~42% while the blue bar reaches ~31% (per chart_146.csv:238).

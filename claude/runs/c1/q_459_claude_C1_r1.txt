@@ -1,0 +1,30 @@
+**No — the slider handle cannot be dragged.** It's wired up to drag, but a layering bug blocks it.
+
+Here's the chain of reasoning:
+
+1. **The drag is attached correctly to the handle** (`chart_143.js:330-333`):
+   ```js
+   handle.call(d3.drag().on("drag", function(event) {
+     const mx = Math.max(sliderX0, Math.min(sliderX1, event.x));
+     updateStartYear(...);
+   }));
+   ```
+   On its own, this would work.
+
+2. **But a transparent "click" rect is appended *after* the handle** (`chart_143.js:322-328`):
+   ```js
+   svg.append("rect").attr("x",sliderX0).attr("y",sliderY-12)
+     .attr("width",sliderX1-sliderX0).attr("height",24)
+     .attr("fill","transparent").style("cursor","pointer")
+     .on("click", function(event) { ... updateStartYear(...) });
+   ```
+
+3. **This rect sits on top of the handle and swallows its mouse events.** Two facts combine:
+   - In SVG, paint/hit order follows document order — the rect (line 322) is appended after the handle (line 274), so it renders *above* it.
+   - The rect spans the full track (`x: 90 → 840`, `y: sliderY±12`), which completely covers the handle (`cy = sliderY`, `r = 9`). And `fill="transparent"` is a paint value, not `fill="none"`, so under the default `pointer-events: visiblePainted` it **still captures pointer events**.
+
+4. **The handle and rect are siblings, not ancestor/descendant.** So a `mousedown` over the handle is dispatched to the rect and never reaches the handle's `d3.drag` listener. The drag gesture can never start.
+
+**Net effect:** The rect's `click` handler still fires, so you *can* click anywhere on the track (including on the handle) to jump `startYear` to the nearest year. But a press-and-drag does nothing — the handle won't follow the cursor. So the slider works as a click-to-set control, not a draggable one.
+
+(The fix would be to append the transparent rect *before* the handle, or give the rect `pointer-events: none` and move the click logic onto the track line, so the handle stays on top and receives its drag events.)
