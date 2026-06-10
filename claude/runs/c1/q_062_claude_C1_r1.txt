@@ -1,0 +1,50 @@
+## Getting an exact 4G coverage value
+
+There are two reliable ways, depending on whether you want the raw number or the chart's logic.
+
+### 1. Read it straight from the CSV (most exact)
+
+The data lives in `share-with-4g-mobile-network-coverage.csv`, one row per country-year:
+
+```
+Entity,Code,Year,Proportion of population covered by at least a 4G mobile network (%)
+```
+
+Find the row where `Entity` = your country and `Year` = your year, and read the 4th column. For example:
+
+- **Brazil, 2019 → 88.75%**
+- **Kenya, 2021 → 94%**
+- **Germany, 2023 → 99.96%**
+- **World, 2024 → 91.8%**
+
+This is the true recorded value with no transformation applied.
+
+### 2. Use the chart's `getValueForYear(entity, year)` helper
+
+The code exposes exactly this lookup:
+
+```js
+function getValueForYear(entity, year) {
+  const rows = dataByEntity.get(entity)
+  if (!rows) return null
+  const exact = rows.find(r => r.Year === year)
+  if (exact) return { value: exact[valueCol], year: exact.Year, estimated: false }
+  const before = rows.filter(r => r.Year < year).sort((a,b) => b.Year - a.Year)
+  if (before.length) return { value: before[0][valueCol], year: before[0].Year, estimated: true }
+  return null
+}
+```
+
+- `entity` must match the `Entity` string **exactly**, including suffixes — e.g. `"World"`, `"Asia (UN)"`, `"Northern America (UN)"`.
+- `year` must be a number (`2019`, not `"2019"`).
+- It returns `{ value, year, estimated }`.
+
+### Important caveat: carry-forward estimation
+
+If the exact year you ask for **doesn't exist** for that country, `getValueForYear` does **not** return null — it falls back to the most recent earlier year and marks `estimated: true`, while still reporting `year` as the year that actually supplied the value.
+
+Examples where this matters:
+- **Argentina** has no 2014 row but no 2017 gap... actually it has no row for some years like Tanzania 2012-2023 mostly present. A clear case: **Bolivia 2018** is missing → asking year 2018 returns the 2017 value (74.48) with `estimated: true, year: 2017`.
+- Aggregates like `World` start at **2015** — asking for 2012 returns `null` (no earlier data).
+
+So for a guaranteed-exact value: confirm a row with that precise `Entity` + `Year` exists in the CSV, or check that the returned object has `estimated: false` and `year` equal to the year you requested. The map/bar tooltips display `result.year`, which reveals when an estimated (carried-forward) value is being shown.

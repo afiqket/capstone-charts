@@ -1,0 +1,24 @@
+**The United States** clearly stands out as the country with the highest landline (fixed broadband) Internet subscriptions in 1998.
+
+**Why, based on the color scale:**
+
+The map colors values using a logarithmic threshold scale with breakpoints at `[0, 300,000, 1M, 3M, ...]`. The first threshold is **300,000**, so only countries exceeding that get a visibly darker shade than the palest cream color.
+
+Looking at every country with explicit **1998** data in the CSV:
+
+| Country | 1998 value | Color bin |
+|---|---|---|
+| **United States** | **706,000** | 2nd color `#fee6ce` (darker — only one above 300k) |
+| Canada | 140,000 | lightest `#fff5eb` |
+| Netherlands | 75,500 | lightest |
+| Japan | 32,000 | lightest |
+| South Korea | 14,000 | lightest |
+| France | 13,500 | lightest |
+| Hong Kong | 11,000 | lightest |
+| Belgium | 10,900 | lightest |
+| Singapore | 10,000 | lightest |
+| Brazil | 1,000 | lightest |
+
+Since the map starts at `minYear` (1998) and `getValueForYear` returns no value for countries lacking a 1998 (or earlier) row, **all other countries render as the "No data" hatch pattern**.
+
+So the **United States is the only country with a noticeably more intense (darker orange) fill** — it's the standout. Every other country with 1998 data sits in the faintest color band, essentially indistinguishable from one another by intensity. Note that "North America (WB)" has a higher value (845,900) but it's an aggregate region, not a country, and isn't drawn on the country map.

@@ -1,0 +1,28 @@
+Short answer: **You can't.** This chart doesn't contain that information, on two separate counts.
+
+**1. It's the wrong metric.** This chart measures only one thing — the *"Share of the population that has a mobile phone device with at least one active SIM card for personal use"* (the `valueCol` is `"Proportion of individuals who own a mobile telephone"`). There is no 4G network coverage data anywhere in the code or the CSV. Phone *ownership* and 4G *network coverage* are entirely different metrics.
+
+**2. There is no 2018 data point for Thailand.** Looking at the Thailand rows in the CSV:
+
+```
+Thailand,THA,2013,73.3
+Thailand,THA,2014,77.2
+Thailand,THA,2015,79.3
+Thailand,THA,2016,81.4
+Thailand,THA,2017,88.1
+Thailand,THA,2019,81.1   ← jumps from 2017 to 2019
+Thailand,THA,2020,83.6
+...
+```
+
+2018 is missing. If you set the chart's year slider to 2018, the `getValueForYear` function would not find an exact match and would fall back to the most recent earlier year — 2017 — and flag it as estimated:
+
+```js
+const exact = rows.find(r => r.Year === year)        // no 2018 → null
+const before = rows.filter(r => r.Year < year)...    // returns 2017 (88.1)
+return { value: ..., year: 2017, estimated: true }
+```
+
+So the tooltip/bar for Thailand at "2018" would actually show **88.1% from 2017**, labeled *"Closest available data (not 2018)"* — and that figure is mobile phone ownership, not 4G coverage.
+
+If you need Thailand's 2018 4G coverage, you'll have to use a different source (e.g., the ITU or GSMA datasets that track mobile network coverage by technology) — this visualization can't give it to you.

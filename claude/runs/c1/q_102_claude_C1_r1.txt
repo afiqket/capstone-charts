@@ -1,0 +1,7 @@
+The 3 Boroughs with the largest **Play Space** value are:
+
+1. **Bromley** — 217,140
+2. **Hillingdon** — 212,739
+3. **Croydon** — 177,308
+
+(Next closest are Southwark ~150,853 and Wandsworth ~149,743.)

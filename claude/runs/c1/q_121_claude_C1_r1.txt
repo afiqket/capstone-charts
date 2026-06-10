@@ -1,0 +1,5 @@
+**1348 points.**
+
+The dataset has no column for 01/01/2018, so the chart computes that date by linearly interpolating between the two surrounding readings — 21/12/2017 and 18/01/2018. Both of those values for Argentina are **1348**, so any interpolated point between them (including 01/01/2018) is also **1348**.
+
+(Argentina actually sits at 1348 across the whole stretch from 23/11/2017 through 15/02/2018 before the jump to 2080 later in 2018.)

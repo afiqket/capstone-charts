@@ -1,0 +1,21 @@
+In this chart, finding a club's *current* manager is an interactive, two-step process driven by the legend toggles and hover behavior.
+
+## How it works
+
+**By default, only club nodes are shown.** The state starts with `showManagers: false` and `showCurrent: false` (chart_041.js:116-120), so the manager dots are hidden and `updateVisibility()` displays only `Club` nodes (lines 412-434).
+
+**Step 1 — Turn on the "Current Manager" layer.** The user clicks the red **"Current Manager"** legend dot in the top-left (lines 152, 84-85 define it as `#ff2a2a`). Clicking flips `state.showCurrent` to `true` (lines 129-133), which makes nodes in the `Current Manager` group visible (`categoryVisible`, lines 317-322).
+
+**Step 2 — Hover over the specific club.** Mousing over (or over the label of) the target club node fires `setHovered(d)` (lines 398-404). This calls `connectedSetFiltered`, which, for a hovered club, collects neighbors whose group is in the active set — i.e. current managers if that layer is on (lines 338-346). The result:
+- The connected current manager(s) light up at full opacity while everything else dims to 0.12 (line 448).
+- The connecting line is recolored and thickened via `shouldHighlightLink` (lines 363-386, 466-468).
+- The labels for the club and its connected current manager(s) appear and enlarge (lines 450-457).
+
+## Important caveats
+
+- **The toggle is required first.** If neither legend item is active, `connectedSetFiltered` returns only the hovered node itself (lines 335-336) and `shouldHighlightLink` returns `false` (lines 366-367), so hovering a club reveals *no* manager.
+- **A "current manager" is defined by the data, not the connection.** A node is red only if its `Group` column in `points.csv` says `Current Manager` (e.g. Andoni Iraola, Mikel Arteta, Arne Slot). The link itself (in `links.csv`) carries no "current" flag — it's just `Name,Club` pairs. So the highlight surfaces whichever connected manager happens to be tagged `Current Manager`.
+
+**Example:** Toggle the red legend dot, then hover **Bournemouth** → its current manager **Andoni Iraola** is highlighted (he's the only Bournemouth manager tagged `Current Manager` in points.csv:69, linked at links.csv:58).
+
+One data note worth flagging: a few clubs in `points.csv` (e.g. Barnsley, Swindon Town, Oldham Athletic) have no manager tagged `Current Manager`, so hovering them with the layer on will reveal no red node.

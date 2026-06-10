@@ -1,0 +1,19 @@
+Based on the map view, **orange = a country where an armed conflict took place that year** (value `1`), and "recent years" means the years near the slider's maximum, **2024**.
+
+Reading the 2024 rows in the data, the orange (conflict) countries cluster heavily into three regions:
+
+**1. Sub‑Saharan Africa — the densest block**
+- **Sahel / West Africa:** Mali, Niger, Nigeria, Burkina Faso, Chad, Cameroon, Benin, Togo, Mauritania
+- **Central & East Africa:** DR Congo, Central African Republic, Congo, South Sudan, Sudan, Somalia, Ethiopia, Kenya, Burundi, Rwanda, Mozambique
+
+This belt across the middle of Africa is the most solidly orange region on the map.
+
+**2. The Middle East**
+- Syria, Iraq, Iran, Israel, Palestine, Lebanon, Jordan, Yemen, Turkey — nearly the entire region is orange in 2024.
+
+**3. South & Southeast Asia**
+- Afghanistan, Pakistan, India, Myanmar, Thailand, Philippines, Indonesia, Bangladesh — a continuous orange stretch.
+
+By contrast, the map stays mostly **blue** (no conflict) across **North America, Europe, East Asia, Australia/Oceania, and the southern cone of South America**. The main exceptions outside the three hotspots are Russia and Ukraine (the war in Eastern Europe) and a scattering in Latin America (Mexico, Colombia, Brazil, Venezuela, Ecuador, Haiti).
+
+**In short:** in recent years the orange is concentrated in **Africa (especially the Sahel and Central/East Africa), the Middle East, and South/Southeast Asia** — the classic "conflict arc" — while the Americas (except Mexico/Colombia and a few others), Europe (except Russia/Ukraine), and the Asia‑Pacific developed states remain largely blue.

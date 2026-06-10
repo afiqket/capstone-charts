@@ -1,0 +1,22 @@
+When only **Investment** is active in the chart, here's what happens:
+
+**Filtering (lines 74–75):**
+- `activeBars` = just the Investment series (it's the only `type:"bar"` in `active`).
+- `showLine` = `false`, because `"Real GDP"` is not in `active`.
+
+**What renders:**
+- **Only the light-blue (`#7ec0df`) Investment bars** appear — one per quarter (Jan-21 through Jan-25).
+- The **Real GDP line and its dotted markers disappear entirely** (the `if (showLine)` block at line 272 is skipped).
+- All other category bars (Consumption, Net exports, Government spending) disappear.
+
+**Bar behavior (lines 189–239):**
+- Since there's only one bar series, no stacking happens — each bar is just the raw Investment value drawn from the zero line. Positive values (e.g. Oct-21 = `4.68`, Jan-25 = `3.98`) go up; negative values (e.g. Apr-22 = `-1.67`, Jan-23 = `-1.63`) go down.
+
+**Data labels (lines 241–270):**
+- Each bar gets a single value label — above the bar for positive quarters, below for negative ones — equal to the Investment value itself (since `top`/`bottom` of a one-segment stack is just that value).
+
+**Axis & legend:**
+- The y-axis keeps its fixed range. Investment values span roughly `-1.67` to `4.68`, all within the hard-coded domain floor/ceiling of `[-5, 10]` (lines 137–139), so the axis still reads −5%, 0%, 5%, 10% and the bars look small relative to the full scale.
+- In the legend, **Investment stays highlighted** (full color, bold), while the other four entries are greyed out (`#d8d8d8` swatch, muted text).
+
+**One constraint worth noting:** the user *can* reach this state. The deselect guard `if (active.size > 1)` (line 97) only prevents removing the *last* remaining series — so you can click down to a single active item like Investment, but you can't deselect it to show nothing.

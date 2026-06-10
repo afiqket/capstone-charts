@@ -1,0 +1,29 @@
+## Overall Trend: Strong, Sustained Growth Across All Regions
+
+Across the selected entities (World plus the UN regional aggregates), 4G mobile network coverage shows a **consistent and substantial upward trend** from 2015 to 2023/2024. Every region gained coverage over the period, with the steepest gains occurring in the earlier years (2015–2019) before growth tapered as regions approached saturation.
+
+**Regional figures (≈2015 → latest):**
+
+| Entity | 2015 | Latest (2023/24) | Change |
+|---|---|---|---|
+| World | 43.5% | 91.8% (2024) | **+48 pts** |
+| Northern America (UN) | 99.4% | 99.6% | +0.2 (already saturated) |
+| Europe (UN) | 76.3% | 98.6% | +22 pts |
+| Asia (UN) | 39.8% | 96.0% | **+56 pts** |
+| Latin America & Caribbean (UN) | 57.8% | 90.3% | +33 pts |
+| Oceania (UN) | 74.9% | 88.9% | +14 pts |
+| Sub-Saharan Africa* | ~11% | ~71% (2024) | **+60 pts** |
+
+\*The chart selects "Sub-Saharan Africa (UN)", which is not present in the CSV (only "Sub-Saharan Africa (UN SDG)" exists), so that line would not render — but the SDG series shows the same pattern.
+
+**Key observations:**
+
+1. **Convergence.** Regions that started low (Asia at ~40%, Sub-Saharan Africa at ~11%) grew dramatically and narrowed the gap with early leaders. The global figure roughly **doubled** (43.5% → ~92%).
+
+2. **Saturation at the top.** Northern America was already near-universal (~99%) in 2015 and stayed flat — it had little room to grow. Europe also plateaued near 98–99% after 2019.
+
+3. **Decelerating S-curve shape.** Most regions show rapid early adoption (2015–2019) followed by flattening as coverage approaches 90–100%.
+
+4. **Persistent laggards.** Sub-Saharan Africa, while improving the fastest in absolute terms, remains the lowest-covered region (~70%), still well behind the rest of the world.
+
+**Bottom line:** 4G coverage expanded rapidly and broadly, lifting the world from under half the population covered to roughly 90%+, with developing regions driving most of the growth while developed regions remained at near-complete coverage throughout.

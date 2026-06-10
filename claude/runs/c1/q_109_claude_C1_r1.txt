@@ -1,0 +1,40 @@
+Short answer: **you can't with this chart as written** — the dropdown is there, but it's wired to nothing, and the data has no education field to filter on.
+
+Here's the detail:
+
+**1. The UI control exists.** There's an "Educational Attainment" dropdown with a `"Bachelor's degree"` option:
+
+```js
+const selEdu = makeSelect("Educational Attainment", [
+  "(All)", ..., "Bachelor's degree", "Advanced degree"
+], topFilters)
+```
+
+It's even hooked up to redraw on change (`[selRegion, selSex, selEdu, ...].forEach(sel => sel.addEventListener("change", draw))`).
+
+**2. But `draw()` ignores it.** Inside `draw()`, only three values are read — `selSex.value`, `selBreakout.value`, and `selChartType.value`. `selEdu.value` (and `selRegion.value`) are never read, so picking "Bachelor's degree" changes the menu but not the chart. The same is true for Region.
+
+**3. The data can't support it anyway.** `newlyweds.csv` has only three columns:
+
+```
+group, age, count
+```
+
+…and `group` only ever holds `Female` or `Male`. There is no education (or region, or race) column. So there's nothing to filter on even if you wired the dropdown up.
+
+**To actually make it work**, you'd need two changes:
+
+1. **Get richer data** — the CSV would need an `education` column (e.g. `Female,27,Bachelor's degree,134582`), so each row is broken out by educational attainment.
+
+2. **Apply the filter in `draw()`** — add a line alongside the existing sex filter:
+
+```js
+const eduFilter = selEdu.value
+let rows = data
+if (sexFilter !== "(All)") rows = rows.filter(d => d.group === sexFilter)
+if (eduFilter !== "(All)") rows = rows.filter(d => d.education === eduFilter)
+```
+
+Then selecting "Bachelor's degree" would restrict the chart to those rows.
+
+As it stands, the education (and region) dropdowns are decorative placeholders — likely a half-finished feature.

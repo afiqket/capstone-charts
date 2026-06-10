@@ -1,0 +1,17 @@
+After 2013, the data shows ZHVI (home values) rising steadily from ~$153,700 in Jan 2013 to ~$226,800 by April 2019, while Inventory (homes for sale) generally declines from ~2.02M in early 2013 to ~1.57M by mid-2019.
+
+**What can be inferred:**
+
+This pattern signals a **tightening seller's market driven by constrained supply**:
+
+1. **Supply-demand imbalance** — Fewer homes available for sale while values keep climbing indicates demand is outpacing supply. Scarcity itself becomes a price driver.
+
+2. **Upward price pressure from scarcity** — With buyers competing for a shrinking pool of listings, sellers can command higher prices, reinforcing ZHVI growth.
+
+3. **Post-recession recovery dynamics** — After the 2008–2012 housing correction (visible earlier in the ZHVI data, which bottomed around $148K in early 2012), the market shifts into a sustained recovery where homeowners hold properties (reducing inventory) as values appreciate.
+
+4. **Reduced market liquidity / seller hesitation** — Owners may be reluctant to list because trading up means buying into the same expensive market, creating a feedback loop that further suppresses inventory.
+
+5. **Affordability erosion** — Rising prices on shrinking supply implies worsening affordability for buyers, consistent with the broader 2013–2019 U.S. housing narrative.
+
+In short: the divergence is a classic signature of a **supply-constrained, appreciating housing market** — the hallmark of the post-2012 U.S. recovery.

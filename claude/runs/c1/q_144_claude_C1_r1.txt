@@ -1,0 +1,23 @@
+In this chart, managers are hidden by default — only the club logos (nodes) and their labels are shown. Manager dots appear only when you turn on their category via the legend, and individual connections appear on hover. So to see *all* Everton managers plus all *current* managers, you combine the legend toggles with a hover:
+
+**1. Turn on both manager categories using the legend** (top-left, at `translate(10,90)`):
+- Click the red **"Current Manager"** dot → sets `state.showCurrent = true`
+- Click the teal **"Manager"** dot → sets `state.showManagers = true`
+
+Clicking calls `updateVisibility()` (chart code lines 129–133, 152–153). With both active, `categoryVisible()` (lines 317–322) returns true for every `Manager` and `Current Manager` node, so all manager dots become visible across all clubs.
+
+**2. Hover over the Everton club node** (or its label).
+Hovering triggers `setHovered(d)` (lines 398–404). For a hovered club, `connectedSetFiltered()` (lines 338–346) collects every neighboring manager whose group is currently active, and `updateVisibility()` (lines 441–457) then:
+- keeps Everton's connected managers fully opaque (others fade to 0.12),
+- shows their labels,
+- highlights the linking lines in teal (`shouldHighlightLink`, lines 374–377).
+
+Everton's managers come from the link data (`chart_041_2.csv`, rows 144–164): Howard Kendall, Jimmy Gabriel, Mike Walker, Joe Royle, Dave Watson, Walter Smith, David Moyes, Roberto Martínez, David Unsworth, Ronald Koeman, Sam Allardyce, Marco Silva, Duncan Ferguson, Carlo Ancelotti, Rafael Benítez, Frank Lampard, and Sean Dyche.
+
+**Two important caveats from the code:**
+
+- **Hover-highlighting only works with a legend category active.** `connectedSetFiltered()` returns just the hovered node itself if no category is on (lines 335–336), and `shouldHighlightLink` returns false (lines 366–367). So you must do step 1 before step 2 for the Everton connections to appear.
+
+- **"Current Manager" is a separate group, not a subset of "Manager."** A node is one or the other in `points.csv`. In this data only **David Moyes** is tagged `Current Manager` (row 116) *and* linked to Everton — and he's Everton's current manager (the duplicate David Moyes→Everton at line 164 reflects his second spell). The other 16 Everton names are plain `Manager`. So the red "Current Manager" toggle is what reveals current managers league-wide (Iraola, Farke, Moyes, Howe, Silva, Arteta, Nuno, Glasner, Guardiola, Edwards, Parker, Dyche, Frank, Emery, Slot, Maresca, Hürzeler, Andrews, Le Bris, Fletcher), while the teal toggle reveals the historical ones.
+
+In short: **click both legend dots to switch every manager category on, then hover the Everton logo** — Everton's full managerial list lights up, and all current managers across the league are simultaneously visible in red.

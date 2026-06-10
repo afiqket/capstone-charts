@@ -1,0 +1,32 @@
+## Reading the range from the map's legend
+
+The map's range is defined by its **color legend**, which sits centered below the map (`legY = mapH + 18`). The legend is a stepped/log scale built from two arrays in the code:
+
+```js
+const logBreaks  = [1, 10, 100, 1000, 10000];
+const mapColors  = ["#f0f5f0","#d4e8d0","#f5c49a","#e8835a","#c93d1a","#8b0d02"];
+const colorScale = d3.scaleThreshold().domain(logBreaks).range(mapColors);
+
+const legLabels = ["0","<1","10","100","1,000","10,000"];
+```
+
+So on the map you'll see, left → right:
+- A separate **hatched "No data"** box (countries with no entry / not in `numericEntityMap`)
+- Six color bands with the tick labels **0 · <1 · 10 · 100 · 1,000 · 10,000**
+
+Each band is a *threshold bucket* (a `scaleThreshold` colors everything between two breaks the same shade):
+
+| Color | Value range |
+|-------|-------------|
+| lightest (`#f0f5f0`) | below 1 (and exactly 0 is forced to `#f7f4f0`) |
+| `#d4e8d0` | 1 – 9 |
+| `#f5c49a` | 10 – 99 |
+| `#e8835a` | 100 – 999 |
+| `#c93d1a` | 1,000 – 9,999 |
+| darkest (`#8b0d02`) | 10,000 and above |
+
+So the **range readable from the map is 0 up to 10,000+**, on a logarithmic scale. To find an individual country's value, hover over it — the tooltip shows the exact number (`fmtVal`) plus a sparkline of that country's full min–max year span.
+
+## One caveat worth flagging
+
+Although the tooltip is labeled **"deaths per 100,000 people"** (a *rate*), the value actually plotted is the column `valueCol = "Best estimate"`, which in the CSV is an **absolute death count**, not a rate. For example `World, 1994 = 779683` and `Rwanda, 1994 = 770531` are raw counts. So the legend buckets (and the title's "death rate" wording in the Bar view) describe **counts**, not a true per-100,000 rate — the label and the data don't match. If you genuinely need a death *rate*, this dataset/legend won't give it to you; you'd need to divide by population.

@@ -1,0 +1,32 @@
+Moving the slider in **line** mode controls the **start year of the chart's x-axis window** — it doesn't mark a single year the way it does on the map/bar views.
+
+Here's the exact chain. Dragging the handle (or clicking the track) runs:
+
+```js
+currentYear = clamp(round(sliderScale.invert(event.x)))
+redraw()   // → renderLine() since mode === "line"
+```
+
+And the first line of `renderLine()` is the key:
+
+```js
+const lineStartYear = currentYear >= maxYear ? minYear : currentYear;
+```
+
+So the slider position becomes the **left edge** of the time range, while the right edge is always `maxYear` (2024). Concretely:
+
+- **Slider at the far left (1989 = `minYear`)** → `lineStartYear` = 1989 → full range 1989–2024 shown.
+- **Slider in the middle (e.g. 2010)** → `lineStartYear` = 2010 → chart zooms to just 2010–2024.
+- **Slider at the far right (2024 = `maxYear`)** → the `>= maxYear` branch fires and it snaps **back to the full range** 1989–2024 (not an empty 2024-only window).
+
+So as you slide right, the chart progressively "trims" earlier years and zooms into the recent period — until you hit the very end, where it resets to showing everything.
+
+Each move triggers a full re-render of the line view, which also:
+- **re-filters** each country's series to `Year >= lineStartYear` (`seriesData`),
+- **rescales both axes** — the x-domain becomes `[lineStartYear, maxYear]`, and the y-domain is recomputed (`.nice()`) from only the *visible* values' max, so the vertical scale can jump as you zoom,
+- recomputes the x-tick spacing and the right-edge country labels (with their anti-overlap nudging),
+- **stops any running play animation** (`stopPlay()`), since dragging counts as manual control.
+
+One thing it does *not* do: in line mode the slider position is **not** drawn as a vertical marker on the plot. The dashed vertical line + per-country dots only appear when you hover over the plot area, independent of the slider. (The blue "active track" still fills up to the handle on the slider itself.)
+
+So in short: the bottom slider is effectively a **"zoom from year X to present"** control for the line chart, with the far-right position acting as a "show all years" reset.

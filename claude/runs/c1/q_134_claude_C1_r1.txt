@@ -1,0 +1,16 @@
+To see only **Consumption** as a contribution, you use the chart's **interactive legend toggles**.
+
+Each legend item at the top is clickable (`chart_039.js:89-102`). Clicking a legend entry that's currently active removes its key from the `active` set (and clicking an inactive one adds it back), then re-renders.
+
+The bars drawn are only those whose key is in `active`:
+```js
+const activeBars = series.filter(d => d.type === "bar" && active.has(d.key));
+```
+
+So, starting from the default where all five series are active (line 17), you would **click the legend chips for the other four series** — `Real GDP`, `Investment`, `Net exports`, and `Government spending` — to deactivate them. That leaves `Consumption` as the only key in `active`, so only its bars render.
+
+Two details worth noting:
+- There's a floor of one active series: `if (active.size > 1) active.delete(s.key)` (line 97). You can never deactivate *everything* — so leaving just Consumption is exactly the minimal state the chart allows.
+- `Real GDP` is drawn as a *line* (with dots), not a bar (lines 10, 272-298), so turning it off removes the overlaid GDP line; the other three are bars stacked alongside Consumption.
+
+When only Consumption remains active, every other key fails the `active.has(...)` check, so no other bars or the line are drawn — you see Consumption alone.

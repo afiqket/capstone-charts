@@ -1,0 +1,30 @@
+Looking at the `playBtn.on("click", …)` handler and the related state, here's what clicking the play button does.
+
+## The toggle
+
+The button toggles between two states tracked by `playing`:
+
+**If already playing** → calls `stopPlay()`, which sets `playing=false`, clears the interval timer, and resets the icon back to `▶`. So a second click pauses the animation.
+
+**If not playing** → it starts an animated playback:
+1. Sets `playing=true` and changes the icon to the pause symbol `⏸`.
+2. If the year is already at the end (`currentYear >= maxYear`, i.e. 2024), it rewinds to `minYear` (1989) first — so pressing play at the end restarts from the beginning rather than doing nothing.
+3. Starts a `setInterval` that fires **every 350 ms**: it advances `currentYear` by one (capped at `maxYear`) and calls `redraw()`.
+
+## What `redraw()` does each tick
+
+`redraw()` calls `updateSlider()` (moves the slider handle and the blue active track to the new year) and then re-renders whichever view is active. Since `mode === "map"` by default, it calls `renderMap()`, which:
+- Updates the title to `"Deaths in intrastate conflicts based on where they occurred, <year>"`.
+- Recolors every country by its death count for that year (via `getValueForYear` and the threshold color scale), redrawing the choropleth.
+
+So visually: the slider handle marches left-to-right while the map's colors update year by year, animating the data from **1989 through 2024**.
+
+## How it ends
+
+Each tick checks `if(currentYear>=maxYear) stopPlay()`. So once it reaches **2024**, it automatically stops — the timer clears and the icon returns to `▶`. The animation does not loop on its own.
+
+## Notes
+- The animation works the same way in Line and Bar modes (it calls the matching render function), though Line mode behaves a bit differently because its start year depends on `currentYear`.
+- Dragging the slider handle or clicking on the slider track calls `stopPlay()` first, so manually moving the slider interrupts an in-progress animation.
+
+In short: **clicking play animates the chart forward through the years (~350 ms per year, 1989→2024), turning the button into a pause control; it auto-stops at 2024, and clicking again pauses/resumes.**

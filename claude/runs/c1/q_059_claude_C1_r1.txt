@@ -1,0 +1,29 @@
+Based on the code, here's how multi-country comparison works in this chart:
+
+## Use the 📈 Line or 📊 Bar buttons
+
+The chart has three view buttons at the top (`btnMap`, `btnLine`, `btnBar`). The **Map** view only shows one country at a time (on hover). For comparing multiple countries, switch to **Line** or **Bar**:
+
+**📈 Line view** (`renderLine`) — the best for comparison:
+- Plots one color-coded line per country over time, with the country name labeled inline at the end of each line (labels auto-separate so they don't overlap).
+- Hovering anywhere draws a vertical guide line and pops up a tooltip listing **every country's value at that year simultaneously**, so you can read them side-by-side.
+- The year slider sets the start year: at max year it shows the full range (`minYear` to `maxYear`); otherwise it starts from the selected year.
+
+**📊 Bar view** (`renderBar`):
+- Shows a horizontal bar per country for the **single year** set by the slider, sorted largest-to-smallest, with value labels — good for ranking countries at one point in time. Move the slider (or press ▶ to animate) to see how the ranking changes year by year.
+
+## Which countries are compared
+
+This is the key limitation: the compared countries are **hardcoded**, not selectable in the UI:
+
+```js
+function _selectedCountries(){return(
+["United States", "United Kingdom", "China", "India", "Japan"]
+)}
+```
+
+Both the Line and Bar views iterate over this fixed `selectedCountries` list. The per-country line colors are also fixed for exactly these five (`lineColor` scale domain: China, United States, Japan, India, United Kingdom).
+
+So **out of the box you can only compare those 5 countries** (US, UK, China, India, Japan). To compare a different set, you'd have to edit the `_selectedCountries` array (and ideally the `lineColor` domain/range) in the code — there is no dropdown or selector for it.
+
+A minor side note: the Map view's hover tooltip includes a mini sparkline of a single country's full history, which is useful for inspecting one country at a time but not for direct cross-country comparison.

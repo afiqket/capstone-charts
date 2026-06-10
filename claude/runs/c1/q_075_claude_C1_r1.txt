@@ -1,0 +1,21 @@
+When you hover over a country shaded orange (`COLOR_YES = "#e8916a"`, meaning a war was ongoing that year), the `mousemove` handler on that country's path fires and does two things:
+
+**1. Visual highlight on the map**
+- All countries' borders are reset to thin white (`stroke #fff`, width `0.4`).
+- The hovered country gets a dark outline (`stroke #333`, width `1.5`) and is raised to the front (`.raise()`), so it's visibly emphasized against its neighbors.
+
+**2. A tooltip appears** (`showTooltip`)
+A white rounded box (240×78, with a drop shadow) shows up near the cursor, containing three lines:
+- **Country name** in bold (e.g., "Colombia").
+- **The current year** in small gray text (whatever the slider is set to — `2010` by default, since `currentYear` starts at `maxYear`).
+- Since the value is `1`, the result line reads **"Yes — conflict occurred"**, and that text is colored the same orange (`COLOR_YES`).
+
+The tooltip flips to the left of the cursor if it would overflow the right edge, and is clamped vertically to stay on screen.
+
+Concretely, with the default 2010 view, hovering an orange country like Colombia, Iraq, or Pakistan outlines it in dark gray and pops a tooltip such as:
+
+> **Colombia**
+> 2010
+> **Yes — conflict occurred**  *(in orange)*
+
+When you move off the country (`mouseleave`), the dark outline is removed and the tooltip is hidden. Note: this hover behavior only exists in **Map** mode — the Line (small-multiples) view has no tooltip.

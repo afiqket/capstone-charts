@@ -1,0 +1,10 @@
+The Open Space colored green is **Golf Course**.
+
+In the code (Section 7), the fill color is assigned based on the open space name:
+
+```js
+if (openSpaceName === "golf course") return "#bfe3b4";   // green
+if (openSpaceName === "play space") return "#f4b6b6";    // pink/red
+```
+
+`#bfe3b4` is a light green, and it's mapped to **"Golf Course"** (while "Play Space" gets the pink `#f4b6b6`).

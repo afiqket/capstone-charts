@@ -1,0 +1,9 @@
+When you type in the search bar, the chart highlights matches by combining three visual effects:
+
+1. **Dimming non-matches** (the primary highlight mechanism): In `drawQuakes()`, every earthquake is checked against the query via `d.searchText.includes(searchQuery)`. Non-matching points are drawn with very low opacity — the vertical "spike" line gets `globalAlpha = 0.06` (vs. 0.34 normally) and the dot gets `globalAlpha = 0.08` (vs. 0.58 normally). Matching points keep their normal opacity, so they visually pop against the faded background.
+
+2. **A dashed focus ring around the first match**: A black, dashed circle (`focusRing`) is positioned at the first matched earthquake's coordinates with a radius of `signalRadius(first.mag) + 8`, drawing attention to it specifically.
+
+3. **A match counter**: A small white badge in the upper-left shows e.g. "5 matches" (or "No matches" if nothing matches).
+
+The search field (`d.searchText`) is built from the location, magnitude category, mag-bin, year, magnitude, and deaths — so any of those can trigger a match.

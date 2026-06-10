@@ -1,0 +1,14 @@
+Looking at the chart code, time is displayed via `toUTCString()`, so "1am on the 4th of September" is 1am UTC on Sept 4, 2019 → Unix timestamp `1567558800`.
+
+There are 4 flights with `country: Costa Rica`:
+
+| Callsign | Time range (UTC) | Active at 1am Sept 4? |
+|---|---|---|
+| LRC625 (line 5077) | Sep 4 00:15 – 00:42 | No (ended) |
+| **LRC620** (line 9528) | Sep 4 00:39 – 01:45 | **Yes** |
+| VOC4068 (line 11599) | Sep 4 01:12 – 01:28 | No (not yet started) |
+| LRC640 (line 11909) | Sep 4 00:13 – 00:25 | No (ended) |
+
+Only **LRC620** (Avianca Costa Rica, icao24 `a93238`) is airborne at 01:00 UTC on Sept 4 — between coords at `1567558760` and `1567558820`, putting it near (-113.6, 31.4).
+
+**Flight number: LRC620**

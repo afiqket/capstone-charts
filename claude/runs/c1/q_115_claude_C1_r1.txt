@@ -1,0 +1,3 @@
+Based on the chart code, the user would **zoom in** on the map to see flights clearly in dense areas like the United States.
+
+The code sets up a d3 zoom behavior with `scaleExtent([1, 12])` (line 464), allowing up to 12x zoom. As the user zooms in, the code progressively shows more detail — switching from simplified paths (`veryLow`, `low`, `med`) to the `full` resolution path at higher zoom levels (lines 231–244), and increasing the number of trail points rendered (lines 321–323). The user can also **pan/drag** (cursor changes to "grab"/"grabbing") to navigate to specific regions after zooming.

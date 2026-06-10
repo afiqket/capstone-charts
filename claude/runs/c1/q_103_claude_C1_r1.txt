@@ -1,0 +1,18 @@
+Click the **header bar at the top** of the chart.
+
+Here's the mechanism in the code:
+
+- When you click an Open Space tile, `zoomin(d)` runs, descending into that node's borough children.
+- During `render`, the current `rootNode` is drawn as a strip across the top of the chart — it's translated to `translate(0,${-headerHeight})` and sized `width × headerHeight` (Section 8), so it appears as a header bar above the tiles. Its label shows the current Open Space name.
+- That header is made clickable in Section 7:
+
+```js
+nodes
+  .filter(d => d === rootNode ? d.parent : d.children)
+  .attr("cursor", "pointer")
+  .on("click", (event, d) => d === rootNode ? zoomout(rootNode) : zoomin(d));
+```
+
+So the root node (the header) is given a pointer cursor and, on click, calls `zoomout`, which transitions back up to the parent level — returning you to the "Open Spaces" overview.
+
+(Note: the `.filter(d => d === rootNode ? d.parent : ...)` means the header is only clickable when the current root actually *has* a parent — i.e., when you've zoomed in. At the top "Open Spaces" level the header isn't clickable, since there's nowhere further up to go.)

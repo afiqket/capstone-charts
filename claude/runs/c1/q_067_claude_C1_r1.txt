@@ -1,0 +1,8 @@
+**In the chart's default view (2024, the latest year), Ethiopia has the higher death rate.**
+
+- **Ethiopia, 2024:** ≈ 3.07 deaths per 100,000 people
+- **Afghanistan, 2024:** ≈ 0.85 deaths per 100,000 people
+
+So for the most recent year shown, **Ethiopia's death rate is roughly 3.6× higher than Afghanistan's**.
+
+A caveat worth noting, since the chart also has a time slider/line view: this ranking is recent and not typical of the full record. Over most of the 1989–2021 period **Afghanistan** had the far higher death rate (e.g., Afghanistan peaked at ~91 per 100,000 in 2021, and was consistently in the tens for decades), whereas Ethiopia was mostly below 1 except for a sharp spike during the Tigray war (2020: ~20.5, 2021: ~106, 2022: ~131.6). Both then dropped sharply, and by 2023–2024 Ethiopia sits modestly above Afghanistan.

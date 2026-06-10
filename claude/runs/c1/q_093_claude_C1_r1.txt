@@ -1,0 +1,5 @@
+Click the **"CROPS MOST COMMONLY GROWN"** button.
+
+That switches the tab to chart2, which renders the "Five Crops Most Commonly Grown" view. To narrow it to Tanzania specifically, open the **Country** dropdown and select just **Tanzania**.
+
+The data would then show Tanzania's top crops: Maize (98%), Bean (62%), Pigeonpea (45%), Sunflower (23%), and Sorghum (11%).

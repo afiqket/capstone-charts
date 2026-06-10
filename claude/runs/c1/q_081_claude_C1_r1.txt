@@ -1,0 +1,30 @@
+**Short answer: the value is `24`** (Best estimate of deaths for Ethiopia in 2000).
+
+From the data:
+```
+Ethiopia,ETH,2000,24
+```
+
+### How the line chart gets to that value
+
+The line chart (`renderLine`) pulls each country's series from the `dataByCountry` map, which is built by grouping the raw CSV by `Entity`:
+
+```js
+dataByCountry = d3.group(rawData, d => d.Entity)
+```
+
+So for Ethiopia:
+
+1. **Look up the entity** — `dataByCountry.get("Ethiopia")` returns all 36 yearly rows (1989–2024). Ethiopia is in `selectedCountries`, so it's drawn.
+2. **Filter by start year** — the series is filtered with `d => d.Year >= lineStartYear` and sorted by year. Whether 2000 is shown depends on the time slider: `lineStartYear = currentYear >= maxYear ? minYear : currentYear`. With the slider at the max (2024), `lineStartYear = minYear = 1989`, so 2000 is included. If you've dragged the slider past 2000, that point gets filtered out.
+3. **Read the value column** — the y-value comes from `valueCol`, which is `"Best estimate"`. So the plotted point is `row["Best estimate"]` = **24** at `Year = 2000`.
+
+### To read it directly in the chart UI
+Hover the line area near the 2000 tick — the vertical guide line + tooltip code (`bisector` on `Year`) finds the nearest year and lists each country's value as `${entity}: ${fmtVal(value)}`, which would show **`Ethiopia: 24`**.
+
+### To extract it programmatically
+```js
+dataByCountry.get("Ethiopia").find(r => r.Year === 2000)["Best estimate"]  // 24
+```
+
+Note: 24 is a small value, so on the line chart's shared y-axis (which scales to Ukraine/Eritrea's tens of thousands) Ethiopia's 2000 point sits visually flat near the baseline, even though the 1999 spike (2,026) is the one that stands out for Ethiopia.

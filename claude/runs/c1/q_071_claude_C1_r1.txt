@@ -1,0 +1,26 @@
+## Answer for Australia in 1989
+
+Looking at the data row directly:
+
+```
+Australia,AUS,1989,0
+```
+
+The value in the `Country where conflict took place - Conflict type: all` column is **`0`**, which the chart interprets as **"No — no conflict"** (the opposite of conflict).
+
+## How the chart surfaces this information
+
+**Use the Map view (the default mode):**
+
+1. **Set the year to 1989** using the slider at the bottom. Drag the handle (or click the track) all the way to the left — `minYear` is 1989, so it's the leftmost position. You can also press the ▶ play button, which starts at `minYear` (1989).
+2. **Hover your mouse over Australia** on the map. The tooltip logic runs:
+   - It maps Australia's geographic ID → ISO code `AUS` → numeric `036` via `alpha3Numeric`/`numericEntityMap`.
+   - It looks up `dataByCountry.get("Australia")` and finds the row where `r.Year === 1989`.
+   - Since `row[valueCol] === 0` (not `1`), the tooltip shows **"No — no conflict"** in blue (`#7db8d4`).
+3. **Visually**, Australia's landmass is filled with the blue "No" color (`COLOR_NO`) for 1989, versus orange (`COLOR_YES`, `#e8916a`) for countries with conflict.
+
+**Note on the Line view:** The small-multiples "📈 Line" mode only renders the four hardcoded `selectedCountries` — `["China", "Russia", "United Kingdom", "United States"]` — so Australia does **not** appear there. The map tooltip is the only interactive way to read Australia in this chart.
+
+## Summary
+
+In 1989, **Australia had no armed conflict** (value `0` = "No"). In fact, in this dataset Australia shows `0` for every year from 1989 onward except **2018**, which is the only year it records a `1` ("Yes — conflict occurred").

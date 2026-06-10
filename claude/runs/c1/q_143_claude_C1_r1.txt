@@ -1,0 +1,12 @@
+Cunha is one of **Wolves'** players in the Premier League branch of the hierarchy data. His transfer fee is stored in the `value` field:
+
+```js
+{ name: "Wolves", children: [
+  ...
+  { name: "Cunha", value: 50.00 }
+]}
+```
+
+**To get the transfer fee for Cunha:** read the `value` of the leaf node whose `name` is `"Cunha"` → **€50.00m**.
+
+In the chart's own terms, this surfaces when you drill into Wolves (click Premier League → Wolves) and hover over Cunha's bubble, where the tooltip renders `<strong>Fee:</strong> €${d.data.value}m` → **"Fee: €50m"** (line 423). The player labels also show it as `€50.0m` via `€${d.data.value}m` (line 452).

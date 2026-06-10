@@ -1,0 +1,33 @@
+## Short answer
+
+In this chart, **"Yes" means `War took place = 1`** (the orange color `COLOR_YES`). For the year **2010**, only **three** countries are marked "Yes":
+
+| Entity | Code | Year | War took place |
+|--------|------|------|----------------|
+| Colombia | COL | 2010 | 1 |
+| Iraq | IRQ | 2010 | 1 |
+| Pakistan | PAK | 2010 | 1 |
+
+Every other country in the CSV has `0` for 2010.
+
+## How that information is reached
+
+**1. From the data directly (the reliable way)**
+Filter the CSV rows where `Year === 2010` **and** `"War took place" === 1`. That yields exactly Colombia, Iraq, and Pakistan.
+
+**2. From the chart's own logic**
+The map render colors each country for the selected year using this rule (in `renderMap`):
+
+```js
+const row = rows.find(r => r.Year === currentYear);   // currentYear = 2010
+return row[valueCol] === 1 ? COLOR_YES : COLOR_NO;     // valueCol = "War took place"
+```
+
+So a country is shown as "Yes" (orange) only when its 2010 row has `War took place === 1`.
+
+**3. Interactively in the rendered chart**
+- Move the year slider (or use the play button) until `currentYear` is **2010** (2010 is also `maxYear`, the default position).
+- On the **🌍 Map** view, the orange countries are the "Yes" ones — hover any country to get a tooltip showing the entity name, year, and `"Yes — conflict occurred"`.
+- The data is grouped by country in `dataByCountry` (`d3.group(rawData, d => d.Entity)`), so programmatically you could also do, for each entity, `dataByCountry.get(entity).find(r => r.Year === 2010 && r["War took place"] === 1)`.
+
+One caveat: the map can only *display* a country as "Yes" if its `Code` maps through `alpha3Numeric` to the world-atlas geometry. Colombia (COL), Iraq (IRQ), and Pakistan (PAK) all map correctly, so all three will appear orange on the 2010 map.

@@ -1,0 +1,16 @@
+This chart is a network/bubble visualization of Premier League clubs and their managers. Each **club is drawn as a bubble whose size is scaled to its "Number of managers"** value — in the code, `radius` for a Club is `8 + Math.sqrt(d.value) * 5`, where `d.value` is the manager count from `points.csv`.
+
+So a **large club bubble suggests the club has cycled through many managers** over its history — i.e. low managerial stability, frequent hiring and firing, and likely turbulence or inconsistent results.
+
+You can see this directly in the data. The biggest bubbles belong to clubs with the highest manager counts:
+
+- **Chelsea** and **Tottenham Hotspur** — 57 each
+- **Southampton** — 49
+- **Newcastle United** — 48
+- **Aston Villa** and **Crystal Palace** — 44 each
+- **Everton** — 40
+- **West Bromwich Albion** — 36
+
+By contrast, the smallest bubbles are clubs with stable or short top‑flight histories — e.g. **Manchester United** (20, reflecting the long Ferguson era), **Arsenal** (18, long Wenger tenure), or clubs with brief spells like **Brentford**, **Blackpool**, **Luton Town**, **Swindon Town** (2 each).
+
+In short: **a big bubble = many managers = a history of managerial churn / instability**, while a small bubble points to either managerial stability (long-serving managers) or simply a shorter overall history at the level being tracked.

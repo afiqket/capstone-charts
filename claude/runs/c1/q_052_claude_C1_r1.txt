@@ -1,0 +1,9 @@
+**Around 2009.**
+
+Summing all four violent-crime types for Harris County (the chart's default "All" view), the yearly totals peak in **2009**:
+
+- 2008: 5058 + 351 + 74 + 2441 = **7,924**
+- **2009: 5087 + 281 + 96 + 2975 = 8,439** ← highest
+- 2010: 4741 + 212 + 77 + 3059 = **8,089**
+
+(2011 has blank crime values, which the code treats as 0, so it isn't a contender.) Harris County's reported violent crime count reached its high point around **2009**, at roughly 8,400 crimes.

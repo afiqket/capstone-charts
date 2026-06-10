@@ -1,0 +1,17 @@
+Looking at the ZRI (Zillow Rent Index) data: it dips to a low around early 2012 (~$1,237) and then rises steadily to ~$1,477 by April 2019.
+
+Several plausible reasons for the steady rise after 2012:
+
+1. **Post-recession housing recovery.** The 2008–2011 period left ZRI flat/declining. After 2012, the broader economy recovered, employment rose, household formation resumed, and demand for rentals strengthened.
+
+2. **Shift from ownership to renting.** Many households displaced by foreclosures during the crisis became renters, and tighter mortgage credit kept would-be buyers out of the ownership market — pushing up rental demand.
+
+3. **Constrained housing supply.** The inventory series in the same chart shows for-sale inventory dropping sharply from ~2.0M in 2013 to ~1.6M by 2019. Limited supply (both for sale and rentable) drove up rents.
+
+4. **Rising home values pulled rents up.** The ZHVI series rises from ~$149K in early 2012 to ~$227K by 2019 — landlords pass higher property values, taxes, and acquisition costs through to tenants.
+
+5. **Urbanization and millennial demand.** Millennials entering prime renting age in the 2010s concentrated demand in metro areas where supply was inelastic.
+
+6. **Low interest rates fueling investor purchases.** Cheap capital let institutional investors buy single-family homes and convert them to rentals, professionalizing the market and lifting asking rents.
+
+In short: a recovering economy plus suppressed supply plus a structurally larger renter pool — visible in the same chart's ZHVI climb and inventory decline — all push ZRI steadily upward after 2012.

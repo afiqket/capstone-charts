@@ -1,0 +1,26 @@
+## Short answer
+
+Dragging the handle from the far-left to the far-right of the slider sweeps `currentYear` from **1998 to 2025**, continuously re-rendering the chart at each step. But the last two years (2024–2025) show **no new information** for the map/line/bar views — the picture effectively freezes at 2023.
+
+## Why those are the endpoints
+
+The slider domain is `[minYear, maxYear]`, derived from the data:
+- Earliest year in the CSV is **1998** (Belgium, Brazil, Canada, France, Japan, US, etc.) → `minYear = 1998`
+- Latest year is **2025**, but 2024–2025 rows exist *only* for aggregates (`World`, `East Asia and Pacific (WB)`, income groups…) → `maxYear = 2025`
+
+The chart also explicitly starts at `currentYear = minYear` (1998), so the handle begins at the left edge.
+
+## What you'd see while dragging (default Map mode)
+
+1. **Every drag event** calls `stopPlay()` (cancels any running animation), recomputes `currentYear = round(sliderScale.invert(x))` clamped to [1998, 2025], and `redraw()`s — so the map repaints smoothly and the title updates: *"Landline Internet subscriptions, {year}"*. The blue active track grows left-to-right behind the handle.
+
+2. **~1998–2023:** A genuine animation. In 1998 only a handful of countries have data; the rest render with the diagonal `#hatch` "No data" pattern (because `getValueForYear` returns `null` when there's no row at or before that year). As the year advances, more countries fill in and colors deepen from cream → orange → dark brown on the log color scale as subscriptions grow.
+
+3. **2024 and 2025 — the catch:** No individual country has data past 2023 (country rows stop at 2023; only OWID/WB aggregate entities have 2024–2025, and those aren't mapped to map geometry via `numericEntityMap`). So `getValueForYear` falls into its fallback branch and returns each country's **2023 value carried forward** (`estimated: true`). The result: the map at 2024 and 2025 looks **identical to 2023**, even though the title reads "2024" / "2025". If you hover, the tooltip's year label shows the real data year (2023), not the slider year.
+
+## Notes on the other modes
+
+- **Bar mode:** same behavior — bars for the 5 selected countries at 2024/2025 are just their 2023 values, sorted descending.
+- **Line mode:** dragging changes the chart's start year. While `currentYear < maxYear`, the line chart spans `currentYear → 2025`; the moment you reach 2025 (`currentYear >= maxYear`), `lineStartYear` snaps back to `minYear`, so the title/axis jump to the full *"1998 to 2025"* range. The selected countries' lines still end at 2023 (their last real data point), so the 2024–2025 portion of the x-axis is empty.
+
+In short: it's a working time scrubber over 1998–2025, but it's effectively only meaningful through 2023 — the final two slider positions are a "phantom" range where country data is just the 2023 snapshot held constant.

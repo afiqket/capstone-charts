@@ -1,0 +1,31 @@
+You identify it through the **`Economy` column** in the data, which is encoded in the chart by **bar color**.
+
+**In the data**, every row has an `Economy` value that is one of three categories:
+
+| Region/Country | Economy |
+|---|---|
+| United States | U.S. |
+| Canada | Developed |
+| UK | Developed |
+| Europe | Developed |
+| China | Emerging |
+| Japan | Developed |
+| Emerging other | Emerging |
+| Brazil | Emerging |
+
+**In the chart**, the code maps each `Economy` category to a color, and fills each bar with `colors[d.economy]`:
+
+- **U.S.** → pink `#ef4b92`
+- **Developed** → teal `#2c8794`
+- **Emerging** → grey `#9aa7a8`
+
+So visually:
+- **Developed**: Canada, UK, Europe, Japan (teal bars)
+- **Emerging**: China, Emerging other, Brazil (grey bars)
+- The U.S. is broken out separately (pink) rather than grouped with "Developed."
+
+Two ways to read it off the chart itself:
+1. **Match the bar color to the legend** at the top ("U.S." / "Developed" / "Emerging").
+2. **Hover over any bar** — the tooltip shows an "Economy" row stating that country's category directly.
+
+One note: China's bar also gets a distinct black outline (`stroke: #111`) to single it out, but its grey fill still marks it as Emerging.

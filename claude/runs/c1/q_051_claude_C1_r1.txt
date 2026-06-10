@@ -1,0 +1,17 @@
+Hovering over Canada triggers the `mousemove` handler on its `<path>`. Here's what happens, step by step:
+
+1. **Country lookup succeeds.** Canada's TopoJSON feature id is `124`. The handler does `numericEntityMap.get(String(124).padStart(3,"0"))` → `"124"`. Since the CSV has a `Canada` row with `Code = CAN`, and `alpha3Numeric["CAN"] = "124"`, the map returns `entity = "Canada"`.
+
+2. **Value lookup succeeds.** `dataByCountry.get("Canada")` returns `72.9736` (not null), so the tooltip is *not* hidden.
+
+3. **Border highlight.** All countries' strokes are reset to white at width 0.4, then Canada's path gets `stroke = "#333"`, `stroke-width = 1.5`, and is `.raise()`d to the top of the draw order so its dark outline sits above neighbors.
+
+4. **Tooltip appears** (`showTooltip("Canada", 72.9736, mx, my)`):
+   - Title: **Canada**
+   - Subtitle: "2020 · % took prescribed medication"
+   - Big value (in dark red `#b30000`): **`73.0%`** — note `d3.format(".1f")` rounds 72.9736 to `73.0`.
+   - The tooltip box is 260×84, and it follows the cursor. It flips to the left of the pointer if it would overflow the right edge (`mx + 260 + 20 > 900`), and its vertical position is clamped within the SVG.
+
+The tooltip stays/updates as you move within Canada, and disappears (with the border reset to white) on `mouseleave`.
+
+One note: this behavior only applies in **Map** mode (the default). Canada is not in `selectedCountries`, so in Bar mode it wouldn't be drawn at all.

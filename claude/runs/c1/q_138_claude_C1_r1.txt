@@ -1,0 +1,14 @@
+Looking at the data — these are each component's contribution (in percentage points) to real GDP growth that quarter:
+
+| Quarter | Real GDP | Investment | Net exports |
+|---|---|---|---|
+| **Jul-22** | 2.7% | **−1.05** | **+2.50** |
+| **Jan-25** | −0.2% | **+3.98** | **−4.90** |
+
+**The two roles essentially flipped.**
+
+- **Jul-22:** Net exports were the engine, adding +2.5 pts (the single largest positive contributor that quarter), while Investment was a drag, subtracting −1.05 pts. Despite the investment drag, the strong trade contribution helped keep GDP solidly positive at +2.7%.
+
+- **Jan-25:** The opposite happened. Investment surged to +3.98 pts — a large positive boost — but Net exports collapsed to −4.9 pts, the biggest single drag in the entire dataset. The trade drag more than wiped out the investment gain (and everything else), pulling GDP slightly negative at −0.2%.
+
+**In short:** In Jul-22, net exports lifted GDP while investment weighed it down. In Jan-25 the polarity reversed — investment lifted GDP while a massive net-exports drag dominated and tipped overall growth negative.

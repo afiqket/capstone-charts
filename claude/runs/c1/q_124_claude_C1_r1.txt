@@ -1,0 +1,13 @@
+The button is a **play/pause toggle for the animated bar‑chart race**.
+
+Looking at the code:
+
+- The button is a circle at `translate(56, 620)` (`chart_036.js:289‑298`), positioned to the left of the bars (the bars begin at `margin.left = 140`).
+- Its click handler is `playing ? pause() : play()` (`:300‑302`).
+- `updateIcon()` (`:309‑315`) swaps the icon glyph: a **triangle (▶) when paused** and **two vertical bars (⏸) when playing**.
+
+When pressed to **play** (`:440‑469`), it starts a `d3.timer` that steps `currentIndex` forward through the timeline of FIFA‑ranking dates, calling `setIndex` → `render` each frame. This animates the horizontal bars growing/shrinking and re‑sorting as countries' point totals change over 2013–2023, while the slider handle and the date label advance in sync. If pressed at the end of the timeline, it restarts from the beginning (`:441‑443`).
+
+When pressed again to **pause** (`:471‑483`), it stops the timer and freezes the animation on the current date.
+
+So in short: it starts/stops the time‑lapse animation of the FIFA World Ranking bar race.

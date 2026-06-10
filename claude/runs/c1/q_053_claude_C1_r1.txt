@@ -1,0 +1,29 @@
+## How to find it
+
+The "violent crime count" isn't a single column in the data — it's a **sum across the four crime-type rows** for a given agency and year. This is exactly what the chart does in its `drawChart` function when the crime filter is `"All"`:
+
+```js
+const agg = d3.rollup(
+  rows,
+  v => d3.sum(v, d => +d.Number_reported),  // sum Number_reported
+  d => d.Agency,                            // group by agency
+  d => +d.Year                              // then by year
+);
+```
+
+So to get the 2008 figure for each sheriff department, take every row where `Year == 2008` for that agency, and add up the `Number_reported` values across all four `Crime_Type` rows (Aggravated Assault + Forcible Rape + Murder and Non-negligent Manslaughter + Robbery).
+
+## The 2008 values from the data
+
+| Agency | Agg. Assault | Forcible Rape | Murder | Robbery | **Total violent crimes (2008)** |
+|---|---|---|---|---|---|
+| **Harris County** | 5058 | 351 | 74 | 2441 | **7924** |
+| **Montgomery County** | 525 | 41 | 8 | 132 | **706** |
+| **Fort Bend County** | 843 | 51 | 6 | 141 | **1041** |
+| **Brazoria County** | 48 | 3 | 0 | 21 | **72** |
+
+A few notes consistent with the code's logic:
+
+- Blank `Number_reported` cells are treated as 0 (`(d.Number_reported !== "" && !isNaN(...)) ? +d.Number_reported : 0`). None of the four agencies have blanks in 2008, so this doesn't affect these totals.
+- If you instead want a single crime type for 2008 (e.g., just Robbery), pick that crime's row rather than summing — that mirrors selecting a specific "Type of crime" in the sidebar dropdown.
+- On the chart itself, the 2008 value is the height of each thick line at the "08" tick on the x-axis (read against the left "Violent crimes reported" axis). The Year dropdown is display-only and does not filter.

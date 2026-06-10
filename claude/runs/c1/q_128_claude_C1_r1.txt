@@ -1,0 +1,16 @@
+Looking at the ZRI data array, it contains 102 monthly entries from November 2010 to April 2019.
+
+Summing all ZRI values:
+- Nov 2010 – Oct 2011 (12 mo): 15,041
+- Nov 2011 – Oct 2012 (12 mo): 14,992
+- Nov 2012 – Oct 2013 (12 mo): 15,252
+- Nov 2013 – Oct 2014 (12 mo): 15,577
+- Nov 2014 – Oct 2015 (12 mo): 16,337
+- Nov 2015 – Oct 2016 (12 mo): 16,773
+- Nov 2016 – Oct 2017 (12 mo): 17,007
+- Nov 2017 – Oct 2018 (12 mo): 17,277
+- Nov 2018 – Apr 2019 (6 mo): 8,800
+
+**Total ≈ 137,056**
+
+**Average = 137,056 / 102 ≈ $1,343.69/month** (about **$1,344/mo**)

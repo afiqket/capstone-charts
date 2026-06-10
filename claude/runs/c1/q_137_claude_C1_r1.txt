@@ -1,0 +1,9 @@
+**Investment** had the highest average contribution.
+
+Summing across all 17 quarters (averages scale the same, so totals suffice):
+
+- **Investment**: ≈ +12.79 total → avg ≈ **+0.75%**
+- **Government spending**: ≈ +5.09 total → avg ≈ +0.30%
+- **Net exports**: ≈ −8.49 total → avg ≈ −0.50%
+
+Investment is the clear winner, driven by strong quarters like Oct-21 (+4.68) and Jan-25 (+3.98).

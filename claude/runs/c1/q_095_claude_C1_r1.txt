@@ -1,0 +1,17 @@
+No. The two views are fully independent — selecting or changing one has no effect on the other.
+
+Here's why, from the code:
+
+1. **Separate data sources.** `chart1` (Soil Conservation) reads `arbes_soil_percent.csv`; `chart2` (Crops) reads `arbes_crop_percent.csv`. Neither reads the other's file.
+
+2. **Separate, locally-scoped state.** Each chart builds its *own* `createMultiSelect` controls inside its own function closure. `chart1` has its own `selectedCountries` and `selectedCategories`; `chart2` has its own `selectedCountries`. These variables don't leak between the two — there's no shared module variable that both read or write.
+
+3. **The tab only switches which chart renders.** `_tabbedChart` does:
+   ```js
+   await (tab === "SOIL CONSERVATION PRACTICES" ? chart1() : chart2())
+   ```
+   The `tab` value (set by the buttons) just picks which chart function to call. It is never passed *into* either chart, and the charts never read `tab`. The soil view's filters can't influence the crop view's filters.
+
+The only thing the two views share is a cosmetic detail — the same `colorMap` country colors and the same `countryOrder` list — but those are independent copies defined separately inside each function, not a live link. Changing a country selection in the soil view does not carry over to the crop view (and vice versa); each maintains its filter state separately.
+
+So switching tabs swaps the displayed chart, but the **"Soil Conservation Practices" view does not affect the "Crops Most Commonly Grown" view.**

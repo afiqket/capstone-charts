@@ -1,0 +1,28 @@
+Dragging the slider handle changes the **selected year**, which redraws the chart for that year. Here's the exact chain of behavior from the code:
+
+The handle (the gray circle at `sliderG`) has a `d3.drag()` attached:
+
+```js
+handle.call(d3.drag().on("drag", function(event){
+  stopPlay();
+  currentYear = Math.max(minYear, Math.min(maxYear, Math.round(sliderScale.invert(event.x))));
+  redraw();
+}));
+```
+
+So on each drag movement:
+
+1. **`stopPlay()`** — if the timeline animation is running (you pressed the ▶ play button), it's halted: the interval is cleared, `playing` is set to `false`, and the play icon resets from ⏸ back to ▶. Manual dragging always takes over from auto-play.
+
+2. **`currentYear` is recomputed** — the drag x-position is converted to a year via `sliderScale.invert(event.x)`, rounded, and clamped to the data range **1989–2024** (`minYear`/`maxYear` come from the CSV's year set). The scale also has `.clamp(true)`, so dragging past either end just pins to 1989 or 2024.
+
+3. **`redraw()`** runs, which does two things:
+   - **`updateSlider()`** — moves the handle to the new year's position and stretches the blue "active track" line from the start up to the handle.
+   - Re-renders whichever view is active:
+     - **🌍 Map mode**: recolors every country by its death rate for that year (log color scale white→orange→dark red), and the title updates to `…, <year>`. Countries with no data stay gray/hatched.
+     - **📊 Bar mode**: rebuilds the horizontal bar chart of the six selected countries (Syria, Afghanistan, Ethiopia, Eritrea, Iraq, Ukraine) for that year, re-sorted highest-to-lowest.
+     - **📈 Line mode**: special case — the year you drag to becomes the **start year** of the x-axis (`lineStartYear = currentYear`), so dragging zooms/trims the time window of the line chart rather than picking a single point. (If the handle is at the max year, it resets to showing the full range from `minYear`.)
+
+One detail: `getValueForYear` falls back to the most recent earlier year if a country has no row for the exact selected year (flagged as `estimated`), so map/bar values never go blank mid-range for countries that have data.
+
+In short: **drag = scrub through time (1989–2024), stopping any running animation and live-updating the map/bars/line for the year under the handle.**

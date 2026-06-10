@@ -1,0 +1,19 @@
+To compare just those two countries, you stay on the **SOIL CONSERVATION PRACTICES** tab (it's already the default) and use the **Country** filter dropdown:
+
+1. Open the **Country** multi-select dropdown (top-left control).
+2. Click **(All)** to clear all selections (or uncheck the ones you don't want).
+3. Check **only Ethiopia and Ghana**, leaving the **Soil Conservation Practices** dropdown at **(All)**.
+
+That filters the chart down to Ethiopia vs. Ghana across all five practices.
+
+Why this works in the code: `chart1` (the soil tab) reads the `Country` multi-select via `getSelected()` and filters each category's data with `shownCountries.includes(row.Country)`, so limiting the selection to those two countries renders only their bars. For reference, the underlying values you'd be comparing (Data 2) are:
+
+| Practice | Ethiopia | Ghana |
+|---|---|---|
+| Erosion in fields | 45% | 23% |
+| Crop rotation | 90% | 65% |
+| Fallowing | 16% | 20% |
+| Irrigation | 13% | 3% |
+| Manure use | 75% | 24% |
+
+No need to touch the CROPS tab — that's `chart2` and a separate dataset.

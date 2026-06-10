@@ -1,0 +1,24 @@
+## How to read Iraq's 2014–2017 deaths in the line chart
+
+**Steps in the chart:**
+
+1. **Click the "📈 Line" button** (top of the chart). Iraq is already one of the six tracked countries (`selectedCountries` includes `"Iraq"`), drawn as the **purple line** (`#7b4ea0`).
+
+2. **Set the start year so 2014–2017 is visible.** The x-axis range depends on the slider position (`renderLine` sets `lineStartYear = currentYear >= maxYear ? minYear : currentYear`):
+   - If the slider is at the far right (2024), the chart spans the **full range 1989→2024**, so 2014–2017 is included.
+   - To zoom into that window, drag the slider handle to **2014**; the x-axis then runs 2014→2024, putting your years of interest at the left edge.
+
+3. **Hover over the plot** at each year. A dashed vertical line snaps to the nearest year and a tooltip lists every country's value for that year (`${entity}: ${value}`). Move across 2014, 2015, 2016, 2017 and read Iraq's row. Iraq's points are also the purple dots on the line.
+
+**What you'll see for Iraq (the "Best estimate" column):**
+
+| Year | Deaths |
+|------|--------|
+| 2014 | 13,168 |
+| 2015 | 10,136 |
+| 2016 | 9,635 |
+| 2017 | 10,228 |
+
+So Iraq peaks at **13,168 in 2014** (the ISIS-conflict surge), then settles around 9,600–10,200 for 2015–2017. Total over those four years ≈ **43,167**.
+
+**One caveat:** the y-axis is shared and auto-scaled to the *tallest* line among all six countries (`d3.max(allVals)*1.08`). Among the selected set (Nepal, Uganda, Ghana, Georgia, Ukraine, Iraq), Iraq is by far the largest in this period, so its line dominates and is easy to trace — but if you only care about exact numbers, rely on the hover tooltip rather than eyeballing the axis.

@@ -1,0 +1,8 @@
+**Male** is larger.
+
+Summing the `count` column across all ages for each group:
+
+- **Male**: ≈ 2.40 million
+- **Female**: ≈ 2.31 million
+
+The pattern in the data explains it: women dominate the younger ages (under ~32, since women tend to marry younger), but men outnumber women at essentially every age from the mid-30s upward. Those older age bands more than offset the female lead among young newlyweds, leaving the male total roughly 90,000 higher overall.

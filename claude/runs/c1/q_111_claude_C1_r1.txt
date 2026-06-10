@@ -1,0 +1,14 @@
+Based on the chart code, a flight is "active" when `currentTime` is between its `startTime` and `endTime`. I found 6 flights with `origin_country = "South Africa"`:
+
+| Flight (callsign) | Start | End |
+|---|---|---|
+| SAA286 | 1567561180 | 1567561720 |
+| 237788 | 1567556700 | 1567560120 |
+| CAI2905 | 1567555200 | 1567561720 |
+| FSK9852 | 1567557880 | 1567559800 |
+| BRH749 | 1567558220 | 1567560220 |
+| ZSMBZ | 1567555200 | 1567555640 |
+
+Sweeping through time, the maximum overlap occurs between timestamps **1567558220 and 1567559800**, when these flights are simultaneously active: **237788, CAI2905, FSK9852, BRH749**.
+
+**Maximum number of flights in South Africa at a given time: 4**

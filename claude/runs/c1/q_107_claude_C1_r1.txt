@@ -1,0 +1,3 @@
+**Women: 27 years old** (134,582 marriages) and **men: 29 years old** (131,902 marriages).
+
+These are the modes — the ages with the highest marriage counts in each group, which is exactly what the chart's side panel reports via `d3.greatest(rows, d => d.count)`.

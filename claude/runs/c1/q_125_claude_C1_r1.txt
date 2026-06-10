@@ -1,0 +1,8 @@
+The small ticks on the slider (the `.smallTick` elements) are drawn one per date column in the data — each tick marks one FIFA ranking snapshot.
+
+Looking at the consecutive dates in the CSV header:
+- 17/01/2013 → 14/02/2013 → 14/03/2013 → 11/04/2013 → 09/05/2013 …
+
+The gaps between adjacent dates are about 28 days early on, widening to a few months in later years (e.g., 06/04/2023 → 29/06/2023). But the typical/representative spacing is roughly **one month (~28–30 days)** per small interval.
+
+So each small interval of the bar (slider) represents **approximately one month (about 30 days)**.

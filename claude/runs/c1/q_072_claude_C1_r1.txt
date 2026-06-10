@@ -1,0 +1,25 @@
+Clicking the **📈 Line** button triggers `setMode("line")`, which produces the following visible changes:
+
+**1. Button styling switches**
+- "📈 Line" becomes the active button (blue background `#3a6fc4`, white text)
+- "🌍 Map" reverts to inactive (white background, dark text)
+
+**2. The map is replaced by a small-multiples line view** (`renderLine()` runs instead of `renderMap()`)
+
+The world map and its categorical legend are wiped from `mainG`, the tooltip is hidden, and in their place:
+
+- **Title changes** to `Countries where armed conflicts took place, <lineStartYear> to 2024`. The start year is computed as: `currentYear >= maxYear ? minYear : currentYear`. Since `currentYear` starts at `maxYear` (2024), on a first click the range is the full **1989 to 2024**. (If you had dragged the slider to an earlier year first, it would start from that year instead.)
+
+- **A small Yes/No legend** is drawn at the top center (blue = No conflict, orange = Yes conflict).
+
+- **A 2×2 grid of small charts** is rendered, one per country in `selectedCountries`: **China, Russia, United Kingdom, United States** (4 countries → 2 columns × 2 rows). Each cell contains:
+  - A light border and the country name as a heading.
+  - An X axis of years (~5 ticks) and a Y axis labeled 0 and 1, with a dashed gridline at y=1.
+  - One thin vertical bar per year, colored **orange** if a conflict occurred that year (value 1) or **blue** if not (value 0), at 0.85 opacity.
+  - A gray step line (`curveStepAfter`) overlaid, tracing the 0/1 value across years.
+
+So for the default selection you'd see, e.g., the UK with conflicts around 1989–1993, 1998, 2005, 2019; the US with sporadic single-year conflicts (2001, 2010, 2015, 2017, 2019, 2022); Russia conflict-heavy from 1993 onward; China mostly 0 with a few isolated years.
+
+**3. The slider remains** and stays functional. `updateSlider()` still runs on redraw. Moving the slider (or pressing play) while in Line mode re-runs `renderLine()`, and because `lineStartYear` then equals `currentYear` (as long as it's below 2024), the line charts will start from the selected year rather than 1989 — i.e., the slider effectively controls the left edge / zoom of the time range in Line mode.
+
+One caveat from the code: the colored year bars are only drawn when a country has more than one data row in range (`yearRange.length > 1`); the step line is always drawn.

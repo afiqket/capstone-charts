@@ -1,0 +1,1 @@
+The magnitude of the earthquake in Sobral, Brazil is **4.3** (Year: 2008, Lat: -3.7, Lon: -40.35, Focal Depth: 10 km).

@@ -1,0 +1,9 @@
+This chart's data doesn't contain 4G network coverage information.
+
+The dataset measures something different: **"Proportion of individuals who own a mobile telephone"** — i.e., the share of the population that has a mobile phone device with at least one active SIM card for personal use. It says nothing about 4G network coverage.
+
+For reference, the Malaysia 2023 figure that *is* in this data is:
+
+- **Malaysia, 2023 — 98.4%** of individuals own a mobile telephone.
+
+So I can't answer the 4G coverage question from this source. If you have a separate dataset on 4G/mobile-broadband network coverage, share it and I'll read that instead.

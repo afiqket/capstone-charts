@@ -1,0 +1,20 @@
+When you hover over an orange country, two things happen (driven by the `mousemove` handler):
+
+1. **The border highlights** — that country's stroke changes from white (`#fff`, width 0.5) to black (`#000`, width 1), outlining it.
+
+2. **A tooltip appears** near the cursor (offset +15px right and down) showing the country name in bold, plus a colored bullet (`●`) and the category text.
+
+For an orange country, the bullet and category come from the color match. The "Deep Orange" `#b13507` maps to the category **"None or temporary"**. So for, e.g., Germany the tooltip would read:
+
+> **Germany**
+> ● None or temporary
+
+(with the bullet rendered in that same deep-orange color).
+
+Countries in this "None or temporary" orange group include Argentina, Austria, Bosnia and Herzegovina, Brazil, Chile, Czechia, Estonia, Germany, Guatemala, Italy, Lithuania, Luxembourg, Mexico, Poland, South Africa, South Korea, Thailand, and Uruguay.
+
+When you move the mouse off (`mouseleave`), the border reverts to thin white and the tooltip hides.
+
+One caveat worth noting: matching is done by `d.properties.name` (TopoJSON) against the CSV `Entity` field. If a country's TopoJSON name doesn't exactly match the CSV name, it would render gray (`#e0e0e0`) and show "No data available" instead — but that wouldn't be an orange country in the first place.
+
+Note also there are *three* reddish/orange shades in the palette: deep orange `#b13507` ("None or temporary"), coral `#e56e5a` ("None or inadequate"), and soft red `#c05050` ("Temporary or inadequate"). If by "orange" you meant the coral or soft-red shade, the tooltip would show that respective category instead — but the truest orange is the "None or temporary" deep-orange one.

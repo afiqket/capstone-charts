@@ -1,0 +1,29 @@
+This is a zoomable circle-packing ("bubble") chart of Summer 2023 transfer fees. Here's how a user drills down to an individual Chelsea player's fee:
+
+## The steps
+
+1. **Click the "Premier League" circle.** Chelsea (along with all the other English clubs) lives inside the Premier League league-bubble (lines 14–158). Clicking the league triggers `zoom(d)` (line 587–590), which animates the view into that league so the individual club circles become large enough to read.
+
+2. **Click the "Chelsea" circle.** This is the gold/yellow club bubble (`clubFill` returns `#f5c518` for Chelsea, line 222, with a thicker `2.5` stroke, line 322). Clicking it calls `zoom(targetNode)` where `depth === 2` (line 552).
+
+3. **Hover over an individual player bubble** (e.g. Caicedo, Palmer, Nkunku) to read that player's fee.
+
+## What happens when they do this
+
+**On the Chelsea click (zoom into the club, lines 552–582):**
+- `zoomedClub` is set and `renderPlayerBubbles(targetNode)` runs (line 554), building a fresh circle-pack of Chelsea's 11 players sized by fee.
+- The selected Chelsea circle and its label are hidden (`opacity 0`, lines 557–561) so the player bubbles show through; all other clubs stay visible.
+- The view smoothly zooms in over an 850 ms `interpolateZoom` transition (lines 573–578).
+- The breadcrumb text updates to `Premier League › Chelsea • Hover player for details • Click background to zoom out` (line 546).
+- The league arc-labels are hidden because focus is no longer the root (line 581).
+- The Chelsea player bubbles are rendered in the brighter "Chelsea" colors (`#f5db69` fill, `#c89a00` stroke, line 414–416, since `isChelsea` is true). Player name and fee labels appear inside each bubble if it's large enough (the `display` thresholds in `applyView`, lines 513–531).
+
+**On hovering a player bubble (the actual fee lookup, lines 418–432):**
+- A tooltip appears showing four lines:
+  - the league (`Premier League`),
+  - **Player:** the player's name,
+  - **Club:** Chelsea,
+  - **Fee:** `€<value>m` — e.g. hovering Caicedo shows **Fee: €116m**, Palmer shows **€47m**, etc.
+- The tooltip is positioned next to the bubble via `positionTooltip` and tracks the cursor on `mousemove`; it disappears on `mouseout`.
+
+Note the fee is also printed directly as a label inside each sufficiently-large player bubble (`€${d.data.value}m`, line 452), so for big-fee players like Caicedo it's readable without even hovering. To zoom back out, the user clicks the background (line 598–601).

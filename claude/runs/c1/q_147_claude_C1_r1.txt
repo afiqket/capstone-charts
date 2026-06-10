@@ -1,0 +1,33 @@
+## How to show historical manager nodes
+
+The chart distinguishes two kinds of managers by their `group` field: **"Current Manager"** (red, `#ff2a2a`) and **"Manager"** — the historical/past managers (teal, `#0b8798`). By default both are hidden:
+
+```js
+const state = { showManagers: false, showCurrent: false, hovered: null };
+```
+
+To reveal the historical managers, the user **clicks the "Manager" legend item** — the teal dot at `translate(240,0)` in the legend (`chart_041.js:153`). Its click handler (`chart_041.js:129-133`) toggles `state.showManagers` and re-renders:
+
+```js
+.on("click", () => {
+  state[key] = !state[key];   // key === "showManagers"
+  updateLegend();
+  updateVisibility();
+});
+```
+
+## What happens when they do
+
+**1. The legend item lights up** (`updateLegend`, lines 162-166): the teal dot switches from the faded `#c8dde0` to full `#0b8798`, and its label text turns dark (`#222`) and bold (font-weight 700), signaling the category is now active.
+
+**2. The Manager nodes appear** (`updateVisibility` with no hover, lines 413-418). `categoryVisible` now returns `true` for the `"Manager"` group, so all those node `<g>` elements get `display: null` (shown) at full opacity. Club nodes were always visible; Current Managers stay hidden unless `showCurrent` is also on.
+
+**3. Their links appear** (lines 420-428): any link whose source *and* target are both visible categories is displayed — so the grey lines connecting historical managers to their clubs become visible.
+
+**4. Labels stay hidden until hover.** Even when shown, Manager node labels remain hidden (`opacity: 0`); only Club labels are drawn at rest (lines 430-434).
+
+**5. Hover interaction is unlocked.** With `showManagers` true, `activeManagerGroups()` now includes `"Manager"` (lines 324-329). This matters because hover highlighting is gated on having an active category:
+- Hovering a **club** now expands to highlight its connected historical managers (`connectedSetFiltered`, lines 338-346) and emphasizes those links in teal (`shouldHighlightLink`, lines 374-378).
+- Hovering a **historical manager** highlights it plus its connected clubs, fades everything else to ~0.12 opacity, enlarges the hovered label, and turns its links teal/thicker (lines 441-468).
+
+So clicking "Manager" both renders the historical-manager subgraph and turns on the interactive highlighting for that category. (Clicking it again toggles `showManagers` back to `false`, hiding them all once more.)

@@ -1,0 +1,3 @@
+**United States** had the highest percentage of cotton exports in every year from 2000 to 2018.
+
+Looking at the `Exports` data, the U.S. share ranges from a low of ~16.56% (2000) to a high of ~43.43% (2005), and it tops every single year. The closest any other country comes is India at 27.23% in 2011 and Australia at 15.16% in 2012 — both still well below the U.S. in those same years (28.79% and 32.01% respectively).

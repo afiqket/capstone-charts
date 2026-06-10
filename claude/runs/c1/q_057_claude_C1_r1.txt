@@ -1,0 +1,21 @@
+## Left (◀) / Right (▶) arrow buttons
+
+These two buttons sit just to the right of the bar chart, on either side of the **year dropdown**. They step the selected year backward or forward.
+
+**What the code does** (in the `setTimeout` handlers):
+
+- **◀ (`year-prev`)**: finds the current `selectedYear` in the `years` array (2001–2018) and, if it's not already the first year, moves to the **previous year** (`idx - 1`).
+- **▶ (`year-next`)**: if not already at the last year, moves to the **next year** (`idx + 1`).
+
+In both cases it then:
+1. Updates `selectedYear`,
+2. Syncs the dropdown so it shows the new year (`yearSel.node().value = selectedYear`),
+3. Calls `render()`.
+
+**Boundary behavior:** At the ends, the buttons do nothing (no wrap-around). At **2018** the ▶ button is inert; at **2001** the ◀ button is inert. The default state starts at 2018, so ▶ does nothing until you go back first.
+
+**What visibly changes:** `render()` redraws *both* charts, but `drawLines()` ignores the year (it plots the full 2001–2018 series for the nation). So in practice **only the top bar chart changes** — it re-ranks and redraws the top 6 leading causes of death for the newly selected year, for the currently selected nation. The bar chart's X-axis max also rescales (rounded up to the nearest 20K) based on that year's largest value, and the bars reorder by that year's `Rank`.
+
+For example, with nation = "UK", clicking ◀ from 2018 → 2017 keeps Dementia/Alzheimer ranked #1 but redraws with 2017's death counts; stepping back far enough (e.g. to 2001) reorders the bars so Ischaemic heart diseases is #1.
+
+(One caveat in the code: the bar chart filters `deathsByYear` by `+d.Year === year`. Since the CSV is loaded with `{ typed: true }`, `Year` is already numeric, so this works — the line/area note text and legend are unaffected by the buttons.)

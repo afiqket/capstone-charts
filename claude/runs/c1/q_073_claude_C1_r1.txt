@@ -1,0 +1,3 @@
+Blue (`COLOR_NO = "#7db8d4"`) represents countries where **no interstate or intrastate war took place** that year — i.e., the data value `"War took place"` is `0`.
+
+In the code: `row[valueCol] === 1 ? COLOR_YES : COLOR_NO`, so a country is filled blue when its value is not 1 (no conflict), orange (`#e8916a`) when a war occurred, and gray hatched when there's no data. The legend labels the blue swatch "No."

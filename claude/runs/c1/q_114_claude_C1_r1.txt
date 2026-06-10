@@ -1,0 +1,10 @@
+The slider controls the **time** being visualized on the flight-tracking map. Specifically:
+
+- Its range is set to the min/max timestamps found in the flight data (`slider.min = minTime; slider.max = maxTime`), with a step of 40 seconds.
+- When the user drags it, the `input` event fires `updateForTime(event.target.value)`, which:
+  1. Updates `currentTime` to the slider's value.
+  2. Updates the text label next to the slider to show the corresponding UTC timestamp (`formatTime`).
+  3. Recomputes which flights are airborne at that moment and their interpolated positions (`recomputeActivePoints`).
+  4. Redraws the dynamic layers — the blue flight trails leading up to that time and the red dots marking each plane's current position.
+
+In short, the slider scrubs through the two hours of OpenSky flight data on September 3rd 2019, animating each plane's location and trailing path at the selected moment.

@@ -1,0 +1,3 @@
+**Rank 4.**
+
+For UK in 2018, the bar chart uses `deathsByYear` (Data 1), where the row `UK,Cerebrovascular diseases,2018,35960,4` gives cerebrovascular diseases a rank of **4**.

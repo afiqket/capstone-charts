@@ -1,0 +1,14 @@
+Looking at the `inventoryRaw` array in chart_037.js, I'll calculate the average across all 79 monthly data points (January 2013 through July 2019).
+
+**Sum by year:**
+- 2013 (12 months): 23,516,543
+- 2014 (12 months): 23,699,751
+- 2015 (12 months): 22,773,950
+- 2016 (12 months): 21,585,854
+- 2017 (12 months): 19,709,537
+- 2018 (12 months): 19,036,530
+- 2019 (7 months): 11,085,053
+
+**Total:** 141,407,218 homes across 79 months
+
+**Average:** 141,407,218 / 79 ≈ **1,789,965 homes for sale**

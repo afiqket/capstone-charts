@@ -1,0 +1,14 @@
+## Answer: Sunderland
+
+Counting nodes marked as **"Current Manager"** (the group flag in `chart_041_1.csv`) connected to each club in the links file (`chart_041_2.csv`):
+
+**Aston Villa** — 1 current manager:
+- Unai Emery
+
+**Sunderland** — 2 current managers:
+- David Moyes
+- Regis Le Bris
+
+(Note: David Moyes is tagged as a "Current Manager" node in the data, and he is linked to Sunderland among his clubs, so by the chart's own coloring Sunderland connects to two red "Current Manager" nodes.)
+
+So **Sunderland** has more current managers (2 vs. 1).

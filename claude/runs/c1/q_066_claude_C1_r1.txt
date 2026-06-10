@@ -1,0 +1,20 @@
+When you hover over Russia on the map, the code path `mousemove → getValueForYear → showMapTooltip` produces a tooltip box (260px wide) containing:
+
+1. **Country name** — "Russia" (the `Entity`, looked up from the map's numeric country id `643` → `RUS` → "Russia").
+
+2. **The data year** — the year the displayed value is from (`result.year`).
+
+3. **The value** — share of population owning a mobile phone, formatted to one decimal with a `%` sign, e.g. `98.6%`.
+
+4. **An "estimated" note (conditionally)** — if there's no exact data for the currently selected year, it shows *"ⓘ Closest available data (not {currentYear})"*, because `getValueForYear` falls back to the most recent earlier year.
+
+5. **A sparkline** — a mini line chart of Russia's full time series (2017→2023: 94.8, 94.8, 97, 97.3, 98.1, 98.8, 98.6) on a 0–100% scale, with:
+   - the y-axis labeled `0%` and `100%`,
+   - the first and last data years labeled (`2017` and `2023`),
+   - a dot marking the value for the selected year.
+
+The country's border is also highlighted (dark, thicker stroke) while hovered.
+
+A concrete note on the default view: the slider starts at `maxYear`, which is **2024** (some entities like World/Turkey/Ecuador have 2024 rows). Russia has no 2024 data, so by default hovering Russia shows **98.6%**, year **2023**, with the estimated note *"ⓘ Closest available data (not 2024)"*.
+
+(Note: this tooltip behavior is for Map mode. The Bar view has a simpler tooltip with no sparkline, but Russia is in `selectedCountries` so it appears there too.)

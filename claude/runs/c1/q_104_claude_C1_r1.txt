@@ -1,0 +1,3 @@
+Looking at the **Bowling Green** values in the data, the smallest is **City of London**, with a value of **0**.
+
+If you exclude the zero-value entries (City of London has 0 across all its categories), the smallest actual Bowling Green space is **Hammersmith and Fulham** at 2,539.74.

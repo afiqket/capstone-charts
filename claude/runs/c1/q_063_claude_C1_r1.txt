@@ -1,0 +1,40 @@
+## What the play button does
+
+The play button is the small circular "▶" control sitting just left of the year slider handle. Its click handler:
+
+```js
+playBtn.on("click",()=>{
+  if(playing){stopPlay();}else{
+    playing=true; playIcon.text("⏸");
+    if(currentYear>=maxYear) currentYear=minYear;
+    playInterval=setInterval(()=>{
+      currentYear=Math.min(currentYear+1,maxYear); redraw();
+      if(currentYear>=maxYear) stopPlay();
+    },350);
+  }
+});
+```
+
+So clicking it **starts an animated time-lapse**:
+
+1. **Toggle behavior** — If an animation is already running, the click instead stops it (`stopPlay()`: clears the timer, resets the icon back to "▶"). Otherwise it starts one.
+
+2. **On start:**
+   - `playing` is set true and the icon changes from **▶ to ⏸** (pause symbol).
+   - If `currentYear` is already at the end (`>= maxYear`), it rewinds to `minYear` first, so pressing play at the end replays from the beginning.
+
+3. **The animation loop** — every **350 ms**, `currentYear` advances by 1 (capped at `maxYear`) and `redraw()` is called. `redraw()`:
+   - moves the slider handle and blue active track to the new year (`updateSlider()`), and
+   - re-renders whichever view is active — Map (default), Line, Slope, or Bar — for the new year. The dynamic title updates too (e.g. "Share of people in range of 4G mobile network, 2017").
+
+4. **Auto-stop** — When `currentYear` reaches `maxYear`, `stopPlay()` fires: the interval is cleared, `playing` becomes false, and the icon returns to **▶**.
+
+### Concretely with this data
+
+The years span **2012 → 2024** (`minYear` = 2012, `maxYear` = 2024, taken from all distinct years in the CSV). The chart initializes at `currentYear = minYear` (2012).
+
+So pressing play from the default state animates the map (or current view) **year-by-year from 2012 through 2024**, one step every 0.35 s — roughly a **~4-second** sweep — with countries/regions progressively filling in deeper blues as 4G coverage grows, then it stops automatically at 2024 with the icon reverting to ▶.
+
+Two side notes:
+- Dragging the handle or clicking the slider track calls `stopPlay()` first, so any manual interaction interrupts a running animation.
+- For map fill, years with no exact row fall back to the most recent prior year's value (`getValueForYear`), so early animation frames (e.g. 2012–2014) will show many countries as "no data" hatching until their first data year appears.

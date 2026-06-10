@@ -1,0 +1,13 @@
+No. Hovering does nothing — there's no tooltip or hover-triggered value label anywhere in this chart.
+
+Looking at the code:
+
+- **The only event listener in the whole chart** is on the dropdown: `select.addEventListener("change", ...)`. There are no `.on("mouseover"/"mousemove"/"pointerenter")` handlers and no `<title>` child elements attached to the line `path`s or bar `rect`s, so the browser shows no native tooltip either.
+
+- **The line paths** (the "LINES" block) get only `fill`, `stroke`, `stroke-width`, and `d` — nothing interactive.
+
+- **The bars** (the "BARS" block) get only position, size, and `fill` — also nothing interactive.
+
+The one thing that *looks* like it might be hover-related is the **bar labels** (`text.bar-label`), e.g. `13.70%`, but those are rendered statically next to every bar at draw time and are always visible — they don't appear or change on hover.
+
+So the chart is entirely static aside from the title dropdown; hovering a line or bar produces no tooltip and no extra value label.

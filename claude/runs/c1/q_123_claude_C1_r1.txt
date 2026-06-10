@@ -1,0 +1,21 @@
+## Answer: 903 days
+
+**Reasoning:**
+
+The earliest date in the chart is **17/01/2013**. The chart ranks countries by their points value (descending), so "first place" means having the highest value of any country on a given date.
+
+Tracking Argentina against the leader (Germany, which dominated after winning the 2014 World Cup):
+
+| Date | Argentina | Germany (leader) |
+|------|-----------|------------------|
+| 04/06/2015 | 1496 | **1775** ← Germany #1 |
+| **09/07/2015** | **1473** | 1411 |
+
+On **09/07/2015**, Germany's value dropped sharply (1775 → 1411), and Argentina's 1473 became the highest value of *any* country that date (next best: Germany 1411, Belgium 1244, Colombia 1217, Netherlands 1204). I verified every other top contender (Brazil 1186, Spain 1110, Portugal 1177, England 1157, etc.) was below it.
+
+Before this date, Germany was always above Argentina (and earlier, Spain/Germany led 2013–early 2014), so 09/07/2015 is the **first** time Argentina reaches first place.
+
+**Days from 17/01/2013 → 09/07/2015:**
+- 17/01/2013 → 17/01/2015 = 730 days (two non-leap years)
+- 17/01/2015 → 09/07/2015 = 173 days
+- **Total = 903 days**

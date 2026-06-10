@@ -1,0 +1,9 @@
+For **Imports**, both the legend and the 2017 bar chart show the same five countries:
+
+- **Bangladesh**
+- **Vietnam**
+- **China**
+- **Turkey**
+- **Indonesia**
+
+The legend order comes from the `imports` preset (`["Bangladesh", "Vietnam", "China", "Turkey", "Indonesia"]`), and all five exist in the data. The 2017 bar chart (`barData2017`) filters to `YearNum === 2017` — each of these countries has a 2017 row with a valid percent, and the bars are sorted to follow that same legend order.

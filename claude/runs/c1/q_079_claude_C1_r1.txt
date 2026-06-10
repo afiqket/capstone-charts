@@ -1,0 +1,7 @@
+For Ukraine in 2024, the dataset has a single value for the "Best estimate" of deaths:
+
+```
+Ukraine,UKR,2024,68099
+```
+
+Since there's only one record per country per year, the average death number for Ukraine in 2024 is simply **68,099**.

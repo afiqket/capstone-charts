@@ -1,0 +1,15 @@
+No — the graph elements themselves have no click or hover interactivity.
+
+Looking at the drawing code, the bars (`rect`) and lines (`path`) are rendered with only static attributes — position, size, fill, opacity, stroke. None of them attach any `mouseover`, `mouseout`, `mousemove`, or `click` handlers, and there are no `<title>` elements or tooltip logic. So hovering or clicking on a bar or line does nothing.
+
+The **only** interactivity in the whole chart lives on the dropdown controls:
+
+```js
+[selRegion, selSex, selEdu, selChartType, selBreakout].forEach(sel => {
+  sel.addEventListener("change", draw)
+})
+```
+
+These `change` listeners re-run `draw()` when you pick a different Region, Sex, Education, Chart Type, or Breakout. That redraws the SVG and updates the side panel (most common age, totals, legend). But that's selection-driven, not pointer-driven — you change values via the menus, not by interacting directly with the graph.
+
+So: you can interact with the chart's **filters/dropdowns**, but you cannot click or hover on the bars or lines to get tooltips, highlighting, or any response.

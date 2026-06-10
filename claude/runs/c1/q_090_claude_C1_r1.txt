@@ -1,0 +1,20 @@
+When you hover over the United States bar, the **`showTooltip` handler fires** (`mouseenter`/`mousemove`), and a tooltip appears. The bar itself does **not** change — there's no color, opacity, or stroke change on hover, only the tooltip is shown/positioned.
+
+**What the tooltip displays** (pulled from the data row for United States):
+
+| | |
+|---|---|
+| **Title (dark header)** | United States |
+| Revenue Share | 45% |
+| Profit Margin | 17% |
+| Economy | U.S. |
+
+**Where it appears:**
+
+The tooltip is centered horizontally on the bar's end (at `x(margin)` ≈ the 17% mark), clamped to stay inside the plot area.
+
+Vertically, it tries to sit *below* the bar's center (`barCenterY + 22`). But because the U.S. bar is the tallest (45% of revenue → ~159px) and sits low in the stack, placing the tooltip below would overflow the bottom of the chart. So the code takes the flip branch and instead positions the tooltip **above** the bar's center, with the little triangle **arrow pointing downward** toward the bar.
+
+The tooltip is also `.raise()`d to the front, and disappears again on `mouseleave`.
+
+One detail worth noting: for the U.S. row the "Economy" value is literally `"U.S."` (that's its category), so the tooltip's Economy line reads **U.S.**, matching the pink legend color used for the bar.

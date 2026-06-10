@@ -1,0 +1,25 @@
+## How to read it off the chart
+
+**Interaction steps:**
+
+1. In the **Nation** dropdown, select **"Scotland"**.
+2. Use the **year selector** beside the bar chart (◀ / ▶ buttons or dropdown). It defaults to **2018**.
+3. On the bar chart, find the **teal bar** — teal (`#4bc9c4`) is the color mapped to *Influenza and pneumonia* in the legend.
+4. The **Rank** is the number on the Y‑axis next to that bar; the **death count** is the value where the bar ends (X‑axis is "Deaths", labeled in thousands).
+
+## What you'll see (Scotland, default year 2018)
+
+From the underlying data (`stroke_deaths_clean.csv`, which the bar chart filters by `Nation` + `Year`):
+
+| Year | Rank | Deaths |
+|------|------|--------|
+| **2018** | **6** | **2,031** |
+
+So for the default view, Influenza and pneumonia in Scotland is **rank 6 with 2,031 deaths**.
+
+If you step the year control to other years, the same row updates — e.g. 2001 → rank 6, 2,806 deaths; 2003 → rank 5, 3,395 deaths; 2014 → rank 6, 1,742 deaths.
+
+## Note on the data files
+
+- The **bar chart's rank + death numbers come from `deathsByYear`** (Data 1), via `drawBar()`, which reads each row's `Rank` and `Deaths` fields for the selected nation/year.
+- Data 2 (`stroke_ranks_clean.csv`, exposed as `rankData`) is a precomputed 2018 snapshot and agrees with the above (Scotland, Rank 6, Influenza and pneumonia, 2031) — but note this `rankData` variable is **defined but never actually used** by the chart code, so the chart itself always derives the figures from Data 1.

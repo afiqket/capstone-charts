@@ -1,0 +1,27 @@
+## What changes
+
+Changing the dropdown fires `update()`, which calls `drawChart("Harris County", crimeFilter)`. The key effect is the `visible` variable:
+
+```js
+const visible = agencyFilter === "All" ? counties : [agencyFilter];
+```
+
+So instead of all four counties, `visible` becomes just `["Harris County"]`. Both line layers (`popLinesG` and `crimeLinesG`) are cleared and redrawn for Harris County only.
+
+**Result on the chart:**
+
+1. **The other three counties vanish.** Montgomery, Brazoria, and Fort Bend lines (both crime and population) are no longer drawn. Only the orange Harris County lines remain.
+
+2. **One thick orange crime line.** With "Type of crime" still at its default "All", the data isn't crime-filtered, so Harris County's `Number_reported` is summed across all four crime types per year. Approximate yearly totals:
+   - 1990 ≈ 3,757, rising to a peak ≈ 8,439 in 2009, then ≈ 8,089 (2010) and ≈ 7,416 (2012).
+   - **2011 is a gap.** Every Harris County crime type has a blank `Number_reported` in 2011, so the year sums to 0 and is dropped by the `.filter(([, val]) => val > 0)` check. The line connects 2010 directly to 2012.
+   - The peak (~8,400) stays under the left axis max of 9,000, so the line fits without clipping.
+
+3. **One thin orange population line** on the right axis, drawn from the three census points: 1990 (2.82M), 2000 (3.40M), 2010 (4.09M). It's a 3-point line spanning 1990–2010 (it stops at 2010, not 2012, since there's no later census population).
+
+**What does *not* change:**
+
+- The **legend still lists all four counties** — it's built once from the static `counties` array and never updated by the filter. So the sidebar will show four colored swatches even though only Harris County is on the chart (a minor inconsistency in the code).
+- Axes, gridlines, titles, and the other dropdowns are unaffected.
+
+In short: the chart narrows to just Harris County's orange crime and population lines, with a visible break at 2011 due to missing data.

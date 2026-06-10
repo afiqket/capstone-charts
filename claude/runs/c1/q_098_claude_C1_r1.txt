@@ -1,0 +1,6 @@
+You click the **"Title" dropdown (the `<select>` menu) in the top-right corner of the chart** and choose **"Imports"**.
+
+Specifically:
+- The code builds a `<select>` element (labeled **"Title"**) positioned at the top-right of the chart, at `left: legendX` (`width - marginRight + 16` = 760 − 170 + 16 = **606px**) and `top: 0px` — i.e. just above the legend.
+- Its options come from the distinct `Title` values in the CSV (`Production`, `Imports`, `Exports`, `Domestic Con`), and it defaults to "Production".
+- Selecting **"Imports"** fires the `change` listener, which sets `selectedTitle = "Imports"` and calls `render()`, redrawing the chart for imports.

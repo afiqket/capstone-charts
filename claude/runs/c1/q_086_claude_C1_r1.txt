@@ -1,0 +1,16 @@
+According to the chart data, **Madagascar** has one entry:
+
+| Field | Value |
+|-------|-------|
+| Entity | Madagascar |
+| Code | MDG |
+| Year | 2022 |
+| IGH Framework Category | **No accommodation** |
+
+**What this tells you:** As of 2022, the available statistics on homelessness in Madagascar only cover the **"No accommodation"** category — meaning the data source (official government data, news reports, or NGO information) captures people living without any shelter (e.g., sleeping rough / on the streets). It does **not** include other forms of homelessness such as temporary/crisis accommodation or severely inadequate housing.
+
+**How to see it in the chart:** On the map, Madagascar is colored **teal (`#00847e`)**, which the legend maps to "No accommodation." Hovering over the country triggers a tooltip showing its name and that category.
+
+A caveat worth noting: the map matches data to countries by name (`d3.json` TopoJSON `properties.name`). If the world-atlas file labels the country something other than exactly "Madagascar," it would fall through to the gray "no data" color despite the CSV containing the entry — but the spelling here is standard, so it should display correctly.
+
+For the underlying source, this dataset is from **Our World in Data** ("Forms of homelessness included in available statistics"), based on the Institute of Global Homelessness (IGH) framework — that's where you'd go for the full methodology and original references.

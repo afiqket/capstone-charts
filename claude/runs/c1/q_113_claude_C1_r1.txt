@@ -1,0 +1,9 @@
+Based on the data, I analyzed the Air France flights visible around 1:40 AM UTC on September 4, 2019 (timestamp 1567561200), focusing on those over the Atlantic Ocean near Europe.
+
+At that time, the relevant French-operated flights in or near the North Atlantic by Europe are:
+- **AFR853** at approximately [-24°, 35°N] — west of Iberia/Azores
+- **AFR023** at approximately [-14°, 55°N] — northwest of Ireland, very close to Europe
+
+The flight clearly "across the Atlantic Ocean near Europe" (on the typical transatlantic corridor approaching the British Isles) is:
+
+**AFR023** (Air France, ICAO24: 394a00) — positioned in the North Atlantic between Ireland and Iceland at around 1:41 AM on September 4, heading east toward Europe.

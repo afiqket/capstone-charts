@@ -1,0 +1,40 @@
+## What happens when you hover over a white country
+
+There are actually **two** near-white fills on this map, and they behave differently on hover. The hover handler is:
+
+```js
+.on("mousemove", function(event, d) {
+  const entity = numericEntityMap.get(String(d.id).padStart(3,"0"));
+  if (!entity) return hideTooltip();            // ← no data
+  const r = getValueForYear(entity, currentYear);
+  if (!r) return hideTooltip();
+  ...
+  showMapTooltip(entity, r, mx, my);
+})
+```
+
+And the fill logic:
+
+```js
+if (!entity) return "#f0ede8";                  // no data  → beige-white
+const r = getValueForYear(entity, currentYear);
+if (!r || r.value === 0) return "#f7f4f0";      // zero deaths → white
+return colorScale(r.value);
+```
+
+**Case 1 — white because the value is 0 (`#f7f4f0`)**
+The country *has* data, just zero deaths in the current year (2024, the default `maxYear`). Hovering **does** show the tooltip: the country name, the year, the subtitle "deaths per 100,000 people," a sparkline of its history, and a death value of **`0`**.
+
+The value comes out as exactly `"0"` because of the formatter:
+```js
+const fmtVal = v => v === 0 ? "0" : v < 1 ? d3.format(".2f")(v) : d3.format(".1f")(v);
+```
+
+**Case 2 — white because there's no data (`#f0ede8`)**
+If the white country isn't in `numericEntityMap` (no matching `Code` in the CSV, e.g. Greenland), the `mousemove` handler hits `if (!entity) return hideTooltip()` and **no tooltip appears at all** — no value is shown.
+
+## One thing worth flagging
+
+The tooltip labels the number "**deaths per 100,000 people**," but the CSV column it reads (`Best estimate`) is an **absolute death count**, not a rate. So even for a non-white country the "rate" label is misleading — and for a white (zero) country the value displayed is simply **`0`**.
+
+So: hovering a white country either shows **`0`** (if it's a zero-death country) or shows **nothing** (if it's a no-data country).

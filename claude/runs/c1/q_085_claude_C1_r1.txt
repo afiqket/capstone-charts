@@ -1,0 +1,8 @@
+**"None or temporary"** appears on far more countries.
+
+Counting entries in the data:
+
+- **None or temporary** — 18 countries (Argentina, Austria, Bosnia and Herzegovina, Brazil, Chile, Czechia, Estonia, Germany, Guatemala, Italy, Lithuania, Luxembourg, Mexico, Poland, South Africa, South Korea, Thailand, Uruguay)
+- **None or inadequate** — 2 countries (China, Serbia)
+
+So you can see **"None or temporary"** much more on the map (18 vs. 2).

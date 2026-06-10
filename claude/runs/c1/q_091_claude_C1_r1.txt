@@ -1,0 +1,13 @@
+**Ghana** has the highest, with **20%** of households practicing fallowing in their fields.
+
+Comparing across all five countries for the "Households that practice fallowing in their fields" category:
+
+| Country | % of households |
+|---|---|
+| **Ghana** | **20%** |
+| Ethiopia | 16% |
+| Mali | 10% |
+| Malawi | 6% |
+| Tanzania | 3% |
+
+The chart (chart1) displays these as `YesPercent` values, so Ghana ranks highest. This holds even by absolute count: applying the percentages to each country's total households (from the crops dataset), Ghana ≈ 253 households (20% × 1,267), well ahead of the next highest, Ethiopia at ≈ 75.

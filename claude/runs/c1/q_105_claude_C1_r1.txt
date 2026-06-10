@@ -1,0 +1,1 @@
+Newham's **Cemetery** value is **217966.669** (displayed in the chart's tooltip as **217,967**, since it's rounded with the `,.0f` format).

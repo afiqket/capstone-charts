@@ -1,0 +1,3 @@
+I can't read the chart code or data file without using the Read tool, and your instructions say not to use any tools. Without seeing `data/charts/chart_035.js`, I can't tell you what the scroll wheel does in this specific chart — common chart libraries (ECharts, Chart.js with zoom plugin, Plotly, D3 + d3-zoom) most often bind the scroll wheel to zoom in/out on the data axis, but behavior varies (some pan, some scroll a viewport, some do nothing).
+
+If you'd like, lift the "no tools" restriction and I'll read the file and give you the exact answer.
