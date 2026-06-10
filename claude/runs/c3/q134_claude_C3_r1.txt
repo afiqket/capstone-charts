@@ -1,0 +1,21 @@
+{
+  "answer": "Click the legend to toggle series off. The legend entries (Real GDP, Consumption, Investment, Net exports, Government spending) are interactive toggles. To show only Consumption, click each of the other four entries — Real GDP, Investment, Net exports, and Government spending — to deactivate them. Their legend swatch turns grey and their bars/line disappear, leaving Consumption as the only contribution drawn. (You cannot turn off the last remaining series, so Consumption stays visible.)",
+  "reasoning": "Step 1 — Chart is an interactive combined stacked-bar + line chart titled 'Contributions to U.S. quarterly GDP growth', with 5 series shown in a clickable legend. Step 3/4 — The legend swatches/labels have cursor:pointer and click handlers that add or remove a series from an 'active' set and re-render; active series show a colored swatch with bold dark text, inactive ones show a grey swatch with light grey text. Step 4 — I clicked the four non-Consumption legend entries one at a time; after each click the chart re-rendered (refs changed) and the corresponding series was removed. Step 6 — Verified end state: only Consumption remains styled as active (dark/bold), the other four are muted (grey/normal weight). Note a guard in the toggle prevents deselecting the final remaining series, so the minimum viewable is a single series.",
+  "confidence": 0.97,
+  "evidence": "Legend text styling after isolating Consumption: Consumption fill=#4a4a4a weight=700 (active); Real GDP, Investment, Net exports, Government spending all fill=#bfbfbf weight=400 (inactive). Series definitions: Consumption is a bar series (color #c83b52); the others are bars except Real GDP which is a line.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/@n93986/us-gdp and waited for the chart iframe to render",
+    "Clicked the 'Real GDP' legend entry (toggled off)",
+    "Clicked the 'Investment' legend entry (toggled off)",
+    "Clicked the 'Net exports' legend entry (toggled off)",
+    "Clicked the 'Government spending' legend entry (toggled off)",
+    "Read back legend text fill/font-weight to confirm only Consumption is active"
+  ],
+  "pitfalls_checked": [
+    "Chart re-renders on each legend click, invalidating element refs — switched to text-based clicks",
+    "Stacked vs grouped bars: bars are stacked, but isolating a single series makes stacking irrelevant",
+    "Last-series guard: the toggle does not allow removing the final active series, so Consumption cannot itself be turned off",
+    "Confirmed active vs inactive via legend styling rather than pixel position"
+  ],
+  "self_check": "Restated: deselect every series except Consumption by clicking the four other legend labels; the result is a chart whose only drawn contribution is Consumption. This matches the verified styling state where Consumption alone is active and the other four are greyed out — consistent."
+}

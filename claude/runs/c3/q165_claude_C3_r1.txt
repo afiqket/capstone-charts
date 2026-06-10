@@ -1,0 +1,17 @@
+{
+  "answer": "Click the two year-toggle buttons labelled 'Result 2019' and 'Result 2017' located at the top of the chart (just under the subtitle 'The winning party in each constituency', above the colour legend). Clicking 'Result 2019' shows the 2019 election results on the map; clicking 'Result 2017' switches the map to the 2017 election results. Whichever button is currently selected is shown with an [active] state.",
+  "reasoning": "Step 1 (Identification): the chart is an interactive UK choropleth titled 'UK General Election 2019 results — The winning party in each constituency', with two clearly-paired controls in its header area — 'Result 2019' and 'Result 2017' buttons — plus a 10-party colour legend and a 🔍 search affordance. Step 2 (Axes): categorical choropleth — no numeric axes. Step 3 (Encoding): colour = winning party per constituency, driven by the currently-selected year. Step 4 (Interactive elements protocol): earlier in the session I confirmed the toggle works by clicking 'Result 2017' (the button took the [active] state, the chart subtitle/data context behaviour changed), then clicked back to 'Result 2019' (it re-took [active]). These are the only two controls on the chart whose explicit purpose is to switch the displayed election year. The 🔍 'Search constituency' button is for name-lookup, not year-switching. Step 5 (Reading): control labels taken verbatim from the accessibility snapshot ('Result 2019', 'Result 2017'). Step 6 (Pitfalls): did not confuse the search button with the year toggles; verified active-state semantics on the year buttons.",
+  "confidence": 0.98,
+  "evidence": "Chart iframe accessibility snapshot contains a pair of buttons in the header area: 'button \"Result 2019\" [cursor=pointer]' and 'button \"Result 2017\" [cursor=pointer]'. After clicking 'Result 2019' the snapshot shows it as [active]; after clicking 'Result 2017' that button takes the [active] state instead — confirming these two buttons are the year switch. These are the ONLY year-named controls in the chart UI.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/@yonsei-university/popup-customise (already loaded earlier in session)",
+    "click 'Result 2017' button — verified it takes the [active] state and is the 2017 view",
+    "click 'Result 2019' button — verified it takes the [active] state and is the 2019 view"
+  ],
+  "pitfalls_checked": [
+    "Did not confuse the 🔍 'Search constituency' button (name-lookup) with the year-toggle buttons",
+    "Verified the year-toggle buttons exhibit an [active] state, confirming they are a toggle pair",
+    "Categorical map → no axis truncation, log scale, dual axis, or stacking confusion"
+  ],
+  "self_check": "Restated: to switch the displayed election results between the two years, click 'Result 2019' or 'Result 2017' — the pair of buttons just under the subtitle, above the colour legend. Verified empirically: the clicked button takes the [active] state. This matches the chart's only year-switching affordance."
+}

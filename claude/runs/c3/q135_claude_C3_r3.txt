@@ -1,0 +1,20 @@
+{
+  "answer": "Approximately 3.0% average Real GDP growth across the 17 quarters shown (Q1 2021 through Q1 2025). Sum of the 17 quarterly Real GDP values = 51.0%, divided by 17 = 3.0%.",
+  "reasoning": "Step 1 — Interactive combined stacked-bar + line chart 'Contributions to U.S. quarterly GDP growth'; 'Real GDP' is the dark-blue line series with a marker circle per quarter. Step 2 — Y-axis is percent growth (ticks -5%, 0%, 5%, 10%); X-axis is quarters 2021-2025. Step 4/5 — Per the checklist I read tooltip values rather than pixel positions: dispatched a mousemove over each Real GDP marker (circles with stroke #0b2d5c), captured the tooltip 'Real GDP: x%' for every quarter, then parsed and averaged programmatically. Mean = sum / count = 51.0 / 17 = 3.0%.",
+  "confidence": 0.95,
+  "evidence": "Per-quarter Real GDP values (%): Jan-21 5.6, Apr-21 6.4, Jul-21 3.5, Oct-21 7.4, Jan-22 -1.0, Apr-22 0.3, Jul-22 2.7, Oct-22 3.4, Jan-23 2.8, Apr-23 2.4, Jul-23 4.4, Oct-23 3.2, Jan-24 1.6, Apr-24 3.0, Jul-24 3.1, Oct-24 2.4, Jan-25 -0.2. Count = 17. Sum = 51.0. Computed mean = 3.0.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/@n93986/us-gdp and waited ~3s for the chart iframe to render",
+    "Selected the Real GDP line markers (circles with stroke #0b2d5c)",
+    "Dispatched a mousemove over each marker and read the tooltip 'Real GDP' value for all 17 quarters",
+    "Parsed the 17 values (normalizing the unicode minus) and computed sum=51.0 and mean=3.0"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values (rounded to one decimal) rather than estimating from pixel position",
+    "Read the Real GDP line series specifically, not the stacked bar contributions",
+    "Counted all 17 quarters shown (Q1-2021 through Q1-2025) for the full-range average",
+    "Normalized the unicode minus (−) so negative quarters (-1.0%, -0.2%) summed correctly",
+    "Single non-truncated y-axis confirmed; values taken from tooltips not pixels"
+  ],
+  "self_check": "Restated: 17 quarterly Real GDP points totaling 51.0% give 51.0/17 = 3.0%. This third run reproduced the exact same 17 readings and programmatic sum/mean (51.0, 3.0) as runs 1 and 2. Consistent."
+}

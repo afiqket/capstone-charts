@@ -1,0 +1,19 @@
+{
+  "answer": "Click the magnifying-glass 🔍 'Search constituency' button (located at the bottom-right of the map). It opens a textbox labelled 'Search constituency...' with helper text 'Type a constituency name.' — type the constituency's name there and a clickable matching suggestion appears below the box. Clicking that suggestion opens the constituency's popup, which shows where it is (it ties to the constituency polygon on the map) and its election results (winner + party, hold/gain status, Previous MP with majority% and votes, a 'Results in 2017' bar block of per-party percentages, and the full Candidates list).",
+  "reasoning": "Step 1 (Identification): interactive UK choropleth ('UK General Election 2019 results — The winning party in each constituency'), with a 'Result 2019' / 'Result 2017' year toggle (which only re-colours the map, it does NOT look up constituencies by name), a 10-party colour legend, and a search affordance in the bottom-right corner. Step 2 (Axes): categorical choropleth — no numeric axes. Step 3 (Encoding): colour = winning party. Step 4 (Interactive elements protocol): I verified the lookup-by-name workflow earlier in this session — clicking the 🔍 'Search constituency' button reveals the textbox 'Search constituency...' with helper 'Type a constituency name.'; typing a name (e.g. 'Solihull', 'North Tyneside') produced a matching button, and clicking it opened a popup containing the constituency heading, winner, hold/gain status, 'Previous MP' line, 'Results in 2017' percentage bar block, and Candidates list. The year toggle does not perform name lookup, so the answer is unambiguously the magnifier (search) button. Step 5 (Reading): control identifiers taken verbatim from the accessibility snapshot. Step 6 (Pitfalls): did not confuse the year-toggle buttons with the search affordance; verified search is the only name-lookup control on this chart.",
+  "confidence": 0.97,
+  "evidence": "Accessibility snapshot of the chart iframe contains: 'button \"Search constituency\" [cursor=pointer]: 🔍'. Clicking it reveals 'textbox \"Search constituency...\"' with helper text 'Type a constituency name.'. Typing 'Solihull' and (separately) 'North Tyneside' produced clickable matching suggestion buttons that, when clicked, opened popups containing constituency heading, winner, status ('Con hold' / 'Lab hold'), 'Previous MP' with majority% and votes, 'Results in 2017' bar block, and Candidates list — confirming this is the name-lookup workflow.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/@yonsei-university/popup-customise (already loaded earlier in session)",
+    "click 🔍 'Search constituency' button — expands into a 'Search constituency...' textbox with helper 'Type a constituency name.'",
+    "type a constituency name (verified earlier with 'Solihull' and 'North Tyneside')",
+    "click the matching suggestion that appears — opens the constituency popup with location and results"
+  ],
+  "pitfalls_checked": [
+    "Did not confuse the year-toggle buttons ('Result 2019' / 'Result 2017') with the search affordance — those buttons only re-colour the map, they do not look up by name",
+    "Confirmed search 🔍 is the only name-based lookup control on the chart",
+    "Confirmed the resulting popup contains both constituency identity/location context and its election results (winner, status, previous MP, 2017 bar block, candidates list)",
+    "Categorical map → no axis truncation, log scale, dual axis, or stacking confusion"
+  ],
+  "self_check": "Restated: to find a constituency by name and see its results, click the magnifying-glass 🔍 'Search constituency' button at the bottom-right of the chart, type the name in the textbox that appears, then click the matching suggestion — that opens a popup with the constituency's location and election results. Matches the chart's only name-lookup affordance and was verified empirically with two constituencies."
+}

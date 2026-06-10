@@ -1,0 +1,20 @@
+{
+  "answer": "Investment. Among Investment, Net exports, and Government spending, Investment had the highest average quarterly contribution across the 17 quarters shown (Q1 2021 – Q1 2025), at about +0.75 percentage points. Government spending averaged about +0.29 pp and Net exports averaged about −0.49 pp.",
+  "reasoning": "Step 1 — Interactive stacked-bar + line chart 'Contributions to U.S. quarterly GDP growth'; Investment (#7ec0df), Net exports (#d9d9d9) and Government spending (#f4cf0a) are three of the stacked bar series. Step 4/5 — Per the checklist I read tooltip values rather than estimating from pixels: dispatched a mousemove over every bar segment, captured each tooltip's 'Component: x%' value, grouped by component, and averaged. Each component had 17 quarterly readings. Step 5 — Means: Investment 12.8/17 = +0.75 pp; Government spending 5.0/17 = +0.29 pp; Net exports −8.3/17 = −0.49 pp. Investment is the largest of the three.",
+  "confidence": 0.93,
+  "evidence": "Component totals/means from this run (n=17 each): Investment sum=12.8 mean=+0.7529; Net exports sum=-8.3 mean=-0.4882; Government spending sum=5.0 mean=+0.2941. Reproduces run 1 exactly.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/@n93986/us-gdp and waited ~3s for the chart iframe to render",
+    "Selected all bar segments (rect elements excluding the 18px legend swatches)",
+    "Dispatched a mousemove over each bar segment and captured its tooltip 'Component: value%'",
+    "Grouped readings by component and computed sum and mean for Investment, Net exports, and Government spending"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values rather than pixel/height estimation (stacked bars make height-reading error-prone)",
+    "Grouped by the component name in each tooltip rather than assuming bar order",
+    "Confirmed 17 readings per component (full quarter range Q1-2021..Q1-2025)",
+    "Normalized the unicode minus so negative contributions were averaged correctly",
+    "Excluded Consumption and Real GDP since the question restricts to the three named components"
+  ],
+  "self_check": "Restated: +0.75 (Investment) > +0.29 (Government spending) > −0.49 (Net exports), so Investment is highest; consistent with run 1 and with Investment having the largest positive sum (+12.8) over the same 17 quarters."
+}

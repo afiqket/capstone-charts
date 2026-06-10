@@ -1,0 +1,19 @@
+{
+  "answer": "The user retrieves the exact trading volume by hovering the mouse over a volume bar (the light-blue bars). On hover, the chart pops up a tooltip whose title is 'Volume' and whose value line shows the bar's month-date and exact volume, e.g. 'Oct-25: 144,876'. So pointing at the bar for the date of interest reveals that date's precise volume number; moving off the bar hides the tooltip.",
+  "reasoning": "Step 1 (Identification): Dual-axis combo chart — light-blue volume bars (left axis, 'Volume traded (thousands)') and a red share-price line (right axis). Step 3/4 (Interactive elements protocol): Each volume bar is a thin rect with mouse handlers; hovering it runs a 'showVolumeTooltip' routine that sets the tooltip title to 'Volume' and the value text to '<Mon-yy>: <volume with thousands separators>'. To verify, I dispatched a hover on a volume bar and read the resulting tooltip: the record bar (2025-10-29) produced 'Volume | Oct-25: 144,876'. This confirms the retrieval method: hover the specific bar → read the tooltip's date and exact volume. (Separately, the red price points have their own hover tooltip titled 'Price'.) Step 5: The tooltip gives the exact value, the recommended way to read a precise number rather than estimating against the left axis.",
+  "confidence": 0.93,
+  "evidence": "Hovering the record volume bar produced tooltip 'Volume | Oct-25: 144,876' (2025-10-29). There are 205 interactive volume bars, each with a date+volume tooltip (e.g. an ordinary bar Jun-25 reads 38,612 in prior runs).",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/@n93986/share-price-hits-new-high-amid-record-trading-volu",
+    "wait for chart render",
+    "locate the volume bars in the chart iframe",
+    "hover a volume bar and read the resulting 'Volume' tooltip (Oct-25: 144,876)"
+  ],
+  "pitfalls_checked": [
+    "Correct element: confirmed the volume tooltip is triggered by the blue volume BARS (not the red price line, which has its own 'Price' tooltip)",
+    "Tooltip preferred over pixel estimation: the bar tooltip reports the exact volume with thousands separators",
+    "Dual axes: volume reads against the LEFT axis (thousands); the tooltip removes any ambiguity by stating the number directly",
+    "Hover-to-reveal / move-away-to-hide behaviour confirmed (mouseenter shows, mouseleave hides)"
+  ],
+  "self_check": "Restated: to get a specific date's exact trading volume, the user moves the cursor onto that date's blue volume bar; a 'Volume' tooltip appears showing the month and the precise figure (e.g. Oct-25: 144,876). Verified by hovering a bar and reading its tooltip; reproduced identically across runs r1, r2, and r3."
+}
