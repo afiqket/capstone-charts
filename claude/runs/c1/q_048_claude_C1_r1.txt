@@ -1,0 +1,13 @@
+When the map is in "Map" mode, the color scale runs from light green (0%) up to dark blue `#08306b` (100%), so a **darker blue country is one with a high share of mobile-phone ownership** (roughly 90–100%).
+
+Hovering over it triggers the `mousemove` handler on that `.country` path, which does the following:
+
+1. **Resets all countries' borders** to the default white 0.4px stroke.
+2. **Highlights the hovered country**: its outline turns dark (`#222`) and thick (`1.5px`), and it's raised to the front (`.raise()`).
+3. **Shows the tooltip** (`showTooltip`) positioned near the cursor, containing:
+   - The country name (e.g. "Switzerland", "Russia").
+   - The year, shown as `● <year>`.
+   - The value as a big number, e.g. `98.3%` — for a dark-blue country this will be a **high percentage**.
+   - An italic note *only if the data is estimated* — i.e. there's no row for the currently selected year, so the closest earlier year's value is shown instead: "ⓘ Data not available for <currentYear>. Showing closest available data point instead".
+
+One caveat from the code: the tooltip/highlight only fires if the country resolves through `numericEntityMap`, which is built solely from CSV rows whose `Code` matches the hard‑coded `alpha3Numeric` table. If a hovered country isn't in that table (or has no data), the handler calls `hideTooltip()` and nothing is shown — but any country actually rendered in a real data color (including dark blue) will have an entity and therefore will show the tooltip and highlight.

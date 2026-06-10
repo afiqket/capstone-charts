@@ -1,0 +1,17 @@
+Looking at Switzerland's "Transfers in" data:
+
+- 2008: 0
+- 2009: 195
+- 2010: 452
+- 2011: 482
+- 2012: 574
+- 2013: 751
+- 2014: 933
+- 2015: 558
+- 2016: 445
+- **2017: 873**
+- **2018: 1292**
+- 2019: 1159
+- 2020: 1267
+
+Yes — **2017 to 2018** shows a notable jump (from 873 to 1292, roughly +48%), and the climb from 2016 (445) to 2018 (1292) nearly tripled the value over two years. The single most significant year-over-year increase is **2016 → 2017** (445 → 873, nearly doubling).

@@ -1,0 +1,20 @@
+Clicking or dragging the slider changes the **start year of the visible time window**. It does not move an end point or scrub a single year — it only trims the left edge of the chart.
+
+**What the interaction does mechanically:**
+
+- **Dragging the handle** (`handle.call(d3.drag()...)`) or **clicking anywhere on the slider track** (the invisible full-width `rect` with the `click` handler) both:
+  1. Call `stopPlay()` — cancels the play animation and resets the ▶ icon if it was running.
+  2. Convert the pointer position to a year via `sliderScale.invert(...)`, rounded, and clamp it: `startYear = Math.max(minYear, Math.min(maxYear - 1, ...))`. So `startYear` is constrained to **2010–2023** (it can never reach 2024, since `maxYear - 1` is the cap, and the scale itself is `.clamp(true)`).
+  3. Call `updateSlider()` then `render()`.
+
+- **`updateSlider()`** repositions the handle circle, moves the start-year text label under it, and shrinks the blue `activeTrack` so it spans from the handle to the right end.
+
+- **`render()`** redraws the whole chart for the new window:
+  - Filters data to `d.year >= startYear`.
+  - Resets the x-axis domain to `[startYear, maxYear]`, so the chart **zooms** to start at the chosen year (it stretches the remaining years across the full plot width rather than panning).
+  - Recomputes the stacked max and rescales the y-axis (`.nice()`), so the vertical scale re-fits to whatever data remains in the window.
+  - Redraws the gridlines, both axes (x-tick count adjusts to the narrower range), the six stacked area paths, and repositions the right-side region legend labels to the new area mid-heights.
+
+So practically: moving the slider right makes the chart begin at a later year (e.g., 2018), discarding earlier years and re-scaling both axes to the trimmed, smaller dataset; moving it back to 2010 restores the full range. The end year is always fixed at 2024.
+
+One detail worth noting: the drag handler uses `event.x` while the track-click handler uses `d3.pointer(event)` (the `mx` value) — both are relative to the slider group, so they behave consistently. The handle itself sits inside the clickable track rect, but dragging it triggers the drag behavior rather than a click.

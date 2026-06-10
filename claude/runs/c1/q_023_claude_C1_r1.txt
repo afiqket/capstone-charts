@@ -1,0 +1,9 @@
+**Mid** contributes the largest total demand across all skills.
+
+Summing the "Distinct count of Job Id" across the skills shown in the chart for each seniority level:
+
+- **Mid: ~1,303** (largest)
+- Senior: ~788
+- Junior: ~477
+
+The Mid level dominates because it has the highest job counts for the top skills — e.g., SQL (246), Python (205), and Power BI (198) — well above the Senior and Junior equivalents.

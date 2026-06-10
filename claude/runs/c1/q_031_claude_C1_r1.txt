@@ -1,0 +1,3 @@
+**Total Booking Value for Mini in May 2024 = 8,665**
+
+The May-24 Mini rows in the revenue data have Booking Values: 462, 800, 468, 676, 846, 456, 612, 501, 2016, 696, 1132 — which sum to **8,665** (the Total Revenue column holds identical values, so the chart would plot the same 8,665 for that point).

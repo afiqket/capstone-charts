@@ -1,0 +1,17 @@
+**To read it off the chart:** hover your mouse over the yellow segment (Mid level — the color code maps anything containing "mid" to `#EDC948`, yellow) within the **Azure** row. The tooltip will pop up and display:
+
+- Skill: **Azure**
+- Seniority: **Mid**
+- Distinct Job Count: **152**
+
+The tooltip computes this value directly as `d[1] - d[0]` from the stack segment, so it shows the exact, unrounded number rather than you having to estimate it against the x-axis.
+
+**The value itself:** From the underlying `Skills by Seniority_data.csv`, the relevant row is:
+
+```
+Azure,Mid,152
+```
+
+So the exact distinct job count for Mid-level Azure positions is **152**.
+
+One caveat worth noting: the chart's tooltip only exposes the value visually on hover — there's no data label baked into the bar. If you need it programmatically/exactly without the UI, go straight to the CSV row above, which is the source of truth the chart reads from (`Distinct count of Job Id` column).

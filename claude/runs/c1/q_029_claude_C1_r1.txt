@@ -1,0 +1,36 @@
+## Where the data comes from
+
+The digital‑skills trend lives in **`andamento skill 1_DATASET_data.csv`** (DATA 1), in the column `Popolazione con livello base di digital skills (% di popolazione 16-74)`. In the code it is reshaped into `trendData`:
+
+```js
+const trendData = skillRaw
+  .filter(d => d.Country && d["Year of Time"] && d[skillCol] != null)
+  .map(d => ({ year: +d["Year of Time"], country: d.Country, value: +d[skillCol] }));
+```
+
+So to get one country's trend, you filter `trendData` by `country` and sort by `year`:
+
+```js
+trendData
+  .filter(d => d.country === "Italy")
+  .sort((a, b) => a.year - b.year);
+```
+
+(In the chart this is what `d3.groups(trendData, d => d.country)` produces per country in `dataByCountry`.)
+
+## Important caveat: only 3 data points, not 5
+
+Despite the title "2021–2025", the dataset has **only the years 2021, 2023, and 2025** — there is no 2022 or 2024 data. The x‑axis is drawn continuously from 2021 to 2025 with ticks for all five years, but each country's line is built from just three points (2023 and 2025 are interpolated visually by `d3.curveMonotoneX`).
+
+## Example trends (from the data)
+
+| Country | 2021 | 2023 | 2025 |
+|---|---|---|---|
+| Italy | 45.60 | 45.75 | 54.27 |
+| Germany | 48.92 | 52.22 | 59.55 |
+| Netherlands | 78.94 | 82.70 | 83.61 |
+| European Union | 53.92 | 55.56 | 60.40 |
+
+## In the rendered chart
+
+Note that Page 2 has **no country selector** — the control is hard‑coded to `"Country: (All)"` and `drawTrendPage("European Union")` ignores its argument, so every country is drawn at once. To isolate one country interactively you'd have to **hover over its line/point**, which highlights that country (opacity → 1) and shows a tooltip with the year and value. To filter it programmatically, use the `trendData.filter(...)` snippet above.

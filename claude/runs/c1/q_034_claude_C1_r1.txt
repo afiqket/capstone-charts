@@ -1,0 +1,23 @@
+**In the chart itself:** Click the **"Total Revenue"** tab at the top (the chart opens on "Total Bookings" by default). Then, on the left-hand **Mini** sub-chart, move your mouse over the data point sitting at **Jul 2025** on the x-axis. A tooltip will appear reading:
+
+> **Mini**
+> Month: Jul 2025
+> Total Revenue: 7,266
+
+This works because the code attaches `mouseover` handlers to each `circle`, and the tooltip prints `${pageData.yLabel}: ${d3.format(",")(d.value)}` — the exact aggregated value, not a rounded axis estimate.
+
+**Why 7,266:** The chart computes each point by filtering the revenue CSV to `Vehicle Type (Calc) === "Mini"` and summing `Total Revenue` per `Month of Date`. The `Jul-25` Mini rows are:
+
+| Total Revenue |
+|---|
+| 482 |
+| 820 |
+| 605 |
+| 462 |
+| 761 |
+| 1964 |
+| 1125 |
+| 1047 |
+| **Sum = 7,266** |
+
+So the exact revenue value for Mini in July 2025 is **7,266** — readable directly from the hover tooltip on the Total Revenue page, and confirmed by summing the eight `Jul-25` Mini rows in the revenue data file.

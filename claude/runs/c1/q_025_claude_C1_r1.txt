@@ -1,0 +1,13 @@
+When you hover over the **Junior** segment of the **Tableau** bar, the tooltip becomes visible (it's hidden by default with `display: none`) and displays three lines:
+
+- **Skill:** Tableau
+- **Seniority:** Junior
+- **Distinct Job Count:** 45
+
+The count of **45** comes from `value = d[1] - d[0]` (the height of that stack segment), which matches the data row `Tableau,Junior,45`.
+
+A couple of notes:
+
+- **Hover, not click.** The tooltip is wired only to `mouseover`/`mousemove`/`mouseout`. There is no click handler, so clicking does nothing special (the segments do show `cursor: pointer`, but that's purely cosmetic).
+- The hovered segment also gets a dark outline (`stroke: #222`, width 2) while hovered.
+- Note "Junior" only appears as a visible stack segment if it's part of the rendered series. The chart builds `seniorities` from the data in file order, so the stacking order is Senior → Mid → Junior, and Junior is the rightmost segment of the Tableau row.

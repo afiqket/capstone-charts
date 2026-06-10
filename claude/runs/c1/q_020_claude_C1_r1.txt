@@ -1,0 +1,5 @@
+Looking at the "all" column (overall percentage with a bachelor's degree), the values cluster mostly between ~13% and ~52%, but **Marin County (59.5%)** and **San Francisco (58.1%)** stand out as unusually high.
+
+Of these, **Marin County** is the most striking outlier — its 59.5% overall rate is the highest in the state, and its white population shows 66.5% with bachelor's degrees, far above most other counties. San Francisco's white figure (77.4%) is also a notable outlier within that subgroup.
+
+Short answer: **Marin County** has an unusually high percentage compared to the others.

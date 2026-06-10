@@ -1,0 +1,12 @@
+Looking at this chart, the default view aggregates **all periods, all nationalities, and all outcomes** (the code initializes `defaultSelected = options` for each multi-select).
+
+To answer accurately I'd need to sum the `Under 6 months` rows and divide by the grand total of all rows in the dataset. Given the size of the data here, I can only estimate by inspection:
+
+- In the earlier years (2011 Q1 through ~2016), "Under 6 months" is by far the dominant bucket — quarterly counts in the thousands (e.g., 2014 Q4 alone has Eritrea 890, Syria 356, Sudan 297 in this bucket).
+- From ~2018 onward this bucket collapses to a tiny share, with most decisions falling into the 1+ year buckets (e.g., in 2021 Q4 only ~55 decisions are "Under 6 months" out of thousands).
+
+Weighting the dense earlier quarters (where this bucket is ~70–80% of decisions) against the sparse recent quarters (where it's only a few %), the chart's "Under 6 months" bar comes out to roughly **~50%** of all applicants under the default (all-period) view.
+
+If instead the period filter were narrowed to 2021 only (which the markdown title highlights), the share drops to roughly **~4–5%** — reflecting the large processing-time backlog that built up by 2021.
+
+I cannot give an exact figure without executing the aggregation, but those are the two relevant readings depending on how you interpret the period filter.

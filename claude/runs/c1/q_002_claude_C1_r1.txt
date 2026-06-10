@@ -1,0 +1,11 @@
+Looking at the chart code, the default rendering selects all nationalities, all outcomes, and all periods, summing counts across the dataset.
+
+Aggregating across the data (focusing on the largest contributors):
+
+**1 year to under 1.5 years** consistently has higher counts than 1.5–2 years in the most populous periods. For example:
+- 2015 Q1 grants: Iran 232, Eritrea 115, Pakistan 70 (vs. 71, 14, 26 for 1.5–2)
+- 2021 Q1 grants: Iran 310, Eritrea 154, Sudan 111 (vs. 137, 61, 46 for 1.5–2)
+- 2016 Q4 grants: Eritrea 452 (vs. 15 for 1.5–2)
+- 2017 Q1 grants: Eritrea 213 (vs. 25 for 1.5–2)
+
+**1–1.5 years has the higher share.**

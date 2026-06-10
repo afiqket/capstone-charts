@@ -1,0 +1,6 @@
+In 2005, **Disk** was far cheaper than Memory:
+
+- **Disk:** ~538 $/TB
+- **Memory:** ~100,943 $/TB
+
+Disk cost roughly **190× less** per terabyte than Memory that year.

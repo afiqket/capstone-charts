@@ -1,0 +1,32 @@
+When you click **📊 Bar**, `btnBar.on("click")` fires `setMode("bar")`, which:
+
+**1. Button styling swaps**
+- The Bar button turns blue background with white text (active).
+- The Line button turns white background with dark text (inactive).
+
+**2. The whole plot area is wiped and redrawn** (`redrawContent` clears content, grid, both axes, hover dots) and `renderBar()` runs instead of `renderLine()`.
+
+**3. The chart becomes a horizontal bar chart:**
+
+- **Title changes** from `"Historical price of computer memory and storage"` to `"Historical price of computer memory and storage, 1956–2023"` (it appends `${startYear}–${maxYear}`; startYear is 1956 by default).
+
+- **One bar per series**, using only a single data point each: the most recent value with `year ≥ startYear`. At the default startYear of 1956 these are the latest available values:
+  - Memory: ~1,088 $/TB (2023)
+  - Flash: ~153 $/TB (its last data is 2017)
+  - Disk: ~10.6 $/TB (2023)
+  - Solid state: ~25.9 $/TB (2023)
+
+- **Axes change completely:**
+  - Y axis becomes a categorical band axis listing the four series names (Memory, Flash, Disk, Solid state) in bold, with no tick lines or domain line.
+  - X axis switches from the **log** value scale used in line mode to a **linear** scale, domain `[0, max value × 1.15]`. Because it's linear and Memory's value dwarfs the others, the Memory bar fills most of the width while Disk/Solid state bars are almost invisibly short.
+  - The grid lines and the "log axis" label are removed.
+
+- **Bars**: horizontal rectangles in solid blue-gray (`#6b8cbf`), rounded corners, each with a text label at its end showing the formatted price (e.g. "1,088 $/TB").
+
+- The colored multi-series lines, dots, and inline series end-labels are removed.
+
+**4. Interaction changes**
+- The line-mode hover (vertical dashed line, multi-series tooltip, hover dots driven by the invisible `mouseRect`) is disabled (`mouseRect` listeners set to null, `hideTooltip()` called).
+- Instead, hovering an individual bar shows a small tooltip with that series name, the subtitle `"Most recent year ≥ 1956"`, and the bar's value.
+
+**Unchanged:** the year slider, play/pause button, subtitle/legend text, and footer remain. Note the slider still works — moving `startYear` would change which "most recent year ≥ startYear" point each bar uses (and updates the title's year range).

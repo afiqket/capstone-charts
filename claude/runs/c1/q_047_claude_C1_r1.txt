@@ -1,0 +1,25 @@
+## Getting Mexico's data from the chart
+
+Mexico is one of the 15 highlighted countries (it's in `selectedCountries`), so there are two ways to read its values in the visualization:
+
+**1. Hover over Mexico on the map (🌍 Map mode)**
+Move your mouse over Mexico on the world map. A tooltip appears showing the country name, the year, and the value (e.g. `81.4%`). Use the year slider at the bottom (or the ▶ play button) to change which year is displayed.
+
+**2. Use Bar mode (📊 Bar)**
+Click the **📊 Bar** button. Mexico appears as a labeled horizontal bar with its percentage shown at the end of the bar for the year selected on the slider. Hovering the bar also shows the tooltip.
+
+A caveat on how the chart picks a value: `getValueForYear` shows the **exact** year's figure if it exists; otherwise it falls back to the *closest earlier* year and marks it "estimated" (the tooltip notes *"Data not available for [year]. Showing closest available data point instead"*). Mexico has gaps — there is no 2016, 2017, or 2018 row — so selecting those years shows the 2015 value flagged as estimated.
+
+**Mexico's underlying data** (from `share-population-mobile-phone.csv`, "Proportion of individuals who own a mobile telephone"):
+
+| Year | % owning a mobile phone |
+|------|-------------------------|
+| 2014 | 63.0 |
+| 2015 | 71.5 |
+| 2019 | 73.3 |
+| 2020 | 75.1 |
+| 2021 | 78.3 |
+| 2022 | 79.2 |
+| 2023 | 81.4 |
+
+So with the slider at its far right (2023, the max year), hovering Mexico shows **81.4%**. Note 2016–2018 are missing from the source data entirely.

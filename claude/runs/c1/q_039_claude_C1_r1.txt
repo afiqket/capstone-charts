@@ -1,0 +1,31 @@
+**Short answer: the chart UI can't show you the exact figure — you have to read it from the underlying CSV. The exact value is `11587.933` (constant 2020 US$ per terabyte).**
+
+That figure comes straight from the data file's 2010 row:
+
+```
+World,OWID_WRL,2010,11587.933,1412.2704,53.41057
+                     └─ Memory
+```
+
+In `_series`, this becomes `{ year: 2010, value: 11587.933 }` for the "Memory" series.
+
+**Why the chart itself won't give you the exact number:**
+
+Even if you hover over 2010 in **Line** mode, the tooltip runs the value through `formatShort`:
+
+```js
+if (d >= 1e3) return d3.format(",.0f")(d / 1e3) + "k $/TB";
+```
+
+`11587.933 / 1000 = 11.587933`, formatted with `,.0f` (zero decimals) → it would display **`Memory: 12k $/TB`** — rounded, not exact. The Y-axis is also a log scale with only decade gridlines, so you can't read a precise value off the axis either. (Note also that 2010 isn't an end-of-range year, so the Bar mode / end-labels won't isolate it cleanly without setting the slider precisely.)
+
+**So, to get the exact price:**
+
+1. Open the attached CSV file `historical-cost-of-computer-memory-and-storage.csv` and find the `Year = 2010` row → `Memory` column = **11587.933**.
+2. Or, in a browser console on the running notebook, inspect the reactive variable directly:
+   ```js
+   series.find(s => s.name === "Memory").values.find(v => v.year === 2010).value
+   // → 11587.933
+   ```
+
+Units: constant 2020 US$ per terabyte (≈ **$11,587.93 / TB**).

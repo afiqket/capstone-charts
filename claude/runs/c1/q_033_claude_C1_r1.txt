@@ -1,0 +1,30 @@
+## Premium Revenue Trend Over Time
+
+The chart's right-hand panel ("Premium," in red) plots monthly **Total Revenue** for the Premium vehicle category from Jan 2024 through Dec 2025. Summing the data by month gives roughly:
+
+| Month | Revenue | Month | Revenue |
+|---|---|---|---|
+| Jan-24 | 1,517 | Jan-25 | 2,662 |
+| Feb-24 | 7,700 | Feb-25 | 7,212 |
+| Mar-24 | 1,951 | Mar-25 | 3,642 |
+| Apr-24 | 4,150 | Apr-25 | 2,941 |
+| May-24 | 4,982 | May-25 | 6,004 |
+| Jun-24 | 8,005 | Jun-25 | 2,629 |
+| Jul-24 | 2,719 | Jul-25 | 4,012 |
+| Aug-24 | 2,920 | Aug-25 | 4,858 |
+| Sep-24 | 3,031 | Sep-25 | 2,498 |
+| Oct-24 | **787** | Oct-25 | 4,137 |
+| Nov-24 | **9,104** | Nov-25 | **462** |
+| Dec-24 | 4,579 | Dec-25 | 6,392 |
+
+**Key takeaways:**
+
+- **No sustained upward or downward trend.** Premium revenue is highly volatile and oscillates month to month rather than growing or declining consistently. The start (Jan-24 ≈ 1,517) and end (Dec-25 ≈ 6,392) are both mid-range, with no durable directional drift over the two years.
+
+- **Sharp, recurring spikes.** Big peaks occur at Nov-24 (~9,100, the highest point) and Jun-24 (~8,000), with secondary peaks at Feb-24/Feb-25 (~7,000–7,700) and Dec-25 (~6,400). A roughly annual February surge is visible in both years.
+
+- **Severe troughs.** The lowest points are Oct-24 (~787) and Nov-25 (~462) — each driven by a single Premium transaction that month — producing dramatic crashes immediately adjacent to large peaks (e.g., the Oct-24 collapse right before the Nov-24 high).
+
+- **Pattern is spiky/cyclical, not smooth.** Because the curve uses `curveMonotoneX`, these swings appear as a jagged saw-tooth shape: repeated rises and steep drops driven largely by how many high-value (~2,000) bookings happen to fall in a given month, rather than a stable growth path.
+
+In short, Premium revenue **fluctuates erratically around a roughly flat baseline** (~3,000–5,000/month) with periodic large spikes and occasional near-zero months, showing volatility rather than a clear trend.

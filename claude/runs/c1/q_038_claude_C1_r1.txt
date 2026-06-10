@@ -1,0 +1,18 @@
+The chart shows a **dramatic, sustained exponential decline** in the price of computer memory and storage over this period.
+
+**Magnitude of the drop (constant 2020 US$ per terabyte):**
+
+- **Memory (RAM):** ~$3.79 *quadrillion*/TB in 1957 → ~$2,746/TB in 2020 — a fall of roughly **12 orders of magnitude**.
+- **Disk (magnetic storage):** ~$87.5 billion/TB in 1956 → ~$16/TB in 2020 — about a **10-order-of-magnitude** drop.
+- **Flash memory:** ~$269,000/TB in 2003 → ~$153/TB by 2017.
+- **Solid state (SSD):** ~$694/TB in 2013 → ~$75/TB in 2020.
+
+**Key observations:**
+
+1. **Steady, near-continuous decline.** Every technology gets cheaper year over year, with prices falling by roughly a factor of ~10 every several years — consistent with the kind of exponential improvement that requires a **logarithmic y-axis** (which the code uses via `d3.scaleLog`) just to display the range on one chart.
+
+2. **All media follow the same downward trajectory**, but at different starting points and eras: memory and disk span the full history, flash appears from 2003, and SSDs only from 2013.
+
+3. **Relative ordering by 2020:** disk is the cheapest (~$16/TB), SSDs next (~$75/TB), with RAM remaining the most expensive (~$2,746/TB) — storage that trades speed for capacity stayed consistently cheaper than fast working memory.
+
+In short: from 1957 to 2020, the cost of storing data collapsed by about a *trillion-fold*, one of the steepest and most sustained price declines of any technology.

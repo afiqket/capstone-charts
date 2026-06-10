@@ -1,0 +1,17 @@
+Looking at the Q2 (Apr–Jun) values for "Percentage speeding of total violations":
+
+| Year | Q2 % |
+|---|---|
+| 2003 | 37.4% |
+| 2004 | 30.1% |
+| 2005 | 28.5% |
+| 2006 | 33.1% |
+| 2007 | 25.3% |
+| 2008 | 34.6% |
+| 2009 | 42.0% |
+| 2010 | 40.3% |
+| 2011 | 31.3% |
+| 2012 | 35.1% |
+| 2013 | 35.6% |
+
+**Trend:** Q2 fluctuates rather than following a steady direction. It declines from 37.4% (2003) to a low of 25.3% (2007), then rises sharply to a peak of 42.0% (2009), the highest in the series. After 2010 (40.3%) it drops to 31.3% in 2011 and settles in the mid-30s for 2012–2013. Net change from start (2003) to end (2013) is roughly flat — a slight decrease from ~37% to ~36% — but with substantial volatility, including a pronounced ~17-point swing between 2007 and 2009.

@@ -1,0 +1,29 @@
+Yes. Looking at the data, low-wage occupations consistently show higher immigrant shares than high-wage ones.
+
+**Low-wage jobs** (sample):
+- Maids/housekeeping: 78%
+- Taxi drivers: 70%
+- Cooks: 61%
+- Janitors: 58%
+- Childcare workers: 57%
+- Construction laborers: 54%
+- Nursing/health aides: 51%
+- Waiters: 44%
+
+Most low-wage jobs cluster in the 40–80% range, with only a few (office clerks, retail salespersons, laborers/freight) below 22%.
+
+**High-wage jobs** (sample):
+- Economists: 46%
+- Math/statisticians: 43%
+- Physical scientists: 42%
+- Accountants: 36%
+- Physicians: 32%
+- Financial managers: 31%
+- Lawyers: 13%
+- Chief executives: 12%
+- Public relations managers: 7%
+- Detectives: 0%
+
+High-wage jobs mostly fall in the 10–30% range, with a handful of STEM/quantitative outliers in the 40s.
+
+**Conclusion:** The pattern is clear — low-wage occupations have substantially higher immigrant percentages on average, with the highest concentrations (carpenters at 80%, maids at 78%, taxi drivers at 70%) all in low- or middle-wage categories. The chart's subtitle highlighting carpenters and maids reinforces this.

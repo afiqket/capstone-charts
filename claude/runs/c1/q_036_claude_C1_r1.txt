@@ -1,0 +1,5 @@
+**About $0.0006 per byte** (roughly 6 × 10⁻⁴ US$/byte).
+
+In the 1980 row, `Disk = 581068400`, and the units are constant‑2020 US$ **per terabyte** (1 TB = 10¹² bytes).
+
+So per byte ≈ 581,068,400 ÷ 10¹² ≈ **$0.00058/byte** — equivalently about $581 per megabyte or ~$581 million per terabyte.

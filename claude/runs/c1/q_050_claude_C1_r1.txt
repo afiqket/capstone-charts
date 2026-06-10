@@ -1,0 +1,20 @@
+## Getting the exact value for Canada
+
+**The exact value from the underlying data is `72.9736`** (column "Took prescribed medication"):
+
+```
+Canada,CAN,2020,72.9736
+```
+
+### How the chart itself displays it
+
+The chart never shows the full-precision number. Both the map and bar views format it through `d3.format(".1f")`, which rounds to **one decimal place**:
+
+- **Map view (🌍 Map):** Hover over Canada. The tooltip's big red number runs through `ttVal.text(\`${d3.format(".1f")(value)}%\`)` → displays **`73.0%`**.
+- **Bar view (📊 Bar):** Canada isn't shown at all here — `renderBar()` only plots `selectedCountries` (Kenya, Germany, UK, Egypt, Ethiopia, Argentina, China, Spain, Russia), and Canada isn't in that list.
+
+So the chart can only ever give you the rounded `73.0%`.
+
+### To get the true exact value
+
+Read it directly from the source CSV, `dealt-with-anxiety-depression-took-prescribed-medication.csv` — the Canada row gives **`72.9736`**. That raw number is what `dataByCountry.get("Canada")` holds internally; the rounding only happens at display time in the tooltip formatter.

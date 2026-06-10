@@ -1,0 +1,19 @@
+Reading the two rankings the chart builds, here's the comparison. AI adoption uses the **max** of each country's three values; digital skills come from the hardcoded ranking list.
+
+The countries where digital skills clearly outrank AI adoption (the "mismatch" the title refers to):
+
+| Country | Digital skills | AI adoption (max) | Pattern |
+|---|---|---|---|
+| **Ireland** | 83 (2nd best) | 57.3 | Near the top in skills, only mid-pack in AI |
+| **Czechia** | 72 (6th) | 54.1 | High skills, well below comparably-skilled peers in AI |
+| **Croatia** | 63 | 39.6 | Decent skills, notably weak AI adoption |
+| **Malta** | 67 | 51.8 | Upper-tier skills, mid-low AI |
+| **Norway** | 80 (5th) | 66.0 | Top-5 skills, but AI trails Finland/Denmark at similar skill levels |
+
+**Ireland and Czechia are the strongest cases.** Ireland is the 2nd-most digitally skilled country but its AI adoption (57%) sits near the EU average (55%), far behind similarly-skilled Finland (79%), Denmark (75%), and Netherlands (68%). Czechia ranks 6th in skills yet its AI adoption (54%) lags countries with lower skill scores.
+
+**Croatia** shows the proportionally largest gap: respectable digital skills (63, above Germany and Belgium) but one of the weaker AI adoption figures (40%).
+
+By contrast, Netherlands, Finland, and Denmark are high on both — no mismatch — and laggards like Romania, Serbia, and Türkiye are low on both.
+
+One caveat: the two metrics are on different scales (skills = % of population with basic skills; AI = % of large enterprises using AI), so this is a relative-ranking comparison, not a like-for-like one.

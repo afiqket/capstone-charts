@@ -1,0 +1,7 @@
+In June 2024 (Jun-24), the **Premium** vehicle type has higher total bookings.
+
+Counting rows in the bookings data (Data 1) for Jun-24:
+- **Premium:** 10 bookings (IDs ...152, 153, 156, 163, 165, 168, 172, 173, 174, 176)
+- **Mini:** 3 bookings (IDs ...160, 170, 171)
+
+So Premium (10) exceeds Mini (3) for June 2024.

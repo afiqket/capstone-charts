@@ -1,0 +1,17 @@
+When you hover over a point in the **Premium** chart on the **Total Revenue** tab, the tooltip shows three lines:
+
+1. **Premium** — the vehicle category (bolded), since `type === "premium"`.
+2. **Month:** the point's month formatted as `%b %Y`, e.g. "Jan 2024".
+3. **Total Revenue:** the value, which is `pageData.yLabel` (`"Total Revenue"` on the revenue page) followed by the aggregated monthly sum of `Total Revenue` for all Premium rows in that month, formatted with thousands separators via `d3.format(",")`.
+
+For example, hovering the Jan-24 Premium point would show:
+
+```
+Premium
+Month: Jan 2024
+Total Revenue: 1,517
+```
+
+(1,517 = 482 + 423 + 612, the sum of Premium revenue for Jan-24).
+
+Additionally, on hover the point itself enlarges (radius 4.5 → 7) and fills with the Premium color (`#dc2626`), and the tooltip follows the cursor (offset +14px right, −36px up). It disappears on mouseout.

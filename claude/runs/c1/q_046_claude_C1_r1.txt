@@ -1,0 +1,9 @@
+For Australia, the dataset has these values for "Proportion of individuals who own a mobile telephone":
+
+- 2019: 97.8%
+- 2020: 97.4%
+- 2021: 94.5%
+- 2022: 94.5%
+- 2023: 94.6%
+
+The chart opens at the most recent year. The latest available data point for Australia is **94.6%** (2023). Australia has no 2024 entry, so even though the slider's max year is 2024 (driven by other entities like World), the chart's `getValueForYear` logic falls back to Australia's closest prior point — **94.6%**.

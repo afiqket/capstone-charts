@@ -1,0 +1,9 @@
+The AI adoption percentage for **Spain** is **57.46%**.
+
+This comes from the AI dataset, where the chart takes the **maximum** value across Spain's three records (`d3.max`):
+
+- 32.34
+- 39.66
+- **57.46** ← maximum
+
+So Spain's bar in the "Country Ranking by AI Adoption" chart uses **57.46%**.

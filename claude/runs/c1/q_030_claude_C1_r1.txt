@@ -1,0 +1,17 @@
+Clicking the **"Digital Skills Trend by Population"** button runs `page2Button.onclick`, which sets `currentPage = 2` and calls `render()`. Here's what that produces:
+
+**1. Button styling updates** (`setButtonStyle`): The "Digital Skills Trend by Population" button turns blue (`#4f7fae`) with white text to show it's active; the "Country Rankings" button reverts to white background with black text.
+
+**2. Chart area is swapped:** `chartArea.innerHTML` is cleared, the tooltip is re-attached (hidden), and because `currentPage === 2`, `drawTrendPage("European Union")` is appended.
+
+Note: the `"European Union"` argument is **ignored** — `drawTrendPage()` takes no parameters and there is no country-filtering logic. The label is hardcoded.
+
+**3. What the page 2 view shows** — a 900×560 line chart titled **"Digital Skills Trend: All Countries"**, with:
+- A static bold label above it reading **"Country: (All)"** (just text, not an interactive filter).
+- X-axis: years 2021–2025; Y-axis: "Digital Skills (% of Population)", scaled from 0 to the data max + 5.
+- **One line per country** (all 32 countries from the skills CSV), all drawn in the same blue (`#4f7fae`) at faint 0.35 opacity, using a monotone curve. Note the underlying data only has points for 2021, 2023, and 2025 (no 2022/2024 records), so each line connects three points.
+- Faded points (circles) at each data value, plus larger invisible hover circles.
+
+**4. Interactivity:** Hovering over any point's hover-zone highlights that country's entire line (opacity → 1, thicker stroke), dims all other lines to 0.12, enlarges that country's points (and the hovered point to r=7), and shows a tooltip with the country name, year, and the digital-skills percentage. Moving away resets everything.
+
+In short: clicking it switches from the dual bar-chart ranking page to a multi-line trend chart of basic digital skills for all countries over 2021–2025, with hover-to-highlight behavior. The "European Union" / "Country: (All)" wording is cosmetic and does not actually filter the data.

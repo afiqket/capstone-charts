@@ -1,0 +1,28 @@
+## Short answer
+
+From the **chart itself you cannot read the exact value** — but the underlying data gives it precisely:
+
+**Sub-Saharan Africa, 2024 = `430,034,750` active accounts**
+
+(from the data row: `Sub-Saharan Africa,2024,430034750`)
+
+## Why the chart won't give you the exact number
+
+The chart has an interactive tooltip (hover over the area near year 2024), which shows per-region values. But it passes values through this formatter:
+
+```js
+const fmtTT = v => {
+  if (v >= 1e9) return `${d3.format(".2f")(v / 1e9)} billion`;
+  if (v >= 1e6) return `${d3.format(".2f")(v / 1e6)} million`;   // ← this branch applies
+  return d3.format(",.0f")(v);
+};
+```
+
+Since `430,034,750` is ≥ 1e6 but < 1e9, the tooltip would display it rounded as **"430.03 million"**, not the exact figure. The Y‑axis (`fmtY`, `.0f million`) is even coarser, and the stacked-area shape makes precise reading impossible anyway.
+
+## How to get the exact value
+
+1. **Read it from the data file** (the reliable way): open `active-mobile-money-accounts.csv` and find the row `Entity = Sub-Saharan Africa`, `Year = 2024` → **430,034,750**.
+2. In the running notebook you could also inspect the `pivotData` variable: the entry for `year: 2024` has `"Sub-Saharan Africa": 430034750`. That value comes straight from the CSV via `match["Active mobile money accounts"]`, with no rounding applied.
+
+So the chart is for visualizing trends; for the exact number, go to the source CSV / `pivotData`: **430,034,750**.

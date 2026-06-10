@@ -1,0 +1,1 @@
+No. Senior Tableau demand is 63 distinct jobs, while Senior Power BI demand is 104 — Power BI is higher.

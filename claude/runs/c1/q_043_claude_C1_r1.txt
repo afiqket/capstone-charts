@@ -1,0 +1,21 @@
+## Overall trend: strong, sustained, near-exponential growth
+
+From 2010 to 2024, active mobile money accounts grew enormously and consistently across virtually every region. Summing all six regions in the stacked chart:
+
+- **2010 total:** ~13 million accounts
+- **2024 total:** ~780 million accounts
+
+That's roughly a **60-fold increase** over 15 years, with the cumulative (stacked) total rising in every single year — there is no year of overall decline.
+
+**Key contributors to the trend:**
+
+| Region | 2010 | 2024 | Trend |
+|---|---|---|---|
+| Sub-Saharan Africa | ~10.4M | ~430M | The dominant region throughout; grows steeply every year |
+| East Asia & Pacific | ~1.4M | ~150M | Slow start, then explosive growth from ~2016 onward |
+| South Asia | ~1.0M | ~139M | Rapid take-off after 2012 |
+| Latin America & Caribbean | ~0.08M | ~30M | Steady climb (with a slight 2024 dip) |
+| Middle East & North Africa | ~0.05M | ~19M | Growth interrupted by a sharp 2019 drop, then recovery |
+| Europe & Central Asia | ~0.19M | ~11M | Smallest but steadily rising |
+
+**Summary:** The data shows a clear, accelerating upward trajectory in active mobile money accounts. **Sub-Saharan Africa is by far the largest and fastest-growing region**, while East Asia & Pacific and South Asia surged especially after the mid-2010s. Minor regional setbacks (e.g., MENA's 2019 collapse, small 2024 dips in Latin America and Europe/Central Asia) do not interrupt the powerful overall growth — adoption expanded roughly 60× globally over the period.

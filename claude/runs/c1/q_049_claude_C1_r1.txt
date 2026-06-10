@@ -1,0 +1,6 @@
+**North America** generally shows higher values.
+
+- **North America**: The OWID regional aggregate is **60.6%**, with the United States at 67.1% and Canada at 73.0% (Mexico is lower at 43.4%).
+- **Southeast Asia**: Values are mostly in the 27–49% range — Malaysia 27.1%, Philippines 41.7%, Indonesia 45.8%, Myanmar 46.7%, Vietnam 47.5%, Thailand 48.8% (Laos is an outlier high at 68.3%), averaging roughly the mid‑40s%.
+
+So for this metric (share who took prescribed medication for anxiety/depression, 2020), North America sits notably higher than Southeast Asia.
