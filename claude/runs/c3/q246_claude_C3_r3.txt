@@ -1,0 +1,20 @@
+{
+  "answer": "Use the chart's default '🌍 Map' view and hover the cursor over Afghanistan. Afghanistan sits in South-Central Asia, bordered by Iran (west), Pakistan (south/east), Turkmenistan/Uzbekistan/Tajikistan (north), and a narrow strip touching China (far east). With the cursor over Afghanistan, a tooltip pops up next to the cursor showing 'Afghanistan', a small grey 'per 100,000 people' label, and the value rendered via d3.format('.2~f'). For Afghanistan the value reads as 0 (i.e., approximately 0 psychiatrists per 100,000 people in the 2015–2020 reporting window). The '📊 Bar' view does NOT help here — its bar chart only shows 10 pre-selected countries (United Kingdom, Canada, Mexico, China, Russia, South Africa, Chad, Pakistan, Brazil, France) and Afghanistan is not among them, so map hover is the only retrieval path.",
+  "reasoning": "Step 1 (Chart Identification): Dashboard with '🌍 Map' and '📊 Bar' toggles. Title 'Psychiatrists per 100,000 people' (subtitle: 'Psychiatrists per 100,000 people, 2015–2020 — The number of psychiatrists per 100,000 people in the population'). Step 3 (Encoding): Map fill encodes per-capita rate via a sequential color ramp with domain [0.1, 50] (log-style), clamped. Step 4 (Interactive Elements Protocol): Each country path on the map is bound to its ISO numeric id; the chart's mousemove handler looks up the country via numericEntityMap, fetches its value through dataByCountry.get(entity), then calls showTooltip(entity, value, mx, my). showTooltip draws a small white card with country name in bold black, 'per 100,000 people' label in small grey, and the value formatted via d3.format('.2~f'). For Afghanistan dataByCountry returns 0, so the tooltip will read 'Afghanistan / per 100,000 people / 0'. Step 6 (Pitfalls): Afghanistan's exact 0 is below the color scale's 0.1 floor and is clamped; the country is still rendered with a colored fill (not 'No data') because it is present in dataByCountry; the tooltip is the trusted reading, not the visual shade.",
+  "confidence": 0.9,
+  "evidence": "On the chart's notebook page, dataByCountry Map(143) contains 'Afghanistan' => 0. valueCol = 'Total number of psychiatrists per 100,000 population'. Tooltip rendering code (visible in chart cells): ttVal.text(d3.format('.2~f')(value)) with the static 'per 100,000 people' label above. The map mousemove handler is attached to each '.country' path and calls showTooltip(entity, val, mx, my). selectedCountries (used for bar mode) = [United Kingdom, Canada, Mexico, China, Russia, South Africa, Chad, Pakistan, Brazil, France] — Afghanistan is NOT in that list.",
+  "interactions_performed": [
+    "Navigated Playwright to https://observablehq.com/d/c1b1219353b490bc",
+    "Waited ~3s for the embedded notebook iframe and SVG chart to render (default = map view)",
+    "Captured a page accessibility snapshot to read the chart title, subtitle, legend domain, selectedCountries list, dataByCountry entries, and tooltip-format code",
+    "Confirmed Afghanistan is in dataByCountry (value 0) but NOT in selectedCountries; therefore the map hover tooltip is the canonical retrieval path"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the bar view's pre-selected list does NOT include Afghanistan — must use map hover",
+    "Confirmed color scale domain starts at 0.1 (not 0): Afghanistan's 0 is clamped to the floor of the ramp but still appears colored (not 'No data')",
+    "Confirmed tooltip formatting via d3.format('.2~f') so the value displays as '0' (no decimals for exact zero)",
+    "Confirmed the metric is psychiatrists per 100,000 people (per-capita), not absolute count",
+    "Confirmed Afghanistan IS present in dataByCountry, so the country renders as a colored fill, not the 'No data' hatch"
+  ],
+  "self_check": "Restated: to read Afghanistan's value, switch (or stay) on the '🌍 Map' view, find Afghanistan in South-Central Asia, and hover. The tooltip reads 'Afghanistan / per 100,000 people / 0' — i.e., ~0 psychiatrists per 100,000 people for 2015–2020. The bar view cannot deliver this value because Afghanistan is not one of the 10 pre-selected bar-chart countries."
+}
