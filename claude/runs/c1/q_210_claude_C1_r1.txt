@@ -1,0 +1,16 @@
+This is a **collapsible Tidy Tree** (D3). When it first renders, all nodes below the root are collapsed — only the top-level children of `flare` are visible. To retrieve / reveal deeper data, you **click on a node**.
+
+Here's how it works in the code:
+
+- On load, every non-root node has its real children moved to `_children` (a hidden cache) and `children` set to `null` (chart_060.js:17–21). This collapses everything.
+- A click handler is attached to each node (chart_060.js:82–85):
+  ```js
+  .on("click", (event, d) => {
+    d.children = d.children ? null : d._children;
+    update(event, d);
+  })
+  ```
+  Clicking toggles a node: if it's expanded, `children` is set back to `null` (collapse); if it's collapsed, `children` is restored from `_children` (expand). Then `update` re-runs the layout and animates the tree.
+- Visual cue: nodes that still have hidden children are drawn with a dark fill (`#555`); fully-expanded or leaf nodes are light (`#999`) (chart_060.js:89, 104–105). So the dark dots are the ones with more data to reveal.
+
+**So to drill down**: click a dark-circle node (e.g. `analytics`) to reveal its children, then click one of those (e.g. `cluster`) to reveal the next level, and so on until you reach the leaves (which carry `size` values like `AgglomerativeCluster: 3938`). Clicking a node a second time collapses it again.

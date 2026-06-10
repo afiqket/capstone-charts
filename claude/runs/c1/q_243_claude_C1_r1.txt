@@ -1,0 +1,23 @@
+Since I'm instructed not to use tools, I'll answer based on the standard pattern for these chart/CSV pairs.
+
+To get the data for Malta from `data/csvs/chart_071.csv`, filter the rows where the country/entity column equals `"Malta"`. Typical approaches:
+
+**Python (pandas):**
+```python
+import pandas as pd
+df = pd.read_csv("data/csvs/chart_071.csv")
+malta = df[df["Entity"] == "Malta"]   # or "Country" / "country", depending on the column name
+```
+
+**Command line:**
+```bash
+head -1 data/csvs/chart_071.csv                 # confirm the column name
+awk -F',' 'NR==1 || $1=="Malta"' data/csvs/chart_071.csv
+```
+
+**JavaScript (matching the chart code style):**
+```js
+const maltaRows = data.filter(d => d.Entity === "Malta");
+```
+
+If you'd like, allow me to read the two files and I can tell you the exact column name to filter on and show the actual Malta rows.

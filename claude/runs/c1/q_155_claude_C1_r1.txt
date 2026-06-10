@@ -1,0 +1,13 @@
+Based on the data (3,360 rows total accounted for), the incident counts by breach type across all years are:
+
+| Breach Type | Total Incidents |
+|---|---|
+| **Hacking/IT Incident** | **1,089** |
+| Theft | 959 |
+| Unauthorized Access | 946 |
+| Loss | 182 |
+| Improper Disposal | 96 |
+| Other | 77 |
+| Unknown | 11 |
+
+**Hacking/IT Incident** had the highest total number of incidents across all years shown, with 1,089 reported breaches.

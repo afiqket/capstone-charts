@@ -1,0 +1,6 @@
+Hovering shows separate tooltips for each — they're not combined. For a given data point (e.g., 03/09/2025):
+
+- **Hover the price line (transparent circle on the line):** A tooltip with a red "Price" title showing the month-year and the share price formatted as a dollar value — e.g., `Price` / `Sep-25: $240.66`.
+- **Hover the volume bar:** A tooltip with a light-blue "Volume" title showing the month-year and the volume (in thousands, comma-formatted, no decimals) — e.g., `Volume` / `Sep-25: 133,336`.
+
+Note that the chart plots daily points (not monthly aggregates), so each "month" actually has many bars/points; the date label in the tooltip is formatted as `%b-%y` (e.g., `Sep-25`), which makes multiple same-month points share the same displayed label but with different price/volume values. Only one tooltip is visible at a time — there's no combined price-and-volume readout.

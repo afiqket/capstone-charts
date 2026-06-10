@@ -1,0 +1,1 @@
+Based on the chart code, the count is determined by parsing the year from "Breach Submission Date" and grouping by year and breach type. Counting all CSV rows whose `Breach Submission Date` falls in 2019 gives **512** breach incidents across all breach types in 2019.

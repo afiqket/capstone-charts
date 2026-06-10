@@ -1,0 +1,6 @@
+Scrolling up or down on the map zooms the view in or out. The chart attaches `d3.zoom()` with `scaleExtent([1, 8])` to the SVG (chart_054.js:225–235), so the mouse wheel is interpreted as a zoom gesture:
+
+- **Scroll up** → zooms in (toward the cursor), up to 8× magnification.
+- **Scroll down** → zooms out, back to the default 1× fit.
+
+On each zoom event, the `zoomLayer` (which contains both the county shapes and the migration flow arcs) gets the new transform applied, and stroke widths for counties and flow arcs are divided by the zoom scale `k` so the borders/arcs don't get visually thicker as you zoom in. The cursor also switches between `grab` and `grabbing` during interaction.

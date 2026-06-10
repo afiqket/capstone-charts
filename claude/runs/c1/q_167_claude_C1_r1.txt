@@ -1,0 +1,7 @@
+In January 2025, the share price ranged from **$199.43** (on 02/01/2025, the first trading day) to **$214.02** (on 31/01/2025, the last trading day of the month), with intermediate values fluctuating between roughly $199 and $214.
+
+Key reference points:
+- **Start of January 2025:** $199.43 (02/01/2025)
+- **End of January 2025:** $214.02 (31/01/2025)
+- **Monthly high:** $214.02 (31/01/2025)
+- **Monthly low:** $199.43 (02/01/2025)

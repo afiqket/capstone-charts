@@ -1,0 +1,34 @@
+I have enough to answer—the play button's behavior is fully defined in the chart code (the CSV is just the time-series data being animated).
+
+## What clicking the play button does
+
+The play button (`▶`) toggles an animation that scrubs through the chart's time series. Its click handler is:
+
+```js
+playButton.on("click", () => {
+  playing ? pause() : play();
+});
+```
+
+So behavior depends on the current state:
+
+### If not currently playing → it starts the animation (`play()`)
+
+1. **Restart if at the end:** If the playhead (`currentT`) is already at the last frame (`maxT`), it resets to the beginning (`currentT = 0`).
+2. **Button changes to a pause icon** (`⏸︎`).
+3. **Animation runs** via `requestAnimationFrame`, advancing `currentT` from its current position to the last frame (`endT = maxT`).
+   - The full run is timed to **`PLAY_DURATION_MS` = 20,000 ms (20 seconds)**, but the duration is scaled by how far along you already are: `20000 × ((endT − startT) / endT)`. So starting from the beginning takes the full ~20 s; starting from the middle takes proportionally less.
+4. **On each frame, `update()` redraws** the chart:
+   - The pink "current" square for each asset slides to its value position (interpolated between data points for smooth motion).
+   - The grey "Range" bar grows to span each asset's running min→max.
+   - The percentage value labels update.
+   - The slider handle slides along, and the date label updates (e.g. "02 Jan 2025" → onward).
+5. **When it reaches the end**, it snaps to the final frame, then calls `pause()` (resets to `▶`).
+
+In effect: clicking play animates the daily year-to-date price moves of the 12 assets (Gold, Bitcoin, Nvidia, Tesla, etc.) advancing day by day, with bars/squares racing back and forth — illustrating the "Whiplash in the markets: can your eyes keep up?" title.
+
+### If already playing → it pauses (`pause()`)
+
+Stops the animation (`cancelAnimationFrame`), freezes the chart at the current frame, and switches the button back to `▶`. Pressing play again resumes from where it stopped.
+
+**Note:** Dragging or clicking the slider also calls `pause()` first, so manual scrubbing interrupts any running animation.

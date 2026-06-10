@@ -1,0 +1,3 @@
+In 2015, there were **56** Hacking/IT Incident cases recorded.
+
+The chart counts rows by year (from the `Breach Submission Date` column) and breach type (`TypeofBreach`). Filtering for `TypeofBreach = "Hacking/IT Incident"` with a 2015 submission date yields 56 records.

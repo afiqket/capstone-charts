@@ -1,0 +1,16 @@
+When you hover over a colored country on the map, three things happen:
+
+1. **The country gets highlighted** — its border changes from the default thin white stroke (0.4px) to a thicker dark gray stroke (`#333`, 1.5px), and it's raised to the front so the outline isn't obscured by neighboring countries.
+
+2. **A tooltip appears** near the cursor, positioned to stay within the chart bounds (flipped to the left if it would overflow the right edge). The tooltip contains:
+   - The **country name** (in bold)
+   - The **current year** (selected via the slider)
+   - Up to three colored rows showing the values for that country/year, each in its series color:
+     - Age dependency ratio (orange `#B04B2D`)
+     - Labor force dependency ratio (blue `#4C6FAD`)
+     - Labor force dependency ratio – higher participation (gold `#8B6914`)
+   - Values are formatted to 2 decimal places. Any series with missing data is omitted.
+
+3. **Other countries reset** to the default thin white stroke, so only the hovered country is emphasized.
+
+When you move the mouse off the country (`mouseleave`), the highlight is removed and the tooltip is hidden.

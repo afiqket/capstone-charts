@@ -1,0 +1,20 @@
+There is no node literally named "anime" in the data — the closest match is the **"animate"** node (a child of the root "flare"). Assuming you mean that one:
+
+Clicking it triggers the handler at chart_059.js:106-110:
+
+```js
+d.oldIndex = d.index;
+d.children = d.children ? null : d._children;
+update(event, d);
+```
+
+Because the tree starts with everything collapsed except the root (chart_059.js:25), `animate.children` is initially `null` while `animate._children` holds its real children. So the first click **expands** the node, revealing its 12 children: `Easing`, `FunctionSequence`, `interpolate` (itself collapsible), `ISchedulable`, `Parallel`, `Pause`, `Scheduler`, `Sequence`, `Transition`, `Transitioner`, `TransitionEvent`, `Tween`.
+
+Visually, `update()` then:
+- Animates the SVG height taller to fit the new rows (250 ms, or 2500 ms if Alt is held).
+- Slides the newly-revealed child nodes out from `animate`'s position into their indented rows, fading them in.
+- Pushes the sibling subtrees below (`data`, `display`, `flex`, …) downward.
+- Draws the indented elbow link paths connecting `animate` to each new child.
+- Updates `animate`'s circle fill — it stays dark grey `#555` because it still has stashed `_children` (chart_059.js:149).
+
+A second click collapses it back: children animate back toward `animate`'s row and fade out, and the tree shrinks.

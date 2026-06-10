@@ -1,0 +1,8 @@
+Hovering over any colored region (each hex represents a UK area) triggers a tooltip that appears next to the cursor. The tooltip shows:
+
+- The **region's name** (bold)
+- The label "Walk three times a week"
+- "2022:"
+- The **percentage value** for that region, formatted to one decimal place (e.g., `42.3%`)
+
+The tooltip follows the mouse as it moves within a region (via `mousemove`, repositioned ~15px right and 20px above the cursor), and disappears (`opacity: 0`) when the mouse leaves the region. So hovering across different regions one by one swaps the tooltip's content to match each hovered region — greener hexes will show lower percentages (closer to 30%), white hexes around 45%, and pink/magenta hexes higher values (toward 60%), matching the color scale.

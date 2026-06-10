@@ -1,0 +1,6 @@
+Clicking a country circle like Spain triggers the handler at chart_058.js:502-505. It does two things:
+
+1. Sets the dropdown's value to that country's name (`select.property("value", d.data.name)`).
+2. Calls `zoomToCountry(d.data.name)`, which animates the SVG's viewBox over ~900ms to zoom in on that country's circle with a 30px padding (chart_058.js:477-495).
+
+The result: the view smoothly zooms into Spain's bubble (filling the frame with Spain and its child club circles), and the dropdown updates to show "Spain" as selected.

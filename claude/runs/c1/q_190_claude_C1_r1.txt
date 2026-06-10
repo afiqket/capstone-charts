@@ -1,0 +1,9 @@
+Hovering over South Korea on the map triggers the `mousemove` handler, which:
+
+1. **Highlights the country** — South Korea's border changes from the default white 0.4-width stroke to a darker `#333` stroke at 1.5 width, and the path is raised to the top of the SVG stacking order. All other countries are reset to the default stroke.
+2. **Displays a tooltip** near the cursor containing:
+   - **Country name:** "South Korea" (bold, 15px)
+   - **Subtitle:** "Change in male height, 1896 → 1996" (gray, 11px)
+   - **Value:** `9.49%` — from the CSV row `South Korea,KOR,1996,9.494623`, formatted via `d3.format(".2f")` (large 22px bold in `#1a5a8a` blue)
+
+The tooltip box is 260×80 px with a white background, rounded corners, light gray border, and a drop shadow. It positions itself to the right of the cursor unless that would overflow the SVG width (W=900), in which case it flips to the left; vertically it's clamped within the SVG bounds.

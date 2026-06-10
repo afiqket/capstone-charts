@@ -1,0 +1,8 @@
+Syria shows a **non-monotonic** trend overall, but with two clear phases:
+
+- **1989–2010**: Flat at 0 deaths.
+- **2011–2017**: Sharp **increase**, rising from 30 to a peak of 12,464 in 2017 (with a dip in 2015).
+- **2017–2021**: Steep **decrease**, falling to 307 by 2021.
+- **2022–2024**: Roughly stable at a few hundred per year.
+
+So there is no single trend across the years — Syria rises sharply through the mid-2010s (Syrian civil war) and then **decreases** significantly afterward. The overall arc since 2011 is an increase followed by a larger decrease.

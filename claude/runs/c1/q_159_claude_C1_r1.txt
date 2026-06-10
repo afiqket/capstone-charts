@@ -1,0 +1,10 @@
+The total number of data breaches across all causes shown in the chart is **3,360**.
+
+Breakdown by cause:
+- Hacking/IT Incident: 1,089
+- Theft: 959
+- Unauthorized Access: 946
+- Loss: 182
+- Improper Disposal: 96
+- Other: 77
+- Unknown: 11

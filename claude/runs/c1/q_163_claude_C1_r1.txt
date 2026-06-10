@@ -1,0 +1,14 @@
+Based on the data file, only the **2019** election has a full list of named candidates for North Tyneside. For **2017**, only the winning MP's name and the top‑three party results are recorded — individual challenger names are not in the data.
+
+**2019 candidates listed:**
+- Andrew Husband — The Brexit Party
+- Chris Boyle — Liberal Democrats
+- Dean Carroll — Conservative and Unionist Party
+- John Buttery — Green Party
+- Mary Glindon — Labour Party (winner)
+
+**2017 (what the data records):**
+- Winner: Mary Glindon (Labour)
+- Top three parties only: Lab (1st, 64.47%), Con (2nd, 27.31%), UKIP (3rd, 4.05%) — no candidate names other than the winner
+
+So the data only lets us say definitively that **Mary Glindon (Labour) stood in both years**, and that the field included a UKIP candidate in 2017 but a Brexit Party candidate (Andrew Husband) instead in 2019. The names of the other 2017 candidates aren't present in this file, so a full name‑by‑name comparison can't be made from this data alone.

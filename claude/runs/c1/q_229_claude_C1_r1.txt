@@ -1,0 +1,4 @@
+When you move your mouse away from a country (the `mouseleave` event at chart_066.js:117-120):
+
+1. The country's stroke is reset — all countries return to a thin white border (`#fff`, width `0.4`), removing the dark highlight (`#333`, width `1.5`) that appeared on hover.
+2. The tooltip is hidden (`hideTooltip()` sets the tooltip group's `display` to `"none"`), so the country name, "2020" subtitle, and percentage value disappear.

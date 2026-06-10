@@ -1,0 +1,8 @@
+To reach **MaxFlowMinCut** in this collapsible indented tree:
+
+1. Click **flare** (root) — already expanded on load.
+2. Click **analytics** to expand it.
+3. Click **graph** to expand it.
+4. **MaxFlowMinCut** appears as a leaf node under `graph` (value: 7840).
+
+Full path: `flare → analytics → graph → MaxFlowMinCut`

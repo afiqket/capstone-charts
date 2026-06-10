@@ -1,0 +1,17 @@
+It plays from the current position (not a restart).
+
+Here's the trace:
+
+- Dragging the slider runs `scrub` (lines 543–547), which calls `pause()` and then `update(sliderScale.invert(mx))`. That sets `currentTime` to the dragged-to position.
+- Clicking Play runs `play()` (line 516). Its only reset condition is:
+
+```js
+if (currentTime >= maxRaceTime - 0.001) {
+  currentTime = 0;
+  update(currentTime);
+}
+```
+
+Since after a mid-track drag `currentTime` is below `maxRaceTime`, this branch is skipped, and playback resumes from wherever you dropped the slider.
+
+The one exception: if you drag the slider all the way to the very end (so `currentTime` reaches `maxRaceTime`), then Play will reset to 0 and restart from the beginning.

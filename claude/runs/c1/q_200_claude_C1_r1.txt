@@ -1,0 +1,16 @@
+Looking at this zoomable sunburst chart, the area of each segment is proportional to the sum of its descendant values.
+
+Summing the top-level categories under "flare":
+
+- **analytics**: ~48,700
+- **animate**: ~100,000
+- **data**: ~30,300
+- **display**: ~24,300
+- **flex**: ~4,100
+- **physics**: ~29,900
+- **query**: ~89,700
+- **scale**: ~31,300
+- **util**: ~165,200
+- **vis**: ~432,600
+
+**`vis`** takes up the largest area in the chart by a wide margin (roughly 2.6× the next-largest, `util`). It dominates because it contains many large subgroups — notably `operator` (with its big `layout` subtree), `data` (including Data, DataList, NodeSprite), and `legend`.

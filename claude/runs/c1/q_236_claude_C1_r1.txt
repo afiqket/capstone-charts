@@ -1,0 +1,3 @@
+Iceland has **4.54** mental health units in general hospitals per 100,000 population (2016), while Hungary has **2.65** per 100,000 (2016).
+
+Iceland's rate is roughly **1.7× higher** than Hungary's (about 1.89 more units per 100,000 people). Both countries rank among the highest in the dataset for this metric, but Iceland clearly leads Hungary.

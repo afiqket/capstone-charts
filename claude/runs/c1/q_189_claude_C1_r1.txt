@@ -1,0 +1,7 @@
+To find the percentage value for Japan on the map, hover your mouse over Japan. A tooltip will appear showing:
+
+- **Country name**: "Japan"
+- **Subtitle**: "Change in male height, 1896 → 1996"
+- **Value**: **9.38%** (formatted to 2 decimals via `d3.format(".2f")`, from the data value `9.381433`)
+
+The tooltip is triggered by the `mousemove` handler on each country path (chart_053.js:103-112), which looks up Japan's value from `dataByCountry` and displays it via `showTooltip()` (line 78-87). Japan's country fill color will also correspond to roughly the darker blue end of the legend gradient (the 0%–12% scale at the bottom), since ~9.4% falls near the right side of the color scale.

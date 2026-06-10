@@ -1,0 +1,15 @@
+Based on the chart code and 2020 data from Wellcome/Gallup (via Our World in Data):
+
+## Global patterns in lifetime anxiety or depression
+
+**World average:** ~19% report lifetime anxiety or depression. Values range enormously — from ~3% (Taiwan) to ~49% (Peru).
+
+**Regional patterns:**
+- **South America – highest** (regional avg ~35%). Peru (49.3%), Ecuador (42.7%), Bolivia (38.4%), Venezuela (38.2%), El Salvador/Dominican Republic (~38%), Chile (37.3%), Nicaragua/Argentina (~35%), Brazil (33.0%), Colombia (30.2%). Latin America stands out as the region most affected.
+- **Oceania** (~25.7%) and **Europe** (~22.8%) / **North America** (~22.8%) sit in the upper-middle range. Western/Northern Europe and Anglophone countries (UK 26.4%, France 26.8%, Australia 27.3%, Sweden 24.7%, Canada 24.2%, USA 21.3%) cluster around 20–27%.
+- **Africa** (~19.7%) is mixed: Zambia (40.4%), Cameroon (36.3%), Côte d'Ivoire (33.3%), Kenya (32.2%) rank high, while Namibia (9.0%) and Algeria (7.7%) are low.
+- **Asia – lowest** (regional avg ~16%). Especially low in East/Southeast Asia: Taiwan (2.9%), Cambodia (6.9%), China (8.6%), Japan (10.0%), Thailand (10.2%), South Korea (11.8%), Hong Kong (10.0%). Middle East/South Asia is higher (Iraq 31.2%, Iran 26.0%, Bahrain 26.4%, India 22.6%).
+
+**Income gradient (weak/inverted):** Lower-middle-income countries (21.6%) actually exceed high-income (19.7%) and upper-middle-income (15.9%); low-income is lowest (14.7%). Reporting does *not* simply rise with wealth — likely reflecting cultural differences in willingness to self-report mental health issues.
+
+**Key takeaway:** The strongest pattern is cultural/regional, not economic — Latin America reports the highest rates and East Asia the lowest, with reporting norms (stigma, mental-health awareness) likely a major driver of cross-country variation.

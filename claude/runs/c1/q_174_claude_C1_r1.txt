@@ -1,0 +1,16 @@
+## How to check Positive vs Negative for 30–44 near Jan 2023
+
+**Important caveat first:** the survey is biannual, so there is no Jan 2023 data point. The two surrounding readings for the 30‑44 group are **Dec 15, 2022** and **Jun 15, 2023** — Dec 2022 is the closest to "Jan 2023."
+
+**Steps using the chart:**
+
+1. **Select the age group.** Click the **"30-44"** tab in the row of buttons under the title (`drawTabs()` at chart_048.js:132 — clicking re‑renders for that age).
+2. **Locate the time position.** The x‑axis is a time scale with Jan‑labeled ticks at 2021, 2022, 2023, 2024 (chart_048.js:177-182, 231). The "Jan 2023" gridline sits between the Dec 2022 and Jun 2023 markers.
+3. **Read the two lines at that x.**
+   - **Positive** = cyan line (`#40d2db`, chart_048.js:15)
+   - **Negative** = red‑coral line (`#ff7f73`, chart_048.js:16)
+   - The higher line on the y‑axis (0–45%, chart_048.js:61) is the larger value.
+4. **Confirm with the tooltip.** Hover each line near the Jan 2023 vertical — the invisible 20px‑wide hover paths (chart_048.js:352-364) snap to the nearest survey point and the white tooltip shows `Answer`, `Date`, and `Percentage` (chart_048.js:334-342).
+5. **Or check the right‑edge labels** (chart_048.js:406-414) — they only show the latest values, so they don't answer Jan 2023; rely on hover.
+
+**What you'll see (from the CSV, row for 30‑44 on 2022‑12‑15):** Positive **33%** vs Negative **27%** → **Positive is higher.** (Jun 2023 flips: Positive 29% vs Negative 33%.)

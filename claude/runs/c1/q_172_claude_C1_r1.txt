@@ -1,0 +1,16 @@
+When you hover across the Social media area from 2014 to 2024, a small white tooltip with a drop shadow appears and follows your cursor. It shows "Social media" as a bold title in blue (#3499e8), and below that the year and the Social media spend for that year formatted as £X.XK.
+
+As you move year-by-year, the values shown are:
+- 2014: £3.4K
+- 2015: £5.0K
+- 2016: £10.4K
+- 2017: £16.4K
+- 2018: £21.5K
+- 2019: £25.6K
+- 2020: £28.9K
+- 2021: £30.9K
+- 2022: £31.9K
+- 2023: £32.0K
+- 2024: £31.5K
+
+The tooltip is positioned to the right of the cursor by default, but flips to the left near the right edge and is clamped within the chart area.

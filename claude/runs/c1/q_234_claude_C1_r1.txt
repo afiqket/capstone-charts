@@ -1,0 +1,7 @@
+The exact percentage for South Korea in the CSV is **58.99228%**.
+
+The chart displays it rounded to one decimal as **59.0%** (via `d3.format(".1f")` in the tooltip and bar labels at chart_068.js:84 and chart_068.js:179). To see the precise value:
+
+- **From the data file** (`data/csvs/chart_068.csv:93`): the raw value is `58.99228`.
+- **From the chart UI**: only the rounded `59.0%` is shown — there's no way to retrieve more precision through the visualization itself.
+- **Programmatically**: you could change the format specifier from `.1f` to e.g. `.5f` in the code, or read `dataByCountry.get("South Korea")` in the browser console.

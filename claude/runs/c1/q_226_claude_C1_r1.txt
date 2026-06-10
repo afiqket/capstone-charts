@@ -1,0 +1,8 @@
+Changing the pronoun dropdown fires a `change` event handler (chart_065.js:877-880) that updates `state.pronoun` and calls `render()`. That re-runs `filteredData()` (chart_065.js:796-808), which keeps only rows where `d.pronoun` matches the selected group (`he/him`, `she/her`, `other`), or all rows if "All pronouns" is selected. The re-render then:
+
+- Updates the summary percentages and the stacked color bar (He/him blue, She/her pink, Other dark) to reflect the filtered subset (chart_065.js:760-794).
+- Rebuilds the animal-icon grid with only the matching book characters, re-sorted by animal frequency (chart_065.js:810-839).
+- Updates the "N animal characters shown" count (chart_065.js:844).
+- Refreshes the search suggestions list so it only suggests titles matching the new pronoun filter (chart_065.js:709-731).
+
+If the combined filters yield no matches, the grid shows "No matching animal characters found." and the summary bar collapses to 0%.

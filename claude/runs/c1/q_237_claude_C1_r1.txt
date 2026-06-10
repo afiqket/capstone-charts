@@ -1,0 +1,19 @@
+You read the map colors using the **legend bar at the bottom of the map**.
+
+**What the colors encode**
+- Metric: *Mental health units in general hospitals, per 100,000 people* (2013–2017)
+- Color ramp: a sequential orange scale going from very light cream (low values) to dark brown (high values), via `#fff5eb → #fee6ce → #fdd0a2 → #fdae6b → #fd8d3c → #f16913 → #d94801 → #8c2d04`.
+
+**Scale type**
+- Logarithmic, with tick marks labeled at: **0, 0.1, 0.2, 0.5, 1, 2, 5, 10** (units per 100,000 people). Values are clamped to the [0.01, 10] range.
+
+**Special swatches**
+- A separate hatched (diagonal grey lines) swatch to the left of the gradient, labeled **"No data"** — countries without data are filled with this hatch pattern.
+- Countries the code can't match to the data (unknown entity) appear in plain light grey (`#e8e8e8`).
+
+**How to read a specific country**
+- Darker orange/brown = more mental health units per 100,000 people (toward 10).
+- Lighter cream = fewer per 100,000 people (toward 0.1 or below).
+- Hovering a country reveals a tooltip with the exact value (e.g., Iceland ≈ 4.54, Hungary ≈ 2.65, USA ≈ 0.35, India ≈ 0.03).
+
+Because the scale is logarithmic, equal color steps correspond to *multiplicative* differences, not additive ones — so the visible gap between 0.1 and 1 looks the same as the gap between 1 and 10.

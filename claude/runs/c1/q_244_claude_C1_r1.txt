@@ -1,0 +1,7 @@
+Clicking the "🌍 Map" button calls `setMode("map")`, which:
+
+1. Sets `mode = "map"` and updates button styles — the Map button becomes the active state (blue background `#3a6fc4` with white text), and the Bar button reverts to the inactive state (white background, dark text).
+2. Hides any visible tooltip.
+3. Calls `renderMap()`, which clears the main chart group and draws the world choropleth map: each country path is filled using `colorScale` based on its share value (0–50% domain, pink-to-dark-magenta gradient), countries with no data get a hatched fill, and unknown entities get light gray. It also renders the bottom legend (a "No data" hatched swatch plus the gradient bar with 0%–50% tick labels) and re-attaches mousemove/mouseleave handlers that highlight a hovered country's stroke and show a tooltip with the country name, year (2020), and its percentage value.
+
+If the Map button is already active and you click it again, the same thing happens — the view is just re-rendered as a map (no toggle off).

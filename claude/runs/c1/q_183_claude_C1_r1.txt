@@ -1,0 +1,11 @@
+To read Iraq's value for a specific year from the line chart:
+
+1. **Find Iraq's line** — Look at the legend (usually beside or below the chart) and identify the color/style assigned to Iraq. Then locate the line of that color in the plot area.
+
+2. **Locate the year on the x-axis** — The x-axis represents time (years). Find the tick mark for the year you're interested in.
+
+3. **Trace upward to Iraq's line** — From that year's position on the x-axis, move straight up (vertically) until you hit Iraq's line.
+
+4. **Read across to the y-axis** — From that point on Iraq's line, move straight across (horizontally) to the y-axis and read the numeric value where it lands. That number is Iraq's value for that year (in whatever units the y-axis label specifies).
+
+5. **Easier shortcut: hover** — If the chart is interactive (rendered in a browser), hover the cursor over Iraq's line at the desired year. A tooltip will typically pop up showing the exact year and value, which is more precise than eyeballing the axes.

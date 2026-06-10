@@ -1,0 +1,15 @@
+To get the percentage for Malaysia, you can:
+
+1. **Read it directly from the CSV** (`data/csvs/chart_055.csv`, line 68):
+   ```
+   Malaysia,MYS,2020,19.344215
+   ```
+   So Malaysia's share reporting lifetime anxiety or depression is **≈19.34%**.
+
+2. **Programmatically via the chart code**, use the `dataByCountry` map defined at line 223-225:
+   ```js
+   dataByCountry.get("Malaysia")  // → 19.344215
+   ```
+   This Map is built from `rawData` keyed by the `Entity` column with values from the `"Share reporting lifetime anxiety or depression"` column.
+
+3. **Via the chart UI**, switch to the Map view and hover over Malaysia — the tooltip formats it as `19.34%` (using `d3.format(".2f")` in `showTooltip`, line 80). Note: Malaysia is not in the `selectedCountries` list (line 216), so it won't appear in the Bar view by default; you'd need to add `"Malaysia"` there to see it as a bar.

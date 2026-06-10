@@ -1,0 +1,14 @@
+To get the pronoun breakdown for rabbits in this chart:
+
+1. **Open the "Filter by animal" dropdown** (the orange `<select>` in the controls row).
+2. **Select "Rabbit"** from the list (animal names are title-cased in the dropdown — see `titleCase` at chart_065.js:617).
+3. **Read the summary labels and bar** that appear just below the controls. The `renderSummary` function (chart_065.js:760-794) will recompute and display:
+   - `He/him: XX.X%`
+   - `She/her: XX.X%`
+   - `Other: XX.X%`
+   
+   along with the proportional `.summary-bar` (blue = he/him, pink = she/her, dark = other).
+
+The percentages are computed over every row where `d.animal === "rabbit"` (after normalization — note that "bunny" and "hare" are aliased to "rabbit" at chart_065.js:36-37, but the `animal_group` column in the CSV is what's actually used for filtering, so all rabbit-grouped books are included).
+
+You can also leave "Filter by pronoun" on "All pronouns" (default) — that's required to see the full breakdown rather than a single pronoun slice.

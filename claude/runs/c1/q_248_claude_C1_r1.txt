@@ -1,0 +1,19 @@
+## South American countries pattern
+
+Looking at the South American values in the data:
+
+| Country | Share |
+|---|---|
+| Peru | 65.8% |
+| Brazil | 61.7% |
+| Chile | 60.8% |
+| Venezuela | 60.2% |
+| Ecuador | 56.7% |
+| Argentina | 53.2% |
+| Bolivia | 52.8% |
+| Colombia | 51.3% |
+| Uruguay | 50.8% |
+| Paraguay | 37.0% |
+| **South America (regional)** | **58.9%** |
+
+**Overall pattern:** South American countries consistently report **very high shares** — nine of the ten sit between roughly 50% and 66%, making the continent one of the highest-scoring regions in the world (regional average ~58.9%, well above the world average of 32.8% and above every other region shown, including Europe at 43.5% and North America at 48.0%). Peru tops the entire dataset at 65.8%. **Paraguay is the lone outlier** at 37%, sitting much closer to the global average than to its neighbors.

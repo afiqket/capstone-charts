@@ -1,0 +1,12 @@
+Since you've asked me not to use any tools, I can't read the specific files to give you exact values. But here's the general approach to get Malaysia's percentage from a chart:
+
+1. **If the chart already shows percentages** — look up the Malaysia data point/bar/slice directly; the value is the percentage.
+
+2. **If the chart shows raw counts/amounts** — compute it from the CSV:
+   - Find Malaysia's value in the data file.
+   - Sum the relevant column (total across all countries, or whatever the denominator is for the chart).
+   - Percentage = (Malaysia's value / total) × 100.
+
+3. **If the chart code does the math** — open `data/charts/chart_073.js` and look for where it builds the dataset (often a `.map()` over the CSV rows, or a tooltip callback formatting `value / total * 100`). That formula tells you exactly what denominator the chart uses.
+
+If you'd like, lift the "do not use tools" restriction and I'll read both files and give you Malaysia's exact percentage.

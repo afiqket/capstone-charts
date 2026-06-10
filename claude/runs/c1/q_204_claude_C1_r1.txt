@@ -1,0 +1,17 @@
+To get the player count for Manchester City, you sum up the rows where `Club == "Manchester City"`. Each row represents one player at that club (the `Number of Players:` column is `1` per row).
+
+**Steps based on the chart code (chart_058.js):**
+
+1. Load the CSV and filter rows where `d.club === "Manchester City"`.
+2. Sum the `value` field (`+d["Number of Players:"]`) across those rows.
+
+This is exactly what the code does in the `d3.rollup` at lines 62–80:
+```js
+d3.rollup(rows, rows => d3.sum(rows, d => d.value), d => d.club)
+```
+
+**From the data (chart_058.csv):** there are 16 rows with `Club = "Manchester City"`, each contributing `1`.
+
+**Player count for Manchester City = 16.**
+
+In the rendered chart, you can also get this interactively by hovering over the Manchester City circle inside the England country bubble — the tooltip displays "Number of Players: 16" (rendered by `showClubTooltip` at line 217).

@@ -1,0 +1,12 @@
+Hovering over a country on the map triggers the `mousemove` handler (chart_069.js:112-121), which does the following:
+
+1. **Looks up the country** — converts the country's numeric ID to an entity name via `numericEntityMap`. If the country isn't recognized or has no data value, the tooltip is hidden (no hover effect).
+2. **Highlights the country** — resets all country borders to white/0.4px, then gives the hovered country a dark `#333` stroke at 1.5px width and raises it to the top of the SVG so the border isn't clipped by neighbors.
+3. **Shows a tooltip** near the cursor containing:
+   - The **country name** (bold, 15px)
+   - The label "per 100,000 people" (small grey)
+   - The **value** formatted via `d3.format(".3~f")` in large bold red (`#c0392b`)
+   
+   The tooltip is positioned to the right of the cursor unless it would overflow the right edge, in which case it flips to the left side; vertically it's clamped within the SVG bounds.
+
+On `mouseleave` (line 122-125), the border is reset to white/0.4px and the tooltip is hidden.

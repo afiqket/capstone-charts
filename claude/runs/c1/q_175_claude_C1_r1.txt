@@ -1,0 +1,11 @@
+Clicking the **18–29** tab sets `selectedAge = "18-29"`, then calls `drawTabs()` and `renderChart()`. The effect is:
+
+- **Tab styling updates**: the 18-29 button becomes the selected one (light `#e7e7e7` background, dark `#2b2b2b` text); all other tabs revert to transparent background with light text.
+- **Chart redraws** using only the 18-29 rows from the CSV (8 data points from Dec 2020 to Jun 2024). The five lines and their right-side labels are repositioned to those values, e.g.:
+  - Positive: 23% → 21% → 23% → 28% → 36% → 40% → 43% → 39%
+  - Negative: 33% → 31% → 27% → 33% → 21% → 27% → 22% → 24%
+  - Neither: 30% → 25% → 31% → 27% → 20% → 23% → 24% → 28%
+  - Not applicable: 6% → 10% → 8% → 5% → 8% → 3% → 6% → 3%
+  - Don't know: 8% → 13% → 10% → 7% → 15% → 6% → 6% → 5%
+- Compared to "All adults", the Positive line rises much more steeply (peaking at 43% in Dec 2023) — making 18–29 the age group with the most pronounced increase in reporting positive social-media influence on mental health.
+- Axes (0–45%, Jan 2021–Jan 2024 ticks), colors, title, subtitle, and tooltip behavior are unchanged; only the line data and end-of-line labels change.

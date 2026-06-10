@@ -1,0 +1,14 @@
+To find Japan's happiness score in 2014, you can:
+
+1. **Open the CSV data file** (`data/csvs/chart_049.csv`) — this is the most direct source. Look for a row where the country column equals "Japan" and the year column equals 2014, then read the value in the happiness-score column.
+
+2. **Use a quick filter**, for example:
+   - In a spreadsheet: filter Country = "Japan" and Year = 2014.
+   - On the command line: `grep -i "japan" data/csvs/chart_049.csv | grep 2014`
+   - In Python/pandas: `df[(df['Country']=='Japan') & (df['Year']==2014)]['Happiness Score']`
+
+3. **Check the chart code** (`data/charts/chart_049.js`) to confirm the exact column names used for country, year, and happiness score, since the CSV header may use a variant like `Score`, `Life Ladder`, or `Happiness`.
+
+4. **View the rendered chart** and hover over the Japan series at the 2014 x-axis tick — most charting libraries show the value in a tooltip.
+
+Since I can't open the files in this turn, I can't give you the numeric value itself — but any of the steps above will surface it.

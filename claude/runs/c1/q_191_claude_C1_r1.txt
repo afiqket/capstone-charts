@@ -1,0 +1,7 @@
+Irion, TX had a **net gain** relationship with Coke, TX.
+
+Looking at the data:
+- Irion, TX (feature index 492) has a flow entry `"2620": 4` — Coke, TX is at line 2624, which is index 2620 (features start on line 4).
+- Coke, TX's flows confirm this with `"492": -4` for Irion.
+
+Per the chart code (`if (d.value > 0) return gainScale(...)`), the positive value of +4 in Irion's flow to Coke indicates a net gain of 4 people.

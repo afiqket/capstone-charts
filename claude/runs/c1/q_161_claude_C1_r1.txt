@@ -1,0 +1,14 @@
+Based on the chart code and data:
+
+**Improper Disposal: ~2.86%** (96 out of 3,360 total breach cases)
+
+Breakdown by TypeofBreach:
+- Hacking/IT Incident: 1,089 (32.41%)
+- Theft: 959 (28.54%)
+- Unauthorized Access: 946 (28.15%)
+- Loss: 182 (5.42%)
+- **Improper Disposal: 96 (2.86%)**
+- Other: 77 (2.29%)
+- Unknown: 11 (0.33%)
+
+Note: The chart itself displays raw case counts, not percentages — the 2.86% is computed from the underlying data (96 ÷ 3,360).

@@ -1,0 +1,5 @@
+The subcategories inside **analytics** are:
+
+- **cluster** (AgglomerativeCluster, CommunityStructure, HierarchicalCluster, MergeEdge)
+- **graph** (BetweennessCentrality, LinkDistance, MaxFlowMinCut, ShortestPaths, SpanningTree)
+- **optimization** (AspectRatioBanker)

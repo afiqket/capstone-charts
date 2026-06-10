@@ -1,0 +1,11 @@
+Counting club appearances across all 830 player rows, the totals for the top clubs are:
+
+- **FC Barcelona: 17**
+- Manchester City: 16
+- Bayern München: 16
+- Al Sadd: 15
+- Manchester United: 14
+- Real Madrid CF: 13
+- Chelsea / Atlético de Madrid / Al Hilal Saudi: 12 each
+
+**FC Barcelona has the most World Cup 2022 players, with 17** (including Lewandowski, Pedri, Gavi, de Jong, Dembélé, Koundé, Christensen, ter Stegen, Busquets, Jordi Alba, Ferran Torres, Ansu Fati, Eric García, Alejandro Balde, Ronald Araújo, Raphinha, and Memphis Depay).

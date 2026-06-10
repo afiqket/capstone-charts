@@ -1,0 +1,13 @@
+To get the psychiatrist value for Afghanistan, you use the `dataByCountry` Map, which is built from the CSV by keying each row's `Entity` to its numeric value of the column `"Total number of psychiatrists per 100,000 population"`:
+
+```js
+dataByCountry.get("Afghanistan")
+```
+
+This returns `0` (per the CSV row: `Afghanistan,AFG,2019,0`).
+
+Equivalent lookup straight from the raw data:
+```js
++rawData.find(d => d.Entity === "Afghanistan")["Total number of psychiatrists per 100,000 population"]
+// → 0
+```

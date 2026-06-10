@@ -1,0 +1,9 @@
+The chart maps the share of people who say locals would feel "not at all comfortable" speaking about anxiety or depression with someone they know (2020, Wellcome/Gallup).
+
+Countries with higher values — such as Estonia (~59%), France (~55%), Namibia (~54%), Hong Kong (~53%), Taiwan (~53%), Finland (~52%), and Greece (~50%) — warrant further study because:
+
+- **Stigma signals an unmet need.** Strong perceived discomfort suggests people are unlikely to disclose symptoms or seek peer/family support, which can delay treatment and worsen outcomes. Studying these places helps locate where anti-stigma campaigns and outreach are most needed.
+- **It challenges assumptions about wealth and mental health systems.** Several high-income, high-resource countries (France, Finland, Estonia, Taiwan, Hong Kong) score high, while some lower-income countries score low. That decoupling of GDP from openness is worth investigating — formal services exist, but cultural willingness to talk does not follow automatically.
+- **Cultural and linguistic norms matter.** Clusters of high values across East Asia and parts of Europe hint at shared norms (privacy, "saving face," emotional restraint) shaping disclosure. Comparative research can isolate which cultural factors drive reticence.
+- **Policy leverage point.** Discomfort talking to someone *you know* is a different barrier than access or cost — it can't be fixed by funding clinics alone. Identifying these countries flags where the intervention needs to be social/normative (public campaigns, schools, workplaces), not just clinical.
+- **Data-quality and translation checks.** Extremely high or low values can also reflect how the survey question translates locally; high-value countries deserve scrutiny to confirm the signal is real and not an artifact of phrasing.

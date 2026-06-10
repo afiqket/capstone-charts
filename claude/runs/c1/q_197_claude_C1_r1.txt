@@ -1,0 +1,7 @@
+The two colors encode **two levels of child poverty severity**, drawn as overlapping bars:
+
+- **Dark navy (`#1a3a5c`) — "Deep Poverty"**: the share of children (age 0–17) living in *deep* poverty (the most severe category). This is the shorter bar drawn on top.
+
+- **Teal/green (`#4a9b8e`) — "Total Poverty (incl. deep)"**: the *total* poverty rate, which is the sum of the deep-poverty rate plus the non-deep poverty portion (`total = deep + poverty`). This is the taller background bar.
+
+Because the dark bar is layered in front of the teal bar (both starting from the baseline), the visible teal portion above the navy represents the non-deep ("regular") poverty share, while the navy portion shows how much of the total is deep poverty. The tooltip makes this explicit, breaking each county into Deep Poverty, Total Poverty, and the Non-deep portion.

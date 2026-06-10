@@ -1,0 +1,11 @@
+Clicking the **📊 Bar** button switches the chart from map view to bar-chart view via `setMode("bar")`:
+
+1. **Button styling updates** — the Bar button becomes the active blue (`#3a6fc4` background, white text); the Map button returns to white/gray.
+2. **Tooltip hides** and the map's contents in `mainG` are cleared.
+3. **`renderBar()` runs**, drawing a horizontal bar chart of the 7 `selectedCountries`: Sweden, India, Ghana, Laos, South Korea, Russia, Nicaragua.
+   - Each country's "Talked to friends or family" value is pulled from `dataByCountry`, filtered to non-null, and sorted descending.
+   - Country names appear as left-side labels; bars are colored `#6b8cbf` with the percentage (one decimal) shown to the right.
+   - Light dashed gridlines appear at 20/40/60/80/100.
+   - Hovering a bar shows the same tooltip (country, year 2020, value%) as the map.
+
+Clicking 🌍 Map afterwards reverses the toggle back to the choropleth.

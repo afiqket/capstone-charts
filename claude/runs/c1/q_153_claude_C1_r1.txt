@@ -1,0 +1,33 @@
+## Retrieving exact volume in this chart
+
+A user can hover over a **volume bar** to trigger a tooltip. The bars have mouse handlers attached (`chart_042.js:301-305`):
+
+```js
+volumeBars
+  .on("mouseenter", showVolumeTooltip)
+  .on("mousemove", showVolumeTooltip)
+  .on("mouseleave", hideTooltip);
+```
+
+`showVolumeTooltip` (lines 286–295) displays the bar's month‑year and volume:
+
+```js
+.text(`${d3.timeFormat("%b-%y")(d.date)}: ${d3.format(",.0f")(d.volume)}`);
+```
+
+### The catch: the tooltip does *not* show the exact volume
+
+There are two transformations that prevent recovering the precise figure:
+
+1. **The data is scaled down by 1000 at load** (`chart_042.js:18`): `volume: +d.Volume / 1000`. So `d.volume` is already "thousands," matching the "Volume traded (thousands)" axis label.
+2. **The tooltip rounds to whole numbers** via `d3.format(",.0f")`, dropping any fractional part.
+
+So for the 30/10/2025 record bar with raw volume `144875990`, the tooltip would read `Oct-25: 144,876` — i.e. ~144.876 million rounded to the nearest thousand, **not** the exact `144,875,990`.
+
+Additional limitations:
+- The tooltip title is only the **month abbreviation and year** (`%b-%y`), not the specific day — so multiple bars in the same month all label as e.g. "Oct-25," making it impossible to distinguish which date a bar belongs to from the tooltip alone.
+- The bars are only 3px wide (`barW = 3`, line 159), so hovering precisely on a specific date's bar is difficult.
+
+### Bottom line
+
+There is **no in-chart way to retrieve the truly exact trading volume**. Hovering gives an approximate value (rounded to the nearest thousand) and only a month/year label. To get the exact figure (e.g. `144,875,990` for 30 Oct 2025), the user must consult the underlying CSV data file directly, since the chart deliberately divides by 1000 and rounds for display.

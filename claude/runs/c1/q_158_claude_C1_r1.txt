@@ -1,0 +1,11 @@
+Based on the instructions to not use any tools, I'll answer based on typical patterns for a breach-data chart with years and breach types.
+
+For a chart displaying breach-type values across years, a user can typically retrieve all breach-type values for one specific year by:
+
+1. **Hovering over the year's bar/column** — most charts of this kind render a tooltip on hover that lists every breach-type value stacked or grouped for that year. This is the most common interactive method in chart libraries (Chart.js, D3, Plotly, etc.).
+
+2. **Clicking the year on the x-axis** — if the chart supports click-to-filter, selecting a year isolates that year's data and exposes each breach type's value in the tooltip or legend.
+
+3. **Reading the CSV directly** — filtering `chart_043.csv` to the row(s) where the year column matches the target year returns all breach-type values for that year across the remaining columns.
+
+Without actually reading the two files, I can't tell you which specific mechanism (tooltip, legend toggle, dropdown filter) this particular chart implements. If you'd like a precise answer tied to this chart's actual code, let me know and I can use file-reading tools to inspect `data/charts/chart_043.js` and `data/csvs/chart_043.csv`.

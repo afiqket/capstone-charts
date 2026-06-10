@@ -1,0 +1,14 @@
+Clicking a leaf node like `Easing` or `TextSprite` effectively does nothing visible.
+
+Here's why, tracing through the code:
+
+**Initialization (chart_060.js:17-21):** Every node gets `d._children = d.children`. For leaf nodes in the data (those with only a `size`, no `children` array — e.g. `Easing`, `TextSprite`), `d.children` is `undefined`, so `d._children` is also `undefined`. The line `if (d.depth > 0) d.children = null` then sets `d.children` to `null`.
+
+**Click handler (chart_060.js:82-85):**
+```js
+d.children = d.children ? null : d._children;
+update(event, d);
+```
+For a leaf, `d.children` is `null` (falsy), so it gets reassigned to `d._children`, which is `undefined`. The node still has no children either way.
+
+**Result:** `update()` re-runs, but since no children appeared or disappeared, the tree layout is identical. No node enters or exits, and the circle stays the leaf gray (`#999`, see line 89/105 — `d._children` is falsy). You get a no-op click — only fillable parent nodes (with a real `_children` array) actually expand/collapse.

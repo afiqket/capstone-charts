@@ -1,0 +1,1 @@
+The value of `ColorPalette` under util → palette is **6367**.

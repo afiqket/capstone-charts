@@ -1,0 +1,15 @@
+## Answer
+
+Based on the chart code (which groups rows by `TypeofBreach`) and the data file, the breach counts are:
+
+| Cause | Count | % of Total |
+|---|---:|---:|
+| Hacking/IT Incident | 1,089 | 32.41% |
+| Theft | 959 | 28.54% |
+| Unauthorized Access | 946 | 28.15% |
+| **Top 3 combined** | **2,994** | **89.11%** |
+
+Total breaches (all categories): 3,360
+- Other categories: Loss (182), Improper Disposal (96), Other (77), Unknown (11)
+
+**The top three causes account for 2,994 breaches, representing 89.11% of all reported breaches.**

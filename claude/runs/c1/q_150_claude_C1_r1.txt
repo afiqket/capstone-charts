@@ -1,0 +1,7 @@
+## Answer
+
+The average share price across the whole period (2 Jan – 30 Oct 2025) was approximately **$202.09**.
+
+**How I calculated it:** The chart plots the `Price` column as a line over the full period. Summing all 205 daily closing prices in the CSV gives ≈ 41,427.50, and dividing by 205 trading days yields ≈ **$202.09**.
+
+For context, prices ranged from a low of ~$154.70 (8 Apr) to the closing high of ~$291.48 (30 Oct), so the ~$202 average sits roughly in the middle, reflecting the dip in spring and the strong rally into autumn.

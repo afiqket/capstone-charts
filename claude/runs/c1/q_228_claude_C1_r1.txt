@@ -1,0 +1,22 @@
+The highest country in the dataset is the **United Kingdom** at **76.71574%** (excluding regional/aggregate entries like "World" or "High-income countries").
+
+To get the data for it, you can:
+
+1. **From the CSV directly** — read `data/csvs/chart_066.csv` and filter for the row where `Entity = "United Kingdom"` (Code `GBR`): `United Kingdom,GBR,2020,76.71574`.
+
+2. **From the chart's data structure** — in the code, all values are loaded into a `Map` called `dataByCountry` (line 240–242):
+   ```js
+   dataByCountry.get("United Kingdom")  // → 76.71574
+   ```
+
+3. **Programmatically find the max** from the loaded data:
+   ```js
+   const top = d3.max(rawData.filter(d => d.Code && !d.Code.startsWith("OWID")), d => +d["Took prescribed medication"]);
+   // or to get the row:
+   const topRow = rawData
+     .filter(d => d.Code && !d.Code.startsWith("OWID"))
+     .reduce((a, b) => +a["Took prescribed medication"] > +b["Took prescribed medication"] ? a : b);
+   ```
+   The `OWID_*` filter excludes aggregates (World, Africa, Asia, Europe, etc.) so you get an actual country.
+
+Note: if you include aggregates, **United Kingdom (76.72%)** is still the highest — the top OWID aggregate is "Oceania" at 71.20%.

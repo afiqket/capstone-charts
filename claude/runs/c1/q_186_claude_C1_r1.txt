@@ -1,0 +1,9 @@
+To get the data value for Sudan in 2024 from this chart, you would:
+
+1. **Open the CSV data file** (`data/csvs/chart_052.csv`) — this is the source of truth for the chart's values. Look for the row where the country/entity is "Sudan" and find the column corresponding to the year 2024 (or the row where year=2024 if the CSV is in long format).
+
+2. **Alternatively, inspect via the chart code** (`data/charts/chart_052.js`) — find where the data is loaded (typically via `d3.csv()`, `fetch()`, or an inline data array), then filter for `entity === "Sudan"` and `year === 2024`.
+
+3. **Interactively from the rendered chart** — hover over the Sudan series at the 2024 x-axis position; most chart libraries (Chart.js, D3, Plotly, etc.) show the value in a tooltip.
+
+Since I was instructed not to use tools to read the files, I can't give you the exact numeric value — but the CSV row for Sudan at year 2024 is where that number lives.

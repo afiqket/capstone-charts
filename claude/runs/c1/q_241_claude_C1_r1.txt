@@ -1,0 +1,7 @@
+Hovering over a bar triggers `mousemove`, which calls `showTooltip(d.entity, d.value, mx, my)`. A tooltip appears near the cursor showing:
+
+- The **country name** in bold (e.g., "France")
+- The label **"2020"** in small gray text
+- The **value formatted to one decimal place with a "%" sign** in large red (`#c0392b`) text (e.g., "54.6%")
+
+The tooltip is a white rounded rectangle (240×80) with a light border and drop shadow, positioned to the right of the cursor (or to the left if it would overflow the chart's right edge). On `mouseleave`, the tooltip is hidden. Unlike the map, hovering a bar does **not** change the bar's stroke or styling — only the tooltip is shown.

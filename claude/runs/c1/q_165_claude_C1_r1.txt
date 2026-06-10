@@ -1,0 +1,1 @@
+You click one of the two year buttons in the button row above the map — labeled **"Result 2019"** and **"Result 2017"**. Clicking either switches the map's coloring (and the tooltip data) between the 2019 and 2017 election results.

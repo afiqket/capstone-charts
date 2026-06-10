@@ -1,0 +1,24 @@
+I have enough from the code and data to answer.
+
+## A large gray rectangle = a wide year-to-date trading range (high volatility)
+
+In this animated chart ("Whiplash in the markets"), each asset gets one horizontal row. Two marks sit on that row:
+
+- A **pink square** = the asset's *current* price move year-to-date (the `current-square`, fill `pink`, legend "2025-to-date").
+- A **gray rectangle** = the **Range** between the lowest and highest year-to-date move the asset has reached so far (the `range-rect`, fill `grey = #a9aeb4`, legend "Range").
+
+In the code (`chart_064.js`), the gray rect is drawn from the running `min` to the running `max` of each asset's value:
+
+```js
+g.select(".range-rect")
+  .attr("x", Math.min(minX, maxX))
+  .attr("width", Math.max(0, Math.abs(maxX - minX)))   // width = max − min on the % axis
+```
+
+where `min`/`max` are accumulated as the animation steps through dates (lines 103–104), and the x-axis is a percentage scale from −50% to +40%.
+
+So the **width of the gray rectangle is measured in percentage points of price movement**. A **large gray rectangle means the asset has swung across a wide span between its year-low and year-high** — i.e., it has been very volatile. A small (or zero-width, hidden) rectangle means the asset has barely moved from where it started.
+
+For example, in the data, Nvidia ranges from roughly −11.8% (min) up to +11.3% (max) — a span of ~23 points, which would render as a notably wide gray bar — while US 10-year Bonds stays within a much narrower band (~−1.4% to +0.7%), giving a short bar.
+
+(Note: when min equals max, the rectangle's opacity is set to 0, so it disappears entirely — `attr("opacity", Math.abs(d.max - d.min) < 1e-9 ? 0 : 1)`.)

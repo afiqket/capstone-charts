@@ -1,0 +1,7 @@
+To get the Print media value for 2014 from this chart:
+
+**Hover over the Print media area (the red/`#fb8583` band) at the 2014 position on the x-axis.** A tooltip will appear showing `Print media` as the title and `2014: £38.0K` as the value.
+
+**Why £38.0K and not 38,000?** The CSV raw value is `38000`, but the code divides every channel value by 1000 on load (`chart_047.js:17`) and the tooltip formats it as `£{value}K` with one decimal (`formatK`, line 208–210). So the displayed figure is £38.0K (i.e., £38,000).
+
+Note: because it's a *stacked* area chart, you must hover the Print media band itself — the tooltip uses `d[series.key]` (line 258), so it reports that channel's own value, not the cumulative stack.

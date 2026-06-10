@@ -1,0 +1,8 @@
+Clicking an already expanded category circle **collapses it** — hiding its children.
+
+The click handler at line 83-86 toggles the node's children:
+```js
+d.children = d.children ? null : d._children;
+```
+
+If `d.children` is currently populated (expanded), it gets set to `null`, then `update()` is called which transitions the descendant nodes/links out and animates the subtree back into the clicked node. The circle's fill also changes from `#555` (expanded, has hidden children of its own logic — actually `d._children ? (d.children ? "#555" : "#999")`) back to `#999` to indicate it's collapsed but still has hidden children available to re-expand.

@@ -1,0 +1,8 @@
+Clicking the play button on the timeline starts an animation that advances the year automatically:
+
+- **Toggle behavior**: If already playing, it stops (calls `stopPlay()`, resetting the icon to `▶`). Otherwise it begins playing and the icon switches to `⏸` (pause).
+- **Reset if at end**: If `currentYear` is already at `maxYear`, it jumps back to `minYear` before starting.
+- **Animation loop**: A `setInterval` fires every **350 ms**, incrementing `currentYear` by 1 and calling `redraw()` — which updates the slider handle/track and re-renders the current view (map, line, or bar).
+- **Auto-stop**: When `currentYear` reaches `maxYear`, `stopPlay()` is called, clearing the interval and resetting the icon back to `▶`.
+
+So in short: it animates the chart through every year from start to end at ~350 ms per year, redrawing the active visualization for each step, and stops automatically at the final year (or when clicked again).

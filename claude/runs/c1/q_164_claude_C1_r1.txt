@@ -1,0 +1,1 @@
+You should click the **search button** (the magnifying glass icon 🔍 in the top-left of the map). It opens a search panel where you can type your constituency name; selecting a result will locate it on the map and display a tooltip with its election results.

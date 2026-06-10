@@ -1,0 +1,5 @@
+**Fresno** has the highest total poverty in the Central Valley filter.
+
+Total poverty = `deep + poverty`. Among the Central Valley places, Fresno's total is **0.3788 (~37.9%)** — `0.190797 + 0.187995`, the highest in the group (next is Tulare at ~33.9%, then Madera at ~32.4%).
+
+(Note: the "California" statewide entry is included in the filter set but isn't a "place"; its total is ~19.9%, well below Fresno regardless.)

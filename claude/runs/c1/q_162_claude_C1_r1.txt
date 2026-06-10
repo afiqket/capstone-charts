@@ -1,0 +1,11 @@
+Based on the data file for Solihull in 2019:
+
+**Result 2019:** Conservative hold ("Con hold") — won by **Julian Knight** (Conservative and Unionist Party)
+
+The dataset only stores the winning party and result summary for 2019 (no 2019 vote percentages — the `FIRSTPCT`/`SECONDPCT`/`THIRDPCT` columns refer to 2017). For the three parties asked about, the 2019 candidates were:
+
+- **Conservative:** Julian Knight (Conservative and Unionist Party) — **winner, Con hold**
+- **Labour:** Nick Stephens (Labour and Co-operative Party) — did not win
+- **Liberal Democrat:** Ade Adeyemo (Liberal Democrats) — did not win
+
+For reference, the prior 2017 results in Solihull (which the chart shows in the tooltip's "Results in 2017" bars) were: Con 58.13%, Lab 21.88%, LD 15.69%, with a Conservative majority of 20,571 votes.

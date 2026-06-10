@@ -1,0 +1,12 @@
+To see the migration paths for Lincoln, ID on this chart, **click on Lincoln County in Idaho on the map**.
+
+Here's what happens (from `chart_054.js`):
+
+1. Each county feature has a `properties.flows` object — a map of `targetCountyId → netMigrationValue` (`drawFlows`, line 150).
+2. The click handler on `countyLayer` (lines 217–223) highlights the clicked county yellow (`#f2c94c`) and calls `drawFlows(d)` for it.
+3. `drawFlows` draws a curved arc from Lincoln's centroid to every other county that appears in its `flows` map (lines 153–203):
+   - **Positive value → net gain** for Lincoln, colored on the blue→green ramp (`gainColors`).
+   - **Negative value → net loss** from Lincoln, colored on the yellow→red ramp (`lossColors`).
+4. You can hover over a county to see its name in the tooltip (helpful since Idaho has a "Lincoln County" — make sure you pick the one in ID, not in other states with the same name). Use scroll/drag to zoom into Idaho first if needed (zoom is wired up at lines 225–235).
+
+Note: clicking only draws Lincoln's outgoing arc set. The chart does not separately render arcs *from other counties into* Lincoln — every arc shown when Lincoln is selected represents a flow recorded under Lincoln's own `flows` entry (positive = inbound to Lincoln, negative = outbound from Lincoln, based on the legend "Net gain / Net loss").

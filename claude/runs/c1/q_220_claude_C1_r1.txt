@@ -1,0 +1,23 @@
+This chart is an animated **swimming race** replay (a 200m freestyle, 8 swimmers). It doesn't show a static table of positions — it animates the swimmers moving up and down the pool over time. To inspect where everyone is at a specific moment, you interact with the timeline controls at the bottom.
+
+## How to view positions at a certain time
+
+**Use the slider (the scrubber).** This is the direct way to jump to any time:
+
+- The horizontal slider sits near the bottom (`sliderY = 650`), running the full race from `00:00` to the finish (`maxRaceTime`, ~01:45.78).
+- Click anywhere on it, or click and drag the triangle thumb. The hit area is a transparent strip 36px tall covering the whole bar, so you don't have to hit it precisely.
+- Doing so calls `scrub()` → `pause()` then `update(time)`, which instantly repositions every swimmer to where they were at that exact moment (`chart_063.js:543-547`). The tick labels (`00:00`, `00:15`, `00:30`, …) help you target a time.
+
+**Use the play button** (the circle at bottom-left, `translate(46,638)`): it animates the whole race over `playbackDurationMs = 20000` (20 seconds of playback). Click again to pause and freeze everyone at the current instant.
+
+## What you're looking at
+
+At any given time `t`, each swimmer's horizontal position is computed by `swimmerState(d, t)` (`chart_063.js:129-164`):
+
+- The pool is 4 lengths (the CSV columns `1,2,3,4` are the split times at each wall). Start is at the **left** wall, split 1 = **right**, split 2 = **left**, split 3 = **right**, split 4 = **left** (finish).
+- Between splits it linearly interpolates (`lerp`) the swimmer's x-position between the two walls, so the icon glides across its lane.
+- Each swimmer's label updates live to `Name (place)`, and once they cross their `finalTime` it adds a medal 🥇🥈🥉 and their final time.
+
+So to read positions: **drag the slider to the time you want** (or pause playback there), and read off each lane's swimmer icon and label. There's no numeric position readout beyond the on-screen layout and the rank shown in each label.
+
+One detail worth noting: the rank in each label (`ordinal(d.place)`) is the **final finishing place**, not the live race position — it's fixed from the final times, not recomputed as you scrub. So mid-race, a swimmer physically ahead in the pool may still show a worse final place.

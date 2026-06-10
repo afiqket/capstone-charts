@@ -1,0 +1,9 @@
+To see the UK dependency ratio trend over time, click the **📈 Line** button in the chart's mode switcher. The line view is hardcoded to display the United Kingdom (`const country = "United Kingdom"` at line 26), and it plots three series from 2015 to 2060:
+
+- **Age dependency ratio** (red `#B04B2D`)
+- **Labor force dependency ratio** (blue `#4C6FAD`)
+- **Labor force dependency ratio – higher participation** (gold `#8B6914`)
+
+All values are indexed (100 = 2015). For the UK specifically, the data shows age dependency rising from 100 → 140.59, labor force dependency from 100 → 118.13, and the higher-participation scenario from 100 → 102.19 over 2015–2060.
+
+Hovering anywhere on the line chart shows a tooltip with all three series for the closest year. Note that the year slider is hidden in line mode (line 353: `sliderG.style("display", m==="line"?"none":null)`) since the line already shows every year at once.

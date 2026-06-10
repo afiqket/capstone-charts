@@ -1,0 +1,20 @@
+The `analytics` category has no direct `value` field in the JSON — only leaves carry values. Its value is computed by d3 at line 20-22:
+
+```js
+const hierarchy = d3.hierarchy(data)
+    .sum(d => d.value)
+    .sort((a, b) => b.value - a.value);
+```
+
+`d3.hierarchy(...).sum(d => d.value)` walks the tree and sets each internal node's `.value` to the sum of its descendants. So you read it via the hierarchy node's `.value` property — e.g.:
+
+```js
+hierarchy.children.find(d => d.data.name === "analytics").value
+```
+
+Summing the descendants by hand from `chart_057.json`:
+- `cluster`: 3938 + 3812 + 6714 + 743 = **15,207**
+- `graph`: 3534 + 5731 + 7840 + 5914 + 3416 = **26,435**
+- `optimization`: **7,074**
+
+Total for `analytics` = **48,716**.

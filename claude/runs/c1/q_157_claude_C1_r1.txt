@@ -1,0 +1,3 @@
+In 2019, there were 512 total incidents, of which 312 were Hacking/IT Incident.
+
+**312 / 512 ≈ 60.94%** of all 2019 incidents were Hacking/IT Incident.

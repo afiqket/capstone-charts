@@ -1,0 +1,3 @@
+The non-deep portion for Fresno is the `poverty` value, which the tooltip displays as "Non-deep portion".
+
+Fresno's `poverty` = 0.187995, formatted as `.1%` → **18.8%**

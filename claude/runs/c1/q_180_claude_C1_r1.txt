@@ -1,0 +1,3 @@
+To find the 2022 walking percentage for Slough on the chart, locate Slough on the axis listing local authorities, then read the value of its 2022 walking data series — typically by hovering over the corresponding bar/point so the tooltip displays the exact percentage, or by tracing it across to the value axis to read the percentage off the scale.
+
+Note: I was instructed not to use any tools, so I cannot open `data/charts/chart_050.js` or `data/csvs/chart_050.xlsx` to retrieve the specific numeric value. If you'd like the exact figure, let me know and I can read the files.

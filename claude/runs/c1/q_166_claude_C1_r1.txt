@@ -1,0 +1,9 @@
+Looking at the code, hovering shows a tooltip but it has two relevant constraints:
+
+1. **The tooltip body is scrollable but capped in height** — `.tooltip-body` has `max-height: 235px; overflow-y: auto;` (lines 457–461), so the candidates list (up to 12 names from `candidateList`, lines 125–165) extends beyond the visible area.
+
+2. **On hover, the tooltip ignores pointer events** — `.tooltip` has `pointer-events: none` (line 435), so you cannot scroll it while merely hovering. Only when it has the `pinned` class does it get `pointer-events: auto` (lines 439–441).
+
+The tooltip gets pinned by **clicking** a constituency (the `click` handler at lines 667–677 sets `pinned = true` and re-shows the tooltip with the `pinned` class via `showTooltip` at lines 637–644).
+
+**What to do:** Click on the constituency instead of just hovering. This pins the tooltip, which enables pointer interaction so you can scroll inside the tooltip body down through the Candidates section to see all names and portraits. To dismiss it, click outside the tooltip (lines 784–798).

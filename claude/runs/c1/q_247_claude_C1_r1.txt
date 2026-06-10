@@ -1,0 +1,12 @@
+Hovering over a dark blue country (one with a high number of psychiatrists per 100,000 people, e.g., Switzerland at ~47, France at 24, Norway at 23) triggers two effects defined in the `mousemove` handler on `.country` paths:
+
+1. **Country outline highlights** — all countries' strokes reset to white at 0.4px, then the hovered country gets a dark stroke (`#333`) at 1.5px width and is raised to the top of the SVG so its border isn't clipped by neighbors.
+
+2. **Tooltip appears** — a white rounded box (240×80, with drop shadow) is positioned near the cursor showing:
+   - The country name in bold 15px black
+   - The label "per 100,000 people" in small gray
+   - The value formatted via `d3.format(".2~f")` in bold 22px dark blue (`#0868ac`) — e.g., hovering Switzerland shows "47", France shows "24"
+
+   The tooltip flips to the left of the cursor if it would overflow the right edge, and is clamped vertically within the SVG.
+
+On `mouseleave`, the stroke resets and the tooltip hides.

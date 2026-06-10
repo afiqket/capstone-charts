@@ -1,0 +1,7 @@
+The tooltip displays three pieces of information:
+
+1. **Country/entity name** (bold, large) — e.g., "Peru", "Canada"
+2. **Subtitle label** (small, gray): "Change in male height, 1896 → 1996" — note this is a static label that appears to be leftover from a different chart template and doesn't match the actual chart topic (lifetime anxiety or depression)
+3. **Value** (large, bold, blue): the share reporting lifetime anxiety or depression, formatted as a percentage with two decimal places (e.g., "49.35%")
+
+The tooltip appears as a white rounded rectangle with a subtle drop shadow, and its position adjusts to stay within the SVG bounds. It's triggered on `mousemove` for both the map countries and the bar chart bars (only when valid data exists).

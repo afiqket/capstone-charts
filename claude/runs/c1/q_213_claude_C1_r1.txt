@@ -1,0 +1,18 @@
+This is a collapsible radial tidy tree. The `interpolate` branch is nested inside `animate` (which is a child of the root `flare`). It starts collapsed — only the root is visible initially because the code at lines 22–26 sets `d.children = null` for every node with `depth > 0` (storing the real children in `_children`).
+
+To reveal the data inside `interpolate`:
+
+1. **Click the root node** (`flare`) — the click handler at lines 83–86 toggles `d.children` between `null` and `d._children` and re-runs `update`, exposing the first level (`analytics`, `animate`, `data`, `display`, `flex`, `physics`, `query`, `scale`, `util`, `vis`).
+2. **Click the `animate` node** — this expands `animate`'s children, which include `Easing`, `FunctionSequence`, `interpolate`, `ISchedulable`, `Parallel`, etc.
+3. **Click the `interpolate` node** — this reveals its 9 leaf children:
+   - `ArrayInterpolator` (1983)
+   - `ColorInterpolator` (2047)
+   - `DateInterpolator` (1375)
+   - `Interpolator` (8746)
+   - `MatrixInterpolator` (2202)
+   - `NumberInterpolator` (1382)
+   - `ObjectInterpolator` (1629)
+   - `PointInterpolator` (1675)
+   - `RectangleInterpolator` (2042)
+
+The visual cue: nodes with collapsible children are filled `#555` (dark), expanded/leaf nodes are `#999` (light) — see line 82.

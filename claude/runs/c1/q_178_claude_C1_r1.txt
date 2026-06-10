@@ -1,0 +1,9 @@
+Clicking multiple countries adds each one to a `selectedCountries` Set (chart_049.js:238, 391-397). Each selected country is rendered independently in `renderSelected()`:
+
+- **Lines**: Each selected country gets its own bold line (width 2.4), colored orange (`#ff8b45`) if the trend is "up" or blue (`#5b94ff`) if "down" — so countries with different trends appear in different colors simultaneously (lines 270-285, 204-206).
+- **Dots**: Each year-point gets a small dot in the matching up/down color (lines 287-301).
+- **Labels**: Each selected country gets a label on both the left (with its 2014 rank) and the right (with its 2024 rank), colored to match its direction (lines 303-346).
+- **Label collision handling**: `adjustLabelPositions` (lines 240-263) sorts the labels by y-coordinate and nudges any that are closer than 11px apart, so labels for countries ending at similar values won't overlap.
+- **Removal**: Clicking any country's label removes just that country from the set and re-renders (lines 334-338).
+
+So clicking several countries with different trends shows all of them at once as a multi-color overlay (orange for "up", blue for "down") on top of the faint background, each with paired left/right rank labels in its trend color, with vertical spacing automatically adjusted to keep labels readable.

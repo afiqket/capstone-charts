@@ -1,0 +1,8 @@
+Hovering over a bar in the bar chart (the `renderBar` function, lines 313–323) triggers a `mousemove` handler that shows a tooltip near the cursor. The tooltip displays:
+
+- **Country name** (`d.entity`) — the country the bar represents
+- **Year** (`d.result.year`) — the data year for that value
+- **Sub-label** — "internally displaced people"
+- **Value** (`fmtVal(d.result.value)`) — the count of displaced people, formatted (e.g., `1.23M` or `45k`)
+
+The tooltip box is sized 220×90 px and is positioned to the right of the cursor (`mx+12`), or flipped to the left if it would overflow the chart's right edge. The sparkline group is explicitly hidden for bars (`sparkG.style("display","none")`), so unlike the map tooltip there's no mini trend line. The bar itself is not visually highlighted on hover. On `mouseleave`, `hideTooltip()` hides the tooltip.
