@@ -1,0 +1,15 @@
+I have enough to answer.
+
+## Trend for women's obesity over time
+
+**The overall trend is a steady, consistent increase.**
+
+A few things establish this:
+
+- **The chart itself isn't a time trend** — `chart_126.js` draws a *scatterplot* of "Obesity in men" (y-axis) vs. "Obesity in women" (x-axis), one dot per country for a single `currentYear`. The time dimension is exposed through the year **slider/play button** (`allYears` spans the data range), so the "trend over time" is something you observe by animating through the years rather than reading off a line.
+
+- **The data covers 1990–2022** and the `Obesity in women` column rises essentially monotonically year over year within each entity. For example:
+  - **Afghanistan**: ~2.1% (1990) → ~10.3% (2010) → **~23.7% (2022)** — more than a 10× increase.
+  - **Africa (WHO region)**: ~5.5% (1990) climbing steadily through the 1990s and onward.
+
+So across countries and regions, the women's obesity percentage **trends upward throughout the period**, growing continuously from 1990 to 2022 (in many places sharply, more than doubling or far more). When you press play on the slider, the cloud of points drifts toward higher values on the women's (x) axis over successive years, reflecting this rising global trend.

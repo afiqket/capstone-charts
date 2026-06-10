@@ -1,0 +1,11 @@
+**Africa** had the highest average share of expenditure spent on food across all years shown.
+
+Reasoning from the data (the `World region according to OWID` column, averaging `Share of expenditure spent on food` across all countries and years 2017–2023):
+
+- **Africa** — the clear leader at roughly **~40%**. Almost every African country sits high: Nigeria ~59%, Kenya ~52–59%, Angola ~49–50%, Cameroon ~45%, Uganda ~44%, Ghana/Côte d'Ivoire/Pakistan-region ~38–41%, with only South Africa (~16–21%) and Tunisia (~22%) pulling the average down.
+- **Asia** — a distant second (~28–30%). It has very high entries (Myanmar ~56%, Bangladesh ~53%, Laos ~50%, Kazakhstan ~44–50%) but is dragged down by wealthy economies (Singapore ~7%, Qatar/Hong Kong/South Korea/UAE/Bahrain ~12–14%).
+- **North America** and **South America** — both around ~23%.
+- **Europe** — roughly ~17–18% (many countries in single digits, e.g. UK ~8%, Switzerland/Ireland ~9%).
+- **Oceania** — lowest, ~11–12% (only Australia ~10% and New Zealand ~13%).
+
+So **Africa** has the highest average share.

@@ -1,0 +1,3 @@
+The country with the lowest percentage is **Bulgaria**, at **6.69%** (6.689827) of people who dealt with anxiety or depression by engaging in religious/spiritual activities.
+
+(This is the lowest among actual countries; the next lowest is Sweden at ~9.44%. The aggregate rows like "Europe" or "World" are regions/income groups, not countries.)

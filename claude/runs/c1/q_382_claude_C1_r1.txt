@@ -1,0 +1,18 @@
+This chart doesn't actually express antibiotic usage as a percentage — it measures **antibiotic use in livestock in milligrams per kilogram of meat product (mg/kg)**, not as a share of any total.
+
+For **Europe (WOAH)**, the values are:
+
+| Year | mg/kg |
+|------|-------|
+| 2014 | 92.16 |
+| 2015 | 83.22 |
+| 2016 | 70.89 |
+| 2017 | 61.19 |
+| 2018 | 59.21 |
+| 2019 | 53.57 |
+| 2020 | 53.27 |
+| 2021 | 48.04 |
+
+The chart's default/most recent value for Europe is **48.04 mg/kg (2021)**.
+
+If you specifically wanted Europe's share as a percentage of the combined regional usage, that's not something the chart presents — but for the latest year (2021) Europe's 48.04 mg/kg out of the four regions' total (61.92 + 81.61 + 165.77 + 48.04 = 357.34) would be roughly **13%**.

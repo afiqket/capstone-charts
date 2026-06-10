@@ -1,0 +1,21 @@
+## Answer: North America
+
+Looking at the **Total consumer expenditure** values (the x-axis) across 2017→2023 by continent, **North America** shows the most significant increase.
+
+**Why North America stands out:**
+
+The increase is driven overwhelmingly by the **United States**, the single largest mover in the entire dataset:
+
+| Country | 2017 | 2023 | Increase |
+|---|---|---|---|
+| United States | ~$39,780 | ~$54,370 | **+$14,590** |
+| Mexico | ~$6,206 | ~$9,931 | +$3,725 |
+| Costa Rica | ~$8,159 | ~$11,625 | +$3,466 |
+
+The US gain (+$14,590/person) is by far the biggest of any country on the chart — the next closest is the UAE (+$10,618, Asia) and Switzerland (+$7,449, Europe). On the animated scatter, North America's points — especially the US, which sits at the far upper-right — visibly shift the furthest to the right over the period.
+
+**Context / caveat:** If you measure by *average per-country* increase rather than by the single most dramatic shift, **Europe** is actually neck-and-neck (≈ +$3,900/country vs. North America's ≈ +$3,540), because European countries rose broadly and consistently (e.g., Switzerland, Croatia, Ireland, Netherlands all up $6,000–7,500). By contrast, **Africa, South America, and Asia** showed much smaller average gains (often under $1,000/country, with several countries declining).
+
+So:
+- **Most significant single increase / most visually striking → North America** (led by the United States)
+- **Most consistent broad-based increase → Europe** (a very close runner-up by average)

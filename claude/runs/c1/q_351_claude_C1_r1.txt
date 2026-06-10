@@ -1,0 +1,26 @@
+## Short answer
+
+Drag the **Year** slider to **1880**.
+
+## Why that works
+
+The chart's only year filter is a single range slider (`chart_107.js:91-104`):
+
+```js
+<input type="range" min="1800" max="2020" step="10" value="2020" id="yearSlider">
+```
+
+It controls only the **upper** bound. The lower bound is permanently fixed at 1800:
+
+```js
+yearRange = [1800, +e.target.value]   // line 101
+```
+
+And the data is filtered with `y >= yearRange[0] && y <= yearRange[1]` (line 122).
+
+So:
+- The lower end (1800) is already exactly where you want it — nothing to do there.
+- Slide the handle left until the label reads **1880** (the step is 10 years, so 1880 is a valid stop). That sets `yearRange = [1800, 1880]` and redraws showing only 1800–1880.
+
+## One caveat
+Because the lower bound is hard-coded to 1800, this slider can *only* show ranges that start at 1800. If you ever wanted a window that **starts after** 1800 (e.g. 1820–1880), there's no control for it — you'd have to edit the code (e.g. make the slider a two-handle range, or change the `1800` literal on line 101).

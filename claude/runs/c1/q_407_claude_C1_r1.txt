@@ -1,0 +1,46 @@
+Found it. Here's the answer.
+
+## The value
+
+For **Switzerland, 1994**, the percentage of **obesity in men is `10.62777%`** (~10.63%).
+
+The full row (line 5880 of the CSV) is:
+
+```
+Switzerland,CHE,1994,10.62777,8.68783,Europe
+```
+
+## How to locate it
+
+The CSV header is:
+
+```
+Entity,Code,Year,Obesity in men,Obesity in women,World region according to OWID
+```
+
+So to get this data point you filter for:
+- **`Entity` = "Switzerland"**
+- **`Year` = 1994**
+
+…and read the **`Obesity in men`** column (the 4th field) → `10.62777`. (For reference, `Obesity in women` that year is `8.68783`.)
+
+## How the chart code reads it
+
+In `chart_126.js`, the data is loaded from the file attachment and mapped into objects (lines 27–35):
+
+```js
+const COL_MEN = "Obesity in men";   // line 12
+...
+men: +d[COL_MEN],                    // line 32
+```
+
+So programmatically you'd do:
+
+```js
+rawData.find(d => d.Entity === "Switzerland" && +d.Year === 1994)["Obesity in men"]
+// → 10.62777
+```
+
+In the rendered chart itself, this point only becomes visible when you drag the year **slider to 1994** (the chart defaults to the latest year, line 38), then hover the Switzerland dot — the tooltip shows "Obesity in men (% of adults): 10.63%" (the tooltip formats to 2 decimals, line 103).
+
+One gotcha: note the `Code` column ("CHE") sits between `Entity` and `Year`, so a naive search for `Switzerland,1994` won't match — the actual row is `Switzerland,CHE,1994,…`.

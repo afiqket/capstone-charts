@@ -1,0 +1,18 @@
+## Answer: Europe
+
+I computed the average "Food expenditure" per person for each region in 2017 and 2023, then took the difference:
+
+| Region | Avg 2017 (US$) | Avg 2023 (US$) | Increase |
+|---|---|---|---|
+| **Europe** | ~2,070 | ~2,686 | **~+617** |
+| North America | ~1,593 | ~2,110 | ~+517 |
+| Oceania | ~3,151 | ~3,543 | ~+392 |
+| Asia | ~1,305 | ~1,573 | ~+268 |
+| South America | ~1,249 | ~1,414 | ~+165 |
+| Africa | ~577 | ~616 | ~+39 |
+
+**Europe** had the largest increase in average food expenditure per person (~$617), ahead of North America (~$517). Big European drivers include broad gains across most countries (e.g., Switzerland 3,840→4,450, Latvia 1,649→2,757, Bulgaria 1,009→2,018, Poland 1,343→2,207, Ukraine 716→1,266).
+
+Note: Montenegro lacks a 2023 value, so it's excluded from the Europe averages — including it in 2017 only widens Europe's lead, so the conclusion is unchanged.
+
+(These are unweighted averages across each region's countries, matching how the chart treats each country as one data point; the figures are current US$, not inflation-adjusted.)

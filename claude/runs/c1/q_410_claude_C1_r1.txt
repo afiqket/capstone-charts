@@ -1,0 +1,22 @@
+## What the play button does
+
+The play button lives on the year slider, which is **only visible in Bar mode** (in the default 📈 Line view the slider and play button are hidden — `chart_127.js:270`). So to use it you first switch to 📊 Bar, then click ▶. It then steps `currentYear` from the first year to the last (1950 → 2022), one year every 150 ms, re-drawing the bar chart each tick (`chart_127.js:252-263`). Each frame shows two horizontal bars — **Men** and **Women** — for the United States (the code hard-codes `entity = "United States"`, so all the other countries in the CSV are ignored), sorted largest-on-top, with the year in the title.
+
+## Insights you can read off the animation (US data)
+
+**1. Men's rate rises, peaks, then falls — an inverted arc.**
+The Men bar grows from ~19.6 (1950) to a plateau/peak of ~64–66 around **1983–1990**, then steadily shrinks back to ~23 by 2022 — roughly back to its 1950s level.
+
+**2. Women's rate rises later and much more gently.**
+The Women bar starts tiny (~4.3 in 1950), climbs steadily for decades, peaks around **1996–1998 (~30)**, then declines only modestly to ~17.6 by 2022. Its peak lags the men's peak by roughly a decade.
+
+**3. Men are always higher than women — the bars never swap order.**
+Because bars are sorted descending (`chart_127.js:181`), watching for a reorder is informative: it never happens. Men's rate exceeds women's in every single year.
+
+**4. The gap narrows dramatically — convergence.**
+This is the most striking thing the animation conveys. In 1950 men are ~4.5× women (19.6 vs 4.3); by 2022 the ratio is only ~1.3× (23.1 vs 17.6). Through the early decades the Men bar grows while the Women bar grows faster proportionally; in the later decades the Men bar shrinks rapidly while the Women bar barely moves, closing the gap.
+
+**5. The lagged shape reflects the smoking epidemic.**
+The ~20–30 year delay between rising/falling rates and the curves — and the fact that women's peak trails men's — mirrors the delayed uptake (and later cessation) of smoking among women versus men, since lung cancer mortality lags smoking prevalence by decades.
+
+One caveat worth noting: the play loop simply walks the year index and stops at the last year (it doesn't loop); pressing ▶ again from the end resets to 1950 (`chart_127.js:255`).

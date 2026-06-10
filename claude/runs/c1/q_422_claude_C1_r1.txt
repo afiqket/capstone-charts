@@ -1,0 +1,18 @@
+When the user moves the cursor over the plot area, the chart performs nearest-point hover detection and highlights the closest country. Here's the mechanism:
+
+**Detection** — There are no per-dot event listeners. Instead a transparent `<rect>` overlay covers the whole plot (`chart_131.js:196`). On `mousemove` it computes the cursor position and finds the data point with the smallest Euclidean (pixel) distance (`:201-206`). The interaction only triggers if that closest point is **within 20 pixels** of the cursor (`:208`).
+
+**If a point is within 20px** (`redraw(entity)` + `showTT`):
+- **The hovered dot** keeps its region color, goes to full opacity (1), and gets a white 1.5px stroke outline (`:174-179`).
+- **All other dots** are greyed out (`#ccc`) and faded to opacity 0.2, so the selected country stands out.
+- **Labels** — every other country's label is removed; only the hovered country's label is shown, rendered in bold and in its region color (`:181-192`).
+- **A tooltip appears** near the cursor (`:132-143`) showing:
+  - the country name (bold),
+  - the current year,
+  - "Total consumer expenditure (current US$)" with the x-value formatted like `$54,370`,
+  - "Food expenditure (current US$)" with the y-value formatted the same way.
+  - The tooltip is a fixed 200×132 box that flips to the left of the cursor if it would overflow the right edge, and is clamped vertically to stay on-screen.
+
+**If no point is within 20px**, or when the cursor leaves the plot (`mouseleave`), `hideTT()` runs: the tooltip is hidden and `redraw(null)` restores the normal view — all dots return to full color at 0.8 opacity, and the default set of pre-labeled countries (Switzerland, Denmark, China, etc. from `labeledCountries`) is shown again (`:144`, `:212-216`).
+
+One note: because detection is purely distance-based on the rendered positions, values are clamped to the axis ranges (`Math.max(501, d.x)`, `Math.min(4999, d.y)`), so points pinned at the chart edges are matched at their clamped on-screen location rather than their true value.

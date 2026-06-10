@@ -1,0 +1,10 @@
+The chart code filters to `entity = "United States"`, so for 1995 the US values are:
+
+- PM₁₀: 25.08
+- PM₂.₅: (no data)
+- VOCs: 63.60
+- NOx: 92.83
+- **Ammonia: 99.90**
+- SO₂: 59.64
+
+**Ammonia** was the highest pollutant in 1995, at an index value of **99.90**.

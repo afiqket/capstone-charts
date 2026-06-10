@@ -1,0 +1,1 @@
+Germany is shown in **teal** (`#47c8d2`).

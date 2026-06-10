@@ -1,0 +1,8 @@
+The orange line represents **Bryson DeChambeau**.
+
+In the code, the color map (chart_112.js:25-29) assigns:
+- Rose → `rgb(105, 185, 255)` (blue)
+- McIlroy → `rgb(248, 228, 76)` (yellow)
+- **DeChambeau → `rgb(250, 154, 90)` (orange)**
+
+The chart tracks the three players' cumulative shots under par hole-by-hole at the 2025 Masters.

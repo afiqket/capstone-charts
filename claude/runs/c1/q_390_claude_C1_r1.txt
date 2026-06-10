@@ -1,0 +1,24 @@
+## What happens when you click the play button
+
+First, an important caveat: **the play button (▶) lives inside the slider group (`sliderG`), and that whole group is hidden in line mode** (`sliderG.style("display", m==="line" ? "none" : null)`, chart_120.js:301). Since the chart loads in line mode (`setMode("line")` at the end), the slider and play button are only visible/clickable once you switch to **📊 Bar** mode. So the answer below assumes you're in bar mode.
+
+When clicked (chart_120.js:283–294):
+
+1. **It starts an animation through the years.** Since `playing` is `false` initially, it enters the `else` branch.
+
+2. **Rewind-if-at-end:** `currentYear` starts at the last year, 2022 (`allYears[allYears.length-1]`). Because it equals the last year, the code first jumps back to the first year: `updateYear(2016)`.
+
+3. **Button flips to pause:** the icon changes from `▶` to `⏸`, and `playing` becomes `true`.
+
+4. **A timer fires every 600 ms.** On each tick it advances `currentYear` to the next year in sequence (2016 → 2017 → … → 2022). Each `updateYear` call in bar mode:
+   - moves the slider handle to the new year,
+   - updates the title to `"...for antibiotic susceptibility, <year>"`,
+   - **re-renders all six regional bar charts** with that year's values (chart_120.js:266).
+
+   So you see the bars for all six WHO regions animate/grow year by year.
+
+5. **It auto-stops at the end.** When `currentYear` reaches 2022 (the last year), the interval is cleared, `playing` returns to `false`, and the icon flips back to `▶`.
+
+**Clicking it again while playing** (icon shows `⏸`) immediately stops the animation: `clearInterval(timer)`, `playing=false`, and the icon returns to `▶`, leaving it paused on whatever year was current.
+
+The years available come from the data: 2016–2022. Note the animation only visibly changes anything in **bar** mode — in line mode each region's chart already shows all years at once, and the slider/play control isn't shown anyway.

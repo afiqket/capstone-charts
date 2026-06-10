@@ -1,0 +1,8 @@
+In the line chart, the red color (`#b84c1a`) represents **Sulphur dioxide (SO₂)** emissions.
+
+This is defined in the `SERIES` array (chart_121.js:17), where each pollutant line gets a distinct color:
+- Nitrogen oxides (NOx) → blue (`#4e79a7`)
+- Volatile organic compounds (VOCs) → brown/gold (`#8B6914`)
+- **Sulphur dioxide (SO₂) → red (`#b84c1a`)**
+
+This color is used for that pollutant's line, data points, end-of-line label, and tooltip swatch. (Note: the "Bar" view ignores these colors and draws all bars in a single blue-gray, so the red applies specifically to the SO₂ series in the line graph.)

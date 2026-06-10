@@ -1,0 +1,7 @@
+The chart plots data for the **United States** (`entity = "United States"`).
+
+For the USA in 2003:
+- **Ammonia** = 99.89
+- **Nitrogen oxides (NOx)** = 84.26
+
+**Difference = 99.89 − 84.26 = 15.63**

@@ -1,0 +1,23 @@
+## Answer: North America
+
+The chart plots each country's male vs. female obesity, colored by OWID world region, defaulting to the latest year in the data (**2022**). Computing the average gap (women − men obesity, since women's obesity exceeds men's almost everywhere) for the countries in each region in 2022:
+
+| Continent / region | Avg. women obesity | Avg. men obesity | **Avg. difference** |
+|---|---|---|---|
+| **North America** | ~40.0% | ~25.2% | **~14.7 pp** |
+| Africa | — | — | ~11.8 pp |
+| Oceania | — | — | ~10.6 pp |
+| South America | — | — | ~9.8 pp |
+| Asia | — | — | ~8 pp |
+| Europe | — | — | ~0 pp (men slightly higher in many countries) |
+
+**North America has the highest difference** between men and women obesity. This region (which in OWID's classification includes the Caribbean and Central America) is dominated by Caribbean island nations where female obesity vastly outstrips male obesity — e.g.:
+
+- Jamaica: men 18.8% vs women 48.1% (gap ≈ 29.4)
+- St. Vincent & the Grenadines: 18.7% vs 48.4% (≈ 29.7)
+- Dominica: 17.9% vs 44.6% (≈ 26.8)
+- St. Lucia: 20.4% vs 46.1% (≈ 25.7)
+
+These large gaps pull North America's average above Africa's (which also has very large individual gaps like South Africa, 13.9% vs 45.8%, but is diluted by many low-obesity countries).
+
+Note: the single largest *individual-country* gap is South Africa (Africa, ≈31.8 pp), but on a **continent-average** basis North America is highest.

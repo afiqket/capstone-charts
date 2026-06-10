@@ -1,0 +1,18 @@
+The data column is "Average effective age of retirement, women (OECD)." For Japan in the 2000s (2000–2009):
+
+| Year | Value |
+|------|-------|
+| 2000 | 66.2 |
+| 2001 | 66.0 |
+| 2002 | 65.6 |
+| 2003 | 65.9 |
+| 2004 | 66.1 |
+| 2005 | 66.2 |
+| 2006 | 66.3 |
+| 2007 | 66.5 |
+| 2008 | 66.9 |
+| 2009 | 67.3 |
+
+Sum = 663.0 across 10 years.
+
+**Average = 66.3 years** (the average effective age of retirement for women in Japan during the 2000s).

@@ -1,0 +1,3 @@
+The male life expectancy in Nigeria in 2021 is **52.3 years**.
+
+(From the data row `Nigeria,NGA,2021,53.1,52.3,...` where the column order is Country, Code, Year, Female, Male — so Female = 53.1 and Male = 52.3.)

@@ -1,0 +1,11 @@
+**Korea.**
+
+The chart only plots these 12 countries (from the `countries` array in `chart_135.js`): Korea, Italy, Germany, France, United Kingdom, United States, Japan, South Africa, Canada, Sweden, Mexico, and Russia.
+
+Of those, **Korea** has by far the highest values in every year. Its annual working hours run from roughly **2,531 (1970)** up to a peak around **2,876 (mid‑1980s)** and still **~2,069 (2016)** — averaging well over 2,500 hours across the period. The next-highest displayed countries don't come close:
+
+- Mexico: ~2,100 range
+- Japan: ~1,700–2,243
+- Russia: ~1,900–2,000
+
+So across all years shown, **Korea** had the highest average annual working hours per person employed.

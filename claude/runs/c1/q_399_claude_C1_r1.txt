@@ -1,0 +1,5 @@
+The purple color (`#7D3C98`) represents **Sulphur oxides (SO₂)**.
+
+In the `SERIES` array (line 19 of the chart code), each air pollutant is mapped to a color, and Sulphur oxides (SO₂) is the one assigned the purple hue. In the line-chart view it's the SO₂ trend line (and its right-edge label); in the tooltip it's the swatch next to the SO₂ value.
+
+(Note: the *bar*-chart mode ignores these per-series colors and draws every bar in a single blue-gray `#6b7fad`, so purple specifically identifies SO₂ only in the line view, labels, and tooltip.)

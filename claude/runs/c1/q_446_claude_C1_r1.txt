@@ -1,0 +1,25 @@
+Based on reading the chart code and data, here's my analysis.
+
+The chart (`chart_139.js`) is an animated scatter plot of **Self-reported life satisfaction vs. GDP per capita** by year, where each country is a dot that moves horizontally as its GDP per capita changes over time. A "consistent" GDP means the dot barely moves along the x-axis — the country's GDP per capita stays at roughly the same level throughout the years.
+
+Looking at the data, most countries show clear, sustained growth (their GDP climbs steadily over the decades):
+- **Australia:** ~$36k (1990) → ~$60k (2024) — steady rise
+- **Albania:** ~$5.5k → ~$21k — strong rise
+- **Bangladesh:** ~$2k → ~$8.5k — steady rise
+
+**Argentina** stands out as the country whose GDP per capita is the most *consistent* (stagnant) across the years — it ends roughly where it began, oscillating in place rather than trending upward:
+
+| Year | GDP per capita |
+|------|----------------|
+| 1990 | $17,007 |
+| 1998 | $23,783 |
+| 2002 | $18,571 |
+| 2011 | $29,425 |
+| 2020 | $23,877 |
+| 2024 | $26,771 |
+
+Over ~34 years Argentina shows **no sustained growth** — it just hovers around the ~$24k–28k mark, going up and down but never breaking out. On the chart, its dot stays parked in essentially the same GDP region the whole animation, unlike nearly every other country whose dot marches steadily to the right.
+
+**Answer: Argentina** — its GDP per capita is the most consistent/flat over the years (no net growth, just fluctuation around the same level), whereas almost every other country shows steady upward progression.
+
+One note: the question is a bit open to interpretation ("consistent" could mean low year-to-year volatility rather than no growth). If you meant low *volatility*, the very high-income, smoothly-trending economies like **Australia** are the steadiest. But for a GDP that stays at the *same level* throughout, **Argentina** is the clearest example among the labeled countries on the chart.

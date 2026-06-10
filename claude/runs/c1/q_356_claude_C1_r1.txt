@@ -1,0 +1,6 @@
+The chart plots the **homicide rate per 100,000 population**. For 2017:
+
+- **South America:** 23.6
+- **Afghanistan:** 6.7
+
+**Difference: 23.6 − 6.7 = 16.9** per 100,000 population (South America is higher).

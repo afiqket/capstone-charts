@@ -1,0 +1,22 @@
+## Answer
+
+The animation plays from the start all the way to `lastX`, which is the last hole on the chart. With your data, the columns run `1…72` plus a playoff hole `PO1` — and `holeX` maps `PO1` to `72 + 1 = 73`, so `lastX = 73`. That's why it runs to the very end.
+
+To make the playback **stop at the 18th hole**, change the animation *target* from `lastX` to `18`. There are two calls that drive the playback — the initial run and the Replay button:
+
+**Line 654** (initial autoplay):
+```js
+animateTo(18, playDuration);
+```
+
+**Line 649** (inside the Replay handler):
+```js
+animateTo(18, playDuration);
+```
+
+### Important: change the target, not `lastX` itself
+Don't redefine `lastX = 18`. That variable is also used for the x-axis scale domain (line 184), the tracker clamp (line 570), and the hole background rectangles (line 393). If you lower `lastX`, you'll shrink the whole chart's axis to 1–18 rather than just stopping the animation early. Editing only the two `animateTo(...)` targets keeps the full 1–72(+PO) axis drawn while halting the moving tracker/portraits at hole 18.
+
+### Optional polish
+- The `playDuration` (20000 ms) currently paces a run across the full width. Stopping at hole 18 covers ~¼ of the distance, so it'll finish in a similar wall-clock time but only traverse the first quarter. If you want it to still feel like a full 20-second animation over that shorter span, you can leave `playDuration` as is (passed as the forced duration, it controls total time regardless of distance).
+- If you'd rather make this configurable, add a constant near the top, e.g. `const stopX = 18;`, and use `animateTo(stopX, playDuration)` in both places.

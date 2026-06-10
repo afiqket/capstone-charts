@@ -1,0 +1,15 @@
+Here's what the chart does and what you'd need to do:
+
+The chart (`chart_111.js`) is an animated scatter plot of **Male (x-axis) vs Female (y-axis) life expectancy**, where each bubble is a country, colored by continent and sized by population. There's a year slider/play control, and the female value isn't shown as a label — it's only revealed in a **tooltip on hover**.
+
+**To see female life expectancy for India in 2021:**
+
+1. **Set the year to 2021.** Good news — you don't actually have to move the slider. The default year is `maxYear` (`currentYear = maxYear`, line 28), and the title says the data runs "1950–2021", so the chart opens already on 2021. If you've moved the slider, drag it back to the far-right (2021) or hit play and let it finish.
+
+2. **Find India's bubble.** India is in Asia, so it's one of the blue (`#1f6ad6`) circles, and it's a very large bubble (radius scales with population, so India's is among the biggest).
+
+3. **Hover the mouse over that bubble.** The `mouseenter` handler fires `showTooltip`, which pops up a box showing Country, continent, All population, Year, Male, and **female** — the female value (`(+d.Female).toFixed(1)`) is the number you want, on the "female" row (lines 284–287).
+
+So in short: **make sure the year is 2021 (it is by default), then hover over India's blue bubble and read the "female" row in the tooltip.**
+
+One caveat: the value will only appear if a row for India in 2021 with finite Male, Female, and population values exists in the CSV — `dataForYear` filters out incomplete records (lines 321–330). I couldn't read the data file to confirm India/2021 is present because it's 764 KB, over the read limit. If you'd like, I can grep just the India 2021 rows to verify the number is there.

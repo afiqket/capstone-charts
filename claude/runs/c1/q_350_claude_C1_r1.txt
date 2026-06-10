@@ -1,0 +1,5 @@
+To see only solar energy, use the **"Energy Type"** dropdown in the controls row and select **"Solar"**.
+
+That dropdown (the `<select>` built from `energyTypes`, lines 80–89) sets `filterType`. When you pick "Solar", `filterType` becomes `"Solar"`, so in `draw()` the line `types = filterType === "(All)" ? energyOrder : [filterType]` (line 123) restricts the chart to just `["Solar"]` — only the solar band is rendered.
+
+One note: with a single series selected, the default **"Stream"** chart type and **"Percentage"** type won't show meaningful shapes (stream wiggle flattens it, and percentage makes a single series 100%/flat). To actually see solar's values, also switch **Chart Type** to **"Area"**.

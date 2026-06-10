@@ -1,0 +1,14 @@
+For 2019, the bloodstream infection values across the six WHO regions (the "continents" plotted in the chart, excluding "World") are:
+
+| Region | Bloodstream infections (2019) |
+|---|---|
+| African Region | 14.893617 |
+| Eastern Mediterranean | 72.727270 |
+| European Region | 49.056602 |
+| Region of the Americas | 11.428572 |
+| South-East Asia Region | 63.636364 |
+| Western Pacific Region | 29.629630 |
+
+Sum = 241.372055 → divided by 6 regions ≈ **40.23%**
+
+So the average bloodstream infection value across all continents in 2019 is **~40.2%**.

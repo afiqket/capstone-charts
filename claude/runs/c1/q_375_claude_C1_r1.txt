@@ -1,0 +1,16 @@
+When you hover over a bar, a **tooltip** appears next to your cursor. Here's exactly what happens (code lines 120–153):
+
+**The mechanism:** Each bar has an invisible full-height transparent rectangle laid over it (lines 132–138). These overlays — not the colored bars themselves — capture the mouse events. Because each overlay spans the entire chart height (`y=0` to `innerH`), you trigger the tooltip by hovering anywhere in a bar's column, not just on the visible colored bar.
+
+**On `mousemove`** (lines 139–151), the tooltip shows three lines of text for that country:
+1. **Country name** in bold (e.g. "Thailand")
+2. **World region** in gray (e.g. "Asia")
+3. **Value** formatted to 2 decimals, e.g. `337.78 mg/PCU`
+
+The tooltip is a white rounded box with a light border and a drop shadow. Its width adjusts to fit the country name (minimum 180px wide, 58px tall).
+
+**Positioning** (lines 147–150): it follows the cursor, offset 10px to the right. If it would overflow the right edge of the chart, it flips to the left side of the cursor instead. Vertically it sits ~30px above the pointer (clamped so it never goes off the top).
+
+**On `mouseleave`** (line 152), the tooltip is hidden again (`display:none`).
+
+One detail worth noting: the colored bars are drawn first, then the transparent overlays on top — so there's **no visual change to the bar itself** on hover (no highlight or color change). Only the tooltip appears.

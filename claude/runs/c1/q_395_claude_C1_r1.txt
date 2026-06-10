@@ -1,0 +1,3 @@
+In 2008, Delhi's SPM was **416 μg/m³** and London's was **18.81 μg/m³**, so the difference is about **397 μg/m³** (Delhi higher).
+
+Note that the chart's tooltip/bar labels round to whole numbers (`,.0f`), so on screen London would read **19 μg/m³**, giving a displayed difference of **397 μg/m³** (416 − 19).

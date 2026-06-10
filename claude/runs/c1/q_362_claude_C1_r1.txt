@@ -1,0 +1,18 @@
+To view the year 2000 in this chart, use the **year slider** in the controls area.
+
+Here's how it works:
+
+**The control:** Below the title there's a play button (▶) next to a slider, with the current year shown as a bold label beside it (`yearLabel`). The slider runs from **1950 to 2021** (`min={minYear}`, `max={maxYear}`), one year per step.
+
+**To see year 2000:**
+1. Drag the slider until the year label reads **2000**. The chart's `slider.on("input", …)` handler calls `update(2000)`, which redraws all the country bubbles using that year's data (and the big faded year watermark behind the plot will also change to "2000").
+2. Alternatively, click the ▶ play button and let the animation advance through the years — it auto-steps from 1950 to 2021 and stops at 2000 if you pause it there. (Note: the chart opens on **2021** by default, since `currentYear = maxYear`.)
+
+**Reading the values for 2000:** Each circle is a country. Its position encodes life expectancy:
+- **x-axis = Male life expectancy** ("Male expectancy", in years)
+- **y-axis = Female life expectancy** ("Female expectancy", in years)
+- circle **size** = total population, **color** = continent
+
+**Hover** over any bubble to get a tooltip showing that country's exact `Male` and `Female` life expectancy (to one decimal), continent, population, and the year (2000) — see the `showTooltip` function (lines 250–289).
+
+So: set the slider to 2000, then hover a country to read its precise male/female life-expectancy numbers for that year.

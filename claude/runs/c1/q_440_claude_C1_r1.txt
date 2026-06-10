@@ -1,0 +1,21 @@
+## Overall Trend
+
+The chart ("Days off from work for vacations and holidays, 1870 to 2000") tracks the number of vacation and holiday days per year for five countries: the **United States, United Kingdom, Netherlands, France, and Germany**.
+
+The overall trend is a **strong, broad-based increase in days off over the ~130-year period**. Every country starts with very few vacation days in 1870 and ends with far more by 2000:
+
+| Country | 1870 | 2000 |
+|---|---|---|
+| Netherlands | 4 | 37.5 |
+| United States | 4 | 20 |
+| Germany | 13 | 42.5 |
+| United Kingdom | 14 | 32.5 |
+| France | 19 | 36 |
+
+Key characteristics of the trend:
+
+- **The biggest jump happens between 1900 and 1938** — days off roughly triple or more across all countries (e.g., the Netherlands goes from 5 to 21, Germany from 18 to 31).
+- There is often a **slight dip or plateau around 1950** (after WWII) before the gradual rise resumes.
+- **European countries diverge upward from the U.S. after mid-century.** The four European nations continue climbing to the mid-30s–40s by 2000, while the **United States lags well behind and even declines** in its final period (23 days in 1990 down to 20 in 2000).
+
+In short: a long-run, near-universal **rise in leisure/days off as economies modernized**, with Europe converging on generous vacation allowances while the U.S. remained — and increasingly became — the outlier with the fewest days off.

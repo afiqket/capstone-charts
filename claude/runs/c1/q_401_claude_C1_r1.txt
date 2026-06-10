@@ -1,0 +1,7 @@
+The blue line represents **PM₂.₅ emissions** for the United Kingdom.
+
+In the chart code, the two series are defined as (lines 14–17):
+- `PM₁₀` → color `#b84c1a` (orange/brown)
+- `PM₂.₅` → color `#4e79a7` (blue)
+
+So the blue line traces the **United Kingdom's annual emissions of fine particulate matter PM₂.₅** (particles less than 2.5 microns in diameter), measured in tonnes, from 1970 to 2016. Per the data, it shows a steady decline — from 498,000 tonnes in 1970 down to 108,000 tonnes in 2016. The blue line sits below the orange PM₁₀ line throughout (PM₂.₅ is a subset of PM₁₀, so its values are always lower).

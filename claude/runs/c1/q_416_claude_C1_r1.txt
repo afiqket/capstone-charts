@@ -1,0 +1,21 @@
+I have everything I need from the chart code — the hover behavior is fully defined in the line-rendering function (the CSV is just the underlying data and doesn't affect this).
+
+## What happens when you hover over the line chart
+
+When the mouse moves over the plotting area of the line chart, two things happen together (code in `renderLine`, lines 146–163, using the tooltip logic at lines 78–98):
+
+**1. A vertical guide line appears**
+A transparent `<rect>` covers the whole inner plot area and captures `mousemove` events. The code converts the cursor's x-position into a year (`xScale.invert`), rounds it to the nearest whole year, and clamps it to the 1980–2012 range. A thin gray vertical line (`#999`) is drawn at that year's x-position, spanning the full height of the chart.
+
+**2. A tooltip box appears**
+For the hovered year, it gathers each of the 9 countries' values for that year, drops any with missing data, and sorts them **from highest to lowest value**. It then shows a white, rounded, drop-shadowed tooltip containing:
+- The **year** as a bold title.
+- One row per country, each with a small colored square (matching the line's color) and the text `Country: value`, where the value is formatted with `d3.format(",.2s")` (e.g. compact form like `1.9M`).
+
+**Tooltip positioning:** It follows the cursor — placed to the right of the pointer normally, but flipped to the left if it would overflow the right edge of the SVG, and clamped vertically so it stays inside the chart.
+
+**On mouse leave:** When the cursor exits the plot area (`mouseleave`), the vertical guide line is hidden and the tooltip disappears.
+
+A couple of notes:
+- The small data-point dots and country labels at the end of each line are drawn statically; they don't have their own hover interactions — all hover behavior is driven by the single overlay rectangle.
+- This hover interaction only exists in **Line** mode. The Bar mode (toggled via the 📊 button) has no tooltip/hover; it uses a year slider with play/pause instead.

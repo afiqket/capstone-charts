@@ -1,0 +1,3 @@
+Green (`#2ca02c`) is the first color in the `PALETTE` array, and the `COLOR_MAP` assigns palette colors to `ANTIBIOTIC_COLS` in order. The first entry in `ANTIBIOTIC_COLS` is **`"Tetracyclines"`**.
+
+So the green line represents **Tetracyclines** — specifically the UK's reported defined daily doses of oral tetracycline antibiotics per 1,000 people.

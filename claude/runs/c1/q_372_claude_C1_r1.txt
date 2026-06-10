@@ -1,0 +1,20 @@
+I have everything I need from the code to answer this.
+
+## How to see both Urban and Rural percentages in the bar chart
+
+**The bar chart always shows both** — Urban and Rural are drawn as two separate bars at the same time, each with its percentage label. You don't need to toggle anything between them. Here's how to get there and read it:
+
+**1. Switch to bar mode.** The chart opens in Line view. Click the **📊 Bar** button at the top (next to 📈 Line) — `renderBar()` draws two horizontal bars: one labeled **Urban**, one labeled **Rural**.
+
+**2. Read the percentage at the end of each bar.** Each bar has its value printed just to the right of it, formatted to two decimals with a `%` sign (e.g. `93.30%`). This comes from:
+```js
+.text(d3.format(".2f")(val) + "%")   // chart_114.js:199
+```
+So both percentages are visible simultaneously, one per bar.
+
+**3. Pick the year you want.** The bar chart shows one year at a time (defaults to the latest year, 2023). To see the percentages for a different year, use the **year slider** at the bottom — drag the handle, click anywhere on the track, or press the **▶ play** button to animate through all years (2000–2023). The two percentage labels update live as the year changes.
+
+A couple of notes:
+- The data is for the **`"World"`** entity (hard-coded at `chart_114.js:12`), not individual countries.
+- The slider only appears in Bar mode; it's hidden in Line mode (`chart_114.js:271`).
+- In **Line** mode you instead see both percentages together by **hovering** over the chart — a tooltip lists Urban and Rural values for that year. But for a clean side-by-side percentage readout, the Bar view is what you want.

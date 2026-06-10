@@ -1,0 +1,29 @@
+It plays from the **current year** (the one the user selected) — with one exception.
+
+Here's the play-button logic (`chart_138.js:253-264`):
+
+```js
+playBtn.on("click", () => {
+  if (playing) { ... }
+  else {
+    if (currentYear===allYears[allYears.length-1]) updateYear(allYears[0]);   // only resets here
+    playing=true; playBtn.text("⏸");
+    timer=setInterval(()=>{
+      const idx=allYears.indexOf(currentYear);
+      if(idx<allYears.length-1) updateYear(allYears[idx+1]);                   // advances from current year
+      else { clearInterval(timer); ... }
+    }, 400);
+  }
+});
+```
+
+When play is clicked, it only jumps back to the start (`allYears[0]`) **if `currentYear` is the last year**. The interval then advances year-by-year starting from whatever `currentYear` is.
+
+So:
+
+- **User picks a middle year (e.g. 1950)** → play resumes from 1950 and animates forward to 2000. It does **not** restart from 1870.
+- **User picks the last year (2000)**, or leaves it at the default (the slider initializes to the last year, `chart_138.js:36`) → play resets to 1870 and animates the full sequence.
+
+In short: it continues from the current year, except that landing on the final year makes the next play start over from the beginning (so the animation has something to play through rather than immediately ending).
+
+One side note: the slider is only visible in **Bar** mode — in Line mode `sliderG` is hidden (`chart_138.js:271`), so this interaction applies while viewing the bar chart.

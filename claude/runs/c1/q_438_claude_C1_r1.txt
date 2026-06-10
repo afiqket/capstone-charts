@@ -1,0 +1,25 @@
+## What clicking the play button does
+
+The play button (`▶`) lives inside the slider group (`sliderG`), which is **only visible in Bar mode** — in Line mode the whole slider/play control is hidden (`chart_136.js:265`). So the play button is functionally a control for the animated bar chart.
+
+The click handler is at `chart_136.js:247–258`. It's a **toggle**:
+
+**If already playing** → it stops:
+- Clears the interval timer
+- Sets `playing = false`
+- Restores the button label to `▶`
+
+**If not playing** → it starts an animation:
+1. If `currentYear` is already at the last/most-recent year, it first rewinds to the earliest year (`updateYear(allYears[0])`) so the animation has somewhere to go (`:250`).
+2. Sets `playing = true` and changes the label to `⏸` (pause).
+3. Starts a `setInterval` that fires **every 150 ms** (`:252–256`). On each tick it advances to the next year (`updateYear(allYears[idx+1])`). When it reaches the final year, it stops itself — clears the timer, sets `playing = false`, and resets the label to `▶`.
+
+Each step calls `updateYear(y)` (`:227–231`), which:
+- Updates `currentYear`
+- Slides the slider handle to that year's position (`handle.attr("cx", xSlider(y))`)
+- Since `mode === "bar"`, calls `renderBar()` — redrawing the horizontal bars for that year, **re-sorted descending by value**, with country labels and values.
+
+### Net effect
+Clicking play **animates the bar chart through time**, year by year (≈150 ms per year), with the bars re-ordering as countries' retirement ages rise/fall and the slider handle sweeping left-to-right. It plays from the current year to the last year (auto-rewinding to the start if it was already at the end), then stops. Clicking again mid-animation pauses it.
+
+One detail worth noting: the play button is drawn as part of the slider, so it has no visible effect in Line mode (the default view) — the user must switch to **📊 Bar** first for the play button to be shown and meaningful.

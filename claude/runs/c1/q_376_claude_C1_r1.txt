@@ -1,0 +1,5 @@
+**≈ 94.36 mg/PCU**
+
+Averaging the "Antibiotic use in livestock" values for all 48 Asian countries in the dataset gives a total of ~4,529.3, divided by 48 ≈ **94.36 mg per kg of livestock (PCU)**.
+
+(Range within Asia spans from East Timor at 12.87 up to Thailand at 337.78.)

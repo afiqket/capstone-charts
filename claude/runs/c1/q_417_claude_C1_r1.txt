@@ -1,0 +1,6 @@
+Based on the data:
+
+- **Italy 1990:** 13,804,637 daily smokers
+- **United Kingdom 1990:** 13,572,064 daily smokers
+
+**Italy** had the higher number of smokers in 1990, by about 232,000 (≈13.80 million vs. ≈13.57 million).

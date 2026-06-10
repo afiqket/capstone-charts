@@ -1,0 +1,1 @@
+The urban population percentage for 2008 (World) is **79.955%**, which the chart displays as **79.96%** (formatted to 2 decimals).

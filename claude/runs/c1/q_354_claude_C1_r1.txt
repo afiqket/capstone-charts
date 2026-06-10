@@ -1,0 +1,1 @@
+Use the 'Metrics' dropdown control above the chart and change the selection from 'Home Sales Annualized Rate' to 'Year-Over-Year Change (%)'. The line chart will then display the year-over-year percentage change instead of the annualized sales rate.

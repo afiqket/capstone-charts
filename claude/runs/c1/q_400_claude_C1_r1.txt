@@ -1,0 +1,22 @@
+Here's how, based on the chart code:
+
+**Step 1 — Switch to bar mode.** The chart opens in line mode. Click the **📊 Bar** button (top-left, next to "📈 Line"). This calls `setMode("bar")`, which renders the bar chart and reveals the year slider that's hidden in line mode (`sliderG.style("display", ...)`).
+
+**Step 2 — Set the year to 2007 with the slider.** A slider appears at the bottom, running from 1990 (left) to 2015 (right). Move the year to 2007 in any of these ways:
+- **Drag** the gray circular handle until it snaps to 2007, or
+- **Click** the slider track at the spot for 2007 (it snaps to the nearest year), or
+- Press the **▶ play** button to animate year-by-year and **⏸** pause on 2007.
+
+The chart title updates to *"Emissions of air pollutants, France, 2007"*, and the bars redraw for that year (`renderBar()` uses `currentYear`).
+
+**What you'll see for France in 2007** (CSV line 253), bars sorted high→low:
+
+| Pollutant | Value (Index) |
+|---|---|
+| Nitrogen oxides (NOx) | 65.20 |
+| PM₁₀ (Index) | 59.15 |
+| PM₂.₅ (Index) | 52.21 |
+| Carbon Monoxide (CO) | 43.64 |
+| Sulphur oxides (SO₂) | 31.68 |
+
+Note: the bar chart is fixed to **France** (`entity = "France"` is hard-coded), and there's no hover tooltip in bar mode — the value is printed at the end of each bar.

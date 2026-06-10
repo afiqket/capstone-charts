@@ -1,0 +1,10 @@
+To see the trend across the whole period for every continent at once, use the **Line** view.
+
+**How:**
+- Click the **"📈 Line"** button at the top (it's actually selected by default — `setMode("line")` runs on load, line 301).
+- In this mode `renderLine()` draws one continuous line per entity across all years (2014–2021), so all five series — **Africa, Americas, Asia, Europe (WOAH)** plus **World** — appear simultaneously, each in its own color with a labeled endpoint on the right.
+- Hovering anywhere shows a vertical guide line and a tooltip listing every continent's value (in mg/kg) for that year, sorted high-to-low, so you can compare them at any point along the timeline.
+
+**What to avoid for this goal:** the **"📊 Bar"** view (and its year slider / ▶ play button). Bar mode calls `renderBar()`, which only shows a single `currentYear` at a time — it's for comparing continents in one year, not for seeing the trend through the whole year range.
+
+So: stay on (or click) the Line button — that's the view that plots every continent's antibiotic-use trend across all the years together.

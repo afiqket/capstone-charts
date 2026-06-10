@@ -1,0 +1,15 @@
+**Value: 79.35**
+
+The chart plots only the **United States** (`entity = "United States"` at line 12), so the relevant data row is line 67 of the CSV:
+
+```
+United States,USA,2004,30.04,108.84,56.3,79.35,99.84,46.68
+```
+
+Matching against the header columns `...,Nitrogen oxides (NOx),...`, the NOx value is the 7th column = **79.35**.
+
+**How to read it off the chart itself:**
+- **Line mode** (default): hover the mouse near the year 2004 on the chart. The tooltip pops up listing each pollutant; it shows `Nitrogen oxides (NOx): 79.35` (formatted to 2 decimals via `d3.format(".2f")`).
+- **Bar mode**: click the **📊 Bar** button, then drag the slider (or click on it) to land on **2004**. The horizontal bar for Nitrogen oxides will have the label **79.35** at its end.
+
+Note this is an *indexed* value (1970 = 100 for the US, per the subtitle), not an absolute emission tonnage.

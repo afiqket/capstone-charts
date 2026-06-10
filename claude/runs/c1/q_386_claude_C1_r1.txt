@@ -1,0 +1,3 @@
+For the European Region (WHO) in 2019, the **Gastrointestinal infections** value is **≈15.1%** (15.094339).
+
+One clarification: this chart doesn't measure "percentage of infections." It shows the **share of countries in the European region that reported bacteriologically confirmed gastrointestinal infections** to the WHO's GLASS system. So ~15.1% of countries in that region reported confirmed gastrointestinal infections in 2019.

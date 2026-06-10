@@ -1,0 +1,14 @@
+The strong pink color encodes a **high share** of people in a country who said they dealt with anxiety or depression by engaging in religious/spiritual activities.
+
+The map uses a sequential color scale that runs from near-white/pale at low values through pinks to a deep magenta/purple at the top:
+
+```
+"#f3efef","#ead0d0","#e7b1b7","#e989a7",
+"#e45a9a","#d92f9a","#b1008c","#6e006e"   // low → high
+```
+
+Country fills are mapped over a 0–50% range (the legend ticks 0% to 50%). So the strong pinks/magentas (`#d92f9a`, `#b1008c`) mark countries at the upper end of that range — roughly **40–50%+ of people** dealing with anxiety/depression through religion. In the data these are the high-scoring countries like Nigeria (79.6%), Sri Lanka (79.5%), Kenya (78.9%), Mali (78.0%), Zambia (77.4%) — all clamped to the top of the scale and shown in the deepest pink/purple.
+
+Conversely, pale near-white means a low share (e.g., Sweden 9.4%, Finland 11.1%, Germany 12.4%).
+
+(The same strong-pink color `#b1008c` is also used for the big value number in the tooltip, purely as a styling accent matching the scale.)

@@ -1,0 +1,28 @@
+To answer "how the user gets" that value, the relevant thing is the chart's interaction model, not a number hard-coded in the code. Here's the path:
+
+**1. Set the year to 2019 using the slider**
+
+The chart defaults to the *latest* available year (`currentYear = allYears[allYears.length - 1]`, lines 32, 250). To get 2019 the user must move the time slider at the bottom. They can:
+- **Drag** the handle (`d3.drag`, lines 260–263),
+- **Click** anywhere on the slider track (lines 252–258), or
+- **Press play (▶)** and let it animate, then pause at 2019 (lines 265–276).
+
+Each of these calls `updateYear(y)`, which sets `currentYear` and re-renders via `redraw(null)`.
+
+Note: the slider's `allYears` only includes years that have **life-satisfaction** data (lines 26–30), so 2019 is selectable only if Brazil-relevant happiness data exists for it.
+
+**2. Hover over the Brazil dot to read the value**
+
+Once `currentYear = 2019`, `getPoints(2019)` builds the points for that year (lines 146–160), keeping only rows where both `GDP per capita` and `Life satisfaction` are present and `Code` doesn't start with `OWID_`. Brazil is in `labeledCountries` (line 36), so its dot is drawn already labeled "Brazil" in South-America red (`#8b1a1a`).
+
+Moving the mouse within ~20px of Brazil's dot (lines 195–209) triggers `showTT`, and the tooltip displays the GDP per capita as a dollar value:
+
+```js
+ttG.select(".tt-x").text(`$${d3.format(",.0f")(d.x)}`);   // line 131
+```
+
+where `d.x` = the `"GDP per capita"` column value (`+d[colX]`, line 156). So the user reads the number off the **tooltip's "GDP per capita (international-$ in 2021 prices)" field**.
+
+**Where the number actually comes from:** the underlying value isn't in the JS — it's loaded from the CSV via `FileAttachment("gdp-vs-happiness.csv").csv({ typed: true })` (lines 300–302), i.e. the row where `Entity = "Brazil"` and `Year = 2019`, column `"GDP per capita"`.
+
+I couldn't read the actual figure because the CSV (289 KB) exceeds the read limit, and you asked me not to run tools/code to scan it. If you'd like the concrete dollar value, I can read just the Brazil rows with an offset/search — let me know.

@@ -1,0 +1,17 @@
+For the United States (the only entity the chart plots), here's the average male–female gap (Men − Women) by decade:
+
+| Decade | Avg. (Men − Women) per 100,000 |
+|--------|-------------------------------|
+| 1950s | ≈ 21.6 |
+| 1960s | ≈ 34.8 |
+| **1970s** | **≈ 43.3** |
+| 1980s | ≈ 40.9 |
+| 1990s | ≈ 31.2 |
+| 2000s | ≈ 18.9 |
+| 2010s | ≈ 12.8 |
+
+**The 1970s had the highest average difference between men and women — about 43.3 deaths per 100,000.**
+
+This is the period where male rates had climbed to their peak plateau (~51–61) while female rates were still relatively low (~10–17), producing the widest gap. After ~1980 the gap narrows steadily as male rates fall and female rates keep rising.
+
+Note: the chart's code hard-codes `entity = "United States"` (line 12), so despite the phrase "all countries shown," only the U.S. series is actually displayed. The CSV contains many other countries, but none of them are rendered by this chart.

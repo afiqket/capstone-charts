@@ -1,0 +1,33 @@
+## What clicking the year slider does
+
+Clicking anywhere on the slider track jumps the chart **directly to the nearest year** — without starting the animation. The play button (`▶`) is what runs the timed sequence; the slider is a static jump/scrub control.
+
+Here's the mechanism. An invisible clickable rectangle covers the track from `sliderX0` (90) to `sliderX1` (840):
+
+```js
+sliderG.append("rect") ...
+  .on("click", function(event) {
+    const [mx] = d3.pointer(event);
+    updateYear(allYears.reduce((a,b) =>
+      Math.abs(xSlider(a)-mx) < Math.abs(xSlider(b)-mx) ? a : b));
+  });
+```
+
+On click it:
+1. Reads the click's x-position (`mx`).
+2. **Snaps** to whichever of the 7 years (2017–2023) sits closest to that x — you can't land between years.
+3. Calls `updateYear(y)`, which (lines 237–243):
+   - sets `currentYear`,
+   - **slides the handle** to that year's position,
+   - **updates the title** to `"…per person, <year>"`,
+   - hides any tooltip,
+   - **redraws** all the dots and country labels with that year's data.
+
+The drag behavior on the handle (lines 254–257) does the same snapping, so dragging and clicking the track behave identically.
+
+## Key difference from the play button
+
+- **Slider click** → one-shot jump to a single year; the `playing` flag, `timer`, and the `▶`/`⏸` icon are untouched.
+- **Play button** → toggles `playing`, sets a 600 ms `setInterval` that auto-advances through the years, and (if you're already on the last year, 2023) first rewinds to 2017.
+
+One side note: clicking the slider does **not** stop an animation in progress. If the chart is already playing and you click the slider, it jumps to the clicked year, but the interval keeps running and resumes advancing from that new year on the next tick — only the play button itself can stop playback.

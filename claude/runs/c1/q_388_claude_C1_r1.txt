@@ -1,0 +1,3 @@
+The Red color (`#c0392b`) represents **Bloodstream infections** — specifically, the share of countries in each WHO region reporting bacteriologically confirmed bloodstream infections to WHO's GLASS system.
+
+This is defined in the `SERIES` array (line 25): `{ key: "Bloodstream infections", col: "Bloodstream infections", color: "#c0392b" }`, where `#c0392b` is a red shade. It's the first legend entry and is used for the red line (line mode) and red bar (bar mode) across all six regional small-multiple charts.

@@ -1,0 +1,17 @@
+Looking at the chart code, here's how the bar chart works and how to read off Nitroimidazole for 2018:
+
+**Steps:**
+
+1. **Switch to bar mode** — click the **📊 Bar** button at the top (the chart opens in Line mode by default; `setMode("line")` at line 337).
+
+2. **Set the year to 2018** — in bar mode a year **slider** appears at the bottom (`sliderG`, hidden in line mode). Drag the round handle to **2018**, or click the slider track near the 2018 position. You can also press **▶** to animate through years and pause on 2018. Changing the year calls `renderBar()` for that year (lines 281–285).
+
+3. **Find the Nitroimidazole bar** — the bars are horizontal, one per antibiotic type, **sorted from largest value at top to smallest at bottom** (line 228). Each bar has its name as a label on the left and its **value printed to the right** of the bar (formatted to 1 decimal place; values under 0.1 show as `<0.1` — lines 250–254).
+
+**Two important caveats:**
+
+- **The bar chart only shows the United Kingdom.** The entity is hard-coded to `"United Kingdom"` (line 12), so regardless of slider/year, you only ever see UK data — not Armenia, Austria, etc.
+
+- **The UK isn't in the data file shown.** The CSV pages I can see (Armenia through Kuwait, alphabetical) don't include the United Kingdom. The data continues beyond line 173, so if the UK rows exist further down the file, a Nitroimidazole 2018 bar will render. If there's no UK row at all, the bar chart will display **"No data for this year"** (lines 218–222) and you won't be able to see it there.
+
+So practically: **Bar button → drag slider to 2018 → read the value label next to the "Nitroimidazole" bar** — but only for the UK.

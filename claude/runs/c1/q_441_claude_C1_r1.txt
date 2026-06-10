@@ -1,0 +1,14 @@
+**Netherlands**, with an increase of **+33.5 days** (from 4 days in 1870 to 37.5 days in 2000).
+
+Among all countries in the data, the 1870→2000 increases were:
+
+| Country | 1870 | 2000 | Increase |
+|---|---|---|---|
+| **Netherlands** | 4 | 37.5 | **+33.5** |
+| Germany | 13 | 42.5 | +29.5 |
+| Sweden | 11 | 38 | +27 |
+| Australia | 8 | 32 | +24 |
+| Denmark | 13 | 37 | +24 |
+| Switzerland | 13 | 33 | +20 |
+
+Netherlands had the largest increase. (It's also the largest among the five countries actually plotted in the chart — US, UK, Netherlands, France, Germany.)

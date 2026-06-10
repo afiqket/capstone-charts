@@ -1,0 +1,9 @@
+**≈ 82.47%**
+
+The chart plots only the `World` entity. Averaging the Urban values across all 24 years (2000–2023):
+
+- Sum of Urban % = 1979.26
+- Years = 24
+- **Average ≈ 82.47%**
+
+(For reference, the Urban share rises steadily from 75.68% in 2000 to 89.01% in 2023.)

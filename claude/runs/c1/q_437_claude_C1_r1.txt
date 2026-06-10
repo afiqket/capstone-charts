@@ -1,0 +1,9 @@
+The chart shows **5 countries**, defined explicitly in the chart code (line 14), not all the countries present in the CSV:
+
+- **Japan**
+- **Germany**
+- **Mexico**
+- **United States**
+- **Brazil**
+
+The CSV contains data for many more countries (Argentina, Australia, Austria, etc.), but the chart code filters down to just these five — plotting each as a colored line in the "Average effective age of retirement for women" chart.

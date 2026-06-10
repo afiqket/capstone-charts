@@ -1,0 +1,21 @@
+To see how expenditure changes across the years, this chart gives the user a **year control at the bottom** — the data isn't all shown at once; only one year's worth of points is plotted at a time (`currentYear`, starting at 2023). There are three ways to move through the years 2017→2023:
+
+**1. Press the Play button (▶)**
+- At the bottom-left there's a `▶` button (`playBtn`, `chart_131.js:234`).
+- Clicking it animates the scatter plot automatically, advancing one year every 600 ms (`setInterval(..., 600)`, lines 270–281).
+- The dots reposition each step, so you watch countries drift over time. If you're already on the last year (2023) it restarts from 2017. The icon toggles to `⏸` so you can pause.
+
+**2. Drag the slider handle**
+- There's a draggable circle handle on the timeline running from 2017 to 2023 (`handle` + `d3.drag`, lines 245, 265–268).
+- Dragging it left/right snaps to the nearest year and redraws the plot for that year.
+
+**3. Click anywhere on the slider track**
+- Clicking a spot on the timeline jumps to the nearest year (lines 257–263).
+
+Each time the year changes, `updateYear()` (lines 248–254) updates the title (e.g. *"…expenditure, 2020"*) and calls `redraw()` so the dots move to that year's values.
+
+---
+
+One caveat worth flagging: the title asks about "the trend **throughout the year**," but this chart shows trends **across years (2017–2023), not within a single year**. The data is annual (one row per country per year in the CSV), so there is no intra-year/monthly trend available.
+
+Also note this is a **scatter plot, not a line/trend chart** — to actually *read* a trend for one country, the best approach is to **press Play and hover over (or watch) a single country's labeled dot** as it moves through the animation. The chart highlights a hovered country (dimming the others, `redraw(hoveredEntity)`, lines 166–193) and shows its exact food/total expenditure in a tooltip, but you have to track that dot year-by-year yourself — there's no persistent trail or trajectory line connecting a country's points over time.

@@ -1,0 +1,25 @@
+## Answer: Coffee
+
+Comparing the price index values for 1958 with the most recent year in the data (2020), coffee shows the largest change in magnitude.
+
+The chart measures prices as an index relative to 1900 = 100. Taking each commodity's 1958 value (row 110) versus its 2020 value (row 172):
+
+| Food | 1958 | 2020 | Change |
+|------|------|------|--------|
+| **Coffee** | **164.89** | **50.58** | **−114.3** |
+| Beef | 114.70 | 196.38 | +81.7 |
+| Tea | 90.47 | 26.59 | −63.9 |
+| Corn | 92.08 | 28.77 | −63.3 |
+| Peanuts | 96.24 | 37.57 | −58.7 |
+| Wheat | 81.84 | 26.39 | −55.5 |
+| Cocoa | 74.22 | 21.39 | −52.8 |
+| Pork | 56.57 | 10.80 | −45.8 |
+| Lamb | 134.29 | 165.62 | +31.3 |
+
+**Coffee** changed the most — its price index fell by about **114 points** (a ~69% drop), the largest absolute move of any commodity.
+
+A couple of caveats on interpretation:
+- If you mean the largest **increase**, it's **Beef** (+81.7, from 114.7 to 196.4).
+- If you mean the largest **percentage** change, it's **Pork**, which fell ~81% (56.57 → 10.80).
+
+But by the most direct reading — the biggest overall swing in price — the answer is **coffee**.

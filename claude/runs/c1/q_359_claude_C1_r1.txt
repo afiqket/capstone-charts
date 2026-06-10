@@ -1,0 +1,11 @@
+To see Germany's Winter medals in this chart, do the following:
+
+1. **Click the "Winter" button.** At the top of the chart there are two toggle buttons — "Summer" (selected by default) and "Winter". Clicking "Winter" redraws the streamgraph using only the Winter Games rows from the data (`chart_110.js:287`).
+
+2. **Find Germany's band.** Germany is the **teal-colored** layer (`#47c8d2`), as shown in the legend at the top.
+
+3. **Hover over the teal Germany band.** A tooltip appears showing the country name, the year nearest your cursor, and the medal count for that year (`chart_110.js:189`). Move along the band horizontally to read different years.
+
+For example, hovering near the right edge would show Germany's most recent Winter results — **38 medals in 2022**, **18 in 2018**, **33 in 2014**, etc. (Germany's Winter peak in the data is **40 medals in 2002**.)
+
+Note: the years on the x-axis differ between modes since Winter Games start in 1924, and the only annotation in Winter mode is the WWII gap.

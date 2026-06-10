@@ -1,0 +1,9 @@
+**Average difference (Male − Female) ≈ 3.38 cigarettes per day.**
+
+I computed Male − Female for each of the 48 year-rows for the United States, summed them, and divided by 48:
+
+- Sum of differences ≈ 162.32
+- Number of years = 48
+- Average ≈ 162.32 / 48 ≈ **3.38**
+
+Male values are consistently higher than female values throughout. The differences range from a low of ~1.5 (2012) to a high of 6 (1947), but cluster mostly around 3–4 across the series.

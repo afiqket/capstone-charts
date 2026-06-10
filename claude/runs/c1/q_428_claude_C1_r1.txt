@@ -1,0 +1,23 @@
+Based on the code, here's what happens when a user hovers over the line chart (the `mousemove` handler on the transparent overlay rect, lines 157–177, plus `showTooltip`, lines 80–103):
+
+## What appears on hover
+
+**1. A vertical guide line** (`hoverLine`, lines 151–152, 162)
+A thin gray vertical line snaps to the nearest year under the cursor (the year is computed by inverting the x-scale and rounding, then finding the closest data row), spanning the full height of the plot.
+
+**2. Colored dots on each line** (`hoverDots`, lines 153–155, 163–169)
+A filled circle (radius 4, matching each series' color) appears on every commodity line at that year's value — marking the intersection of the guide line with each line. Series with no data for that year (e.g., Peanuts before 1870) have their dot hidden.
+
+**3. A floating tooltip** (`showTooltip`, lines 80–103)
+A white rounded box with a drop shadow that displays:
+- **The year** in bold as the title.
+- **A sorted list of every commodity** that has data that year, ordered from **highest to lowest price** (line 85, sorted by value descending). Each row shows a colored square swatch, the commodity name, and its price **value formatted to 2 decimals** (right-aligned).
+- The tooltip flips to the left side of the cursor if it would overflow the right edge (line 100), and is vertically clamped to stay within the chart (line 101).
+
+## On mouse leave (lines 173–177)
+The guide line, all dots, and the tooltip are hidden.
+
+## In short
+Moving the cursor across the chart lets the user read the **exact price values of all 14 food commodities for whichever year is nearest the cursor** — anchored by a vertical line and per-line dots, with a ranked tooltip listing each commodity's value (relative to 1900 = 100) from most to least expensive that year.
+
+Note: this hover interaction exists only in **Line mode**. The Bar mode (toggled via the "📊 Bar" button) has no hover behavior — it uses the year slider instead.

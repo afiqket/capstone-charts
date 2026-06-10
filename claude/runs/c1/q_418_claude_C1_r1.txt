@@ -1,0 +1,32 @@
+## How this chart can be biased toward certain countries
+
+The data file (`chart_129.csv`) actually contains **every country in the world** (Afghanistan, Albania, Algeria, … China, etc.), with a full 1980–2012 time series for each. But the chart deliberately narrows that down. Two design choices in `chart_129.js` are where bias enters:
+
+### 1. Hardcoded cherry-picking of 9 countries (selection bias)
+Lines 7 and 29 do the filtering:
+
+```js
+const countries = ["Japan", "Germany", "Vietnam", "Italy", "Thailand",
+                   "United Kingdom", "Peru", "Finland", "Singapore"];
+...
+const filtered = rawData.filter(d => countries.includes(d.Entity));
+```
+
+- Out of ~190 countries available, only **9 are shown**, and that list is hardcoded by the author — not derived from the data (e.g., it's not "top 9" or a region). Whoever built it simply *chose* who appears.
+- The title is **"Number of daily smokers in 2012"** with no qualifier, which implies these are *the* notable smoking countries. They are not. The data contains **China (≈281 million daily smokers in 2012)**, plus India, Indonesia, the USA, Russia, Brazil, Bangladesh — all far larger — and **all of them are silently excluded**. A reader can't tell anyone is missing.
+- This lets the author flatter or indict any country by including/excluding peers. The current list mixes mid-sized developed and Asian nations while omitting the actual giants, so whatever story it tells is curated, not representative.
+
+### 2. Absolute counts instead of prevalence (the bigger statistical bias)
+The plotted metric is the **raw number** of smokers (`col = "Number of daily smokers - both …"`), never normalized by population:
+
+```js
+const yMax = d3.max(filtered, d => +d[col]);   // absolute count
+```
+
+This systematically biases the comparison by **population size, not smoking behavior**:
+- **Small countries always look "good."** Finland and Singapore (~5 million people each) will sit at the bottom of the bar chart no matter how heavily their populations actually smoke. Their *prevalence* (% who smoke) could be high, but the chart hides that.
+- **Large countries always look "bad."** Japan, Germany, Vietnam, and Thailand will rank high largely *because they have more people*, even if their per-capita smoking rate is lower.
+- So the visual ranking conflates "big population" with "smoking problem." A country can be made to look better or worse purely through this choice — e.g., excluding huge-population countries and keeping the absolute scale makes the included mid-size countries the apparent "leaders."
+
+### In short
+The chart can be biased toward (or against) any country in two ways: by the **arbitrary, hardcoded inclusion list** that hides the rest of the world (including the real largest smoking populations), and by reporting **absolute smoker counts rather than smoking prevalence**, which rewards small-population countries and penalizes large ones regardless of actual smoking habits. A fair version would either show all countries (or an objective selection like "top N") and use **per-capita rate / share of population** so countries of different sizes are comparable.

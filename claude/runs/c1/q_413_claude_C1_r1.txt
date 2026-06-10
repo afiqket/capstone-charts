@@ -1,0 +1,14 @@
+The red line represents the **Female** series.
+
+In the chart code, two data series are defined (`chart_128.js:14-17`):
+
+```js
+const SERIES = [
+  { key: "Male",   col: "Male",   color: "#4e79a7" },  // blue
+  { key: "Female", col: "Female", color: "#b84c1a" }   // red/orange-brown
+];
+```
+
+The `Female` series is drawn with color `#b84c1a` — a reddish/rust tone — while `Male` is blue (`#4e79a7`).
+
+So the red line tracks the **average number of cigarettes smoked per female smoker per day in the United States**, plotted over the years (1947–2014 in the data). The line is labeled "Female" at its right end, and each data point comes from the `Female` column of the CSV (e.g., 18 in 1947, declining to 12 in 2014).

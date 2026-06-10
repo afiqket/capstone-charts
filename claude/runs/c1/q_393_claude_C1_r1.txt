@@ -1,0 +1,7 @@
+The chart shows United Kingdom data. For **1986**:
+
+- Nitrogen oxides (NOx): 2,860,000
+- Sulphur dioxide (SO₂): 3,900,000
+- Volatile organic compounds (VOCs): 2,620,000
+
+**Total = 9,380,000 tonnes ≈ 9.38 million tonnes**

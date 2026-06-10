@@ -1,0 +1,23 @@
+## Answer
+
+Among the twelve countries actually plotted in this chart (Korea, Italy, Germany, France, United Kingdom, United States, Japan, South Africa, Canada, Sweden, Mexico, Russia), **Germany had the largest decrease** in annual working hours from its first year to its latest year shown.
+
+**Germany:** 1970 ≈ **1,959.8 hours** → 2017 ≈ **1,355.5 hours** — a drop of about **604 hours** (roughly 31%).
+
+For comparison, the next-largest declines are:
+
+| Country | First year | Latest year | Decrease |
+|---|---|---|---|
+| **Germany** | 1,959.8 (1970) | 1,355.5 (2017) | **≈ 604 h** |
+| Japan | 2,243 (1970) | 1,713 (2016) | ≈ 530 h |
+| Korea | 2,531.2 (1970) | 2,069 (2016) | ≈ 462 h |
+| France | 1,948.2 (1970) | 1,502.7 (2016) | ≈ 445 h |
+| Italy | 2,042.1 (1970) | 1,725.1 (2016) | ≈ 317 h |
+
+(Mexico and Russia actually *increased* slightly over their shorter ranges.)
+
+### What this suggests
+
+Germany now records the lowest annual working hours of any country in the chart, ending up under ~1,360 hours. A decline of this magnitude reflects the broad trend in advanced economies where **rising labor productivity lets workers produce more in less time**, combined with Germany-specific factors: strong unions and collective bargaining that pushed for shorter standard workweeks, generous statutory vacation and holiday entitlements, and a large share of part-time employment. In short, as the economy grew richer and more productive, much of that gain was taken in the form of **more leisure and shorter hours rather than purely more output per worker** — Germany is the clearest example of that "working less as we grow wealthier" pattern in the data.
+
+One caveat worth noting: Germany is the only country with a 2017 data point (all others stop at 2016 or earlier, and South Africa only at 2014), so the exact ranking is slightly sensitive to differing time spans — but Germany's lead is large enough that it holds regardless.

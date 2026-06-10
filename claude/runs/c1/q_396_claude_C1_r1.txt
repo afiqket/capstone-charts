@@ -1,0 +1,3 @@
+Delhi appears for the first time in the bar chart in **1997**.
+
+The bar chart (`renderBar`) only draws an entity if it has a data point for the selected year. In the data, Delhi's earliest record is 1997 (SPM = 363), so for any year before 1997 only London is shown, and 1997 is the first year a Delhi bar appears.

@@ -1,0 +1,15 @@
+## Overall Trend
+
+For both men and women in the United States (1947–2014), the chart shows a **long-term decline** in the number of cigarettes smoked per smoker per day — most clearly and steadily from the late 1970s/1980s peak through 2014.
+
+**Supporting detail from the data:**
+
+- **Men (Male):** Hovered around a plateau of ~22–23.5 cigarettes/day through the late 1970s to mid-1990s, then declined fairly steadily to **15** by 2014.
+- **Women (Female):** Peaked around ~18–19.5 cigarettes/day in the same era, then declined to **12** by 2014.
+- **Men consistently smoke more than women** across the entire period — the male line sits above the female line at virtually every point.
+
+**Caveats worth noting:**
+- The early years are volatile, not a smooth trend — e.g., a sharp dip in 1958–1959 (down to ~9/6.8) followed by a recovery, and a rise through the 1960s–70s. The code itself acknowledges this with the comment that it deliberately avoids smoothing "because the data has real abrupt jumps."
+- So the *clean* downward trend is most evident over the **recent decades (roughly 1980s onward)**, while the full span is better described as fluctuating-then-declining.
+
+In short: **a downward trend for both sexes, with men consistently above women.**

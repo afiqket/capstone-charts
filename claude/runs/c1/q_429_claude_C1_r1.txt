@@ -1,0 +1,7 @@
+In 1889, **rice has the higher price**.
+
+From the data row for 1889:
+- **Rice: 90.02**
+- **Cocoa: 84.05**
+
+(Prices are indexed relative to 1900 = 100.) Rice (90.02) edges out cocoa (84.05).

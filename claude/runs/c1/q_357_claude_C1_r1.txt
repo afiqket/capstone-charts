@@ -1,0 +1,3 @@
+The chart plots the **Homicide rate** series. For South America in 1995, the value is **21.1** (homicide rate per 100,000 population).
+
+(Note: the corresponding homicide *count* for South America in 1995 is 67,923, but the chart itself displays the rate.)

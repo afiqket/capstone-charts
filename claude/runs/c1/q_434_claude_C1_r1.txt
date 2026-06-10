@@ -1,0 +1,22 @@
+## Answer
+
+**The raw value:** In the data file, Canada's 2000 figure is on line 148:
+```
+Canada,CAN,2000,1778.6146
+```
+So the underlying value is **1,778.6146 hours** (≈ **1,779 h** as displayed by the chart, which formats with `d3.format(",.0f")`).
+
+**How a user reads it off the interactive chart** — there are two ways:
+
+**1. Line mode (default view)**
+- The chart opens in 📈 Line mode (`setMode("line")` is called at the end).
+- Move the mouse over the plot area near the **2000** position on the x-axis.
+- The `mousemove` handler snaps to the nearest year (`snapYr`) and calls `showTooltip`, which lists every country's value for that year, sorted high-to-low.
+- Find **Canada** in the tooltip — it shows `1,779 h`.
+
+**2. Bar mode**
+- Click the **📊 Bar** button to switch modes (`btnBar`).
+- Drag the slider handle (or click the slider track) until the year reads **2000** (`updateYear` → `currentYear = 2000` → `renderBar()`).
+- Canada's horizontal bar will be labeled with its value, `1,779 h`, at the end of the bar.
+
+Both displays round to a whole number; the exact stored value is **1778.6146**.

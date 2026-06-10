@@ -1,0 +1,10 @@
+**Petroleum.**
+
+The "common years" are those where all three commodities have data. Petroleum is empty for 1850–1859 but has values from **1860 onward**, while Wheat and Corn cover the full span — so the common range is **1860–2020**.
+
+Over that range:
+- **Petroleum** sits mostly in the 100–688 range (e.g., 500 in 1860, ~300–600 through the 1980s–2010s), averaging well over 200.
+- **Wheat** stays mostly in the ~20–180 band, averaging roughly 80–90.
+- **Corn** stays mostly in the ~25–200 band, averaging roughly 90–100.
+
+Petroleum's average price index is far higher than either cereal crop, so **Petroleum** had the highest average across the common years.

@@ -1,0 +1,13 @@
+The chart's code fixes a single entity — `const entity = "United States"` (line 12) — and filters the data to it (line 22). So although the CSV contains many countries, the only data actually *shown* in this chart is the United States, 1950–2022.
+
+Summing those US rows:
+
+- **Men total** ≈ 3,385.8 (sum of all yearly rates)
+- **Women total** ≈ 1,348.4
+- **Combined** ≈ 4,734.2
+
+Men's share = 3,385.8 / 4,734.2 ≈ **71.5%**
+
+So across all years shown in the chart, roughly **71.5%** of the combined men-and-women total comes from men.
+
+(Note: these are age‑standardized death rates per 100,000, so summing them isn't a true population total — but as a share of the combined plotted values, men account for about 71–72%.)

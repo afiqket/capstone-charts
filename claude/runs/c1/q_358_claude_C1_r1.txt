@@ -1,0 +1,15 @@
+To get Afghanistan's value for 2012, look at the **blue "Country" series** (right axis), which defaults to Afghanistan. The chart plots rows where `Indicator === "Homicide rate"`, filtered by country and sorted by year.
+
+In the data file, the matching row is:
+
+```
+Asia,Southern Asia,Afghanistan,Homicide rate,2012,6.3
+```
+
+So **Afghanistan's value in 2012 is `6.3`** (homicide rate per 100,000 population).
+
+How to read it off the chart itself:
+1. In the **"Select Country"** dropdown, choose **Afghanistan** (already the default).
+2. Hover over the **blue dot** above the 2012 tick on the x-axis — the tooltip shows `Year: 2012, Rate: 6.3`.
+
+Note: the data table at the bottom also has a "Homicide count" row, where Afghanistan 2012 = **1,948** — but the line chart's plotted "value" is the rate, **6.3**.

@@ -1,0 +1,27 @@
+Here's how the 2016 data works in this chart's bar view.
+
+## Getting to the bar chart for 2016
+
+The chart starts in **Line mode**. To see 2016 as bars:
+
+1. **Click the "📊 Bar" button** (top-left, next to "📈 Line") to switch to bar mode (`setMode("bar")`, chart_116.js:270).
+2. **Use the year slider** at the bottom — drag the handle, or click on the track — until it lands on **2016**. The slider snaps to the nearest year (`updateYear`, chart_116.js:226–244).
+
+When `currentYear` is 2016, `renderBar()` looks up the matching row and draws two horizontal bars (chart_116.js:163, 181–200).
+
+There's also a **▶ play button** that auto-advances the years one at a time; it will pass through 2016 along the way (chart_116.js:246).
+
+## What you'll see for 2016
+
+Important: the bar chart only ever shows the **World** entity — it's hardcoded (`const entity = "World"`, chart_116.js:12), regardless of the slider. So the 2016 bars come from this row:
+
+```
+World,OWID_WRL,2016,83.12048,50.75369
+```
+
+- **Urban: 83.1%** (blue bar)
+- **Rural: 50.8%** (orange bar)
+
+(displayed to one decimal via `d3.format(".1f")`, chart_116.js:199)
+
+The title updates to *"…safely managed drinking water, World, 2016"*. Note that none of the other countries in the CSV (Afghanistan, Algeria, etc.) are reachable through the UI — only their 2016 values exist in the data, but the chart never renders them.

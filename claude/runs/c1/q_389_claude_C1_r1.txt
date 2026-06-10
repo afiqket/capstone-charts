@@ -1,0 +1,15 @@
+When hovering over any of the six small line charts (one per WHO region), the user sees two things appear (code at lines 182–195 and the tooltip at 99–126):
+
+**1. A vertical guide line** — a gray vertical line (`hLine`) snaps to the nearest year position under the cursor, spanning the full height of the plot area.
+
+**2. A tooltip** that displays, for that region and the snapped-to year:
+- **The year** as a bold heading.
+- **One row per infection series** that has data for that year, each showing a small color-coded square matching the line's color, followed by the series name and its value formatted to one decimal place with a `%` sign — e.g.:
+  - 🟦 Bloodstream infections: 25.5%
+  - 🟧 Gonorrhea infections: 12.8%
+  - 🟫 Gastrointestinal infections: 14.9%
+  - 🟩 Urinary tract infections: 21.3%
+
+Series with a null/missing value for that year are omitted from the tooltip. The tooltip is positioned next to the cursor and flips to the left side if it would overflow the right edge of the SVG.
+
+So in short: hovering reveals the exact percentage of countries (for all four infection types at once) in that region for the specific year under the cursor, plus a vertical line marking that year. (Note this hover behavior only applies in "📈 Line" mode — the bar mode has no such tooltip.)
