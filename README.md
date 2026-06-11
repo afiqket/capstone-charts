@@ -4,7 +4,7 @@ Webpage available at [afiqket.github.io/capstone-charts](https://afiqket.github.
 
 How to reproduce the experiments:
 
-Claude
+**Claude**
 
   Everything was done through Claude's CLI: Claude Code. Make sure that the model is Opus 4.7, since the Opus 4.8 recently came out. 
   To run C1 we performed this command in the terminal, outside of claude code: 
