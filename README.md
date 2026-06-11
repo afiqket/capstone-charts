@@ -1,6 +1,6 @@
 # Interactive Charts for our Capstone Project
 
-Webpage available at [afiqket.github.io/capstone-charts](https://afiqket.github.io/capstone-charts)
+Webpage available at [afiqket.github.io/zerobug](https://afiqket.github.io/zerobug)
 
 How to reproduce the experiments:
 
