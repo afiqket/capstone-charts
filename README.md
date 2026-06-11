@@ -23,7 +23,7 @@ How to reproduce the experiments:
 
   To run C3 we gave Claude Code this prompt ( this is an example for one of the charts):
 
-  Open the chart at https://observablehq.com/d/9afd123a63309685 using your browser tool, answer the question in questions/q_449.md, and save the output to runs/C3/q449_claude_C3_r1.txt
+    Open the chart at https://observablehq.com/d/9afd123a63309685 using your browser tool, answer the question in questions/q_449.md, and save the output to runs/C3/q449_claude_C3_r1.txt
 
   **Gemini**
 
