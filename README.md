@@ -24,3 +24,15 @@ How to reproduce the experiments:
   To run C3 we gave Claude Code this prompt ( this is an example for one of the charts):
 
   Open the chart at https://observablehq.com/d/9afd123a63309685 using your browser tool, answer the question in questions/q_449.md, and save the output to runs/C3/q449_claude_C3_r1.txt
+
+  **Gemini**
+
+    Every run was done in CLI: Gemini CLI. The model to be used is Gemini 3.1 Pro Preview. To run C1:
+    
+      For example, for chart 1 - Make sure to have chart1.js, chart1.csv and chart1_questions.csv ready. 
+      Then, to run C1, run this in terminal:
+      python scripts/prompt.py --questions questions/chart1_questions.csv
+
+    To run C3, we gave Gemini Code this prompt. For example for chart 1 question 1:
+      Open questions/001.txt, open the chart using the URL, save the answer to runs/C3/q001_gemini_c3_r1.txt
+    
