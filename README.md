@@ -7,6 +7,7 @@ How to reproduce the experiments
 Claude
   Everything was done through Claude's CLI: Claude Code. Make sure that the model is Opus 4.7, since the Opus 4.8 recently came out. 
   To run C1 we performed this command in the terminal, outside of claude code: 
+    
     claude --print \
       "$(cat prompts/C1.md)
 
