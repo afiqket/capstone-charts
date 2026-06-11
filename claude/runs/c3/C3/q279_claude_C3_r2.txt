@@ -1,0 +1,21 @@
+{
+  "answer": "Hover the mouse over the line chart at the x-position for year 2010 (or click '📊 Bar' and set the slider to 2010). The chart's tooltip (or bar label) reports each series' exact value. The result is: Missing female births for the World in 2010 = 1.71 million.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Annual number of missing female births and excess mortality, World' with two series (Excess female deaths in blue, Missing female births in orange). Years up to 2015 are historical (solid line); 2015+ are projected (dashed). The chart also offers Bar mode and a year slider with a play button. Step 2 (Axes): linear Y-axis with gridlines every 500,000 (0 to 3 million); X-axis year (1975–2050). Step 3 (Encoding): color encodes series. Step 4 (Interactions): There are two reliable ways to retrieve a specific (year, series) value: (a) Line mode hover — the mousemove handler finds the closest data year via `years.reduce(...)` and renders a tooltip listing both series' values; (b) Bar mode + slider — switch to Bar, then click the slider track or drag the handle to land on 2010; the bars are labelled with exact numeric values. I used method (a): computed the viewport x for year 2010 from the SVG geometry (SVG at viewport (152.5, 335.2); mainG translate (150, 90); innerW=550; xScale domain ≈ [1975, 2050]; x ≈ 152.5 + 150 + 35/75 × 550 ≈ 559.2; mid-chart y ≈ 625), hovered with page.mouse.move, and read the tooltip text from the iframe. The tooltip returned 'World, 2010' with 'Missing female births: 1.71 million'. Step 5 (Reading rules): used tooltip numeric output (d3 '.2f' format in millions), not pixel estimation. Step 6 (Pitfalls): 2010 is HISTORICAL (before PROJECTION_YEAR=2015); axis starts at 0; single linear Y-axis; no other filters.",
+  "confidence": 0.99,
+  "evidence": "Hover tooltip at year 2010 reported: 'World, 2010' / 'Excess female deaths: 1.66 million' / 'Missing female births: 1.71 million'. Chart title confirmed entity = World.",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/42003b6f245b303f",
+    "Computed the viewport x position for year 2010 from the SVG layout (≈559.2) and chose mid-chart y (≈625)",
+    "Hovered with page.mouse.move at (559.2, 625)",
+    "Read all svg text in the iframe to capture the tooltip's per-series values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked vs grouped — independent line series; the 1.71M figure is the raw value for 'Missing female births'",
+    "Log scale — linear",
+    "Projection vs historical — 2010 is HISTORICAL (solid line), well before the 2015 projection cutoff",
+    "Tooltip vs visual position — used the d3 '.2f' tooltip number, not pixels"
+  ],
+  "self_check": "Re-stated: To find 'Missing female births' for the World in 2010, hover the line chart at year 2010 (or use Bar mode with the slider at 2010); the tooltip/label shows the value as 1.71 million. Visually, the orange line at 2010 sits at ~1.7M on the Y-axis, slightly above the blue 'Excess female deaths' line (~1.66M). Numerical and visual evidence agree. Answer consistent with evidence."
+}

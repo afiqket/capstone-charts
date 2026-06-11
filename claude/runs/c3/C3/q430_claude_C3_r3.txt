@@ -1,0 +1,21 @@
+{
+  "answer": "Coffee changed the most since 1958 in terms of price (largest move in the price index). Coffee fell from 164.89 in 1958 to 50.58 in 2020 — a drop of about 114.3 index points (~−69%). If 'most changed' is read as the largest percent change instead, Pork takes the top spot (−80.9%, from 56.57 to 10.80, a 45.8-point drop).",
+  "reasoning": "Step 1 (Chart Identification): Interactive line/bar chart 'Long-term global prices of food commodities, 1850 to 2020' with 14 series. Step 2 (Axes & Scale): Y = price index (1900 = 100), linear, 0–600+; X = year. Step 3 (Encoding): Color = commodity. Step 4 (Interactive Protocol): I read the rows array bound to the chart's line paths (.datum(rows)) and looked up the 1958 and 2020 rows. Step 5 (Data Reading): For each commodity I computed the change in index points (2020 − 1958) and the percent change. Top by absolute index-point change: Coffee −114.32, Beef +81.68, Tea −63.88. Top by percent magnitude: Pork −80.91%, Beef +71.21%, Cocoa −71.18%. Step 6 (Pitfalls): Y not truncated; linear; not stacked; single y-axis. Used data-binding values (= tooltip values), not pixel estimation. The chart's y-axis itself is in index points so the lead answer (Coffee) uses absolute index-point change; the alternative percent interpretation (Pork) is also reported.",
+  "confidence": 0.85,
+  "evidence": "Bound rows: 1958 vs 2020 — Coffee 164.89 → 50.58, Δ = −114.32, pct = −69.33% (biggest absolute change). Pork 56.57 → 10.80, Δ = −45.77, pct = −80.91% (biggest percent change). Beef 114.70 → 196.38, Δ = +81.68, pct = +71.21% (second-largest absolute change, only sizeable increase). Tea 90.47 → 26.59, Δ = −63.88, pct = −70.61%. Cocoa 74.22 → 21.39, Δ = −52.83, pct = −71.18%.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2d7d721c88a93c6e",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect iframe structure",
+    "browser_evaluate inside iframe to read the rows array bound to the line paths and compute per-commodity index-point Δ and percent Δ between 1958 and 2020"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0)",
+    "Linear scale (not log)",
+    "Not stacked",
+    "Single y-axis (no dual axes)",
+    "Used the chart's data-binding values (tooltip-equivalent), not pixel estimation",
+    "Reported both absolute index-point and percent interpretations to flag metric ambiguity in 'changes the most'"
+  ],
+  "self_check": "Restated: between 1958 and 2020 Coffee's line drops the furthest in absolute index-point terms (~114 points down), more than any other commodity; the only commodity whose index rose substantially is Beef (+82). If 'most changed' is read as the biggest percent swing, Pork loses the largest share of value (−81%). Consistent with the per-commodity table above."
+}

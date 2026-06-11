@@ -1,0 +1,21 @@
+{
+  "answer": "Cohort life expectancy was higher than Period life expectancy in France in 1900 — 51.9 years versus 45.1 years, a difference of 6.8 years.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Period versus cohort life expectancy, France' with two series — Period life expectancy (orange/red) and Cohort life expectancy (blue). The chart has a Line/Bar mode toggle and a two-handle year range slider (data 1816–2023). Step 2 (Axes): linear Y-axis in years (28–84, every 2-year gridline); X-axis year (1816–2023). Step 3 (Encoding): color encodes series. Step 4 (Interactions): I computed the viewport x corresponding to year 1900 from the chart's SVG geometry — SVG at viewport (152.5, 335.2); mainG translate (75, 80); innerW=615; xScale domain [1816, 2023] → viewport x for 1900 = 152.5 + 75 + (1900-1816)/(2023-1816) × 615 ≈ 477.1; mid-chart y ≈ 605 — and used Playwright page.mouse.move to hover there. The chart's mousemove handler snapped to the closest data year (1900) and showed a tooltip with both series values formatted via d3 `.1f` in years. Step 5 (Reading rules): used the exact tooltip numbers, not pixel readings. Step 6 (Pitfalls): the Y-axis is truncated at 28 years (does not start at zero), so visual line heights exaggerate small differences, but the numeric comparison uses absolute values from the tooltip and is unaffected; both series share the same Y-axis (no dual axes); chart is linear; the range slider spans the full 1816–2023, so 1900 is in the visible domain; no other filters are active.",
+  "confidence": 0.99,
+  "evidence": "Hover tooltip at year 1900 returned: 'France, 1900' / 'Period life expectancy: 45.1 years' / 'Cohort life expectancy: 51.9 years'. Since 51.9 > 45.1, the Cohort life expectancy series is higher by 6.8 years.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/cc6add73dd00fe92 in Line mode",
+    "Read axis labels in the iframe to confirm the data year range is 1816–2023",
+    "Computed the viewport x position for year 1900 using the chart's xScale geometry and hovered there with page.mouse.move at (≈477.1, 605)",
+    "Read all svg text in the iframe to capture the per-series tooltip values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 28 years (truncated); affects visual height differences but not the numeric tooltip-based comparison",
+    "Dual y-axes — none (single shared linear Y-axis)",
+    "Stacked vs grouped — independent line series; the tooltip values are direct per-series numbers",
+    "Log scale — linear, confirmed",
+    "Linked filter still active — range slider spans 1816–2023; 1900 is visible",
+    "Tooltip vs visual position — used d3 '.1f' tooltip numbers, not pixels"
+  ],
+  "self_check": "Re-stated: For France in 1900, the blue Cohort line is at 51.9 years and the orange Period line is at 45.1 years. Since 51.9 > 45.1, Cohort life expectancy is higher (by 6.8 years). Visually the Cohort line sits clearly above the Period line around 1900, consistent with the tooltip. Answer consistent with evidence."
+}

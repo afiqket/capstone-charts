@@ -1,0 +1,22 @@
+{
+  "answer": "France's Top 1% survival age in 2023 was 102.7 years.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Survival ages across the population, France, 1816 to 2023' with eleven percentile lines (Top 1%, 10%, 20%, …, 90%, 99%). Step 2 (Axes): linear Y-axis in years (0 to 120, gridlines every 20 years); X-axis year (1816 to 2023). Step 3 (Encoding): color encodes the survival-percentile series. Step 4 (Interactions): The chart's mousemove handler snaps to the closest data year and shows a tooltip listing the year and per-percentile values. I hovered at the right edge of the plot and scanned nearby x-coordinates until the tooltip's year locked onto 2023. The tooltip at year 2023 (viewport (952, 500)) read 'Top 1%: 102.7 years'. Step 5 (Reading rules): used the tooltip's d3 `.1f` numeric value, not pixel estimation. Step 6 (Pitfalls): near the right edge the years are spaced very tightly on the x-axis (a few pixels each), so a small hover offset can switch the snapped year; I confirmed 2023 by sweeping nearby x-positions (x=948→2022, x=952→2023, x=958→2023).",
+  "confidence": 0.99,
+  "evidence": "Tooltip at year 2023 (viewport (952, 500)): 'Top 1%: 102.7 years'. The chart's title 'Survival ages across the population, France, 1816 to 2023' confirms entity = France and the data span includes 2023.",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/d853ee793fb4ca5c",
+    "Confirmed the chart's title and data span (France, 1816 to 2023)",
+    "Hovered across the right edge of the plot with Playwright page.mouse.move; the tooltip's year transitioned through 2014 → 2017 → 2019 → 2021 → 2022 → 2023 as x increased",
+    "At viewport (952, 500) the tooltip displayed year 2023 with 'Top 1%: 102.7 years'"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked vs grouped — independent percentile line series; tooltip provides direct per-series values",
+    "Log scale — linear",
+    "Linked filter — chart shows all years; 2023 is the last data year",
+    "Snapping — hover snaps to closest data year; near the right edge the snap-resolution is tight",
+    "Tooltip vs visual position — used the d3 '.1f' tooltip number, not pixels"
+  ],
+  "self_check": "Re-stated: For France in 2023, the Top 1% survival age is 102.7 years (read from the tooltip). Visually the Top 1% line at the right edge sits just above the 100-year gridline, consistent with ~102.7 years. Numerical and visual evidence agree. Answer consistent with evidence."
+}

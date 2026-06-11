@@ -1,0 +1,20 @@
+{
+  "answer": "Africa (WOAH) in 2018 = 17.7 mg/kg of antibiotic use per kilogram of meat product (per the chart's tooltip).",
+  "reasoning": "Step 1 — Chart is an interactive line chart titled 'Antibiotic use in livestock per kilogram of meat product' with Line/Bar toggles and 5 series: World, Africa (WOAH), Americas (WOAH), Asia (WOAH), Europe (WOAH). Step 2 — Y-axis: 0–250 mg/kg in 50 increments (linear, not truncated). Step 3 — Africa (WOAH) color = #4e79a7 (blue). Step 4 — In Line view, dispatched a mousemove on the hover-overlay rect at the x-coordinate corresponding to year 2018. The tooltip listed all 5 series at 2018 sorted descending: 'Asia (WOAH): 158.5 mg/kg', 'World: 92.0 mg/kg', 'Americas (WOAH): 62.9 mg/kg', 'Europe (WOAH): 59.2 mg/kg', 'Africa (WOAH): 17.7 mg/kg'. Step 5 — Used the tooltip value (d3.format('.1f') + ' mg/kg') rather than estimating from the line position.",
+  "confidence": 0.97,
+  "evidence": "Tooltip at year 2018 for Africa (WOAH): 'Africa (WOAH): 17.7 mg/kg'. Same tooltip lists the other regions at 2018 for context.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/ef9c461497a97a5d",
+    "Confirmed Line view active",
+    "Computed the chart's x-coordinate for year 2018",
+    "Dispatched a mousemove on the hover-overlay rect at that coordinate",
+    "Read the Africa (WOAH) value from the multi-series tooltip"
+  ],
+  "pitfalls_checked": [
+    "'Africa' here is the WOAH grouping 'Africa (WOAH)' — confirmed via tooltip label",
+    "Y-axis starts at 0 mg/kg (not truncated)",
+    "Used the chart's tooltip value rather than pixel estimation (Step 5)",
+    "Tooltip lists multiple series; selected the Africa row specifically"
+  ],
+  "self_check": "Restated: per the chart's interactive tooltip at year 2018, Africa (WOAH) reports 17.7 mg of antibiotic use per kilogram of meat product — the lowest among the 5 series shown for that year."
+}

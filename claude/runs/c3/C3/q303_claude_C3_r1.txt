@@ -1,0 +1,23 @@
+{
+  "answer": "Two equivalent ways: (A) Line mode — leave the chart in '📈 Line' (default), then hover the cursor at year 1950 on the x-axis. A vertical guide line is drawn at 1950 and a tooltip card with header 'United States, 1950' lists every series' value, including '1st birth: 23.46 years' and '2nd birth: 26.39 years'. Side-by-side reading those two rows is the comparison. (B) Bar mode — click '📊 Bar' to switch view, drag the year slider (or click its track) to land on 1950. The chart re-draws as horizontal bars sorted by descending value, each labeled with its number; the '2nd birth' bar reads 26.39 and the '1st birth' bar reads 23.46. The comparison: in the 1950 mother-birth cohort the average age at 2nd birth (26.39 years) was about 2.93 years older than the average age at 1st birth (23.46 years).",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by mother's birth year, United States', 6 series including 1st birth (dark navy) and 2nd birth (dark slate). X-axis = mother's birth year, 1918–1973. Step 2 — Linear y-axis 20–35 (truncated below 20); linear x-axis. Step 3 — Series color-coded with right-edge end labels. Step 4 — In Line mode, moved the cursor to viewport coordinates corresponding to SVG x ≈ 448 (year 1950 falls at SVG x = 55 + (1950-1918)/(1973-1918)*675 ≈ 447.73). The tooltip header confirmed 'United States, 1950' and listed all six series values. Recorded the 1st-birth and 2nd-birth rows directly. Bar mode achieves the same with the slider, sorting bars by value. Step 5 — Read tooltip values directly. Step 6 — Pitfalls verified.",
+  "confidence": 0.98,
+  "evidence": "Line-mode hover @ year 1950: tooltip header 'United States, 1950'; rows '1st birth: 23.46 years' (ref f4e185) and '2nd birth: 26.39 years' (ref f4e183). Also visible at the same year: All 25.91, 3rd 28.44, 4th 29.85, 5th+ 32.22. The difference 26.39 − 23.46 = 2.93 years (2nd birth older).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/f23cbe05933d7078",
+    "browser_click '📈 Line' to ensure Line mode",
+    "page.mouse.move to viewport coordinates corresponding to SVG (~448, 250) inside the plot — snaps to year 1950",
+    "browser_snapshot of the tooltip card to read the 1st-birth and 2nd-birth rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, 20–35 — irrelevant because tooltip prints numeric values",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: hover snapped to year 1950 (verified by tooltip header)",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart hard-coded to United States",
+    "Axis semantics: x is mother's birth year (cohort), not year of childbirth — the comparison refers to the 1950 mother-birth cohort"
+  ],
+  "self_check": "Restated: the comparison procedure is — open the chart, hover the line view at x=1950 (or switch to Bar view with slider at 1950), and read the two specific rows/bars. Numerically, 1st birth = 23.46 years and 2nd birth = 26.39 years for mothers born in 1950, so 2nd birth was on average 2.93 years older. This is consistent with the expected monotonic increase in maternal age with birth order, and the relationship is preserved across all visible cohorts in the chart (1st birth is always the lowest line, 2nd birth lies above it)."
+}

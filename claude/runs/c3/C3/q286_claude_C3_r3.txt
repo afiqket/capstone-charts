@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering over the 85–89 years old bar in 2023 has two effects. (1) Focus highlighting — all the other age-group bars fade to 50% opacity while the hovered 85–89 bar stays at full opacity, so it visually 'pops' relative to the rest. (2) A floating tooltip appears near the cursor with the age-group as its title ('85–89 years old') and the exact death rate beneath it ('102.49 per 1,000'). Note that the tooltip value uses d3 `.2~f` formatting and is slightly more precise than the bar's printed label (which uses d3 `.3~g` and shows '102'). When the mouse moves off the bar, all bars return to full opacity and the tooltip is hidden.",
+  "reasoning": "Step 1 (Identification): Horizontal bar chart titled 'Annual death rate by age group, United States, 2023' (year slider at 2023). Step 2 (Axes): X-axis = deaths per 1,000 (linear, baseline 0); Y-axis = age groups. Step 3 (Encoding): one bar per age group, single color; each bar has its rate printed adjacent (d3 `.3~g`). Step 4 (Interactions): Each `rect.bar` has `mousemove` and `mouseleave` handlers. On mousemove: `d3.selectAll('.bar').attr('opacity', 0.5)` dims every bar, then `d3.select(this).attr('opacity', 1)` re-asserts full opacity on the hovered one (a focus effect). It then calls `showTooltip(d.age, d.value, mx, my)`, which writes the age-group as the title and the value formatted via `d3.format('.2~f')` followed by ' per 1,000'. The tooltip is a rounded white rect with drop-shadow, positioned near the cursor and clamped to stay inside the SVG bounds. On mouseleave: all bars reset to opacity 1 and `hideTooltip` hides the tooltip. The slider/year is unaffected. I confirmed empirically by hovering near the middle of the 85–89 bar at year 2023; the tooltip showed '85–89 years old' and '102.49 per 1,000'. Step 5/6: not data-retrieval specific — note the precision difference between bar label (102) and tooltip (102.49). The chart has a linear X-axis at 0, single axis, no stacking, no truncation; the slider must be at 2023 (it was for this run).",
+  "confidence": 0.99,
+  "evidence": "Hovering at viewport (500, 341) — inside the 85–89 bar at year 2023 — caused the iframe SVG to render '85–89 years old' followed by '102.49 per 1,000' as the tooltip. The bar's adjacent printed label remained 102 (lower-precision .3~g format), confirming the tooltip uses a different (higher) precision.",
+  "interactions_performed": [
+    "Confirmed the slider was at year 2023",
+    "Computed viewport coordinates for the 85–89 bar from the SVG geometry (mainG translate (140, 65); yScale step ≈ 26.05; bandwidth ≈ 21.36; first band center SVG y ≈ 78; viewport y ≈ 341; viewport x mid-bar ≈ 500)",
+    "Hovered with page.mouse.move at (500, 341); a precursor off-chart move was used to reset state and ensure the mousemove fires inside the bar",
+    "Read svg text inside the iframe to capture the tooltip content"
+  ],
+  "pitfalls_checked": [
+    "X-axis truncation — bars start at 0; no truncation",
+    "Dual axes — none",
+    "Stacked vs grouped — one bar per age group, no stacking",
+    "Log scale — linear",
+    "Tooltip vs bar-label precision — bar uses .3~g ('102'), tooltip uses .2~f ('102.49'); both represent the same value at different precision",
+    "Linked filter — slider at 2023 (the question specifies this year)"
+  ],
+  "self_check": "Re-stated: Hovering the 85–89 bar at year 2023 dims all other bars to 50% opacity and shows a tooltip ('85–89 years old' / '102.49 per 1,000'). On mouseleave, opacities are restored and the tooltip is hidden. Verified empirically; answer consistent with evidence."
+}

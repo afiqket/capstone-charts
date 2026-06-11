@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering at age 30 inside the United Kingdom panel (top-right of the 2×2 grid) makes the chart's shared tooltip appear with the header '30 (Age of women)' and the subtitle 'in births per woman at a specific age', followed by a list of mother's birth-year cohorts with their age-30 fertility rate, sorted from highest to lowest. For the United Kingdom at age 30, the top 10 rows displayed are: 1980 → 0.12; 1960 → 0.11; 1985 → 0.11; 1975 → 0.11; 1965 → 0.11; 1955 → 0.11; 1950 → 0.10; 1970 → 0.10; 1990 → 0.10; 1945 → 0.08. Each row is preceded by a small color swatch matching the cohort line (palette ramps from dark navy ~1925 to pale teal ~2010). Only cohorts with a positive value at age 30 appear; the list is capped at 10 entries (cohort 1990 born appears last in this top-10 because its age-30 value 0.10 ties low — older cohorts like 1925/1930/1935 are filtered out for having too-low values at age 30).",
+  "reasoning": "Step 1 — Chart is a small-multiples 2×2 panel: Spain (top-left), United Kingdom (top-right), Japan (bottom-left), United States (bottom-right). Each panel plots age (12–55) on the x-axis vs age-specific fertility rate per woman (0–0.32) on the y-axis, with one colored line per mother's birth-year cohort (1925–2010 in 5-year steps). Step 2 — Linear x and y, both starting at 0 for y. Step 3 — Color encodes the cohort (continuous palette dark navy → pale teal for old→recent). Step 4 — The hover overlay is a transparent rect filling each panel's inner plot area; on mousemove it rounds the x-pixel to an integer age, computes (with interpolation if needed) each cohort's value at that age, filters to value>0.001, sorts descending, and shows up to 10 rows in a shared tooltip. I located the UK panel by its translate offset (450,102), found its inner hover overlay, and dispatched a mousemove at xScale(30). Step 5 — Values read directly from the chart-drawn tooltip rows (two decimals, d3.format('.2f')) — not pixel estimation. Step 6 — Pitfalls: y starts at 0 (not truncated); linear scale; small-multiples, so tooltip applies to that panel only (UK), but the tooltip itself doesn't show which panel produced it — context comes from where the cursor is; only top-10 cohorts shown by design.",
+  "confidence": 0.97,
+  "evidence": "Tooltip text captured from the SVG after dispatching mousemove at the UK panel's xScale(30): '30 (Age of women)' / 'in births per woman at a specific age' / cohort rows '1980 0.12', '1960 0.11', '1985 0.11', '1975 0.11', '1965 0.11', '1955 0.11', '1950 0.10', '1970 0.10', '1990 0.10', '1945 0.08'.",
+  "interactions_performed": [
+    "Playwright navigate to https://observablehq.com/d/b50ab7e321c6ccdb",
+    "Identified the UK panel by its translate offset (450,102) (col=1, row=0 of the 2×2 grid)",
+    "Found its inner hover overlay (transparent rect, 378×204 px inside the panel)",
+    "Computed the panel's x-coordinate for age 30 via the panel's linear xScale over [12,55]",
+    "Dispatched a synthetic mousemove on the overlay at that x",
+    "Read the resulting tooltip rows from the shared tooltip SVG group"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single linear y-axis per panel; no log scale",
+    "Small-multiples panels with independent data; tooltip belongs to whichever panel the cursor is over",
+    "No filters active beyond the natural data domain",
+    "Used chart-drawn tooltip values, not pixel estimation"
+  ],
+  "self_check": "Restated: hovering at age 30 in the UK panel pops a tooltip headed '30 (Age of women)' that ranks mother's-birth-year cohorts by their age-30 birth rate, peaking at the 1980 cohort (0.12) and tailing off through 1945 (0.08). Consistent with the SVG-rendered tooltip contents."
+}

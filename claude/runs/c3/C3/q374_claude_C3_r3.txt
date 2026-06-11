@@ -1,0 +1,19 @@
+{
+  "answer": "Iran's antibiotic use in livestock in 2020 = 145.37 mg/PCU (milligrams of total antibiotic use per kilogram of livestock, PCU-adjusted). Iran is in the Asia region per the chart's color legend.",
+  "reasoning": "Step 1 — Chart is a sorted bar chart titled 'Antibiotic use in livestock, 2020' with one bar per country, colored by world region. Step 2 — Y-axis: mg/PCU from 0 to ~350 in 50-unit ticks; X-axis: countries sorted descending by value. Step 3 — Region color encoding: Asia = #2a9d8f (teal). Step 4 — Iterated through every invisible per-bar overlay rect, dispatching mousemove and capturing the tooltip when its name text was 'Iran'. Tooltip: name='Iran', region='Asia', value='145.37 mg/PCU'. Step 5 — Used the tooltip value (d3.format('.2f') + ' mg/PCU') rather than estimating from bar height.",
+  "confidence": 0.97,
+  "evidence": "Tooltip on Iran's bar: name='Iran', region='Asia', value='145.37 mg/PCU'. Units: milligrams of total antibiotic use per kg of livestock (PCU-adjusted), 2020. Source: Mulchandani et al. (2023) – processed by Our World in Data.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/53d1b4690a751951",
+    "Iterated through every invisible per-bar overlay rect in the SVG, dispatching mousemove",
+    "Captured the chart's tooltip group when its name text matched 'Iran'",
+    "Read region and value strings from the tooltip"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip value rather than estimating from bar height (Step 5)",
+    "Y-axis starts at 0 — no truncation pitfall",
+    "Confirmed country is 'Iran' (not Iraq) by tooltip text match",
+    "Asia region color (#2a9d8f) is consistent with the chart legend"
+  ],
+  "self_check": "Restated: Iran's 2020 antibiotic use in livestock is 145.37 mg/PCU (Asia) — read directly from the chart's interactive tooltip on Iran's bar."
+}

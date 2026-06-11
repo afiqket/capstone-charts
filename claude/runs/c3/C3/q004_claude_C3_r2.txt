@@ -1,0 +1,26 @@
+Now I have enough information to identify the outlier. Let me compile the findings.
+
+```json
+{
+  "answer": "Carpenters (80%) — a middle-wage occupation with the highest immigrant percentage in the entire dataset, far above what is typical for middle-wage jobs.",
+  "reasoning": "Step 1: Chart is an interactive horizontal bar chart sorted by immigrant percentage with a wage-category color encoding and a wage filter. Step 2: X-axis is 0–80% (linear, percentage). Step 3: Color encodes wage category (Low / Middle / High). Step 4: I applied each wage filter in turn to read the per-category distributions from the rendered bars. Step 5: Read tooltip-equivalent labels directly from the chart. Filter results — Low-wage range: 14%–78% (top: Maids 78%, Taxi drivers 70%, Cooks 61%); Middle-wage range: 4%–80% (top: Carpenters 80%, Chefs 71%, then a sharp drop to Registered nurses 42%); High-wage range: 7%–46% (top: Economists 46%, Math scientists 43%, Physical scientists 42%). Step 6: Verified scale is linear, axis starts at 0, single axis, no log scale, filters reset between reads. Carpenters sits in the middle-wage category yet has the highest immigrant percentage of any occupation in the dataset (80%) — higher than every low-wage job, including those typically associated with immigrant labor. The chart's own subtitle calls this out: '80% of carpenters... working in D.C. are immigrants'. Within middle-wage, Carpenters is also a clear outlier — only Chefs (71%) is comparable, and the next middle-wage value drops to 42%.",
+  "confidence": 0.7,
+  "evidence": "Carpenters = 80% (Middle-wage). Other middle-wage values: Chefs 71%, Registered nurses 42%, Computer support 40%, ... Police officers 4%. Top low-wage value: Maids 78%. Top high-wage value: Economists 46%. Chart subtitle explicitly highlights carpenters at 80%.",
+  "interactions_performed": [
+    "Navigated to the chart URL",
+    "Captured full snapshot of all 81 occupations and their values",
+    "Clicked Wage filter = High-wage job and re-read values",
+    "Clicked Wage filter = Low-wage job and re-read values",
+    "Clicked Wage filter = Middle-wage job and re-read values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis (categorical) — not truncated; X-axis starts at 0%",
+    "Single axis (no dual axes)",
+    "Bars are simple (not stacked) — read directly",
+    "Linear, not log scale",
+    "Re-read values after each filter change",
+    "Reset filter category between reads"
+  ],
+  "self_check": "Restated: among all 81 D.C. occupations, the one most surprising for its wage tier is Carpenters — an 80% immigrant share in a middle-wage job, exceeding every low-wage occupation including the stereotypically immigrant-heavy maids/housekeepers (78%) and taxi drivers (70%). This matches the evidence and the chart's own emphasis. A defensible alternative is Economists (46%, high-wage), which tops its category, but the magnitude of the deviation is smaller and less dramatic than Carpenters'."
+}
+```

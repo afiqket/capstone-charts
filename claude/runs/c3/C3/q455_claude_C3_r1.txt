@@ -1,0 +1,20 @@
+{
+  "answer": "South Korea, with about 2,877 average working hours per worker in 1981 (the highest of all countries that year; GDP per capita ~$6,431, population ~39M).",
+  "reasoning": "Step 1 (Chart Identification): interactive bubble scatter, 'Annual working hours vs. GDP per capita', one bubble per country, sized by population, with a year slider 1950–2023. Step 2 (Axes): X-axis = GDP per capita (log, $1k–$100k); Y-axis = Average working hours per worker (1,400 h–3,000 h). Step 4 (Interactive Elements): I set the year slider to 1981 (confirmed via the title 'Annual working hours vs. GDP per capita, 1981', 130 bubbles). Step 5 (Data Reading): 'highest average working hours' = the bubble highest on the Y-axis (smallest cy). I reconstructed the Y (hours) scale from the tick labels, found the topmost bubble, and hovered it to read its tooltip rather than relying on pixel estimation. The top bubble's hours (~2,877) was well clear of the next-highest (~2,718), so the maximum is unambiguous.",
+  "confidence": 0.97,
+  "evidence": "Year set to 1981 (title confirmed). Top five bubbles by working hours (computed from Y-scale): ~2,877, 2,718, 2,628, 2,606, 2,563 h. Hovering the topmost bubble showed tooltip: 'South Korea', year '1981', GDP per capita '$6,431', Average working hours per worker '2,877 h', Population '39M'. Region color = Asia.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/84f457e9538f0d1d and waited for the chart iframe to render",
+    "Swept the year slider to confirm available years (1950–2023 contiguous) and located 1981",
+    "Set the year slider to 1981 and verified the chart title",
+    "Reconstructed the Y (working-hours) scale from tick labels and identified the highest bubble",
+    "Hovered the highest bubble to read its tooltip (country, hours, GDP, population)"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the year is 1981 via the chart title before reading (not the default 2023)",
+    "Identified the maximum by the Y-axis (working hours), not the X-axis (GDP) — correct axis used",
+    "Used the tooltip's exact value (2,877 h) rather than pixel estimation",
+    "Checked the top point is clearly separated from the runner-up (2,877 vs 2,718 h), so the max is unambiguous"
+  ],
+  "self_check": "Restated: in 1981 the country with the most average working hours per worker is South Korea (~2,877 h), ahead of the next country (~2,718 h). The tooltip independently confirms South Korea at 2,877 h for 1981, consistent with it being the topmost bubble, so the answer holds."
+}

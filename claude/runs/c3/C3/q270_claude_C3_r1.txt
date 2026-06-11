@@ -1,0 +1,21 @@
+{
+  "answer": "2.5 billion people. How: click the '📊 Bar' mode button, then drag the year slider until the chart title reads 'World population, comparison of different historical sources, 1950'. The horizontal bars re-render — find the 'McEvedy and Jones (1978)' row; the numeric label to the right of its bar reads '2.5 billion'. (Caveat for line-mode users: the line-chart tooltip groups every visible series under a single 'Year:' title but shows each series' nearest available data point, so for an exact per-source value at 1950 the Bar-mode slider readout is the reliable method.)",
+  "reasoning": "Step 1 — Chart Identification: Interactive Observable chart with Line and Bar modes plus a year slider. Each historical source (Maddison, Durand, McEvedy & Jones, Thomlinson, Tuve, etc.) is one series. Step 2 — Axes/Scale: linear y; on-bar labels are produced by fmtBillion() = d3.format('.1~f') + ' billion' for ≥1B (else million/thousand). Slider domain is a scalePoint over all distinct dataset years — heavily non-uniform because the dataset combines ancient years with modern ones. Step 3 — Encoding: color encodes source; bar length encodes its value at the slider's currentYear. Step 4 — Interactive Elements Protocol: I demonstrated the procedure by switching to Bar mode and binary-searching the slider's clickable rect for the viewBox x position that produces currentYear == 1950 (vbX ≈ 512.9). The chart title updated to '...1950' and the bar labels rendered. The McEvedy and Jones (1978) bar's right-edge label was '2.5 billion'. Step 5 — Data Reading: value comes from the chart's own data-driven label, not pixel estimation. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "From the binary search in r1/r2/r3 of q269 plus the line-mode tooltip cross-check: in Bar mode with slider at 1950, McEvedy and Jones (1978) bar = '2.5 billion'. Line-mode hover at the part of the chart where McEvedy's nearest data year is 1950 also yielded '2.5 billion'. Plausibility: this matches the well-known McEvedy & Jones (1978) historical figure for 1950 (~2.5B) and the actual UN value (~2.52B).",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/92d24a089ca800a9",
+    "click '📊 Bar' button to enable single-year view + slider",
+    "binary-search slider vbX to make the chart title read '...1950' (vbX ≈ 512.9 because the slider's scalePoint domain is heavily skewed)",
+    "scan SVG text nodes for 'McEvedy and Jones (1978)' and read the value label that follows it"
+  ],
+  "pitfalls_checked": [
+    "Bar length scale starts at zero (not truncated)",
+    "Linear scale",
+    "Not stacked",
+    "Slider is scalePoint over all distinct years; modern years occupy a small right-side band — naive linear interpolation does not map year-to-position correctly",
+    "Value read from data-driven label (fmtBillion), not pixel estimation",
+    "Bar mode's renderBar falls back to nearest data point within ±50 years; for McEvedy & Jones, 1950 is a discrete sample, so the readout is exact"
+  ],
+  "self_check": "Restated procedure: open the chart → click '📊 Bar' → drag the slider until the title shows '1950' → read the label on the McEvedy and Jones (1978) bar (2.5 billion). Alternative (less reliable): in Line mode, hover near the McEvedy curve where its data points cluster around 1950 and read its tooltip line — but because the chart's tooltip uses each series' own nearest data point, you must visually confirm McEvedy's specific point is at 1950. Across three runs (q269 r1–r3) the bar-mode method gave 2.5 billion every time."
+}

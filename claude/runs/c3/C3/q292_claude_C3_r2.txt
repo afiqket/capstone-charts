@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering over the Ages 60–79 area near year 2000 pops up a floating tooltip that lists every age-group's contribution for that year plus a Total — not just the layer you're hovering over. The tooltip text is: 'France, 2000' / 'Ages 80+: 1.26' / 'Ages 60–79: 3.38' / 'Ages 40–59: 1.89' / 'Ages 15–39: 0.88' / 'Ages 1–14: 0.05' / 'Age 0 (infancy): 0.10' / 'Total: 7.56 years'. The chart structure (stacked area layers, axes, legend, slider) does not change in appearance; only the tooltip appears. Moving the cursor away hides the tooltip.",
+  "reasoning": "Step 1 (Identification): Stacked-area chart titled 'How do death rates in each age group contribute to the overall sex gap in life expectancy? France' with six age-group layers. Step 2 (Axes): linear Y-axis 'contribution to sex gap (years)' (0–25); X-axis year (1816–2018). Step 3 (Encoding): color encodes age group; layers stack additively. Step 4 (Interactions): The chart has a single interactive rect spanning the plot. The mousemove handler reads pointer x via `d3.pointer`, snaps to the closest data year, and renders a tooltip listing per-group contributions and a total. The tooltip is keyed by the x-coordinate (year) — it doesn't matter which layer the cursor is on. I confirmed empirically by hovering at viewport (831, 600), which corresponds to year 2000 on the chart's x-axis. The tooltip listed all six age groups with their values plus the total. Step 5 (Reading rules): used the tooltip's d3-formatted values, not pixel estimation. Step 6 (Pitfalls): hover snaps to closest data year; tooltip values are raw per-group contributions (not cumulative tops of stacks); Y-axis starts at 0 (no truncation); single linear Y-axis.",
+  "confidence": 0.99,
+  "evidence": "Empirical hover at viewport (831, 600) — year 2000 — produced tooltip: 'France, 2000' / 'Ages 80+: 1.26' / 'Ages 60–79: 3.38' / 'Ages 40–59: 1.89' / 'Ages 15–39: 0.88' / 'Ages 1–14: 0.05' / 'Age 0 (infancy): 0.10' / 'Total: 7.56 years'. The stacked layers and axes were unchanged during the hover.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/d7552c4cdf662cc1",
+    "Computed the viewport x for year 2000 (~831) from earlier probes",
+    "Hovered with page.mouse.move at (831, 600) inside the Ages 60–79 band of the stacked area",
+    "Read the iframe's svg text to capture the tooltip"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked layers — tooltip reports raw per-group contributions (not cumulative tops); compare values directly",
+    "Log scale — linear",
+    "Snapping — hover snaps to closest data year, not the exact mouse x",
+    "Tooltip dependence on layer — the tooltip uses x only; it shows all six values regardless of which layer the cursor is on",
+    "Tooltip vs visual position — relied on tooltip text, not pixels"
+  ],
+  "self_check": "Re-stated: Hovering inside the Ages 60–79 band near year 2000 shows a tooltip with 'France, 2000' and per-group rows (Ages 80+ 1.26, Ages 60–79 3.38, Ages 40–59 1.89, Ages 15–39 0.88, Ages 1–14 0.05, Age 0 (infancy) 0.10), plus a Total of 7.56 years. The chart itself doesn't redraw; only the tooltip appears. Verified empirically. Answer consistent with evidence."
+}

@@ -1,0 +1,22 @@
+{
+  "answer": "Asia contributed the largest share of the total country-level smoking decline, accounting for about 26.3% of the summed per-country drops (456.4 of 1,737.8 percentage points of decline) from 2000 to 2022.",
+  "reasoning": "Step 1 (Chart Identification): Interactive scatter plot 'Share of adults who smoke in 2000 vs. 2022', one point per country, color-coded by OWID region. Step 2 (Axes): X = 'Share of adults in 2022' (linear, 0%–70%); Y = 'Share of adults in 2000' (linear, 0%–70%); Y starts at 0; shared scale. Step 3 (Legend): Color = region. Step 4 (Interactive Protocol): I extracted the d3-bound data (same data that powers the hover tooltip) from every SVG circle inside the chart iframe — 165 country points {entity, x=2022 share, y=2000 share, region}. Step 5 (Data Reading): For each country, decline = (2000 − 2022) pp; positive means smoking fell. Interpreting 'country-level smoking decline' as the sum of per-country declines, I summed declines per region (over countries that declined). I also computed the net change (declines minus increases) per region as a robustness check; both metrics agree. Step 6 (Pitfalls): Y not truncated; linear scale; not stacked; no active filters; values come from data binding (= tooltip values), not pixel estimation. Both 'sum of declines only' and 'net change' rank Asia first. Result: Asia = 456.4 pp summed declines (26.26% of total 1,737.8 pp) — the largest share. Europe (24.61%) and Africa (24.34%) are close behind.",
+  "confidence": 0.94,
+  "evidence": "Total summed decline across all 165 countries (decline-only): 1,737.80 pp. Per-region sum of declines (and share of total): Asia 456.40 pp (26.26%; 40 of 44 countries declined); Europe 427.60 pp (24.61%; 36 of 40); Africa 423.00 pp (24.34%; 39 of 42); South America 156.20 pp (8.99%; 10 of 10); Oceania 156.10 pp (8.98%; 12 of 13); North America 118.50 pp (6.82%; 16 of 16). Net change ranking is identical: Asia 447.7 (26.17%), Europe 420.4 (24.58%), Africa 414.0 (24.20%), South America 156.2 (9.13%), Oceania 153.8 (8.99%), North America 118.5 (6.93%).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/8f928d4d65b3c4ec",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to locate chart iframe",
+    "browser_evaluate inside iframe to read d3 __data__ on all 165 circles and aggregate decline per region"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0%)",
+    "Single x and single y axis (no dual axes)",
+    "Scatter plot (not stacked)",
+    "Linear (not log) scale",
+    "No active filters; full dataset used",
+    "Used data-binding values (= tooltip values), not pixel estimation",
+    "Cross-checked with two definitions: sum-of-declines-only and net change; both rank Asia first"
+  ],
+  "self_check": "Restated: when you add up how many percentage points smoking fell in each country between 2000 and 2022 and group by OWID region, Asia accounts for the largest slice — ~26% of the total. Europe and Africa are a close 2nd and 3rd (each ~24%); South America, Oceania, and North America together contribute the remaining ~25%. Consistent with the per-region sums above."
+}

@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering inside the France panel (top-right of the 2×2 small-multiples) around 1970 in Line mode pops up a floating tooltip near the cursor. The tooltip's title is 'France, 1970' and it has two colored rows beneath: 'Females: 83.8 years' (red/orange) and 'Males: 78.1 years' (purple/blue). The hover snaps to the closest data year — so anywhere near 1970 in the France panel yields the same tooltip. The chart's other panels, axes, lines, legend and slider are not changed; only the tooltip appears. Moving the cursor off France's plot area hides the tooltip.",
+  "reasoning": "Step 1 (Identification): Small-multiples line chart 'Modal age at death in adults' — four panels in a 2×2 grid (Finland top-left, France top-right, Japan bottom-left, UK bottom-right), each with Female and Male series. Step 2 (Axes): linear Y-axis in years (shared 70–95, truncated below 70); X-axis year. Step 3 (Encoding): color encodes sex. Step 4 (Interactions): Each panel has its own transparent overlay rect with a mousemove handler that reads pointer x via `d3.pointer`, snaps to the closest data year on that country's x-domain, and calls `showTooltip(country, year, {f, m}, sx, sy)`. The tooltip is a rounded white box with drop-shadow showing 'Country, Year' as the title and two colored rows 'Females: X.X years' / 'Males: X.X years'. On mouseleave it hides. I confirmed empirically by hovering at viewport (661, 500) — the left edge of France's plot, year 1970 — producing tooltip 'France, 1970' / 'Females: 83.8 years' / 'Males: 78.1 years'. Step 5/6: not data-reading-critical; the hover behavior is Line-mode only (Bar mode shows static bar labels instead).",
+  "confidence": 0.99,
+  "evidence": "Hover at viewport (661, 500) — the year-1970 x-position inside France's plot — yielded tooltip 'France, 1970' / 'Females: 83.8 years' / 'Males: 78.1 years'. The other panels, axes, and slider were unaffected during the hover.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/c926160052addfb9 (chart loads in Line mode)",
+    "Identified France's panel position (col=1, row=0; plot viewport bounds x: 660.5–1002.5, y: 396.1–601.1)",
+    "Hovered using Playwright page.mouse.move at viewport (661, 500) — corresponding to France 1970",
+    "Read svg text inside the iframe to capture the tooltip"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — affects visual height, not tooltip values",
+    "Dual y-axes — none",
+    "Stacked vs grouped — independent Female/Male series",
+    "Log scale — linear",
+    "Panel boundary — each panel has its own hover overlay; France's tooltip only contains France's data",
+    "Snapping — hover snaps to the closest data year",
+    "Mode dependency — this behavior is Line-mode only; Bar mode shows static bar labels"
+  ],
+  "self_check": "Re-stated: Hovering near France 1970 in Line mode brings up a tooltip 'France, 1970' with 'Females: 83.8 years' and 'Males: 78.1 years' (color-coded). The rest of the chart doesn't change; the tooltip hides when the cursor leaves France's plot. Verified empirically. Answer consistent with evidence."
+}

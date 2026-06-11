@@ -1,0 +1,21 @@
+{
+  "answer": "2.5 billion people (per the McEvedy and Jones (1978) bar's data-driven label at year 1950).",
+  "reasoning": "Step 1 — Chart Identification: Interactive multi-source population chart with Line/Bar modes and a year slider. McEvedy and Jones (1978) is one of the visible source series. Step 2 — Axes/Scale: linear y; values formatted with fmtBillion() (≥1B → d3.format('.1~f')+' billion'; <1B → millions). The slider's domain is scalePoint over all distinct years in the dataset — heavily skewed because the dataset has many ancient years densely encoded plus modern years. Step 3 — Encoding: color per source; bar length = the value at currentYear. Step 4 — Interactive Elements Protocol: For r2 I (a) reset the slider to its leftmost position (vbX=100, year −10000), (b) ran a fresh binary search of slider vbX between 100 and 800 to land on currentYear == 1950 (final vbX ≈ 512.9), and (c) read the McEvedy and Jones bar's right-edge label. The chart title confirmed '...1950'. Step 5 — Data Reading: bar value comes from fmtBillion applied to dataset / 1e9. Step 6 — Pitfalls verified.",
+  "confidence": 0.96,
+  "evidence": "After reset-and-re-search, finalYear = 1950 and bar labels read: 'McEvedy and Jones (1978): 2.5 billion'; 'Durand (1977): 1.7 billion'. The McEvedy value is identical to r1 (independent run with a different starting state). Plausibility: McEvedy & Jones (1978) is widely cited as estimating world population ≈2.5 billion at 1950; actual UN value for 1950 was ~2.52 billion.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/92d24a089ca800a9 (already loaded)",
+    "in Bar mode, dispatch a synthetic click on the slider's clickable rect at vbX=100 to reset to leftmost (year −10000)",
+    "binary-search slider vbX between 100 and 800 until the chart title's year equals 1950 (vbX ≈ 512.9)",
+    "scan SVG text nodes to extract the value label immediately following 'McEvedy and Jones (1978)'"
+  ],
+  "pitfalls_checked": [
+    "Bar length scale starts at zero (not truncated)",
+    "Linear (not log) scale",
+    "Not stacked",
+    "Slider domain is scalePoint over heterogeneous years; binary search ensures we land exactly on currentYear = 1950 (verified by title)",
+    "Value read from data-driven on-chart label, not pixel estimation",
+    "Fresh slider reset between runs rules out any sticky state"
+  ],
+  "self_check": "Restated: McEvedy and Jones (1978) world-population estimate at year 1950 on this chart is 2.5 billion. Same answer as r1, obtained from a different starting slider state (reset to −10000 → re-binary-search). Cross-check with line-mode hover (from r1) and bar mode (r1 and r2) all yield 2.5 billion."
+}

@@ -1,0 +1,21 @@
+{
+  "answer": "Move the year slider (below the map) from the default 2017 to 2016 — this is the second-rightmost stop, roughly three-quarters of the way along the slider track between the '2013' and '2017' end labels (the chart's slider has stops at 2013, 2014, 2015, 2016, 2017). The chart subtitle will update to 'Stand-alone policy or plan for mental health, 2016'. Then hover over Malaysia on the map (Southeast Asia, peninsular Malaysia + Borneo) — the tooltip pops up and reads 'Malaysia — Stand-alone mental health policy — Yes'. So Malaysia's 2016 status is 'Yes' (it does have a stand-alone policy or plan for mental health in 2016).",
+  "reasoning": "Step 1 (Chart Identification): World choropleth titled 'Stand-alone policy or plan for mental health' with a year slider below the map. Binary categorical encoding (Yes/No/No data). Step 3 (Encoding): COLOR_YES = '#6aabcf' (blue), COLOR_NO = '#e8a07a' (peach), COLOR_NODATA = 'url(#hatchPOL)' (hatch). Step 4 (Interactive Elements Protocol): The slider has 5 discrete stops (2013, 2014, 2015, 2016, 2017) — only the two endpoint labels are shown, but clicking the track at intermediate positions selects intermediate years. I clicked the slider track at ~75% (the 2016 stop), confirmed the subtitle updated to '…, 2016', then dispatched a mousemove on the Malaysia country path (ISO numeric 458). The tooltip rendered 'Malaysia / Stand-alone mental health policy / Yes'. Step 5 (Reading Rules): Read the canonical category label directly from the tooltip — this is the value the chart's dataByYear.get(2016).get('Malaysia') returns. Step 6 (Pitfalls): Malaysia is 'No data' in the default 2017 view (the 2017 dataset has only 33 entries and Malaysia is not in it), so the default state of the chart can be misleading — you must move the slider to 2016 first. Also, 'Yes' and 'No' are categorical, not numeric; there is no percentage to read.",
+  "confidence": 0.96,
+  "evidence": "After clicking the slider track at ~75%, the rendered subtitle reads 'Stand-alone policy or plan for mental health, 2016'. After dispatching a mousemove on Malaysia's '.country' path (data id='458'), the tooltip group contained texts ['Malaysia', 'Stand-alone mental health policy', 'Yes']. Legend categories: 'No' (peach), 'Yes' (blue), 'No data' (hatch). Year slider stops 2013–2017 confirmed in earlier runs by reading the subtitle text at 0%, 25%, 50%, 75%, 100% of the slider track. Reproduces r1.",
+  "interactions_performed": [
+    "Navigated Playwright to https://observablehq.com/d/589e6865378cd7d6",
+    "Waited ~3s for the embedded notebook iframe and SVG chart to render (default = 2017 map view)",
+    "Used contentFrame() to click the transparent slider-track rect at ~75% along its length (the 2016 stop) and confirmed the subtitle changed to '…, 2016'",
+    "Dispatched MouseEvent('mousemove') at the centre of Malaysia's '.country' path (data id='458') so the chart's mousemove handler fired showTooltip()",
+    "Read the tooltip group's text from inside the iframe — 'Malaysia / Stand-alone mental health policy / Yes'"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the year slider has FIVE stops (2013, 2014, 2015, 2016, 2017), not just the two endpoint labels",
+    "Confirmed the chart is binary categorical, so the retrieved value is a string ('Yes' / 'No' / 'No data'), not a percentage",
+    "Confirmed Malaysia has a 'Yes' value in 2016 (it would have a blue fill and the tooltip rendered a category)",
+    "Confirmed the default 2017 view shows Malaysia as 'No data' (not in 2017 dataByCountry), so the slider must be moved to 2016 first",
+    "Confirmed the metric is 'Stand-alone policy or plan for mental health' (WHO / GHO via Our World in Data)"
+  ],
+  "self_check": "Restated: to retrieve Malaysia's 2016 status — (1) move the year slider to 2016 (second-rightmost stop, ~75% along the track), then (2) hover Malaysia on the map. The tooltip will display 'Malaysia — Stand-alone mental health policy — Yes', meaning Malaysia is recorded as having a stand-alone mental health policy or plan in 2016. The value is categorical, not a percentage. Reproduces r1."
+}

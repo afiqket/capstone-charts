@@ -1,0 +1,22 @@
+{
+  "answer": "Sweden's Total fertility rate in 1990 = 2.14 children per woman.",
+  "reasoning": "Step 1 — Interactive chart with three series for Sweden (Completed cohort shifted +30y, Tempo-adjusted TFR, TFR), with Line/Bar toggle. Step 2 — Value axis is children per woman, linear, starts at 0. Step 3 — Series colored: cohort #B04B2D, tempo-adjusted #8B3A8B, TFR #4C6FAD. Step 4 — Used the chart's own tooltip: dispatched a mousemove on the line chart's hover overlay at the x-position corresponding to year 1990 (linear xScale over years 1891–2024). The chart rounded x to the nearest year (1990) and rendered a vertical guide line plus a unified tooltip with all three series. Step 5 — Read the chart-drawn 'Total fertility rate' row directly from the tooltip text (formatted to 2 decimals): 2.14. Step 6 — Pitfalls: value axis starts at 0 (not truncated), single axis, linear (no log), independent (non-stacked) series, country fixed to Sweden, year confirmed by tooltip header 'Sweden, 1990'.",
+  "confidence": 0.98,
+  "evidence": "Line-view tooltip captured after hovering at x=1990: header 'Sweden, 1990'; rows 'Completed cohort fertility rate shifted +30 years: 2.06', 'Tempo-adjusted total fertility rate: 2.25', 'Total fertility rate: 2.14'. The TFR row is the answer.",
+  "interactions_performed": [
+    "Switched to (already in) Line view",
+    "Computed x-position for year 1990 via the linear xScale over 1891–2024",
+    "Dispatched a synthetic mousemove on the chart's transparent hover overlay at that x",
+    "Read the resulting tooltip text content (title + rows) from the SVG"
+  ],
+  "pitfalls_checked": [
+    "Value axis starts at 0 (not truncated)",
+    "Single value axis (no dual axes)",
+    "Linear scale (not logarithmic)",
+    "Independent series (not stacked)",
+    "Country fixed to Sweden; no filters active",
+    "Year confirmed by tooltip header 'Sweden, 1990'",
+    "Used tooltip value rather than pixel estimation"
+  ],
+  "self_check": "Restated: in 1990 Sweden's TFR was about 2.1 children per woman — specifically 2.14 from the chart's tooltip. Consistent with the SVG-rendered tooltip row."
+}

@@ -1,0 +1,23 @@
+{
+  "answer": "2.5 billion people (per the chart's data-driven label on the McEvedy and Jones (1978) bar at year 1950).",
+  "reasoning": "Step 1 — Chart Identification: Interactive chart 'World population, comparison of different historical sources' with Line/Bar modes and a year slider. Multiple historical population sources are plotted on a single chart, including McEvedy and Jones (1978). Step 2 — Axes/Scale: linear y-axis in (fractional) billions (chart's fmtBillion formatter renders <1B in millions, ≥1B in billions to one decimal). X covers from 10000 BCE to ~2100. Step 3 — Encoding: color encodes source; bar length / line y encodes the population value. Step 4 — Interactive Elements Protocol: The line-mode tooltip groups multiple series under a single 'Year:' title, but each series shows the value at its own nearest data point — so reading any particular source at exactly 1950 from a line-mode hover is unreliable. I used Bar mode instead, where renderBar looks up each source's data point closest to currentYear (within 50 years) and labels its bar with that value. I binary-searched the slider's clickable rect to find the viewBox x for year 1950 (the year is shown in the chart title). At vbX ≈ 512.5 the title became 'World population, comparison of different historical sources, 1950' and the McEvedy and Jones bar's right-edge label rendered '2.5 billion'. Step 5 — Data Reading: the on-bar text is produced by fmtBillion() = d3.format('.1~f') for values ≥1B, applied directly to the dataset's value/1e9 — not pixel estimation. Step 6 — Pitfalls verified.",
+  "confidence": 0.95,
+  "evidence": "After binary-searching the slider to vbX≈512.5, the chart title read 'World population, comparison of different historical sources, 1950' and the on-bar labels were: 'McEvedy and Jones (1978): 2.5 billion'; 'Durand (1977): 1.7 billion'. Cross-check with line-mode probing at vbX=680 (where each series' nearest data point is around 1950) showed 'McEvedy and Jones (1978): 2.5 billion'. Plausibility: McEvedy and Jones (1978) historical estimate for 1950 world population is widely cited around 2.5 billion, consistent with the actual UN value of ~2.52 billion.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/92d24a089ca800a9",
+    "click '📊 Bar' mode button",
+    "find the slider's clickable rect (width=740, height=24)",
+    "probe a few slider positions (vbX=100→year -10000; vbX=400→1899; vbX=700→2036) to map the non-linear scalePoint domain",
+    "binary-search slider vbX between 400 and 700 to land on currentYear == 1950 (vbX≈512.5)",
+    "read the on-bar label for the 'McEvedy and Jones (1978)' series"
+  ],
+  "pitfalls_checked": [
+    "Y-axis (bar length) starts at zero",
+    "Single quantitative axis (bar length); linear scale",
+    "Not stacked",
+    "Slider domain is scalePoint over all distinct years — heavily skewed (dense modern, sparse ancient); binary search needed to land exactly on 1950",
+    "Bar value read from data-driven label (fmtBillion), not pixel estimation",
+    "Renderer falls back to the nearest data point within 50 years if 1950 isn't an exact match — McEvedy and Jones' 1950 point IS in the dataset, so the label reflects the exact 1950 value"
+  ],
+  "self_check": "Restated: For year 1950, the McEvedy and Jones (1978) world-population series on this chart shows 2.5 billion. Cross-checked: (a) Bar mode label at vbX≈512.5 (title '...1950'); (b) line-mode hover at vbX=680 also returned 'McEvedy and Jones (1978): 2.5 billion'. The value matches the well-known McEvedy & Jones 1950 estimate (~2.5 billion)."
+}

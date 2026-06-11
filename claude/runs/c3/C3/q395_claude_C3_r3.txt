@@ -1,0 +1,9 @@
+{
+  "answer": "≈ 397 μg/m³ (Delhi 416 μg/m³ − London 19 μg/m³ = 397 μg/m³; Delhi is higher).",
+  "reasoning": "Step 1: Multi-series line chart 'Air pollution, 1700 to 2016' with two series: London and Delhi. Step 2: Y-axis is suspended particulate matter concentration in μg/m³ (linear 0–700, not truncated); x-axis is year (1700–2016). Step 4 (Interactive Elements Protocol): Dispatched mouseover/mousemove on the chart's hover overlay at x-fraction (2008−1700)/(2016−1700) = 308/316. The tooltip rendered with year heading '2008' and rows per city. Step 5: Read both values and computed the difference (416 − 19 = 397 μg/m³).",
+  "confidence": 0.95,
+  "evidence": "Tooltip at year-2008 column: header '2008', rows 'London: 19 μg/m³', 'Delhi: 416 μg/m³'. 416 − 19 = 397 μg/m³.",
+  "interactions_performed": ["browser_navigate to chart URL", "computed x-fraction for year 2008 in the 1700–2016 range", "dispatched mouseover/mousemove on the hover overlay at that x", "read tooltip year and per-city values, computed the difference"],
+  "pitfalls_checked": ["Y-axis is linear in μg/m³ (not log, not truncated)", "Series are independent lines (not stacked)", "Verified tooltip year heading is '2008'", "Used tooltip values (integer μg/m³)"],
+  "self_check": "Restated: In 2008, Delhi's suspended particulate matter concentration (416 μg/m³) was about 397 μg/m³ higher than London's (19 μg/m³). Three runs returned the same tooltip values."
+}

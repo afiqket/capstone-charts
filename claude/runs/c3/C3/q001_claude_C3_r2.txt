@@ -1,0 +1,11 @@
+```json
+{
+  "answer": "59.0%",
+  "reasoning": "Step 1: Identified chart as a horizontal bar chart titled 'Wait time for an initial asylum decision, by outcome and nationality of applicant, for decisions made in 2021 (or other selected period)'. Step 2: X-axis is 'Share of applicants' (0%–60%, linear, 10% ticks); Y-axis is 'Wait time' with 7 categorical bins. Step 3: Single series, no color/size encoding beyond bar length; data labels are printed at the end of each bar. Step 4: Verified all three filters (Nationality, Outcome, Period in which decisions made) are at default '(All)', meaning the chart reflects the full dataset. Step 5: Read the printed value at the end of the 'Under 6 months' bar directly from the rendered SVG label (59.0%). Step 6: Verified pitfalls — x-axis starts at 0 (no truncation), single axis (no dual axes), bars are not stacked, linear scale, no filter active that would distort the answer.",
+  "confidence": 0.98,
+  "evidence": "'Under 6 months' bar label = 59.0%. Other bins for sanity check: 6 months–<1y = 17.1%, 1–<1.5y = 8.9%, 1.5–<2y = 5.8%, 2–<2.5y = 4.0%, 2.5–<3y = 2.3%, 3y+ = 2.8% (sum ≈ 99.9%, consistent with a share-of-applicants distribution). All filters are '(All)'.",
+  "interactions_performed": ["browser_navigate to chart URL", "browser_snapshot to read DOM-level data labels and filter states", "browser_hover over the 'Under 6 months' bar label"],
+  "pitfalls_checked": ["Y-axis (categorical) — N/A truncation; X-axis starts at 0%, not truncated", "Single y-axis only (no dual axes)", "Bars are grouped by category, not stacked", "Linear scale, not log", "All three filters confirmed at '(All)' — full dataset reflected", "Printed data label matches bar length visually"],
+  "self_check": "Restated: of all asylum applicants whose initial decisions are represented in this chart (filters all set to All), 59.0% waited less than 6 months for that decision. Consistent with the 59.0% label on the top (longest) bar in the 'Wait time' chart."
+}
+```

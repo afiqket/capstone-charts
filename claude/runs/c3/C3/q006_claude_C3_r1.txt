@@ -1,0 +1,23 @@
+```json
+{
+  "answer": "Vietnam War had more deaths (58,209) than the Korean War (54,246) — a difference of 3,963 deaths.",
+  "reasoning": "Step 1: Identified the chart as a horizontal bar chart titled 'How Many Members of the US Military Have Died in Each War?' with three view modes (Deaths, Deaths per Day, Deaths per Population); the default 'Deaths' view was active. Step 2: X-axis is 'Deaths' on a linear scale from 0K to 700K; y-axis lists wars. Step 3: Single series — bar length encodes total deaths. Step 4: Read the value labels rendered next to each bar from the chart's accessibility snapshot, which are exact dataset values rather than pixel estimates. Step 5: Korean War label = 54,246; Vietnam War label = 58,209. 58,209 > 54,246, so Vietnam War had more deaths. Step 6: No truncation issue (axis starts at 0), no dual axes, no stacking, linear scale, no filters affecting these two bars; tooltip-equivalent labels match exact data values.",
+  "confidence": 1.0,
+  "evidence": "Korean War bar label: 54,246 deaths. Vietnam War bar label: 58,209 deaths. Difference: 58,209 − 54,246 = 3,963.",
+  "interactions_performed": [
+    "browser_navigate to chart URL",
+    "browser_snapshot of fully rendered chart",
+    "browser_hover on Korean War value label (54,246)",
+    "browser_hover on Vietnam War value label (58,209)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis (here X-axis for deaths) starts at zero — not truncated",
+    "No dual axes",
+    "Bars are not stacked",
+    "Linear scale, not log",
+    "No filter active — default 'Deaths' view",
+    "Used exact value labels from chart, not pixel estimation"
+  ],
+  "self_check": "Restated: Of the two wars, Vietnam (58,209) exceeds Korea (54,246) by ~3,963 US military deaths — consistent with the bar lengths shown (Vietnam's bar is slightly longer than Korea's) and with the exact numeric labels rendered on the chart."
+}
+```

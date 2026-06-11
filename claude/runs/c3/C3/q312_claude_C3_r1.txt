@@ -1,0 +1,23 @@
+{
+  "answer": "Find the line for the 1970 birth cohort (color cue: medium teal-blue in the gradient legend, labelled '1970'), trace it horizontally to the X-axis value 40 ('age 40'), then read the Y-coordinate against the cumulative-fertility scale. The 1970 U.S. cohort line at age 40 sits just above the Y=2 gridline, giving approximately 2.08 children per woman on average (or ~2.1 when rounded to one decimal). Practical procedure: (1) Identify the 1970-coloured line via the legend, (2) drop a vertical from the x=40 tick, (3) read where that vertical intersects the 1970 line on the Y-axis. The chart itself does not provide a hover tooltip, so the precise value can be obtained either by careful pixel-to-data interpolation (which yields ~2.08), or — for the exact published value — by consulting the underlying source data (Human Fertility Database, processed by Our World in Data).",
+  "reasoning": "Step 1 — Chart identified as a multi-line cumulative-fertility chart for the United States. Each line = one 5-year birth cohort. X = Age of women (20–50 with bookends 12 and 55, linear), Y = average cumulative children per woman (0–3.5, linear, starts at zero). Step 2 — Calibrated the scales from the rendered SVG ticks: Y=0 at y=450 px; Y=1 at y=321.43; so y_to_value(y) = (450 − y) / 128.5714. X=20 at x=142.33; X=30 at x=320.23; so 1 year = 17.79 px and x_for_age(a) = (a − 12) × 17.79. Step 3 — Located the 1970 cohort line by mapping the legend label '1970' to its stroke colour rgb(53, 114, 170). Step 4 — Since the chart has no tooltip, the only on-chart way to obtain the value is visual interpolation. Using the SVG path geometry of the 1970 line, sampled getPointAtLength() at 4000 points and selected the point whose X was closest to x_for_age(40) ≈ 498.14 px. The resulting Y was 182.62, converted to 2.08 children. Step 5 — Confirmed the value's plausibility: the line crosses Y=1 around age 26.6 (per q_311) and tops out around 2.14 by age 50, which is consistent with 2.08 at age 40. Step 6 — Pitfalls verified: linear (not log) Y axis; Y not truncated (axis goes 0–3.5); single Y axis; one line per cohort (not stacked); slope between age 35 (1.84) and age 45 (2.13) is monotone increasing, so the interpolation at 40 is reliable.",
+  "confidence": 0.9,
+  "evidence": "1970-cohort SVG path stroke rgb(53, 114, 170). At x = 498.14 (age 40), the path's nearest point is (498.13, 182.62), converting to cumulative fertility = (450 − 182.62) / 128.5714 = 2.08. Adjacent samples on the same path: age 35 → 1.84, age 45 → 2.13, age 50 → 2.14 (each ±0.01 due to interpolation). Chart has no hover tooltip — values must be read from the line position against the Y-axis.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/98862fae91a2837b with Playwright",
+    "Waited for chart to render",
+    "Read the chart SVG inside the cross-origin iframe via element-scoped evaluate",
+    "Identified the 1970-cohort path by its stroke colour (legend mapping)",
+    "Sampled getPointAtLength() along the path to find the Y at X = age 40 and converted to cumulative fertility"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated — NO (axis spans 0–3.5)",
+    "Log scale active — NO (linear)",
+    "Dual y-axes — NO (single Y)",
+    "Stacked vs grouped — N/A (line chart; each line is one cohort, not stacked)",
+    "Linked filter active — N/A (chart fixed to United States)",
+    "Tooltip mismatch — N/A (no hover tooltip on this chart; relied on geometry, not pixel eyeballing)",
+    "Cohort not reaching X = 40 — NO (the 1970 cohort's line extends past age 40 to ~53)"
+  ],
+  "self_check": "Restated: to obtain the average number of children for U.S. women born in 1970 by age 40, identify the 1970-coloured line in the legend, follow it to the vertical x=40 gridline, and read the Y value (~2.08 children). The 1970 line at age 40 sits just above the Y=2 gridline. Consistent with the SVG-path-geometry value of 2.08 and with neighbouring sample points (age 35 → 1.84, age 45 → 2.13)."
+}

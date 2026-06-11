@@ -1,0 +1,21 @@
+{
+  "answer": "Use the two-handle year-range slider below the chart. Drag the LEFT handle (currently at 1970) to the right until the start year reads 2000, and leave the RIGHT handle at 2050. As soon as the left handle snaps to 2000 the chart redraws using only that range, and the title updates to 'Number of \\'missing women\\' in the world, 2000 to 2050'. (You can also click on the slider track at the position roughly 3/8 of the way from the left edge — the click moves the nearest handle to the closest data year, so the left handle will jump to 2000.)",
+  "reasoning": "Step 1 (Identification): the chart is a stacked-area chart with a year range slider beneath it. The slider has two circular handles (left = start year, right = end year), a play button on its left, and a clickable track. Step 2/3: axes/encoding don't change the procedure. Step 4 (Interactions): I demonstrated the procedure by simulating a mouse drag on the LEFT handle from its initial position (corresponding to year 1970) rightward to approximately the 2000 mark on the slider (computed: viewport x ≈ 233 + 0.375 × (993−233) = 518 for the SVG slider range). The chart's drag handler snaps to the nearest data year (via `d3.drag` plus `years.reduce(...closest)`), updating `yearStart` and re-running `render()`. After the drag, the title bar updated to '2000 to 2050', confirming the range filter is applied. Equivalent methods: (a) click the slider track around the 2000 position — the closer handle (the left one in this case) moves to the closest data year; (b) drag the LEFT handle to 2000 and leave the RIGHT at 2050 (default). Both update `yearStart` to 2000 and re-render the chart, restricting the X-axis to 2000–2050. Step 5/6 (Reading rules/pitfalls): not data-reading critical, but I noted that the slider domain uses discrete data years (scalePoint), so the handle snaps to the nearest year — you cannot pick an arbitrary value like 2003 if that year isn't in the dataset. The X-axis tick set is also recomputed by `xScale.ticks(6)` after rerender, so the new axis shows tick marks within the 2000–2050 range.",
+  "confidence": 0.99,
+  "evidence": "After dragging the left slider handle right, the chart title (the topmost svg text element) updated from 'Number of \\'missing women\\' in the world, 1970 to 2050' to 'Number of \\'missing women\\' in the world, 2000 to 2050'. The chart re-rendered using only data points whose Year is between 2000 and 2050, and the X-axis labels updated accordingly.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/322d3e232b20a5a7",
+    "Computed slider viewport coordinates from the SVG layout (sliderX0=80, sliderX1=840 in SVG; iframe at (139,190); SVG at iframe-internal (14,73); sliderY=H-52=488 → viewport y=751)",
+    "Used page.mouse.move + page.mouse.down + a sequence of small page.mouse.move steps + page.mouse.up to drag the LEFT slider handle from x≈233 (year 1970) to x≈520 (year 2000)",
+    "Read the chart title from the iframe to verify the range had updated to 'Number of \\'missing women\\' in the world, 2000 to 2050'"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — not relevant; the y-axis is automatically recomputed after the range change",
+    "Dual axes — none",
+    "Linked filter still active — after dragging, the new range (2000–2050) IS the linked filter, which is what the question asks for",
+    "Tooltip vs visual position — verified via title text rather than pixel inspection",
+    "Discrete data years — the slider snaps to the nearest data year (scalePoint domain); you can only select years that are in the underlying dataset",
+    "Avoid dragging past the opposite handle — the code restricts the left handle to xSlider(yearEnd) - 10, preventing the start from crossing the end"
+  ],
+  "self_check": "Re-stated: To restrict the chart to 2000–2050, grab the LEFT handle of the bottom range slider and drag it right until it snaps to 2000, leaving the RIGHT handle at 2050. Alternatively, click on the slider track near the 2000 position — the nearest handle will jump there. Both methods update yearStart/yearEnd and re-render the chart with only data in the new range. Verified empirically: title shows '2000 to 2050' after the drag. Answer consistent with evidence."
+}

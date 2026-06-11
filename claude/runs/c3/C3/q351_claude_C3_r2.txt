@@ -1,0 +1,18 @@
+{
+  "answer": "Move the 'Year' slider (in the control bar above the chart) left until the right-hand value displays 1880. The chart will then show only the period 1800–1880. The slider's lower endpoint is fixed at 1800 (only the upper bound is adjustable), which is exactly what is needed here.",
+  "reasoning": "Step 1 — Chart is 'Global Primary Energy Consumption during 200 Years', an interactive stacked stream/area/percentage chart. Step 4 — Inspected the controls: 'Chart Type', 'Sort', 'Sort Order', 'Energy Type' (combobox), and 'Year' — a single-thumb range slider with min=1800, max=2020, step=10, and a value label to its right. The chart code sets yearRange = [1800, sliderValue], so the slider only adjusts the upper year (lower bound is permanently 1800). Step 4 (verification) — In the iframe I set the slider to 2020 (label='2020'; x-axis ticks 1800,1820,…,2020) and then to 1880 (label='1880'; x-axis ticks 1800,1810,…,1880). The chart redrew to span exactly 1800–1880. Step 5 — Verified by reading tick labels from the SVG, not by visual estimation.",
+  "confidence": 0.99,
+  "evidence": "Year slider: <input type='range' min='1800' max='2020' step='10'>. With value=2020 the x-axis ticks were 1800,1820,…,2020. After setting value=1880 and firing 'input', the value label became '1880' and the x-axis ticks became 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880 — confirming the visible range is 1800–1880.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/6d1c43df3a1de518",
+    "Set the Year slider to 2020 (baseline) and read x-axis ticks",
+    "Set the Year slider to 1880 and fired an 'input' event to trigger redraw",
+    "Read the Year value label and the x-axis tick labels from the SVG"
+  ],
+  "pitfalls_checked": [
+    "Confirmed slider's lower bound is fixed at 1800 (adjusts only upper year) — fine for 1800–1880",
+    "Verified chart redraws when slider value changes (ticks change from 12 to 9, ending at 1880)",
+    "Did not estimate from pixel position — read tick labels directly"
+  ],
+  "self_check": "Restated: to limit the visible range to 1800–1880, drag the Year slider so its value reads 1880. Confirmed via SVG inspection — after the change, x-axis ticks span 1800 to 1880 in 10-year increments."
+}

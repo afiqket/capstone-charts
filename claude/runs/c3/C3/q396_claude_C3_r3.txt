@@ -1,0 +1,9 @@
+{
+  "answer": "1997 — the first year a Delhi bar appears in the bar-chart view (years 1700–1996 show only London).",
+  "reasoning": "Step 1: Chart toggles between Line and Bar modes; Bar mode shows ranked bars for a single year picked by a 1700–2016 slider. Step 4 (Interactive Elements Protocol): Switched to Bar mode and dispatched click events on the slider track at successive years, then checked whether a 'Delhi' label was present in each year's SVG. Step 5: Walking 1995→1998 confirms Delhi is absent at 1995 and 1996, then present from 1997 onward. (Earlier runs also confirmed Delhi present at 2000/2005/2010 but absent at 2012+, meaning the Delhi data covers roughly 1997–~2010.)",
+  "confidence": 0.95,
+  "evidence": "Per-year bar-chart presence of a Delhi bar: 1995→absent, 1996→absent, 1997→present, 1998→present.",
+  "interactions_performed": ["browser_navigate to chart URL", "switched to Bar mode via the '📊 Bar' toggle", "located the slider track rect (x≈90, y≈466, w=750)", "dispatched click events on the slider at the computed x for years 1995–1998", "read the SVG text labels to detect a 'Delhi' label"],
+  "pitfalls_checked": ["Confirmed the bar chart's title-year matched the slider position before checking labels", "Verified by sweeping consecutive years (1995→1998) rather than interpolating", "Three runs returned the same boundary year"],
+  "self_check": "Restated: in the bar-chart view, the earliest year that displays a Delhi bar alongside London is 1997. Three consecutive runs all flipped from 'no Delhi' to 'Delhi present' at year 1997."
+}

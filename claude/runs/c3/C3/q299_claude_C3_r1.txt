@@ -1,0 +1,21 @@
+{
+  "answer": "2nd birth had the higher average age in 2023 (30.35 years for 2nd birth vs. 27.85 years for 1st birth, in the United States — the country the chart shows by default). 2nd birth is older by 2.50 years.",
+  "reasoning": "Step 1 — Identified interactive chart titled 'Average age of mothers at childbirth by birth order' with Line/Bar toggle and 6 series (1st birth, 2nd birth, 3rd birth, 4th birth, 5th birth or higher, All). The chart is country-fixed to 'United States' by its source code (no country selector visible). Step 2 — Linear y-axis 'age in years', range 20–35 in line view. X-axis is year, 1933–2023. Step 3 — Series color-coded with right-edge end labels in line view; in bar view bars are sorted descending by value and labeled with numeric values. Step 4 — Switched from Line to Bar mode (📊 Bar button). The Bar view defaulted to the latest year (2023, shown in the chart title 'Average age of mothers at childbirth by birth order, United States, 2023'). Bars are labeled with two-decimal numeric values directly. Step 5 — Read the numeric labels for 1st birth and 2nd birth bars directly — no pixel estimation. Step 6 — Pitfalls verified below.",
+  "confidence": 0.99,
+  "evidence": "In Bar mode at year 2023 (title confirms 'United States, 2023'), the numeric labels at the right end of each bar read: 5th birth or higher 34.45, 4th birth 32.66, 3rd birth 31.57, 2nd birth 30.35, All 29.96, 1st birth 27.85. The 2nd birth value (30.35) is higher than the 1st birth value (27.85) by 2.50 years.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/4140584c22b75a8b",
+    "browser_click '📊 Bar' to switch from Line to Bar view (Bar view auto-selects latest year, 2023)",
+    "browser_snapshot to read printed numeric labels for the 1st-birth and 2nd-birth bars"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: bar view uses numeric end-labels (not pixel estimation), so truncation is irrelevant; in line view the y starts at 20 (not 0), but I did not rely on the line view for the value comparison",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent horizontal bars (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: year slider set to 2023 (confirmed via chart title 'United States, 2023')",
+    "Tooltip vs visual position: read printed bar-end numeric labels rather than estimating from pixels",
+    "Country scope: chart is hard-coded to 'United States' (single country); answer applies to US"
+  ],
+  "self_check": "Restated: in the United States in 2023, the average age at which mothers had their first child was 27.85 years, and the average age at which they had their second child was 30.35 years; therefore 2nd birth had the higher average age. This ordering is also biologically expected (women are necessarily older at later births) and matches the monotonic ordering of all six series in the bar chart (1st < All < 2nd < 3rd < 4th < 5th+)."
+}

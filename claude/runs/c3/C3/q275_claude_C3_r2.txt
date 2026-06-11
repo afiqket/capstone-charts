@@ -1,0 +1,21 @@
+{
+  "answer": "China's 'missing women' count rises sharply through the 20th century, plateaus around 2030–2035, and then begins a slight decline through 2050. Starting at about 27.2 million in 1970, it grows to ~39 million by 1990, ~50 million by 2000, ~62 million by 2010, ~72 million by 2020, peaks at roughly 76–77 million around 2030–2035, then falls modestly to ~75 million by 2045 and ~73.4 million by 2050. So the overall shape is: long-running increase (1970→2030), a peak/plateau (2030–2035), and a gradual decrease into the projection horizon (2035→2050).",
+  "reasoning": "Step 1 (Identification): The chart is a stacked-area chart titled 'Number of \\'missing women\\' in the world, 1970 to 2050' with three layers (China red — bottom; India orange — middle; Rest of World blue — top). Step 2 (Axes): linear Y-axis showing millions of missing women (gridlines every 20 million from 0 to 160 million); X-axis year (1970–2050). Step 3 (Encoding): stacked area — China is the bottom layer with y0=0, so its value is exactly the height of its layer at each year. Step 4 (Interactions): I hovered along the chart's interactive overlay at viewport x-positions corresponding to 1970, 1975, 1990, 1995, 2000, 2010, 2015, 2020, 2030, 2035, 2045 and 2050 (computed from the SVG layout: x = iframeOffset + margin.left + (year-1970)/80*innerW). The tooltip reports exact values for each series (using `d3.format('.2f')(v/1e6) million`), avoiding pixel-level estimation. Step 5 (Reading rules): used tooltip numbers, not pixels. Step 6 (Pitfalls): no log scale, no Y-axis truncation (starts at 0), no dual axes, both slider handles span 1970→2050 so the entire domain is visible. The data are discrete (~every 5 years), so the chart snaps to the nearest data year; I confirmed China values across the span. Trend conclusion: China rises steadily from 1970 to ~2030, peaks ~76.9 million around 2035, then trends gently downward into 2050 (~73.4 million).",
+  "confidence": 0.95,
+  "evidence": "Tooltip readings for China by year: 1970 = 27.20 million; 1975 = 29.00 million; 1990 = 39.20 million; 1995 = 44.30 million; 2000 = 49.50 million; 2010 = 62.30 million; 2015 = 68.40 million; 2020 = 72.30 million; 2030 = 76.40 million; 2035 = 76.90 million (peak); 2045 = 75.10 million; 2050 = 73.40 million.",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/322d3e232b20a5a7 and waited for render",
+    "Computed viewport x positions for each target year using the chart's SVG geometry (margin.left=90, innerW=650, domain 1970..2050) plus iframe offset",
+    "Used Playwright page.mouse.move to hover at each year position; read all SVG text inside the iframe after each hover to capture the tooltip year + per-series values",
+    "Repeated for 1970, 1975, 1990, 1995, 2000, 2010, 2015, 2020, 2030, 2035, 2045, 2050 to characterise the full trend"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked vs grouped — area is stacked; China is the bottom layer, so its value equals the layer thickness (no need to subtract a baseline)",
+    "Log scale — linear, confirmed",
+    "Linked filter still active — range-slider spans full 1970–2050",
+    "Tooltip vs visual position — values read from the d3 '.2f' formatted tooltip text, not pixels"
+  ],
+  "self_check": "Re-stated: China rises from about 27 million in 1970 to about 72 million by 2020, peaks near 77 million around 2030–2035, then drifts down to about 73 million by 2050. The stacked area's bottom red layer mirrors this — growing in thickness through most of the period and slightly thinning toward the end. Numerical tooltip readings and visual area shape both confirm the trend. Answer consistent with evidence."
+}

@@ -1,0 +1,21 @@
+{
+  "answer": "Ages 60–79 contributed more than Ages 80+ to the sex gap in life expectancy in France in 2018: 2.67 years versus 1.45 years — a difference of about 1.22 years.",
+  "reasoning": "Step 1 (Identification): Stacked-area chart titled 'How do death rates in each age group contribute to the overall sex gap in life expectancy? France' with six age-group layers (Ages 80+, Ages 60–79, Ages 40–59, Ages 15–39, Ages 1–14, Age 0 (infancy)). The stacked total at any given year equals the overall female-vs-male sex gap in life expectancy. Step 2 (Axes): linear Y-axis labelled 'contribution to sex gap (years)' from 0 to 25 (gridlines every 5); X-axis year (1816 to 2018). Step 3 (Encoding): color encodes age group; layers are additive contributions. Step 4 (Interactions): I hovered the chart at the x-position corresponding to year 2018 (the rightmost data year). The tooltip displayed each age group's per-group contribution plus the total. The chart's tooltip rule is to display raw per-layer values (not the cumulative tops of stacks), which is the right number to compare across layers. Step 5 (Reading rules): used the tooltip's numeric values rather than pixel estimation. Step 6 (Pitfalls): tooltip values are direct per-group contributions; axis starts at 0 (no truncation); single linear Y-axis; no other filters active; the slider spans 1816–2018 and 2018 is in view.",
+  "confidence": 0.99,
+  "evidence": "Hover tooltip at year 2018 ('France, 2018'): Ages 80+ = 1.45; Ages 60–79 = 2.67; Ages 40–59 = 1.17; Ages 15–39 = 0.57; Ages 1–14 = 0.03; Age 0 (infancy) = 0.06; Total = 5.94 years. Ages 60–79 (2.67) > Ages 80+ (1.45) by ~1.22 years.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/d7552c4cdf662cc1",
+    "Identified chart layout (SVG at viewport (152.5, 341.3), 900×580; year axis 1816–2018)",
+    "Used Playwright page.mouse.move to hover at viewport (~892, 600) — the x-position for year 2018 — and trigger the tooltip",
+    "Read svg text inside the iframe to capture the per-age-group contributions and the total"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked layers — tooltip lists raw per-group contributions (not cumulative tops); comparison is direct",
+    "Log scale — linear",
+    "Linked filter — slider spans 1816–2018; year 2018 is in the visible domain",
+    "Tooltip vs visual position — used the rendered tooltip numbers, not pixel measurements"
+  ],
+  "self_check": "Re-stated: For France in 2018, Ages 60–79 contributed 2.67 years to the female-vs-male life-expectancy gap, and Ages 80+ contributed 1.45 years. Since 2.67 > 1.45, Ages 60–79 contributed more (by ~1.22 years). Visually, the Ages 60–79 band of the stacked area is the thickest layer at 2018 — clearly larger than the Ages 80+ band — which matches the tooltip values. Answer consistent with evidence."
+}

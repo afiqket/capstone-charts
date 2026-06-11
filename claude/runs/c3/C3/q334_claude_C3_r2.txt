@@ -1,0 +1,24 @@
+{
+  "answer": "Hovering over 2020 on the line chart triggers two visual responses: (1) a vertical grey guide line appears at the year 2020 and (2) a tooltip pops up titled '2020' listing each of the six plotted cities' population density (people per km²) at that year, sorted from largest to smallest. The captured tooltip rows are: Mumbai: 26,696 per km², Karachi: 24,328 per km², Surat: 23,384 per km², Kinshasa: 21,869 per km², Hong Kong: 21,763 per km², Kabul: 15,289 per km².",
+  "reasoning": "Step 1: The chart is 'Population density of the world's largest cities' — an interactive line chart of people per km² for six cities (Karachi, Surat, Mumbai, Kinshasa, Kabul, Hong Kong), spanning 1975–2100. Step 2: Y axis is density (linear, 0–35,000 per km², starts at zero — not truncated); X axis is year (linear, 1975–2100) with labelled ticks at 1975, 2000, 2025, 2050, 2075, 2100. Step 3: Each city has its own colored line with the city name + country label at the right edge of its trajectory. Step 4 (Interactive Elements Protocol): I reloaded the URL via Playwright, located the cross-origin iframe, computed inner-group x for year 2020 from the linear xScale (1975→x=0, 2100→x=640 → x_inner(2020) = (45/125)×640 = 230.4), and moved the mouse to viewport coordinate (462.9, 635.19) over the chart's hover overlay (chart group translated by 80,100). The chart's hover handler made a vertical hoverLine visible at xScale(2020) and rendered the tooltip with rows sorted by descending density. Step 5: Values come from the tooltip text directly (exact data values, not pixel-estimated). Step 6: No estimate/projection divider in this chart — all six values are from the JRC dataset. The 2025 x-axis tick (the nearest labelled tick to 2020) is irrelevant: the chart snaps to actual year 2020 because the underlying data has yearly points and the handler picks the nearest data year.",
+  "confidence": 0.97,
+  "evidence": "After page.mouse.move(462.9, 635.19) — mapping to inner-group x = 230.4 (year 2020) — the tooltip <g> became visible with transform=translate(322,279.8125) and held these texts in order: '2020', 'Mumbai: 26,696 per km²', 'Karachi: 24,328 per km²', 'Surat: 23,384 per km²', 'Kinshasa: 21,869 per km²', 'Hong Kong: 21,763 per km²', 'Kabul: 15,289 per km²'. Two coincident vertical lines were visible at x1=x2=230.4: a static '#ccc' element and the hover '#999' guide line, both at the same x-position. Chart group transform = translate(80,100); SVG box {x:152.5, y:335.19, w:900, h:580}. The six city labels at the right edge of the chart match the six tooltip rows: Karachi (Pakistan), Surat (India), Mumbai (India), Kinshasa (Democratic Republic of Congo), Kabul (Afghanistan), Hong Kong (China).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/b9ead2eadc99be08 (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "computed inner-group x_inner(2020) = 230.4 from the labelled axis (1975→0, 2100→640)",
+    "page.mouse.move(462.9, 635.19) using chart group translate(80,100) to trigger the chart's hover handler at year 2020",
+    "read tooltip <g> texts and vertical-line attributes from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis (people per km²)",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (5,000-unit ticks evenly spaced)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: tooltip text read directly, not pixel-estimated",
+    "Units: confirmed values are population density (people per km²), not absolute population"
+  ],
+  "self_check": "Restated: hovering at year 2020 (1) reveals a vertical guide line at the 2020 x-position and (2) opens a tooltip headed '2020' listing the 6 plotted cities' population densities in descending order — Mumbai 26,696/km², Karachi 24,328/km², Surat 23,384/km², Kinshasa 21,869/km², Hong Kong 21,763/km², Kabul 15,289/km². Matches the captured DOM evidence (tooltip text + vertical line at x=230.4) and reproduces r1 exactly."
+}

@@ -1,0 +1,20 @@
+{
+  "answer": "The average Urban share (World) across all 24 years on the chart (2000–2023) is approximately 82.47% (more precisely 82.4692%). The Urban series rises steadily from 75.68% in 2000 to 89.01% in 2023.",
+  "reasoning": "Step 1 — Chart is the World line/bar visualization 'Share of the rural and urban population with access to clean fuels for cooking, World'. Urban (blue, #4e79a7) is the series of interest. Step 2 — X-axis: years 2000–2023 (24 annual points). Y-axis: 0–100% linear, not truncated. Step 4 — In Line view, dispatched a mousemove at the x-coordinate for each year and read the Urban % from the tooltip (formatted via d3.format('.2f')). Step 5 — Used tooltip values, not pixel estimation. Computed arithmetic mean across the 24 yearly Urban values: mean = 82.4692% ≈ 82.47%.",
+  "confidence": 0.95,
+  "evidence": "24 yearly tooltip readings collected via the chart's hover interaction; min = 75.68% (2000), max = 89.01% (2023). Arithmetic mean = 82.4692% (≈ 82.47%).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/da18df4887a7180e",
+    "Confirmed Line view and the Urban series (BLUE line)",
+    "For each year 2000..2023, computed the x-coordinate and dispatched mousemove on the hover-overlay rect",
+    "Read the Urban value from each tooltip and computed the simple arithmetic mean of the 24 values"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values rather than pixel estimation (Step 5)",
+    "Y-axis is 0–100% and not truncated — no truncation pitfall",
+    "Confirmed Urban (blue #4e79a7), not Rural (orange #b84c1a)",
+    "Sampled multiple offsets per year to ensure tooltip snapped correctly to the nearest integer year",
+    "Reported simple unweighted mean across years; the question doesn't specify a weighting scheme"
+  ],
+  "self_check": "Restated: the simple average of the Urban share (World) over the chart's 24 yearly values (2000–2023) is ~82.47%. The minimum is 75.68% (2000) and the maximum is 89.01% (2023); 82.47% sits roughly in the middle, consistent with a near-linear upward trend."
+}

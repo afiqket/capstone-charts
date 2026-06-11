@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering over the line chart around 1950 triggers three coordinated visual responses: (1) a vertical grey guide line is drawn through the plot at the snapped year (1950), spanning the full plot height; (2) a small colored dot is placed on each of the 11 survival-share lines at its 1950 value, using each series' color (Top 1% in blue → 99% in salmon); (3) a tooltip card pops up near the cursor with white background and drop-shadow, showing the year '1950' as a bold header and a row per series with a color swatch, the share label, and the value in years. The values that appear for France in 1950 are: Top 1% 94.3, 10% 86.5, 20% 82.6, 30% 79.4, 40% 76.3, 50% 73.1, 60% 69.3, 70% 64.4, 80% 57.2, 90% 44.1, 99% 0.2 years.",
+  "reasoning": "Step 1 — Interactive line chart, France, 1816–2023, with 11 survival-share series. Step 2 — Linear y-axis 0–120 years, starts at 0; linear x-axis 1816–2023. Step 3 — 11 colored series with right-side end labels. Step 4 — Programmatically moved the mouse to viewport coordinates corresponding to SVG x ≈ 541 (= 65 + (1950-1816)/207 × 735), the x for year 1950, inside the chart's plot area. The chart's mousemove handler converted the pointer x to a year via xScale.invert, found the nearest data year (1950), then showed the vertical hover line, positioned 11 colored dots, and rendered the tooltip with the year header and per-series values. Step 5 — Read tooltip text directly. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "After mouse.move to viewport (~693, 596) — which corresponds to SVG (~541, 300) inside the plot area — the accessibility snapshot exposes a tooltip element (ref f1e272) containing: header '1950'; rows 'Top 1% / 94.3 years', '10% / 86.5 years', '20% / 82.6 years', '30% / 79.4 years', '40% / 76.3 years', '50% / 73.1 years', '60% / 69.3 years', '70% / 64.4 years', '80% / 57.2 years', '90% / 44.1 years', '99% / 0.2 years'. The values descend monotonically from Top 1% to 99%, as expected for cumulative survival shares.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/d853ee793fb4ca5c",
+    "browser_click '📈 Line' to confirm line mode",
+    "page.mouse.move to a neutral position first (clear any prior tooltip)",
+    "page.mouse.move to viewport coordinates corresponding to SVG (541, 300) — year 1950 inside the plot",
+    "browser_snapshot to read the tooltip card (year header + all 11 series rows)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, starts at 0 (no truncation)",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: only the hover snap year (1950), confirmed by tooltip header",
+    "Tooltip vs visual position: read tooltip text rather than pixel positions — crucial because the 99% value for 1950 is just 0.2 years, indistinguishable from 0 by eye"
+  ],
+  "self_check": "Restated differently: pointing the cursor near year 1950 on the line chart causes the chart to lock onto the exact 1950 data column — drawing a guide line, marking each line with a dot, and popping up a readable tooltip card listing every survival-share value for that year. The numbers descend smoothly from Top 1% (94.3) to 99% (0.2), preserving the expected monotonic ordering. The same hover behaviour occurs at any year in the chart; 1950 happens to be a labelled gridline tick so the snap is easy to verify."
+}

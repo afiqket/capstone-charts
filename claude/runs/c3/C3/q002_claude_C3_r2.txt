@@ -1,0 +1,23 @@
+```json
+{
+  "answer": "1–1.5 years has a higher share (8.9%) than 1.5–2 years (5.8%).",
+  "reasoning": "Step 1: Identified chart as a horizontal bar chart titled 'Wait time for an initial asylum decision, by outcome and nationality of applicant, for decisions made in 2021', with shares of applicants on the x-axis (0–60%) and wait-time bands on the y-axis. Step 2: Linear x-axis from 0% to 60%, ticks every 10%, starting at zero (no truncation). Step 3: Single series ('Share of applicants'), no stacking. Step 4: Filters (Nationality, Outcome, Period) all set to (All), giving the full-dataset view. Read on-chart data labels: '1 year to under 1.5 years' = 8.9%; '1.5 years to under 2 years' = 5.8%. Step 5: Used printed labels (equivalent to tooltip values) rather than pixel estimation. Step 6: Verified no truncation, no log scale, no dual axis, no stacking, filters all on (All). Comparing 8.9% vs 5.8%, the 1–1.5 years band is higher by 3.1 percentage points.",
+  "confidence": 0.99,
+  "evidence": "Data labels on chart: '1 year to under 1.5 years' = 8.9%; '1.5 years to under 2 years' = 5.8%. X-axis is linear 0%–60%, starts at 0, all filters set to (All).",
+  "interactions_performed": [
+    "browser_navigate to chart URL",
+    "browser_snapshot to read axis labels and data values",
+    "browser_hover on the 8.9% label (1–1.5 years bar)",
+    "browser_hover on the 5.8% label (1.5–2 years bar)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis (here x-axis) starts at zero — no truncation",
+    "Single y-axis only",
+    "Bars are not stacked (single series)",
+    "Linear scale, not log",
+    "All filters set to (All) — full dataset view",
+    "Used printed data labels rather than pixel estimation"
+  ],
+  "self_check": "Restated: the 1-to-1.5-year wait band accounts for 8.9% of applicants vs 5.8% for the 1.5-to-2-year band, so 1–1.5 years is the larger share — consistent with the chart-rendered values."
+}
+```

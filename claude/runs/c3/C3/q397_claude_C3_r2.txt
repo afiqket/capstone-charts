@@ -1,0 +1,9 @@
+{
+  "answer": "≈ 25 μg/m³ (London's average suspended particulate matter concentration in 1997).",
+  "reasoning": "Step 1: Multi-series line chart 'Air pollution, 1700 to 2016' with two series: London and Delhi. Step 2: Y-axis is concentration in μg/m³ (linear 0–700, not truncated); x-axis is year. Step 4 (Interactive Elements Protocol): Dispatched mouseover/mousemove on the chart's transparent hover overlay at x-fraction (1997−1700)/(2016−1700) = 297/316. The tooltip rendered with the year heading '1997' and rows per city. Step 5: Read the London row from the tooltip — 'London: 25 μg/m³'.",
+  "confidence": 0.95,
+  "evidence": "Tooltip at year-1997: header '1997', row 'London: 25 μg/m³'.",
+  "interactions_performed": ["browser_navigate to chart URL", "computed x-fraction for year 1997", "dispatched mouseover/mousemove on the hover overlay at that x", "read tooltip year heading and the London row"],
+  "pitfalls_checked": ["Y-axis is linear in μg/m³ (not log, not truncated)", "Series are independent lines (not stacked)", "Verified tooltip year heading is '1997'", "Used tooltip integer value rather than pixel-estimating"],
+  "self_check": "Restated: London's 1997 average suspended particulate matter concentration was ≈ 25 μg/m³. Two runs returned the same tooltip value."
+}

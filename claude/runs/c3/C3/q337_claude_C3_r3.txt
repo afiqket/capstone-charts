@@ -1,0 +1,24 @@
+{
+  "answer": "Hovering over 2020 on the line chart triggers two visual responses: (1) a vertical grey guide line appears at the x-position of year 2020, and (2) a tooltip pops up titled '2020' listing each plotted city's UN-projected population in that year, sorted from largest to smallest, with every row tagged '(proj.)' because 2020 is past the 2015 estimate/projection divider. The eight cities and values are: Tokyo 37.39 million (proj.), Delhi 30.29 million (proj.), Dhaka 21.01 million (proj.), Mumbai (Bombay) 20.41 million (proj.), New York-Newark 18.80 million (proj.), Istanbul 15.19 million (proj.), Lagos 14.37 million (proj.), Paris 11.02 million (proj.).",
+  "reasoning": "Step 1: The chart is the interactive multi-line chart 'Population of the world's largest cities, 1950 to 2035' with eight series. Step 2: X axis is year (linear, 1950–2035); Y axis is population (linear, 0–50 million, starts at 0, not truncated). Step 3: Each city has its own color; solid line = historical estimate, dashed line = UN projection, separated by a dashed vertical divider at 2015. Step 4 (Interactive Elements Protocol): I reloaded the URL fresh via Playwright, located the cross-origin iframe holding the chart, and moved the mouse to viewport coordinates over the chart's transparent hover rect at the inner-group x for year 2020. The mousemove handler snaps to the nearest 5-year value (Math.round(xScale.invert(mx)/5)*5), so the snapped year is 2020; it then makes the hoverLine visible at xScale(2020) and renders the tooltip with rows sorted by descending population. Step 5: Values were read from the tooltip text directly (not pixel-estimated); the format comes from fmtPop = d3.format('.2f')(v/1e6)+' million'. Step 6: Because 2020 > 2015, every series' point has proj === true, so the tooltip code appends '(proj.)' to each row.",
+  "confidence": 0.97,
+  "evidence": "After page.mouse.move(766.03, 625.19) — which maps to inner-group x = 543.5294117647059 (the 2020 tick) — the hidden tooltip <g> became visible with transform=translate(625,269.8125) and held the exact texts in this order: '2020', 'Tokyo: 37.39 million (proj.)', 'Delhi: 30.29 million (proj.)', 'Dhaka: 21.01 million (proj.)', 'Mumbai (Bombay): 20.41 million (proj.)', 'New York-Newark: 18.80 million (proj.)', 'Istanbul: 15.19 million (proj.)', 'Lagos: 14.37 million (proj.)', 'Paris: 11.02 million (proj.)'. The vertical hoverLine became visible at x1=x2=543.5294117647059, stroke '#999'. SVG bounding box {x:152.5, y:335.19, w:900, h:580}; the 2020 x-axis label sits at inner-group x=543.53.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2414ee1335c8187d (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "read SVG x-axis text labels to confirm 2020 lies at inner-group x=543.53",
+    "page.mouse.move(766.03, 625.19) to trigger the chart's mousemove handler at year 2020",
+    "read the tooltip <g> texts and the vertical hover <line> attributes from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis only",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (10-million tick spacing uniform)",
+    "Linked filter still active: no filters were applied",
+    "Tooltip vs visual position: tooltip values used directly, no pixel estimation",
+    "Estimate vs projection: 2020 is past the 2015 divider, so every row carries the '(proj.)' suffix because item.proj is true"
+  ],
+  "self_check": "Restated: hovering at year 2020 (1) reveals a vertical guide line at the 2020 x-position and (2) opens a tooltip headed '2020' listing the 8 plotted cities' UN-projected populations in descending order — Tokyo 37.39M, Delhi 30.29M, Dhaka 21.01M, Mumbai (Bombay) 20.41M, New York-Newark 18.80M, Istanbul 15.19M, Lagos 14.37M, Paris 11.02M — each row marked '(proj.)'. This matches the captured DOM evidence (tooltip text + visible hoverLine) and is reproducible (same result across r1, r2, and r3)."
+}

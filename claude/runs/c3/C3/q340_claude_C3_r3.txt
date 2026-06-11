@@ -1,0 +1,23 @@
+{
+  "answer": "Approximately US$ -2.7 billion (sum of the chart's 1-decimal tooltip values), or US$ -2.679 billion using the underlying precise values. All six years 2015–2020 were negative for Manufacturing (net divestment), so the cumulative total is negative.",
+  "reasoning": "Step 1 — Interactive bar chart 'Malaysia's Direct Investment Abroad (DIA) by Sector'; sector dropdown and year multi-select; bars have hover tooltips showing both RM and US$ values. Step 2 — X-axis: Year (categorical). Y-axis: RM/bil, linear, axis crosses zero (ticks −5.0, 0.0, 5.0, 10.0). Step 3 — Single-series bar chart; USD only via tooltip. Step 4 — Verified Manufacturing was active and 2015–2020 were among selected years. For each of the six years, programmatically dispatched the chart's mouseenter handler on the corresponding bar and read the tooltip text; also inspected each bar's bound datum for precise valueUSD. Step 5 — Tooltip values used as primary readings; precise bound-data sum reported as the higher-precision alternative. Aggregation: sum of yearly US$ values across 2015–2020.",
+  "confidence": 0.96,
+  "evidence": "Per-year tooltips (Manufacturing): 2015 'RM -0.6 | US$ -0.2'; 2016 'RM -4.7 | US$ -1.1'; 2017 'RM -2.1 | US$ -0.5'; 2018 'RM -0.2 | US$ -0.1'; 2019 'RM -1.7 | US$ -0.4'; 2020 'RM -1.7 | US$ -0.4'. Sum of displayed tooltip US$ values = -0.2 + -1.1 + -0.5 + -0.1 + -0.4 + -0.4 = -2.7 (US$ billions). Precise bound-data per year (valueUSD): 2015=-0.19716, 2016=-1.12515, 2017=-0.49357, 2018=-0.05669, 2019=-0.41030, 2020=-0.39616; precise sum = -2.67902671 (US$ billions).",
+  "interactions_performed": [
+    "browser_navigate to the Observable notebook URL",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot of the iframe to confirm Manufacturing was the active sector and 2015–2020 were among the selected years",
+    "browser_evaluate inside the chart iframe to iterate over rect.bar elements for years 2015–2020",
+    "browser_evaluate to dispatch mouseenter/mouseleave on each year's bar, capture tooltip text, and read each bar's bound valueUSD"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: axis extends below 0 to show negative DIA — all six years are negative",
+    "Dual y-axes: none — single RM/bil axis; USD only via tooltip",
+    "Stacked vs grouped bars: single-series; summing across years is straightforward",
+    "Log scale: linear scale confirmed",
+    "Linked filter active: Manufacturing selected and 2015–2020 included in selected years",
+    "Tooltip vs visual position: used tooltip values; negative signs corroborated by bars rendering below the zero baseline",
+    "Rounding: tooltip values are at 1-decimal precision; reported both the rounded-sum (-2.7) and the precise sum (-2.679) for transparency"
+  ],
+  "self_check": "Restated: summing Manufacturing DIA (US$ billions) across 2015–2020 yields -2.7 from tooltip-displayed values (-0.2 + -1.1 + -0.5 + -0.1 + -0.4 + -0.4) and -2.679 from the precise bound data. Both methods agree to one decimal place; all six year values are negative, consistent with bars below the zero baseline. The reported total of US$ -2.7 billion (≈ US$ -2.68 billion at higher precision) is consistent across two independent computations."
+}

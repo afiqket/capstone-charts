@@ -1,0 +1,18 @@
+{
+  "answer": "Open the 'Metrics' dropdown in the controls above the chart and choose 'Year-Over-Year Change (%)'. The chart will redraw with the y-axis in percent terms (YoY change), shading positive values light red and negative values light blue around a 0% reference line.",
+  "reasoning": "Step 1 — Chart is the 'Redfin's Existing Home Sales' interactive line chart with a Metrics combobox, a Region combobox, a Seasonally Adjusted combobox, and a two-thumb month range slider. Step 4 — The Metrics combobox has options ['Home Sales Annualized Rate', 'Year-Over-Year Change (%)', 'Month-Over-Month Change (%)']; Metrics is the control that switches which series is plotted. Step 4 (verification) — Reset Metrics to 'Home Sales Annualized Rate' (baseline) and then selected 'Year-Over-Year Change (%)'. After redraw, the y-axis label became 'Year-Over-Year Change (%)' and the y-axis tick labels were percent-formatted (-40%, -20%, 0%, 20%, 40%, 60%). Step 5 — Verified via SVG inspection rather than visual estimation.",
+  "confidence": 0.99,
+  "evidence": "After selecting 'Year-Over-Year Change (%)' from the Metrics combobox, SVG y-axis label is 'Year-Over-Year Change (%)' and y-axis ticks are ['-40%','-20%','0%','20%','40%','60%']. The chart adds light-red (#f5b8b8) positive and light-blue (#b8d4f5) negative area fills around a 0% reference line — its standard styling for percent metrics.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/ad1587cfc205c2f2",
+    "Reset Metrics to 'Home Sales Annualized Rate' (baseline)",
+    "Selected 'Year-Over-Year Change (%)' from the Metrics dropdown",
+    "Inspected the SVG to confirm y-axis label and tick formatting changed to the YoY/percent view"
+  ],
+  "pitfalls_checked": [
+    "Confirmed Metrics is the correct control, not Region or Seasonally Adjusted",
+    "Verified y-axis switched from millions to percent with a 0% reference line",
+    "Slider date range is unchanged — user can narrow the period if needed"
+  ],
+  "self_check": "Restated: to see Year-over-Year change, pick 'Year-Over-Year Change (%)' from the Metrics dropdown. Confirmed by SVG inspection — y-axis becomes percent-formatted (-40% to 60%) with the YoY label."
+}

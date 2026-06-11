@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering over the line chart near 1950 puts the chart into a focused inspection state: the cursor's x-position is converted to the nearest data year (e.g., x≈541 SVG snaps to 1950; nudging right to x≈545 snaps to 1951), and three things appear at once — (1) a vertical grey guide line drawn at the snapped year across the full plot height; (2) one colored dot per series placed on each of the 11 survival-share lines at its value for that year; (3) a tooltip card next to the cursor with a bold year header followed by a row per series (color swatch, share label, value in years, formatted to one decimal). The tooltip follows the cursor and re-positions to avoid the right edge. For 1950 the tooltip lists: Top 1% 94.3, 10% 86.5, 20% 82.6, 30% 79.4, 40% 76.3, 50% 73.1, 60% 69.3, 70% 64.4, 80% 57.2, 90% 44.1, 99% 0.2 years.",
+  "reasoning": "Step 1 — Interactive line chart, France, 1816–2023, 11 survival-share series. Step 2 — Linear y-axis 0–120 years (no truncation); linear x-axis 1816–2023. Step 3 — 11 colored series with right-edge end labels. Step 4 — Tested the hover at two points to characterise behaviour fully: (a) cursor at SVG (~541, 300), which maps to year 1950; tooltip header confirmed '1950' and listed all 11 values. (b) cursor at SVG (~545, 250), which maps to year ~1951; tooltip header read '1951' with slightly different values, confirming the chart snaps to the nearest data year rather than interpolating. The tooltip x/y position also changed (y moved with the cursor and x flipped left to avoid the right edge). Step 5 — All values read from tooltip text. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "At cursor SVG (541, 300) — year 1950: tooltip header '1950' and rows Top 1% 94.3, 10% 86.5, 20% 82.6, 30% 79.4, 40% 76.3, 50% 73.1, 60% 69.3, 70% 64.4, 80% 57.2, 90% 44.1, 99% 0.2 years. At cursor SVG (545, 250) — year 1951 (snapped from a slightly different x): tooltip header '1951' and rows Top 1% 93.3, 10% 85.7, 20% 81.9, 30% 78.8, 40% 75.9, 50% 72.7, 60% 68.9, 70% 64.0, 80% 57.0, 90% 44.3, 99% 0.2 years. Tooltip's bounding box (ref f1e272) moved from (566,366) to (571,316) when the cursor y dropped from 300 to 250, confirming the tooltip tracks vertical cursor position.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/d853ee793fb4ca5c",
+    "browser_click '📈 Line' to confirm line mode",
+    "page.mouse.move to SVG (~545, 250) — snaps to year 1951; captured tooltip",
+    "page.mouse.move to SVG (~541, 300) — snaps to year 1950; captured tooltip",
+    "browser_snapshot of the tooltip card both times to read header and all 11 series rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, starts at 0",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines",
+    "Log scale: linear",
+    "Linked filter still active: only the hover snap year, confirmed by tooltip header",
+    "Tooltip vs visual position: read tooltip text rather than line y-position — needed because 99% in 1950 is just 0.2 years and indistinguishable from 0 by eye"
+  ],
+  "self_check": "Restated: hovering near year 1950 doesn't read off a continuous x — it snaps to the closest year in the dataset and updates a guide line, 11 series dots, and a tooltip card listing every survival-share value for that year. The two test points (x for 1950, x for 1951) produced different tooltip headers and slightly different numbers, confirming snapping rather than interpolation. Values descend monotonically from Top 1% to 99% at both years, which is the expected ordering for cumulative survival shares."
+}

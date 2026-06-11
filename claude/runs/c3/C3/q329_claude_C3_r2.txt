@@ -1,0 +1,25 @@
+{
+  "answer": "Tokyo's population grows steeply from 1950 to about 2020, then plateaus and is projected to decline through 2100. Decadal tooltip readings — historical estimates: 1950 = 12.6 million, 1960 = 16.8M, 1970 = 21.7M, 1980 = 25.9M, 1990 = 28.6M, 2000 = 30.3M, 2010 = 32.6M, 2020 = 33.7M (the peak of the estimate region); JRC projections: 2030 = 33.0M (proj.), 2040 = 31.9M (proj.), 2050 = 30.7M (proj.), 2060 = 29.3M (proj.), 2070 = 27.5M (proj.), 2080 = 26.1M (proj.), 2090 = 25.1M (proj.), 2100 = 24.1M (proj.). Net trajectory: Tokyo roughly tripled between 1950 and 2020 (+21.1M, ≈+167%), peaks around 2020 at 33.7M, and is projected to lose ≈9.6M by 2100 (down to 24.1M — back near its 1970 level).",
+  "reasoning": "Step 1: Chart is the interactive line chart 'Number of people living in the world's largest cities' for nine cities, 1950–2100, JRC data; Tokyo is one of the nine series labelled at the right edge. Step 2: Y axis is population (linear, 0–60 million, starts at zero — not truncated, 5-million tick spacing); X axis is year (linear, 1950–2100) with labelled ticks every 10 years. Step 3: Each city has its own coloured line; solid line segments are historical JRC estimates and dashed segments are JRC projections, separated by a vertical divider. Step 4 (Interactive Elements Protocol): I reloaded the URL with Playwright, located the cross-origin iframe, computed inner-group x for every decadal tick from the labelled axis positions (1950→0, 1960→44.67, …, 2100→670), and moved the mouse sequentially across all 16 decade points over the chart's hover overlay (chart group translate(70,100)). At each stop I captured the tooltip's Tokyo row from the iframe DOM. Step 5: All values come from the tooltip text emitted by the chart code — exact data values, not pixel estimates. Step 6: Rows up to 2020 carry no '(proj.)' tag (historical estimates); rows from 2030 onward carry '(proj.)' (JRC projections); transition lies between 2020 and 2030.",
+  "confidence": 0.96,
+  "evidence": "Tooltip readings for Tokyo at each decade — 1950: 'Tokyo: 12.6 million'; 1960: 'Tokyo: 16.8 million'; 1970: 'Tokyo: 21.7 million'; 1980: 'Tokyo: 25.9 million'; 1990: 'Tokyo: 28.6 million'; 2000: 'Tokyo: 30.3 million'; 2010: 'Tokyo: 32.6 million'; 2020: 'Tokyo: 33.7 million'; 2030: 'Tokyo: 33.0 million (proj.)'; 2040: 'Tokyo: 31.9 million (proj.)'; 2050: 'Tokyo: 30.7 million (proj.)'; 2060: 'Tokyo: 29.3 million (proj.)'; 2070: 'Tokyo: 27.5 million (proj.)'; 2080: 'Tokyo: 26.1 million (proj.)'; 2090: 'Tokyo: 25.1 million (proj.)'; 2100: 'Tokyo: 24.1 million (proj.)'. Each value was read at a snapped year (the tooltip title matched the decade exactly). The estimate→projection boundary is between 2020 and 2030.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2bc85c650c3a8152 (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "computed inner-group x for each decadal tick from labelled axis positions (1950→0, 1960→44.67, …, 2100→670)",
+    "page.mouse.move sequentially across all 16 decade x-positions (box.x + 70 + xtick, box.y + 100 + 200) to trigger the chart's hover handler",
+    "read tooltip <g> texts after each move and extracted the Tokyo row"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis (population in millions)",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (5-million tick spacing uniform)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: tooltip text read directly at each decade, not pixel-estimated",
+    "Estimate vs projection: rows ≤2020 are historical estimates (no tag); rows ≥2030 carry '(proj.)' — boundary identified, no value misclassified",
+    "Units: confirmed values are absolute population (millions of people), not density"
+  ],
+  "self_check": "Restated: Tokyo's line rises steadily and concavely from 12.6M in 1950 to a peak of 33.7M in 2020 (≈2.67× growth over 70 years), then turns down through the JRC projections to 24.1M by 2100 (≈−28% from the peak; back near 1970 levels). The trajectory matches the visual: Tokyo's coloured line climbs from the 10–15 million band in 1950 to just above the 30-million gridline by 2010–2020, then trends downward through the dashed projection segment to the mid-20s million by 2100. Reproduces r1 exactly."
+}

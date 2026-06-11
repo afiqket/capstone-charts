@@ -1,0 +1,18 @@
+{
+  "answer": "Ghana has the highest share of households that practice fallowing in their fields, at 20%.",
+  "reasoning": "Step 1: The page is an ARBES dashboard ('Soil Conservation Practices in Program and Control Communities') containing five small-multiple horizontal bar charts, one per practice, each broken out by country (Ethiopia, Ghana, Mali, Malawi, Tanzania). Step 3: Each bar carries a data label showing the percentage of households. Step 4/5: I located the panel whose title is 'Households that practice fallowing in their fields' and read each bar's value, pairing label to country by shared y-coordinate (rather than relying on snapshot order). The fallowing panel (title at y≈345.8) yielded: Ethiopia=16%, Ghana=20%, Mali=10%, Malawi=6%, Tanzania=3%. The maximum is Ghana at 20%. Note: the metric is the percentage of households (labels are percentages).",
+  "confidence": 0.97,
+  "evidence": "Fallowing panel pairs (matched by y-coordinate) — Ethiopia 16%, Ghana 20%, Mali 10%, Malawi 6%, Tanzania 3%. Ghana 20% is the largest.",
+  "interactions_performed": [
+    "Navigated to the ARBES Observable dashboard",
+    "Waited for the chart iframe to render",
+    "Accessed the cross-origin chart frame, found the SVG panel containing 'fallowing', and paired each percentage label with its country by matching y-coordinates"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the values belong to the 'fallowing' panel, not a neighboring small-multiple, via y-coordinate alignment with the panel title",
+    "Read printed data labels rather than estimating bar lengths by pixels",
+    "Noted the metric is a percentage of households (no axis truncation/log/dual-axis issues for a labeled categorical bar chart)",
+    "Did not apply the Country/Practice dropdown filters, so the answer reflects the full (All) dataset"
+  ],
+  "self_check": "Restated: the fallowing percentages are Ethiopia 16, Ghana 20, Mali 10, Malawi 6, Tanzania 3; the single largest is Ghana's 20%, so Ghana has the highest share of households practicing fallowing — identical across all three runs."
+}

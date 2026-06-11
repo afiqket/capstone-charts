@@ -1,0 +1,22 @@
+{
+  "answer": "79.35 (index value; 1970 = 100)",
+  "reasoning": "Step 1: Identified the chart as an interactive multi-series line chart titled 'Emissions of air pollutants, United States, 1970 to 2016' with a line/bar toggle and year slider. Step 2: Y-axis is linear from 0 to 120 (an index where the first year's value is normalised to 100); X-axis is years 1970–2016. Step 3: Six colour-coded series including 'Nitrogen oxides (NOx)' in green (#27ae60). Step 4: Loaded the chart via Playwright, located the chart's interactive hover rect inside the iframe, and dispatched a synthetic mousemove at the SVG x-coordinate corresponding to year 2004 (cx ≈ 373.26 within mainG). Step 5: Read the exact tooltip value rather than estimating from pixel position. Tooltip header confirmed the year '2004' and the Nitrogen oxides (NOx) row read '79.35'. Step 6: Verified y-axis starts at 0 (not truncated), single linear y-axis (no dual axes), line (not stacked/grouped), not log, no filters active.",
+  "confidence": 0.98,
+  "evidence": "Tooltip at year 2004 — Ammonia: 99.84, PM₂.₅: 108.84, VOCs: 56.30, Nitrogen oxides (NOx): 79.35, PM₁₀: 30.04, SO₂: 46.68. NOx data circle for 2004 is at SVG coords (cx=373.2608…, cy=120.25625). With yScale domain [0,120] and innerH=355: 120·(1 − 120.25625/355) = 79.35, matching the tooltip exactly.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/85ede1c922cd5ec4",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect chart structure",
+    "browser_evaluate inside the iframe to dispatch a synthetic mousemove on the chart's hover rect at the 2004 x-position and read the resulting native tooltip text",
+    "browser_evaluate to cross-check by locating the green NOx data circle at the 2004 x-position and back-computing from cy"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single y-axis only (no dual y-axes)",
+    "Line chart, not stacked or grouped bars",
+    "Linear scale, not log",
+    "No filters active; full date range visible",
+    "Used tooltip value, not pixel estimation"
+  ],
+  "self_check": "The 2004 Nitrogen oxides (NOx) index value from the chart's tooltip is 79.35. Independent back-computation from the rendered SVG circle (cy=120.25625, innerH=355, yMax=120) yields 79.35 — consistent."
+}

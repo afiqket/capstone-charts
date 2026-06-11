@@ -1,0 +1,18 @@
+{
+  "answer": "Move the 'Year' slider (in the controls above the chart) leftward until its right-hand value reads 1880. The chart will then display only the period 1800–1880. The slider's lower bound is fixed at 1800 — only the upper year is adjustable — which is exactly what is needed here.",
+  "reasoning": "Step 1 — Chart is 'Global Primary Energy Consumption during 200 Years', an interactive stacked stream/area/percentage chart. Step 4 — Inspected the controls in the rendered iframe: Chart Type, Sort, Sort Order, Energy Type (combobox), and Year. The 'Year' control is a single-thumb HTML range slider with min=1800, max=2020, step=10, and a value label to its right. The chart code sets yearRange = [1800, sliderValue], so dragging the slider changes only the upper bound. Step 4 (verification) — In the iframe I set slider value=2020 (label '2020'; x-axis ticks 1800,1820,…,2020) and then value=1880 (label '1880'; x-axis ticks 1800,1810,…,1880). The chart redrew to span exactly 1800–1880. Step 5 — Verified via SVG inspection rather than visual estimation.",
+  "confidence": 0.99,
+  "evidence": "Year slider: <input type='range' min='1800' max='2020' step='10'>. After setting value=1880 the value label shows '1880' and the x-axis ticks become 1800, 1810, 1820, 1830, 1840, 1850, 1860, 1870, 1880 (vs 1800, 1820, …, 2020 at value=2020). Therefore the visible time range is 1800–1880.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/6d1c43df3a1de518",
+    "Set Year slider to 2020 (baseline) and recorded x-axis ticks",
+    "Set Year slider to 1880 and fired an 'input' event to trigger redraw",
+    "Read the Year value label and x-axis tick labels from the SVG to confirm the range"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the slider only sets the upper year (lower bound is permanently 1800) — fine for 1800–1880",
+    "Confirmed the chart actually redraws when the slider value changes (ticks change from 12 entries to 9)",
+    "Did not estimate from pixel positions — read actual tick labels"
+  ],
+  "self_check": "Restated: to view only 1800–1880, slide the 'Year' control so the value label reads 1880. Verified by direct SVG inspection — after the change, the x-axis spans exactly 1800 to 1880 in 10-year steps."
+}

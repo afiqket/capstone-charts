@@ -1,0 +1,21 @@
+{
+  "answer": "Averaging the Urban World share of population with access to clean fuels for cooking across all 24 years on the chart (2000–2023) gives approximately 82.47% (more precisely 82.4692%). The Urban series rises steadily from 75.68% in 2000 to 89.01% in 2023.",
+  "reasoning": "Step 1 — Chart is the World line/bar visualization 'Share of the rural and urban population with access to clean fuels for cooking, World'. The Urban (blue, #4e79a7) line is what we need. Step 2 — X-axis: years 2000–2023 (24 annual points). Y-axis: 0–100% linear, not truncated. Step 4 — In the Line view, dispatched a mousemove at the x-coordinate corresponding to each year from 2000 to 2023 in turn, and read the Urban % from the tooltip (chart's d3.format('.2f') values). Collected all 24 Urban values: 2000=75.68, 2001=76.12, 2002=76.58, 2003=77.10, 2004=77.58, 2005=78.15, 2006=78.69, 2007=79.30, 2008=79.95, 2009=80.58, 2010=81.36, 2011=82.03, 2012=82.77, 2013=83.58, 2014=84.29, 2015=84.99, 2016=85.62, 2017=86.32, 2018=86.89, 2019=87.46, 2020=88.01, 2021=88.43, 2022=88.77, 2023=89.01. Step 5 — Used tooltip values, not pixel estimation. Computed arithmetic mean across the 24 years: sum = 1979.26, mean = 1979.26 / 24 = 82.47%.",
+  "confidence": 0.95,
+  "evidence": "24 yearly tooltip readings collected via the chart's hover interaction; min = 75.68% (2000), max = 89.01% (2023). Arithmetic mean = 82.4692% (≈ 82.47%). Source data shown on the chart, processed by Our World in Data (IEA, IRENA, UN Statistics Division, WHO, World Bank).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/da18df4887a7180e",
+    "Confirmed Line view (default) and the Urban series is the BLUE line",
+    "For each year 2000..2023, computed the x-coordinate and dispatched a mousemove on the hover-overlay rect",
+    "Read the tooltip Urban value for each year and collected the 24 values",
+    "Computed the simple arithmetic mean of the 24 values"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values rather than pixel estimation (Step 5)",
+    "Y-axis is 0–100% and not truncated — no truncation pitfall",
+    "Confirmed Urban (blue #4e79a7), distinct from Rural (orange #b84c1a)",
+    "Sampled multiple offsets per year to ensure tooltip snapped correctly to the nearest integer year",
+    "Reported simple unweighted mean across years; the question doesn't specify a weighting scheme"
+  ],
+  "self_check": "Restated: the simple average of the Urban share (World) over the chart's 24 yearly values (2000–2023) is ~82.47%. The minimum is 75.68% (2000) and the maximum is 89.01% (2023), and 82.47% sits roughly in the middle as expected for a near-linear upward trend."
+}

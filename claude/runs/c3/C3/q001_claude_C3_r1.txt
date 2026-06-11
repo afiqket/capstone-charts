@@ -1,0 +1,22 @@
+```json
+{
+  "answer": "59.0%",
+  "reasoning": "Step 1: Identified chart as a horizontal bar chart titled 'Wait time for an initial asylum decision, by outcome and nationality of applicant, for decisions made in 2021 (or other selected period)' — Main applicants only. Step 2: X-axis is 'Share of applicants' in percent (0%–60%, linear, 10% ticks); Y-axis is 'Wait time' with categorical bins (Under 6 months, 6 months to under 1 year, etc.). Step 3: Single series, color encodes wait-time bin. Step 4: Filters (Nationality, Outcome, Period) all set to '(All)' — the default full-dataset view. Step 5: Read the data label rendered next to the 'Under 6 months' bar directly from the SVG accessibility tree, which gives the exact value rather than a pixel estimate. Step 6: Verified pitfalls — x-axis starts at 0%, single axis, bars are not stacked, linear scale, no filter narrowing the data, label matches the bar position.",
+  "confidence": 0.98,
+  "evidence": "Data label adjacent to the 'Under 6 months' bar reads '59.0%'. Other bins for reference: 6 months to <1 year = 17.1%, 1 to <1.5 years = 8.9%, 1.5 to <2 years = 5.8%, 2 to <2.5 years = 4.0%, 2.5 to <3 years = 2.3%, 3 years or more = 2.8% (sum ≈ 99.9%, consistent with rounding).",
+  "interactions_performed": [
+    "browser_navigate to chart URL",
+    "browser_snapshot to read rendered chart values",
+    "browser_hover over the 'Under 6 months' bar value label"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: N/A (categorical y-axis); x-axis starts at 0%",
+    "Dual y-axes: none",
+    "Stacked vs grouped: simple bar, not stacked",
+    "Log scale: not active (linear, evenly spaced 10% ticks)",
+    "Linked filter still active: all three filters set to '(All)'",
+    "Tooltip vs visual position: used rendered exact label, not pixel estimate"
+  ],
+  "self_check": "Restated: of all main asylum applicants whose initial decisions were made in 2021 (default selection), the share whose wait time fell in the 'Under 6 months' bin is 59.0%. This matches the bar label and is consistent with the remaining bins summing to ~41%, so the answer is internally consistent."
+}
+```

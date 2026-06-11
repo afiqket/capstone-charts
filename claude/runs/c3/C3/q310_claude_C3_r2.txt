@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering at age 30 inside the United Kingdom panel (top-right of the 2×2 small-multiples grid) shows the chart's shared tooltip with the header '30 (Age of women)' and subtitle 'in births per woman at a specific age', followed by a ranked list of mother's birth-year cohorts and their age-30 fertility rate (sorted high→low). For the UK at age 30, the tooltip lists (cohort year → births per woman at age 30): 1980 → 0.12; 1960 → 0.11; 1985 → 0.11; 1975 → 0.11; 1965 → 0.11; 1955 → 0.11; 1950 → 0.10; 1970 → 0.10; 1990 → 0.10; 1945 → 0.08. Each row is preceded by a small color swatch that matches the corresponding cohort's line color (palette: dark navy ~1925 → pale teal ~2010). Only cohorts with a positive value at age 30 are listed; the panel filters to and shows at most 10 rows (older cohorts like 1925/1930/1935 don't appear because their age-30 rates are below the threshold or beyond the top-10 cutoff).",
+  "reasoning": "Step 1 — Chart is a 2×2 small-multiples panel: Spain (top-left), United Kingdom (top-right), Japan (bottom-left), United States (bottom-right). Each panel plots age (12–55) on x vs age-specific fertility rate (0–0.32) on y, with one colored line per mother's birth-year cohort (1925–2010, every 5 years). Step 2 — Linear x and y; y starts at 0. Step 3 — Color encodes cohort. Step 4 — Each panel has a transparent hover overlay; on mousemove the handler rounds the x-pixel to an integer age, interpolates each cohort's value at that age, filters to value>0.001, sorts descending, and shows up to the top 10 in the shared tooltip. I located the UK panel by its translate offset (450,102), found its inner hover overlay (378×204 px) and dispatched a mousemove at xScale(30). Step 5 — Read the tooltip rows directly from the rendered SVG text (chart-drawn, two-decimal format). Step 6 — Pitfalls: y starts at 0 (not truncated); linear scale; small-multiples — tooltip is panel-specific (UK here); no filters active.",
+  "confidence": 0.97,
+  "evidence": "Tooltip text captured from the SVG after a synthetic mousemove at UK panel's xScale(30): '30 (Age of women)' / 'in births per woman at a specific age' / rows '1980 0.12', '1960 0.11', '1985 0.11', '1975 0.11', '1965 0.11', '1955 0.11', '1950 0.10', '1970 0.10', '1990 0.10', '1945 0.08'.",
+  "interactions_performed": [
+    "Located the UK panel by its translate offset (450,102) (col=1, row=0)",
+    "Found its inner hover overlay (transparent rect, 378×204 px)",
+    "Computed the panel's x-coordinate for age 30 via the linear xScale over [12,55]",
+    "Dispatched a synthetic mousemove on the overlay at that x",
+    "Read the resulting tooltip rows from the shared tooltip SVG group"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single linear y-axis per panel; no log scale",
+    "Small-multiples panels with independent data; tooltip belongs to whichever panel the cursor is over (UK here)",
+    "No filters active beyond the natural data domain",
+    "Used the chart's own tooltip values (not pixel estimation)"
+  ],
+  "self_check": "Restated: at age 30 in the UK panel, the tooltip ranks mother's-birth-year cohorts by age-30 birth rate — peak at the 1980 cohort (0.12) and tailing down to 1945 (0.08) in the visible top-10. Consistent with the SVG-rendered tooltip text."
+}

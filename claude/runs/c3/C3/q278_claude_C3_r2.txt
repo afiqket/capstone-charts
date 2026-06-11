@@ -1,0 +1,21 @@
+{
+  "answer": "1.65 million excess female deaths in the World in 2015.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Annual number of missing female births and excess mortality, World' showing two series — Excess female deaths (blue) and Missing female births (orange); years before/including 2015 are historical (solid line), after 2015 are projections (dashed, shaded gray). Step 2 (Axes): linear Y-axis, gridlines every 500,000 from 0 up to 3 million; X-axis years 1975–2050. Step 3 (Encoding): color separates the two series. Step 4 (Interactions): I hovered the chart at the x-position for year 2015 — computed from the SVG geometry (SVG at viewport (152.5, 335.2), mainG translate (150, 90), innerW=550, xScale domain≈[1975, 2050] → viewport x ≈ 152.5 + 150 + 40/75 * 550 ≈ 595.8). The chart's tooltip reports series values formatted via d3 `.2f` in millions. Step 5 (Reading rules): used tooltip values, not pixel estimation. Step 6 (Pitfalls): 2015 is the boundary between historical and projected data (PROJECTION_YEAR = 2015 in the chart's code), so the 2015 value is the last historical point; axis starts at 0 (no truncation); linear Y-axis; single Y-axis; no other filters.",
+  "confidence": 0.98,
+  "evidence": "Hover tooltip at year 2015 reported: 'World, 2015' / 'Excess female deaths: 1.65 million' / 'Missing female births: 1.69 million'. The chart title confirmed the entity (World).",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/42003b6f245b303f and waited for render",
+    "Queried the SVG bounding box via Playwright (viewport 152.5, 335.2, 900×560)",
+    "Computed the viewport x-position for year 2015 from the chart's xScale geometry and hovered there with page.mouse.move",
+    "Read all svg text inside the iframe to capture the tooltip's per-series values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none (both series share one Y-axis)",
+    "Stacked vs grouped — independent line series, not stacked; 1.65M is the raw 'Excess female deaths' value",
+    "Log scale — linear",
+    "Projection vs historical — 2015 is the cutoff; the value is the last historical data point",
+    "Tooltip vs visual position — value read from d3 '.2f' tooltip text, not pixels"
+  ],
+  "self_check": "Re-stated: For the World, year 2015, the Excess female deaths series equals 1.65 million; for comparison the Missing female births series is 1.69 million at the same year. The question asks about 'Excess female deaths' specifically — answer is 1.65 million. Visually the blue (Excess female deaths) line sits just below the orange (Missing female births) line at 2015, consistent with the tooltip. Answer consistent with evidence."
+}

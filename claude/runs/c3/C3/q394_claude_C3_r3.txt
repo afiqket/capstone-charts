@@ -1,0 +1,9 @@
+{
+  "answer": "≈ 2.1 million tonnes (≈ 2,100,000 tonnes) of Nitrogen oxides (NOx) in 1998 for the United Kingdom.",
+  "reasoning": "Step 1: Multi-series line chart 'Air pollutant emissions, United Kingdom, 1970 to 2016' with three pollutants (NOx, VOCs, SO₂). Step 2: Y-axis is annual emissions in million tonnes (linear 0–7, not truncated); x-axis is year. Step 4 (Interactive Elements Protocol): Dispatched mouseover/mousemove on the chart's transparent hover overlay at x-fraction (1998−1970)/(2016−1970) = 28/46. The tooltip rendered with year heading '1998' and a row per series. Step 5: Read the NOx row directly: 'Nitrogen oxides (NOx): 2.1 million tonnes'.",
+  "confidence": 0.95,
+  "evidence": "Tooltip at year-1998 column: year heading '1998', row 'Nitrogen oxides (NOx): 2.1 million tonnes'.",
+  "interactions_performed": ["browser_navigate to chart URL", "computed x-fraction for year 1998 in the 1970–2016 range", "dispatched mouseover/mousemove on the hover overlay at that x", "read tooltip year heading and the Nitrogen oxides row"],
+  "pitfalls_checked": ["Y-axis is linear in 'million tonnes' (not log, not truncated)", "Series are independent lines (not stacked)", "Verified tooltip year heading is '1998'", "Used tooltip values (.1f precision) rather than pixel-estimating"],
+  "self_check": "Restated: in 1998 UK NOx emissions were ≈ 2.1 million tonnes (~2,100,000 tonnes). Three runs returned the same tooltip value."
+}

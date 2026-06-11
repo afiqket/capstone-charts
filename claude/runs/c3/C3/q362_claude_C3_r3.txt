@@ -1,0 +1,18 @@
+{
+  "answer": "Use the Year slider in the controls above the chart: drag the slider thumb to the left until the year label reads 2000 (the slider spans 1950 to 2021). The Male vs Female life-expectancy scatterplot redraws to show the 2000 snapshot. Alternatively, press the ▶ play button to animate the slider from 1950 forward and pause when the year label reads 2000.",
+  "reasoning": "Step 1 — Chart is an interactive scatterplot titled 'Male vs female life expectancy, 1950-2021' (with a continent legend and country dots). Step 4 — Inspected the control row: it contains a ▶ play button, a year slider, and a numeric year label. The slider element is <input type='range' min='1950' max='2021'>. After setting slider.value='2000' and dispatching 'input'+'change' events, the year label updated to '2000', confirming the slider is the control that selects the displayed year. Step 5 — Verified by direct DOM interaction rather than visual estimation.",
+  "confidence": 0.99,
+  "evidence": "Slider attributes: min=1950, max=2021. Setting value=2000 and firing 'input'+'change' caused the year label to change from '2021' to '2000'. The ▶ play button drives the same slider value over time.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/@yonsei-university/life-expectancy",
+    "Identified the year slider (1950–2021) and the ▶ play button",
+    "Set slider.value to 2000 and fired 'input'+'change' events",
+    "Verified the year label updated to '2000'"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the slider range covers 2000 (min=1950, max=2021)",
+    "Verified the year label/chart updates on slider change",
+    "Noted alternative — press ▶ and stop at 2000"
+  ],
+  "self_check": "Restated: to view the year 2000, drag the year slider so its value label reads 2000 (or press ▶ and stop at 2000). Verified by setting slider.value=2000 and observing the year label update."
+}

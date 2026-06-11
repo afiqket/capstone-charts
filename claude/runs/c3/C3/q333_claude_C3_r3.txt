@@ -1,0 +1,25 @@
+{
+  "answer": "How to get it: hover the cursor over the line chart at the rightmost 2100 tick on the x-axis. A vertical guide line snaps onto year 2100 and a tooltip opens titled '2100' that lists each plotted city's projected density that year, sorted from largest to smallest. The Hong Kong row reads 'Hong Kong: 8,511 per km² (proj.)' — the '(proj.)' tag confirms the value is a JRC projection rather than a historical estimate. Equivalent visual method: follow Hong Kong's coloured line to its 2100 endpoint at the right edge and read its y-position (just below the 10,000 per km² gridline, the lowest of the six cities). Answer: Hong Kong's projected population density in 2100 is ≈ 8,511 people per km².",
+  "reasoning": "Step 1: Chart is the interactive line chart 'Population density of the world's largest cities' for six cities (Karachi, Surat, Mumbai, Kinshasa, Kabul, Hong Kong) over 1975–2100. Step 2: Y axis is density (linear, 0–35,000 per km², starts at zero — not truncated); X axis is year (linear, 1975–2100) with labelled ticks at 1975, 2000, 2025, 2050, 2075, 2100. Step 3: Each city has its own coloured line, with city/country labels at the right edge. Solid line segments are historical JRC estimates and dashed segments are JRC projections, separated by a vertical divider. Step 4 (Interactive Elements Protocol): I reloaded the URL with Playwright, located the cross-origin iframe, and moved the mouse to viewport (870.5, 635.19), which maps to inner-group x ≈ 638 (snapped to year 2100). The hover handler showed a vertical guide line at xScale(2100) and rendered the tooltip with rows sorted by descending density; every row carried '(proj.)' because 2100 lies in the projection region. Step 5: Values come from the tooltip text — exact data values, not pixel estimates. Step 6: 2100 is well past the estimate/projection divider, so Hong Kong's value carries '(proj.)' — confirming the question's premise that it is a projection.",
+  "confidence": 0.98,
+  "evidence": "After page.mouse.move(870.5, 635.19), the tooltip <g> became visible with transform=translate(460,279.8125) and held these texts in order: '2100', 'Karachi: 30,278 per km² (proj.)', 'Surat: 25,571 per km² (proj.)', 'Mumbai: 25,095 per km² (proj.)', 'Kinshasa: 21,055 per km² (proj.)', 'Kabul: 17,105 per km² (proj.)', 'Hong Kong: 8,511 per km² (proj.)'. Every row carries the '(proj.)' suffix. Hong Kong is the lowest of the six at 2100 (well below the 10,000 per km² gridline).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/b9ead2eadc99be08 (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "computed inner-group x_inner(2100) = 640 (rightmost data x, from labelled axis)",
+    "page.mouse.move(870.5, 635.19) using chart group translate(80,100) to trigger the chart's hover handler at year 2100",
+    "read tooltip <g> texts from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis (people per km²)",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (5,000-unit ticks evenly spaced)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: tooltip text read directly, not pixel-estimated",
+    "Estimate vs projection: '(proj.)' tag present, confirming Hong Kong's 8,511 per km² in 2100 is a projection",
+    "Units: confirmed value is people per km², not absolute population"
+  ],
+  "self_check": "Restated: to obtain Hong Kong's projected 2100 population density, hover the line chart above the 2100 x-axis tick — the tooltip reports 'Hong Kong: 8,511 per km² (proj.)'. The '(proj.)' marker confirms it is a projection. 8,511 per km² sits just below the 10,000 gridline at the right edge of the chart, matching Hong Kong's downward trajectory and making it the lowest of the six cities at 2100. Reproduces r1 and r2 exactly."
+}

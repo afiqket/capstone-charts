@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering over the line chart around 1950 triggers an interactive tooltip that snaps to the nearest data year (1950). It does three things at once: (1) draws a vertical grey guide line at x = 1950 across the full plot height; (2) places a colored dot on each of the 11 series at its 1950 value; and (3) opens a tooltip card next to the cursor showing the year '1950' as a header followed by every series and its value in years. For France in 1950 the tooltip reads: Top 1% 94.3, 10% 86.5, 20% 82.6, 30% 79.4, 40% 76.3, 50% 73.1, 60% 69.3, 70% 64.4, 80% 57.2, 90% 44.1, 99% 0.2 years. Moving the cursor away hides the guide line, the dots, and the tooltip.",
+  "reasoning": "Step 1 — Interactive line chart titled 'Survival ages across the population, France, 1816 to 2023' with 11 survival-share series. The 📈 Line / 📊 Bar toggle confirms two display modes; the line mode is the one with hover interaction. Step 2 — Linear y-axis 0–120 years (starts at 0), linear x-axis 1816–2023. Step 3 — 11 series color-coded with right-side end labels. Step 4 — Programmatically moved the mouse onto the plot area at SVG x ≈ 541 (= 65 + (1950-1816)/(2023-1816) × 735), which is the x-coordinate corresponding to year 1950. The hover handler computed the nearest data year (1950), drew a vertical guide line and dots, and rendered a tooltip card with the year header and per-series values. Step 5 — Read all values directly from the tooltip — no pixel estimation. Step 6 — No log scale, no truncation, no dual axes, single year filter snapped to 1950 (confirmed by tooltip header).",
+  "confidence": 0.97,
+  "evidence": "Tooltip card captured at the hover point (cursor at viewport x≈693, y≈596, which maps to SVG x≈541 → year 1950). Tooltip header text: '1950'. Tooltip rows (label → value): Top 1% → 94.3 years, 10% → 86.5 years, 20% → 82.6 years, 30% → 79.4 years, 40% → 76.3 years, 50% → 73.1 years, 60% → 69.3 years, 70% → 64.4 years, 80% → 57.2 years, 90% → 44.1 years, 99% → 0.2 years. (The very small 99% value reflects high infant mortality in 1950 France — only the top 1% of survivors lived past ~94 years, while the bottom 1% — the '99%' row — lived under one year.) Values are read straight from the tooltip text, not from line position.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/d853ee793fb4ca5c",
+    "browser_click '📈 Line' to ensure line mode",
+    "page.mouse.move to viewport coordinates corresponding to SVG (541, 300) inside the plot area, which snaps to year 1950",
+    "browser_snapshot to read the tooltip header and all 11 series rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, starts at 0",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines, not stacked",
+    "Log scale: linear",
+    "Linked filter still active: only the hover snap (year 1950), confirmed via tooltip header",
+    "Tooltip vs visual position: read tooltip text directly rather than estimating from line y-position (important because the 1950 99% value is extremely small and would be unreadable from pixels alone)"
+  ],
+  "self_check": "Restated: hovering near 1950 produces a synchronized read-out — a vertical guide line at year 1950, one dot per series on the line, and a tooltip listing every series' value for that year. The 50% row says 73.1 years, the Top 1% says 94.3 years, and the 99% row drops to 0.2 years; values decrease monotonically from Top 1% to 99%, which is the expected pattern for cumulative survival shares. This matches the chart's stated semantics (lower-percentile groups have longer survival ages)."
+}

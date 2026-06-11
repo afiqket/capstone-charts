@@ -1,0 +1,25 @@
+I've collected all the year values for Switzerland's Transfers in. Now I'll compile the answer.
+
+```json
+{
+  "answer": "Yes — Switzerland's transfers in jumped significantly in 2017, rising from 445 in 2016 to 873 in 2017 (an increase of +428, roughly 96%). The climb continued into 2018 (1,292).",
+  "reasoning": "Step 1: Identified the chart as a small-multiples line/dot chart (Dublin Stats), with Country 2 panel devoted to Switzerland. Step 2: Switzerland panel y-axis is linear, 0–1,400 (200-unit ticks); x-axis years 2008–2020. Step 3: Color encoding distinguishes Requests in / Transfers in / Requests out / Transfers out. Step 4: Filtered Country 2 measure dropdown to 'Transfers in' to isolate the series, then hovered every annual data point and read tooltip values directly (preferred over pixel estimation). Step 5: Compared year-over-year deltas. The largest sudden absolute increase is 2016→2017 (+428, +96%), with continued growth into 2018 (+419). Earlier rises (e.g., 2009→2010 +257) are smaller in absolute terms despite high relative change from a very low base. Step 6 pitfalls: y-axis starts at zero (no truncation); single-axis (no dual axis); not stacked; linear scale; only Switzerland's 'Transfers in' filter is active, which is exactly what the question asks about.",
+  "conidenfce": 0.9,
+  "evidence": "Tooltip values for Switzerland Transfers in by year — 2008: 0, 2009: 195, 2010: 452, 2011: 482, 2012: 574, 2013: 751, 2014: 933, 2015: 558, 2016: 445, 2017: 873, 2018: 1,292, 2019: 1,159, 2020: 1,267. Largest YoY jump: 2016→2017 = +428 (445→873).",
+  "interactions_performed": [
+    "navigate to https://afiqket.github.io/capstone-charts/?chart=dublin_stats",
+    "click Country 2 measure dropdown",
+    "select 'Transfers in' for Switzerland",
+    "hover each annual data circle (2008–2020) on the Switzerland chart and read tooltip values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at zero (not truncated)",
+    "Single y-axis (no dual axis)",
+    "Lines/dots, not stacked",
+    "Linear scale (not log)",
+    "Filter applied is exactly the requested series (Switzerland, Transfers in)",
+    "Used tooltip values rather than pixel estimation"
+  ],
+  "self_check": "Restated: between 2016 and 2017 Switzerland's Dublin transfers in nearly doubled (445 → 873), the most pronounced sudden rise in the 2008–2020 series; this is consistent with the tooltip-read evidence above."
+}
+```

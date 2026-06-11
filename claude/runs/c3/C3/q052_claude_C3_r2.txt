@@ -1,0 +1,21 @@
+{
+  "answer": "Around 2009. Harris County's reported violent-crime count rises over the period and peaks in 2009 at about 8,439 reported violent crimes, then declines (8,089 in 2010 and 7,416 in 2012). So its highest reported violent crime count occurred around 2009.",
+  "reasoning": "Step 1 (Chart Identification): Multi-line time-series chart 'Number of reported violent crimes' (UCR / FBI data) for four Houston-region counties. Thicker lines = number of violent crimes reported; thinner lines = population. Filters present: County, Type of crime (default All), Year (default All years 1990–2012). Step 2/3 (Axes & Encoding): X = year (1990–2012), Y = count of reported violent crimes; each county encoded by color — Harris County is the orange series (#f5a11c). Step 4 (Interactive Protocol): I identified the thick Harris-County crime line (stroke-width 2.5, color #f5a11c) and read its full year→value series directly from the rendered line, then found the maximum. Step 5: Values read from the chart's plotted data, not pixel-estimated; I also confirmed geometrically that the 2009 vertex is the topmost (highest) point of the line (y ≈ 28px in a 520px-tall plot). The chart has no per-point hover tooltip layer, so the plotted line data is the authoritative source. Step 6 (Pitfalls): Made sure to use the thick crime line (not the thin population line of the same color), and used the full year range (no single-year filter active).",
+  "confidence": 0.96,
+  "evidence": "Harris County violent-crime series (year, count) read from the orange thick line (#f5a11c, stroke-width 2.5): 1990:3757, 1991:4458, 1992:5032, 1993:5223, 1994:4457, 1995:5228, 1996:6056, 1997:5593, 1998:4837, 1999:4584, 2000:4592, 2001:5201, 2002:6140, 2003:6569, 2004:6995, 2005:6952, 2006:7539, 2007:6731, 2008:7924, 2009:8439 (MAX), 2010:8089, 2012:7416. Neighboring years 2008 (7,924) and 2010 (8,089) are both below 2009.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/1edfdbd0a0cf213a and waited for render",
+    "Located the embedded chart iframe (worker frame) and the line-chart SVG (718x520, 9 paths)",
+    "Identified the Harris County violent-crime line (thick, stroke-width 2.5, color #f5a11c) vs its thin population line",
+    "Read the line's full year→count data array and computed the maximum",
+    "Confirmed the peak by inspecting neighboring-year values around 2009"
+  ],
+  "pitfalls_checked": [
+    "Distinguished the thick crime line from the thin population line sharing the same color",
+    "Used the full Year range (1990–2012); no single-year filter was active",
+    "Read plotted line values rather than estimating from pixels",
+    "Default crime-type filter = All (total violent crimes), matching 'reported violent crime count'",
+    "No per-point tooltip exists on this chart — relied on the line's bound plotted data"
+  ],
+  "self_check": "Restated: the maximum of Harris County's violent-crime line is 8,439, occurring in 2009 — higher than the neighboring years 2008 (7,924) and 2010 (8,089). So the highest reported violent crime count is around 2009 — consistent across the data."
+}

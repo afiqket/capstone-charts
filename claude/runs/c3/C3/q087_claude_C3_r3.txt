@@ -1,0 +1,18 @@
+{
+  "answer": "When you hover over an orange country (fill #b13507), two things happen: (1) that country's outline highlights — its border changes from a thin white stroke (#fff, 0.5px) to a bold black stroke (#000, 1px); and (2) a tooltip pops up next to the cursor showing the country's name and its category, e.g. 'Argentina ● None or temporary'. All 17 orange countries belong to the 'None or temporary' homelessness category, so hovering any of them displays that label.",
+  "reasoning": "Step 1/3: This is an interactive choropleth map; the orange swatch (#b13507) in the legend corresponds to the 'None or temporary' IGH Framework Category. Step 4 (Interactive Elements Protocol): Each country path has a 'mousemove' handler that (a) sets the hovered path's stroke to #000 / width 1 (visual highlight) and (b) displays the #tooltip element with HTML '<country name> ● <category>'; a 'mouseleave' handler resets the stroke to #fff / 0.5. Step 5: I verified this empirically by dispatching hover events on the orange-filled paths and reading both the tooltip text and the before/after stroke attributes. Every orange country returned the category 'None or temporary' (e.g. Argentina, Chile, South Africa, Mexico, Uruguay), confirming the orange = 'None or temporary' mapping.",
+  "confidence": 0.95,
+  "evidence": "Orange fill = #b13507, 17 countries. On hover, stroke changed from {stroke:#fff, width:0.5} to {stroke:#000, width:1} and the tooltip became display:block. Sample tooltips: 'Argentina ● None or temporary', 'Chile ● None or temporary', 'South Africa ● None or temporary', 'Mexico ● None or temporary', 'Uruguay ● None or temporary'.",
+  "interactions_performed": [
+    "Navigated to the Observable notebook URL",
+    "Waited for the chart iframe to render",
+    "Accessed the cross-origin chart frame, dispatched mousemove (hover) on every #b13507 (orange) country path, and recorded the resulting tooltip text plus the path's stroke before and after hover"
+  ],
+  "pitfalls_checked": [
+    "Not a truncated/dual-axis or log-scale chart — categorical choropleth, axis pitfalls do not apply",
+    "Confirmed the orange legend swatch (#b13507) maps to 'None or temporary' before answering",
+    "Used the live tooltip values rather than estimating from color alone",
+    "Distinguished deep-orange #b13507 from the separate coral #e56e5a ('None or inadequate') category"
+  ],
+  "self_check": "Restated: hovering an orange country highlights its border in black and shows a tooltip naming the country and its 'None or temporary' category — consistent with the observed stroke change (#fff→#000) and the captured tooltip texts, and identical across all three runs."
+}

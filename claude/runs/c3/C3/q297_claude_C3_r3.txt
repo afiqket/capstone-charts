@@ -1,0 +1,21 @@
+{
+  "answer": "82.4 years",
+  "reasoning": "Step 1 — Interactive chart titled 'Survival ages across the population, France, 1816 to 2023' with two display modes (Line, Bar) and 11 survival-share series (Top 1%, 10%, 20%, …, 90%, 99%). Step 2 — Y-axis is linear, 0–120 years, starts at zero (no truncation). X-axis is year, 1816–2023. Step 3 — Series distinguished by color; legend on the right. Step 4 — In Line mode, programmatically moved the mouse onto the plot area at SVG x ≈ 718 (= 65 + (2000-1816)/(2023-1816) × 735), which the chart snapped to the nearest data year, 2000, and opened the tooltip listing all 11 series values. Tooltip header reads '2000'. Step 5 — Read the 50% row directly from the tooltip — no pixel interpolation needed. Step 6 — Pitfalls verified below.",
+  "confidence": 0.99,
+  "evidence": "Line-mode hover tooltip with header '2000' shows: Top 1% 100.6, 10% 93.7, 20% 90.4, 30% 87.7, 40% 85.1, 50% 82.4 years, 60% 79.2, 70% 75.0, 80% 69.1, 90% 58.9, 99% 24.6 years. The 50% row reads '82.4 years' exactly. Bar-mode reading from prior interaction at the same year (2000) gave the identical 82.4 figure.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/d853ee793fb4ca5c",
+    "browser_click '📈 Line' to ensure line mode",
+    "page.mouse.move to SVG coordinates (~718, 300) within the plot area → tooltip snapped to year 2000",
+    "browser_snapshot to read the 50% tooltip row (= 82.4 years)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear scale, starts at 0",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines, not stacked",
+    "Log scale: linear",
+    "Linked filter active: only filter is year (snapped to 2000), confirmed by tooltip header",
+    "Tooltip vs visual position: read numeric tooltip directly"
+  ],
+  "self_check": "Restated: the median (50th-percentile) survival age for a synthetic cohort under France's year-2000 age-specific mortality rates is 82.4 years. This sits between the 40% reading (85.1 years) and the 60% reading (79.2 years), preserving the expected monotonic ordering of survival shares. Confirmed identically by an independent Bar-mode reading at the same year in a prior step."
+}

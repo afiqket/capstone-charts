@@ -1,0 +1,21 @@
+{
+  "answer": "Trade was higher in 2000 (~192.3% of GDP) than in 2010 (~142.4% of GDP).",
+  "reasoning": "Step 1: Single-series line chart titled 'Malaysia's Total Trade with World, Percentage of GDP (%)'. Step 2: X-axis = years with 5-year ticks 1965-2015; Y-axis = Total Trade % of GDP, linear, range 0-200, starts at zero (no truncation), single y-axis. Step 3: One blue series; no stacking, size, or shape encoding. Step 4: Chart is static SVG - no <title> tooltips, filters, or linked views. Therefore I extracted the data line path's 'd' attribute and calibrated it against the y-axis tick group transforms. Tick anchors: y_pixel=500.5 -> value 0; y_pixel=30.5 -> value 200 (read programmatically this run, not hard-coded). Step 5: Path has 51 vertices = one per year 1965..2015. Year 2000 (index 35) -> 192.34%. Year 2010 (index 45) -> 142.36%. Step 6: All pitfalls re-verified.",
+  "confidence": 0.97,
+  "evidence": "Calibration read from SVG this run: tick (y=500.5,value=0), tick (y=30.5,value=200). Year 2000 data point y=48.51 -> (500.5-48.51)/470*200 = 192.34%. Year 2010 data point y=165.953 -> (500.5-165.953)/470*200 = 142.36%. 51 polyline vertices match 51 annual data points 1965-2015. 2000 > 2010 by ~49.97 percentage points.",
+  "interactions_performed": [
+    "browser_navigate to https://afiqket.github.io/capstone-charts/?chart=malaysia_total_trade_with_world",
+    "browser_evaluate to extract the data series path 'd' attribute (stroke=#1f77b4)",
+    "browser_evaluate to read y-axis tick group transforms programmatically",
+    "browser_evaluate to map index->year, invert pixel coordinates to data values, and select 2000 and 2010"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: NOT truncated (0 to 200)",
+    "Dual y-axes: only one y-axis present",
+    "Stacked vs grouped: single line series",
+    "Log scale: linear (evenly spaced 0,20,...,200)",
+    "Linked filter still active: none present",
+    "Tooltip differs from visual: no tooltips; values derived from path coordinates calibrated against axis tick anchors read live"
+  ],
+  "self_check": "Restated: Malaysia's total trade as % of GDP was approximately 192% in 2000 and approximately 142% in 2010. 192 > 142, so trade was higher in 2000. This is consistent across all three runs and with the chart's visible peak around 2000 followed by a decline that bottoms out and partially recovers by 2010."
+}

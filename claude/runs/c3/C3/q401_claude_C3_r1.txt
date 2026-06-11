@@ -1,0 +1,21 @@
+{
+  "answer": "The blue line represents PM₂.₅ — the annual emissions of fine particulate matter (particles less than 2.5 microns in diameter) from all human-induced sources in the United Kingdom, measured in tonnes per year from 1970 to 2016.",
+  "reasoning": "Step 1 (Chart Identification): Interactive line chart titled 'Emissions of particulate matter, United Kingdom, 1970 to 2016' with two series (PM₁₀ and PM₂.₅) and a Line/Bar mode toggle. Step 2 (Axes): X-axis = year (1970–2016, linear), Y-axis = emissions in tonnes (0 to 700,000, linear, starts at zero — no truncation). Step 3 (Legend/Encoding): Two color-encoded series labelled at the right end of each line: PM₁₀ (orange-brown, #b84c1a) and PM₂.₅ (blue, #4e79a7). The blue line is therefore the PM₂.₅ series. The chart's own subtitle defines the meaning: 'Annual emissions of particulate matter from all human-induced sources. This is measured in terms of PM₁₀ and PM₂.₅, which denotes particulate matter less than 10 and 2.5 microns in diameter, respectively.' Step 4 (Interactions): Navigated to the URL with Playwright, waited for render, captured the accessibility snapshot (which exposes the SVG legend labels and the underlying SERIES definition in the notebook source confirming PM₂.₅ → #4e79a7 blue), and hovered the PM₂.₅ legend label to confirm. Step 5 (Reading rules): Identification relies on the legend label co-located with the line end, not pixel estimation. Step 6 (Pitfalls): Y-axis not truncated; single y-axis (no dual axes); chart is a line chart (not stacked); linear (not log) scale; no filters active.",
+  "confidence": 0.99,
+  "evidence": "Legend label 'PM₂.₅' rendered at the right end of the blue line (snapshot ref f1e152). Subtitle text: 'measured in terms of PM₁₀ and PM₂.₅, which denotes particulate matter less than 10 and 2.5 microns in diameter, respectively.' Notebook source visible on the page defines: SERIES = [{ key: \"PM₁₀\", color: \"#b84c1a\" }, { key: \"PM₂.₅\", color: \"#4e79a7\" }] — #4e79a7 is the blue color, mapped to PM₂.₅. Title confirms entity (United Kingdom) and range (1970–2016); y-axis units are 'tonnes'.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/487752634c6a504f",
+    "browser_wait_for 3 seconds for render",
+    "browser_snapshot of the rendered page including the iframe content (exposed legend labels, axis ticks, subtitle, and underlying SERIES color definitions)",
+    "browser_hover over the 'PM₂.₅' legend label inside the chart iframe to confirm the blue line's identity"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0 tonnes)",
+    "Single y-axis only — no dual-axis ambiguity",
+    "Line chart, not stacked — each line is an independent series",
+    "Linear scale (not log)",
+    "No active filters or year-slider constraints in line mode (slider applies only to bar mode)",
+    "Legend label matches color of the line it sits next to (PM₂.₅ label is blue, adjacent to the blue line endpoint)"
+  ],
+  "self_check": "Restated: among the two lines in the chart, the blue one (#4e79a7) is the PM₂.₅ series — UK annual emissions of particulate matter ≤ 2.5 microns in diameter from all human-induced sources, in tonnes, 1970–2016. This is consistent with (a) the in-chart legend label 'PM₂.₅' positioned at the right end of the blue line, (b) the subtitle defining PM₂.₅ as particles < 2.5 microns, and (c) the SERIES color mapping in the notebook source. Consistent."
+}

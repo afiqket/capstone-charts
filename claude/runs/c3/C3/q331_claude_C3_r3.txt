@@ -1,0 +1,23 @@
+{
+  "answer": "Hovering over 2020 on the line chart produces two effects: (1) a vertical grey guide line appears at the year-2020 x-position, and (2) a tooltip pops up titled '2020' listing each of the nine plotted cities' population (in millions of people) for that year, sorted from largest to smallest. The captured tooltip rows are: Jakarta: 39.1 million, Tokyo: 33.7 million, Dhaka: 32.6 million, New Delhi: 29.1 million, Shanghai: 27.7 million, Cairo: 24.0 million, Karachi: 19.3 million, New York City: 14.0 million, Lahore: 14.0 million.",
+  "reasoning": "Step 1: The chart is the interactive line chart 'Number of people living in the world's largest cities' showing nine cities (Dhaka, Jakarta, Karachi, Cairo, New Delhi, Lahore, Shanghai, Tokyo, New York City) from 1950 to 2100 using JRC data. Step 2: Y axis is population (linear, 0–60 million, starts at zero — not truncated, 5-million tick spacing); X axis is year (linear, 1950–2100) with labelled ticks every 10 years. Step 3: Each city has its own coloured line, with city + country labels at the right edge. Step 4 (Interactive Elements Protocol): I reloaded the URL via Playwright, located the cross-origin iframe, and moved the mouse to viewport coordinate (535.17, 635.19) — inner-group x = 312.67 (year 2020) given chart group translate(70,100) and SVG anchored at (152.5, 335.19). The hover handler showed a vertical guide line at xScale(2020) and rendered a tooltip listing each city's value sorted by descending population. Step 5: Values come from the tooltip text emitted by the chart code — exact data values, not pixel estimates. Step 6: No '(proj.)' suffix on any tooltip row — 2020 lies in the historical-estimate region of this JRC chart.",
+  "confidence": 0.96,
+  "evidence": "After page.mouse.move(535.17, 635.19) — corresponding to inner-group x = 312.67 (year 2020) — the tooltip <g> became visible with transform=translate(394,279.8125) and held these texts in order: '2020', 'Jakarta: 39.1 million', 'Tokyo: 33.7 million', 'Dhaka: 32.6 million', 'New Delhi: 29.1 million', 'Shanghai: 27.7 million', 'Cairo: 24.0 million', 'Karachi: 19.3 million', 'New York City: 14.0 million', 'Lahore: 14.0 million'. The nine right-edge city/country labels (Dhaka/Bangladesh, Jakarta/Indonesia, Karachi/Pakistan, Cairo/Egypt, New Delhi/India, Lahore/Pakistan, Shanghai/China, Tokyo/Japan, New York City/United States) match the nine tooltip rows one-to-one. No row carries '(proj.)' — 2020 values are historical estimates.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2bc85c650c3a8152 (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "page.mouse.move(535.17, 635.19) using chart group translate(70,100) to trigger the chart's hover handler at year 2020",
+    "read tooltip <g> texts from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis (population in millions)",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (5-million tick spacing uniform)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: tooltip text read directly, not pixel-estimated",
+    "Estimate vs projection: no '(proj.)' suffix on any row — 2020 is in the historical-estimate region of this JRC chart"
+  ],
+  "self_check": "Restated: hovering at year 2020 reveals a vertical guide line at the 2020 x-position and a tooltip headed '2020' listing the 9 plotted cities' populations in descending order — Jakarta (39.1M), Tokyo (33.7M), Dhaka (32.6M), New Delhi (29.1M), Shanghai (27.7M), Cairo (24.0M), Karachi (19.3M), New York City (14.0M), Lahore (14.0M). Matches the captured DOM evidence (tooltip text), the nine cities labelled to the right of their lines, and reproduces r1 and r2 exactly. No '(proj.)' suffix → historical estimates."
+}

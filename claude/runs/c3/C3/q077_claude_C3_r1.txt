@@ -1,0 +1,20 @@
+{
+  "answer": "Read the map's color legend (the key at the bottom of the map). On the Map view the colour encoding is a LOGARITHMIC scale titled 'deaths per 100,000 people', with threshold break labels running 0 | <1 | 10 | 100 | 1,000 | 10,000 (plus a separate hatched 'No data' category). That legend IS the range of the death-rate numbers: it spans from 0 (lightest colour, the '<1' bucket) up to 10,000+ deaths per 100,000 people (darkest colour), on a log scale. To get the ACTUAL data range for a particular year, set the year with the slider, then hover over the shaded countries to read each country's exact tooltip value: the minimum is 0 (countries shaded the lightest / shown as 'No data') and the maximum is the value of the darkest-shaded country that year.",
+  "reasoning": "Step 1: Switched to the 'Map' view (choropleth of countries). Step 2-3: The map's encoding is colour, not position, so the 'range' is defined by the colour legend rather than an axis. I read the legend text and rect colours: a 6-bucket d3.scaleThreshold with break labels 0, <1, 10, 100, 1,000, 10,000, titled 'deaths per 100,000 people', i.e. a logarithmic colour scale (light green->orange->dark red). There is also a hatched 'No data' swatch. Step 4: The procedure to find the range is therefore (a) read the legend end labels for the full encoded scale (0 to 10,000 per 100,000), and (b) for the real data range in a given year, use the year slider then hover each country to read tooltip values, taking the smallest (0) and largest shaded value. Step 6: Noted the key pitfall - the MAP is a RATE (deaths per 100,000 people) on a LOG scale, which is different from the Line/Bar views that show absolute death counts; do not eyeball log-scale colours, hover for exact values.",
+  "confidence": 0.8,
+  "evidence": "Map legend labels in left-to-right order: 'No data' (x=-90, hatched swatch), then 0 (x=0), '<1' (x=70), '10' (x=140), '100' (x=210), '1,000' (x=280), '10,000' (x=350), with title 'deaths per 100,000 people'. Legend colour rects: #f0f5f0, #d4e8d0, #f5c49a, #e8835a, #c93d1a, #8b0d02 (6 buckets => threshold domain [1,10,100,1000,10000]). Title confirms log/threshold scale.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/65c10cfa93cada0a",
+    "Clicked the '🌍 Map' view button inside the chart iframe",
+    "browser_evaluate within the iframe to read the legend text labels, their x-positions, and the legend colour-bucket rects",
+    "Inspected the year slider (1989-2024) and per-country hover tooltips available for reading exact values"
+  ],
+  "pitfalls_checked": [
+    "Log scale active: the map colour scale is logarithmic - read exact values via hover rather than eyeballing colour differences",
+    "Units differ across views: the map is a RATE ('deaths per 100,000 people'), whereas Line/Bar are absolute death counts",
+    "Tooltip over pixel/colour estimation: the legend gives the encoded range; hovering countries gives the actual min/max",
+    "Year dependence: the data range depends on the selected year, so set the slider before reading min/max",
+    "Separate 'No data' category exists and is not part of the numeric 0-10,000 range"
+  ],
+  "self_check": "Restated: the way to find the range on the map is to consult its colour key, which is a logarithmic 'deaths per 100,000 people' scale labelled from 0 (and '<1') up to 10,000; for a concrete year's range you set the slider and hover countries to read the lowest (0) and highest values. This is consistent with the captured legend labels and colour buckets and with the source's scaleThreshold domain [1,10,100,1000,10000]."
+}

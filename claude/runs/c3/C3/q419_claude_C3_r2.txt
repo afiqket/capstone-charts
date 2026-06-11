@@ -1,0 +1,20 @@
+{
+  "answer": "South America. Across the countries shown for each region, South America's adult smoking-share fell on average by ≈15.6 percentage points from 2000 to 2022 (from ~30.1% in 2000 to ~14.5% in 2022) — the largest mean decrease of any region. Oceania (≈11.8 pp), Europe (≈10.5 pp), Asia (≈10.2 pp), Africa (≈9.9 pp) and North America (≈7.4 pp) all fell less.",
+  "reasoning": "Step 1: Identified the chart as a scatter plot titled 'Share of adults who smoke in 2000 vs. 2022'. X-axis = 2022 share (0–70%), Y-axis = 2000 share (0–70%). Each dot is a country, coloured by region (six legend entries: North America, South America, Africa, Europe, Asia, Oceania). Countries above the y=x diagonal saw a decrease (2000 > 2022). Step 2: Both axes linear, starting at 0%, no log/truncation/dual axes. Step 3: Used Playwright to map each legend label to its region colour by matching legend rect fills to label positions: North America #e8714a, South America #8b1a1a, Africa #9b4dca, Europe #4472c4, Asia #2e8b6e, Oceania #4ec9c9. Step 4: From the chart's tick positions, recovered the linear axis scales: x maps cx∈[0,660] → 0–70%, y maps cy∈[400,0] → 0–70%. Step 5: Iterated all 165 dot circles in the SVG, classified each by fill colour into a region, computed (2000 − 2022) percentage-point change per dot, then averaged within each region. Step 6: Compared per-region mean decreases — South America led at 15.62 pp, well ahead of Oceania (11.83), Europe (10.51), Asia (10.18), Africa (9.86), and North America (7.41).",
+  "confidence": 0.9,
+  "evidence": "Per-region statistics computed from all rendered scatter dots (n=165 total):\n• South America — n=10, mean 2000 = 30.11%, mean 2022 = 14.49%, mean decrease = 15.62 pp  ← largest\n• Oceania       — n=13, mean 2000 = 40.98%, mean 2022 = 29.15%, mean decrease = 11.83 pp\n• Europe        — n=40, mean 2000 = 37.59%, mean 2022 = 27.08%, mean decrease = 10.51 pp\n• Asia          — n=44, mean 2000 = 32.57%, mean 2022 = 22.39%, mean decrease = 10.18 pp\n• Africa        — n=42, mean 2000 = 22.24%, mean 2022 = 12.38%, mean decrease =  9.86 pp\n• North America — n=16, mean 2000 = 18.97%, mean 2022 = 11.56%, mean decrease =  7.41 pp",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/8f928d4d65b3c4ec",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect chart structure (scatter, 6-region legend, axes 0–70%)",
+    "browser_evaluate inside the iframe to loop all 165 dot circles, classify each by fill colour into a region, recover each country's (2000, 2022) values from cx/cy, and aggregate the mean decrease by region"
+  ],
+  "pitfalls_checked": [
+    "Both axes start at 0 and are linear (no truncation, no log, no dual axes)",
+    "Axes share the same units (%), so the subtraction 2000 − 2022 is in percentage points",
+    "Mapped legend colours to region names by exact hex/rgb equality",
+    "Counted 165 distinct dots and classified each by its fill colour — all six regions covered",
+    "Reported the answer as 'pp' (percentage points) since both axes are shares of adults"
+  ],
+  "self_check": "Restated: South America's countries cluster well above the diagonal — their 2000 values average ~30% and their 2022 values ~14.5%, a drop of ~15.6 percentage points. No other region's mean decrease reaches 12 pp. The ranking is well-separated (≥3.5 pp gap between South America and the runner-up Oceania), so the answer is robust to small classification noise."
+}

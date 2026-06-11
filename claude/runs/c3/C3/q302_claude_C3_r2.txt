@@ -1,0 +1,25 @@
+{
+  "answer": "Approximately 26.51 years. Averaging the 'All' series across the 30 mother-birth cohorts the chart provides for the United States between 1918 and 1973 gives an unweighted mean of 26.51 years (sum 795.23 ÷ 30). Cohort values range 24.63 (1940 cohort) to 27.88 (1918 cohort). Caveat: this chart's x-axis is mother's birth year (cohort), not childbirth year; data points are every 2 years from 1918 to 1970 plus annual points 1971, 1972, 1973 (30 unique cohort points).",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by mother's birth year, United States' with 6 series (1st, 2nd, 3rd, 4th, 5th-or-higher births, plus All). X-axis = mother's birth year, 1918–1973. Step 2 — Linear y-axis 20–35 years (truncated below 20); linear x-axis. Step 3 — Series color-coded with right-edge end labels; 'All' is the orange highlighted line. Step 4 — In Line mode, programmatically hovered at every integer year from 1918 to 1973 inside the plot, recording the tooltip's snapped-year header plus the 'All:' value, deduplicating to find the unique data years the chart actually carries. Result: 30 unique cohort points. Step 5 — Read tooltip values directly (no pixel estimation) and computed the unweighted mean. Step 6 — Pitfalls verified.",
+  "confidence": 0.9,
+  "evidence": "All-series values per unique cohort: 1918→27.88, 1920→27.80, 1922→27.55, 1924→27.35, 1926→27.02, 1928→26.63, 1930→26.27, 1932→25.80, 1934→25.41, 1936→25.06, 1938→24.75, 1940→24.63, 1942→24.71, 1944→24.87, 1946→25.20, 1948→25.52, 1950→25.91, 1952→26.28, 1954→26.52, 1956→26.68, 1958→26.87, 1960→27.01, 1962→27.19, 1964→27.33, 1966→27.43, 1968→27.53, 1970→27.55, 1971→27.52, 1972→27.48, 1973→27.48. Sum 795.23, count 30, mean ≈ 26.5077 → 26.51 years. Min 24.63 (1940), max 27.88 (1918). Alternative integer-calendar-year weighting (carrying values across odd years) yields 26.44 — same at one-decimal precision.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/f23cbe05933d7078",
+    "browser_click '📈 Line' to ensure Line mode",
+    "page.mouse.move scripted across every integer year 1918–1973 inside the plot, reading tooltip header + 'All:' row at each position",
+    "browser_run_code_unsafe to compute sum/mean/min/max of captured 'All' cohort values",
+    "browser_click '📊 Bar' + slider click sample at 1918, 1940-area, 1960-area, 1973 to corroborate that the data has the cohort points identified above"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: 20–35 — irrelevant because tooltip prints numeric values",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines",
+    "Log scale: linear",
+    "Linked filter still active: each hover snapped to a single year (confirmed via tooltip header)",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart hard-coded to United States",
+    "Data resolution: cohort points are biennial 1918–1970 plus annual 1971–1973 (30 points, not 56) — deduplicated via tooltip header to avoid double-counting",
+    "Series scope: 'All' is the chart's own combined-births orange series, not a derived mean of the per-order lines"
+  ],
+  "self_check": "Restated: averaging the United States 'All-births' maternal-age series across every cohort point provided by the chart for mothers born 1918–1973 yields ≈26.51 years (30 cohorts, sum 795.23). The mean sits roughly midway between min (24.63, 1940 cohort) and max (27.88, 1918 cohort), reflecting the U-shape of the curve which dips for mothers born around 1940 and recovers toward ~27.5 for late-1960s/early-1970s cohorts. Calendar-year-weighted alternative averaging (26.44) yields the same one-decimal answer (~26.5)."
+}

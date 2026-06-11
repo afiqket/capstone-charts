@@ -1,0 +1,25 @@
+{
+  "answer": "How to get it: hover the cursor over the line chart at the midpoint between the labelled 2030 and 2040 ticks on the x-axis — the hover handler snaps to year 2035. A vertical guide line appears at 2035 and a tooltip opens titled '2035' listing every plotted city's projected population that year, sorted from largest to smallest. The New Delhi row reads 'New Delhi: 32.2 million (proj.)' — the '(proj.)' marker confirms the value is a JRC projection. Equivalent visual method: follow New Delhi's coloured line into the dashed projection segment to its 2035 x-position and read its y-position against the 5-million gridlines (between 30 and 35 million). Answer: New Delhi's projected population in 2035 is ≈ 32.2 million.",
+  "reasoning": "Step 1: Chart is the interactive line chart 'Number of people living in the world's largest cities' for nine cities (Dhaka, Jakarta, Karachi, Cairo, New Delhi, Lahore, Shanghai, Tokyo, New York City) over 1950–2100, JRC data. Step 2: Y axis is population (linear, 0–60 million, starts at zero — not truncated, 5-million tick spacing); X axis is year (linear, 1950–2100) with labelled ticks every 10 years. Step 3: Each city has its own coloured line, with city + country labels at the right edge. Solid line segments are historical JRC estimates and dashed segments are JRC projections, separated by a vertical divider. Step 4 (Interactive Elements Protocol): I reloaded the URL via Playwright, located the cross-origin iframe, computed inner-group x for year 2035 by linear interpolation between labelled 2030 (x=357.33) and 2040 (x=402) ticks → x_inner(2035) = 379.67, and moved the mouse to viewport coordinate (602.17, 635.19) (chart group translate(70,100), SVG anchored at (152.5, 335.19)). The hover handler showed a vertical guide line at xScale(2035) and rendered the tooltip with rows sorted by descending population, each row including '(proj.)' because 2035 lies in the projection region. Step 5: Values come from the tooltip text — exact data values, not pixel-estimated. Step 6: 2035 is past the JRC estimate/projection divider, so the New Delhi value carries '(proj.)' — confirming the question's premise that it is a projection.",
+  "confidence": 0.97,
+  "evidence": "After page.mouse.move(602.17, 635.19) — corresponding to inner-group x = 379.67 (year 2035) — the tooltip <g> became visible with transform=translate(461,279.8125) and held these texts in order: '2035', 'Jakarta: 47.0 million (proj.)', 'Dhaka: 44.4 million (proj.)', 'Shanghai: 32.6 million (proj.)', 'Tokyo: 32.5 million (proj.)', 'New Delhi: 32.2 million (proj.)', 'Cairo: 28.7 million (proj.)', 'Karachi: 25.9 million (proj.)', 'Lahore: 17.4 million (proj.)', 'New York City: 13.7 million (proj.)'. Every row carries the '(proj.)' marker. New Delhi sits 5th at 32.2 million, clustered with Shanghai (32.6) and Tokyo (32.5).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2bc85c650c3a8152 (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "computed inner-group x_inner(2035) = 379.67 by linear interpolation between labelled 2030 (x=357.33) and 2040 (x=402) ticks",
+    "page.mouse.move(602.17, 635.19) using chart group translate(70,100) to trigger the chart's hover handler at year 2035",
+    "read tooltip <g> texts from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis (population in millions)",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear y scale (5-million tick spacing uniform)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: tooltip text read directly, not pixel-estimated",
+    "Estimate vs projection: '(proj.)' tag confirms New Delhi's 32.2 million in 2035 is a projection, not a historical estimate",
+    "Units: confirmed value is absolute population (millions of people), not density"
+  ],
+  "self_check": "Restated: to obtain New Delhi's projected 2035 population, hover the line chart at the midpoint between the 2030 and 2040 x-axis ticks — the tooltip reports 'New Delhi: 32.2 million (proj.)'. The '(proj.)' marker confirms it is a projection. 32.2 million places New Delhi just below Shanghai (32.6) and Tokyo (32.5) and above Cairo (28.7), sitting between the 30- and 35-million gridlines on the y-axis. Reproduces r1 and r2 exactly."
+}

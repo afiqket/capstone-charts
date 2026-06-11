@@ -1,0 +1,23 @@
+{
+  "answer": "Hovering over South Korea on the map produces two effects: (a) the country's border is highlighted — its stroke changes from a thin white outline (#fff, width 0.4) to a thick dark outline (#333, width 1.5) and the path is raised above its neighbors, and (b) a tooltip card pops up next to the cursor showing 'South Korea — Change in male height, 1896 → 1996 — 9.49%'.",
+  "reasoning": "Step 1 — Chart is an interactive choropleth world map titled 'Relative increase in mean heights of men born in 1996 vs. 1896', with a Map/Bar toggle; Map mode is active by default. Step 2 — No conventional axes; the encoding is a sequential color legend running 0%→12%. Step 3 — Color encodes the relative percentage change in mean male height between 1896 and 1996 birth-year cohorts. Step 4 — Interactive elements protocol: located South Korea's SVG path inside the chart iframe via datum.id === '410' (KOR ISO numeric code); captured the path's stroke attributes before hover; dispatched a synthetic mousemove MouseEvent at the geometric center of South Korea's polygon to invoke the chart's mousemove handler; then re-captured the path attributes and read the tooltip SVG group's text. Step 5 — Read DOM state directly. Before hover: stroke='#fff', stroke-width='0.4'. After hover: stroke='#333', stroke-width='1.5' and the tooltip group (previously display:none) became visible with three lines — 'South Korea', 'Change in male height, 1896 → 1996', '9.49%' — positioned at transform translate(445, 147.9) inside the SVG (offset from the cursor). Step 6 — Pitfalls checked: no axis truncation, no dual axes, no stacked bars, no log scale, Map mode active.",
+  "confidence": 0.98,
+  "evidence": "Before mousemove: South Korea path attrs stroke='#fff', stroke-width='0.4'. After mousemove dispatched at center of path bounding rect (≈ x=727, y=274 viewport coords): stroke='#333', stroke-width='1.5'. Tooltip group displayed at translate(445,147.90625) with text content ['South Korea', 'Change in male height, 1896 → 1996', '9.49%']. South Korea path fill rgb(19,99,121); bounding rect ≈ (x=723, y=269, w=9, h=11).",
+  "interactions_performed": [
+    "Playwright navigate to https://observablehq.com/d/08a3126ef4627c80",
+    "Waited ~3s for the chart iframe to render",
+    "Located South Korea's SVG path inside the iframe via datum.id === '410'",
+    "Captured stroke/stroke-width on the South Korea path before hover",
+    "Dispatched a synthetic mousemove MouseEvent at the center of South Korea's path",
+    "Captured stroke/stroke-width on the path after hover and read the tooltip group's text and position"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: N/A (no y-axis on a map)",
+    "Dual y-axes: N/A (map)",
+    "Stacked vs grouped bars: N/A (Map mode active)",
+    "Log scale active: No — linear sequential color scale 0–12%",
+    "Linked filter still active: No filters in Map view",
+    "Tooltip value differs from visual position: Used tooltip text ('9.49%') over color/pixel estimation"
+  ],
+  "self_check": "Restated differently: putting the cursor on South Korea outlines it with a dark border (visual highlight) and pops up a small card naming the country, describing the metric ('Change in male height, 1896 → 1996'), and showing the value 9.49%. Both observations are anchored in DOM evidence — the stroke attribute change (#fff/0.4 → #333/1.5) and the now-visible tooltip group containing the three text lines."
+}

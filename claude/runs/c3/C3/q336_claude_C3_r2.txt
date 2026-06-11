@@ -1,0 +1,24 @@
+{
+  "answer": "Method: hover the cursor over the line chart at the 2010 tick on the x-axis. A vertical grey guide line appears and a tooltip pops up titled '2010' listing each plotted city's population that year, sorted from largest to smallest. The Istanbul row shows 'Istanbul: 12.58 million' with no '(proj.)' suffix, indicating an historical estimate rather than a UN projection (2010 lies before the dashed 2015 estimate/projection divider). Alternative method: click the '📊 Bar' toggle at the top of the chart and drag the year slider to 2010 — Istanbul's bar will read the same value. Answer: Istanbul's population in 2010 was ≈ 12.58 million.",
+  "reasoning": "Step 1: Chart is the interactive line chart 'Population of the world's largest cities, 1950 to 2035' (also offers Bar mode and a year slider). Step 2: Y axis is population (linear, 0–50 million, starts at zero — not truncated); X axis is year (linear, 1950–2035) with labelled ticks at 1950, 1960, …, 2010, 2020, 2035. Step 3: Each city has its own color; solid line = historical estimate, dashed line = UN projection (post-2015), separated by a dashed vertical divider at 2015. Step 4 (Interactive Elements Protocol): I reloaded the URL via Playwright, located the cross-origin iframe, read the SVG x-axis label positions to confirm the 2010 tick lies at inner-group x = 465.88, and moved the mouse to the corresponding viewport coordinate (688.38, 625.19) over the chart's transparent hover rect. The mousemove handler snaps to the nearest 5-year tick (Math.round(xScale.invert(mx)/5)*5 → 2010), makes hoverLine visible at xScale(2010), and renders the tooltip with rows sorted by descending value. Step 5: Values are read from tooltip text emitted by fmtPop = d3.format('.2f')(v/1e6)+' million' (exact data, not pixel estimates). Step 6: 2010 < 2015, so all rows are historical estimates and carry no '(proj.)' marker.",
+  "confidence": 0.98,
+  "evidence": "After page.mouse.move(688.38, 625.19) — mapping to inner-group x=465.8823529411765 (the 2010 tick) — the tooltip <g> became visible with transform=translate(547,269.8125) and held these exact rows in order: '2010', 'Tokyo: 36.86 million', 'Delhi: 21.99 million', 'New York-Newark: 18.37 million', 'Mumbai (Bombay): 18.26 million', 'Dhaka: 14.73 million', 'Istanbul: 12.58 million', 'Paris: 10.46 million', 'Lagos: 10.44 million'. The vertical hoverLine became visible at x1=x2=465.8823529411765 (stroke '#999'). No row carries '(proj.)', confirming the 2010 values are historical estimates.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2414ee1335c8187d (fresh load)",
+    "waited ~3.5s for chart render",
+    "accessed cross-origin iframe via page.frame({url:/observableusercontent/})",
+    "queried SVG x-axis text labels to confirm 2010 lies at inner-group x=465.88",
+    "page.mouse.move(688.38, 625.19) to trigger the chart's mousemove handler at year 2010",
+    "read tooltip <g> texts and hover <line> attributes from the iframe DOM"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis only",
+    "Stacked vs grouped bars: not applicable (line chart mode)",
+    "Log scale active: linear y scale (10-million ticks uniformly spaced)",
+    "Linked filter still active: no filters applied",
+    "Tooltip vs visual position: read tooltip text directly, not pixel estimation",
+    "Estimate vs projection: 2010 < 2015 divider — Istanbul value is an historical estimate, not a projection"
+  ],
+  "self_check": "Restated: hover the line chart at year 2010 (or use Bar mode + slider at 2010) to read the Istanbul value from the tooltip / bar. Tooltip captured 'Istanbul: 12.58 million' with no '(proj.)' tag and a visible vertical guide at x=465.88 (2010 tick). The reading is consistent with Istanbul's color-coded line passing slightly above the 10-million gridline in 2010 and reproduces r1 exactly."
+}

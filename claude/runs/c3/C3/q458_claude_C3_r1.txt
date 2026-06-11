@@ -1,0 +1,20 @@
+{
+  "answer": "South Asia. In 2014 it had the most terrorist attacks of any world region — about 3,039 attacks — ahead of the Middle East & North Africa (~2,175) and Sub-Saharan Africa (~1,944).",
+  "reasoning": "Step 1 (Chart Identification): interactive stacked-area chart, 'Terrorist attacks by region, 1992 to 2021', with one colored band per world region (11 regions), a year slider/▶ play control, and a hover interaction that drives a legend showing each region's value for the selected year. Step 2 (Axes): X = year (1992–2021, linear ~21.9 px/year: 2010 at x≈394, 2015 at x≈503, so 2014 ≈ x≈482); Y = number of attacks (0–18,000). Step 4 (Interactive Elements): I hovered the chart at the x-position for 2014; the chart drew a '2014' cursor label on the time axis (confirming the year) and the side legend updated to list each region's attack count for 2014. Step 5 (Data Reading): I read the legend's region→value pairs (the chart's own values, not pixel estimates) and ranked them. South Asia (3,039) was clearly the largest, well above the next region (MENA, 2,175).",
+  "confidence": 0.93,
+  "evidence": "At the 2014 cursor position (axis showed a '2014' label), the legend values were: South Asia 3,039; Middle East & North Africa 2,175; Sub-Saharan Africa ~1,944; Southeast Asia 715; South America 276; North America 108; Eastern Europe 44; East Asia 18; Central America & Caribbean 15; Australasia & Oceania 5; Central Asia 3. Maximum = South Asia (3,039), ~864 above the runner-up (MENA). Adjacent-year check: at 2015 South Asia rose to ~3,418 while MENA fell to ~1,802, so the values are year-specific (not stale).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/6fd5aaffc7020a16 and waited for the chart iframe to render",
+    "Mapped the year x-scale from the axis ticks (1992→2021 linear) and computed the 2014 x-position",
+    "Hovered the plot at the 2014 x-position, confirming the '2014' cursor label on the time axis",
+    "Read the legend's per-region attack counts for 2014 and ranked them to find the maximum",
+    "Cross-checked adjacent years (2015) to confirm the values are year-specific"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the read corresponds to 2014 via the cursor's '2014' axis label (and axis math placing 2014 at x≈482)",
+    "Used the legend's exact per-region values rather than estimating band thickness from pixels",
+    "Distinguished per-region values from the cumulative stack total (read individual region counts)",
+    "Verified the maximum is clearly separated (South Asia 3,039 vs MENA 2,175), so the answer is unambiguous"
+  ],
+  "self_check": "Restated: among the 11 regions, the one with the highest 2014 attack count is South Asia (~3,039), exceeding MENA (~2,175) and Sub-Saharan Africa (~1,944). The legend values read at the confirmed 2014 cursor position support this ranking, so South Asia is the answer."
+}

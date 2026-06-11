@@ -1,0 +1,25 @@
+{
+  "answer": "Hovering over 2020 on the line chart displays a vertical guide line at the year 2020 and a tooltip titled '2020' listing the projected population of each city in that year, sorted from largest to smallest, each marked '(proj.)' because 2020 lies in the UN projection region (post-2015). The eight cities and values shown are: Tokyo 37.39 million (proj.), Delhi 30.29 million (proj.), Dhaka 21.01 million (proj.), Mumbai (Bombay) 20.41 million (proj.), New York-Newark 18.80 million (proj.), Istanbul 15.19 million (proj.), Lagos 14.37 million (proj.), Paris 11.02 million (proj.).",
+  "reasoning": "Step 1: The chart is the interactive line chart 'Population of the world's largest cities, 1950 to 2035' with eight series (Istanbul, Mumbai (Bombay), New York-Newark, Tokyo, Lagos, Dhaka, Delhi, Paris). Step 2: X axis is year (1950–2035, linear); Y axis is population (0–50 million, linear, starts at zero). Step 3: Each city is color-encoded; solid line = estimate, dashed line = UN projection (post-2015), with a dashed vertical divider at 2015. Step 4 (Interactive Elements Protocol): I navigated to the URL with Playwright and moved the mouse onto the plot area directly above the 2020 tick. The chart code (mousemove handler on the transparent overlay rect) snaps to the nearest 5-year value via Math.round(xScale.invert(mx)/5)*5, so the snapped year is 2020. The handler then (a) shows a vertical hoverLine at xScale(2020) and (b) calls showTooltip(2020, items, sx, sy) where items are each city's data point at year 2020 sorted by descending value. Step 5: I read the rendered tooltip's text content directly from the SVG (not pixel-estimated), capturing the exact strings the tooltip prints via the fmtPop helper (d3.format('.2f')(v/1e6)+' million'). Step 6: 2020 is past the 2015 projection divider, so all values are projected, hence the '(proj.)' suffix added by the tooltip code when item.proj is true.",
+  "confidence": 0.97,
+  "evidence": "Tooltip DOM read at mouse position (766, 600) after hovering on the chart area above the 2020 tick. Tooltip group transform=translate(625,244.8125); title text='2020'; rows in order: 'Tokyo: 37.39 million (proj.)', 'Delhi: 30.29 million (proj.)', 'Dhaka: 21.01 million (proj.)', 'Mumbai (Bombay): 20.41 million (proj.)', 'New York-Newark: 18.80 million (proj.)', 'Istanbul: 15.19 million (proj.)', 'Lagos: 14.37 million (proj.)', 'Paris: 11.02 million (proj.)'. A vertical hoverLine was also revealed at xScale(2020)=543.53 in chart-group coordinates.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/2414ee1335c8187d",
+    "waited 3s for chart to render",
+    "browser_snapshot with bounding boxes to locate plot area and 2020 tick",
+    "located cross-origin iframe (data-fyp.static.observableusercontent.com) containing the SVG",
+    "queried SVG circles and x-axis text to confirm xScale: 2020 → cx=543.529 within the inner chart group (translate 70,90)",
+    "page.mouse.move(766, 600) over the chart's transparent hover rect to trigger the mousemove handler at year 2020",
+    "read tooltip <g> contents (title + 8 city rows) from the iframe DOM after the hover"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: y-axis starts at 0 (not truncated)",
+    "Dual y-axes: single y-axis only",
+    "Stacked vs grouped bars: not applicable (line chart)",
+    "Log scale active: linear scale (verified via even 10-million tick spacing)",
+    "Linked filter still active: no filters were applied; default full range used",
+    "Tooltip value vs visual position: used tooltip text values, not pixel estimation",
+    "Estimate vs projection: 2020 is past the dashed 2015 divider, so all values are flagged '(proj.)' by the tooltip code (item.proj true)"
+  ],
+  "self_check": "Restated: hovering at year 2020 causes the chart to (1) draw a vertical guide line at 2020 and (2) pop up a tooltip headed '2020' that lists each of the 8 plotted cities with its UN-projected population, sorted descending: Tokyo (37.39M), Delhi (30.29M), Dhaka (21.01M), Mumbai (Bombay) (20.41M), New York-Newark (18.80M), Istanbul (15.19M), Lagos (14.37M), Paris (11.02M), each marked '(proj.)'. This matches the captured DOM evidence exactly and is consistent with the source-code behavior of the mousemove handler (year snapped to nearest 5; items sorted by b.val − a.val; '(proj.)' suffix when item.proj is true)."
+}

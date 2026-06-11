@@ -1,0 +1,21 @@
+{
+  "answer": "When you hover the line chart near France, 1900, a floating tooltip appears next to the cursor. The tooltip has a year heading and one colored row per series with values to one decimal place. For 1900 it reads: 'France, 1900' (title) then 'Period life expectancy: 45.1 years' (in the red Period color) and 'Cohort life expectancy: 51.9 years' (in the blue Cohort color). The tooltip is a rounded white box with a soft drop-shadow that is repositioned to stay inside the chart. The rest of the chart — title, axes, gridlines, the two line series, and the year-range slider — does not change. The tooltip is hidden again when the mouse leaves the plot area.",
+  "reasoning": "Step 1 (Identification): Line chart 'Period versus cohort life expectancy, France' with two series (Period red, Cohort blue), data spanning 1816–2023. Step 2 (Axes): linear Y-axis in years (truncated to ≈28–84 with 2-year gridlines); X-axis year. Step 3 (Encoding): color encodes series. Step 4 (Interactions): In Line mode the chart attaches an invisible rect over the plot area whose `mousemove` handler reads pointer x via `d3.pointer`, computes `yearHov = Math.round(xScale.invert(mx))`, snaps to the closest data year via `visYears.reduce(...)`, and calls `showTooltip(year, items, sx, sy)` with items {label, color, value} per series. `showTooltip` writes the country/year title ('France, <year>') and one colored text row per series, each formatted via d3 `.1f` plus the suffix ' years'. The tooltip background is a rounded rect with stroke and drop-shadow filter, positioned to the right of the cursor unless that would overflow the SVG (then flipped left). On `mouseleave`, `hideTooltip` hides the tooltip group. I verified empirically by hovering at the year-1900 x-position; the tooltip showed 'France, 1900' / 'Period life expectancy: 45.1 years' / 'Cohort life expectancy: 51.9 years'. There is no vertical guide-line or marker-dot in this chart's hover (just the tooltip). The tooltip snaps to the nearest data year, so hovering between years still shows a specific year's values. Step 5/6: not data-reading specific; the only pitfall is the truncated Y-axis which affects visual line height but not the tooltip values.",
+  "confidence": 0.99,
+  "evidence": "Empirically: hovering at viewport (≈477.1, 605) — the calculated position for year 1900 — caused the SVG to render tooltip text 'France, 1900' followed by 'Period life expectancy: 45.1 years' and 'Cohort life expectancy: 51.9 years'. No other chart elements changed during the hover.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/cc6add73dd00fe92",
+    "Confirmed the chart was in Line mode and the year range slider spans 1816–2023",
+    "Computed viewport x for year 1900 from the SVG geometry (≈477.1) and hovered using page.mouse.move at (≈477.1, 605)",
+    "Read svg text inside the iframe to capture the tooltip content"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — affects visual height comparison but not the tooltip's numeric values",
+    "Dual y-axes — none (single linear Y-axis)",
+    "Stacked vs grouped — independent line series; tooltip values are direct per-series numbers",
+    "Log scale — linear",
+    "Snapping — the tooltip snaps to the closest data year, not the exact mouse x",
+    "Projection vs historical — not applicable for this chart"
+  ],
+  "self_check": "Re-stated: Hovering near France, 1900 on the line chart triggers a tooltip showing 'France, 1900' and the values 'Period life expectancy: 45.1 years' and 'Cohort life expectancy: 51.9 years' in their respective series colors. The lines, axes, and other chart elements remain unchanged; the tooltip disappears on mouseleave. Verified empirically. Answer consistent with evidence."
+}

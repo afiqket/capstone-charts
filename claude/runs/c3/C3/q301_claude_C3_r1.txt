@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering over the 2023 point in the line chart triggers two coordinated responses: (1) a thin grey vertical guide line is drawn across the full plot height at the x-position corresponding to year 2023; (2) a tooltip card appears next to the cursor with a bold header 'United States, 2023' (the chart is hard-coded to the US) followed by one row per series, each rendered in that series' color (the 'All' row in bold orange), listing the value to two decimals with a 'years' suffix. The six rows shown at 2023 are: '5th birth or higher: 34.45 years', '4th birth: 32.66 years', '3rd birth: 31.57 years', '2nd birth: 30.35 years', 'All: 29.96 years', '1st birth: 27.85 years'. There are no per-series hover dots in this chart's line view — only the vertical guide line plus the tooltip card. Moving the cursor off the plot hides both.",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by birth order', United States, 1933–2023, 6 series (1st/2nd/3rd/4th/5th-or-higher births + All). Step 2 — Line view: linear y-axis 20–35 years (truncated); linear x-axis 1933–2023. Step 3 — 6 color-coded series with right-edge end labels. Step 4 — Used Line mode, moved cursor to SVG x ≈ 728 (the x-position for year 2023; xScale = 55 + (2023-1933)/(2023-1933) × 675 = 730, clamped one pixel inside the rect). The chart's mousemove handler converts the pointer x to the nearest data year (2023), shows a vertical hover line, and opens the tooltip with header 'United States, 2023' and all six series rows. Step 5 — Read tooltip text directly. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "After mouse.move to viewport coordinates corresponding to SVG (728, 250), the tooltip (ref f3e95) appears at box (524, 375, 210, 128). Its header (ref f3e97) reads 'United States, 2023'. Subsequent rows read '5th birth or higher: 34.45 years' (f3e98), '4th birth: 32.66 years' (f3e99), '3rd birth: 31.57 years' (f3e100), '2nd birth: 30.35 years' (f3e101), 'All: 29.96 years' (f3e102), '1st birth: 27.85 years' (f3e103). Values descend monotonically from 5th to 1st (with 'All' between 2nd and 1st), consistent with maternal age increasing with birth order.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/4140584c22b75a8b",
+    "browser_click '📈 Line' to ensure Line mode",
+    "page.mouse.move to viewport coordinates corresponding to SVG (~728, 250) inside the plot area — snaps to year 2023",
+    "browser_snapshot to capture the tooltip header and all six series rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, range 20–35 (truncated below 20) — irrelevant because values are read from the numeric tooltip, not pixels",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: hover snap year is 2023, confirmed by tooltip header 'United States, 2023'",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart is hard-coded to United States — tooltip header reflects this"
+  ],
+  "self_check": "Restated: pointing the cursor at year 2023 on the line chart locks the chart to that data column, drops a vertical guide line at x = 2023, and opens a tooltip card listing every series' value for that year. The values from the tooltip — 1st 27.85, All 29.96, 2nd 30.35, 3rd 31.57, 4th 32.66, 5th+ 34.45 — match exactly the Bar-mode values for 2023 read in earlier interactions, supporting that the hover read is correct."
+}

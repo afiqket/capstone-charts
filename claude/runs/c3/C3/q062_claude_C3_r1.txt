@@ -1,0 +1,19 @@
+{
+  "answer": "Use the Map view's year slider plus hover: (1) drag the year slider (under the map) to the year you want — the map title updates to show that year (e.g. 'Share of people in range of 4G mobile network, 2018'); (2) move your mouse over the country on the map — a tooltip pops up showing the country name, the year, and the exact 4G-coverage percentage. For example, with the slider set to 2018, hovering Germany shows 'Germany — 2018 — 98.2%'. Alternatively, switch to the '📈 Line' or '📊 Bar' view and hover the data point/bar for that country and year to read the same exact value. Reading the tooltip is the reliable way to get the precise number rather than estimating from the map's color.",
+  "reasoning": "Step 1 (Chart Identification): '4G network' dashboard ('Share of people in range of 4G mobile network'), choropleth Map view with a year slider + ▶ play, plus Line/Slope/Bar views. Step 2/3 (Encoding): Map color = % coverage; legend 0–100%. Step 4 (Interactive Protocol): To retrieve an exact country-year value I (a) dragged the year slider so the title showed the target year, then (b) hovered the country to surface its tooltip. Step 5: Read the exact value from the tooltip rather than the color. Demonstrated: at 2018, Germany's tooltip = 98.2%. Step 6 (Pitfalls): The map defaults to 2012 (before 4G data starts ~2015), so you must move the slider to a year that has data; the tooltip explicitly states the year, confirming which year the value belongs to.",
+  "confidence": 0.94,
+  "evidence": "Map title after setting slider: 'Share of people in range of 4G mobile network, 2018'. Germany hover tooltip: 'Germany | 2018 | 98.2%'. The map has a draggable year-slider handle (cursor ew-resize) and a ▶ play button; view buttons: 🌍 Map / 📈 Line / ↗ Slope / 📊 Bar. Legend 0%–100%.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/c796dd26baa3c4f8 and waited for render (Map view)",
+    "Located the year-slider handle and dragged it to advance the year (title updated to 2018)",
+    "Hovered a specific country (Germany) on the map",
+    "Read the tooltip showing country, year, and exact 4G coverage % (Germany 2018 = 98.2%)"
+  ],
+  "pitfalls_checked": [
+    "Set the year via the slider first (map defaults to 2012, before 4G data begins ~2015)",
+    "Confirmed the tooltip states the year, so the value is unambiguously tied to country + year",
+    "Read the tooltip value rather than estimating from map color",
+    "Noted alternative routes (Line/Bar views) give the same per-point exact value"
+  ],
+  "self_check": "Restated: pick the year with the slider (title confirms it), then hover the country to read its exact % from the tooltip — e.g. Germany 2018 = 98.2%. Verified directly by performing the steps; consistent and repeatable for any country/year that has data."
+}

@@ -1,0 +1,24 @@
+{
+  "answer": "Hovering at year 1973 (the right-most cohort) on the line chart produces two coordinated visuals: (1) a thin grey vertical guide line is drawn at the 1973 x-coordinate, spanning the full plot height; (2) a tooltip card pops up near the cursor with a white background, light grey border, and soft drop shadow. The tooltip's bold header reads 'United States, 1973' and it is followed by one row per series — each rendered in that series' color, with the 'All' row in bold orange. The six rows are: '5th birth or higher: 32.87 years', '4th birth: 30.78 years', '3rd birth: 29.55 years', '2nd birth: 28.04 years', 'All: 27.48 years', '1st birth: 25.10 years'. No per-series dots are drawn — only the vertical guide and the tooltip card. Both vanish when the cursor leaves the plot.",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by mother's birth year, United States', 6 series. X-axis = mother's birth year 1918–1973; 1973 is the right-most data column. Step 2 — Linear y-axis 20–35 years (truncated below 20); linear x-axis. Step 3 — Series color-coded with right-edge end labels. Step 4 — In Line mode, moved cursor to viewport coordinates corresponding to SVG x ≈ 728 (year 1973 maps to SVG x = 730; nudged inside by one pixel to be sure of triggering the mousemove handler). The chart converts pointer x to nearest data year (1973), draws the vertical guide, and renders the tooltip. Step 5 — Read tooltip text directly. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "Tooltip (ref f4e91, box 524,325,210,128) appears with header 'United States, 1973' (f4e93) and six rows: '5th birth or higher: 32.87 years' (f4e292), '4th birth: 30.78 years' (f4e293), '3rd birth: 29.55 years' (f4e294), '2nd birth: 28.04 years' (f4e295), 'All: 27.48 years' (f4e296), '1st birth: 25.10 years' (f4e297). Tooltip y-position followed the cursor (box.y 325 with cursor y=200 in this run vs 375 with cursor y=250 in the prior run), confirming the tooltip card is cursor-anchored.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/f23cbe05933d7078",
+    "browser_click '📈 Line' to ensure Line mode",
+    "page.mouse.move to a neutral position to clear stale tooltip state",
+    "page.mouse.move to viewport coordinates corresponding to SVG (~728, 200) inside the plot — snaps to year 1973",
+    "browser_snapshot of the tooltip card to read the header and all six series rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, 20–35 — irrelevant because tooltip prints numeric values",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: hover snapped to year 1973 (verified by tooltip header)",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart hard-coded to United States",
+    "Axis semantics: x is mother's birth year (cohort) — 1973 values describe mothers born in 1973, not childbirths in 1973"
+  ],
+  "self_check": "Restated: pointing the cursor at the right-most data column (year 1973) on the line chart locks the chart to that cohort, drops a vertical guide line at x = 1973, and opens a tooltip card listing every series' value for that cohort. The six values descend monotonically from 5th-or-higher (32.87) down to 1st birth (25.10), with All (27.48) between 2nd (28.04) and 1st (25.10), matching the expected ordering. Values reproduce exactly across runs r1 and r2."
+}

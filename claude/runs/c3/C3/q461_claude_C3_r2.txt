@@ -1,0 +1,20 @@
+{
+  "answer": "67 countries had pay equity mandated in 2010.",
+  "reasoning": "Step 1 (Chart Identification): interactive multi-line chart, 'Number of countries with key economic and social rights for women, World', with 6 series (one per right: Equal right to start a business, Equal property rights, Domestic violence sanctioned, Employment discrimination prohibited, Substantial paid leave for mothers, Pay equity mandated), a year slider/▶ play control, and a legend that shows each series' value for the selected year. Step 2 (Axes): X = year (1970–2023); Y = number of countries (0–180). Step 4/5 (Interactive read): I set the year to 2010 by hovering at the 2010 x-position; the bold year header read '2010' and the legend listed each right's country count for 2010. I read the 'Pay equity mandated' entry directly from the legend (the chart's own value, not pixel estimation). It showed 67. I confirmed with a second settled read (moved off to another year then back to 2010) to rule out a stale/lagged value.",
+  "confidence": 0.97,
+  "evidence": "At the 2010 selection (bold header '2010'), the legend read: Equal right to start a business 182; Equal property rights 166; Employment discrimination prohibited 138; Domestic violence sanctioned 110; Substantial paid leave for mothers 92; Pay equity mandated 67. A second independent settled read (1985 → 2010) again returned header '2010' and 'Pay equity mandated' = 67. Reproduced on a fresh page load (run 2).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/e1f44426962586ac and waited for the chart iframe to render",
+    "Built the year x-scale from the axis ticks (1970–2023) and computed the 2010 x-position",
+    "Hovered at the 2010 x-position and confirmed the bold '2010' year header",
+    "Read the legend's 'Pay equity mandated' value (67)",
+    "Re-confirmed with a second settled hover (1985 → 2010) to avoid a stale reading"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the read corresponds to 2010 via the bold year header",
+    "Read the exact legend value rather than estimating the line's height in pixels",
+    "Selected the correct series ('Pay equity mandated', the lowest line) among the six",
+    "Guarded against render lag by taking a second settled reading that agreed (67)"
+  ],
+  "self_check": "Restated: in 2010 the 'Pay equity mandated' line corresponds to 67 countries. Two independent settled reads at the confirmed 2010 position both returned 67, and the full legend set for 2010 is internally consistent (descending values), so the answer is 67."
+}

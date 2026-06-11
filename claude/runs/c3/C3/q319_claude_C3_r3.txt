@@ -1,0 +1,22 @@
+{
+  "answer": "When you hover near France's data point in 2000, the chart shows a vertical guide line at year 2000 and pops up a unified tooltip. The tooltip header reads '2000' and lists both series for that year: 'France: 13.2 — Peak: Jul' (France's annual births per 1,000 people = 13.2, peak birth month = July) and 'Spain: 9.8 — Peak: Sep' (Spain = 9.8, peak month September). The tooltip is keyed by year, so the same content appears whether the cursor is on France's marker or just at the 2000 column.",
+  "reasoning": "Step 1 — Interactive line chart with two series (France, Spain); each point/segment is colored by that year's peak birth month. Step 2 — Y is annual births per 1,000 people (linear 0–35, starts at zero); X is year (linear, 1816–2023). Step 3 — Color encodes peak birth month (Jan–Dec + 'No monthly data') per the legend. Step 4 — Located the transparent hover overlay (715×375 px); computed the x-coordinate for year 2000 from the linear xScale over [1816, 2023] (≈635.6 px inside the plot area); dispatched a synthetic mousemove on the overlay there. The chart's mousemove handler rounds x → year and renders a vertical guide line and a unified tooltip containing one row per country. Step 5 — Read the tooltip text directly from the rendered SVG <text> nodes (preferred over pixel estimation). Step 6 — Pitfalls: y-axis starts at 0 (not truncated), single axis, linear (no log), separate lines (not stacked), no filters active.",
+  "confidence": 0.97,
+  "evidence": "SVG <text> nodes captured after the hover event: title '2000'; row 1 'France: 13.2 — Peak: Jul'; row 2 'Spain: 9.8 — Peak: Sep'. A vertical hover line is drawn at the same x. The July color in the chart's MONTH_COLORS map (#7EC8C8) matches the color of France's 2000 dot/segment, corroborating the 'Peak: Jul' label.",
+  "interactions_performed": [
+    "Inspected the chart SVG inside the cross-origin iframe (viewBox 0 0 900 560)",
+    "Located the transparent hover overlay rect (715×375 px) driving the tooltip",
+    "Computed x for year 2000 via the linear xScale over [1816, 2023] (≈635.6 px)",
+    "Dispatched a synthetic mousemove MouseEvent on the overlay at the year-2000 x-coordinate",
+    "Read the resulting tooltip text content from the SVG <text> nodes"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single y-axis (no dual axes)",
+    "Linear scale (not logarithmic)",
+    "Two separate lines (not stacked)",
+    "No filters active that would restrict the data",
+    "Used tooltip values rather than pixel estimation"
+  ],
+  "self_check": "Restated: pointing at year 2000 draws a vertical guide and shows a shared tooltip — France 13.2 births/1,000 with peak July, Spain 9.8 births/1,000 with peak September. This matches the captured SVG tooltip text exactly and is consistent with the chart's color encoding."
+}

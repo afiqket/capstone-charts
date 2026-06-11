@@ -1,0 +1,20 @@
+{
+  "answer": "Natural gas in 2020 = 38,000 TWh (per the chart's tooltip).",
+  "reasoning": "Step 1 — Chart is 'Global Primary Energy Consumption during 200 Years', an interactive stacked stream/area/percentage chart with 9 energy series and a hover tooltip. Step 2 — X-axis spans 1800–2020; tooltip 'Value' is reported in TWh. Step 3 — Color encoding: Natural gas = #70c4d4. Step 4 — Reset Energy Type to '(All)' and Year slider to 2020 so the Natural gas series and year 2020 were available. Located the Natural gas <path> in the rendered iframe by fill #70c4d4 and dispatched a mousemove at the right-edge x-position (year 2020). Chart tooltip read: 'Natural gas — Year: 2020 — Value: 38,000 TWh'. Step 5 — Used tooltip value as authoritative rather than pixel/visual estimation.",
+  "confidence": 0.97,
+  "evidence": "In-chart tooltip text after hovering Natural gas (fill #70c4d4) at year 2020: 'Natural gas\\nYear: 2020\\nValue: 38,000 TWh'. The chart's tooltip code rounds the underlying value to the nearest TWh and formats with commas.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/6d1c43df3a1de518",
+    "Set Energy Type to '(All)' so Natural gas series is visible",
+    "Set Year slider to 2020 so 2020 is within the visible range",
+    "Located the Natural gas SVG path by fill color #70c4d4",
+    "Dispatched a mousemove on that path at the year-2020 x-position and read the tooltip text"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip value rather than pixel estimation (Step 5)",
+    "Confirmed Energy Type set to (All) so Natural gas is not filtered out",
+    "Confirmed Year slider upper bound is 2020 so 2020 is on the axis",
+    "Confirmed chart is in Stream mode — tooltip 'Value' is the raw TWh figure, not a percentage or stacked offset"
+  ],
+  "self_check": "Restated: per the chart's tooltip, global Natural gas primary energy consumption in 2020 is 38,000 TWh. The figure comes from the in-chart tooltip on the Natural gas (#70c4d4) layer at the 2020 x-coordinate, which is the authoritative tooltip-reported value."
+}

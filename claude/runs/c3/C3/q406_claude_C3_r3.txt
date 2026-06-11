@@ -1,0 +1,21 @@
+{
+  "answer": "15.63 index points (Ammonia 99.89 − Nitrogen oxides (NOx) 84.26); both are index values on the same scale where the first year of data = 100",
+  "reasoning": "Step 1: Identified the chart as an interactive multi-series line chart titled 'Emissions of air pollutants, United States, 1970 to 2016' with line/bar toggle and year slider. Step 2: Y-axis is linear 0–120 (an index where the first year's value is normalised to 100); X-axis is years 1970–2016. Step 3: Six colour-coded series including 'Ammonia' (#7D3C98, purple) and 'Nitrogen oxides (NOx)' (#27ae60, green). Step 4: Loaded the chart via Playwright, located the chart's interactive hover rect, and dispatched a synthetic mousemove at the SVG x-coordinate corresponding to year 2003 (cx ≈ 362.28 within mainG). Step 5: Read the exact tooltip values rather than estimating from pixel positions. Step 6 (compute): Ammonia(2003) − NOx(2003) = 99.89 − 84.26 = 15.63 index points. Step 7: Verified y-axis starts at 0 (not truncated), single linear y-axis (no dual axes), line (not stacked/grouped), not log, no filters active. Both series share the same units, so the subtraction is meaningful.",
+  "confidence": 0.97,
+  "evidence": "Tooltip at year 2003 — Ammonia: 99.89, PM₂.₅: 109.23, Volatile organic compounds (VOCs): 57.45, Nitrogen oxides (NOx): 84.26, PM₁₀: 30.19, Sulphur dioxide (SO₂): 47.43. Difference = 99.89 − 84.26 = 15.63.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/85ede1c922cd5ec4",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect chart structure",
+    "browser_evaluate inside the iframe to dispatch a synthetic mousemove on the chart's hover rect at the 2003 x-position and read the resulting native tooltip text for Ammonia and Nitrogen oxides"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single y-axis only (no dual y-axes — both series share the same indexed scale)",
+    "Line chart, not stacked or grouped bars",
+    "Linear scale, not log",
+    "No filters active; full date range visible",
+    "Used tooltip values, not pixel estimation"
+  ],
+  "self_check": "Restated: in 2003, Ammonia sat at 99.89 and NOx at 84.26 — Ammonia is higher by 15.63 index points. 99.89 − 84.26 = 15.63 ✓. Consistent with the tooltip evidence."
+}

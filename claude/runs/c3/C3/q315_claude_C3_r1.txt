@@ -1,0 +1,23 @@
+{
+  "answer": "You cannot get a value for the 'Completed cohort fertility rate shifted +30 years' in 2010 from this chart, because the chart has no data point for that series in 2010. Both interactive paths confirm this: (a) hovering on the line chart at 2010 produces a tooltip 'Sweden, 2010' that lists only 'Tempo-adjusted total fertility rate: 2.07' and 'Total fertility rate: 1.99' — no cohort row is shown; (b) switching to the bar view and moving the slider to 2010 renders only two bars (Tempo-adjusted 2.07 and Total 1.99); the cohort bar is omitted. The reason is structural: the cohort series is shown shifted +30 years from the cohort's birth year, so the 2010 position would represent the completed fertility of women born ~1980, whose childbearing was not yet complete when the data were processed; that data point simply doesn't exist in the dataset. The brown-red cohort line in the line view terminates earlier (its last circle marker is around year 2000) and the chart's footnote explicitly notes the +30-year shift.",
+  "reasoning": "Step 1 — Interactive line chart with three series for Sweden (Completed cohort shifted +30y, Tempo-adjusted TFR, TFR) and a Bar mode with year slider. Step 2 — Value axis is children-per-woman, linear, starts at 0. Step 3 — Color encodes series: cohort (#B04B2D), tempo-adjusted (#8B3A8B), TFR (#4C6FAD). Step 4 — Used both interactions to look for the 2010 cohort value: (a) hovered on the line chart at x=2010; (b) switched to Bar mode and set the slider to 2010. In both, only the tempo-adjusted and TFR values were shown. The renderer filters out null series, so the absence implies the dataset has no Completed-cohort-shifted-+30y value for 2010. Step 5 — Read directly from chart-drawn labels/tooltip — no estimation. Step 6 — Pitfalls: linked filter not the issue (country fixed to Sweden, no other filters); value axis untruncated; linear; series are independent (not stacked); year confirmed by the bar-view title and the line-view tooltip header.",
+  "confidence": 0.95,
+  "evidence": "Line-view tooltip at year 2010: header 'Sweden, 2010', rows 'Tempo-adjusted total fertility rate: 2.07' and 'Total fertility rate: 1.99' — no Completed-cohort row. Bar view at slider=2010: title 'Total fertility rate vs cohort fertility rate vs tempo-adjusted TFR, Sweden, 2010', bars labelled 2.07 and 1.99 only. The cohort series' circle markers (drawn every 5 years on the line, fill #B04B2D) span only up to about year 2000 — i.e., the cohort line terminates before 2010.",
+  "interactions_performed": [
+    "Playwright navigate to https://observablehq.com/d/5166a95ac88c159f",
+    "Clicked the '📊 Bar' toggle, set the slider to 2010, and read the bars (only two series present)",
+    "Switched back to '📈 Line' mode and dispatched a mousemove on the chart hover overlay at the x-position for year 2010",
+    "Read the resulting tooltip text content from the SVG",
+    "Located the cohort series circles (fill #B04B2D) and computed that their max year ≈ 2000"
+  ],
+  "pitfalls_checked": [
+    "Value axis starts at 0 (not truncated)",
+    "Single value axis (no dual axes)",
+    "Linear scale (no log)",
+    "Series independent (not stacked)",
+    "Country fixed to Sweden; no other filters active",
+    "Year confirmed by both the line-view tooltip header and the bar-view title",
+    "Verified absence by checking both interactive views — value is genuinely missing, not just hidden"
+  ],
+  "self_check": "Restated: For Sweden in 2010, the chart shows TFR = 1.99 and tempo-adjusted TFR = 2.07, but the Completed cohort fertility rate (shifted +30 years) is unavailable for 2010 — the data point simply isn't in the chart because the cohort shifted +30 years for 2010 corresponds to women born ~1980 whose completed fertility wasn't yet observed. Consistent with both the line tooltip and the bar view."
+}

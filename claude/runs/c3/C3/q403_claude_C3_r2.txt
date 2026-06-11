@@ -1,0 +1,23 @@
+{
+  "answer": "The average annual PM₂.₅ emission for the United Kingdom across the 1990s (1990–1999 inclusive, n = 10 years) is approximately 197,800 tonnes per year (≈ 198,000 tonnes/year).",
+  "reasoning": "Step 1 (Chart Identification): Interactive line/bar dual-mode chart 'Emissions of particulate matter, United Kingdom, 1970 to 2016' with PM₁₀ and PM₂.₅ series and a year slider that drives Bar mode. Step 2 (Axes/Scale): X = year (linear, 1970→2016); Y = emissions in tonnes (linear, 0→700,000; starts at zero, no truncation; single y-axis; no log scale). Step 3 (Legend/Encoding): PM₂.₅ = #4e79a7 (blue). Step 4 (Interactive Elements Protocol): Decade is taken as 1990–1999 inclusive (the standard reading of 'the 1990s'). Read PM₂.₅ values two independent ways and averaged: (a) In Line mode, extracted the cy attribute of every PM₂.₅ data circle (fill #4e79a7, r=2.5) and back-computed the value via the y-grid scale (range [innerH,0]=[350,0], domain [0,yMax]=[0,700,000]); (b) In Bar mode, dispatched synthetic click events on the slider's transparent rect at SVG x = 90 + (year−1970)/46 × 750 for each year from 1990 to 1999, then read the SVG text label on the PM₂.₅ row. Both methods returned the same per-year sequence (237,000; 236,000; 226,000; 211,000; 202,000; 184,000; 182,000; 173,000; 165,000; 162,000 tonnes), sum = 1,978,000 tonnes, mean = 197,800 tonnes/year. Step 5 (Reading rules): Values taken from the chart's rendered text labels (Bar mode) and back-computed against the chart's printed y-grid labels (Line mode) — no eyeball pixel estimation. Step 6 (Pitfalls): Y-axis not truncated; single y-axis; PM₂.₅ read in isolation (not summed with PM₁₀); linear (not log) scale; Bar mode's x-scale rescales per year, so the printed value labels (not bar widths) and the Line-mode global y-scale were used to compare across years; verified the two independent methods yield identical per-year values.",
+  "confidence": 0.95,
+  "evidence": "Per-year PM₂.₅ values for the UK, 1990–1999 (read independently from the Bar-mode value labels and from the Line-mode circle-cy back-computation; both methods agree exactly): 1990 = 237,000 tonnes; 1991 = 236,000; 1992 = 226,000; 1993 = 211,000; 1994 = 202,000; 1995 = 184,000; 1996 = 182,000; 1997 = 173,000; 1998 = 165,000; 1999 = 162,000. Sum = 1,978,000 tonnes over 10 years. Mean = 197,800 tonnes/year. (This is the second independent run and reproduces r1's numbers exactly.)",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/487752634c6a504f",
+    "browser_wait_for 3 seconds for d3 render",
+    "browser_snapshot to obtain a fresh iframe element ref",
+    "browser_evaluate (run in the iframe document via an inside-iframe element target) to: (1) read every PM₂.₅ data circle in Line mode and back-compute its value via the y-grid scale; (2) click the '📊 Bar' button; (3) dispatch synthetic click events on the slider's transparent rect at SVG x-positions corresponding to years 1990–1999; (4) read the rendered SVG text labels (chart title + PM₂.₅ value) at each year; (5) sum and average the ten values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0 tonnes) in Line mode",
+    "Single y-axis only — no dual-axis confusion",
+    "PM₂.₅ values isolated — not summed with or substituted by PM₁₀",
+    "Linear scale (not log)",
+    "Bar mode's per-year x-rescaling does NOT affect cross-year comparison because I used the printed value labels and Line-mode's single global yScale",
+    "Decade convention: '1990s' = 1990–1999 inclusive (10 years). 2000 was excluded as it belongs to the 2000s",
+    "Independent re-verification: Line-mode and Bar-mode reads matched exactly per year, and r2 reproduces r1",
+    "Confirmed each PM₂.₅ value was paired with the correct series (color #4e79a7; Bar-row label 'PM₂.₅') — no swap with PM₁₀"
+  ],
+  "self_check": "Restated: across the ten years 1990–1999, UK PM₂.₅ emissions sum to 1,978,000 tonnes and average to 197,800 tonnes per year. Sanity-check: values fall monotonically from 237,000 (1990) to 162,000 (1999), so a mean near the midpoint (~200,000 tonnes) is consistent. Two independent reading methods (Line-mode geometric inversion and Bar-mode value-label readout) yield identical per-year values and identical mean (197,800 tonnes/year). r1 and r2 are in exact agreement. If the question intended '1990–2000 inclusive' instead, the average would shift modestly downward; using the standard '1990–1999 inclusive' definition gives 197,800 tonnes/year."
+}

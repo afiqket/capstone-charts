@@ -1,0 +1,22 @@
+{
+  "answer": "To get information about Manufacturing in 2016: (1) in the right-hand sidebar, ensure the 'Sector' dropdown is set to 'Manufacturing'; (2) in the 'Year' multi-select listbox, ensure 2016 is selected (all years are selected by default); (3) hover over the bar above the '2016' x-axis label. The hover tooltip shows: 'Manufacturing | 2016 | Value (bil) : RM -4.7  |  US$ -1.1' — i.e., Malaysia's DIA in Manufacturing for 2016 was RM −4.7 billion (US$ −1.1 billion), a net divestment.",
+  "reasoning": "Step 1 — Chart identified as an interactive bar chart titled 'Malaysia's Direct Investment Abroad (DIA) by Sector' with sector dropdown and year multi-select; tooltips on hover. Step 2 — X-axis: Year (categorical). Y-axis: RM/bil, linear, range ~ −5.0 to 10.0 (axis crosses zero to display negative DIA years). Step 3 — Single-series bar chart; USD value carried by the tooltip alongside RM. Step 4 — Verified Manufacturing was the active sector and 2016 was among selected years, then dispatched the chart's mouseenter handler on the 2016 bar to read the tooltip text directly (preferred over pixel estimation). Step 5 — Used tooltip values; the underlying bound datum (valueRM = −4.697, valueUSD = −1.125) confirms the chart's 1-decimal display. The question asks how to obtain this information, so the answer describes the interaction sequence and reports the resulting values.",
+  "confidence": 0.97,
+  "evidence": "Active sector: Manufacturing. Tooltip on the 2016 Manufacturing bar reads: 'Manufacturing | 2016 | Value (bil) : RM -4.7  |  US$ -1.1'. Bound datum on that bar: valueRM = -4.6970769, valueUSD = -1.1251473719999998 (US$ billions, negative).",
+  "interactions_performed": [
+    "browser_navigate to the Observable notebook URL",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot of the iframe to confirm Manufacturing was the active sector and 2016 was among selected years",
+    "browser_evaluate inside the chart iframe to locate the 2016 rect.bar and inspect its bound datum",
+    "browser_evaluate to dispatch a mouseenter event on the 2016 bar and capture the tooltip text"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: axis extends below 0 to display negative DIA values — relevant here because 2016 is negative",
+    "Dual y-axes: none — single RM/bil axis; USD only via tooltip",
+    "Stacked vs grouped bars: single-series bar chart, not stacked",
+    "Log scale: linear scale confirmed",
+    "Linked filter active: Manufacturing selected, 2016 included in selected years",
+    "Tooltip vs visual position: used tooltip values, not pixel estimate; sign of the value confirmed from the bar extending below the zero baseline"
+  ],
+  "self_check": "Restated procedurally: open the chart, pick 'Manufacturing' in the sidebar Sector dropdown, keep 2016 selected in the Year listbox, and hover the 2016 bar to read the tooltip — which gives Value (bil) : RM -4.7 | US$ -1.1 for Manufacturing in 2016. The procedural steps and the reported values are consistent with the bound datum (valueRM ≈ -4.697, valueUSD ≈ -1.125), and the negative sign is consistent with the bar rendering below the zero baseline."
+}

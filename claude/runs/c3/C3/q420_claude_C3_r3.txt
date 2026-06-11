@@ -1,0 +1,21 @@
+{
+  "answer": "South America had the highest percentage of countries where adult smoking decreased by at least 10 percentage points from 2000 to 2022, at 80.00% (8 of 10 countries).",
+  "reasoning": "Step 1 (Chart Identification): Interactive scatter plot titled 'Share of adults who smoke in 2000 vs. 2022', one point per country, color-coded by OWID world region (North America, South America, Africa, Europe, Asia, Oceania). Step 2 (Axes & Scale): X = 'Share of adults in 2022' (linear, 0%–70%); Y = 'Share of adults in 2000' (linear, 0%–70%). Y-axis not truncated; both axes share the same scale. Step 3 (Legend & Encoding): Color encodes region; no size or shape encoding. Step 4 (Interactive Protocol): I read the chart's underlying d3-bound data (the same data driving hover tooltips) by querying every SVG circle's __data__ inside the chart iframe — yielding 165 country data points {entity, x=2022 share, y=2000 share, region}. Step 5 (Data Reading): For each country, change = y − x (positive = decrease). Counted, per region, countries with change ≥ 10 pp, divided by total countries in that region. Step 6 (Pitfalls): Y-axis not truncated; linear scale; no dual axes; not stacked; no active filters; values come from data binding (= tooltip values), not pixel estimation. Results: South America 8/10 = 80.00%; Oceania 8/13 = 61.54%; Europe 19/40 = 47.50%; Asia 20/44 = 45.45%; Africa 19/42 = 45.24%; North America 2/16 = 12.50%. South America is highest.",
+  "confidence": 0.97,
+  "evidence": "Per-region count of countries with (2000 share − 2022 share) ≥ 10 pp / total: South America 8/10 (80.00%) — Argentina (-10.5), Bolivia (-22.7), Brazil (-11.6), Chile (-18.2), Guyana (-20.2), Paraguay (-18.7), Peru (-27.6), Uruguay (-14.9). Only Colombia and Ecuador don't qualify. Oceania 8/13 (61.54%); Europe 19/40 (47.50%); Asia 20/44 (45.45%); Africa 19/42 (45.24%); North America 2/16 (12.50%, Canada and Cuba). Total countries plotted: 165.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/8f928d4d65b3c4ec",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to locate chart iframe",
+    "browser_evaluate inside iframe to read d3 __data__ on all 165 circles and aggregate by region"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0%)",
+    "Single x and single y axis (no dual axes)",
+    "Scatter plot (not stacked)",
+    "Linear (not log) scale",
+    "No active filters; full dataset used",
+    "Data taken from chart data binding (matches tooltip values), not pixel estimation"
+  ],
+  "self_check": "Restated: Among the six OWID regions, the share of countries whose adult smoking rate dropped by ≥10 pp between 2000 and 2022 is by far highest in South America (8/10 = 80%). Oceania is next at ~62%; the other four regions are all ≤48%. Consistent with the per-country evidence above."
+}

@@ -1,0 +1,22 @@
+{
+  "answer": "In 2011 the World Urban share with safely managed drinking water was 82.7%, and the Rural share was 46.6% — a gap of 36.1 percentage points (Urban higher).",
+  "reasoning": "Step 1 — Chart is an interactive line/bar visualization titled 'Share of the urban and rural population using safely managed drinking water, World' with Line (📈) / Bar (📊) toggles and a year slider. Step 2 — Y-axis is 0–100% (linear, not truncated); x-axis years span 2000–2024. Step 3 — Color encoding: Urban = #4e79a7 (blue), Rural = #b84c1a (orange). Step 4 — In the default Line view, dispatched a mousemove on the hover-overlay rect at the x-coordinate corresponding to year 2011. The chart's tooltip snapped to year 2011 and rendered ['2011', 'in percent', 'Urban', '82.7%', 'Rural', '46.6%']. Step 5 — Used tooltip values (the chart's authoritative numbers). Computed Urban − Rural = 82.7 − 46.6 = 36.1 percentage points.",
+  "confidence": 0.97,
+  "evidence": "Chart tooltip at year 2011: Urban = 82.7%, Rural = 46.6%. Subtraction: 82.7 − 46.6 = 36.1 (percentage points). Tooltip format is d3.format('.1f') + '%'.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/12bfeaa94b53f7f1",
+    "Confirmed Line view (default)",
+    "Computed the chart's x-coordinate for year 2011",
+    "Dispatched a mousemove on the hover-overlay rect at that coordinate",
+    "Read tooltip text rows and parsed Urban (82.7%) and Rural (46.6%)",
+    "Computed Urban − Rural = 36.1 percentage points"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values rather than pixel estimation (Step 5)",
+    "Y-axis is 0–100% and not truncated",
+    "Confirmed Urban color (#4e79a7) and Rural color (#b84c1a)",
+    "Confirmed entity is World (worldRows filter; title says 'World')",
+    "Reported gap in 'percentage points' (correct unit for a difference of two percentages)"
+  ],
+  "self_check": "Restated: at year 2011 the World Urban-Rural gap in safely managed drinking water access was 36.1 percentage points (Urban 82.7% vs Rural 46.6%) — read directly from the chart's interactive tooltip."
+}

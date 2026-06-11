@@ -1,0 +1,22 @@
+{
+  "answer": "Hover the mouse over the line chart at the x-position corresponding to year 1932 — the chart's mousemove handler snaps to the nearest data year and shows a tooltip listing both series with their exact values. Read the blue 'Cohort life expectancy' row. Doing this gives France's cohort life expectancy in 1932 = 69.8 years.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Period versus cohort life expectancy, France' with two series — Period life expectancy (red) and Cohort life expectancy (blue) — covering years 1816–2023. The chart includes a Line/Bar mode toggle and a two-handle year-range slider. Step 2 (Axes): linear Y-axis in years (gridlines every 2 years; range ≈ 28 to 84, axis is truncated below 28); X-axis year. Step 3 (Encoding): color encodes series. Step 4 (Interactions): In Line mode, an invisible interactive rectangle covers the plot area. Its mousemove handler reads pointer x with `d3.pointer`, inverts xScale to a year via `Math.round(xScale.invert(mx))`, snaps to the closest data year using `visYears.reduce(...)`, and calls `showTooltip(year, items, sx, sy)` to render a tooltip listing each series with values formatted via d3 `.1f` and the suffix ' years'. To retrieve a specific year (1932), I computed the viewport x from the chart's SVG geometry: SVG at viewport (152.5, 335.2), mainG translate (75, 80), innerW=615, xScale domain [1816, 2023] → viewport x for 1932 ≈ 152.5 + 75 + (1932-1816)/(2023-1816) × 615 ≈ 572.1; mid-chart y ≈ 605. Used Playwright page.mouse.move to hover there (with a precursor off-chart move to reset state and ensure mousemove fires inside the rect). The tooltip displayed 'France, 1932' / 'Period life expectancy: 57.2 years' / 'Cohort life expectancy: 69.8 years'. Step 5 (Reading rules): used the tooltip's `.1f`-formatted number, not pixel estimation. Step 6 (Pitfalls): Y-axis is truncated below 28 (does not start at 0) — affects visual comparison but not tooltip values; Cohort series data only extends through 1932 in this dataset (probing 1935+ shows only the Period row in the tooltip), so 1932 is at the right boundary of cohort coverage; single linear Y-axis; range slider spans the full 1816–2023.",
+  "confidence": 0.99,
+  "evidence": "Hover tooltip at year 1932 reported: 'France, 1932' / 'Period life expectancy: 57.2 years' / 'Cohort life expectancy: 69.8 years'. Cross-verified by probing 1935 and later, where only the Period row appears, confirming the cohort series ends near 1932 and that 1932 is within its coverage.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/cc6add73dd00fe92 in Line mode",
+    "Computed the viewport x for year 1932 from the SVG geometry (≈572.1)",
+    "Hovered using Playwright page.mouse.move at (≈572.1, 605), with a precursor off-chart move to ensure the mousemove event registers inside the interactive rect",
+    "Read svg text inside the iframe to capture the tooltip's per-series values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 28 years (truncated); affects visual height differences but not tooltip-based numeric retrieval",
+    "Dual y-axes — none (single shared linear Y-axis)",
+    "Stacked vs grouped — independent line series; the cohort value is direct, not stacked",
+    "Log scale — linear, confirmed",
+    "Linked filter still active — range slider spans 1816–2023; 1932 is in the visible domain",
+    "Cohort data availability — Cohort series extends through 1932 in this dataset; later years show only the Period row in the tooltip",
+    "Tooltip vs visual position — used the d3 '.1f' tooltip number, not pixel estimation"
+  ],
+  "self_check": "Re-stated: To retrieve France's Cohort life expectancy in 1932 using the line chart, hover over the chart at year 1932; the tooltip reports 'Cohort life expectancy: 69.8 years'. Visually the blue Cohort line at year 1932 sits between the 68- and 70-year gridlines, very close to 70 — consistent with 69.8. Answer is 69.8 years, consistent with evidence."
+}

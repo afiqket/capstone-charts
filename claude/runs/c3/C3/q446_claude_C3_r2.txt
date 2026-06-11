@@ -1,0 +1,22 @@
+{
+  "answer": "Luxembourg. Across the slider's years (2011–2025) Luxembourg's GDP per capita stays in a narrow band of about $128,475–$136,772 (mean ≈ $131,349; coefficient of variation ≈ 1.60%) — the most consistent GDP among countries with broad year coverage on this chart.",
+  "reasoning": "Step 1 — Chart: interactive scatter (life satisfaction vs. GDP per capita) with a year slider 2011→2025. Step 2 — x is log-scaled USD ($2k–$100k), y is linear life satisfaction (1–8.5). Both axes truncated at non-zero minima (relevant to acknowledge, but does not affect a 'which country has consistent GDP' question because we look at relative variation, not absolute axis baseline). Step 3 — Color encodes continent. Step 4 — Programmatically advanced the year slider through all 15 years (dispatched a click event on the slider's invisible 750-wide rectangle at the proportional x for each year; the chart's click handler snaps to the nearest year). After each year, captured every rendered circle's bound d3 datum (entity, GDP, life satisfaction). Step 5 — Computed per-country mean, std, min, max, and coefficient of variation (CV) of GDP across years; sorted by CV ascending. Step 6 — Verified the log x-axis (used CV to enable fair comparison of variability regardless of GDP magnitude); confirmed no continent filter is active; data is the chart's bound datum, not pixel estimation; controlled for sample size by ranking among countries with the widest year coverage (14 of 15 years).",
+  "confidence": 0.72,
+  "evidence": "Iterated the slider across all 15 years and collected GDP per capita per country from each circle's __data__. 157 distinct countries appeared in ≥2 years; the maximum coverage was 14 of 15 years (2025 is incomplete). Ranking by CV among countries with 14-year coverage: Luxembourg CV = 0.01605, range $128,475–$136,772 (range/mean = 6.3%); Canada CV = 0.02521 ($53,681–$58,321); Madagascar CV = 0.02552 ($1,546–$1,708); Finland CV = 0.02553 ($52,711–$57,068); Austria CV = 0.02593 ($60,276–$65,695); Algeria, Norway, Zambia, Tunisia, Malawi follow. Smaller-sample CV-leaders (excluded due to coverage): Puerto Rico (2 years, CV 0.00925), Suriname (3 years, CV 0.01956).",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/a62a7e813d26874d and wait 3 s for render",
+    "snapshot page to confirm scatter+slider structure",
+    "evaluate inside iframe: locate slider rect (transparent, width=750)",
+    "evaluate inside iframe: loop year 2011..2025, dispatch synthetic click on the slider at the proportional x to set currentYear, then read each circle.__data__ to capture {entity, GDP, life satisfaction, region}",
+    "compute per-country mean, std, min, max, CV of GDP and sort ascending by CV"
+  ],
+  "pitfalls_checked": [
+    "X-axis is logarithmic — used relative variability (coefficient of variation) so rich and poor countries are compared fairly",
+    "Y-axis truncated (starts at 1) — not relevant for a GDP-only question",
+    "No region/continent filter active — full dataset considered",
+    "Used d3 bound data (circle.__data__) rather than pixel estimation",
+    "Sample-size bias addressed: ranked among countries with the broadest coverage (14/15 years); no country had all 15 years because 2025 data is incomplete",
+    "Slider snap behaviour verified (clicks snap to nearest year)"
+  ],
+  "self_check": "Restated: Luxembourg's GDP per capita is the steadiest country across 2011–2025 on this chart, hovering around $131k with only ±~5% drift. Visually this matches the chart — Luxembourg's bubble remains at the far-right on the log x-axis and barely shifts horizontally as the slider scrubs through years, while comparably-rich countries like Canada, Finland, Austria, and Norway show slightly larger horizontal movement. Result consistent with the CV ranking."
+}

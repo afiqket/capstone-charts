@@ -1,0 +1,20 @@
+{
+  "answer": "In 2016, 83.1% of the World's URBAN population used safely managed drinking water. (Rural at the same year was 50.8%.)",
+  "reasoning": "Step 1 — Chart is the World line/bar visualization 'Share of the urban and rural population using safely managed drinking water, World' with Line (📈) / Bar (📊) toggles and a year slider in Bar view. Step 2 — Y-axis 0–100% (linear, not truncated). Step 3 — Color encoding: Urban = #4e79a7 (blue), Rural = #b84c1a (orange). Step 4 — Verified the Urban value at year 2016 using the Line-view tooltip: dispatched a mousemove on the hover-overlay rect at the x-coordinate for 2016 and the tooltip returned ['2016', 'in percent', 'Urban', '83.1%', 'Rural', '50.8%']. This matches the bar-view label of '83.1%' at year 2016. Step 5 — Used the chart's authoritative tooltip/label values (d3.format('.1f') + '%'), not pixel estimation.",
+  "confidence": 0.98,
+  "evidence": "Line-view tooltip at year 2016: Urban = 83.1%, Rural = 50.8%. Bar-view label at the same year confirms Urban = 83.1%.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/12bfeaa94b53f7f1",
+    "Switched to Line view",
+    "Computed the chart's x-coordinate for year 2016",
+    "Dispatched a mousemove on the hover-overlay rect at that coordinate",
+    "Read the tooltip Urban value (83.1%)"
+  ],
+  "pitfalls_checked": [
+    "Confirmed Urban (blue #4e79a7) — not Rural (orange #b84c1a)",
+    "Y-axis 0–100% (not truncated)",
+    "Used tooltip value rather than pixel estimation (Step 5)",
+    "Confirmed the entity is World (worldRows filter; title says 'World')"
+  ],
+  "self_check": "Restated: at year 2016 the World Urban share with safely managed drinking water access is 83.1% — read directly from the chart's interactive tooltip on the blue Urban line at the 2016 x-coordinate."
+}

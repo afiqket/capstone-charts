@@ -1,0 +1,21 @@
+{
+  "answer": "To get the bar value for '5th birth or higher' in 2023: (1) click the '📊 Bar' toggle button at the top of the chart to switch from Line mode to Bar mode; (2) verify the year is 2023 — the Bar view opens at the latest year by default and the chart title reads 'Average age of mothers at childbirth by birth order, United States, 2023', with the year slider at the far right (label '2023'). If the slider is not at 2023, drag the slider handle to the right end or click on the slider track near the right (label '2023'); (3) read the number printed at the right end of the '5th birth or higher' bar (the topmost bar, sorted by descending value). The printed value is 34.45 (average age in years). An alternative without leaving Line mode is to hover the cursor at the right edge of the line plot at year 2023 — the tooltip then shows '5th birth or higher: 34.45 years' as one of its rows.",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by birth order' (United States), Line/Bar toggle, 6 series including '5th birth or higher'. Step 2 — In Bar mode the layout has a categorical y-axis (series labels) and a linear x-axis (age in years); each bar carries a printed two-decimal numeric end-label. Step 3 — Bars are sorted descending by value, so '5th birth or higher' is the topmost bar in 2023. Step 4 — Clicked '📊 Bar'; chart title and slider both confirm year = 2023 (the slider auto-positions at the right end). Read the numeric end-label next to the topmost bar. Step 5 — Numeric end-label read directly; no pixel estimation. Step 6 — Pitfalls verified.",
+  "confidence": 0.99,
+  "evidence": "After clicking '📊 Bar': chart title (ref f2e37) reads 'Average age of mothers at childbirth by birth order, United States, 2023'. Topmost bar label (ref f2e159) is '5th birth or higher'; printed value at the bar end (ref f2e160) is '34.45'. Other bars at 2023 — 4th 32.66, 3rd 31.57, 2nd 30.35, All 29.96, 1st 27.85 — descend monotonically, placing 34.45 correctly as the largest. Cross-checked against Line-mode hover tooltip at year 2023 in a prior step: tooltip listed '5th birth or higher: 34.45 years', confirming the same value.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/4140584c22b75a8b",
+    "browser_click '📊 Bar' to enter Bar mode (auto-loaded at year 2023)",
+    "browser_snapshot of the bar chart to read the topmost bar's printed value (34.45)"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: not applicable in bar mode — values printed numerically next to bars",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent horizontal bars (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: year slider at 2023 (verified by chart title)",
+    "Tooltip vs visual position: read printed numeric end-label rather than estimating from bar length",
+    "Country scope: chart hard-coded to United States — value applies to US in 2023"
+  ],
+  "self_check": "Restated: the procedure is (a) switch to Bar mode with the '📊 Bar' button, (b) make sure the year slider is on 2023 (it is by default — the slider's right end and the chart title both say 2023), (c) read the number printed next to the '5th birth or higher' bar at the top. The number is 34.45. Two independent reads — the printed bar label and the Line-mode hover tooltip — give the same value, supporting high confidence."
+}

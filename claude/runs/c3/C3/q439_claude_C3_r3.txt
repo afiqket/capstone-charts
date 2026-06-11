@@ -1,0 +1,21 @@
+{
+  "answer": "Japan's average effective age of retirement for women across the 2000s (2000–2009) was about 66.3 years.",
+  "reasoning": "Step 1 (Chart Identification): Interactive line/bar chart 'Average effective age of retirement for women, 1970 to 2018' with 5 country series; Japan in #8c6d2f. Step 2 (Axes): Y = age (linear); X = year. Step 3 (Encoding): Color = country. Step 4 (Interactive Protocol): I read the data array bound to Japan's line path (.datum(values) on the path whose stroke is '#8c6d2f'). Step 5 (Data Reading): Japan year-by-year for 2000–2009: 66.2, 66.0, 65.6, 65.9, 66.1, 66.2, 66.3, 66.5, 66.9, 67.3. Mean = 663.0 / 10 = 66.30. Step 6 (Pitfalls): Y not truncated; linear; not stacked; single y-axis. Used data-binding values, not pixel estimation. The chart's footnote notes each annual value is a 5-year rolling estimate ending at the labeled year — this is the same value the tooltip shows.",
+  "confidence": 0.99,
+  "evidence": "Japan's bound annual values for 2000–2009: 66.2, 66.0, 65.6, 65.9, 66.1, 66.2, 66.3, 66.5, 66.9, 67.3. Mean = 66.30 years (n=10).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/e98a9821a97f7615",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect iframe structure",
+    "browser_evaluate inside iframe to read Japan's bound {year, value} series (path with stroke #8c6d2f) and average the values for years 2000–2009"
+  ],
+  "pitfalls_checked": [
+    "Y-axis range 55–85 doesn't affect this question",
+    "Linear scale (not log)",
+    "Single y-axis (no dual axes)",
+    "Used the chart's data-binding values (tooltip-equivalent), not pixel estimation",
+    "Decade defined as 2000–2009 inclusive (10 years)",
+    "Chart footnote: each annual value is a 5-year-rolling estimate ending at the labeled year (= tooltip value)"
+  ],
+  "self_check": "Restated: take Japan's 10 annual retirement-age values for 2000 through 2009 from the chart and average them — the mean is 66.30 years. Consistent with the bound data."
+}

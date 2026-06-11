@@ -1,0 +1,22 @@
+{
+  "answer": "Hover the chart at the x-position corresponding to year 2018 (the rightmost year). The tooltip pops up titled 'France, 2018' and lists one row per age group with its exact contribution. Read the 'Ages 60–79' row to retrieve the value. Doing this gives: Ages 60–79 in France in 2018 = 2.67 years (of contribution to the sex gap in life expectancy).",
+  "reasoning": "Step 1 (Identification): Stacked-area chart titled 'How do death rates in each age group contribute to the overall sex gap in life expectancy? France' with six age-group layers (Ages 80+, Ages 60–79, Ages 40–59, Ages 15–39, Ages 1–14, Age 0 (infancy)). Step 2 (Axes): linear Y-axis in years (0 to 25); X-axis year (1816 to 2018). Step 3 (Encoding): color encodes age group; layers are additive contributions whose total = the female-vs-male life-expectancy gap. Step 4 (Interactions): The chart's mousemove handler reads the cursor x, snaps to the closest data year, and renders a tooltip with each age group's contribution and the Total. For year 2018 I computed the viewport x (the rightmost data year) and hovered there using page.mouse.move. The tooltip showed 'France, 2018' followed by per-group rows: 'Ages 80+: 1.45', 'Ages 60–79: 2.67', 'Ages 40–59: 1.17', 'Ages 15–39: 0.57', 'Ages 1–14: 0.03', 'Age 0 (infancy): 0.06', 'Total: 5.94 years'. Step 5 (Reading rules): used the tooltip's numeric value, not pixel estimation; the tooltip lists raw per-group contributions (not cumulative tops of stacks), which is the right number to read. Step 6 (Pitfalls): the tooltip snaps to the nearest data year (2018 is the latest data year and is at the chart's right edge); Y-axis starts at 0 (no truncation); single linear Y-axis; no other filters.",
+  "confidence": 0.99,
+  "evidence": "Hover tooltip at year 2018 ('France, 2018') displayed 'Ages 60–79: 2.67'. Other rows for cross-context: Ages 80+ = 1.45, Ages 40–59 = 1.17, Ages 15–39 = 0.57, Ages 1–14 = 0.03, Age 0 (infancy) = 0.06; Total = 5.94 years.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/d7552c4cdf662cc1",
+    "Identified the chart layout (SVG at viewport (152.5, 341.3); 900×580; year axis 1816–2018)",
+    "Hovered with Playwright page.mouse.move at viewport (~892, 600) — the x-position for year 2018",
+    "Read svg text in the iframe to confirm the tooltip and extract the 'Ages 60–79' value"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at 0; no truncation",
+    "Dual y-axes — none",
+    "Stacked layers — the tooltip reports raw per-group contributions (not cumulative tops); use this value directly",
+    "Log scale — linear",
+    "Linked filter — slider spans 1816–2018; year 2018 is in view",
+    "Snapping — the chart snaps to the nearest data year on hover",
+    "Tooltip vs visual position — used the d3-formatted tooltip text, not pixel measurement"
+  ],
+  "self_check": "Re-stated: To retrieve the 'Ages 60–79' contribution in France in 2018, hover the chart at the right edge (year 2018) and read the 'Ages 60–79' row of the tooltip — value is 2.67 (years contributed to the sex gap). Visually the Ages 60–79 band of the stacked area is the thickest at 2018 (~2.7 years), consistent with the tooltip. Answer consistent with evidence."
+}

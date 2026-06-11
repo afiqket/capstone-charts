@@ -1,0 +1,19 @@
+{
+  "answer": "1) Click the '📊 Bar' button in the top-left of the chart to switch from Line view to Bar view. 2) A year slider appears below the chart, running from 2000 (left) to 2024 (right). 3) Drag the slider's circular handle until the year next to the title (e.g., '..., World, <year>') reads 2016 — or click anywhere on the slider track at the 2016 position so the handle snaps there. (You can also press ▶ and stop it when the year reaches 2016.) The two horizontal bars labeled Urban and Rural and their percentage labels then show the 2016 values — for 2016 these are Urban = 83.1%, Rural = 50.8%.",
+  "reasoning": "Step 1 — Chart is the World line/bar visualization 'Share of the urban and rural population using safely managed drinking water, World' with Line (📈) / Bar (📊) toggles. Step 4 — Verified: with Bar mode active, computed the x-coordinate corresponding to year 2016 on the slider's scalePoint and dispatched a click on the slider track at that x. The chart redrew the title as 'Share of the urban and rural population using safely managed drinking water, World, 2016' and the bar value labels became Urban = 83.1%, Rural = 50.8%, confirming the slider is the way to select the year. Step 5 — Verified via direct interaction, not visual estimation.",
+  "confidence": 0.99,
+  "evidence": "After clicking '📊 Bar' and setting the slider to 2016, SVG title = 'Share of the urban and rural population using safely managed drinking water, World, 2016' and bar value labels include '83.1%' (Urban) and '50.8%' (Rural) for 2016.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/12bfeaa94b53f7f1",
+    "Confirmed '📊 Bar' view active",
+    "Computed the x-coordinate corresponding to year 2016 on the slider scalePoint",
+    "Dispatched a click on the slider's transparent click-track rect to snap the handle to 2016",
+    "Confirmed the chart title ends in ', 2016' and the bars show the 2016 values"
+  ],
+  "pitfalls_checked": [
+    "Slider is only visible in Bar view (hidden in Line view)",
+    "Year axis ticks on the slider show only the first and last years (2000, 2024) — the title is the reliable indicator of the current year",
+    "Bars and percentage labels redraw on every slider change; ▶ play button is an alternative way to step through years"
+  ],
+  "self_check": "Restated: to see 2016 in the bar chart, switch to Bar view (📊) and move the year slider until the title shows '... World, 2016'. The bars then display Urban 83.1% and Rural 50.8% — confirmed via the rendered title and value labels."
+}

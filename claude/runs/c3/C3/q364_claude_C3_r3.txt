@@ -1,0 +1,20 @@
+{
+  "answer": "1) Make sure the year slider above the chart is at 2021 (it is by default — drag it to 2021 if not, or press ▶ and stop there). 2) Find India's dot — it is colored blue (#1f6ad6, the Asia continent color) and is one of the largest bubbles since dot size encodes population (India is the second largest after China). 3) Hover the dot to confirm the tooltip 'India'. 4) Read the dot's VERTICAL position against the y-axis labeled 'Female expectancy'. In 2021 the India dot sits at roughly 69 years; the precise value reported by the chart's bound data is 68.9 years.",
+  "reasoning": "Step 1 — Chart is an interactive scatterplot titled 'Male vs female life expectancy, 1950-2021'. Axes: x = 'Male expectancy', y = 'Female expectancy' (both 20–90 years). Country dots are colored by continent and sized by population. A year slider (1950–2021) drives the displayed year. Step 4 — Set the slider to 2021; triggered mouseover/mousemove on the India circle and confirmed a tooltip whose text was 'India'. Read India's bound data: {Country:'India', Year:2021, Female:68.9, Male:65.8, Continent:'Asia'}. The female expectancy is read as the dot's y-coordinate; the bound Female=68.9 confirms what reading the y-axis would yield. Step 5 — Used the chart's interactive controls (slider + hover tooltip) and verified with the bound data, not pixel estimation alone.",
+  "confidence": 0.97,
+  "evidence": "India circle bound data: {Country:'India', Code:'IND', Year:2021, Female:68.9, Male:65.8, 'All population':1407563900, Continent:'Asia'}. Hover tooltip text: 'India'. Y-axis label 'Female expectancy' with ticks 20/30/40/50/60/70/80/90 years.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/@yonsei-university/life-expectancy",
+    "Set the year slider to 2021",
+    "Located the India SVG circle by Country bound-data field",
+    "Triggered mouseover on the India dot to confirm the 'India' tooltip",
+    "Verified Female=68.9 in the bound data"
+  ],
+  "pitfalls_checked": [
+    "X = Male expectancy, Y = Female expectancy — female value is read on the VERTICAL axis (do not read Male by mistake)",
+    "Confirmed displayed year is 2021 via slider value/label",
+    "Used hover tooltip ('India') to identify the correct dot among many blue (Asia) dots",
+    "Dot SIZE encodes population, not life expectancy — India is large because of its 1.4B population"
+  ],
+  "self_check": "Restated: to see India's female life expectancy in 2021, slide the year control to 2021, hover the large blue Asia dot until 'India' appears, then read its vertical position against the Female-expectancy y-axis — about 69 years; bound data confirms 68.9."
+}

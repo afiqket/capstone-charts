@@ -1,0 +1,20 @@
+{
+  "answer": "To see only the metro counties, click the 'Metro' radio button in the 'Choose counties to view:' panel on the right side of the map. The panel contains three radio options — '(All)' (the default), 'Nonmetro', and 'Metro'. Selecting 'Metro' redraws the map so that only metropolitan counties are colored (High poverty only = light blue, Persistent poverty only = orange, Both persistent and high poverty = dark grey); all non-metro counties become a neutral light grey (#f0f0f0).",
+  "reasoning": "Step 1 — Interactive U.S. county choropleth titled 'Persistent poverty and high poverty U.S. counties' with a categorical color legend and a radio-button filter for metro status. Step 2 — Map encoding is categorical, not numerical; no axes. Step 3 — Color legend: blue = High poverty only; orange = Persistent poverty only; dark grey = Both. Sidebar has three radios under 'Choose counties to view:' — '(All)', 'Nonmetro', 'Metro'. Step 4 — Interactive control: changing the radio to 'Metro' triggers the chart's change handler (countyFilter = 'Metro') and calls draw(); inside the fill function, counties whose metro value doesn't match the filter are painted with colors.none (#f0f0f0). Step 5 — Verified by selecting the Metro radio and inspecting the DOM: Metro is the only checked radio, and only 125 counties retain their category colors (43 dark grey + 73 light blue + 9 orange), while the remaining ~3,000 counties show as light grey. Step 6 — Procedural question; no tooltip needed.",
+  "confidence": 0.97,
+  "evidence": "Sidebar radio group 'countyFilter' has three options: 'All' (default), 'Nonmetro', 'Metro'. After selecting 'Metro': All=false, Nonmetro=false, Metro=true. Post-selection fill counts: #f0f0f0 (none/filtered-out) = 3106; #3a3a3a (Both) = 43; #6baed6 (High only) = 73; #d4956a (Persistent only) = 9. Chart source-cell logic: 'if (countyFilter !== \"All\" && row.metro !== countyFilter) return colors.none' — confirms that selecting 'Metro' suppresses non-metro counties.",
+  "interactions_performed": [
+    "browser_navigate to the Observable notebook URL",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot of the iframe to identify the sidebar radio group",
+    "browser_evaluate inside the iframe to set the 'Metro' radio checked and dispatch the change event, then count category fills to verify only metro counties remain colored"
+  ],
+  "pitfalls_checked": [
+    "Not a Cartesian chart — no axis truncation, dual axes, log scale, or stacking concerns",
+    "Filter persistence: the chart redraws on radio change — confirmed by post-change fill counts",
+    "Radio group exclusivity: only one of {All, Nonmetro, Metro} can be selected at a time — verified",
+    "Non-metro counties are not removed but recoloured to #f0f0f0 (the 'none' color), which is the correct 'view only metro' behavior",
+    "Tooltip not required for this procedural question; verified the answer from the radio control behavior"
+  ],
+  "self_check": "Restated: To view only metro counties, click the 'Metro' radio under 'Choose counties to view:' in the right-side sidebar. The chart re-renders such that only metro counties keep their category colors; non-metro counties fade to a neutral light grey. Cross-check: after the change, Metro is the only checked option, and exactly 125 counties remain colored in the three category palettes — consistent with the metro-only filter described in the chart's draw logic."
+}

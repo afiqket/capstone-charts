@@ -1,0 +1,20 @@
+{
+  "answer": "Make sure 'Select Country' is set to Afghanistan (default). Then hover over the BLUE dot at year 2012 on the line chart — a tooltip appears reading 'Afghanistan — Year: 2012 — Rate: 6.3'. Afghanistan uses the RIGHT (blue) y-axis. Alternatively, scroll to the 'Victims of intentional homicide, counts and rates per 100,000 population' data table below the chart and read the 2012 column in the Afghanistan 'Homicide rate' row — the value is 6.3 per 100,000 population.",
+  "reasoning": "Step 1 — Chart is a dual-axis line chart titled 'Victims of intentional homicide, 1990-2018'. Step 3 — Color encoding: blue (right axis) = the 'Select Country' series (default Afghanistan); red (left axis) = the 'Select Estimate' series (default South America). Step 4 — Identified that Afghanistan's annual dots are SVG circles with class .dot2; each dot has a hover tooltip showing country, year, and rate. To answer the question precisely, I iterated through all .dot2 circles, dispatched mousemove on each, and collected the tooltip whose Year field was 2012. The tooltip read: 'Afghanistan — Year: 2012 — Rate: 6.3'. Cross-checked against the on-page data table for Afghanistan / Homicide rate, which lists 6.3 in the 2012 column. Step 5 — Used the tooltip value rather than pixel estimation (especially important with dual axes).",
+  "confidence": 0.98,
+  "evidence": "Tooltip text on the Afghanistan 2012 dot (blue, right axis): 'Afghanistan\\nYear: 2012\\nRate: 6.3'. On-page data table cell for Afghanistan / Homicide rate / 2012 = 6.3. Unit: homicide victims per 100,000 population.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/11cf572dd1b14ff7",
+    "Confirmed Select Country = Afghanistan (default)",
+    "Iterated through SVG circle.dot2 (Afghanistan series), dispatched mousemove on each",
+    "Selected the tooltip whose 'Year' field was 2012",
+    "Cross-checked the on-page data table for Afghanistan / Homicide rate / 2012"
+  ],
+  "pitfalls_checked": [
+    "Dual y-axes: Afghanistan uses the RIGHT (blue) axis (~4–10), not the left (red, 21–26); reading the wrong axis would give a wildly different value",
+    "Used tooltip value rather than pixel estimation (Step 5)",
+    "Confirmed Select Country = Afghanistan (the question is about Afghanistan; if it were changed, the blue line would represent a different country)",
+    "Cross-validated tooltip against the on-page data table for 2012"
+  ],
+  "self_check": "Restated: to read Afghanistan in 2012, keep Select Country = Afghanistan, hover over the blue dot at x = 2012, and read the tooltip — value 6.3 per 100,000 population. The same number appears in the Afghanistan / Homicide rate row of the on-page table at the 2012 column."
+}

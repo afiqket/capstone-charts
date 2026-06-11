@@ -1,0 +1,21 @@
+{
+  "answer": "Nothing happens — there is no South Korea bar in the bar view to hover. The chart's bar mode is built from a tiny pre-selected list of just 4 countries (Cyprus, Finland, Bulgaria, Sri Lanka), shown sorted descending: Cyprus 74.0%, Finland 69.0%, Bulgaria 65.3%, Sri Lanka 44.3%. South Korea is not among them, so it has no row to hover. To read South Korea's value, switch back to the '🌍 Map' view and hover South Korea on the map — that produces the tooltip 'South Korea / 2020 / 69.2%'.",
+  "reasoning": "Step 1 (Chart Identification): Dashboard with '🌍 Map' (default) and '📊 Bar' toggles. Title: '…2020'. Step 3 (Encoding): Bar mode reads countries from the chart's selectedCountries list and renders horizontal bars sorted descending; only those countries appear. Step 4 (Interactive Elements Protocol): After programmatically clicking the '📊 Bar' toggle inside the iframe, the chart re-rendered with exactly 4 horizontal bars labelled Cyprus 74.0%, Finland 69.0%, Bulgaria 65.3%, Sri Lanka 44.3%. No 'South Korea' row exists, so the question's premise has no element to act on — moving the cursor across the bar-chart area outside those 4 bars triggers no handler. The bar mousemove handler is attached only to the existing '.bar' rects, and only those four exist. Step 5 (Reading Rules): For South Korea's actual value, use the map view: the chart's mousemove handler on the country path id=410 displays a tooltip 'South Korea / 2020 / 69.2%' via d3.format('.1f') + '%'. Step 6 (Pitfalls): Don't conflate the bar mode (4 fixed countries) with the broader dataset (122 countries in dataByCountry); South Korea has a value in dataByCountry, but it is only surfaced via the Map view.",
+  "confidence": 0.97,
+  "evidence": "After programmatically clicking '📊 Bar' inside the chart's iframe, the rendered text labels are: title/subtitle, country labels 'Cyprus', 'Finland', 'Bulgaria', 'Sri Lanka', value labels '74.0%', '69.0%', '65.3%', '44.3%', the year '2020', and the data-source footer — no 'South Korea' anywhere. selectedCountries in the notebook = [Finland, Cyprus, Bulgaria, Sri Lanka] (4 entries). dataByCountry (Map(122)) contains 'South Korea' with value 69.2% (verified via map tooltip in prior runs).",
+  "interactions_performed": [
+    "Navigated Playwright to https://observablehq.com/d/fa5ba9840d12cf5a",
+    "Waited ~3s for the embedded notebook iframe and SVG chart to render",
+    "Used Playwright's contentFrame() to click the in-iframe '📊 Bar' button via element.click() inside the body.evaluate",
+    "Waited ~1.5s for bar-view rendering and re-read all visible <text> labels in the chart",
+    "Re-verified the bar view contains exactly four country/value pairs (Cyprus 74.0%, Finland 69.0%, Bulgaria 65.3%, Sri Lanka 44.3%) and NO 'South Korea' label"
+  ],
+  "pitfalls_checked": [
+    "Confirmed the bar view's universe is only the 4 selectedCountries (Finland, Cyprus, Bulgaria, Sri Lanka), not the full 122-country dataset",
+    "Confirmed the mousemove tooltip handler is attached to .bar rects only; since no South Korea bar exists, no handler can fire for it in bar view",
+    "Confirmed the bar-chart x-axis runs 0–100% (consistent with the map's color legend range)",
+    "Confirmed the metric is share saying 'Extremely important' (mh4b)",
+    "Confirmed South Korea's value (69.2%) is available via map hover but not via bar hover"
+  ],
+  "self_check": "Restated: hovering 'the South Korea bar' in Bar view does nothing because that bar doesn't exist — the bar chart is restricted to four countries (Cyprus, Finland, Bulgaria, Sri Lanka). The only way to retrieve South Korea's percentage is to switch to map view and hover South Korea, which shows 'South Korea / 2020 / 69.2%'."
+}

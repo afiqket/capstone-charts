@@ -1,0 +1,22 @@
+{
+  "answer": "US$ 2.8 billion",
+  "reasoning": "Step 1 — Interactive bar chart titled 'Malaysia's Direct Investment Abroad (DIA) by Sector' with a sector dropdown and a multi-select year listbox; tooltips on hover. Step 2 — X-axis: Year (categorical, 2015–2025 Jan-Sep). Y-axis: RM/bil, linear scale, ticks at −5.0, 0.0, 5.0, 10.0 (axis crosses zero to show negative years). Step 3 — Single-series bar (uniform color); USD value is encoded only in the tooltip alongside RM. Step 4 — Verified Manufacturing was the active sector and 2023 was among the selected years, then dispatched the chart's mouseenter handler on the 2023 bar to read the tooltip text directly (preferring tooltip values over pixel estimation per the checklist). Step 5 — Read tooltip USD value rather than estimating; the underlying bound datum (valueUSD ≈ 2.757) confirms the rounded display value.",
+  "confidence": 0.98,
+  "evidence": "Active sector: Manufacturing. Selected years include 2023. Tooltip on the 2023 Manufacturing bar reads exactly: 'Manufacturing | 2023 | Value (bil) : RM 12.7  |  US$ 2.8'. Bound datum on that bar: valueRM = 12.68692899, valueUSD = 2.757020678 (US$ billions).",
+  "interactions_performed": [
+    "browser_navigate to the Observable notebook URL",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to confirm Manufacturing was the active sector and 2023 was among the selected years",
+    "browser_evaluate inside the chart iframe to locate the 2023 rect.bar and inspect its bound datum",
+    "browser_evaluate to dispatch a mouseenter event on the 2023 bar and capture the tooltip text"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: noted axis extends below 0 to accommodate negative DIA years; does not distort the 2023 positive value",
+    "Dual y-axes: none — single RM/bil axis; USD only via tooltip",
+    "Stacked vs grouped bars: single-series bar chart, not stacked",
+    "Log scale: linear scale confirmed (ticks evenly spaced at 5-unit intervals)",
+    "Linked filter active: Manufacturing selected and 2023 included in selected years",
+    "Tooltip vs visual position: used tooltip value, not pixel estimate"
+  ],
+  "self_check": "Restated: Malaysia's Direct Investment Abroad in the Manufacturing sector for 2023 was US$ 2.8 billion (equivalent to RM 12.7 billion). The tooltip text and the underlying bound datum (valueUSD = 2.757 → US$ 2.8 bil at the chart's 1-decimal precision) are consistent."
+}

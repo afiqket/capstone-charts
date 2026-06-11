@@ -1,0 +1,18 @@
+{
+  "answer": "Scrolling the wheel zooms the map in and out. Scrolling up zooms in (the whole world map and its earthquake spikes scale up, centered on the pointer); scrolling down zooms back out, down to the default full-world view (scale 1). Once zoomed in you can drag to pan (the cursor shows grab/grabbing).",
+  "reasoning": "Step 1 (Chart ID): Interactive world 'spike map' of earthquakes rendered as an SVG world map with a canvas spike overlay; the SVG has a 'grab' cursor, indicating pan/zoom is enabled (a d3-zoom behaviour). Step 4 (Interactive protocol): I tested the wheel directly. Initially the map group has no transform (scale 1). After dispatching wheel-up (zoom-in) events over the map centre, the SVG group received transform 'translate(-300.29,-138.89) scale(1.6472)' — i.e. it scaled up about the pointer location, so the wheel zooms in. Dispatching wheel-down (zoom-out) events returned the transform to 'translate(0,0) scale(1)', the original full view, showing the wheel zooms out and is clamped at the full-world fit (scale 1 minimum). The cursor changed from 'grab' to 'grabbing' during interaction, consistent with drag-to-pan after zooming. Step 5: conclusions drawn from the actual applied transforms, not assumption.",
+  "confidence": 0.95,
+  "evidence": "Before wheel: map group transform = none (scale 1), svg cursor 'grab'. After wheel-up x3 at pointer (~478,459): transform = 'translate(-300.2924640243076,-138.89133194281607) scale(1.6471820345351458)' (zoomed in, centered on pointer), cursor 'grabbing'. After wheel-down x5: transform = 'translate(0,0) scale(1)' (zoomed back out to the default view).",
+  "interactions_performed": [
+    "Cleared the search and recorded the map group's transform (none) and cursor ('grab')",
+    "Dispatched wheel-up (deltaY<0) events over the map centre and observed the group scale up to ~1.65, centered on the pointer (zoom in)",
+    "Dispatched wheel-down (deltaY>0) events and observed the group return to translate(0,0) scale(1) (zoom out to the default full view)"
+  ],
+  "pitfalls_checked": [
+    "Verified the effect by reading the actual SVG transform before/after, not by visual guess",
+    "Tested both scroll directions (zoom in and zoom out)",
+    "Noted zoom is anchored at the pointer and clamped at a minimum of scale 1 (full-world view)",
+    "Distinguished wheel-zoom from drag-pan (cursor grab/grabbing) which is a separate gesture"
+  ],
+  "self_check": "Restated: the scroll wheel is a zoom control — up to zoom into the map (spikes and geography enlarge around the cursor), down to zoom back out to the full world; it does not scroll the page or change the data. This matches the observed scale 1 -> 1.647 -> 1 transform sequence."
+}

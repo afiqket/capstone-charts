@@ -1,0 +1,19 @@
+{
+  "answer": "1960. The 'Democratically-elected woman chief executive' line is flat at 0% from 1789 through 1959 and first rises above zero in 1960 — so the world's first democratically-elected woman chief executive took office in 1960.",
+  "reasoning": "Step 1 (Chart Identification): line chart, 'Share of countries that have had a woman as leader', with two series — 'Any woman chief executive' (orange #b85a38) and 'Democratically-elected woman chief executive' (blue #6a7fb5) — plus a Line/Bar toggle and year slider. Step 2 (Axes): X = year (1789–2025, linear ~3.284 px/year, one data point per year); Y = share of countries (0%–45%), with 0% at y=380. Step 5 (Data Reading): The question asks when the FIRST democratically-elected woman chief executive appeared, i.e., the first year that series' share leaves 0%. I parsed the blue line's path geometry vertex-by-vertex: every point sits on the 0% baseline (y=380) up to 1959, and the first vertex above the baseline is at year 1960 (y=375.48 ≈ 0.56%). The immediately preceding vertex (1959) is still 0%. So the line's first rise is at 1960, matching the historical fact that the first democratically elected female head of government (Sirimavo Bandaranaike, Sri Lanka/Ceylon) took office in 1960.",
+  "confidence": 0.9,
+  "evidence": "Blue 'Democratically-elected woman chief executive' line (#6a7fb5): vertex at year 1959 has y=380 = 0%; the next vertex at year 1960 has y=375.48 ≈ 0.56% (first value above 0). X-scale calibrated from axis ticks (1789→2025, 3.284 px/year); Y baseline 0% at y=380. Reproduced on a fresh page load (run 2).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/b80de1741ccf893a and waited for the chart iframe to render",
+    "Mapped colors to series (democratically-elected = #6a7fb5) and calibrated the X (year) and Y (%) scales from axis ticks",
+    "Parsed the democratically-elected line's path vertices and found the first one rising above the 0% baseline",
+    "Converted that vertex's x to a year (1960) and confirmed the prior year (1959) is still 0%"
+  ],
+  "pitfalls_checked": [
+    "Selected the correct series (democratically-elected, not 'any woman') by its legend color before reading",
+    "Used the line's actual path geometry against the calibrated baseline rather than eyeballing where it leaves zero",
+    "Checked the year immediately before (1959 = 0%) to confirm 1960 is the first non-zero year",
+    "Cross-checked against the known historical first (1960) for plausibility"
+  ],
+  "self_check": "Restated: the democratically-elected line first becomes non-zero in 1960 (1959 is the last 0% year), so the first democratically-elected woman chief executive was 1960. The path geometry (1959: 0%, 1960: ~0.56%) and the historical record both support 1960, so the answer is consistent."
+}

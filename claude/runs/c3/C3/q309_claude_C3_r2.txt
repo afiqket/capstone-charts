@@ -1,0 +1,19 @@
+{
+  "answer": "Approximately 0.10 births per woman at age 30 for Japan's 1990 birth cohort (the chart's underlying value is 0.10289). To get it from the chart: in the Japan panel (bottom-left of the 2×2 grid), pick out the 1990 cohort's line using the legend swatch at the top labelled '1990' (mid-teal in the navy→pale-teal palette) and trace that line up at age 30 on the x-axis — it sits just above the 0.10 gridline. The chart's hover tooltip won't give you this number directly: it shows only the top 10 cohorts ranked by value at the hovered age, and Japan's 1990 cohort at age 30 (≈0.10) falls just below the 10th-ranked entry (0.11 for the 1945 cohort), so it does not appear in the tooltip list.",
+  "reasoning": "Step 1 — Small-multiples 2×2 panel; Japan is bottom-left; each panel plots age (12–55) vs age-specific fertility rate per woman with one line per mother's birth-year cohort (1925–2010 in 5-year steps). Step 2 — Linear x and y; y starts at 0. Step 3 — Color encodes cohort. Step 4 — Hovered Japan@age 30: tooltip showed only top-10 (no 1990). To recover 1990 I read the cohort lines' bound data directly from the SVG paths (drawn in cohort order 1925→2010); path index 13 = 1990 and at age 30 the value is 0.10289. Step 5 — Used chart-bound numerical data; cross-checked vs the visible top-10 ranking ending at 0.11 → 1990@0.10 is just below the cutoff, consistent with its omission. Step 6 — Pitfalls: y starts at 0; linear; small-multiples (panel-specific tooltip); tooltip top-10 cap means some cohorts must be read from the line directly.",
+  "confidence": 0.92,
+  "evidence": "Direct read from chart-bound data on the Japan panel's 14th cohort path (index 13 in the cohort draw order 1925→2010 in 5-year steps), which is the 1990 cohort: {age:30, value:0.10289}. Tooltip at Japan@age 30 ends with the 10th row at 0.11 (1945) and does not include 1990, consistent with 0.10 being below the cutoff.",
+  "interactions_performed": [
+    "Located the Japan panel (translate offset (20,381))",
+    "Dispatched a mousemove at xScale(30) — tooltip showed only top-10 cohorts; 1990 not present",
+    "Read the bound data (`__data__`) on the Japan panel's path index 13 (the 1990 cohort) to obtain the age-30 value"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single linear y-axis per panel (no log)",
+    "Small-multiples — tooltip belongs to whichever panel the cursor is over (Japan here)",
+    "Tooltip top-10 cap means some cohorts cannot be read from the tooltip alone",
+    "No other filters active"
+  ],
+  "self_check": "Restated: for Japan, the cohort of women born in 1990 had an age-specific fertility rate at age 30 of about 0.10 births per woman (0.10289 raw). Best read by following the 1990-colored line in the Japan panel to age 30, since the chart's tooltip doesn't surface cohorts ranked below the top 10."
+}

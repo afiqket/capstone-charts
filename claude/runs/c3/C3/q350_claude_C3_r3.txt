@@ -1,0 +1,18 @@
+{
+  "answer": "Use the 'Energy Type' dropdown in the control bar above the chart and pick 'Solar'. After that selection, only the Solar series (yellow band) is drawn. To go back to all energies, reopen the same dropdown and choose '(All)'.",
+  "reasoning": "Step 1 — Chart is 'Global Primary Energy Consumption during 200 Years', an interactive stacked stream/area/percentage chart over 9 energy types. Step 4 — Identified all controls in the rendered iframe: 'Chart Type' radios (Stream/Area/Percentage), 'Sort' radios (Alphabetically/By Value/Chronologically), 'Sort Order' radios (Ascending/Descending), an 'Energy Type' combobox with options [(All), Coal, Crude oil, Hydropower, Natural gas, Nuclear, Other renewables, Solar, Traditional biofuels, Wind], and a 'Year' slider. The Energy Type combobox is the only control that restricts which energy series are shown. Step 4 verification — I reset Energy Type to '(All)' (chart drew 9 series) and then selected 'Solar' — the chart redrew to a single area path with fill '#e8e838', which is the Solar color in the chart's color map. Step 5 — Confirmed by direct SVG inspection rather than visual estimation.",
+  "confidence": 0.99,
+  "evidence": "After selecting 'Solar': SVG contained 1 stacked-area path with fill '#e8e838' — the Solar color (energyColors['Solar'] = '#e8e838'). With '(All)' selected, 9 series were rendered (all distinct energy colors). Therefore the Energy Type dropdown is the control that isolates Solar.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/6d1c43df3a1de518",
+    "Reset Energy Type combobox to '(All)' and verified 9 series drawn",
+    "Selected 'Solar' in the Energy Type combobox",
+    "Inspected SVG to confirm a single series remained with the Solar yellow fill (#e8e838)"
+  ],
+  "pitfalls_checked": [
+    "Confirmed it is the Energy Type dropdown that filters, not Sort or Chart Type",
+    "Verified the chart actually redraws to exactly one series when 'Solar' is chosen",
+    "Noted that '(All)' in the same dropdown restores all energies"
+  ],
+  "self_check": "Restated: to see only solar energy, set the 'Energy Type' dropdown to 'Solar' — this filters the stacked chart down to the single Solar (yellow #e8e838) series, confirmed by inspecting the rendered SVG."
+}

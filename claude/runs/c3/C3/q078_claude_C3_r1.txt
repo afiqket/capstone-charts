@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering over a white-coloured country pops up the map's tooltip for that country. It shows the country name, the currently selected year, the metric label 'deaths per 100,000 people', the death-rate value, and a small sparkline of that country's history. For a solid white country the death-rate value that appears is 0 (i.e. 0.0 deaths per 100,000 people), because white is the lowest end of the colour scale = zero recorded one-sided-violence deaths that year. Example verified: hovering Canada (year 2024) shows 'Canada / 2024 / deaths per 100,000 people / 0'. (Note: countries drawn with a grey hatched pattern are a separate 'No data' category and their tooltip reads 'No data' instead of a number - but the plain white-filled countries report a value of 0.)",
+  "reasoning": "Step 1: On the Map view the choropleth colours countries by a logarithmic 'deaths per 100,000 people' scale. Step 3-4: The solid near-white fill (#f7f4f0) is the lowest bucket of that scale (value 0). I located white country paths (Canada, USA, Fiji, Tanzania, Kazakhstan, etc.) and dispatched hover (pointerover/mouseover) events to fire the map's showMapTooltip handler. Step 5: Read the resulting tooltip text nodes - for Canada the freshly shown tooltip contained 'Canada', '2024', 'deaths per 100,000 people', and the value '0' (the '1.0' and '0' that also appear are the sparkline's y-axis max/min). showMapTooltip sets ttCountry=entity, ttYearLbl=result.year, ttVal=fmtVal(result.value) and reveals a sparkline, confirming the tooltip contents. Step 6: Distinguished solid-white (value 0) from the hatched 'No data' category to avoid conflating them.",
+  "confidence": 0.9,
+  "evidence": "Hovered Canada (fill #f7f4f0). New tooltip text nodes that appeared: 'Canada', '2024', 'deaths per 100,000 people', '0' (value), plus sparkline axis labels '1.0' and '0'. 127 countries share the white #f7f4f0 fill for year 2024 (e.g. Canada, USA, Fiji, Tanzania, Kazakhstan, Uzbekistan), all in the zero bucket. Source function showMapTooltip(entity,result) sets country name, year, fmtVal(value), and a sparkline.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/65c10cfa93cada0a",
+    "Confirmed the '🌍 Map' view is active inside the chart iframe",
+    "browser_evaluate to enumerate country path fills and identify white (#f7f4f0) countries",
+    "Dispatched pointerover/mouseover hover events on a white country (Canada) to trigger the map tooltip",
+    "Read the resulting tooltip text nodes (country, year, label, value, sparkline)"
+  ],
+  "pitfalls_checked": [
+    "Log scale active: confirmed the value via the tooltip rather than eyeballing the near-white colour",
+    "Units: the map metric is a RATE, 'deaths per 100,000 people', not absolute counts",
+    "White (value 0) vs hatched 'No data': distinguished the two; white solid fill returns 0, hatched returns 'No data'",
+    "Tooltip over pixel/colour estimation: read the actual tooltip value (0) from the hover handler",
+    "Year dependence: value read for the displayed year (2024)"
+  ],
+  "self_check": "Restated: hovering a white country opens a tooltip (country name + year + 'deaths per 100,000 people' + value + sparkline), and for a white country that value is 0. Verified directly with Canada showing '0' for 2024. Consistent with the colour scale (white = lowest/zero bucket) and the showMapTooltip source."
+}

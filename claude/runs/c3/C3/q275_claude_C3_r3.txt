@@ -1,0 +1,22 @@
+{
+  "answer": "China's 'missing women' count climbs steadily over five decades, peaks around 2030–2035, and then begins a mild decline through 2050. Beginning at about 27.2 million in 1970, it rises to roughly 39 million by 1990, ~50 million by 2000, ~62 million by 2010, and ~72 million by 2020. It crests at ~76–77 million around 2030–2035 (peak ≈ 76.90 million in 2035), and then trends slightly downward to about 75.1 million in 2045 and 73.4 million by 2050. So the trajectory has three phases: long, near-monotonic increase from 1970 to ~2030, a peak/plateau around 2030–2035, and a gradual decrease through 2050.",
+  "reasoning": "Step 1 (Identification): Stacked-area chart titled 'Number of \\'missing women\\' in the world, 1970 to 2050' with three layers — China (red, bottom), India (orange, middle), Rest of World (blue, top). Step 2 (Axes): linear Y-axis in millions (0–160 million, every 20M gridlines); X-axis year (1970–2050). Step 3 (Encoding): stacked area; China is the bottom layer so y0=0, meaning the layer's vertical thickness directly equals the China value. Step 4 (Interactions): I hovered the interactive overlay at multiple x-positions across the chart and read the tooltip — the tooltip displays per-series values to two decimals (formatted with d3 `.2f`), which is far more accurate than pixel estimation, especially in a stacked chart. Step 5 (Reading rules): values come from the tooltip text, not pixels. Step 6 (Pitfalls): no log scale, axis starts at 0 (no truncation), no dual axes, both slider handles at 1970 and 2050 so full domain visible. Data are discrete (~every 5 years), so the hover snaps to the closest data year. Synthesis: China's series grows monotonically from 1970 to ~2030, peaks around 2035, then declines slightly to 2050.",
+  "confidence": 0.95,
+  "evidence": "China tooltip values across years: 1970 = 27.20 million; 1975 = 29.00 million; 1990 = 39.20 million; 1995 = 44.30 million; 2000 = 49.50 million; 2010 = 62.30 million; 2015 = 68.40 million; 2020 = 72.30 million; 2030 = 76.40 million; 2035 = 76.90 million (peak); 2045 = 75.10 million; 2050 = 73.40 million. Tooltip subtitle confirms 'in missing women' and chart title 'Number of \\'missing women\\' in the world, 1970 to 2050'.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/322d3e232b20a5a7",
+    "Waited for render and identified the layout (SVG at iframe-internal [14, 73, 900, 540]; mainG translate (90, 90); innerW=650; xScale domain [1970, 2050])",
+    "Computed viewport coordinates for each target year and used Playwright page.mouse.move to hover the interactive overlay",
+    "Read SVG text inside the iframe after each hover to capture the per-year, per-series tooltip values",
+    "Probed 1970, 1975, 1990, 1995, 2000, 2010, 2015, 2020, 2030, 2035, 2045, 2050 to fully characterise China's trajectory"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — axis starts at zero; no truncation concern",
+    "Dual y-axes — none",
+    "Stacked vs grouped — area is stacked; China is the BOTTOM layer, so its value equals its layer's height (no need to subtract a baseline)",
+    "Log scale — linear, confirmed",
+    "Linked filter still active — range slider spans 1970 to 2050 (full domain)",
+    "Tooltip vs visual position — relied on d3 '.2f' tooltip numbers, not pixel estimation"
+  ],
+  "self_check": "Re-stated: China rises from roughly 27 million in 1970 to a peak near 77 million around 2030–2035 and then dips slightly to about 73 million by 2050. The bottom red layer's thickness in the stacked area visually echoes this — increasing through most of the period and thinning a touch toward the right. Numerical tooltip evidence and visual area both support the same trend. Answer consistent with evidence."
+}

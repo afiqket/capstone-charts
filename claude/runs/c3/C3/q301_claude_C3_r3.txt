@@ -1,0 +1,22 @@
+{
+  "answer": "Hovering at the 2023 point of the line chart does two things simultaneously: (1) a thin grey vertical guide line appears at the 2023 x-coordinate, spanning the full plot height; (2) a tooltip card pops up near the cursor with a white background, light grey border, and soft drop shadow. The tooltip's bold header is 'United States, 2023' and is followed by one row per series — each in the series' own color, with the 'All' row in bold orange — formatted 'label: value years' with two-decimal precision. The six rows are: '5th birth or higher: 34.45 years', '4th birth: 32.66 years', '3rd birth: 31.57 years', '2nd birth: 30.35 years', 'All: 29.96 years', '1st birth: 27.85 years'. Note: this chart's hover does NOT add per-series dots on each line (unlike some other charts); the visual feedback is only the vertical guide and the tooltip. Both disappear when the cursor leaves the plot area.",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by birth order', United States, 1933–2023, 6 series. Step 2 — Linear y-axis 20–35 years (truncated below 20); linear x-axis 1933–2023. Step 3 — 6 color-coded series with right-edge end labels. Step 4 — In Line mode, moved the cursor to viewport coordinates corresponding to SVG x ≈ 728 (year 2023 is at SVG x = 730 after xScale, nudged inside the rect by one pixel). The chart's mousemove handler converted x to the nearest data year (2023), drew the vertical guide line, and rendered the tooltip. Step 5 — Read tooltip values directly. Step 6 — Pitfalls verified.",
+  "confidence": 0.97,
+  "evidence": "Tooltip element (ref f3e95, box 524,375,210,128) appeared with header 'United States, 2023' (f3e97) and rows: '5th birth or higher: 34.45 years' (f3e158), '4th birth: 32.66 years' (f3e159), '3rd birth: 31.57 years' (f3e160), '2nd birth: 30.35 years' (f3e161), 'All: 29.96 years' (f3e162), '1st birth: 27.85 years' (f3e163). The notebook source code confirms the only hover-driven SVG elements are a `hoverLine` and the tooltip group — no circle marks per series — and the `showTooltip` function styles each row in s.color with 'All' set to font-weight bold.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/4140584c22b75a8b",
+    "browser_click '📈 Line' to ensure Line mode",
+    "page.mouse.move to viewport coordinates corresponding to SVG (~728, 250) inside the plot — snaps the hover handler to year 2023",
+    "browser_snapshot of the tooltip card to capture the header and all six color-coded rows"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: linear, 20–35 — irrelevant because the tooltip prints exact numeric values",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines (not stacked)",
+    "Log scale: linear",
+    "Linked filter still active: hover snapped to 2023 (verified by tooltip header)",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart is hard-coded to United States — tooltip header confirms 'United States, 2023'"
+  ],
+  "self_check": "Restated: pointing the cursor at year 2023 in the line view doesn't change the line layout — it just adds a thin vertical guide line at x = 2023 and opens a tooltip card listing every series' value for that year, colored per series with 'All' bolded. The six values reported (1st 27.85, All 29.96, 2nd 30.35, 3rd 31.57, 4th 32.66, 5th+ 34.45) are consistent across r1, r2, and r3 of this question, and match the Bar-mode bar labels for 2023 from earlier questions — supporting that the hover read is correct and reproducible."
+}

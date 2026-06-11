@@ -1,0 +1,21 @@
+{
+  "answer": "Email had higher spending than Television in 2024 — Email £14.3K vs Television £5.3K (Email outspent Television by £9.0K, ~2.7× as much).",
+  "reasoning": "Step 1 — Chart Identification: stacked area chart 'Marketing spend by channel' with 4 series stacked bottom→top in this order: Television (dark teal #063f46), Email (yellow #f2bd22), Print media (red #fb8583), Social media (blue #3499e8). Step 2 — Axes & Scale: linear y £0K–£80K (£20K ticks, NOT truncated); linear x 2014–2024 (annual ticks); a dashed vertical reference line at 2019. Step 3 — Legend & Encoding: legend colour swatches at top of chart identify each series. Step 4 — Interactive Elements: hovering any area triggers a tooltip — title is the series name in its colour, value is 'YYYY: £X.XK'. The handler uses d3.bisector to snap to the nearest data year regardless of where exactly on the band the cursor sits. I dispatched mouseenter+mousemove on both the Television and Email path elements at x=2024 (SVG x≈763) and read both tooltips; additionally inspected the bound d3.stack data array for all 11 years. Step 5 — Data Reading: tooltip-based, not pixel-based, because stacked-area visual reading is unreliable (each layer's baseline shifts with the layers below). Step 6 — Pitfalls: STACKED area — read band thickness not top edge; y-axis is linear and starts at 0; no log scale; no dual axes; no filters. The comparison is straightforward once each series' own value is read from its tooltip.",
+  "confidence": 0.99,
+  "evidence": "Tooltip on Television layer at x=2024: title 'Television' (#063f46), value '2024: £5.3K'. Tooltip on Email layer at x=2024: title 'Email' (#f2bd22), value '2024: £14.3K'. Full bound time-series for both channels (£K): 2014 TV 30.3 / Email 1.05; 2015 29 / 3.02; 2016 26.2 / 5.2; 2017 25.8 / 8.6; 2018 18 / 11.5; 2019 17 / 13.9; 2020 14 / 15.6 (Email overtakes TV); 2021 12.9 / 16; 2022 8.5 / 14.8; 2023 6.3 / 13.9; 2024 5.3 / 14.3. Source code uses d3.format('.1f') + '£' prefix + 'K' suffix for tooltip formatting; values already divided by 1000.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/@n93986/marketing-spend-by-channel",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to obtain element refs inside the cross-origin iframe",
+    "browser_evaluate (target=chart svg) to identify the Television and Email stacked-area paths via their __data__.key, dispatch mouseenter+mousemove at the 2024 x-position on each, capture .tooltip-title (text + fill) and .tooltip-value, and read the full bound stack data series for sanity-check"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated: no — y starts at £0K",
+    "Dual y-axes: no — single y-axis",
+    "Stacked vs grouped bars: STACKED area chart — each layer's value is the band thickness, not the absolute y-coordinate; tooltip reports per-channel value directly so stacking does not affect the answer",
+    "Log scale active: no — y-axis linear (£0K, £20K, £40K, £60K, £80K)",
+    "Linked filter still active: N/A — no filters",
+    "Tooltip value differs from visual position: tooltip used as source of truth (£5.3K and £14.3K), corroborated by bound D3 stack data; the chart's narrative ('since 2019 Social media > Print media') is consistent — Email surpassed Television around 2020"
+  ],
+  "self_check": "Restated independently: at 2024 the yellow Email band sits at £14.3K of spending while the dark-teal Television band at the very bottom sits at only £5.3K. Email is therefore higher by £9.0K, about 2.7× Television. This is consistent with the full data trajectory I read off the bound stack: Television's spend declined steadily from £30.3K in 2014 to £5.3K in 2024, while Email's grew from £1.05K to a 2021 peak of £16K before settling at £14.3K — Email overtook Television in 2020 and has stayed ahead through 2024. Conclusion: Email > Television in 2024."
+}

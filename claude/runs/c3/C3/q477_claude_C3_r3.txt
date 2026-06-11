@@ -1,0 +1,21 @@
+{
+  "answer": "December 17, 2021. That is the first weekly data point on which the 60-69 years series (86.02%) rises above the 80+ years series (85.39%). On the previous weekly observation (Dec 10, 2021) the two were essentially tied, with 80+ still marginally higher (84.80% vs 84.78%).",
+  "reasoning": "Step 1 — Chart Identification: 'Share of people who completed the initial COVID-19 vaccination protocol by age, France' — multi-series line chart by age group, weekly observations from Jan 1, 2021 to Jul 7, 2023. Step 2 — Axes: x is time, y is percent of the age-group population (0–100%, linear, starts at 0). Step 3 — Encoding: '60-69 years' is red (#c05a5a) and '80+ years' is gold (#b89a4a). Step 4 — Reading: queried every SVG dot's bound __data__ inside the iframe, filtered to keys '60-69 years' and '80+ years', aligned them by date, sorted chronologically, and scanned forward for the first weekly point where v60-69 > v80+. Step 5 — Used the bound data values directly. Step 6 — pitfalls: y-axis is 0–100% (not truncated); single y-axis; not stacked; linear; entity fixed to 'France'; values come from data bound to the dots rather than pixel eyeballing. The crossover date is stored as 2021-12-16T15:00:00Z in the iframe's UTC+9 environment, which corresponds to the CSV's '2021-12-17' weekly observation.",
+  "confidence": 0.95,
+  "evidence": "Weekly values around the crossover: Nov 26, 2021 — 60-69: 82.76%, 80+: 83.89% (80+ ahead). Dec 3, 2021 — 60-69: 83.70%, 80+: 84.31% (80+ ahead). Dec 10, 2021 — 60-69: 84.78%, 80+: 84.80% (80+ ahead by 0.02 pp). Dec 17, 2021 — 60-69: 86.02%, 80+: 85.39% (60-69 ahead by 0.63 pp). Dec 24, 2021 — 60-69: 86.62%, 80+: 85.70%. Dec 31, 2021 — 60-69: 87.09%, 80+: 85.92%. The gap continues to widen after Dec 17, so this is a persistent crossover rather than a one-week blip.",
+  "interactions_performed": [
+    "Playwright navigate to https://observablehq.com/d/f724a270146bebdc",
+    "Wait for chart to render",
+    "browser_evaluate inside the chart iframe — read each SVG circle's __data__, separate '60-69 years' and '80+ years', sort chronologically, and find the first weekly date where 60-69 > 80+"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated — NO, axis is 0–100%",
+    "Dual y-axes — NO, single y-axis",
+    "Stacked vs grouped — NO, independent lines",
+    "Log scale — NO, linear",
+    "Linked filter still active — entity fixed to 'France'; no other filter active",
+    "Tooltip vs visual position — values read from data bound to the dots, not eyeballed",
+    "One-off blip vs persistent crossover — checked: 60-69 stays above 80+ for the following weeks (Dec 24, Dec 31, …), so Dec 17, 2021 is the persistent crossover"
+  ],
+  "self_check": "Restated: across the weekly observations, 80+ leads through Dec 10, 2021; on Dec 17, 2021 the 60-69 series overtakes it (86.02% vs 85.39%) and stays above thereafter. This makes Dec 17, 2021 the day on which the 60-69 share first becomes higher than the 80+ share."
+}

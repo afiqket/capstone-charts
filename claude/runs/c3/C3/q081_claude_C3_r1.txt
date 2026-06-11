@@ -1,0 +1,21 @@
+{
+  "answer": "Open the Line view and make sure the year 2000 is inside the displayed window (keep the bottom slider at the far right so the full 1989-2024 range is shown). Then move the cursor over the chart at the 2000 column (Ethiopia's line is the dark-gold/olive one): a vertical guide line appears and a tooltip pops up showing the year and every plotted country's value for that year. Read the 'Ethiopia' row in that tooltip - for year 2000 it reads 'Ethiopia: 24.0', i.e. 24 deaths. So Ethiopia's data point for 2000 is 24 deaths (interstate-conflict deaths).",
+  "reasoning": "Step 1/3: In the Line view each selected country is a coloured line (Ethiopia = #8B6914 dark gold); x-axis = year (1990-2020 ticks, full range 1989-2024 when the slider is at the far right), y-axis = deaths (0 at y=363 to 100,000 at y=0). Step 4 (interaction): I located the x-axis '2000' tick (plot x=210.571), then moved the real mouse over the 2000 column inside the plot. This fired the chart's hover handler, which drew the vertical guide and showed a multi-country tooltip headed '2000' listing each country's value. Step 5: The tooltip's Ethiopia row read 'Ethiopia: 24.0'. I cross-checked with the rendered Ethiopia path: its year-2000 point (index 11) is at y=362.913, and with the y-scale (363->0, 20,000 per 72.6 px) that converts to (363-362.913)/72.6*20000 ~= 24, confirming the tooltip. Step 6: Noted that the slider must not be dragged to a start year later than 2000, or 2000 would be outside the visible window; and that the 'deaths per 100,000 people' label is actually an absolute death count.",
+  "confidence": 0.9,
+  "evidence": "Line-chart hover tooltip at year 2000 listed: Eritrea: 49976.0, Ethiopia: 24.0, Syria: 0, Afghanistan: 0, Iraq: 0, Mexico: 0, Ukraine: 0 (header '2000'). Ethiopia line (#8B6914) year-2000 point y=362.913; y-scale 0->y363, 100,000->y0 (20,000 per 72.6 px) gives ~24, matching the tooltip's 24.0.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/a2975a8c512f9051",
+    "Used the '📈 Line' view with the slider at the far right (full 1989-2024 range)",
+    "Located the x-axis '2000' tick position",
+    "Performed a real mouse hover over the 2000 column to trigger the multi-country tooltip",
+    "Read the 'Ethiopia: 24.0' value and cross-checked it against the Ethiopia line's pixel position"
+  ],
+  "pitfalls_checked": [
+    "Tooltip over pixel estimation: read the exact value 24.0 from the hover tooltip (pixel math only used to confirm)",
+    "Slider/window state: 2000 must be within the displayed range - keep the slider at the far right (full range) or at/before 2000",
+    "Correct series: Ethiopia is the dark-gold (#8B6914) line; confirmed via the tooltip's labelled 'Ethiopia' row",
+    "Mislabeled units: 'deaths per 100,000 people' label is actually an absolute death count",
+    "Year correctness: tooltip header confirmed '2000'"
+  ],
+  "self_check": "Restated: to get Ethiopia's 2000 value you hover the line chart at the 2000 column and read the Ethiopia row of the tooltip, which is 24.0. The tooltip value (24.0) and the line's pixel position (~24) agree, so the data point is 24 deaths for Ethiopia in 2000."
+}

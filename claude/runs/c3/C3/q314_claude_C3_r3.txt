@@ -1,0 +1,22 @@
+{
+  "answer": "Sweden's Total fertility rate in 1990 = 2.14 children per woman.",
+  "reasoning": "Step 1 — Interactive line chart with three fertility-measure series for Sweden (Completed cohort shifted +30y, Tempo-adjusted TFR, TFR). Step 2 — Value axis: children per woman, linear, starts at 0. Step 3 — Series colored: cohort #B04B2D, tempo-adjusted #8B3A8B, TFR #4C6FAD. Step 4 — Used the chart's own hover tooltip: dispatched a mousemove on the transparent hover overlay at the x-coordinate for year 1990 (linear xScale over years 1891–2024). The chart drew a vertical guide line at 1990 and rendered a unified tooltip with one row per series. Step 5 — Read the 'Total fertility rate' row value (chart-drawn, formatted to two decimals): 2.14. Step 6 — Pitfalls: value axis starts at 0, single axis, linear (no log), independent series (not stacked), country fixed to Sweden, year confirmed by tooltip header.",
+  "confidence": 0.98,
+  "evidence": "Line tooltip at year 1990: header 'Sweden, 1990'; rows 'Completed cohort fertility rate shifted +30 years: 2.06', 'Tempo-adjusted total fertility rate: 2.25', 'Total fertility rate: 2.14'.",
+  "interactions_performed": [
+    "Ensured Line view mode",
+    "Computed x for year 1990 via the linear xScale over 1891–2024",
+    "Dispatched a synthetic mousemove on the chart's transparent hover overlay at that x",
+    "Read the tooltip title and row text content from the SVG"
+  ],
+  "pitfalls_checked": [
+    "Value axis starts at 0 (not truncated)",
+    "Single value axis (no dual axes)",
+    "Linear scale (no log)",
+    "Independent series (not stacked)",
+    "Country fixed to Sweden; no filters active",
+    "Year confirmed by tooltip header 'Sweden, 1990'",
+    "Used tooltip value, not pixel estimation"
+  ],
+  "self_check": "Restated: Sweden's TFR in 1990 was about 2.1 children per woman — specifically 2.14 per the chart's own tooltip. Consistent with the SVG-rendered row."
+}

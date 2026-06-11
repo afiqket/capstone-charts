@@ -1,0 +1,19 @@
+{
+  "answer": "This chart does NOT report Europe's antibiotic usage as a percentage — the y-axis is intensity in milligrams of antibiotic per kilogram of meat product (mg/kg), not a share of any total. So strictly speaking there is no 'percentage' to read off the chart. What the chart does show for Europe (WOAH) across 2014-2021 is: 2014 = 92.2 mg/kg, 2015 = 83.2, 2016 = 70.9, 2017 = 61.2, 2018 = 59.2, 2019 = 53.6, 2020 = 53.3, 2021 = 48.0 mg/kg. That's roughly a 48% reduction from 2014 to 2021 — i.e., 2021 is about 52% of the 2014 level, a 48% decline over the period. If you meant something else by 'percentage' (e.g., Europe's share of global antibiotic use), the chart does not expose that — its metric is per-kg intensity, not totals.",
+  "reasoning": "Step 1 — Chart is the multi-series line chart 'Antibiotic use in livestock per kilogram of meat product' (Line/Bar toggle, 5 series: World, Africa/Americas/Asia/Europe — each WOAH grouping). Step 2 — Y-axis units: 'mg/kg' from 0 to ~250; the chart subtitle confirms the metric is 'milligrams per kilogram of meat product', i.e., intensity, not a percentage. Step 4 — Verified Europe's (WOAH) values by hovering at each year (2014..2021) and reading the multi-series tooltip; got: 92.2 / 83.2 / 70.9 / 61.2 / 59.2 / 53.6 / 53.3 / 48.0. Computed the only natural 'percentage' interpretation: 2021 vs 2014 = 48.0/92.2 ≈ 52.1%, i.e., 47.9% decline. Step 5 — Used the chart's tooltip values rather than estimating from the line position.",
+  "confidence": 0.9,
+  "evidence": "Europe (WOAH) tooltips (mg/kg): 2014=92.2; 2015=83.2; 2016=70.9; 2017=61.2; 2018=59.2; 2019=53.6; 2020=53.3; 2021=48.0. Y-axis units 'mg/kg'. Subtitle: 'measured in milligrams per kilogram of meat product'.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/ef9c461497a97a5d",
+    "Confirmed the chart's Y-axis units (mg/kg, not percent)",
+    "For each year 2014..2021 in Line view, dispatched mousemove on the hover-overlay rect at that x-coordinate",
+    "Read Europe (WOAH) value from the multi-series tooltip and collected 8 yearly values"
+  ],
+  "pitfalls_checked": [
+    "Unit clarification: chart is mg/kg (intensity), NOT percent — explicitly flagged to the user",
+    "Distinguished 'Europe (WOAH)' from a hypothetical 'Europe' raw continent — these are WOAH groupings",
+    "Used tooltip values rather than pixel estimation (Step 5)",
+    "Computed the only chart-supported 'percentage' (year-over-year change) rather than inventing a share that isn't represented"
+  ],
+  "self_check": "Restated: there is no direct 'percentage' answer because the chart shows mg/kg intensity, not a share. Europe's (WOAH) per-kg intensity fell from 92.2 mg/kg in 2014 to 48.0 mg/kg in 2021 — equivalent to ~48% lower, or 2021 ≈ 52% of the 2014 level. If a different definition of 'percentage' is intended, the user should clarify."
+}

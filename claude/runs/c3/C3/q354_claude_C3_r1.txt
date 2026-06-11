@@ -1,0 +1,18 @@
+{
+  "answer": "Open the 'Metrics' dropdown (top of the control row, above the chart) and choose 'Year-Over-Year Change (%)'. The chart will redraw to show the YoY change as a percentage, with positive values shaded light red and negative values shaded light blue around a 0% reference line.",
+  "reasoning": "Step 1 — Chart is the 'Redfin's Existing Home Sales' interactive line chart with three controls: Metrics (combobox), Region Name (combobox), Seasonally Adjusted (combobox), plus a two-thumb month range slider. Step 4 — Inspected the Metrics combobox options: ['Home Sales Annualized Rate', 'Year-Over-Year Change (%)', 'Month-Over-Month Change (%)']. The Metrics selector is the control that switches the displayed series. Step 4 (verification) — Selected 'Year-Over-Year Change (%)' from the Metrics dropdown. After redraw, the y-axis label became 'Year-Over-Year Change (%)' and the y-axis tick labels were percentage formatted: ['-40%', '-20%', '0%', '20%', '40%', '60%']. The chart also rendered area fills (#f5b8b8 above 0, #b8d4f5 below 0) around a zero reference line — the chart's standard styling for percent metrics. Step 5 — Verified through actual control change and SVG inspection rather than visual estimation.",
+  "confidence": 0.99,
+  "evidence": "After selecting 'Year-Over-Year Change (%)' from the Metrics combobox, the rendered SVG y-axis label is 'Year-Over-Year Change (%)', y-axis ticks are ['-40%','-20%','0%','20%','40%','60%'], and the chart includes light-red (#f5b8b8) positive and light-blue (#b8d4f5) negative area fills around a 0% reference line.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/ad1587cfc205c2f2",
+    "Read Metrics combobox options to identify the YoY option",
+    "Selected 'Year-Over-Year Change (%)' in the Metrics dropdown",
+    "Inspected the SVG to confirm the y-axis label, tick formatting, and area-fill colors changed to the YoY/percent view"
+  ],
+  "pitfalls_checked": [
+    "Confirmed Metrics dropdown is the correct control (not Region or Seasonally Adjusted)",
+    "Verified after selection that the y-axis is in percent (with 0% reference and positive/negative shading) rather than the millions scale",
+    "Noted that the slider range remains unchanged — user can still narrow the date range if desired"
+  ],
+  "self_check": "Restated: to see Year-over-Year change, use the 'Metrics' dropdown and pick 'Year-Over-Year Change (%)'. Confirmed by direct SVG inspection — the y-axis label and tick formatting changed to a percentage scale, and the area-fill encoding for positive (red) and negative (blue) changes appeared."
+}

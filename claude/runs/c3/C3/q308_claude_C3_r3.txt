@@ -1,0 +1,19 @@
+{
+  "answer": "In the United States at age 30, women born in 1970 had the higher age-specific fertility rate. In the chart's age-30 tooltip the 1970 cohort shows 0.11 vs the 1990 cohort's 0.10 births per woman; the underlying chart data gives 1970 = 0.10784 vs 1990 = 0.10151 (1970 higher by ~0.006).",
+  "reasoning": "Step 1 — Small-multiples 2×2 grid; United States is bottom-right. Each panel: age (12–55) on x vs age-specific fertility rate (0–0.32) on y, one colored line per mother's birth-year cohort (1925–2010 in 5-year steps). Step 2 — Linear axes, y starts at 0. Step 3 — Color encodes cohort. Step 4 — Interacted with the US panel: hover at age 30 produced the shared tooltip listing '1970 0.11' ranked above '1990 0.10'. To get precise numbers I read the bound data on the US-panel cohort-line paths (drawn in cohort order 1925→2010 every 5 years); path index 9 = 1970 (age 30 → 0.10784), path index 13 = 1990 (age 30 → 0.10151). Step 5 — Compared the two chart-drawn values directly: 1970 > 1990 in both the rounded tooltip values and the exact underlying data. Step 6 — Pitfalls: y not truncated, linear, panel-specific tooltip (US), no filters active, used chart tooltip + bound data rather than pixel estimation.",
+  "confidence": 0.97,
+  "evidence": "US-panel tooltip at age 30: '1970 0.11' above '1990 0.10'. Chart-bound data at age 30: cohort 1970 = 0.10784; cohort 1990 = 0.10151.",
+  "interactions_performed": [
+    "Located the United States panel by its translate offset (450,381)",
+    "Dispatched a synthetic mousemove on the panel's hover overlay at xScale(30) and read the resulting shared tooltip",
+    "Read the bound data on the US-panel cohort paths at indices 9 (1970) and 13 (1990) to obtain exact age-30 values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis starts at 0 (not truncated)",
+    "Single linear y-axis (no log scale)",
+    "Small-multiples — tooltip belongs to whichever panel the cursor is over (United States here)",
+    "No filters active",
+    "Used the chart's own tooltip and bound data rather than pixel estimation"
+  ],
+  "self_check": "Restated: in the US, the 1970-born cohort had a marginally higher age-30 fertility rate (~0.108) than the 1990-born cohort (~0.102), so 1970 > 1990 at age 30. Consistent with both the tooltip ranking and the chart's underlying data."
+}

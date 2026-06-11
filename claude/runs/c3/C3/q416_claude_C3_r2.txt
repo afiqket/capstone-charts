@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering over the line chart triggers a vertical hover-line at the cursor's x position and shows a multi-series tooltip for that year. The tooltip header is the year being hovered (e.g., '1997'), followed by one row per country with its number of daily smokers for that year, formatted with units (M / k). The rows are sorted from highest to lowest value, so users can directly compare all nine countries at the same point in time. Example for 1997: Japan: 33M, Germany: 18M, Vietnam: 14M, United Kingdom: 13M, Italy: 12M, Thailand: 11M, Peru: 1.7M, Finland: 900k, Singapore: 360k.",
+  "reasoning": "Step 1: Identified the chart as an interactive multi-series line chart titled 'Number of daily smokers, 1980 to 2012' covering 9 countries (Finland, Germany, Italy, Japan, Peru, Singapore, Thailand, United Kingdom, Vietnam) — these are the labels and the 9 line paths the SVG renders. Step 2: Y-axis is linear 0–35 million; X-axis 1980–2012. Step 3: To find the hover behaviour, dispatched Playwright's real hover over the chart area inside the iframe, then read the SVG state. Step 4: Before hover the SVG had no per-country 'X: <number>' rows; after hover, a new tooltip group appeared with the year header and nine value rows sorted descending by value. Step 5: Confirmed the ordering is value-descending (Japan first at 33M, Singapore last at 360k), so the tooltip is a ranked comparison view for the hovered year. Step 6: Noted no other state changes — line widths and colours stayed the same, no other chart elements highlighted or dimmed (the only visual change is the appearance of the vertical hover line and the floating tooltip box).",
+  "confidence": 0.94,
+  "evidence": "Direct read of the SVG after Playwright hovered the chart: new tooltip-only text nodes appeared with the year ('1997') and one row per country listing its smoker count with units (M / k), sorted descending by value: Japan 33M, Germany 18M, Vietnam 14M, United Kingdom 13M, Italy 12M, Thailand 11M, Peru 1.7M, Finland 900k, Singapore 360k. One previously hidden g element became visible (the tooltip), and the rest of the chart (line widths/colours) remained unchanged.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/6d2233dd5bb9418b",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect chart structure (line/bar toggle, year slider, 9 country lines)",
+    "browser_hover on the chart's hover area to trigger the native tooltip",
+    "browser_evaluate to read the post-hover SVG and identify newly added tooltip elements"
+  ],
+  "pitfalls_checked": [
+    "Used Playwright's real hover (not a manually dispatched MouseEvent) so the d3 mousemove handler fires correctly",
+    "Compared SVG state to isolate the tooltip-only changes",
+    "Confirmed the chart's other styles (line widths, opacities, legend) do NOT change on hover — the tooltip is the only added affordance",
+    "Captured both the year header and the value rows so the description includes both pieces of information",
+    "Noted the rows are value-sorted descending, which is the chart's user-facing ranking behaviour"
+  ],
+  "self_check": "Restated: when the user hovers, a vertical guide appears at the cursor's x position and a floating tooltip lists the hovered year plus the smoker counts for all 9 charted countries at that year — sorted from largest to smallest with M/k units. This matches the post-hover SVG state and the country-by-country values appearing only after hover."
+}

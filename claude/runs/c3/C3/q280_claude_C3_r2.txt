@@ -1,0 +1,21 @@
+{
+  "answer": "Hovering over the 2010 point on the line chart triggers a floating tooltip with a year heading and one colored row per series. It reads 'World, 2010' as the title and lists 'Excess female deaths: 1.66 million' (in the blue series color) and 'Missing female births: 1.71 million' (in the orange series color). The tooltip is a white rounded box with a soft drop-shadow that follows the cursor (repositioned to stay inside the chart). The chart's lines, axes, gridlines, and the gray projection-shading area do not change; only the tooltip appears. Moving the mouse away from the plot area hides the tooltip again.",
+  "reasoning": "Step 1 (Identification): Line chart titled 'Annual number of missing female births and excess mortality, World' with two series — Excess female deaths (blue) and Missing female births (orange). Step 2 (Axes): linear Y-axis 0–3 million; X-axis years 1975–2050. Step 3 (Encoding): color encodes series; solid line = historical, dashed = projection. Step 4 (Interactions): the Line render attaches an invisible interactive rect over the plot area; its mousemove handler reads pointer x with `d3.pointer`, inverts xScale to a year, snaps to the closest data year via `years.reduce(...)`, builds an items array {label, color, value} for both series at that year, and calls `showTooltip(year, items, sx, sy)`. `showTooltip` writes a year title ('World, <year>') and one colored text row per series with the value formatted by `fmtVal` (rendering large numbers as 'X.XX million'); the tooltip background is a rounded rect with stroke and drop-shadow filter. The tooltip is positioned to the right of the cursor unless it would overflow the SVG, in which case it flips left. `mouseleave` calls `hideTooltip()` which sets the group's display to none. There is no vertical guide line or marker dots in this chart's line hover. I confirmed empirically by hovering at the year-2010 x-position; the tooltip showed 'World, 2010' / 'Excess female deaths: 1.66 million' / 'Missing female births: 1.71 million'. Step 5 (Reading rules): used tooltip text values (d3 '.2f' in millions). Step 6 (Pitfalls): the hover snaps to the closest data year, so hovering between two adjacent data years still picks one (not an interpolation); 2010 is historical, but the tooltip looks the same whether the hovered year is historical or projected.",
+  "confidence": 0.99,
+  "evidence": "Hover at viewport x≈559.2 (calculated for year 2010) yielded tooltip text in the iframe: 'World, 2010' followed by 'Excess female deaths: 1.66 million' and 'Missing female births: 1.71 million'. No axis/line changes were observed during hover.",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/42003b6f245b303f and verified Line mode",
+    "Computed the viewport x for year 2010 from the SVG geometry (SVG at viewport (152.5, 335.2); mainG translate (150, 90); innerW=550; xScale domain ≈ [1975, 2050])",
+    "Hovered with page.mouse.move at (≈559.2, 625)",
+    "Read svg text inside the iframe to capture the tooltip"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — n/a; axis is unaffected by hovering",
+    "Dual y-axes — none",
+    "Stacked vs grouped — independent series; the tooltip values are direct per-series numbers",
+    "Log scale — linear",
+    "Projection vs historical — 2010 is historical (solid line); the tooltip behaviour is the same regardless of historical/projected",
+    "Snapping — the tooltip snaps to the closest data year"
+  ],
+  "self_check": "Re-stated: Hovering near year 2010 produces a tooltip showing 'World, 2010' with color-coded per-series values ('Excess female deaths: 1.66 million', 'Missing female births: 1.71 million'). The chart itself doesn't redraw — only the tooltip appears. Verified empirically; answer consistent with evidence."
+}

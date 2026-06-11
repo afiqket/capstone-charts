@@ -1,0 +1,21 @@
+{
+  "answer": "Women's obesity percentage rose steadily and almost monotonically across the chart's time range (1990–2022). The unweighted mean across the ~206 entities plotted each year went from ~14.1% in 1990 to ~27.8% in 2022 — almost a doubling. The right tail also moved up: the largest country value went from ~68% (1990) to ~80% (2022), and even the lowest country value rose from ~0.3% to ~2.0%. There is no decline at any sampled year — the trend is a consistent, broad-based increase.",
+  "reasoning": "Step 1: Identified the chart as an interactive scatter plot (one dot per country) with a year slider 1990–2022; x-axis is 'Obesity in women (% of adults)' and y-axis is 'Obesity in men (% of adults)'. Step 2: Both axes are linear in % units, start at 0, no log, no truncation. Step 3: A 'trend over time for women' is a question about the x-distribution as the slider moves. Step 4: Used Playwright to dispatch clicks on the slider track at the SVG positions for sampled years (1990, 1995, 2000, 2005, 2010, 2015, 2020, 2022), verifying each via the chart title. Step 5: At each year, read the x-axis tick labels to recover the dynamic xMax, then computed each dot's women value from its cx via women = cx/innerW × xMax (innerW=670). Step 6: Aggregated each year's distribution (mean, min, max across ~206 entities), giving a coherent picture of how the women axis moves over time. Step 7: Verified the axis starts at 0 (no truncation) and that xMax expands (70→80→90), consistent with rightward drift. The unweighted mean increases at every sampled year, with no reversals.",
+  "confidence": 0.92,
+  "evidence": "Per-year computed statistics across all rendered dots (n≈206 entities each year, xMax read from the chart's own tick labels):\n• 1990 — xMax=70%, mean=14.10%, min=0.32%, max=68.22%\n• 1995 — xMax=80%, mean=15.88%, min=0.35%, max=70.77%\n• 2000 — xMax=80%, mean=18.00%, min=0.41%, max=72.84%\n• 2005 — xMax=80%, mean=20.23%, min=0.54%, max=74.64%\n• 2010 — xMax=80%, mean=22.37%, min=0.79%, max=76.39%\n• 2015 — xMax=80%, mean=24.54%, min=1.19%, max=78.17%\n• 2020 — xMax=80%, mean=26.83%, min=1.74%, max=79.81%\n• 2022 — xMax=90%, mean=27.79%, min=2.01%, max=80.39%\nChart title successfully updated to 'Obesity in men vs. women, <year>' at each step, confirming the slider was correctly set.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/e3431bf57a73942f",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect chart structure (scatter + year slider 1990–2022)",
+    "browser_evaluate inside the iframe to dispatch slider clicks at sampled years (1990, 1995, 2000, 2005, 2010, 2015, 2020, 2022), and for each year (i) verify the title, (ii) read x-axis tick labels for the current xMax, and (iii) compute mean/min/max of women obesity from all dot cx values"
+  ],
+  "pitfalls_checked": [
+    "X-axis starts at 0 (not truncated)",
+    "Linear scale (not log)",
+    "X-axis maxVal changes each year — recovered dynamically from tick labels before scaling cx back to %",
+    "No region filter was activated (no highlightRegion); all dots included",
+    "Used computed values from rendered SVG positions (not pixel-eyeballed) and validated via chart-title year",
+    "Trend statement is about the cross-country distribution shown in the chart (unweighted mean per year), not a population-weighted global average — caveat noted"
+  ],
+  "self_check": "Restated: across every five-year step from 1990 to 2022, the women-obesity x-distribution moved right — the mean roughly doubled (14.1% → 27.8%), the top end expanded from ~68% to ~80%, and even the floor lifted from ~0.3% to ~2.0%, with no reversals. The interpretation 'overall upward trend' is consistent with all measured statistics."
+}

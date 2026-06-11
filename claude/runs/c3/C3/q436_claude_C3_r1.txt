@@ -1,0 +1,21 @@
+{
+  "answer": "Korea had the highest average annual working hours per person employed across all years shown — averaging about 2,548 hours per worker per year over its 47-year record (1970–2016). South Africa was second (~2,295 hours, 2001–2014) and Mexico third (~2,149 hours, 1991–2016).",
+  "reasoning": "Step 1 (Chart Identification): Interactive line/bar chart 'Annual working hours per person employed, 1970 to 2017' with 12 country series, color-coded. Step 2 (Axes): Y = hours, linear 0–3,000+, not truncated; X = year. Step 3 (Encoding): Color = country. Step 4 (Interactive Protocol): I read each country's bound data array via .datum(values) on its line path, mapped stroke color to country via the chart's colorMap, and computed the mean of value over each country's full per-country year range. Step 5 (Data Reading): Per-country mean of annual hours over its plotted years: Korea (1970–2016, n=47) 2,547.87; South Africa (2001–2014, n=14) 2,294.74; Mexico (1991–2016, n=26) 2,149.27; Russia (1992–2016, n=25) 1,966.16; Japan (1970–2016, n=47) 1,950.68; Italy (1970–2016, n=47) 1,849.92; Canada (1970–2016, n=47) 1,787.24; United States (1970–2016, n=47) 1,772.65; United Kingdom (1970–2016, n=47) 1,735.33; France (1970–2016, n=47) 1,643.06; Sweden (1970–2016, n=47) 1,603.46; Germany (1970–2017, n=48) 1,575.92. Korea is highest. Step 6 (Pitfalls): Y not truncated; linear; not stacked; single y-axis. Used data-binding values, not pixel estimation. Note country year-coverage differs (South Africa has only 14 years); Korea still tops by a clear ~250-hour margin so the conclusion is robust to coverage differences.",
+  "confidence": 0.97,
+  "evidence": "Mean of bound annual values per country over its full plotted years: Korea 2,547.87 h (1970–2016, n=47); South Africa 2,294.74 h (2001–2014, n=14); Mexico 2,149.27 h (1991–2016, n=26); Russia 1,966.16 h (1992–2016, n=25); Japan 1,950.68 h (1970–2016, n=47); Italy 1,849.92 h (1970–2016, n=47); Canada 1,787.24 h (1970–2016, n=47); US 1,772.65 h (1970–2016, n=47); UK 1,735.33 h (1970–2016, n=47); France 1,643.06 h (1970–2016, n=47); Sweden 1,603.46 h (1970–2016, n=47); Germany 1,575.92 h (1970–2017, n=48). Korea is ~253 h above the next country (South Africa).",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/05652e3f6ebdf993",
+    "browser_wait_for 3s for chart render",
+    "browser_snapshot to inspect iframe structure",
+    "browser_evaluate inside iframe to read each line path's bound {year,value} array and stroke color, map color to country, and compute the per-country mean across its full plotted years"
+  ],
+  "pitfalls_checked": [
+    "Y-axis not truncated (starts at 0)",
+    "Linear scale (not log)",
+    "Not stacked",
+    "Single y-axis (no dual axes)",
+    "Used the chart's data-binding values (tooltip-equivalent), not pixel estimation",
+    "Per-country year coverage differs (e.g., South Africa 2001–2014, Mexico 1991–2016, Russia 1992–2016) but Korea's ~253 h lead over the next country makes the conclusion robust to coverage choice"
+  ],
+  "self_check": "Restated: averaging each country's annual-hours series over the years it appears on the chart, Korea sits highest at ~2,548 hours per worker per year, well above South Africa (~2,295) and Mexico (~2,149); the European countries and Canada/US fall in the 1,500–1,900 h range; Germany has the lowest average (~1,576 h). Consistent with the per-country averages table."
+}

@@ -1,0 +1,21 @@
+{
+  "answer": "Use the two-handle year-range slider that sits below the chart. Grab the LEFT handle (currently positioned at 1970) and drag it to the right until it snaps to 2000; leave the RIGHT handle at 2050. The chart instantly re-renders showing only the 2000–2050 range, and the title updates to 'Number of \\'missing women\\' in the world, 2000 to 2050'. An equivalent shortcut: click on the slider track near the 2000 position — the click handler moves the nearest handle (the left one in this case, since it starts at 1970) to the closest data year, accomplishing the same thing.",
+  "reasoning": "Step 1 (Identification): The chart includes a year-range slider with two circular handles (left=start year, right=end year), a play button to its left, and an underlying clickable track. Step 2/3 (Axes/Encoding): unaffected by the procedure. Step 4 (Interactions): I demonstrated the method by dragging the left handle from its initial viewport position (≈ x=233 corresponding to 1970) to a viewport x near 518 (≈ 3/8 of the slider, the position of 2000 in the discrete scalePoint domain). The chart's d3.drag handler reads the mouse x, finds the closest data year via `years.reduce(...)`, sets `yearStart` to it, repositions the handles, and re-runs `render()` — the title and X-axis re-compute. After the drag, the title read 'Number of \\'missing women\\' in the world, 2000 to 2050', confirming the filter. Equivalent: clicking on the slider track measures the distance to each handle and moves whichever is closer to the click point, snapping to the closest data year. Step 5/6 (Reading rules/pitfalls): the slider's domain is the discrete set of data years (scalePoint), so the handle snaps to the nearest available data year (you cannot pick 2003 if 2003 isn't in the dataset). The handles cannot cross each other — the drag code constrains the left handle to remain below `xSlider(yearEnd) - 10` and vice-versa.",
+  "confidence": 0.99,
+  "evidence": "After the simulated drag of the left handle, the topmost svg text in the iframe (the chart title) updated from 'Number of \\'missing women\\' in the world, 1970 to 2050' to 'Number of \\'missing women\\' in the world, 2000 to 2050'. The chart's X-axis and area layers re-rendered using only data points within [2000, 2050].",
+  "interactions_performed": [
+    "Opened https://observablehq.com/d/322d3e232b20a5a7",
+    "Computed slider viewport coordinates from the SVG geometry (SVG at iframe-internal (14,73), iframe at viewport (139,190), sliderX0=80, sliderX1=840, sliderY=H-52=488 → viewport y=751; slider x in viewport spans 233 to 993)",
+    "Used Playwright page.mouse.move + page.mouse.down + incremental moves + page.mouse.up to drag the LEFT handle from viewport x≈233 (year 1970) to x≈520 (year 2000)",
+    "Verified the title now reads 'Number of \\'missing women\\' in the world, 2000 to 2050'"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation — y-axis is recomputed after re-render; not a concern for the range procedure",
+    "Dual y-axes — none",
+    "Linked filter — the slider IS the linked filter; setting it to 2000–2050 is the goal",
+    "Discrete data years — handles snap to data years only (scalePoint domain); pick from available years",
+    "Handle ordering — drag code prevents the left handle from crossing or touching the right handle",
+    "Tooltip vs visual position — verified via title text, not pixels"
+  ],
+  "self_check": "Re-stated: drag the LEFT slider handle until it snaps to 2000 (right handle stays at 2050) — the chart will redraw with the restricted range and the title will display '2000 to 2050'. Alternatively, click on the slider track near the 2000 position; the nearest handle jumps there. Both update yearStart and re-render. Verified empirically — title confirms the change. Answer consistent with evidence."
+}

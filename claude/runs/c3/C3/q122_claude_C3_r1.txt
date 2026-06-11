@@ -1,0 +1,22 @@
+{
+  "answer": "Brazil overtook Belgium for first place at the 31/03/2022 ranking (31 March 2022).",
+  "reasoning": "Step 1 (Chart ID): Animated horizontal 'bar chart race' titled 'Fifa World Ranking 2013-2023', driven by a date slider with discrete FIFA ranking dates; bars show the top 15 countries by ranking points. Step 4 (Interactive protocol): Rank changes occur at the discrete ranking dates, so I stepped the slider to each 2022 ranking date (and the preceding Dec-2021 date for baseline) and read the top of the order each time. Baseline 23/12/2021: Belgium 1,828 (#1), Brazil 1,826 (#2). 10/02/2022: Belgium 1,828 (#1), Brazil 1,823 (#2) — Belgium still leads. 31/03/2022: Brazil 1,833 (#1), Belgium 1,827 (#2) — Brazil has moved into first. Since Belgium led at the immediately prior ranking and Brazil leads at 31/03/2022, the overtake happened at the 31/03/2022 ranking. Step 5: ranks/values read from each bar's rendered value label at the exact data dates, not pixel-estimated.",
+  "confidence": 0.92,
+  "evidence": "10/02/2022 top: Belgium 1,828 (#1), Brazil 1,823 (#2). 31/03/2022 top: Brazil 1,833 (#1), Belgium 1,827 (#2), France 1,790 (#3). The #1/#2 swap between consecutive ranking dates occurs at 31/03/2022.",
+  "interactions_performed": [
+    "Read the slider tick dates to enumerate the 2022 FIFA ranking dates (indices 96-101: 10/02/2022, 31/03/2022, 23/06/2022, 25/08/2022, 06/10/2022, 22/12/2022)",
+    "Set the slider to 23/12/2021 (baseline) and read the order: Belgium #1, Brazil #2",
+    "Set the slider to 10/02/2022 and read the order: Belgium #1, Brazil #2",
+    "Set the slider to 31/03/2022 and read the order: Brazil #1, Belgium #2",
+    "Confirmed the date label matched each tick before reading"
+  ],
+  "pitfalls_checked": [
+    "X-axis starts at zero (not truncated)",
+    "Single x-axis, no dual axes",
+    "Bars independent (not stacked) — read each bar's own value label",
+    "Linear scale (not log)",
+    "Verified date label at each step so readings correspond to the intended ranking date",
+    "Stepped to exact ranking dates rather than interpolated positions, since rank order changes only at the discrete data points"
+  ],
+  "self_check": "Restated: the last 2021/early-2022 ranking with Belgium on top was 10/02/2022; the very next ranking, 31/03/2022, shows Brazil first (1,833) above Belgium (1,827). Therefore Brazil claimed first place at the 31 March 2022 ranking, consistent with the evidence."
+}

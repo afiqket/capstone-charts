@@ -1,0 +1,21 @@
+{
+  "answer": "Coastal states predominantly DECREASED in past-month alcohol use 2011-2016 (18 of 23 coastal states declined; mean -2.5%, median -2.1%), whereas inland states tended to INCREASE (15 of 27 rose; mean +1.5%, median +0.8%). Every state with the largest positive changes is inland (Utah +17.5, New Mexico +13.1, Nebraska +10.5, Kansas +7.4), while the deepest declines are on the coasts (North Carolina -9.9, Hawaii -8.7, Mississippi -8.6, South Carolina -6.2, Massachusetts -6.1). The Pacific and Atlantic coasts are essentially uniformly negative.",
+  "reasoning": "Step 1: Choropleth map of US states. Encoding: percent change in past-month alcohol use 2011 -> 2016, diverging color scale (orange/brown = decrease, blue = increase). Step 2: No x/y axes; color legend stops at -3.07 (deepest brown) and 55.60 (deepest blue) - the global palette span. Step 3: Color is the only encoding; 50 state shapes. Step 4: Confirmed hover tooltip ('State: X, Percent change: Y') exists. Programmatically dispatched mouseenter/mouseover/mousemove on every path, parsed the tooltip text after each event, and captured all 50 state values. Step 5: Classified each state as coastal (touches Atlantic, Pacific, or Gulf of Mexico, or is an island state) or inland. Coastal (23): ME, NH, MA, RI, CT, NY, NJ, DE, MD, VA, NC, SC, GA, FL, AL, MS, LA, TX, CA, OR, WA, AK, HI. Inland (27): the remaining states (Great-Lakes-only states such as MI/WI/MN/IL/IN/OH/PA classified as inland). Computed group statistics: mean, sign counts, extremes. Step 6: All pitfalls re-verified.",
+  "confidence": 0.9,
+  "evidence": "Full state-by-state percent change (read from hover tooltips, 50/50 captured this run): AL -5.4, AK -2.0, AZ +4.6, AR -1.7, CA -0.1, CO -6.4, CT -3.7, DE -4.9, FL +4.9, GA -1.3, HI -8.7, ID -9.0, IL -3.0, IN -0.9, IA +6.2, KS +7.4, KY +0.8, LA +6.6, ME +4.2, MD +1.7, MA -6.1, MI -0.6, MN +0.3, MS -8.6, MO +3.0, MT -4.4, NE +10.5, NV -5.6, NH +3.1, NJ -5.7, NM +13.1, NY -0.6, NC -9.9, ND +1.5, OH -1.2, OK -5.2, OR -2.1, PA +1.9, RI -1.1, SC -6.2, SD +5.3, TN +3.1, TX -5.0, UT +17.5, VT -0.7, VA -4.8, WA -2.1, WV +4.5, WI -2.6, WY +2.8. Coastal stats (n=23): mean -2.51, 18 negative vs 5 positive, range [NC -9.9, LA +6.6]. Inland stats (n=27): mean +1.53, 15 positive vs 12 negative, range [ID -9.0, UT +17.5]. Cross-run consistency with r1: identical values.",
+  "interactions_performed": [
+    "browser_navigate to the alcohol-use choropleth chart",
+    "browser_evaluate to iterate all 56 SVG paths, dispatch mouseenter/over/move events on each, parse the resulting 'State: X / Percent change: Y' tooltip, and assemble 50 unique state -> value pairs",
+    "browser_evaluate to classify states as coastal or inland and compute group statistics"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: N/A (choropleth)",
+    "Dual y-axes: N/A",
+    "Stacked vs grouped: N/A",
+    "Log scale: NO - diverging linear color scale around zero",
+    "Linked filter still active: no filters on this chart",
+    "Tooltip differs from visual: used the explicit tooltip percent-change for every state, not pixel color estimation",
+    "Coastal/inland classification ambiguity: Great-Lakes-only states (MI, WI, MN, IL, IN, OH, PA) are treated as inland because the question contrasts ocean/Gulf 'coastal' states with inland; reclassifying borderline states would shift the means slightly but not the qualitative direction (inland still leans positive, coastal still leans negative)"
+  ],
+  "self_check": "Restated: There is a clear inland-vs-coastal contrast. Coastal states overwhelmingly trended downward (78% decreased; mean -2.5%), with the steepest declines concentrated on the Atlantic (NC, SC, MA, NJ), Gulf (MS, AL, TX), and Pacific/Island (HI, OR, WA, AK, CA) coasts. Inland states leaned upward (mean +1.5%), with every state above +7% inland and all the highest jumps in the Mountain West and Plains (UT, NM, NE, KS, IA, SD). This matches the visible map pattern (orange concentrated coastally; blues concentrated in the Plains and parts of the Mountain interior) and is identical to r1's findings."
+}

@@ -1,0 +1,18 @@
+{
+  "answer": "Hovering over a bar reveals a small tooltip near the cursor showing three pieces of information: (1) the COUNTRY name (bold, top line), (2) its WORLD REGION (small gray text — e.g., 'Asia', 'Europe'), and (3) the exact ANTIBIOTIC-USE VALUE formatted to two decimals in 'mg/PCU' (e.g., 'Thailand — Asia — 337.78 mg/PCU'). The tooltip follows the cursor along the bar and disappears on mouseleave; the bars themselves don't change (no fill change, no resize).",
+  "reasoning": "Step 1 — Chart is a sorted bar chart titled 'Antibiotic use in livestock, 2020' with one bar per country, colored by world region. Step 4 — Each bar has a transparent overlay rect; on mousemove the code sets a tooltip group with three text rows (name, region, value via d3.format('.2f') + ' mg/PCU') positioned near the cursor (flipped left if near the right edge). On mouseleave the tooltip hides. Verified empirically: hovering the tallest bar produced tooltip text ['Thailand', 'Asia', '337.78 mg/PCU']. Step 5 — Used the chart's tooltip values, not pixel estimation.",
+  "confidence": 0.99,
+  "evidence": "Live test: hovering a bar showed tooltip text ['Thailand', 'Asia', '337.78 mg/PCU']. Implementation: ttName.text(d.entity); ttRegion.text(d.region); ttVal.text(d3.format('.2f')(d.val) + ' mg/PCU').",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/53d1b4690a751951",
+    "Dispatched mousemove on a sample bar's transparent overlay rect",
+    "Confirmed the tooltip group appears with country / region / value texts",
+    "Confirmed the bars themselves don't change"
+  ],
+  "pitfalls_checked": [
+    "Tooltip uses two-decimal precision via d3.format('.2f') — values like '337.78 mg/PCU' are the chart's authoritative readings",
+    "Hovering doesn't recolor or resize the bar",
+    "Tooltip flips to the left of the cursor when near the right edge so it stays inside the SVG viewport"
+  ],
+  "self_check": "Restated: hover a bar → a tooltip appears with country, world region, and antibiotic-use value (mg/PCU, two decimals). The tooltip follows the cursor and hides on mouseleave; nothing else about the bar changes."
+}

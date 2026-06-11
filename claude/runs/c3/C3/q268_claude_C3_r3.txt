@@ -1,0 +1,22 @@
+{
+  "answer": "Clicking '📊 Bar' switches the chart from the time-series Line view to a single-year Bar view. The change is reversible — clicking '📈 Line' returns the chart to exactly the prior Line-mode state. When Bar is clicked: (1) the blue active highlight transfers from Line to Bar; (2) the year slider becomes visible at the bottom; (3) the title gets the slider's currentYear appended (e.g., 'World population, comparison of UN projections, 2050'); (4) all 14 projection lines disappear; (5) horizontal colored bars are drawn — one per projection that has data for that year (e.g., 7 bars at year 2050), sorted from highest to lowest, each labelled with its value in billions (e.g., '9.66 billion'); (6) 'Latest observed data' is omitted in Bar mode by design; (7) any open Line-mode tooltip is hidden. Dragging the slider re-renders the bars for the newly selected year.",
+  "reasoning": "Step 1 — Chart Identification: Multi-series chart with two view modes (Line / Bar) plus a year slider. Internally, setMode(m) toggles button styles, hides/shows the slider, hides the tooltip, and calls renderLine() or renderBar(); renderBar() wipes mainG, sets the title to include currentYear, filters out 'Latest observed data', filters out projections with no value for the year, sorts by value descending, and draws labelled bars. Step 2 — Axes/Scale: line has continuous x (years) / y (billions); bar has a quantitative x-length scale from 0 plus categorical y of projection names. Step 3 — Encoding: color encodes projection vintage in both modes; bar length encodes value. Step 4 — Interactive Elements Protocol: For r3 I toggled mode four times (Line → Bar → Line → Bar) and snapshot the DOM after each step. Identical snapshots for the two Line states and the two Bar states demonstrate the switch is fully reversible and deterministic. Step 5 — Data Reading: on-bar labels use d3.format('.2f') + ' billion'. Step 6 — Pitfalls verified.",
+  "confidence": 0.98,
+  "evidence": "Four-step toggle snapshots — Line(s1) = {title 'World population, comparison of UN projections', paths 14, rects 3, sliderHidden true, activeBtn 'Line'}; Bar(s2) = {title '...2050', paths 0, rects 9, sliderHidden false, activeBtn 'Bar'}; Line again(s3) = identical to s1; Bar again(s4) = identical to s2. Each Bar state shows 7 colored bar rects (renderBar drops 'Latest observed data' and any series without a value at 2050).",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/f4b19098b5c5b8cf (already loaded)",
+    "click '📈 Line' to set baseline; capture state",
+    "click '📊 Bar'; capture state",
+    "click '📈 Line'; capture state and verify match with baseline",
+    "click '📊 Bar' again; capture state and verify match with prior Bar state"
+  ],
+  "pitfalls_checked": [
+    "Mode swap is fully reversible — Line → Bar → Line returns to identical state",
+    "Title's year suffix == slider's currentYear",
+    "'Latest observed data' is filtered out of Bar mode",
+    "Bars present == projections with non-null value at currentYear (7 of 14 at 2050)",
+    "Bars sorted descending by value",
+    "Values are data-driven labels, not pixel-estimated"
+  ],
+  "self_check": "Restated behaviour: Clicking '📊 Bar' performs an in-place mode switch — same chart, different rendering. Time-series lines give way to a single-year ranked bar chart; the slider appears and controls the year; titles update to include the year; the active-button highlight follows the click. Three independent runs (r1, r2, r3) plus a four-step toggle in r3 all confirm consistent and reversible behaviour."
+}

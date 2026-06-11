@@ -1,0 +1,20 @@
+{
+  "answer": "Across the 48 Asian countries shown in this 2020 chart, the average antibiotic use in livestock is ~94.36 mg/PCU (simple arithmetic mean of the per-country values displayed by the chart). The Asian range runs from 12.87 mg/PCU (East Timor) up to 337.78 mg/PCU (Thailand).",
+  "reasoning": "Step 1 — Chart is a sorted bar chart 'Antibiotic use in livestock, 2020' with one bar per country, colored by world region. Step 2 — Y-axis is mg/PCU (linear, 0 to ~350). Step 3 — Asia color: #2a9d8f (teal). Step 4 — Iterated through every invisible per-bar overlay rect in the SVG, dispatched mousemove on each, and captured the tooltip {name, region, value}. Filtered to entries with region='Asia'; collected 48 countries with their mg/PCU values. Step 5 — Used tooltip values (d3.format('.2f') + ' mg/PCU') rather than estimating from bar heights. Computed simple arithmetic mean: sum = 4529.31 mg/PCU; mean = 4529.31 / 48 = 94.3606 ≈ 94.36 mg/PCU.",
+  "confidence": 0.93,
+  "evidence": "48 Asia-region bars collected via tooltips. Sum = 4529.31 mg/PCU. Simple arithmetic mean = 94.3606 ≈ 94.36 mg/PCU. Range: 12.87 (East Timor) – 337.78 (Thailand).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/53d1b4690a751951",
+    "Iterated through every per-bar overlay rect in the SVG, dispatching mousemove",
+    "Filtered tooltip results to those with region 'Asia' and parsed the value text",
+    "Computed sum and simple arithmetic mean across the 48 Asia values"
+  ],
+  "pitfalls_checked": [
+    "Used tooltip values (d3.format('.2f')) rather than estimating from bar heights — Step 5 rule",
+    "Y-axis starts at 0 — no truncation pitfall",
+    "Region membership confirmed via tooltip text (region == 'Asia'), not by color guess",
+    "Reported simple unweighted mean across countries (the question doesn't specify a livestock-weighted mean)",
+    "Notes about small-island-state exclusions in the chart caption apply at dataset level"
+  ],
+  "self_check": "Restated: the unweighted average antibiotic-use figure across the 48 Asian countries in the chart is ~94.36 mg/PCU. Verified by enumerating every Asia bar via tooltip and averaging — top and bottom values (Thailand 337.78 vs East Timor 12.87) bracket the mean as expected for a positively skewed distribution."
+}

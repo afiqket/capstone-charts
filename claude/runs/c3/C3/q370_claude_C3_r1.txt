@@ -1,0 +1,17 @@
+{
+  "answer": "The stronger / more saturated the pink, the HIGHER the share of people who said they dealt with anxiety or depression by engaging in religious or spiritual activities (in the past two weeks, 2020). The map uses a sequential pink scale: very light pink ≈ low %, deep magenta-purple ≈ high %. The legend runs from 0% (almost white-pink) up to 50% (strong dark pink). Countries with a hatched / gray fill mean 'No data', not low values.",
+  "reasoning": "Step 1 — Chart is a choropleth (with a bar-view toggle) titled 'Dealt with anxiety or depression by engaging in religious/spiritual activities, 2020', subtitle: 'Share of people who say they dealt with anxiety or depression by engaging in religious or spiritual activities in the past two weeks.' Step 2 — The legend below the map is a sequential color scale labeled 0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%. To its left is a hatched swatch labeled 'No data'. Step 3 — Color encoding is single-variable sequential, interpolating from light pink (#f3efef) at low values through bright pink (#e45a9a, #d92f9a) to deep magenta/purple (#b1008c, #6e006e) at the high end. Verification: countries near the top of the bar list (Nigeria 79.6%, Zambia 77.4%, Brazil 53.7%) render in the strongest pink/magenta on the map, while low-value countries (Bulgaria 6.7%, Netherlands 12.7%, Denmark 16.1%) render in the lightest pink — confirming that stronger pink = higher percentage. Step 5 — Used the legend mapping and the chart's data ordering rather than guessing.",
+  "confidence": 0.99,
+  "evidence": "Map legend ticks: 0%, 5%, 10%, …, 50% along a continuous pink gradient (lightest on the left at 0% → deepest on the right at 50%). Color interpolator: ['#f3efef','#ead0d0','#e7b1b7','#e989a7','#e45a9a','#d92f9a','#b1008c','#6e006e']. Hatched swatch labeled 'No data' is separate from the pink scale.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/780072d35cb6100d",
+    "Read the legend below the map (0% → 50% pink gradient and a 'No data' hatched swatch)",
+    "Cross-checked high-value countries (Nigeria, Zambia, Brazil) against the deeper pink shades and low-value countries (Bulgaria, Netherlands, Denmark) against the lighter pink shades"
+  ],
+  "pitfalls_checked": [
+    "Distinguished 'strong pink' (high %) from the GRAY/HATCHED 'No data' fill — the hatched pattern is not the same as 'high pink'",
+    "Confirmed the gradient direction from the legend rather than guessing (light = low, dark = high)",
+    "Used the chart's authoritative legend and labels, not pixel impressions"
+  ],
+  "self_check": "Restated: a strong pink (deep magenta) cell means a large share of people in that country reported coping with anxiety/depression via religious or spiritual activities, with values up to ~50% on the legend. Light pink means a small share; gray hatching means there is no data for that country."
+}

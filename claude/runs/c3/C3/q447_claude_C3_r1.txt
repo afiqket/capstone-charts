@@ -1,0 +1,20 @@
+{
+  "answer": "To get Brazil's GDP per capita for 2019: (1) move the year slider at the bottom of the chart from its default (2025) to 2019; (2) hover the mouse over Brazil's dot in the scatter plot; (3) read the 'GDP per capita (international-$ in 2021 prices)' value shown in the tooltip. Doing this returns Brazil 2019 GDP per capita = $18,019 (international-$ in 2021 prices); the tooltip also shows Life satisfaction = 6.38.",
+  "reasoning": "Step 1 (Chart Identification): interactive scatter plot, 'Self-reported life satisfaction vs. GDP per capita', dots colored by world region, with a year slider (2011–2025) and an animated play button. Step 2 (Axes/Scale): X = GDP per capita on a LOGARITHMIC axis (ticks $2,000–$100,000, international-$ in 2021 prices), Y = life satisfaction 0–10 (linear). Step 4 (Interactive Elements): the chart shows only one year at a time, controlled by the slider; the default year is 2025, so to read 2019 the slider must first be set to 2019. I drove the slider's click handler so the title updated to '...2019' (confirming the filter). I then hovered Brazil's labeled dot, which triggered the tooltip. Step 5 (Data Reading Rules): on a log axis I read the tooltip value rather than estimating from pixels. The tooltip reported entity=Brazil, year=2019, GDP per capita=$18,019, life satisfaction=6.38. The question asks HOW to obtain the value, so the answer describes the slider + hover/tooltip procedure and reports the resulting reading.",
+  "confidence": 0.95,
+  "evidence": "Tooltip after setting year=2019 and hovering Brazil's dot: name='Brazil', year='2019', GDP per capita='$18,019', Life satisfaction='6.38'. Title element read back as 'Self-reported life satisfaction vs. GDP per capita, 2019'. X-axis label: 'GDP per capita (international-$ in 2021 prices; plotted on a logarithmic axis)'.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/a62a7e813d26874d and waited for the chart iframe to render",
+    "Captured accessibility snapshot and a screenshot to identify the year slider and tooltip mechanics",
+    "Set the year slider to 2019 via its click handler and verified the chart title updated to '2019'",
+    "Hovered over Brazil's labeled dot to trigger the tooltip",
+    "Read the tooltip's GDP per capita, life satisfaction, name, and year fields"
+  ],
+  "pitfalls_checked": [
+    "Log scale active on X axis — read exact value from tooltip rather than eyeballing pixel position",
+    "Year filter (slider) — confirmed it was set to 2019 before reading, not left at the default 2025",
+    "Y-axis truncation/dual axes — not applicable; single linear Y axis (life satisfaction), scatter not stacked",
+    "Tooltip value vs visual position — used tooltip ($18,019), not pixel estimation"
+  ],
+  "self_check": "Restated: a user reads Brazil's 2019 GDP per capita by selecting 2019 on the year slider and hovering Brazil's marker; the on-chart tooltip then displays GDP per capita = $18,019 (and life satisfaction 6.38). This is consistent with the recorded tooltip evidence and the confirmed 2019 title, so the method and value are consistent."
+}

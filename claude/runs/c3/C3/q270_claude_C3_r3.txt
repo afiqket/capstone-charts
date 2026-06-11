@@ -1,0 +1,21 @@
+{
+  "answer": "2.5 billion people. Recommended how-to (most reliable): click the '📊 Bar' button to enable the year slider, then drag the slider until the chart title reads 'World population, comparison of different historical sources, 1950'. The horizontal bar labelled 'McEvedy and Jones (1978)' shows the value as '2.5 billion' immediately to the right of its bar. Alternative (line mode): hover in the rightmost portion of the line plot so that McEvedy's nearest data point to the cursor is its 1950 sample — the tooltip's 'McEvedy and Jones (1978):' line then reads '2.5 billion'. Be aware that line-mode's single tooltip title shows only the first series' nearest year, so the title may say 'Year: 1900' even when other series' nearest points (and thus their listed values) are at later years like 1950 — bar mode avoids this ambiguity by binding all series to the same currentYear.",
+  "reasoning": "Step 1 — Chart Identification: Interactive Observable chart with Line/Bar modes plus a year slider. McEvedy and Jones (1978) is one series. Step 2 — Axes/Scale: linear y; on-bar / on-tooltip labels via fmtBillion(). Step 3 — Encoding: color per source; bar length / line y encodes value. Step 4 — Interactive Elements Protocol: For r3 I cross-verified in Line mode by hovering at six successive viewBox x positions (676, 678, 680, 682, 684, 686). At vbX≥680 the tooltip's 'McEvedy and Jones (1978):' line reads '2.5 billion' — that's McEvedy's 1950 data point. Earlier runs (r1, r2) used Bar mode with binary-search slider to land on currentYear=1950 and read the on-bar label. Step 5 — Data Reading: values are data-driven, not pixel-estimated. Step 6 — Pitfalls verified, particularly the line-mode tooltip title quirk.",
+  "confidence": 0.97,
+  "evidence": "Three independent verifications: (a) r1 — Bar mode, binary-search slider from left → at currentYear=1950 the McEvedy bar label was '2.5 billion'; (b) r2 — Bar mode, binary-search from right → also '2.5 billion'; (c) r3 — Line mode, hover probes at vbX 676/678/680/682/684/686 with extracted McEvedy tooltip line being 1.2B / 1.6B / 2.5B / 2.5B / 2.5B / 2.5B respectively — the value stabilizes at 2.5B once the cursor is past McEvedy's 1900 datum, indicating McEvedy's 1950 sample = 2.5B. Plausibility: McEvedy & Jones (1978) widely cited as ≈2.5B for 1950.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/92d24a089ca800a9 (already loaded)",
+    "switch to '📈 Line' mode (independent of r1's Bar mode)",
+    "dispatch six mousemove events on the line-chart overlay at viewBox x = 676, 678, 680, 682, 684, 686",
+    "extract the 'McEvedy and Jones (1978):' line from each tooltip"
+  ],
+  "pitfalls_checked": [
+    "Bar length / line position scale starts at zero",
+    "Linear scale",
+    "Not stacked",
+    "Line-mode tooltip title is set from items[0].year (first listed series' nearest year), not the cursor's literal year — values for OTHER series in the same tooltip can correspond to different actual sample years",
+    "Bar mode renderBar binds all sources to a single currentYear (within 50 yrs), avoiding this title/value ambiguity — recommended for per-source per-year lookups",
+    "Values read from data-driven labels (fmtBillion), not pixel estimation"
+  ],
+  "self_check": "Restated procedure: best path — '📊 Bar' → drag slider to 1950 → read the McEvedy bar (2.5 billion). Line-mode alternative requires careful interpretation because the tooltip title can refer to a different year than the McEvedy line's nearest sample. Three independent runs (r1 left-search, r2 right-search, r3 line-mode hover) all converge on 2.5 billion."
+}

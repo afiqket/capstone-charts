@@ -1,0 +1,9 @@
+{
+  "answer": "2.5 defined daily doses (DDD) per 1,000 people",
+  "reasoning": "Step 1: Interactive chart (line/bar toggle + year slider) titled 'Consumption of oral antibiotics by type, United Kingdom'. Step 2: Y-axis units are DDD per 1,000 people, linear scale, not truncated; X-axis is year (2017–2022). Step 3: Each antibiotic type is a distinct color/series. Step 4: Switched to Bar mode and clicked the year slider track at the 2021 position; title updated to 'United Kingdom, 2021' confirming the active year. Step 5: Read the numeric label printed next to the 'Penicillins with extended spectrum' bar (2.5). The chart's bar labels use d3.format('.1f'), so the underlying value rounds to 2.5.",
+  "confidence": 0.95,
+  "evidence": "Bar chart title: 'Consumption of oral antibiotics by type, United Kingdom, 2021'. Bar label for 'Penicillins with extended spectrum' = 2.5.",
+  "interactions_performed": ["browser_navigate to chart URL", "click '📊 Bar' toggle button", "dispatch click event on slider track at x=770 (2021 position)", "read updated bar chart snapshot at year 2021"],
+  "pitfalls_checked": ["Y-axis starts at zero (not truncated)", "Linear, not log, scale", "Single y-axis (no dual axes)", "Bars are ranked single-series (not stacked)", "Confirmed slider year matches 2021 in title before reading"],
+  "self_check": "Restated: In 2021, the United Kingdom's reported oral consumption of penicillins with extended spectrum was about 2.5 DDD per 1,000 people. This matches the bar label displayed for that series at the 2021 slider position."
+}

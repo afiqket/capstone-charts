@@ -1,0 +1,20 @@
+{
+  "answer": "When you hover over Canada, two things happen: (1) Canada is highlighted — its border changes from a thin white outline (stroke #fff, width 0.4) to a thicker dark-grey outline (stroke #333, width 1.5) and the shape is raised to the front; and (2) a tooltip appears next to the cursor showing Canada's exact data: 'Canada · 2020 · % took prescribed medication · 73.0%'. In other words, hovering reveals that 73.0% of Canadian respondents (2020) took prescribed medication for anxiety/depression.",
+  "reasoning": "Step 1 (Chart Identification): Interactive choropleth world map titled 'Dealt with anxiety or depression by taking prescribed medication, 2020' (Wellcome Global Monitor 2021), with a Map/Bar toggle. Step 3 (Encoding): Sequential Oranges/Reds color scale (legend 0%–100%); Canada's fill rgb(219,65,44) is a dark red near the top of the scale. Step 4 (Interactive Protocol): I recorded Canada's border attributes before hover, triggered its mousemove handler, then re-read the attributes, its DOM stacking order, and the tooltip. Step 5: Read the exact value from the tooltip rather than estimating from color. The hover both visually emphasizes the country (darker, thicker border, raised) and surfaces the precise value.",
+  "confidence": 0.96,
+  "evidence": "Border before hover: stroke='#fff', stroke-width='0.4'. After hover: stroke='#333', stroke-width='1.5', and the Canada path becomes the last child of its group (raised to front). Tooltip text on hover: 'Canada | 2020 · % took prescribed medication | 73.0%'. Canada fill rgb(219,65,44).",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/fdbb3d8a0cd4bd58 and waited for render",
+    "Located the embedded chart iframe (worker frame) containing the map paths",
+    "Recorded Canada's border attributes (stroke / stroke-width) before hover",
+    "Triggered Canada's D3 mousemove handler",
+    "Re-read Canada's border attributes, DOM stacking order, and the tooltip text after hover"
+  ],
+  "pitfalls_checked": [
+    "Verified the highlight effect via attribute change (#fff/0.4 → #333/1.5) and raise-to-front",
+    "Tooltip value preferred over color/pixel estimation (read 73.0% from tooltip)",
+    "Confirmed color encoding direction: darker red = higher (Canada dark red = 73%)",
+    "Single fixed year (2020) — no year filter to reset"
+  ],
+  "self_check": "Restated: hovering Canada (a) outlines/highlights it with a thicker dark-grey border and lifts it to the front, and (b) pops a tooltip giving its exact value, 73.0% for 2020. Consistent with the measured attribute change and the tooltip read, and with Canada's dark-red fill near the top of the 0–100% scale."
+}

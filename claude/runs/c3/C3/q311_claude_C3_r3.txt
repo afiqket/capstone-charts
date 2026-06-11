@@ -1,0 +1,23 @@
+{
+  "answer": "The age at which women reach one child on average shifts later across more recent birth cohorts. After a small early-cohort dip (1925→1940, where the age falls from ~24 to ~22 — the U.S. baby-boom era), the trend reverses and climbs steadily: ~25 for the 1950 cohort, ~26.5 for 1960, ~26.9 for 1980, and ~29 for 1990. The dominant, near-monotonic trend across post-1940 cohorts is one of postponement — women in successively later cohorts cross the one-child threshold at increasingly older ages, with the 1990 cohort reaching it about 7 years later than the 1940 cohort.",
+  "reasoning": "Step 1 — Chart is a multi-line cumulative-fertility chart for the United States (subtitle confirms 'United States'). X = Age of women (20–50 with bookends 12 and 55), Y = average cumulative children per woman (0–3.5, linear). Each line is a 5-year birth cohort, 1925–2010. Step 2 — Y=1 corresponds to 'one child on average'; the chart's Y-tick for value 1 sits at SVG y=321.43, Y=0 at y=450. X-axis: age 20 at x≈142.33, age 30 at x≈320.23 → 1 year ≈ 17.79 px, with age = 12 + x/17.79. Step 3 — Mapped each legend stroke color to a cohort year. Step 4 — For each cohort path, sampled the rendered curve with getPointAtLength() at 800 points and linearly interpolated to find the X (and hence age) where the curve crosses y=321.43. Step 5 — Used path geometry rather than pixel eyeballing. Step 6 — Pitfalls verified: linear scales (not log); Y starts at 0 (not truncated); single Y-axis; one line per cohort (not stacked); cohorts 1995+ have not yet crossed Y=1 (their lines top out below 1) and were correctly excluded from the trend statement.",
+  "confidence": 0.92,
+  "evidence": "Per-cohort age at which cumulative fertility = 1 (years), extracted from each path's SVG geometry: 1925→24.0, 1930→23.0, 1935→22.2, 1940→22.1, 1945→23.4, 1950→25.1, 1955→26.2, 1960→26.5, 1965→26.6, 1970→26.6, 1975→26.4, 1980→26.9, 1985→27.7, 1990→29.1. Cohorts 1995, 2000, 2005, 2010 do not reach 1 child within the observed age range (max cumulative ≈ 0.75, 0.25, 0.02, 0.00). The 1940 → 1990 shift is +7.0 years.",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/98862fae91a2837b with Playwright",
+    "Waited for chart to render",
+    "Read SVG geometry inside the cross-origin iframe via element-scoped evaluate",
+    "Mapped legend stroke colors to cohort years (1925..2010)",
+    "Sampled each path with getPointAtLength to find Y=1 crossing and converted X to age via the X-tick calibration"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncated — NO (axis starts at 0)",
+    "Dual y-axes — NO (single Y axis)",
+    "Stacked vs grouped — N/A (line chart, one line per cohort)",
+    "Log scale active — NO (linear)",
+    "Linked filter still active — N/A (chart is fixed to United States)",
+    "Tooltip value vs visual position — Did not rely on pixel eyeballing; computed crossings from SVG path geometry",
+    "Cohorts that haven't reached Y=1 yet — Identified and excluded (1995–2010) so they don't distort the cohort-age trend"
+  ],
+  "self_check": "Restated: cohort-by-cohort, the age at which U.S. women first reach 1 child on average dips slightly through the 1925→1940 cohorts (~24 → ~22 — baby boom) and then rises consistently across post-war cohorts, reaching ~29 for the 1990 cohort. The dominant cross-cohort trend is therefore a clear postponement of early childbearing — consistent with the computed crossings above."
+}

@@ -1,0 +1,23 @@
+{
+  "answer": "2nd birth had the higher average age in 2023 — 30.35 years for 2nd birth vs. 27.85 years for 1st birth (United States — the only country the chart shows). 2nd birth is older by 2.50 years.",
+  "reasoning": "Step 1 — Interactive chart 'Average age of mothers at childbirth by birth order' with Line/Bar toggle, 6 series (1st birth through 5th birth or higher, plus All). Country is hard-coded to United States. Step 2 — Linear y-axis (truncated, starts at 20), range 20–35 years; x-axis 1933–2023. Step 3 — 6 color-coded series with right-edge end labels. Step 4 — In Line mode, moved the cursor to SVG x ≈ 728 inside the plot area, which snapped the hover handler to year 2023 and opened the tooltip listing all 6 series values with header 'United States, 2023'. Read the 1st-birth and 2nd-birth rows directly from the tooltip. Step 5 — Read numeric tooltip values, not pixels. Step 6 — Pitfalls verified.",
+  "confidence": 0.99,
+  "evidence": "Line-mode hover tooltip with header 'United States, 2023' (ref f2e119) shows rows: '5th birth or higher: 34.45 years', '4th birth: 32.66 years', '3rd birth: 31.57 years', '2nd birth: 30.35 years', 'All: 29.96 years', '1st birth: 27.85 years'. The 2nd birth value (30.35) is higher than 1st birth (27.85) by 2.50 years. Prior Bar-mode reading at the same year gave identical values, confirming the result.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/4140584c22b75a8b",
+    "browser_click '📈 Line' to ensure line mode",
+    "page.mouse.move to a neutral position to clear stale tooltip state",
+    "page.mouse.move to viewport coordinates corresponding to SVG (~728, 250) inside the plot area → tooltip snapped to year 2023",
+    "browser_snapshot of the tooltip card to read 1st-birth and 2nd-birth values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: line view starts at 20, not 0 — irrelevant because values were read from the numeric tooltip, not pixels",
+    "Dual y-axes: none",
+    "Stacked vs grouped: independent lines, not stacked",
+    "Log scale: linear",
+    "Linked filter still active: hover snap year is 2023, confirmed by tooltip header 'United States, 2023'",
+    "Tooltip vs visual position: read tooltip text directly",
+    "Country scope: chart is hard-coded to United States — answer applies to US in 2023"
+  ],
+  "self_check": "Restated: in 2023 in the United States, mothers averaged 27.85 years old at their first child and 30.35 years old at their second child, so the average age at 2nd birth exceeded that at 1st birth by 2.50 years. This is consistent with the expected monotonic increase in maternal age with birth order (1st < All < 2nd < 3rd < 4th < 5th+) visible across all six rows of the tooltip and confirmed by an independent Bar-mode reading in the previous step."
+}

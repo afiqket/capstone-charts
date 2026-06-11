@@ -1,0 +1,21 @@
+{
+  "answer": "82.4 years",
+  "reasoning": "Step 1 — Identified an interactive line/bar chart titled 'Survival ages across the population, France, 1816 to 2023' with 11 series (Top 1%, 10%–90% in 10% increments, 99%). Step 2 — Y-axis is linear, 'years', from 0 to 120, starting at zero (no truncation). X-axis is year, 1816–2023. Step 3 — Color encoding distinguishes the 11 survival-share series; legend on the right of the line view. Step 4 — Switched to Bar mode (📊 Bar button) which exposes a year slider; programmatically clicked the slider track at the SVG-x corresponding to year 2000 (x ≈ 757 in the 0–900 viewBox, mapped from sliderX0=90 → 1816, sliderX1=840 → 2023). The chart title updated to 'Survival ages across the population, France, 2000', confirming the year was set correctly. Step 5 — Read the labeled value next to the 50% bar directly from the rendered chart (no pixel estimation needed; values are printed at each bar end). Step 6 — Pitfalls verified: no y-truncation issue (bar values printed numerically), single x-axis (bar chart), no log scale, no linked filters, year matches title.",
+  "confidence": 0.98,
+  "evidence": "In Bar mode with the slider set to year 2000 (chart title 'Survival ages across the population, France, 2000'), the value printed next to the 50% bar is '82.4'. Surrounding values for context: 40% = 85.1, 60% = 79.2. The 99% row shows units explicitly ('24.6 years'), confirming the scale is in years.",
+  "interactions_performed": [
+    "browser_navigate to https://observablehq.com/d/d853ee793fb4ca5c",
+    "browser_click on '📊 Bar' button to switch from Line to Bar view",
+    "browser_run_code_unsafe: page.mouse.click on slider track at SVG x ≈ 756.67, y = 548 (computed from sliderX0/sliderX1 to map x → year 2000)",
+    "browser_snapshot to read labeled bar values"
+  ],
+  "pitfalls_checked": [
+    "Y-axis truncation: N/A in bar mode — values are printed numerically next to each bar",
+    "Dual y-axes: none — single x-axis (years) in bar mode",
+    "Stacked vs grouped: bars are independent horizontal bars, one per survival share",
+    "Log scale: linear",
+    "Linked filter active: only one filter (year via slider); confirmed set to 2000 via chart title",
+    "Tooltip vs visual position: read printed numeric labels, not pixel positions"
+  ],
+  "self_check": "Restated: for France, the survival age at which 50% of a 2000 birth cohort would still be alive (under 2000 age-specific death rates) is 82.4 years. This is consistent with the surrounding labeled values (40% → 85.1, 60% → 79.2 — monotonically decreasing as the cumulative survival share increases), so 82.4 sits correctly between them."
+}

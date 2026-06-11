@@ -1,0 +1,22 @@
+{
+  "answer": "A small tooltip card pops up beside the cursor with the heading 'Year: 1900' and a color-coded list of every visible source's value at (or near) 1900. In this run at vbX=660 the tooltip listed: Durand (1977) 1.7 billion; Durand, lower estimate (1974) 440 million; Durand, upper estimate (1974) 540 million; Maddison (1991) 603 million; Maddison (2001) 438 million; McEvedy and Jones (1978) 425 million; Thomlinson, lower estimate (1975) 600 million. When the cursor leaves the plot area the tooltip disappears. Important caveat: this chart's tooltip title is set to the FIRST listed source's nearest data year (items[0].year), and EACH series reports the value at ITS OWN nearest data point — they may not all be the same year. The title says 'Year: 1900' but slightly different cursor positions still labelled 'Year: 1900' can show different per-source values because each series snaps to its own closest sample (and many of those samples are not exactly 1900).",
+  "reasoning": "Step 1 — Chart Identification: Interactive multi-source population chart in Line mode showing several historical estimates between ~10000 BCE and ~2000 CE. Step 2 — Axes/Scale: linear y (billions, formatted via fmtBillion); x is years. Step 3 — Encoding: color encodes source. Step 4 — Interactive Elements Protocol: The line plot has a transparent overlay rect (width=590, height=390 in viewBox units) inside mainG. On mousemove the handler computes yearHover = xScale.invert(mx), then for each visible source picks the data point whose year is closest to yearHover (filtered to within 5% of the visible x-extent), and passes the FIRST item's year as the tooltip title. I dispatched a mouseleave then a mousemove at viewBox x=660, y=200 — the tooltip group's display flipped from 'none' to '' (visible) and its text content updated. Step 5 — Data Reading: each row is rendered as '<entity>: <fmtBillion(value)>' using d3.format. Step 6 — Pitfalls: the title's year is items[0].year, not necessarily the cursor's exact year nor the year of all listed values — explicit verification needed when reading a precise per-source per-year value.",
+  "confidence": 0.97,
+  "evidence": "Before mousemove: tooltip group display='none' (hidden). After mousemove at vbX=660: display='' (visible) and text content: 'Year: 1900', 'Durand (1977): 1.7 billion', 'Durand, lower estimate (1974): 440 million', 'Durand, upper estimate (1974): 540 million', 'Maddison (1991): 603 million', 'Maddison (2001): 438 million', 'McEvedy and Jones (1978): 425 million', 'Thomlinson, lower estimate (1975): 600 million'. The same title 'Year: 1900' persisted across nearby cursor positions while per-source values changed (observed in earlier runs at vbX=670, 675, 678, 680), confirming the per-series nearest-point semantics.",
+  "interactions_performed": [
+    "navigate to https://observablehq.com/d/92d24a089ca800a9 (already loaded)",
+    "switch to '📈 Line' mode",
+    "dispatch mouseleave on the line-chart overlay rect to start from a hidden tooltip",
+    "dispatch mousemove at viewBox x=660, y=200 (cursor in the right portion of the chart, near year 1900)",
+    "read the tooltip group's text and CSS display state"
+  ],
+  "pitfalls_checked": [
+    "Y-axis (line) starts at zero (not truncated)",
+    "Single y-axis (linear)",
+    "Not stacked",
+    "Tooltip values come from d3-formatted dataset (fmtBillion), not pixel estimation",
+    "Tooltip title may not match the cursor's exact year — it shows items[0].year",
+    "Per-source values may correspond to different actual sample years (each series uses its own nearest point); for precise per-source / per-year values, Bar mode + slider is more reliable"
+  ],
+  "self_check": "Restated: Hovering near 1900 on the line chart opens a color-coded tooltip card titled 'Year: 1900' that lists each visible source's value (formatted in billions/millions) at its nearest data sample. The tooltip appears next to the cursor and hides when the cursor leaves the plot. The tooltip is informative for at-a-glance comparison around a year, but the title only reflects the first listed source's nearest year and individual values may correspond to slightly different sample years."
+}

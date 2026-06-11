@@ -1,0 +1,18 @@
+{
+  "answer": "Hovering over a bar reveals a small tooltip near the cursor showing three things: (1) the COUNTRY name (bold, top line), (2) its WORLD REGION (small gray text, e.g., 'Asia', 'Europe'), and (3) the exact ANTIBIOTIC-USE VALUE in 'mg/PCU' formatted to two decimals (e.g., 'Iran — Asia — 145.37 mg/PCU'). The tooltip follows the mouse along the bar and disappears when you move off; it does not modify the bars themselves.",
+  "reasoning": "Step 1 — Chart is a sorted bar chart titled 'Antibiotic use in livestock, 2020' with one bar per country, colored by world region (Asia, Europe, Africa, …). Step 4 — Inspected the chart's mouse-interaction code and validated by hovering. Each bar has a transparent overlay rect; the rect's 'mousemove' handler sets a tooltip group with three text rows (name, region, value, formatted via d3.format('.2f') + ' mg/PCU') and positions it near the cursor (offset so it stays inside the SVG viewport). 'mouseleave' hides the tooltip. Hovering does not change the bars' fills or sizes — only the tooltip overlay is rendered. Verified empirically: hovering Iran's bar displayed 'Iran / Asia / 145.37 mg/PCU'.",
+  "confidence": 0.99,
+  "evidence": "On mousemove on a per-bar transparent rect, the code calls ttName.text(d.entity); ttRegion.text(d.region); ttVal.text(d3.format('.2f')(d.val) + ' mg/PCU'), then displays the tooltip group near the cursor. Verified live: hovering Iran's bar produced tooltip text [name='Iran', region='Asia', value='145.37 mg/PCU'].",
+  "interactions_performed": [
+    "Navigated to https://observablehq.com/d/53d1b4690a751951",
+    "Dispatched mousemove on a sample bar overlay rect (Iran)",
+    "Confirmed the tooltip group becomes visible with country/region/value text",
+    "Confirmed the bars themselves are unchanged (no fill/highlight change)"
+  ],
+  "pitfalls_checked": [
+    "The tooltip uses two-decimal precision via d3.format('.2f') — values like '145.37 mg/PCU' are the chart's authoritative readings, not pixel-estimated",
+    "Hovering does not change bar color, ordering, or any other visual encoding",
+    "Tooltip flips to the LEFT of the cursor when near the right edge so it stays in view (see code: tx = sx + tw + 10 > W ? sx - tw - 8 : sx + 10)"
+  ],
+  "self_check": "Restated: hover a bar → a tooltip appears showing the country, its world region, and the antibiotic-use value (mg/PCU) formatted to two decimals. The tooltip follows the cursor and hides on mouseleave; nothing else about the bar changes."
+}
