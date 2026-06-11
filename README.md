@@ -35,5 +35,6 @@ How to reproduce the experiments:
       python scripts/prompt.py --questions questions/chart1_questions.csv
 
   To run C3, we gave Gemini Code this prompt. For example for chart 1 question 1:
+  
       Open questions/001.txt, open the chart using the URL, save the answer to runs/C3/q001_gemini_c3_r1.txt
     
