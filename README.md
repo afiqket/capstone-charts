@@ -1,4 +1,6 @@
-# Interactive Charts for our Capstone Project
+# Interactive Chart Question Answering Using AI Agents
+
+This project evaluates how well AI agents can answer questions about interactive charts. Unlike static chart understanding, this benchmark focuses on whether models can retrieve information through chart interactions such as hovering, clicking, filtering, and using tooltips. The study compares multiple AI models under baseline and tool-augmented conditions to measure their accuracy, reasoning ability, and interaction performance across different chart question types.
 
 Webpage available at [afiqket.github.io/zerobug](https://afiqket.github.io/zerobug)
 
